@@ -192,6 +192,14 @@
   .spk { background:var(--primary-light); border:none; color:var(--primary); border-radius:8px; padding:2px 8px; cursor:pointer; font-size:0.9em; line-height:1; vertical-align:middle; margin-left:3px; }
   .spk:active { transform:scale(0.85); }
   .spk.big { font-size:0.8em; padding:9px 18px; border-radius:22px; margin-top:18px; font-weight:700; box-shadow:var(--shadow-sm); }
+  .user-btn { background:rgba(255,255,255,0.18); border:none; color:#fff; border-radius:20px; padding:7px 13px; cursor:pointer; display:flex; align-items:center; gap:6px; font-size:0.82em; font-weight:700; backdrop-filter:blur(8px); max-width:175px; }
+  .user-btn:active{ transform:scale(0.94); }
+  .user-btn .user-ico{ font-size:1.05em; }
+  .user-name{ max-width:110px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .user-chip{ display:inline-flex; align-items:center; gap:6px; padding:8px 13px; border-radius:20px; border:1.5px solid var(--border); background:var(--surface); cursor:pointer; font-size:0.9em; font-weight:600; margin:5px 6px 0 0; }
+  .user-chip.cur{ background:var(--primary); color:#fff; border-color:var(--primary); }
+  .user-chip:active{ transform:scale(0.94); }
+  .user-chip .del{ opacity:0.55; font-weight:700; padding:0 2px; }
   .star-btn {
     flex-shrink: 0; background: var(--warning-light); border: 1px solid #fcd34d; color: var(--warning);
     border-radius: 10px; padding: 7px 9px; cursor: pointer; font-size: 1.05em; line-height: 1;
@@ -374,8 +382,11 @@
 </head>
 <body>
 
-<header class="app-bar" style="justify-content:center;">
+<header class="app-bar">
   <div class="brand"><span class="mark">📚</span> 토익 VOCA</div>
+  <button class="user-btn" onclick="openUser()" aria-label="사용자 설정">
+    <span class="user-ico">⚙️</span><span class="user-name" id="user-name-label">게스트</span>
+  </button>
 </header>
 
 <main class="app-main">
@@ -564,6 +575,22 @@
   <button class="nav-item" data-tab="all-quiz"><span class="ni">🎯</span><span class="nl">평가</span></button>
   <button class="nav-item" data-tab="stats"><span class="ni">📊</span><span class="nl">통계</span></button>
 </nav>
+
+<!-- 사용자 설정 모달 -->
+<div class="overlay" id="user-overlay">
+  <div class="sheet" style="max-width:440px;">
+    <div class="grabber"></div>
+    <h3>👤 사용자 설정</h3>
+    <p class="sub">사용자별로 <b>즐겨찾기·진도·오답</b>이 따로 저장돼요. 다른 기기에서 같은 이름을 입력하면 그 사용자의 진도가 그대로 이어집니다.</p>
+    <div class="field">
+      <label>사용자 이름</label>
+      <input type="text" id="user-input" placeholder="예: 홍길동" autocapitalize="off" autocorrect="off" spellcheck="false">
+    </div>
+    <button class="btn btn-primary btn-block" onclick="applyUser()">이 이름으로 시작 / 전환</button>
+    <div id="user-recent"></div>
+    <button class="btn btn-ghost btn-block" onclick="closeUser()" style="margin-top:14px;">닫기</button>
+  </div>
+</div>
 
 <!-- 확인 모달 -->
 <div class="overlay" id="confirm-overlay">
@@ -1057,12 +1084,9 @@ function renderStats(){
         <button class="btn btn-soft" onclick="document.getElementById('import-file').click()">⬆️ 복원</button>
       </div>
       <details class="guide" style="margin-top:12px;">
-        <summary>⚙️ 동기화 코드 변경 (보통 안 건드림)</summary>
-        <p style="font-size:0.82em; color:var(--text-mid); margin:10px 0;">같은 코드끼리만 진도가 공유됩니다.</p>
-        <div style="display:flex; gap:8px;">
-          <input type="text" id="sync-code" value="${esc(cloud.code)}" autocapitalize="off" autocorrect="off" spellcheck="false" style="flex:1; padding:10px 12px; border:1.5px solid var(--border); border-radius:10px; font-family:inherit;">
-          <button class="btn btn-primary" onclick="changeSyncCode()">적용</button>
-        </div>
+        <summary>👤 현재 사용자: ${esc(userLabel(SYNC_CODE))}</summary>
+        <p style="font-size:0.82em; color:var(--text-mid); margin:10px 0;">사용자별로 즐겨찾기·진도가 따로 저장돼요. 오른쪽 위 ⚙️ 버튼으로도 바꿀 수 있어요.</p>
+        <button class="btn btn-primary btn-block" onclick="openUser()">사용자 변경 / 추가</button>
       </details>
     </div>`;
 }
@@ -1112,7 +1136,7 @@ const firebaseConfig = {
 };
 // ▲▲▲ 여기까지 교체 ▲▲▲
 
-let SYNC_CODE = localStorage.getItem('toeic_fb_code') || 'leesm19880417-voca';
+let SYNC_CODE = localStorage.getItem('toeic_fb_code') || 'guest';
 let cloud = { code: SYNC_CODE, connected:false };
 let fb = { db:null, ref:null, applying:false, writeTimer:null };
 
@@ -1179,13 +1203,35 @@ function refreshView(){
 function openSync(){}
 function closeSync(){ const o=$('sync-overlay'); if(o) o.classList.remove('active'); }
 function updateSyncPanel(){}
-function changeSyncCode(){
-  const f=$('sync-code'); if(!f) return;
-  const code=(f.value||'').trim();
-  if(!code){ toast('코드를 입력하세요'); return; }
-  localStorage.setItem('toeic_fb_code', code);
-  if(fb.db){ attachSync(code); } else { SYNC_CODE=code; cloud.code=code; }
-  toast('동기화 코드를 변경했어요'); renderStats();
+function changeSyncCode(){ const f=$('sync-code'); if(f){ const c=(f.value||'').trim(); if(c) switchUser(c); } }
+
+// ===== 사용자(프로필) — 사용자별 즐겨찾기·진도 분리 =====
+function getUsers(){ try{ return JSON.parse(localStorage.getItem('toeic_users')||'[]'); }catch(e){ return []; } }
+function addUser(name){ const u=getUsers().filter(x=>x!==name); u.unshift(name); localStorage.setItem('toeic_users', JSON.stringify(u.slice(0,12))); }
+function delUser(name){ localStorage.setItem('toeic_users', JSON.stringify(getUsers().filter(x=>x!==name))); renderRecentUsers(); }
+function userLabel(n){ return (!n||n==='guest')?'게스트':n; }
+function updateUserLabel(){ const el=$('user-name-label'); if(el) el.textContent=userLabel(SYNC_CODE); }
+function switchUser(name){
+  name=String(name||'').trim(); if(!name) return;
+  if(name===SYNC_CODE){ closeUser(); return; }
+  if(fb.writeTimer){ clearTimeout(fb.writeTimer); fb.writeTimer=null; }
+  if(fb.ref){ try{ fb.ref.set(state); }catch(e){} fb.ref.off(); fb.ref=null; }
+  state=defState(); saveLocal();
+  SYNC_CODE=name; cloud.code=name; localStorage.setItem('toeic_fb_code', name);
+  addUser(name); updateUserLabel(); refreshView();
+  if(fb.db){ attachSync(name); } else { setSyncUI('off'); }
+  toast('👤 '+userLabel(name)+'(으)로 전환');
+  closeUser();
+}
+function openUser(){ const inp=$('user-input'); if(inp) inp.value=(SYNC_CODE==='guest')?'':SYNC_CODE; renderRecentUsers(); const o=$('user-overlay'); if(o) o.classList.add('active'); }
+function closeUser(){ const o=$('user-overlay'); if(o) o.classList.remove('active'); }
+function applyUser(){ const inp=$('user-input'); if(!inp) return; const name=(inp.value||'').trim(); if(!name){ toast('이름을 입력하세요'); return; } switchUser(name); }
+function renderRecentUsers(){
+  const box=$('user-recent'); if(!box) return;
+  const users=getUsers();
+  if(!users.length){ box.innerHTML=''; return; }
+  box.innerHTML='<p style="font-size:0.82em; color:var(--text-light); margin:18px 0 4px;">이 기기에서 쓴 사용자 (눌러서 전환)</p>'+
+    users.map(u=>`<span class="user-chip ${u===SYNC_CODE?'cur':''}" onclick="switchUser('${q(u)}')">👤 ${esc(userLabel(u))}${u===SYNC_CODE?' ✓':` <span class="del" onclick="event.stopPropagation(); delUser('${q(u)}')">✕</span>`}</span>`).join('');
 }
 function syncNow(){
   if(!fb.ref){ toast('동기화가 꺼져 있어요'); return; }
@@ -1193,7 +1239,7 @@ function syncNow(){
 }
 
 // 오버레이 바깥 탭하면 닫기
-['confirm-overlay'].forEach(id=>{
+['confirm-overlay','user-overlay'].forEach(id=>{
   const el=$(id); if(el) el.addEventListener('click',e=>{ if(e.target===el) el.classList.remove('active'); });
 });
 
@@ -1215,6 +1261,7 @@ document.addEventListener('keydown',e=>{
 // ============ 초기화 ============
 renderHome();
 fbInit();
+updateUserLabel();
 </script>
 
 </body>
