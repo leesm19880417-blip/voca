@@ -1157,22 +1157,29 @@ function fbInit(){
     attachSync(SYNC_CODE);
   }catch(e){ setSyncUI('err'); }
 }
+function _ck(s){ try{ const o=Object.assign({}, s||{}); delete o.updatedAt; return JSON.stringify(o); }catch(e){ return 'x'+Math.random(); } }
+function _hasProg(s){ s=s||{}; return !!(Object.keys(s.learned||{}).length||Object.keys(s.bookmarks||{}).length||Object.keys(s.completed||{}).length||Object.keys(s.wrongs||{}).length||(s.quizHistory||[]).length); }
 function attachSync(code){
   SYNC_CODE=code; cloud.code=code;
   if(fb.ref) fb.ref.off();
   setSyncUI('sync');
+  fb.initial=true;
   fb.ref = fb.db.ref('progress/' + code);
-  // 실시간 수신: 다른 기기에서 바뀌면 '즉시' 반영됨
+  // 클라우드를 '기준'으로 삼아 실시간 반영 (기기 시계 차이와 무관)
   fb.ref.on('value', function(snap){
     const remote = snap.val();
     cloud.connected=true; setSyncUI('ok');
-    if(remote && remote.updatedAt && (!state.updatedAt || remote.updatedAt > state.updatedAt)){
-      fb.applying=true;
-      state = {...defState(), ...remote};
-      saveLocal(); refreshView();
-      fb.applying=false;
-    } else if(!remote && (Object.keys(state.learned||{}).length || Object.keys(state.bookmarks||{}).length || Object.keys(state.completed||{}).length)){
-      fbWrite(); // 클라우드 비었는데 로컬 진도 있으면 업로드
+    const first=fb.initial; fb.initial=false;
+    if(remote){
+      if(!first && fb.writeTimer) return;          // 편집 중인 내 변경 보호 (최초 로드는 무조건 클라우드 적용)
+      if(_ck(remote)!==_ck(state)){
+        fb.applying=true;
+        state={...defState(), ...remote};
+        saveLocal(); refreshView();
+        fb.applying=false;
+      }
+    } else if(first && _hasProg(state)){
+      fbWrite(); // 클라우드 비었는데 로컬 진도 있으면 올림
     }
   }, function(err){ cloud.connected=false; setSyncUI('err'); });
 }
@@ -1214,8 +1221,9 @@ function updateUserLabel(){ const el=$('user-name-label'); if(el) el.textContent
 function switchUser(name){
   name=String(name||'').trim(); if(!name) return;
   if(name===SYNC_CODE){ closeUser(); return; }
+  if(fb.ref && fb.writeTimer){ try{ fb.ref.set(state); }catch(e){} }   // 미저장 변경만 마지막으로 올림
   if(fb.writeTimer){ clearTimeout(fb.writeTimer); fb.writeTimer=null; }
-  if(fb.ref){ try{ fb.ref.set(state); }catch(e){} fb.ref.off(); fb.ref=null; }
+  if(fb.ref){ fb.ref.off(); fb.ref=null; }
   state=defState(); saveLocal();
   SYNC_CODE=name; cloud.code=name; localStorage.setItem('toeic_fb_code', name);
   addUser(name); updateUserLabel(); refreshView();
