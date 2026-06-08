@@ -189,6 +189,9 @@
   .word-card .wex { font-size: 0.85em; color: var(--text-mid); margin-top: 6px; font-style: italic; }
   .word-card .wexk { font-size: 0.82em; color: var(--text-light); margin-top: 1px; }
   .hl { font-weight: 800; color: var(--primary); font-style: normal; }
+  .spk { background:var(--primary-light); border:none; color:var(--primary); border-radius:8px; padding:2px 8px; cursor:pointer; font-size:0.9em; line-height:1; vertical-align:middle; margin-left:3px; }
+  .spk:active { transform:scale(0.85); }
+  .spk.big { font-size:0.8em; padding:9px 18px; border-radius:22px; margin-top:18px; font-weight:700; box-shadow:var(--shadow-sm); }
   .star-btn {
     flex-shrink: 0; background: var(--warning-light); border: 1px solid #fcd34d; color: var(--warning);
     border-radius: 10px; padding: 7px 9px; cursor: pointer; font-size: 1.05em; line-height: 1;
@@ -657,6 +660,41 @@ function highlightWord(sentence, word){
 
 function toast(msg){ const t=$('toast'); t.textContent=msg; t.classList.add('show'); clearTimeout(t._t); t._t=setTimeout(()=>t.classList.remove('show'),2200); }
 
+// ===== 발음 (Google Cloud TTS 자연스러운 음성 / 키 없으면 내장 음성으로 자동 폴백) =====
+const GOOGLE_TTS_KEY = 'AIzaSyAXenmOkmnIGaPBVFkxNtQe0A6wn3x_my4'; // Google Cloud Text-to-Speech API 키
+const TTS_VOICE = 'en-US-Neural2-F';           // 자연스러운 미국 여성 (남성: en-US-Neural2-D)
+const _ttsCache = {};
+let _audio = null;
+function ttsReady(){ return GOOGLE_TTS_KEY && GOOGLE_TTS_KEY.indexOf('PASTE')<0; }
+function playAudio(src){ try{ if(_audio) _audio.pause(); _audio=new Audio(src); _audio.play(); }catch(e){} }
+async function speak(text){
+  text=String(text||'').trim(); if(!text) return;
+  if(!ttsReady()){ speakBuiltin(text); return; }
+  if(_ttsCache[text]){ playAudio(_ttsCache[text]); return; }
+  try{
+    const res=await fetch('https://texttospeech.googleapis.com/v1/text:synthesize?key='+encodeURIComponent(GOOGLE_TTS_KEY),{
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({ input:{text:text}, voice:{languageCode:'en-US', name:TTS_VOICE}, audioConfig:{audioEncoding:'MP3', speakingRate:0.95} })
+    });
+    const data=await res.json();
+    if(data && data.audioContent){ const src='data:audio/mp3;base64,'+data.audioContent; _ttsCache[text]=src; playAudio(src); }
+    else { speakBuiltin(text); }
+  }catch(e){ speakBuiltin(text); }
+}
+let _voices=[];
+function loadVoices(){ try{ _voices=window.speechSynthesis.getVoices()||[]; }catch(e){} }
+if('speechSynthesis' in window){ loadVoices(); try{ window.speechSynthesis.onvoiceschanged=loadVoices; }catch(e){} }
+function speakBuiltin(text){
+  if(!('speechSynthesis' in window)) return;
+  try{
+    window.speechSynthesis.cancel();
+    const u=new SpeechSynthesisUtterance(text); u.lang='en-US'; u.rate=0.92;
+    const v=_voices.find(x=>/en[-_]US/i.test(x.lang))||_voices.find(x=>/^en/i.test(x.lang)); if(v) u.voice=v;
+    window.speechSynthesis.speak(u);
+  }catch(e){}
+}
+function speakAttr(s){ return String(s==null?'':s).replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
 // ============ 화면 전환 ============
 function showView(name){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
@@ -727,9 +765,9 @@ function renderWordList(words, day){
     return `<div class="word-card">
       <div class="wnum">${i+1}</div>
       <div class="wbody">
-        <div class="wtop"><span class="wword">${esc(w.word)}</span><span class="wpos">${posKor(w.pos)}</span></div>
+        <div class="wtop"><span class="wword">${esc(w.word)}</span><span class="wpos">${posKor(w.pos)}</span><button class="spk" onclick="speak('${speakAttr(w.word)}')" title="단어 발음">🔊</button></div>
         <div class="wmean">${esc(w.meaning)}</div>
-        <div class="wex">${highlightWord(w.example, w.word)}</div>
+        <div class="wex"><button class="spk" onclick="speak('${speakAttr(w.example)}')" title="예문 발음">🔊</button> ${highlightWord(w.example, w.word)}</div>
         <div class="wexk">${esc(w.exampleKor)}</div>
       </div>
       <button class="star-btn ${on?'on':''}" onclick="toggleBookmark('${q(w.word)}',${day},this)">${on?'★':'☆'}<span class="slabel">${on?'저장됨':'즐겨찾기'}</span></button>
@@ -754,8 +792,8 @@ function renderFlashcard(){
   const w=currentWords[currentIdx], total=currentWords.length;
   $('fc-count').textContent=`${currentIdx+1} / ${total}`;
   $('fc-progress').style.width=((currentIdx+1)/total*100)+'%';
-  $('flip-front').innerHTML=`<div class="fc-word">${esc(w.word)}</div><div class="fc-pos">${posKor(w.pos)}</div><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
-  $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posKor(w.pos)}</span></div><div class="fc-ex">${highlightWord(w.example, w.word)}</div><div class="fc-ex-ko">${esc(w.exampleKor)}</div>`;
+  $('flip-front').innerHTML=`<div class="fc-word">${esc(w.word)}</div><div class="fc-pos">${posKor(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
+  $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posKor(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div><div class="fc-ex">${highlightWord(w.example, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.example)}')">🔊</button></div><div class="fc-ex-ko">${esc(w.exampleKor)}</div>`;
   $('flip-card').classList.toggle('flipped', flashFlipped);
 }
 function flipCard(){ flashFlipped=!flashFlipped; $('flip-card').classList.toggle('flipped', flashFlipped); }
