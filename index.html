@@ -467,6 +467,7 @@
     <div class="stack-header">
       <button class="icon-btn" onclick="exitMode()">←</button>
       <div class="stack-title" id="fc-count">1 / 30</div>
+      <button class="icon-btn" id="fc-autospeak" onclick="toggleAutoSpeak()" title="자동 발음 켜기/끄기">🔊</button>
       <button class="icon-btn" onclick="shuffleFlashcards()">🔀</button>
     </div>
     <div class="progress-track"><div class="progress-track-fill" id="fc-progress"></div></div>
@@ -700,6 +701,7 @@ function saveState() { state.updatedAt = nowISO(); saveLocal(); schedulePush(); 
 let currentDay=null, currentWords=[], currentIdx=0, currentMode=null;
 let quizData=[], quizIdx=0, quizScore=0, quizWrong=[];
 let aqCount=20, flashFlipped=false, studySource=null, typingHintUsed=false;
+let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동 발음 (기본 켜짐)
 
 const STACK_VIEWS = ['day','mywords','flashcard','quiz','typing','result'];
 const $ = id => document.getElementById(id);
@@ -792,6 +794,7 @@ function speakAttr(s){ return String(s==null?'':s).replace(/\\/g,'\\\\').replace
 function showView(name){
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
   $('view-'+name).classList.add('active');
+  if(name==='flashcard') syncAutoSpeakBtn();
   const isStack = STACK_VIEWS.includes(name);
   document.body.classList.toggle('stack-mode', isStack);
   if(!isStack) document.querySelectorAll('.nav-item').forEach(t=>t.classList.toggle('active', t.dataset.tab===name));
@@ -889,10 +892,35 @@ function renderFlashcard(){
   $('flip-front').innerHTML=`<div class="fc-word">${esc(w.word)}</div><div class="fc-pos">${posKor(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
   $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posKor(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div><div class="fc-ex">${highlightWord(w.example, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.example)}')">🔊</button></div><div class="fc-ex-ko">${esc(w.exampleKor)}</div>`;
   $('flip-card').classList.toggle('flipped', flashFlipped);
+  if(autoSpeak) speak(w.word);  // 새 카드(앞면) 뜨면 단어 자동 발음
 }
-function flipCard(){ flashFlipped=!flashFlipped; $('flip-card').classList.toggle('flipped', flashFlipped); }
-function nextCard(){ if(currentIdx<currentWords.length-1){ currentIdx++; flashFlipped=false; renderFlashcard(); } else completeFlash(); }
-function prevCard(){ if(currentIdx>0){ currentIdx--; flashFlipped=false; renderFlashcard(); } }
+function flipCard(){
+  flashFlipped=!flashFlipped;
+  $('flip-card').classList.toggle('flipped', flashFlipped);
+  if(autoSpeak) speak(flashFlipped ? currentWords[currentIdx].example : currentWords[currentIdx].word); // 뒷면=예문, 앞면=단어
+}
+function toggleAutoSpeak(){
+  autoSpeak=!autoSpeak;
+  localStorage.setItem('fc_autospeak', autoSpeak?'1':'0');
+  syncAutoSpeakBtn();
+  toast(autoSpeak ? '🔊 자동 발음 켜짐' : '🔇 자동 발음 꺼짐');
+}
+function syncAutoSpeakBtn(){
+  const b=$('fc-autospeak'); if(!b) return;
+  b.textContent=autoSpeak?'🔊':'🔇';
+  b.style.opacity=autoSpeak?'1':'0.45';
+}
+function nextCard(){ if(currentIdx<currentWords.length-1){ currentIdx++; advanceCard(); } else completeFlash(); }
+function prevCard(){ if(currentIdx>0){ currentIdx--; advanceCard(); } }
+function advanceCard(){
+  const card=$('flip-card'), inner=card.querySelector('.flip-inner');
+  inner.style.transition='none';     // 뒤집기 애니메이션 잠깐 끄기
+  flashFlipped=false;
+  card.classList.remove('flipped');  // 즉시 앞면(영어)으로 스냅
+  void inner.offsetWidth;            // 강제 리플로우로 위 변경 즉시 반영
+  renderFlashcard();                 // 새 단어 내용 채우기
+  requestAnimationFrame(()=>{ inner.style.transition=''; }); // 탭 뒤집기는 다시 정상
+}
 function markKnown(known){
   const w=currentWords[currentIdx];
   if(studySource==='day' || studySource==='custom'){
