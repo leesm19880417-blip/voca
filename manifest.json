@@ -1,7 +1,7 @@
 {
   "name": "토익 비밀과외 VOCA",
   "short_name": "토익 VOCA",
-  "description": "토익 비밀과외 Voca 30일 완성 단어 학습 앱",
+  "description": "서아쌤의 토익 비밀과외 기출 VOCA · 8주 40일 완성 단어 학습 앱",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

@@ -122,6 +122,28 @@
 
   .section-label { font-size: 0.95em; font-weight: 800; color: var(--text); margin: 4px 2px 12px; display: flex; align-items: center; gap: 6px; }
 
+  /* ===== Book Grid ===== */
+  .book-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .book-card {
+    background: var(--surface);
+    padding: 18px 16px;
+    border-radius: var(--r);
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    transition: transform .15s, box-shadow .2s;
+    border: 1.5px solid transparent;
+    position: relative;
+    overflow: hidden;
+  }
+  .book-card:active { transform: scale(0.97); }
+  @media (hover: hover) { .book-card:hover { box-shadow: var(--shadow); border-color: var(--primary); } }
+  .book-card .b-ico { font-size: 1.7em; line-height: 1; }
+  .book-card .b-name { font-size: 1.05em; font-weight: 800; margin: 8px 0 2px; }
+  .book-card .b-meta { font-size: 0.76em; color: var(--text-light); margin-bottom: 10px; }
+  .book-card .pbar { height: 6px; background: var(--border); border-radius: 4px; overflow: hidden; }
+  .book-card .pfill { height: 100%; border-radius: 4px; transition: width .4s; }
+  .book-card .b-pct { position: absolute; top: 16px; right: 16px; font-size: 0.78em; font-weight: 800; color: var(--text-light); }
+
   /* ===== Day Grid ===== */
   .day-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
   @media (min-width: 560px) { .day-grid { grid-template-columns: repeat(3, 1fr); } }
@@ -188,6 +210,15 @@
   .word-card .wmean { color: var(--text); margin-top: 3px; font-weight: 500; }
   .word-card .wex { font-size: 0.85em; color: var(--text-mid); margin-top: 6px; font-style: italic; }
   .word-card .wexk { font-size: 0.82em; color: var(--text-light); margin-top: 1px; }
+  .word-card .wderiv { font-size: 0.8em; color: var(--text-mid); margin-top: 4px; line-height: 1.5; }
+  .word-card .wderiv .dv { color: var(--primary); font-weight: 700; }
+  .word-card .wderiv .dp { color: var(--text-light); font-style: italic; margin: 0 3px 0 1px; }
+  .word-card .exlabel { display:inline-block; font-size:0.62em; font-weight:700; color:#fff; background:var(--primary); border-radius:5px; padding:1px 5px; margin-right:5px; vertical-align:middle; }
+  .word-card .wtip { font-size: 0.8em; color: var(--text-mid); margin-top: 8px; background: var(--surface-2); border-left: 3px solid var(--primary); border-radius: 6px; padding: 7px 9px; white-space: pre-line; line-height: 1.55; }
+  .word-card .wtip .tlabel { display:inline-block; font-size:0.92em; font-weight:800; color:var(--primary); margin-right:5px; }
+  .word-card .wquiz { font-size: 0.8em; color: var(--text-mid); margin-top: 8px; background: #eef2ff; border-radius: 6px; padding: 7px 9px; line-height: 1.55; }
+  .word-card .wquiz .qopt { color: var(--text-light); }
+  .word-card .wquiz .qans { color: #4338ca; font-weight: 800; }
   .hl { font-weight: 800; color: var(--primary); font-style: normal; }
   .spk { background:var(--primary-light); border:none; color:var(--primary); border-radius:8px; padding:2px 8px; cursor:pointer; font-size:0.9em; line-height:1; vertical-align:middle; margin-left:3px; }
   .spk:active { transform:scale(0.85); }
@@ -417,7 +448,7 @@
         <h2>오늘도 화이팅! 🔥</h2>
         <p id="hero-msg">Day를 선택해 학습을 시작하세요</p>
         <div class="mini-stats">
-          <span>완료 <b id="ms-days">0</b>/30</span>
+          <span>완료 <b id="ms-days">0</b> Day</span>
           <span>단어 <b id="ms-words">0</b></span>
           <span>⭐ <b id="ms-stars">0</b></span>
         </div>
@@ -427,14 +458,23 @@
       <div>📒 <b>내 단어장</b> <small id="mywords-count">0개 단어</small></div>
       <span>＋ 추가 / 학습 →</span>
     </div>
-    <div class="section-label">📅 30일 학습 코스</div>
+    <div class="section-label">📚 단어장 선택</div>
+    <div class="book-grid" id="book-grid"></div>
+  </div>
+
+  <!-- 단어장(책) 상세: Day 목록 -->
+  <div id="view-book" class="view">
+    <div class="stack-header">
+      <button class="icon-btn" onclick="goHome()">←</button>
+      <div class="stack-title" id="book-title">단어장</div>
+    </div>
     <div class="day-grid" id="day-grid"></div>
   </div>
 
   <!-- Day 상세 -->
   <div id="view-day" class="view">
     <div class="stack-header">
-      <button class="icon-btn" onclick="goHome()">←</button>
+      <button class="icon-btn" onclick="goBook()">←</button>
       <div class="stack-title" id="day-title">DAY</div>
     </div>
     <div class="mode-grid">
@@ -560,13 +600,17 @@
   <div id="view-all-quiz" class="view">
     <div class="section-label">🎯 전체 평가</div>
     <div class="card">
-      <p style="font-size:0.88em; color:var(--text-light); margin-bottom:16px;">선택한 Day 범위에서 무작위로 출제됩니다.</p>
+      <p style="font-size:0.88em; color:var(--text-light); margin-bottom:16px;">선택한 단어장·Day 범위에서 무작위로 출제됩니다.</p>
+      <div class="field">
+        <label>단어장</label>
+        <div class="chips" id="aq-books"></div>
+      </div>
       <div class="field">
         <label>Day 범위</label>
         <div style="display:flex; gap:10px; align-items:center;">
-          <input type="number" id="aq-start" value="1" min="1" max="30" style="text-align:center;">
+          <input type="number" id="aq-start" value="1" min="1" max="60" style="text-align:center;">
           <span style="color:var(--text-light);">~</span>
-          <input type="number" id="aq-end" value="30" min="1" max="30" style="text-align:center;">
+          <input type="number" id="aq-end" value="60" min="1" max="60" style="text-align:center;">
         </div>
       </div>
       <div class="field">
@@ -679,17 +723,68 @@
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
 <script src="vocabulary.js"></script>
+<script src="vocab_eduwill.js"></script>
+<script src="vocab_wangchobo.js"></script>
+<script src="vocab_hackers.js"></script>
 <script>
 'use strict';
+
+// ============ 단어장(책) 정의 ============
+const BOOKS = [
+  { id:'siwon',   name:'토익비밀과외', icon:'📘', color:'#6366f1', data:(typeof VOCABULARY      !=='undefined'?VOCABULARY      :[]) },
+  { id:'eduwill', name:'에듀윌',   icon:'📙', color:'#f59e0b', data:(typeof VOCAB_EDUWILL   !=='undefined'?VOCAB_EDUWILL   :[]) },
+  { id:'wang',    name:'왕초보',   icon:'📗', color:'#10b981', data:(typeof VOCAB_WANGCHOBO !=='undefined'?VOCAB_WANGCHOBO :[]) },
+  { id:'hackers', name:'해커스',   icon:'📕', color:'#ef4444', data:(typeof VOCAB_HACKERS   !=='undefined'?VOCAB_HACKERS   :[]) },
+];
+// 새 스키마(examples[]) → 기존 기능(플래시카드·퀴즈)용 단일 example/exampleKor 보강
+BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
+  if((!w.example) && w.examples && w.examples.length){ w.example=w.examples[0].en; w.exampleKor=w.examples[0].ko||''; }
+})));
+const bookById = id => BOOKS.find(b=>b.id===id);
+const bookName = id => { const b=bookById(id); return b?b.name:(id==='my'?'내 단어장':''); };
+const bookData = id => { const b=bookById(id); return b?b.data:[]; };
+const allWords = () => BOOKS.flatMap(b=>b.data.flatMap(d=>d.words.map(w=>({...w, book:b.id, day:d.day}))));
+const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
 
 // ============ 상태 ============
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], updatedAt:null };
+}
+// 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
+const BOOK_IDS = ['siwon','eduwill','wang','hackers','my'];
+function migrateState(s){
+  s = { ...defState(), ...(s||{}) };
+  if(s.ver>=3) return s;
+  const mapObj = (obj, withVal) => {
+    const out={};
+    for(const k of Object.keys(obj||{})){
+      const parts=String(k).split(':');
+      let nk, bk;
+      if(parts.length>=3 && BOOK_IDS.includes(parts[0])){ nk=k; bk=parts[0]; }      // 이미 새 형식
+      else if(parts[0]==='my'){ nk='my:my:'+parts.slice(1).join(':'); bk='my'; }     // 내 단어장 (구형식 my:단어)
+      else { nk='siwon:'+k; bk='siwon'; }                                            // 구형식 Day:단어
+      let v=obj[k];
+      if(withVal && v && typeof v==='object' && !v.book) v={...v, book:bk};
+      out[nk]=v;
+    }
+    return out;
+  };
+  s.learned   = mapObj(s.learned,   false);
+  s.bookmarks = mapObj(s.bookmarks, true);
+  s.wrongs    = mapObj(s.wrongs,    true);
+  const comp={};
+  for(const k of Object.keys(s.completed||{})){
+    comp[/^\d+$/.test(String(k)) ? 'siwon:'+k : k]=s.completed[k];
+  }
+  s.completed=comp;
+  s.quizHistory=(s.quizHistory||[]).map(h=>h&&!h.book?{...h, book:'siwon'}:h);
+  s.ver=3;
+  return s;
 }
 function loadState() {
-  try { return { ...defState(), ...JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}') }; }
+  try { return migrateState(JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}')); }
   catch { return defState(); }
 }
 let state = loadState();
@@ -698,14 +793,14 @@ function saveLocal() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
 function saveState() { state.updatedAt = nowISO(); saveLocal(); schedulePush(); }
 
 // 모드 컨텍스트
-let currentDay=null, currentWords=[], currentIdx=0, currentMode=null;
+let currentBook='siwon', currentDay=null, currentWords=[], currentIdx=0, currentMode=null;
 let quizData=[], quizIdx=0, quizScore=0, quizWrong=[];
-let aqCount=20, flashFlipped=false, studySource=null, typingHintUsed=false;
+let aqCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false;
 let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동 발음 (기본 켜짐)
 
-const STACK_VIEWS = ['day','mywords','flashcard','quiz','typing','result'];
+const STACK_VIEWS = ['book','day','mywords','flashcard','quiz','typing','result'];
 const $ = id => document.getElementById(id);
-const wordKey = (d,w) => `${d}:${w}`;
+const wordKey = (b,d,w) => `${b}:${d}:${w}`;
 function shuffle(a){ a=[...a]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
 function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function q(s){ return String(s==null?'':s).replace(/'/g,"\\'").replace(/\\/g,'\\\\'); }
@@ -762,8 +857,17 @@ const _ttsCache = {};
 let _audio = null;
 function ttsReady(){ return GOOGLE_TTS_KEY && GOOGLE_TTS_KEY.indexOf('PASTE')<0; }
 function playAudio(src){ try{ if(_audio) _audio.pause(); _audio=new Audio(src); _audio.play(); }catch(e){} }
+// 발음용 텍스트 정리: 슬래시/괄호/대괄호/물결표 등 기호가 음성으로 어색하게 읽히는 것 방지
+function cleanSpeech(t){
+  t=String(t||'');
+  t=t.replace(/\[[^\]]*\]/g,' ');   // routine[regular] → routine
+  if(t.indexOf('/')>=0) t=t.split('/')[0];  // "point at / to" → "point at"
+  t=t.replace(/[()]/g,'');          // "look in(to)" → "look into"
+  t=t.replace(/[~*]/g,' ');         // 물결표 등 제거
+  return t.replace(/\s+/g,' ').trim();
+}
 async function speak(text){
-  text=String(text||'').trim(); if(!text) return;
+  text=cleanSpeech(text); if(!text) return;
   if(!ttsReady()){ speakBuiltin(text); return; }
   if(_ttsCache[text]){ playAudio(_ttsCache[text]); return; }
   try{
@@ -807,32 +911,68 @@ document.querySelectorAll('.nav-item').forEach(btn=>{
     if(tab==='home') renderHome();
     else if(tab==='bookmarks') renderBookmarks();
     else if(tab==='wrongs') renderWrongs();
+    else if(tab==='all-quiz') renderAQBooks();
     else if(tab==='stats') renderStats();
   });
 });
 function goHome(){ showView('home'); renderHome(); }
 
-// ============ 홈 ============
+// ============ 홈 (단어장 선택) ============
+function bookStats(b){
+  let learned=0, total=0, doneDays=0;
+  b.data.forEach(d=>{
+    total+=d.words.length;
+    learned+=d.words.filter(w=>state.learned[wordKey(b.id,d.day,w.word)]).length;
+    if(state.completed[`${b.id}:${d.day}`]) doneDays++;
+  });
+  return { learned, total, doneDays, days:b.data.length };
+}
 function renderHome(){
-  const grid=$('day-grid');
-  grid.innerHTML=VOCABULARY.map(d=>{
-    const learned=d.words.filter(w=>state.learned[wordKey(d.day,w.word)]).length;
-    const total=d.words.length, pct=Math.round(learned/total*100), done=state.completed[d.day];
-    return `<div class="day-card ${done?'done':''}" onclick="openDay(${d.day})">
-      ${done?'<div class="check">✓</div>':''}
-      <span class="badge">DAY ${d.day}</span>
-      <div class="d-title">${esc(d.title)}</div>
-      <div class="d-meta"><span>${learned}/${total} 단어</span><span>${pct}%</span></div>
-      <div class="pbar"><div class="pfill" style="width:${pct}%"></div></div>
+  const grid=$('book-grid');
+  grid.innerHTML=BOOKS.map(b=>{
+    const s=bookStats(b);
+    const pct=s.total?Math.round(s.learned/s.total*100):0;
+    const ready=b.data.length>0;
+    return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
+      <span class="b-pct">${pct}%</span>
+      <div class="b-ico">${b.icon}</div>
+      <div class="b-name">${esc(b.name)}</div>
+      <div class="b-meta">${ready?`${s.days} Day · ${s.total}단어 · 완료 ${s.doneDays}일`:'데이터 준비 중'}</div>
+      <div class="pbar"><div class="pfill" style="width:${pct}%; background:linear-gradient(90deg, ${b.color}, ${b.color}aa);"></div></div>
     </div>`;
   }).join('');
   if($('mywords-count')) $('mywords-count').textContent=(state.customWords||[]).length+'개 단어';
   updateHeaderStats();
 }
+
+// ============ 단어장 상세 (Day 목록) ============
+function openBook(id){
+  currentBook=id;
+  renderBook();
+  showView('book');
+}
+function goBook(){ if(bookById(currentBook)){ renderBook(); showView('book'); } else goHome(); }
+function renderBook(){
+  const b=bookById(currentBook); if(!b) return;
+  const s=bookStats(b);
+  $('book-title').innerHTML=`${b.icon} ${esc(b.name)}<small>${s.days} Day · ${s.total}개 단어 · 완료 ${s.doneDays}일</small>`;
+  $('day-grid').innerHTML=b.data.map(d=>{
+    const learned=d.words.filter(w=>state.learned[wordKey(b.id,d.day,w.word)]).length;
+    const total=d.words.length, pct=total?Math.round(learned/total*100):0, done=state.completed[`${b.id}:${d.day}`];
+    return `<div class="day-card ${done?'done':''}" onclick="openDay('${b.id}',${d.day})">
+      ${done?'<div class="check">✓</div>':''}
+      <span class="badge">${d.week?`W${d.week}·`:''}DAY ${d.day}</span>
+      <div class="d-title">${esc(d.title)}${d.part?` <small style="color:var(--text-light); font-weight:600">· ${esc(d.part)}</small>`:''}</div>
+      <div class="d-meta"><span>${learned}/${total} 단어</span><span>${pct}%</span></div>
+      <div class="pbar"><div class="pfill" style="width:${pct}%"></div></div>
+    </div>`;
+  }).join('');
+}
 function updateHeaderStats(){
   const days=Object.keys(state.completed).length;
   const words=Object.keys(state.learned).length;
-  const totalWords=VOCABULARY.reduce((s,d)=>s+d.words.length,0);
+  const totalWords=BOOKS.reduce((s,b)=>s+b.data.reduce((x,d)=>x+d.words.length,0),0)||1;
+  const totalDays=totalDayCount();
   $('ms-days').textContent=days;
   $('ms-words').textContent=words;
   $('ms-stars').textContent=Object.keys(state.bookmarks).length;
@@ -841,47 +981,66 @@ function updateHeaderStats(){
     $('hero-pct').textContent=pct+'%';
     const circ=169.6;
     $('hero-ring').style.strokeDashoffset=circ-(circ*pct/100);
-    $('hero-msg').textContent = days===0 ? 'Day를 선택해 학습을 시작하세요'
-      : days===30 ? '30일 코스 완주! 대단해요 🏆'
+    $('hero-msg').textContent = days===0 ? '단어장을 선택해 학습을 시작하세요'
+      : days>=totalDays && totalDays>0 ? '모든 코스 완주! 대단해요 🏆'
       : `${days}개 Day 완료 · 단어 ${words}개 암기 중`;
   }
 }
 
 // ============ Day 상세 ============
-function openDay(day){
-  currentDay=day;
-  const data=VOCABULARY.find(d=>d.day===day);
+function openDay(book, day){
+  currentBook=book; currentDay=day;
+  const b=bookById(book); if(!b) return;
+  const data=b.data.find(d=>d.day===day);
   if(!data) return;
-  $('day-title').innerHTML=`DAY ${day} · ${esc(data.title)}<small>${data.words.length}개 단어</small>`;
-  renderWordList(data.words, day);
+  $('day-title').innerHTML=`${b.name}${data.week?` · WEEK ${data.week}`:''} · DAY ${day} · ${esc(data.title)}${data.part?` <small style="opacity:.8">${esc(data.part)}</small>`:''}<small>${data.words.length}개 단어</small>`;
+  renderWordList(data.words, book, day);
   showView('day');
 }
-function renderWordList(words, day){
+function renderWordList(words, book, day){
   $('word-list').innerHTML=words.map((w,i)=>{
-    const on=state.bookmarks[wordKey(day,w.word)];
+    const on=state.bookmarks[wordKey(book,day,w.word)];
+    // 파생어
+    const deriv=(w.derivatives&&w.derivatives.length)
+      ? `<div class="wderiv">${w.derivatives.map(d=>`<span class="dv">${esc(d.word)}</span>${d.pos?`<span class="dp">${esc(d.pos)}</span>`:''}${esc(d.meaning||'')}`).join(' · ')}</div>`
+      : '';
+    // 기출 예문(여러 개) — examples[] 우선, 없으면 단일 example
+    const exList=(w.examples&&w.examples.length) ? w.examples : (w.example?[{en:w.example,ko:w.exampleKor||''}]:[]);
+    const ex=exList.map((e,j)=>`<div class="wex">${j===0?'<span class="exlabel">기출</span>':''}<button class="spk" onclick="speak('${speakAttr(e.en)}')" title="예문 발음">🔊</button> ${highlightWord(e.en, w.word)}</div>${e.ko?`<div class="wexk">${esc(e.ko)}</div>`:''}`).join('');
+    // 만점 TIP
+    const tip=w.tip?`<div class="wtip"><span class="tlabel">만점 TIP</span>${esc(w.tip)}</div>`:'';
+    // Part 5,6 기출 문제
+    const quiz=w.quiz?`<div class="wquiz">Q. ${esc(w.quiz.sentence)}<br><span class="qopt">(A) ${esc(w.quiz.a)} &nbsp; (B) ${esc(w.quiz.b)}</span> → 정답 <span class="qans">(${esc(w.quiz.answer)})</span></div>`:'';
     return `<div class="word-card">
       <div class="wnum">${i+1}</div>
       <div class="wbody">
-        <div class="wtop"><span class="wword">${esc(w.word)}</span><span class="wpos">${posKor(w.pos)}</span><button class="spk" onclick="speak('${speakAttr(w.word)}')" title="단어 발음">🔊</button></div>
-        <div class="wmean">${esc(w.meaning)}</div>
-        <div class="wex"><button class="spk" onclick="speak('${speakAttr(w.example)}')" title="예문 발음">🔊</button> ${highlightWord(w.example, w.word)}</div>
-        <div class="wexk">${esc(w.exampleKor)}</div>
+        <div class="wtop"><span class="wword">${esc(w.word)}</span>${w.pos?`<span class="wpos">${posKor(w.pos)}</span>`:''}<button class="spk" onclick="speak('${speakAttr(w.word)}')" title="단어 발음">🔊</button></div>
+        ${w.meaning?`<div class="wmean">${esc(w.meaning)}</div>`:''}
+        ${deriv}
+        ${ex}
+        ${quiz}
+        ${tip}
       </div>
-      <button class="star-btn ${on?'on':''}" onclick="toggleBookmark('${q(w.word)}',${day},this)">${on?'★':'☆'}<span class="slabel">${on?'저장됨':'즐겨찾기'}</span></button>
+      <button class="star-btn ${on?'on':''}" onclick="toggleBookmark('${q(book)}',${day},'${q(w.word)}',this)">${on?'★':'☆'}<span class="slabel">${on?'저장됨':'즐겨찾기'}</span></button>
     </div>`;
   }).join('');
 }
-function toggleBookmark(word, day, btn){
-  const key=wordKey(day,word);
+function toggleBookmark(book, day, word, btn){
+  const key=wordKey(book,day,word);
   if(state.bookmarks[key]){ delete state.bookmarks[key]; btn.classList.remove('on'); btn.innerHTML='☆<span class="slabel">즐겨찾기</span>'; }
-  else { state.bookmarks[key]={word,day}; btn.classList.add('on'); btn.innerHTML='★<span class="slabel">저장됨</span>'; }
+  else { state.bookmarks[key]={word,day,book}; btn.classList.add('on'); btn.innerHTML='★<span class="slabel">저장됨</span>'; }
   saveState(); updateHeaderStats();
 }
 
 // ============ 플래시카드 ============
+function dayWords(){
+  const b=bookById(currentBook); if(!b) return null;
+  const d=b.data.find(x=>x.day===currentDay);
+  return d?d.words:null;
+}
 function startFlashcard(){
-  const data=VOCABULARY.find(d=>d.day===currentDay); if(!data) return;
-  currentWords=[...data.words]; currentIdx=0; flashFlipped=false; studySource='day';
+  const words=dayWords(); if(!words) return;
+  currentWords=[...words]; currentIdx=0; flashFlipped=false; studySource='day';
   showView('flashcard'); renderFlashcard();
 }
 function renderFlashcard(){
@@ -923,25 +1082,32 @@ function advanceCard(){
 }
 function markKnown(known){
   const w=currentWords[currentIdx];
-  if(studySource==='day' || studySource==='custom'){
-    const key=wordKey(currentDay,w.word);
-    if(known){ state.learned[key]=true; delete state.wrongs[key]; }
-    else state.wrongs[key]={...w, day:currentDay};
-    saveState();
-  }
+  const bk=w.book||currentBook, dy=w.day||currentDay;
+  const key=wordKey(bk,dy,w.word);
+  if(known){ state.learned[key]=true; delete state.wrongs[key]; }
+  else state.wrongs[key]={...w, day:dy, book:bk};
+  saveState();
   nextCard();
 }
 function shuffleFlashcards(){ currentWords=shuffle(currentWords); currentIdx=0; flashFlipped=false; renderFlashcard(); toast('🔀 섞었어요'); }
 function completeFlash(){
-  if(studySource==='day' && currentDay){ state.completed[currentDay]=true; saveState(); }
+  if(studySource==='day' && currentDay){ state.completed[`${currentBook}:${currentDay}`]=true; saveState(); }
   showResult(currentWords.length, currentWords.length, [], '플래시카드 완료!');
 }
 
 // ============ 퀴즈 ============
-function startQuiz(type){ const data=VOCABULARY.find(d=>d.day===currentDay); if(!data) return; studySource='day'; setupQuiz(data.words,type,currentDay); }
+function startQuiz(type){ const words=dayWords(); if(!words) return; studySource='day'; setupQuiz(words,type,currentDay); }
+function distractorPool(){
+  // 혼합 출처(전체평가-전체, 즐겨찾기, 오답) 퀴즈는 전 단어장에서 보기 생성
+  if(studySource==='bookmarks'||studySource==='wrongs'||(studySource==='all'&&aqBook==='all')) return allWords();
+  const b=bookById(currentBook);
+  if(b && b.data.length) return b.data.flatMap(d=>d.words);
+  return allWords();
+}
 function setupQuiz(words, type, day){
   currentMode=type; currentDay=day||currentDay;
-  const pool=VOCABULARY.flatMap(d=>d.words);
+  let pool=distractorPool();
+  if(pool.length<8) pool=pool.concat(allWords());
   quizData=shuffle(words).map(w=>{
     const others=shuffle(pool.filter(x=>x.word!==w.word && x.meaning!==w.meaning)).slice(0,3).map(x=>type==='ko-en'?x.word:x.meaning);
     const correct=type==='ko-en'?w.word:w.meaning;
@@ -962,6 +1128,7 @@ function renderQuiz(){
 }
 function answerQuiz(btn, ans){
   const it=quizData[quizIdx], correct=ans===it.correct;
+  const bk=it.book||currentBook, dy=it.day||currentDay;
   document.querySelectorAll('.quiz-option').forEach(b=>{
     b.classList.add('lock');
     if(b.dataset.opt===it.correct) b.classList.add('correct');
@@ -969,11 +1136,11 @@ function answerQuiz(btn, ans){
   });
   if(correct){
     quizScore++;
-    state.learned[wordKey(currentDay,it.word)]=true;
-    if(studySource!=='wrongs') delete state.wrongs[wordKey(it.day||currentDay,it.word)];
+    state.learned[wordKey(bk,dy,it.word)]=true;
+    delete state.wrongs[wordKey(bk,dy,it.word)];
     $('quiz-fb').innerHTML=`<div class="feedback ok">✅ 정답!</div>`;
   } else {
-    state.wrongs[wordKey(it.day||currentDay,it.word)]={...it, day:it.day||currentDay};
+    state.wrongs[wordKey(bk,dy,it.word)]={...it, day:dy, book:bk};
     quizWrong.push(it);
     $('quiz-fb').innerHTML=`<div class="feedback no">❌ 정답: ${esc(it.correct)}</div><div class="explain"><span class="ew">${esc(it.word)}</span> (${posKor(it.pos)}) — ${esc(it.meaning)}<span class="ee">${highlightWord(it.example, it.word)}</span><span class="eek">${esc(it.exampleKor)}</span></div>`;
   }
@@ -984,15 +1151,16 @@ function answerQuiz(btn, ans){
 }
 function nextQuizQuestion(){ if(quizIdx<quizData.length-1){ quizIdx++; renderQuiz(); } else finishQuiz(); }
 function finishQuiz(){
-  state.quizHistory.push({ date:nowISO(), day:currentDay, type:currentMode, score:quizScore, total:quizData.length });
+  const histBook = studySource==='day' ? currentBook : studySource==='custom' ? 'my' : studySource==='all' ? aqBook : 'all';
+  state.quizHistory.push({ date:nowISO(), book:histBook, day:currentDay, type:currentMode, score:quizScore, total:quizData.length });
   if(state.quizHistory.length>100) state.quizHistory=state.quizHistory.slice(-100);
-  if(quizScore/quizData.length>=0.8 && studySource==='day') state.completed[currentDay]=true;
+  if(quizScore/quizData.length>=0.8 && studySource==='day') state.completed[`${currentBook}:${currentDay}`]=true;
   saveState();
   showResult(quizScore, quizData.length, quizWrong, '퀴즈 완료!');
 }
 
 // ============ 받아쓰기 ============
-function startTyping(){ const data=VOCABULARY.find(d=>d.day===currentDay); if(!data) return; studySource='day'; setupTyping(data.words,currentDay); }
+function startTyping(){ const words=dayWords(); if(!words) return; studySource='day'; setupTyping(words,currentDay); }
 function setupTyping(words, day){
   currentMode='typing'; currentDay=day||currentDay;
   quizData=shuffle(words); quizIdx=0; quizScore=0; quizWrong=[];
@@ -1013,14 +1181,15 @@ function checkTyping(){
   if(!ans) return;
   inp.disabled=true; $('type-check').style.display='none'; $('type-next').style.display='block';
   $('type-next').textContent = quizIdx<quizData.length-1 ? '다음 →' : '결과 보기 →';
+  const bk=it.book||currentBook, dy=it.day||currentDay;
   if(ans===correct){
     inp.classList.add('ok');
     if(!typingHintUsed) quizScore++;
-    state.learned[wordKey(currentDay,it.word)]=true; delete state.wrongs[wordKey(it.day||currentDay,it.word)];
+    state.learned[wordKey(bk,dy,it.word)]=true; delete state.wrongs[wordKey(bk,dy,it.word)];
     $('type-fb').innerHTML=`<div class="feedback ok">✅ 정답!${typingHintUsed?' (힌트 사용)':''}</div>`;
   } else {
     inp.classList.add('no');
-    state.wrongs[wordKey(it.day||currentDay,it.word)]={...it, day:it.day||currentDay};
+    state.wrongs[wordKey(bk,dy,it.word)]={...it, day:dy, book:bk};
     quizWrong.push(it);
     $('type-fb').innerHTML=`<div class="feedback no">❌ 정답: ${esc(it.word)}</div><div class="explain"><span class="ee">${highlightWord(it.example, it.word)}</span><span class="eek">${esc(it.exampleKor)}</span></div>`;
   }
@@ -1030,9 +1199,10 @@ function checkTyping(){
 function showTypingHint(){ const it=quizData[quizIdx]; $('type-input').value=it.word[0]; $('type-input').focus(); typingHintUsed=true; }
 function nextTypingQuestion(){ if(quizIdx<quizData.length-1){ quizIdx++; renderTyping(); } else finishQuizTyping(); }
 function finishQuizTyping(){
-  state.quizHistory.push({ date:nowISO(), day:currentDay, type:'typing', score:quizScore, total:quizData.length });
+  const histBook = studySource==='day' ? currentBook : studySource==='custom' ? 'my' : studySource==='all' ? aqBook : 'all';
+  state.quizHistory.push({ date:nowISO(), book:histBook, day:currentDay, type:'typing', score:quizScore, total:quizData.length });
   if(state.quizHistory.length>100) state.quizHistory=state.quizHistory.slice(-100);
-  if(quizScore/quizData.length>=0.8 && studySource==='day') state.completed[currentDay]=true;
+  if(quizScore/quizData.length>=0.8 && studySource==='day') state.completed[`${currentBook}:${currentDay}`]=true;
   saveState();
   showResult(quizScore, quizData.length, quizWrong, '받아쓰기 완료!');
 }
@@ -1066,7 +1236,7 @@ function goBack(){
   else if(studySource==='wrongs'){ showView('wrongs'); renderWrongs(); }
   else if(studySource==='all'){ showView('all-quiz'); }
   else if(studySource==='custom'){ openMyWords(); }
-  else if(currentDay) openDay(currentDay);
+  else if(currentDay && bookById(currentBook)) openDay(currentBook, currentDay);
   else goHome();
 }
 function retryQuiz(){
@@ -1100,9 +1270,9 @@ function renderMyWords(){
   </div>`).join('');
 }
 function studyMyWords(mode){
-  const list=(state.customWords||[]).map(w=>({...w, day:'my'}));
+  const list=(state.customWords||[]).map(w=>({...w, day:'my', book:'my'}));
   if(!list.length){ toast('단어가 없어요'); return; }
-  studySource='custom'; currentDay='my';
+  studySource='custom'; currentBook='my'; currentDay='my';
   if(mode==='flashcard'){ currentWords=list; currentIdx=0; flashFlipped=false; showView('flashcard'); renderFlashcard(); }
   else if(mode==='typing'){ studySource='custom'; setupTyping(list,'my'); studySource='custom'; }
   else { studySource='custom'; setupQuiz(list,'en-ko','my'); studySource='custom'; }
@@ -1184,13 +1354,20 @@ function confirmReview(){
 }
 function closeReview(){ $('review-overlay').classList.remove('active'); }
 
-// ============ 즐겨찾기 ============
+// ============ 즐겨찾기 (전 단어장 통합) ============
+function findBookWord(book, day, word){
+  if(book==='my') return (state.customWords||[]).find(x=>x.word===word)||null;
+  const b=bookById(book); if(!b) return null;
+  const dd=b.data.find(d=>d.day===+day);
+  return (dd&&dd.words.find(x=>x.word===word))||null;
+}
 function bookmarkWords(){
   return Object.keys(state.bookmarks).map(k=>{
-    const [day,w]=k.split(':');
-    const dd=VOCABULARY.find(d=>d.day===+day);
-    const word=dd&&dd.words.find(x=>x.word===w);
-    return word?{...word, day:+day}:null;
+    const v=state.bookmarks[k]||{};
+    const parts=k.split(':');
+    const book=v.book||parts[0], day=parts[1], w=parts.slice(2).join(':');
+    const word=findBookWord(book, day, w);
+    return word?{...word, day:(book==='my'?'my':+day), book}:null;
   }).filter(Boolean);
 }
 function renderBookmarks(){
@@ -1202,13 +1379,13 @@ function renderBookmarks(){
   if(!list.length){ $('bookmarks-list').innerHTML=`<div class="empty"><div class="e-emoji">⭐</div><p>즐겨찾기한 단어가 없어요</p><p class="e-sub">단어 옆 ☆ 즐겨찾기 버튼을 눌러보세요</p></div>`; return; }
   $('bookmarks-list').innerHTML=list.map((w,i)=>`<div class="word-card">
     <div class="wnum">${i+1}</div>
-    <div class="wbody"><div class="wtop"><span class="wword">${esc(w.word)}</span><span class="wpos">${posKor(w.pos)}</span><span class="wtag">DAY ${w.day}</span></div>
-    <div class="wmean">${esc(w.meaning)}</div><div class="wex">${highlightWord(w.example, w.word)}</div><div class="wexk">${esc(w.exampleKor)}</div></div>
-    <button class="star-btn on" onclick="toggleBookmark('${q(w.word)}',${w.day},this); renderBookmarks();">★<span class="slabel">해제</span></button>
+    <div class="wbody"><div class="wtop"><span class="wword">${esc(w.word)}</span><span class="wpos">${posKor(w.pos)}</span><span class="wtag">${esc(bookName(w.book))}${w.day!=='my'?` · DAY ${w.day}`:''}</span></div>
+    <div class="wmean">${esc(w.meaning)}</div>${w.example?`<div class="wex">${highlightWord(w.example, w.word)}</div>`:''}${w.exampleKor?`<div class="wexk">${esc(w.exampleKor)}</div>`:''}</div>
+    <button class="star-btn on" onclick="toggleBookmark('${q(w.book)}','${q(String(w.day))}','${q(w.word)}',this); renderBookmarks();">★<span class="slabel">해제</span></button>
   </div>`).join('');
 }
 
-// ============ 오답노트 ============
+// ============ 오답노트 (전 단어장 통합) ============
 function renderWrongs(){
   const list=Object.values(state.wrongs).filter(Boolean);
   $('wr-count').textContent=`(${list.length})`;
@@ -1219,12 +1396,12 @@ function renderWrongs(){
   if(!list.length){ $('wrongs-list').innerHTML=`<div class="empty"><div class="e-emoji">✨</div><p>틀린 단어가 없어요!</p><p class="e-sub">퀴즈에서 틀린 단어가 자동 저장돼요</p></div>`; return; }
   $('wrongs-list').innerHTML=list.map((w,i)=>`<div class="word-card">
     <div class="wnum">${i+1}</div>
-    <div class="wbody"><div class="wtop"><span class="wword">${esc(w.word)}</span><span class="wpos">${posKor(w.pos)}</span><span class="wtag">DAY ${w.day}</span></div>
+    <div class="wbody"><div class="wtop"><span class="wword">${esc(w.word)}</span><span class="wpos">${posKor(w.pos)}</span><span class="wtag">${esc(bookName(w.book||'siwon'))}${w.day!=='my'?` · DAY ${w.day}`:''}</span></div>
     <div class="wmean">${esc(w.meaning)}</div><div class="wex">${highlightWord(w.example||'', w.word)}</div><div class="wexk">${esc(w.exampleKor||'')}</div></div>
-    <button class="star-btn" style="background:var(--danger-light); border-color:#fca5a5; color:var(--danger);" onclick="removeWrong('${q(w.word)}',${w.day})">✕<span class="slabel">제거</span></button>
+    <button class="star-btn" style="background:var(--danger-light); border-color:#fca5a5; color:var(--danger);" onclick="removeWrong('${q(w.book||'siwon')}','${q(String(w.day))}','${q(w.word)}')">✕<span class="slabel">제거</span></button>
   </div>`).join('');
 }
-function removeWrong(word,day){ delete state.wrongs[wordKey(day,word)]; saveState(); updateHeaderStats(); renderWrongs(); }
+function removeWrong(book,day,word){ delete state.wrongs[wordKey(book,day,word)]; saveState(); updateHeaderStats(); renderWrongs(); }
 function clearWrongs(){
   if(!Object.keys(state.wrongs).length) return;
   confirmDo('오답노트 비우기','모든 오답을 삭제할까요?',()=>{ state.wrongs={}; saveState(); updateHeaderStats(); renderWrongs(); closeConfirm(); });
@@ -1237,35 +1414,72 @@ function studyFromList(source,mode){
   else setupQuiz(list,'en-ko',null);
 }
 
-// ============ 전체 평가 ============
+// ============ 전체 평가 (단어장 선택 + 통합) ============
+function renderAQBooks(){
+  const box=$('aq-books'); if(!box) return;
+  const opts=[{id:'all', name:'🔀 전체'}].concat(BOOKS.filter(b=>b.data.length).map(b=>({id:b.id, name:b.icon+' '+b.name})));
+  box.innerHTML=opts.map(o=>`<button class="chip ${aqBook===o.id?'active':''}" onclick="setAQBook('${o.id}',this)">${o.name}</button>`).join('');
+  syncAQRange();
+}
+function setAQBook(id,btn){
+  aqBook=id;
+  document.querySelectorAll('#aq-books .chip').forEach(c=>c.classList.remove('active'));
+  btn.classList.add('active');
+  syncAQRange();
+}
+function syncAQRange(){
+  const maxDay = aqBook==='all'
+    ? Math.max(1, ...BOOKS.map(b=>b.data.length))
+    : (bookData(aqBook).length||1);
+  ['aq-start','aq-end'].forEach(id=>{ const el=$(id); el.max=maxDay; if(+el.value>maxDay) el.value=maxDay; });
+  if(+$('aq-end').value<1||$('aq-end').value==='') $('aq-end').value=maxDay;
+  $('aq-end').value=Math.min(+$('aq-end').value||maxDay, maxDay)||maxDay;
+}
 function setAQCount(n,btn){ aqCount=n; document.querySelectorAll('#aq-chips .chip').forEach(c=>c.classList.remove('active')); btn.classList.add('active'); }
 function startAllQuiz(type){
   let s=+$('aq-start').value, e=+$('aq-end').value;
   if(s>e){ const t=s; s=e; e=t; }
-  const pool=VOCABULARY.filter(d=>d.day>=s&&d.day<=e).flatMap(d=>d.words.map(w=>({...w, day:d.day})));
-  if(!pool.length) return;
+  const srcBooks = aqBook==='all' ? BOOKS : BOOKS.filter(b=>b.id===aqBook);
+  const pool=srcBooks.flatMap(b=>b.data.filter(d=>d.day>=s&&d.day<=e).flatMap(d=>d.words.map(w=>({...w, day:d.day, book:b.id}))));
+  if(!pool.length){ toast('출제할 단어가 없어요'); return; }
   const sel=shuffle(pool).slice(0,Math.min(aqCount,pool.length));
-  studySource='all'; currentDay=null;
+  studySource='all'; currentDay=null; currentBook=aqBook==='all'?'siwon':aqBook;
   if(type==='typing') setupTyping(sel,null); else setupQuiz(sel,type,null);
 }
 
-// ============ 통계 ============
+// ============ 통계 (전 단어장 통합) ============
 function renderStats(){
   const days=Object.keys(state.completed).length;
+  const totalDays=totalDayCount();
   const learned=Object.keys(state.learned).length;
-  const totalWords=VOCABULARY.reduce((s,d)=>s+d.words.length,0);
+  const totalWords=BOOKS.reduce((s,b)=>s+b.data.reduce((x,d)=>x+d.words.length,0),0);
   const bm=Object.keys(state.bookmarks).length, wr=Object.keys(state.wrongs).length;
   const hist=[...state.quizHistory].reverse().slice(0,12);
   const totalQ=state.quizHistory.length;
   const avg=totalQ?Math.round(state.quizHistory.reduce((s,x)=>s+x.score/x.total*100,0)/totalQ):0;
+  const bookRows=BOOKS.filter(b=>b.data.length).map(b=>{
+    const s=bookStats(b);
+    const pct=s.total?Math.round(s.learned/s.total*100):0;
+    return `<div style="margin-bottom:10px;">
+      <div style="display:flex; justify-content:space-between; font-size:0.85em; margin-bottom:4px;">
+        <b>${b.icon} ${esc(b.name)}</b>
+        <span style="color:var(--text-light);">${s.doneDays}/${s.days} Day · ${s.learned}/${s.total} 단어 · ${pct}%</span>
+      </div>
+      <div class="pbar" style="height:7px; background:var(--border); border-radius:4px; overflow:hidden;"><div style="height:100%; width:${pct}%; background:${b.color}; border-radius:4px;"></div></div>
+    </div>`;
+  }).join('');
   $('stats-content').innerHTML=`
     <div class="stat-grid">
-      <div class="stat-box"><div class="sv" style="color:var(--primary)">${days}/30</div><div class="sl">완료한 Day</div></div>
+      <div class="stat-box"><div class="sv" style="color:var(--primary)">${days}/${totalDays}</div><div class="sl">완료한 Day</div></div>
       <div class="stat-box"><div class="sv" style="color:var(--success)">${learned}</div><div class="sl">학습 단어 / ${totalWords}</div></div>
       <div class="stat-box"><div class="sv" style="color:var(--warning)">${bm}</div><div class="sl">즐겨찾기</div></div>
       <div class="stat-box"><div class="sv" style="color:var(--danger)">${wr}</div><div class="sl">오답 단어</div></div>
       <div class="stat-box"><div class="sv" style="color:var(--primary)">${totalQ}</div><div class="sl">총 퀴즈 풀이</div></div>
       <div class="stat-box"><div class="sv" style="color:var(--violet)">${avg}%</div><div class="sl">평균 점수</div></div>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <b style="font-size:0.95em;">📚 단어장별 진도</b>
+      <div style="margin-top:12px;">${bookRows}</div>
     </div>
     <div class="card">
       <b style="font-size:0.95em;">📜 최근 퀴즈 기록</b>
@@ -1275,7 +1489,8 @@ function renderStats(){
         const c=p>=80?'var(--success)':p>=60?'var(--warning)':'var(--danger)';
         const d=new Date(x.date);
         const tl=x.type==='en-ko'?'영→한':x.type==='ko-en'?'한→영':'받아쓰기';
-        return `<div class="history-row"><div class="hl"><b>${x.day?('DAY '+x.day):'전체'} · ${tl}</b><small>${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,'0')}</small></div><div class="hr" style="color:${c}">${x.score}/${x.total} (${p}%)</div></div>`;
+        const bn=x.book&&x.book!=='all'?bookName(x.book):'';
+        return `<div class="history-row"><div class="hl"><b>${bn?esc(bn)+' · ':''}${x.day&&x.day!=='my'?('DAY '+x.day):(x.day==='my'?'내 단어장':'전체')} · ${tl}</b><small>${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${String(d.getMinutes()).padStart(2,'0')}</small></div><div class="hr" style="color:${c}">${x.score}/${x.total} (${p}%)</div></div>`;
       }).join('') : '<p style="color:var(--text-light); font-size:0.88em;">아직 퀴즈 기록이 없어요</p>'}
       </div>
       <button class="btn btn-ghost btn-block" style="color:var(--danger); margin-top:14px;" onclick="resetAll()">🗑️ 모든 진도 초기화</button>
@@ -1316,7 +1531,7 @@ function importData(input){
     try{
       const im=JSON.parse(e.target.result);
       confirmDo('백업 불러오기','현재 진도를 백업 내용으로 덮어쓸까요?',()=>{
-        state={...defState(), ...im}; saveState(); updateHeaderStats();
+        state=migrateState(im); saveState(); updateHeaderStats();
         closeConfirm(); closeSync(); goHome(); toast('백업을 불러왔어요');
       });
     }catch{ confirmDo('오류','올바른 백업 파일이 아니에요.',closeConfirm); }
@@ -1377,12 +1592,15 @@ function attachSync(code){
     const first=fb.initial; fb.initial=false;
     if(remote){
       if(!first && fb.writeTimer) return;          // 편집 중인 내 변경 보호 (최초 로드는 무조건 클라우드 적용)
-      if(_ck(remote)!==_ck(state)){
+      const wasOld = !(remote.ver>=3);
+      const rm = migrateState(remote);             // 구버전 클라우드 데이터도 새 키 형식으로 변환
+      if(_ck(rm)!==_ck(state)){
         fb.applying=true;
-        state={...defState(), ...remote};
+        state=rm;
         saveLocal(); refreshView();
         fb.applying=false;
       }
+      if(wasOld) fbWrite();                        // 클라우드도 새 형식으로 업그레이드
     } else if(first && _hasProg(state)){
       fbWrite(); // 클라우드 비었는데 로컬 진도 있으면 올림
     }
@@ -1407,11 +1625,12 @@ function refreshView(){
   const active=document.querySelector('.view.active'); if(!active) return;
   const id=active.id;
   if(id==='view-home') renderHome();
+  else if(id==='view-book') renderBook();
   else if(id==='view-bookmarks') renderBookmarks();
   else if(id==='view-wrongs') renderWrongs();
   else if(id==='view-stats') renderStats();
   else if(id==='view-mywords') renderMyWords();
-  else if(id==='view-day'&&currentDay){ const d=VOCABULARY.find(x=>x.day===currentDay); if(d) renderWordList(d.words,currentDay); }
+  else if(id==='view-day'&&currentDay){ const b=bookById(currentBook); const d=b&&b.data.find(x=>x.day===currentDay); if(d) renderWordList(d.words,currentBook,currentDay); }
 }
 function openSync(){}
 function closeSync(){ const o=$('sync-overlay'); if(o) o.classList.remove('active'); }
@@ -1474,6 +1693,7 @@ document.addEventListener('keydown',e=>{
 
 // ============ 초기화 ============
 renderHome();
+renderAQBooks();
 fbInit();
 updateUserLabel();
 </script>
