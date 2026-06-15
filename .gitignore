@@ -1,0 +1,17 @@
+# 무거운 원본 PDF (업로드 금지 · 100MB 초과 + 저작권)
+*.pdf
+
+# 작업용/임시 폴더 (추출 원본·렌더 이미지)
+_extract/
+_pages/
+_secret/
+_lc/
+_tools/
+
+# 로컬 설정
+.claude/
+
+# OS 파일
+Thumbs.db
+.DS_Store
+desktop.ini
