@@ -265,6 +265,12 @@
   .lc-size.on { background:#6366f1; }
   .lc-size i { display:block; background:#fff; border-radius:50%; }
   .lc-fs-page .lc-ink { position:absolute; left:0; top:0; width:100%; height:100%; z-index:3; touch-action:pan-y; }
+  /* iOS 길게 누르면 뜨는 이미지 복사/저장 메뉴·파란 선택블록 방지 */
+  #lc-fs, .lc-fs-body, .lc-page img, .lc-fs-page img, .lc-ink {
+    -webkit-touch-callout: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+    -webkit-user-drag: none; user-drag: none;
+  }
+  .lc-page img, .lc-fs-page img, .lc-ink { -webkit-tap-highlight-color: transparent; }
   .lc-fs-body { flex:1; overflow:auto; -webkit-overflow-scrolling:touch; padding-bottom:140px; }
   .lc-fs-page { position:relative; }
   .lc-fs-page > img { display:block; width:100%; height:auto; }
