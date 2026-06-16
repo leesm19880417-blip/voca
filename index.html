@@ -1255,76 +1255,93 @@ function renderLcFs(){
 
 // ============ 펜 필기 (Apple Pencil) ============
 let _penOn=false, _penTool='pen', _penColor='#111827', _penSize=1, _penFinger=false;
-let _ink={canvas:null,ctx:null,page:null,strokes:[],w:0,h:0,dpr:1,drawing:false,cur:null};
+// base = 완성된 획 캐시(오프스크린), ctx = 보이는 캔버스
+let _ink={canvas:null,ctx:null,base:null,bctx:null,page:null,strokes:[],w:0,h:0,dpr:1};
+let _draw={active:false,id:null,stroke:null}; // 그리는 중
+let _scrl={active:false,id:null,y0:0,top0:0};  // 손가락 스크롤
 function lcInkKey(p){ return 'lc_ink_'+p; }
 function lcLoadInk(p){ try{ return JSON.parse(localStorage.getItem(lcInkKey(p))||'[]'); }catch(e){ return []; } }
 function lcSaveInk(){ try{ localStorage.setItem(lcInkKey(_ink.page), JSON.stringify(_ink.strokes)); }catch(e){ toast('필기 저장 공간이 부족해요'); } }
 function lcInitInk(page){
   const cv=$('lc-ink'); const img=cv&&cv.previousElementSibling; if(!cv||!img) return;
   _ink.canvas=cv; _ink.ctx=cv.getContext('2d'); _ink.page=page; _ink.strokes=lcLoadInk(page);
-  const fit=()=>{ const r=img.getBoundingClientRect(); if(!r.width) return; _ink.dpr=window.devicePixelRatio||1; _ink.w=r.width; _ink.h=r.height; cv.width=r.width*_ink.dpr; cv.height=r.height*_ink.dpr; cv.style.width=r.width+'px'; cv.style.height=r.height+'px'; _ink.ctx.setTransform(_ink.dpr,0,0,_ink.dpr,0,0); lcInkRedraw(); };
+  if(!_ink.base){ _ink.base=document.createElement('canvas'); _ink.bctx=_ink.base.getContext('2d'); }
+  const fit=()=>{ const r=img.getBoundingClientRect(); if(!r.width) return;
+    const dpr=window.devicePixelRatio||1; _ink.dpr=dpr; _ink.w=r.width; _ink.h=r.height;
+    [cv,_ink.base].forEach(cc=>{ cc.width=Math.round(r.width*dpr); cc.height=Math.round(r.height*dpr); });
+    cv.style.width=r.width+'px'; cv.style.height=r.height+'px';
+    _ink.ctx.setTransform(dpr,0,0,dpr,0,0); _ink.bctx.setTransform(dpr,0,0,dpr,0,0);
+    lcRebuildBase(); lcPaint();
+  };
   if(img.complete && img.naturalWidth) fit(); else img.onload=fit;
   cv._fit=fit;
-  cv.onpointerdown=lcInkDown; cv.onpointermove=lcInkMove; cv.onpointerup=lcInkUp; cv.onpointercancel=lcInkUp; cv.onpointerleave=lcInkUp;
+  cv.onpointerdown=lcPD; cv.onpointermove=lcPM; cv.onpointerup=lcPU; cv.onpointercancel=lcPU;
   lcApplyPenMode();
 }
-function lcApplyPenMode(){ if(_ink.canvas){ _ink.canvas.style.pointerEvents=_penOn?'auto':'none'; _ink.canvas.style.touchAction=_penOn?'none':'pan-y'; } }
-function lcInkRedraw(){
-  const c=_ink.ctx; if(!c) return; c.clearRect(0,0,_ink.w,_ink.h);
-  _ink.strokes.forEach(s=>lcDrawStroke(s));
-}
-function lcDrawStroke(s){
-  const c=_ink.ctx; if(!c||!s.pts.length) return;
+function lcApplyPenMode(){ if(_ink.canvas){ _ink.canvas.style.pointerEvents=_penOn?'auto':'none'; _ink.canvas.style.touchAction='none'; } }
+// 한 획을 부드러운 곡선(이차 베지어 중점보간)으로 그림
+function lcStrokePath(c,s){
+  const p=s.pts; if(!p||!p.length) return;
+  c.save();
   c.globalCompositeOperation=s.erase?'destination-out':'source-over';
-  c.strokeStyle=s.color; c.lineWidth=s.size; c.lineCap='round'; c.lineJoin='round';
-  c.globalAlpha=s.hl?0.4:1;
-  c.beginPath(); c.moveTo(s.pts[0][0]*_ink.w, s.pts[0][1]*_ink.h);
-  for(let i=1;i<s.pts.length;i++) c.lineTo(s.pts[i][0]*_ink.w, s.pts[i][1]*_ink.h);
-  if(s.pts.length===1){ c.lineTo(s.pts[0][0]*_ink.w+0.1, s.pts[0][1]*_ink.h+0.1); }
-  c.stroke(); c.globalAlpha=1; c.globalCompositeOperation='source-over';
+  c.strokeStyle=s.color; c.globalAlpha=s.hl?0.4:1; c.lineWidth=s.size; c.lineCap='round'; c.lineJoin='round';
+  if(p.length===1){ c.fillStyle=s.color; c.beginPath(); c.arc(p[0][0]*_ink.w,p[0][1]*_ink.h,Math.max(0.7,s.size/2),0,6.2832); c.fill(); c.restore(); return; }
+  c.beginPath(); c.moveTo(p[0][0]*_ink.w,p[0][1]*_ink.h);
+  for(let i=1;i<p.length-1;i++){ const x1=p[i][0]*_ink.w,y1=p[i][1]*_ink.h,x2=p[i+1][0]*_ink.w,y2=p[i+1][1]*_ink.h; c.quadraticCurveTo(x1,y1,(x1+x2)/2,(y1+y2)/2); }
+  const L=p.length-1; c.lineTo(p[L][0]*_ink.w,p[L][1]*_ink.h);
+  c.stroke(); c.restore();
 }
-function lcInkPt(e){ const r=_ink.canvas.getBoundingClientRect(); return [ (e.clientX-r.left)/_ink.w, (e.clientY-r.top)/_ink.h ]; }
+function lcRebuildBase(){ const c=_ink.bctx; if(!c) return; c.clearRect(0,0,_ink.w,_ink.h); _ink.strokes.forEach(s=>lcStrokePath(c,s)); }
+function lcPaint(){ const c=_ink.ctx; if(!c) return; c.clearRect(0,0,_ink.w,_ink.h); if(_ink.base) c.drawImage(_ink.base,0,0,_ink.w,_ink.h); if(_draw.stroke) lcStrokePath(c,_draw.stroke); }
+function lcPt(e){ const r=_ink.canvas.getBoundingClientRect(); return [ (e.clientX-r.left)/_ink.w, (e.clientY-r.top)/_ink.h ]; }
 function lcMakeStroke(){
-  if(_penTool==='erase') return {erase:true,color:'#000',size:[18,30,44][_penSize],pts:[]};
+  if(_penTool==='erase') return {erase:true,color:'#000',size:[16,26,40][_penSize],pts:[]};
   if(_penTool==='hl')    return {hl:true,color:_penColor,size:[14,22,32][_penSize],pts:[]};
-  return {color:_penColor,size:[2.5,4.5,8][_penSize],pts:[]};
+  return {color:_penColor,size:[2.2,3.6,6][_penSize],pts:[]};
 }
-function lcInkDown(e){
+function lcPD(e){
   if(!_penOn) return;
-  if(e.pointerType==='touch' && !_penFinger) return;   // 기본: 펜슬만 그림, 손가락은 스크롤(옵션 켜면 손가락도)
+  const finger=(e.pointerType==='touch');
+  if(finger && !_penFinger){           // 손가락 = 스크롤 (단, 펜슬 필기 중이면 무시 = 팜리젝션)
+    if(_draw.active) return;
+    _scrl={active:true,id:e.pointerId,y0:e.clientY,top0:$('lc-fs-body').scrollTop};
+    return;
+  }
   e.preventDefault();
-  if(!_ink.w && _ink.canvas._fit) _ink.canvas._fit();   // 캔버스 크기 미산정 시 보정
+  if(!_ink.w && _ink.canvas._fit) _ink.canvas._fit();
   try{ _ink.canvas.setPointerCapture(e.pointerId); }catch(_){}
-  _ink.cur=lcMakeStroke(); _ink.cur.pts=[lcInkPt(e)];
-  _ink.drawing=true;
-  lcInkRedraw(); lcDrawStroke(_ink.cur);
+  _draw={active:true,id:e.pointerId,stroke:lcMakeStroke()};
+  _draw.stroke.pts.push(lcPt(e));
+  lcPaint();
 }
-function lcInkMove(e){
-  if(!_ink.drawing) return;
-  if(e.pointerType==='touch' && !_penFinger) return;
+function lcPM(e){
+  if(_scrl.active && e.pointerId===_scrl.id){ $('lc-fs-body').scrollTop=_scrl.top0-(e.clientY-_scrl.y0); return; }
+  if(!_draw.active || e.pointerId!==_draw.id) return;
   e.preventDefault();
-  _ink.cur.pts.push(lcInkPt(e));
-  lcInkRedraw(); lcDrawStroke(_ink.cur);
+  const evs=(e.getCoalescedEvents&&e.getCoalescedEvents().length)?e.getCoalescedEvents():[e]; // 펜슬 고밀도 입력
+  for(const ce of evs) _draw.stroke.pts.push(lcPt(ce));
+  lcPaint();
 }
-function lcInkUp(e){
-  if(!_ink.drawing) return;
-  _ink.drawing=false;
-  if(_ink.cur && _ink.cur.pts.length){ _ink.strokes.push(_ink.cur); lcSaveInk(); }
-  _ink.cur=null;
+function lcPU(e){
+  if(_scrl.active && e.pointerId===_scrl.id){ _scrl.active=false; _scrl.id=null; return; }
+  if(!_draw.active || e.pointerId!==_draw.id) return;
+  _draw.active=false;
+  if(_draw.stroke && _draw.stroke.pts.length){ _ink.strokes.push(_draw.stroke); if(_ink.bctx) lcStrokePath(_ink.bctx,_draw.stroke); lcSaveInk(); }
+  _draw.stroke=null; lcPaint();
 }
 function lcTogglePen(){
   _penOn=!_penOn;
   $('lc-pen-toggle').classList.toggle('on',_penOn);
   $('lc-pen-tools').classList.toggle('on',_penOn);
   lcApplyPenMode();
-  toast(_penOn?'✏️ 펜 켜짐 · 펜슬로 필기 (스크롤하려면 펜 끄기)':'펜 꺼짐 · 스크롤 가능');
+  toast(_penOn?'✏️ 펜 켜짐 · 펜슬로 필기, 손가락으로 스크롤':'펜 꺼짐 · 스크롤 가능');
 }
 function lcSetTool(t,btn){ _penTool=t; document.querySelectorAll('.lc-tool').forEach(b=>b.classList.toggle('on',b===btn)); }
 function lcSetColor(c,btn){ _penColor=c; if(_penTool==='erase'){ const pb=document.querySelector('.lc-tool[data-t="pen"]'); lcSetTool('pen',pb); } document.querySelectorAll('.lc-sw').forEach(b=>b.classList.toggle('sel',b===btn)); }
 function lcSetSize(s,btn){ _penSize=s; document.querySelectorAll('.lc-size').forEach(b=>b.classList.toggle('on',b===btn)); }
-function lcToggleFinger(){ _penFinger=!_penFinger; $('lc-finger-btn').classList.toggle('on',_penFinger); toast(_penFinger?'✋ 손가락으로도 필기됨':'펜슬만 필기 (손가락은 스크롤)'); }
-function lcInkUndo(){ if(_ink.strokes.length){ _ink.strokes.pop(); lcSaveInk(); lcInkRedraw(); } }
-function lcInkClear(){ if(!_ink.strokes.length){ toast('필기가 없어요'); return; } confirmDo('필기 전체 지우기','이 페이지의 필기를 모두 지울까요?',()=>{ _ink.strokes=[]; lcSaveInk(); lcInkRedraw(); closeConfirm(); }); }
+function lcToggleFinger(){ _penFinger=!_penFinger; $('lc-finger-btn').classList.toggle('on',_penFinger); toast(_penFinger?'✋ 손가락으로도 필기됨 (스크롤은 펜 끄고)':'펜슬만 필기 · 손가락은 스크롤'); }
+function lcInkUndo(){ if(_ink.strokes.length){ _ink.strokes.pop(); lcSaveInk(); lcRebuildBase(); lcPaint(); } }
+function lcInkClear(){ if(!_ink.strokes.length){ toast('필기가 없어요'); return; } confirmDo('필기 전체 지우기','이 페이지의 필기를 모두 지울까요?',()=>{ _ink.strokes=[]; lcSaveInk(); lcRebuildBase(); lcPaint(); closeConfirm(); }); }
 window.addEventListener('resize',()=>{ if($('lc-fs')&&$('lc-fs').classList.contains('on')&&_ink.canvas&&_ink.canvas._fit) _ink.canvas._fit(); });
 
 // ============ 홈 (단어장 선택) ============
