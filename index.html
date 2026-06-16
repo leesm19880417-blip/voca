@@ -249,6 +249,16 @@
   .lc-fs-nav { margin-left:auto; display:flex; gap:6px; flex-shrink:0; }
   .lc-fs-btn { background:rgba(255,255,255,.16); border:none; color:#fff; border-radius:9px; padding:8px 13px; font-weight:700; cursor:pointer; font-size:0.9em; }
   .lc-fs-btn:active { transform:scale(0.94); }
+  .lc-pen-bar { display:flex; align-items:center; gap:8px; padding:7px 12px; background:#0f172a; border-top:1px solid #334155; flex-wrap:wrap; }
+  .lc-pen-toggle { background:rgba(255,255,255,.16); border:none; color:#fff; border-radius:9px; padding:7px 13px; font-weight:800; cursor:pointer; font-size:0.88em; }
+  .lc-pen-toggle.on { background:#22c55e; }
+  .lc-pen-tools { display:none; align-items:center; gap:7px; flex-wrap:wrap; }
+  .lc-pen-tools.on { display:flex; }
+  .lc-sw { width:26px; height:26px; border-radius:50%; border:2px solid rgba(255,255,255,.4); cursor:pointer; padding:0; }
+  .lc-sw.sel { border-color:#fff; box-shadow:0 0 0 2px #22c55e; }
+  .lc-pen-btn { background:rgba(255,255,255,.14); border:none; color:#fff; border-radius:8px; padding:6px 10px; font-weight:700; cursor:pointer; font-size:0.8em; }
+  .lc-pen-btn.on { background:#f59e0b; }
+  .lc-fs-page .lc-ink { position:absolute; left:0; top:0; width:100%; height:100%; z-index:3; touch-action:pan-y; }
   .lc-fs-body { flex:1; overflow:auto; -webkit-overflow-scrolling:touch; padding-bottom:140px; }
   .lc-fs-page { position:relative; }
   .lc-fs-page > img { display:block; width:100%; height:auto; }
@@ -795,6 +805,18 @@
       <button class="lc-fs-btn" onclick="lcFsNav(1)">다음 ›</button>
     </div>
   </div>
+  <div class="lc-pen-bar" id="lc-pen-bar">
+    <button class="lc-pen-toggle" id="lc-pen-toggle" onclick="lcTogglePen()">✏️ 펜</button>
+    <span class="lc-pen-tools" id="lc-pen-tools">
+      <button class="lc-sw" data-c="#111827" style="background:#111827" onclick="lcSetColor('#111827',this)"></button>
+      <button class="lc-sw" data-c="#ef4444" style="background:#ef4444" onclick="lcSetColor('#ef4444',this)"></button>
+      <button class="lc-sw" data-c="#2563eb" style="background:#2563eb" onclick="lcSetColor('#2563eb',this)"></button>
+      <button class="lc-sw hl" data-c="#fde047" style="background:#fde047" onclick="lcSetColor('#fde047',this)"></button>
+      <button class="lc-pen-btn" id="lc-erase-btn" onclick="lcToggleErase()">🩹 지우개</button>
+      <button class="lc-pen-btn" onclick="lcInkUndo()">↩️ 되돌리기</button>
+      <button class="lc-pen-btn" onclick="lcInkClear()">🗑️ 전체</button>
+    </span>
+  </div>
   <div class="lc-fs-body" id="lc-fs-body"></div>
 </div>
 
@@ -1208,8 +1230,76 @@ function renderLcFs(){
   const pg=LC_DATA.find(p=>p.page===_lcFsPage); if(!pg) return;
   $('lc-fs-title').textContent='p.'+pg.page+(pg.part?(' · '+pg.part):'');
   const auds=(pg.audios||[]).map(a=>`<button class="lc-aud" onclick="lcPlay('${q(a)}')">🎧 ${esc(a)}</button>`).join('');
-  $('lc-fs-body').innerHTML=`<div class="lc-fs-page">${auds?`<div class="lc-audios">${auds}</div>`:''}<img src="lc_pages/p${String(pg.page).padStart(3,'0')}.jpg" alt="p${pg.page}"></div>${lcAnsPanel(pg.page)}`;
+  $('lc-fs-body').innerHTML=`<div class="lc-fs-page">${auds?`<div class="lc-audios">${auds}</div>`:''}<img src="lc_pages/p${String(pg.page).padStart(3,'0')}.jpg" alt="p${pg.page}"><canvas class="lc-ink" id="lc-ink"></canvas></div>${lcAnsPanel(pg.page)}`;
+  lcInitInk(pg.page);
 }
+
+// ============ 펜 필기 (Apple Pencil) ============
+let _penOn=false, _penColor='#111827', _penErase=false;
+let _ink={canvas:null,ctx:null,page:null,strokes:[],w:0,h:0,dpr:1,drawing:false,cur:null};
+function lcInkKey(p){ return 'lc_ink_'+p; }
+function lcLoadInk(p){ try{ return JSON.parse(localStorage.getItem(lcInkKey(p))||'[]'); }catch(e){ return []; } }
+function lcSaveInk(){ try{ localStorage.setItem(lcInkKey(_ink.page), JSON.stringify(_ink.strokes)); }catch(e){ toast('필기 저장 공간이 부족해요'); } }
+function lcInitInk(page){
+  const cv=$('lc-ink'); const img=cv&&cv.previousElementSibling; if(!cv||!img) return;
+  _ink.canvas=cv; _ink.ctx=cv.getContext('2d'); _ink.page=page; _ink.strokes=lcLoadInk(page);
+  const fit=()=>{ const r=img.getBoundingClientRect(); if(!r.width) return; _ink.dpr=window.devicePixelRatio||1; _ink.w=r.width; _ink.h=r.height; cv.width=r.width*_ink.dpr; cv.height=r.height*_ink.dpr; cv.style.width=r.width+'px'; cv.style.height=r.height+'px'; _ink.ctx.setTransform(_ink.dpr,0,0,_ink.dpr,0,0); lcInkRedraw(); };
+  if(img.complete && img.naturalWidth) fit(); else img.onload=fit;
+  cv._fit=fit;
+  cv.onpointerdown=lcInkDown; cv.onpointermove=lcInkMove; cv.onpointerup=lcInkUp; cv.onpointercancel=lcInkUp; cv.onpointerleave=lcInkUp;
+  lcApplyPenMode();
+}
+function lcApplyPenMode(){ if(_ink.canvas){ _ink.canvas.style.pointerEvents=_penOn?'auto':'none'; } }
+function lcInkRedraw(){
+  const c=_ink.ctx; if(!c) return; c.clearRect(0,0,_ink.w,_ink.h);
+  _ink.strokes.forEach(s=>lcDrawStroke(s));
+}
+function lcDrawStroke(s){
+  const c=_ink.ctx; if(!c||!s.pts.length) return;
+  c.globalCompositeOperation=s.erase?'destination-out':'source-over';
+  c.strokeStyle=s.color; c.lineWidth=s.size; c.lineCap='round'; c.lineJoin='round';
+  c.globalAlpha=s.hl?0.4:1;
+  c.beginPath(); c.moveTo(s.pts[0][0]*_ink.w, s.pts[0][1]*_ink.h);
+  for(let i=1;i<s.pts.length;i++) c.lineTo(s.pts[i][0]*_ink.w, s.pts[i][1]*_ink.h);
+  if(s.pts.length===1){ c.lineTo(s.pts[0][0]*_ink.w+0.1, s.pts[0][1]*_ink.h+0.1); }
+  c.stroke(); c.globalAlpha=1; c.globalCompositeOperation='source-over';
+}
+function lcInkPt(e){ const r=_ink.canvas.getBoundingClientRect(); return [ (e.clientX-r.left)/_ink.w, (e.clientY-r.top)/_ink.h ]; }
+function lcInkDown(e){
+  if(!_penOn) return;
+  if(e.pointerType==='touch') return;            // 손가락은 스크롤
+  e.preventDefault();
+  try{ _ink.canvas.setPointerCapture(e.pointerId); }catch(_){}
+  const hl=(_penColor==='#fde047');
+  _ink.cur={ color:_penColor, size:_penErase?26:(hl?16:3), erase:_penErase, hl:hl, pts:[lcInkPt(e)] };
+  _ink.drawing=true;
+}
+function lcInkMove(e){
+  if(!_ink.drawing) return;
+  if(e.pointerType==='touch') return;
+  e.preventDefault();
+  _ink.cur.pts.push(lcInkPt(e));
+  lcInkRedraw(); lcDrawStroke(_ink.cur);
+}
+function lcInkUp(e){
+  if(!_ink.drawing) return;
+  _ink.drawing=false;
+  if(_ink.cur && _ink.cur.pts.length){ _ink.strokes.push(_ink.cur); lcSaveInk(); }
+  _ink.cur=null;
+}
+function lcTogglePen(){
+  _penOn=!_penOn;
+  $('lc-pen-toggle').classList.toggle('on',_penOn);
+  $('lc-pen-tools').classList.toggle('on',_penOn);
+  lcApplyPenMode();
+  if(_penOn && !document.querySelector('.lc-sw.sel')){ const sw=document.querySelector('.lc-sw[data-c="'+_penColor+'"]'); if(sw) sw.classList.add('sel'); }
+  toast(_penOn?'✏️ 펜 켜짐 (펜슬로 필기 · 손가락 스크롤)':'펜 꺼짐');
+}
+function lcSetColor(c,btn){ _penColor=c; _penErase=false; $('lc-erase-btn').classList.remove('on'); document.querySelectorAll('.lc-sw').forEach(b=>b.classList.remove('sel')); if(btn) btn.classList.add('sel'); }
+function lcToggleErase(){ _penErase=!_penErase; $('lc-erase-btn').classList.toggle('on',_penErase); if(_penErase) document.querySelectorAll('.lc-sw').forEach(b=>b.classList.remove('sel')); }
+function lcInkUndo(){ if(_ink.strokes.length){ _ink.strokes.pop(); lcSaveInk(); lcInkRedraw(); } }
+function lcInkClear(){ if(!_ink.strokes.length){ toast('필기가 없어요'); return; } confirmDo('필기 전체 지우기','이 페이지의 필기를 모두 지울까요?',()=>{ _ink.strokes=[]; lcSaveInk(); lcInkRedraw(); closeConfirm(); }); }
+window.addEventListener('resize',()=>{ if($('lc-fs')&&$('lc-fs').classList.contains('on')&&_ink.canvas&&_ink.canvas._fit) _ink.canvas._fit(); });
 
 // ============ 홈 (단어장 선택) ============
 function bookStats(b){
