@@ -258,6 +258,12 @@
   .lc-sw.sel { border-color:#fff; box-shadow:0 0 0 2px #22c55e; }
   .lc-pen-btn { background:rgba(255,255,255,.14); border:none; color:#fff; border-radius:8px; padding:6px 10px; font-weight:700; cursor:pointer; font-size:0.8em; }
   .lc-pen-btn.on { background:#f59e0b; }
+  .lc-tgrp { display:inline-flex; align-items:center; gap:5px; background:rgba(255,255,255,.07); padding:4px 6px; border-radius:10px; }
+  .lc-tool { background:rgba(255,255,255,.14); border:none; color:#fff; border-radius:8px; padding:6px 9px; font-weight:700; cursor:pointer; font-size:0.8em; }
+  .lc-tool.on { background:#6366f1; }
+  .lc-size { width:30px; height:30px; border-radius:8px; border:none; background:rgba(255,255,255,.14); cursor:pointer; display:inline-flex; align-items:center; justify-content:center; }
+  .lc-size.on { background:#6366f1; }
+  .lc-size i { display:block; background:#fff; border-radius:50%; }
   .lc-fs-page .lc-ink { position:absolute; left:0; top:0; width:100%; height:100%; z-index:3; touch-action:pan-y; }
   .lc-fs-body { flex:1; overflow:auto; -webkit-overflow-scrolling:touch; padding-bottom:140px; }
   .lc-fs-page { position:relative; }
@@ -808,13 +814,26 @@
   <div class="lc-pen-bar" id="lc-pen-bar">
     <button class="lc-pen-toggle" id="lc-pen-toggle" onclick="lcTogglePen()">✏️ 펜</button>
     <span class="lc-pen-tools" id="lc-pen-tools">
-      <button class="lc-sw" data-c="#111827" style="background:#111827" onclick="lcSetColor('#111827',this)"></button>
-      <button class="lc-sw" data-c="#ef4444" style="background:#ef4444" onclick="lcSetColor('#ef4444',this)"></button>
-      <button class="lc-sw" data-c="#2563eb" style="background:#2563eb" onclick="lcSetColor('#2563eb',this)"></button>
-      <button class="lc-sw hl" data-c="#fde047" style="background:#fde047" onclick="lcSetColor('#fde047',this)"></button>
-      <button class="lc-pen-btn" id="lc-erase-btn" onclick="lcToggleErase()">🩹 지우개</button>
-      <button class="lc-pen-btn" onclick="lcInkUndo()">↩️ 되돌리기</button>
-      <button class="lc-pen-btn" onclick="lcInkClear()">🗑️ 전체</button>
+      <span class="lc-tgrp">
+        <button class="lc-tool on" data-t="pen" onclick="lcSetTool('pen',this)">🖊️ 펜</button>
+        <button class="lc-tool" data-t="hl" onclick="lcSetTool('hl',this)">🖍️ 형광</button>
+        <button class="lc-tool" data-t="erase" onclick="lcSetTool('erase',this)">🩹 지우개</button>
+      </span>
+      <span class="lc-tgrp" id="lc-sws">
+        <button class="lc-sw sel" data-c="#111827" style="background:#111827" onclick="lcSetColor('#111827',this)"></button>
+        <button class="lc-sw" data-c="#ef4444" style="background:#ef4444" onclick="lcSetColor('#ef4444',this)"></button>
+        <button class="lc-sw" data-c="#2563eb" style="background:#2563eb" onclick="lcSetColor('#2563eb',this)"></button>
+        <button class="lc-sw" data-c="#16a34a" style="background:#16a34a" onclick="lcSetColor('#16a34a',this)"></button>
+        <button class="lc-sw" data-c="#f59e0b" style="background:#f59e0b" onclick="lcSetColor('#f59e0b',this)"></button>
+      </span>
+      <span class="lc-tgrp">
+        <button class="lc-size" data-s="0" onclick="lcSetSize(0,this)"><i style="width:5px;height:5px"></i></button>
+        <button class="lc-size on" data-s="1" onclick="lcSetSize(1,this)"><i style="width:9px;height:9px"></i></button>
+        <button class="lc-size" data-s="2" onclick="lcSetSize(2,this)"><i style="width:15px;height:15px"></i></button>
+      </span>
+      <button class="lc-pen-btn" id="lc-finger-btn" onclick="lcToggleFinger()">✋ 손가락</button>
+      <button class="lc-pen-btn" onclick="lcInkUndo()">↩️</button>
+      <button class="lc-pen-btn" onclick="lcInkClear()">🗑️</button>
     </span>
   </div>
   <div class="lc-fs-body" id="lc-fs-body"></div>
@@ -1235,7 +1254,7 @@ function renderLcFs(){
 }
 
 // ============ 펜 필기 (Apple Pencil) ============
-let _penOn=false, _penColor='#111827', _penErase=false;
+let _penOn=false, _penTool='pen', _penColor='#111827', _penSize=1, _penFinger=false;
 let _ink={canvas:null,ctx:null,page:null,strokes:[],w:0,h:0,dpr:1,drawing:false,cur:null};
 function lcInkKey(p){ return 'lc_ink_'+p; }
 function lcLoadInk(p){ try{ return JSON.parse(localStorage.getItem(lcInkKey(p))||'[]'); }catch(e){ return []; } }
@@ -1249,7 +1268,7 @@ function lcInitInk(page){
   cv.onpointerdown=lcInkDown; cv.onpointermove=lcInkMove; cv.onpointerup=lcInkUp; cv.onpointercancel=lcInkUp; cv.onpointerleave=lcInkUp;
   lcApplyPenMode();
 }
-function lcApplyPenMode(){ if(_ink.canvas){ _ink.canvas.style.pointerEvents=_penOn?'auto':'none'; } }
+function lcApplyPenMode(){ if(_ink.canvas){ _ink.canvas.style.pointerEvents=_penOn?'auto':'none'; _ink.canvas.style.touchAction=_penOn?'none':'pan-y'; } }
 function lcInkRedraw(){
   const c=_ink.ctx; if(!c) return; c.clearRect(0,0,_ink.w,_ink.h);
   _ink.strokes.forEach(s=>lcDrawStroke(s));
@@ -1265,18 +1284,24 @@ function lcDrawStroke(s){
   c.stroke(); c.globalAlpha=1; c.globalCompositeOperation='source-over';
 }
 function lcInkPt(e){ const r=_ink.canvas.getBoundingClientRect(); return [ (e.clientX-r.left)/_ink.w, (e.clientY-r.top)/_ink.h ]; }
+function lcMakeStroke(){
+  if(_penTool==='erase') return {erase:true,color:'#000',size:[18,30,44][_penSize],pts:[]};
+  if(_penTool==='hl')    return {hl:true,color:_penColor,size:[14,22,32][_penSize],pts:[]};
+  return {color:_penColor,size:[2.5,4.5,8][_penSize],pts:[]};
+}
 function lcInkDown(e){
   if(!_penOn) return;
-  if(e.pointerType==='touch') return;            // 손가락은 스크롤
+  if(e.pointerType==='touch' && !_penFinger) return;   // 기본: 펜슬만 그림, 손가락은 스크롤(옵션 켜면 손가락도)
   e.preventDefault();
+  if(!_ink.w && _ink.canvas._fit) _ink.canvas._fit();   // 캔버스 크기 미산정 시 보정
   try{ _ink.canvas.setPointerCapture(e.pointerId); }catch(_){}
-  const hl=(_penColor==='#fde047');
-  _ink.cur={ color:_penColor, size:_penErase?26:(hl?16:3), erase:_penErase, hl:hl, pts:[lcInkPt(e)] };
+  _ink.cur=lcMakeStroke(); _ink.cur.pts=[lcInkPt(e)];
   _ink.drawing=true;
+  lcInkRedraw(); lcDrawStroke(_ink.cur);
 }
 function lcInkMove(e){
   if(!_ink.drawing) return;
-  if(e.pointerType==='touch') return;
+  if(e.pointerType==='touch' && !_penFinger) return;
   e.preventDefault();
   _ink.cur.pts.push(lcInkPt(e));
   lcInkRedraw(); lcDrawStroke(_ink.cur);
@@ -1292,11 +1317,12 @@ function lcTogglePen(){
   $('lc-pen-toggle').classList.toggle('on',_penOn);
   $('lc-pen-tools').classList.toggle('on',_penOn);
   lcApplyPenMode();
-  if(_penOn && !document.querySelector('.lc-sw.sel')){ const sw=document.querySelector('.lc-sw[data-c="'+_penColor+'"]'); if(sw) sw.classList.add('sel'); }
-  toast(_penOn?'✏️ 펜 켜짐 (펜슬로 필기 · 손가락 스크롤)':'펜 꺼짐');
+  toast(_penOn?'✏️ 펜 켜짐 · 펜슬로 필기 (스크롤하려면 펜 끄기)':'펜 꺼짐 · 스크롤 가능');
 }
-function lcSetColor(c,btn){ _penColor=c; _penErase=false; $('lc-erase-btn').classList.remove('on'); document.querySelectorAll('.lc-sw').forEach(b=>b.classList.remove('sel')); if(btn) btn.classList.add('sel'); }
-function lcToggleErase(){ _penErase=!_penErase; $('lc-erase-btn').classList.toggle('on',_penErase); if(_penErase) document.querySelectorAll('.lc-sw').forEach(b=>b.classList.remove('sel')); }
+function lcSetTool(t,btn){ _penTool=t; document.querySelectorAll('.lc-tool').forEach(b=>b.classList.toggle('on',b===btn)); }
+function lcSetColor(c,btn){ _penColor=c; if(_penTool==='erase'){ const pb=document.querySelector('.lc-tool[data-t="pen"]'); lcSetTool('pen',pb); } document.querySelectorAll('.lc-sw').forEach(b=>b.classList.toggle('sel',b===btn)); }
+function lcSetSize(s,btn){ _penSize=s; document.querySelectorAll('.lc-size').forEach(b=>b.classList.toggle('on',b===btn)); }
+function lcToggleFinger(){ _penFinger=!_penFinger; $('lc-finger-btn').classList.toggle('on',_penFinger); toast(_penFinger?'✋ 손가락으로도 필기됨':'펜슬만 필기 (손가락은 스크롤)'); }
 function lcInkUndo(){ if(_ink.strokes.length){ _ink.strokes.pop(); lcSaveInk(); lcInkRedraw(); } }
 function lcInkClear(){ if(!_ink.strokes.length){ toast('필기가 없어요'); return; } confirmDo('필기 전체 지우기','이 페이지의 필기를 모두 지울까요?',()=>{ _ink.strokes=[]; lcSaveInk(); lcInkRedraw(); closeConfirm(); }); }
 window.addEventListener('resize',()=>{ if($('lc-fs')&&$('lc-fs').classList.contains('on')&&_ink.canvas&&_ink.canvas._fit) _ink.canvas._fit(); });
