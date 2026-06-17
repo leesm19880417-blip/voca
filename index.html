@@ -289,7 +289,18 @@
   .lc-pl-rates { display:flex; gap:4px; margin-left:auto; flex-wrap:wrap; }
   .lc-rate { background:rgba(255,255,255,.12); border:none; color:#cbd5e1; border-radius:7px; padding:5px 8px; font-size:0.76em; font-weight:700; cursor:pointer; }
   .lc-rate.on { background:#6366f1; color:#fff; }
-  /* 최빈출 챕터 통합 음원 버튼 */
+  /* 최빈출 챕터 통합 음원 — 책 메인 상단 바 */
+  #book-audio:empty { display:none; }
+  .voca-bar { background:linear-gradient(135deg,#0ea5e9,#6366f1); color:#fff; border-radius:16px; padding:13px 14px; margin-bottom:14px; box-shadow:var(--shadow-sm); }
+  .voca-bar-top { display:flex; align-items:center; gap:10px; }
+  .voca-bar-title { font-weight:800; }
+  .voca-now { margin-left:auto; font-size:0.8em; opacity:.95; }
+  .voca-pp, .voca-stop { background:rgba(255,255,255,.22); border:none; color:#fff; width:38px; height:38px; border-radius:50%; font-size:1.05em; cursor:pointer; flex-shrink:0; }
+  .voca-pp:active, .voca-stop:active { transform:scale(0.9); }
+  .voca-chips { display:flex; flex-wrap:wrap; gap:6px; margin-top:11px; }
+  .voca-chip { background:rgba(255,255,255,.16); border:none; color:#fff; border-radius:9px; padding:7px 11px; font-weight:700; font-size:0.82em; cursor:pointer; }
+  .voca-chip.on { background:#fff; color:#0ea5e9; }
+  .voca-hint { margin-top:9px; font-size:0.72em; opacity:.9; }
   #chapter-audio:empty { display:none; }
   .chapter-aud-btn { width:100%; background:linear-gradient(135deg,#0ea5e9,#6366f1); color:#fff; border:none; border-radius:14px; padding:14px 16px; font-weight:800; font-size:1em; cursor:pointer; box-shadow:var(--shadow-sm); margin-bottom:14px; }
   .chapter-aud-btn small { font-weight:600; opacity:.9; font-size:0.72em; }
@@ -600,6 +611,7 @@
       <button class="icon-btn" onclick="goHome()">←</button>
       <div class="stack-title" id="book-title">단어장</div>
     </div>
+    <div id="book-audio"></div>
     <div class="day-grid" id="day-grid"></div>
   </div>
 
@@ -1146,7 +1158,23 @@ function lcPlayCore(label, src, onEnd){
 function lcPlay(label){ lcPlayCore(label, lcAudioSrc(label), null); }
 // 최빈출 단어장 챕터 통합본 — 끝나면 다음 챕터 자동 재생
 function vocaSrc(day){ return encodeURIComponent('서아쌤의 토익 비밀과외 START_VOCA 음원')+'/'+encodeURIComponent('통합본')+'/'+encodeURIComponent('Playlist '+day+'.mp3'); }
-function vocaPlay(day){ if(day<1||day>10) return; lcPlayCore('최빈출 Playlist '+day+' (전체)', vocaSrc(day), ()=>{ if(day<10){ toast('▶ 다음 챕터 재생: Playlist '+(day+1)); vocaPlay(day+1); } }); }
+let _vocaDay=0;
+function vocaPlay(day){
+  if(day<1||day>10) return;
+  _vocaDay=day;
+  lcPlayCore('최빈출 '+day+'강 (전체)', vocaSrc(day), ()=>{ if(day<10){ toast('▶ 다음 강 재생: '+(day+1)+'강'); vocaPlay(day+1); } else vocaSyncUI(); });
+  if(_lcAudio){ _lcAudio.addEventListener('play',vocaSyncUI); _lcAudio.addEventListener('pause',vocaSyncUI); }
+  vocaSyncUI();
+}
+function vocaPauseToggle(){ if(_lcAudio && _vocaDay){ if(_lcAudio.paused) _lcAudio.play(); else _lcAudio.pause(); } else { vocaPlay(_vocaDay||1); } setTimeout(vocaSyncUI,60); }
+function vocaStop(){ if(_lcAudio){ _lcAudio.pause(); } lcStop(); _vocaDay=0; vocaSyncUI(); }
+function vocaSyncUI(){
+  const playing = !!(_lcAudio && _vocaDay && !_lcAudio.paused);
+  const pp=$('voca-pp'); if(pp) pp.textContent=playing?'⏸':'▶';
+  const now=$('voca-now'); if(now) now.textContent=_vocaDay?(_vocaDay+'강 · '+(playing?'재생 중':'일시정지')):'강을 눌러 재생';
+  document.querySelectorAll('.voca-chip').forEach(c=>c.classList.remove('on'));
+  if(_vocaDay){ const c=$('voca-chip-'+_vocaDay); if(c) c.classList.add('on'); }
+}
 function lcToggle(){ if(!_lcAudio) return; if(_lcAudio.paused) _lcAudio.play(); else _lcAudio.pause(); }
 function lcSkip(n){ if(!_lcAudio) return; _lcAudio.currentTime=Math.max(0,Math.min(_lcAudio.duration||0,_lcAudio.currentTime+n)); }
 function lcSeek(v){ if(!_lcAudio) return; _lcAudio.currentTime=parseFloat(v)||0; }
@@ -1401,6 +1429,21 @@ function renderBook(){
   const b=bookById(currentBook); if(!b) return;
   const s=bookStats(b);
   $('book-title').innerHTML=`${b.icon} ${esc(b.name)}<small>${s.days} Day · ${s.total}개 단어 · 완료 ${s.doneDays}일</small>`;
+  // 최빈출 단어장: 맨 위 챕터 통합 음원 컨트롤
+  if(b.id==='top'){
+    const chips=b.data.map(d=>`<button class="voca-chip" id="voca-chip-${d.day}" onclick="vocaPlay(${d.day})">${d.day}강</button>`).join('');
+    $('book-audio').innerHTML=`<div class="voca-bar">
+      <div class="voca-bar-top">
+        <span class="voca-bar-title">🎧 챕터 통합 음원</span>
+        <span class="voca-now" id="voca-now">강을 눌러 재생</span>
+        <button class="voca-pp" id="voca-pp" onclick="vocaPauseToggle()">▶</button>
+        <button class="voca-stop" onclick="vocaStop()">⏹</button>
+      </div>
+      <div class="voca-chips">${chips}</div>
+      <div class="voca-hint">강을 누르면 그 챕터부터 재생 · 끝나면 다음 강 자동 이어재생</div>
+    </div>`;
+    vocaSyncUI();
+  } else { $('book-audio').innerHTML=''; }
   $('day-grid').innerHTML=b.data.map(d=>{
     const learned=d.words.filter(w=>state.learned[wordKey(b.id,d.day,w.word)]).length;
     const total=d.words.length, pct=total?Math.round(learned/total*100):0, done=state.completed[`${b.id}:${d.day}`];
