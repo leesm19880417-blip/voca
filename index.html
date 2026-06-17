@@ -907,6 +907,7 @@
 <script src="vocab_eduwill.js"></script>
 <script src="vocab_wangchobo.js"></script>
 <script src="vocab_hackers.js"></script>
+<script src="vocab_secret_top.js"></script>
 <script src="lc_data.js"></script>
 <script src="lc_answers.js"></script>
 <script src="lc_answers_p2.js"></script>
@@ -920,6 +921,7 @@ const BOOKS = [
   { id:'eduwill', name:'에듀윌',   icon:'📙', color:'#f59e0b', data:(typeof VOCAB_EDUWILL   !=='undefined'?VOCAB_EDUWILL   :[]) },
   { id:'wang',    name:'왕초보',   icon:'📗', color:'#10b981', data:(typeof VOCAB_WANGCHOBO !=='undefined'?VOCAB_WANGCHOBO :[]) },
   { id:'hackers', name:'해커스',   icon:'📕', color:'#ef4444', data:(typeof VOCAB_HACKERS   !=='undefined'?VOCAB_HACKERS   :[]) },
+  { id:'top',     name:'토익비밀과외(최빈출)', icon:'🎯', color:'#0ea5e9', data:(typeof VOCAB_SECRET_TOP !=='undefined'?VOCAB_SECRET_TOP :[]) },
 ];
 // 새 스키마(examples[]) → 기존 기능(플래시카드·퀴즈)용 단일 example/exampleKor 보강
 BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
@@ -938,7 +940,7 @@ function defState() {
   return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
-const BOOK_IDS = ['siwon','eduwill','wang','hackers','my'];
+const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','my'];
 function migrateState(s){
   s = { ...defState(), ...(s||{}) };
   if(s.ver>=3) return s;

@@ -1,0 +1,379 @@
+[
+  {
+    "no": 1,
+    "word": "purchase",
+    "pos": "n./v.",
+    "meaning": "(명) 구매(품) / (동) 구매하다",
+    "derivatives": [],
+    "examples": [
+      {"en": "offer free after-sales service with all purchases", "ko": "모든 구매에 대해 무료 판매 후 서비스를 제공하다"},
+      {"en": "office supply purchases", "ko": "사무실 용품 구매품들"},
+      {"en": "may purchase food and drinks from the snack bar", "ko": "간이 식당에서 음식과 음료를 구매할 수 있다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 2,
+    "word": "payment",
+    "pos": "n.",
+    "meaning": "(명) ❶ 지불, 납입 ❷ 지불금, 납입금",
+    "derivatives": [],
+    "examples": [
+      {"en": "payment of rent for the property", "ko": "부동산 임대에 대한 지불"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 3,
+    "word": "vary",
+    "pos": "v.",
+    "meaning": "(동) ❶ (크기 등이) 서로[각기] 다르다 ❷ (상황이) 다르다",
+    "derivatives": [],
+    "examples": [
+      {"en": "vary according to the machine purchased", "ko": "구매한 기계에 따라 서로 다르다"},
+      {"en": "vary slightly from company to company", "ko": "회사마다 약간 다르다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 4,
+    "word": "automatically",
+    "pos": "ad.",
+    "meaning": "(부) 자동으로",
+    "derivatives": [],
+    "examples": [
+      {"en": "be automatically deducted from the account", "ko": "계좌에서 자동으로 차감되다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 5,
+    "word": "precisely",
+    "pos": "ad.",
+    "meaning": "(부) ❶ 바로, 꼭 ❷ 정확히",
+    "derivatives": [],
+    "examples": [
+      {"en": "begin precisely at 12:30 P.M.", "ko": "오후 12시 30분에 바로 시작하다"},
+      {"en": "follow the setup instructions precisely", "ko": "설치 안내사항을 정확히 따르다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 6,
+    "word": "responsible",
+    "pos": "a.",
+    "meaning": "(형) 책임이 있는",
+    "derivatives": [],
+    "examples": [
+      {"en": "be responsible for all contract negotiations", "ko": "모든 계약 협상에 대한 책임이 있다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 7,
+    "word": "certain",
+    "pos": "a.",
+    "meaning": "(형) ❶ 확실한, 틀림없는 ❷ 특정한",
+    "derivatives": [],
+    "examples": [
+      {"en": "be certain that Ms. Yoon is qualified", "ko": "윤 씨가 자격을 갖췄다는 것을 확실히 하다"},
+      {"en": "certain retailers", "ko": "특정 소매업자들"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 8,
+    "word": "undergo",
+    "pos": "v.",
+    "meaning": "(동) (변화·안 좋은 일 등을) 겪다, 받다",
+    "derivatives": [],
+    "examples": [
+      {"en": "undergo corporate restructuring", "ko": "회사 구조조정을 겪다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 9,
+    "word": "significant",
+    "pos": "a.",
+    "meaning": "(형) ❶ 중요한 ❷ 상당한",
+    "derivatives": [],
+    "examples": [
+      {"en": "take significant measures", "ko": "중요한 조치들을 취하다"},
+      {"en": "experience significant growth", "ko": "상당한 성장을 경험하다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 10,
+    "word": "widely",
+    "pos": "ad.",
+    "meaning": "(부) ❶ 광범위하게, 널리 ❷ 크게, 대단히",
+    "derivatives": [],
+    "examples": [
+      {"en": "be now widely available", "ko": "현재 광범위하게 이용 가능하다"},
+      {"en": "widely fluctuate", "ko": "크게 변동하다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 11,
+    "word": "variety",
+    "pos": "n.",
+    "meaning": "(명) ❶ 여러 가지, 갖가지 ❷ (제품) 종류",
+    "derivatives": [],
+    "examples": [
+      {"en": "a variety of other administrative tasks", "ko": "여러 가지 다른 행정 업무들"},
+      {"en": "add greater variety to the menu", "ko": "메뉴에 더 많은 종류를 추가하다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 12,
+    "word": "expand",
+    "pos": "v.",
+    "meaning": "(동) 확대하다, 확장시키다",
+    "derivatives": [],
+    "examples": [
+      {"en": "expand its delivery service", "ko": "배달 서비스를 확대하다"},
+      {"en": "expand its customer base", "ko": "고객층을 확장시키다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 13,
+    "word": "outstanding",
+    "pos": "a.",
+    "meaning": "(형) ❶ 우수한, 뛰어난 ❷ 미지불된",
+    "derivatives": [],
+    "examples": [
+      {"en": "receive outstanding service", "ko": "우수한 서비스를 받다"},
+      {"en": "outstanding expenses", "ko": "미지불된 지출 비용들"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 14,
+    "word": "detailed",
+    "pos": "a.",
+    "meaning": "(형) 상세한, 상세히 설명된",
+    "derivatives": [],
+    "examples": [
+      {"en": "detailed information about the new products", "ko": "새로운 제품들에 대한 상세한 정보"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 15,
+    "word": "provide",
+    "pos": "v.",
+    "meaning": "(동) 제공하다",
+    "derivatives": [],
+    "examples": [
+      {"en": "provide the quarterly sales results", "ko": "분기별 영업 결과들을 제공하다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 16,
+    "word": "initially",
+    "pos": "ad.",
+    "meaning": "(부) 처음에",
+    "derivatives": [],
+    "examples": [
+      {"en": "must initially pay all tuition fees", "ko": "처음에 모든 수업료들을 지불해야 한다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 17,
+    "word": "priority",
+    "pos": "n.",
+    "meaning": "(명) 우선 순위",
+    "derivatives": [],
+    "examples": [
+      {"en": "take priority over all other projects", "ko": "모든 다른 프로젝트들보다 우선 순위를 가지다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 18,
+    "word": "alternative",
+    "pos": "n./a.",
+    "meaning": "(명) 대안, 대체재 / (형) 대체의, 대안의",
+    "derivatives": [],
+    "examples": [
+      {"en": "be an excellent alternative to the brand", "ko": "그 브랜드에 대한 훌륭한 대안이 되다"},
+      {"en": "be scheduled for an alternative date", "ko": "대체 일자로 일정이 잡히다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 19,
+    "word": "advise",
+    "pos": "v.",
+    "meaning": "(동) ❶ 권고하다, 충고하다 ❷ 알리다",
+    "derivatives": [],
+    "examples": [
+      {"en": "be advised to check that travelers' passports are valid", "ko": "여행객들의 여권이 유효한지 확인하도록 권고되다"},
+      {"en": "advise staff of changes to meeting schedules", "ko": "직원들에게 회의 일정에 대한 변경사항을 알리다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 20,
+    "word": "measure",
+    "pos": "n./v.",
+    "meaning": "(명) ❶ 조치, 정책 ❷ 양, 정도 / (동) (치수 등을) 측정하다, 재다",
+    "derivatives": [],
+    "examples": [
+      {"en": "utilize the latest security measures", "ko": "최신 보안 조치들을 이용하다"},
+      {"en": "measure all items prior to posting them online", "ko": "온라인에 게시하기 전에 모든 제품들의 치수를 측정하다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 21,
+    "word": "initiative",
+    "pos": "n.",
+    "meaning": "(명) ❶ 계획 ❷ 솔선수범, 진취성 ❸ 주도(권)",
+    "derivatives": [],
+    "examples": [
+      {"en": "introduce similar initiatives", "ko": "유사한 계획들을 도입하다"},
+      {"en": "take the initiative", "ko": "솔선수범하다, 주도권을 쥐다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 22,
+    "word": "soon",
+    "pos": "ad.",
+    "meaning": "(부) 곧",
+    "derivatives": [],
+    "examples": [
+      {"en": "will soon publish a new book", "ko": "곧 새로운 책을 출간할 것이다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 23,
+    "word": "assure",
+    "pos": "v.",
+    "meaning": "(동) ❶ 확신시키다, 장담하다 ❷ 보장하다",
+    "derivatives": [],
+    "examples": [
+      {"en": "assure staff that the merger would benefit them", "ko": "직원들에게 합병이 이득일 것이라고 확신시키다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 24,
+    "word": "renowned",
+    "pos": "a.",
+    "meaning": "(형) 저명한, 유명한",
+    "derivatives": [],
+    "examples": [
+      {"en": "renowned for its architectural beauty", "ko": "건축학적 아름다움으로 저명한"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 25,
+    "word": "orderly",
+    "pos": "a.",
+    "meaning": "(형) ❶ 질서정연한 ❷ 정돈된",
+    "derivatives": [],
+    "examples": [
+      {"en": "leave the concert hall in an orderly fashion", "ko": "공연장을 질서정연하게 떠나다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 26,
+    "word": "lower",
+    "pos": "v./a.",
+    "meaning": "(동) 줄이다, 낮추다 / (형) 더 낮은, 더 아래 쪽의",
+    "derivatives": [],
+    "examples": [
+      {"en": "lower the company's electricity bills", "ko": "회사의 전기세를 줄이다"},
+      {"en": "offer lower rates on international calls", "ko": "국제 전화에 대한 더 낮은 요금을 제공하다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 27,
+    "word": "early",
+    "pos": "a./ad.",
+    "meaning": "(형) ❶ 이른 ❷ 빠른 / (부) ❶ 일찍 ❷ 빨리",
+    "derivatives": [],
+    "examples": [
+      {"en": "arrive early to provide assistance", "ko": "도움을 제공하기 위해 일찍 도착하다"},
+      {"en": "renew subscriptions early to avoid missing an update", "ko": "최신 소식을 놓치는 것을 피하기 위해 빨리 구독을 갱신하다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 28,
+    "word": "implement",
+    "pos": "v.",
+    "meaning": "(동) 시행하다",
+    "derivatives": [],
+    "examples": [
+      {"en": "implement a rigorous training program", "ko": "엄격한 교육 프로그램을 시행하다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 29,
+    "word": "capacity",
+    "pos": "n.",
+    "meaning": "(명) ❶ 수용 인원, 용량 ❷ 생산 능력",
+    "derivatives": [],
+    "examples": [
+      {"en": "improve the seating capacity of the theater", "ko": "극장의 좌석 수용 인원을 향상시키다"},
+      {"en": "increase Marvell Technology's manufacturing capacity", "ko": "마벨 테크놀로지 사의 제조 생산 능력을 증가시키다"}
+    ],
+    "quiz": null,
+    "tip": ""
+  },
+  {
+    "no": 30,
+    "word": "dedicated",
+    "pos": "a.",
+    "meaning": "(형) 헌신하는, 전념하는",
+    "derivatives": [],
+    "examples": [
+      {"en": "consultants dedicated to helping their clients", "ko": "고객들을 돕는 데 헌신하는 상담가들"}
+    ],
+    "quiz": null,
+    "tip": ""
+  }
+]
