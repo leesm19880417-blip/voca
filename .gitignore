@@ -15,6 +15,10 @@ _tools/
 # VOCA 음원 중 개별 단어(표제어별)는 제외 — 통합본만 사용
 서아쌤의 토익 비밀과외 START_VOCA 음원/표제어별/
 
+# 토익비밀과외 MP3 중 앱에서 안 쓰는 음원 제외 (Day _미 음원만 사용)
+*DailyQuiz*.mp3
+*실전TEST*.mp3
+
 # OS 파일
 Thumbs.db
 .DS_Store

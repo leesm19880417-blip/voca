@@ -1156,24 +1156,38 @@ function lcPlayCore(label, src, onEnd){
   }catch(e){ toast('재생 오류'); }
 }
 function lcPlay(label){ lcPlayCore(label, lcAudioSrc(label), null); }
-// 최빈출 단어장 챕터 통합본 — 끝나면 다음 챕터 자동 재생
-function vocaSrc(day){ return encodeURIComponent('서아쌤의 토익 비밀과외 START_VOCA 음원')+'/'+encodeURIComponent('통합본')+'/'+encodeURIComponent('Playlist '+day+'.mp3'); }
-let _vocaDay=0;
-function vocaPlay(day){
-  if(day<1||day>10) return;
-  _vocaDay=day;
-  lcPlayCore('최빈출 '+day+'강 (전체)', vocaSrc(day), ()=>{ if(day<10){ toast('▶ 다음 강 재생: '+(day+1)+'강'); vocaPlay(day+1); } else vocaSyncUI(); });
-  if(_lcAudio){ _lcAudio.addEventListener('play',vocaSyncUI); _lcAudio.addEventListener('pause',vocaSyncUI); }
-  vocaSyncUI();
+// ===== 단어장 책별 음원 (챕터/Day 통합 mp3) — 끝나면 다음 Day 자동 이어재생 =====
+function bookHasAudio(book){ return book==='top'||book==='siwon'; }
+function bookAudioSrc(book, day){
+  if(book==='top') return encodeURIComponent('서아쌤의 토익 비밀과외 START_VOCA 음원')+'/'+encodeURIComponent('통합본')+'/'+encodeURIComponent('Playlist '+day+'.mp3');
+  if(book==='siwon'){ const w=Math.ceil(day/5), d=((day-1)%5)+1; return encodeURIComponent('MP3')+'/'+encodeURIComponent('MP3')+'/'+encodeURIComponent('Week '+w)+'/'+encodeURIComponent('W'+w+'D'+d+'_미.mp3'); }
+  return null;
 }
-function vocaPauseToggle(){ if(_lcAudio && _vocaDay){ if(_lcAudio.paused) _lcAudio.play(); else _lcAudio.pause(); } else { vocaPlay(_vocaDay||1); } setTimeout(vocaSyncUI,60); }
-function vocaStop(){ if(_lcAudio){ _lcAudio.pause(); } lcStop(); _vocaDay=0; vocaSyncUI(); }
-function vocaSyncUI(){
-  const playing = !!(_lcAudio && _vocaDay && !_lcAudio.paused);
-  const pp=$('voca-pp'); if(pp) pp.textContent=playing?'⏸':'▶';
-  const now=$('voca-now'); if(now) now.textContent=_vocaDay?(_vocaDay+'강 · '+(playing?'재생 중':'일시정지')):'강을 눌러 재생';
+function bookAudioLabel(book, day){
+  if(book==='top') return day+'강';
+  if(book==='siwon'){ const w=Math.ceil(day/5), d=((day-1)%5)+1; return 'WEEK '+w+' · DAY '+d; }
+  return 'DAY '+day;
+}
+function bookChipLabel(book, day){ return book==='top' ? (day+'강') : String(day); }
+let _audBook=null, _audDay=0;
+function audPlay(book, day){
+  const b=bookById(book); if(!b) return; const ds=b.data.map(x=>x.day).sort((a,b)=>a-b);
+  if(ds.indexOf(day)<0) return;
+  _audBook=book; _audDay=day;
+  lcPlayCore(bookName(book)+' · '+bookAudioLabel(book,day), bookAudioSrc(book,day), ()=>{
+    const i=ds.indexOf(day); if(i>=0 && i+1<ds.length){ toast('▶ 다음: '+bookAudioLabel(book,ds[i+1])); audPlay(book,ds[i+1]); } else audSyncUI();
+  });
+  if(_lcAudio){ _lcAudio.addEventListener('play',audSyncUI); _lcAudio.addEventListener('pause',audSyncUI); }
+  audSyncUI();
+}
+function audPauseToggle(){ if(_lcAudio && _audDay){ if(_lcAudio.paused) _lcAudio.play(); else _lcAudio.pause(); } else if(_audBook){ const b=bookById(_audBook); audPlay(_audBook, _audDay||(b&&b.data[0].day)); } setTimeout(audSyncUI,60); }
+function audStop(){ if(_lcAudio){ _lcAudio.pause(); } lcStop(); _audDay=0; audSyncUI(); }
+function audSyncUI(){
+  const playing = !!(_lcAudio && _audDay && !_lcAudio.paused);
+  const pp=$('aud-pp'); if(pp) pp.textContent=playing?'⏸':'▶';
+  const now=$('aud-now'); if(now) now.textContent=_audDay?(bookAudioLabel(_audBook,_audDay)+' · '+(playing?'재생 중':'일시정지')):'눌러서 재생';
   document.querySelectorAll('.voca-chip').forEach(c=>c.classList.remove('on'));
-  if(_vocaDay){ const c=$('voca-chip-'+_vocaDay); if(c) c.classList.add('on'); }
+  if(_audDay && _audBook===currentBook){ const c=$('aud-chip-'+_audDay); if(c) c.classList.add('on'); }
 }
 function lcToggle(){ if(!_lcAudio) return; if(_lcAudio.paused) _lcAudio.play(); else _lcAudio.pause(); }
 function lcSkip(n){ if(!_lcAudio) return; _lcAudio.currentTime=Math.max(0,Math.min(_lcAudio.duration||0,_lcAudio.currentTime+n)); }
@@ -1429,20 +1443,20 @@ function renderBook(){
   const b=bookById(currentBook); if(!b) return;
   const s=bookStats(b);
   $('book-title').innerHTML=`${b.icon} ${esc(b.name)}<small>${s.days} Day · ${s.total}개 단어 · 완료 ${s.doneDays}일</small>`;
-  // 최빈출 단어장: 맨 위 챕터 통합 음원 컨트롤
-  if(b.id==='top'){
-    const chips=b.data.map(d=>`<button class="voca-chip" id="voca-chip-${d.day}" onclick="vocaPlay(${d.day})">${d.day}강</button>`).join('');
+  // 음원 있는 단어장: 맨 위 통합 음원 컨트롤
+  if(bookHasAudio(b.id)){
+    const chips=b.data.map(d=>`<button class="voca-chip" id="aud-chip-${d.day}" onclick="audPlay('${b.id}',${d.day})">${esc(bookChipLabel(b.id,d.day))}</button>`).join('');
     $('book-audio').innerHTML=`<div class="voca-bar">
       <div class="voca-bar-top">
-        <span class="voca-bar-title">🎧 챕터 통합 음원</span>
-        <span class="voca-now" id="voca-now">강을 눌러 재생</span>
-        <button class="voca-pp" id="voca-pp" onclick="vocaPauseToggle()">▶</button>
-        <button class="voca-stop" onclick="vocaStop()">⏹</button>
+        <span class="voca-bar-title">🎧 ${b.id==='top'?'챕터 통합 음원':'Day 음원 (미국 발음)'}</span>
+        <span class="voca-now" id="aud-now">눌러서 재생</span>
+        <button class="voca-pp" id="aud-pp" onclick="audPauseToggle()">▶</button>
+        <button class="voca-stop" onclick="audStop()">⏹</button>
       </div>
       <div class="voca-chips">${chips}</div>
-      <div class="voca-hint">강을 누르면 그 챕터부터 재생 · 끝나면 다음 강 자동 이어재생</div>
+      <div class="voca-hint">${b.id==='top'?'강':'Day'}을 누르면 그 부분부터 재생 · 끝나면 다음 ${b.id==='top'?'강':'Day'} 자동 이어재생</div>
     </div>`;
-    vocaSyncUI();
+    audSyncUI();
   } else { $('book-audio').innerHTML=''; }
   $('day-grid').innerHTML=b.data.map(d=>{
     const learned=d.words.filter(w=>state.learned[wordKey(b.id,d.day,w.word)]).length;
@@ -1483,8 +1497,8 @@ function openDay(book, day){
   if(!data) return;
   $('day-title').innerHTML=`${b.name}${data.week?` · WEEK ${data.week}`:''} · DAY ${day} · ${esc(data.title)}${data.part?` <small style="opacity:.8">${esc(data.part)}</small>`:''}<small>${data.words.length}개 단어</small>`;
   // 최빈출 단어장: 챕터 통합 음원(맨 위) — 끝나면 다음 챕터 자동 재생
-  $('chapter-audio').innerHTML = (book==='top' && day>=1 && day<=10)
-    ? `<button class="chapter-aud-btn" onclick="vocaPlay(${day})">🎧 이 챕터 전체 듣기 <small>(끝나면 다음 챕터 자동 재생)</small></button>`
+  $('chapter-audio').innerHTML = bookHasAudio(book)
+    ? `<button class="chapter-aud-btn" onclick="audPlay('${book}',${day})">🎧 이 ${book==='top'?'챕터':'Day'} 음원 듣기 <small>(끝나면 다음 ${book==='top'?'강':'Day'} 자동 재생)</small></button>`
     : '';
   renderWordList(data.words, book, day);
   showView('day');
