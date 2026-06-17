@@ -12,6 +12,9 @@ _tools/
 # 로컬 설정
 .claude/
 
+# VOCA 음원 중 개별 단어(표제어별)는 제외 — 통합본만 사용
+서아쌤의 토익 비밀과외 START_VOCA 음원/표제어별/
+
 # OS 파일
 Thumbs.db
 .DS_Store
