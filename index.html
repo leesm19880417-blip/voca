@@ -206,6 +206,7 @@
   .word-card .wtop { display: flex; align-items: baseline; gap: 7px; flex-wrap: wrap; }
   .word-card .wword { font-size: 1.15em; font-weight: 800; color: var(--primary); }
   .word-card .wpos { font-size: 0.74em; color: var(--text-light); background: var(--surface-2); padding: 1px 7px; border-radius: 6px; }
+  .word-card .wpron { font-size: 0.8em; color: var(--text-light); }
   .word-card .wtag { font-size: 0.68em; color: var(--text-light); }
   .word-card .wmean { color: var(--text); margin-top: 3px; font-weight: 500; }
   .word-card .wex { font-size: 0.85em; color: var(--text-mid); margin-top: 6px; font-style: italic; }
@@ -926,6 +927,7 @@
 <script src="vocab_wangchobo.js"></script>
 <script src="vocab_hackers.js"></script>
 <script src="vocab_secret_top.js"></script>
+<script src="vocab_kyungsunsik.js"></script>
 <script src="lc_data.js"></script>
 <script src="lc_answers.js"></script>
 <script src="lc_answers_p2.js"></script>
@@ -940,6 +942,7 @@ const BOOKS = [
   { id:'wang',    name:'왕초보',   icon:'📗', color:'#10b981', data:(typeof VOCAB_WANGCHOBO !=='undefined'?VOCAB_WANGCHOBO :[]) },
   { id:'hackers', name:'해커스',   icon:'📕', color:'#ef4444', data:(typeof VOCAB_HACKERS   !=='undefined'?VOCAB_HACKERS   :[]) },
   { id:'top',     name:'토익비밀과외(최빈출)', icon:'🎯', color:'#0ea5e9', data:(typeof VOCAB_SECRET_TOP !=='undefined'?VOCAB_SECRET_TOP :[]) },
+  { id:'kss',     name:'경선식 중학 영단어', icon:'🧠', color:'#a855f7', data:(typeof VOCAB_KSS !=='undefined'?VOCAB_KSS :[]) },
 ];
 // 새 스키마(examples[]) → 기존 기능(플래시카드·퀴즈)용 단일 example/exampleKor 보강
 BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
@@ -958,7 +961,7 @@ function defState() {
   return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
-const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','my'];
+const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','my'];
 function migrateState(s){
   s = { ...defState(), ...(s||{}) };
   if(s.ver>=3) return s;
@@ -1513,14 +1516,14 @@ function renderWordList(words, book, day){
     // 기출 예문(여러 개) — examples[] 우선, 없으면 단일 example
     const exList=(w.examples&&w.examples.length) ? w.examples : (w.example?[{en:w.example,ko:w.exampleKor||''}]:[]);
     const ex=exList.map((e,j)=>`<div class="wex">${j===0?'<span class="exlabel">기출</span>':''}<button class="spk" onclick="speak('${speakAttr(e.en)}')" title="예문 발음">🔊</button> ${highlightWord(e.en, w.word)}</div>${e.ko?`<div class="wexk">${esc(e.ko)}</div>`:''}`).join('');
-    // 만점 TIP
-    const tip=w.tip?`<div class="wtip"><span class="tlabel">만점 TIP</span>${esc(w.tip)}</div>`:'';
+    // TIP / 연상 (tipLabel 지정 시 라벨 변경)
+    const tip=w.tip?`<div class="wtip"><span class="tlabel">${esc(w.tipLabel||'만점 TIP')}</span>${esc(w.tip)}</div>`:'';
     // Part 5,6 기출 문제
     const quiz=w.quiz?`<div class="wquiz">Q. ${esc(w.quiz.sentence)}<br><span class="qopt">(A) ${esc(w.quiz.a)} &nbsp; (B) ${esc(w.quiz.b)}</span> → 정답 <span class="qans">(${esc(w.quiz.answer)})</span></div>`:'';
     return `<div class="word-card">
       <div class="wnum">${i+1}</div>
       <div class="wbody">
-        <div class="wtop"><span class="wword">${esc(w.word)}</span>${w.pos?`<span class="wpos">${posKor(w.pos)}</span>`:''}<button class="spk" onclick="speak('${speakAttr(w.word)}')" title="단어 발음">🔊</button></div>
+        <div class="wtop"><span class="wword">${esc(w.word)}</span>${w.pos?`<span class="wpos">${posKor(w.pos)}</span>`:''}${w.pron?`<span class="wpron">${esc(w.pron)}</span>`:''}<button class="spk" onclick="speak('${speakAttr(w.word)}')" title="단어 발음">🔊</button></div>
         ${w.meaning?`<div class="wmean">${esc(w.meaning)}</div>`:''}
         ${deriv}
         ${ex}
