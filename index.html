@@ -180,6 +180,24 @@
   .prog-pill .pp-dot { width:13px; height:13px; border-radius:50%; background:conic-gradient(#fff var(--p,0%), rgba(255,255,255,0.35) 0); }
   .prog-pill .pp-dday { opacity:.92; font-weight:700; }
 
+  /* ===== Study carousel (이어서 학습) ===== */
+  .study-carousel { display:flex; gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding:2px 2px 10px; margin:0 -2px 8px; scrollbar-width:none; }
+  .study-carousel::-webkit-scrollbar { display:none; }
+  .study-card { scroll-snap-align:center; flex:0 0 87%; max-width:520px; background:var(--surface); border-radius:var(--r-lg); box-shadow:var(--shadow); padding:14px 14px 16px; border:1px solid var(--border); }
+  .sc-strip { display:flex; gap:3px; height:122px; border-radius:16px; overflow:hidden; background:var(--surface-2); }
+  .sc-thumb { flex:1 1 0; min-width:0; background-color:var(--surface-2); background-position:center; background-size:cover; background-repeat:no-repeat; }
+  .sc-thumb.loading { animation:wimgsh 1.2s infinite; background-image:linear-gradient(90deg,var(--surface-2),#eef2f7,var(--surface-2)); background-size:200% 100%; }
+  .sc-thumb.noimg { background:var(--bc,#6366f1); opacity:.18; }
+  .sc-head { display:flex; align-items:center; gap:8px; margin-top:13px; }
+  .sc-title { font-weight:800; font-size:1.05em; letter-spacing:-0.3px; }
+  .sc-done { margin-left:auto; font-size:0.72em; font-weight:800; color:var(--success); background:var(--success-light); padding:2px 8px; border-radius:999px; }
+  .sc-sub { color:var(--text-light); font-size:0.83em; margin:3px 0 12px; }
+  .study-card .pbar { height:8px; background:var(--surface-2); border-radius:6px; overflow:hidden; }
+  .study-card .pfill { height:100%; border-radius:6px; transition:width .5s; }
+  .sc-meta { font-size:0.8em; color:var(--text-mid); margin:10px 0 13px; text-align:center; font-weight:600; }
+  .sc-cta { width:100%; background:var(--grad); color:#fff; border:none; border-radius:15px; padding:14px; font-weight:800; font-size:1.02em; cursor:pointer; box-shadow:var(--shadow-brand); }
+  .sc-cta:active { transform:scale(0.98); filter:brightness(.96); }
+
   /* ===== Hero / progress summary ===== */
   .hero {
     position: relative; overflow: hidden;
@@ -692,6 +710,8 @@
         </div>
       </div>
     </div>
+    <div class="section-label">📖 이어서 학습</div>
+    <div class="study-carousel" id="study-carousel"></div>
     <div class="review-card" id="review-card" onclick="startReview()">
       <div class="rc-left"><span class="rc-ico">🔁</span><div><b>오늘의 복습</b><small id="review-count">복습할 단어 0개</small></div></div>
       <span class="rc-go" id="review-go">시작 →</span>
@@ -1558,7 +1578,42 @@ function renderHome(){
   if($('review-card')) $('review-card').classList.toggle('rc-due', due>0);
   if($('review-go')) $('review-go').textContent = due ? `시작 (${due}) →` : '예약됨';
   renderWeekCal();
+  renderStudyCarousel();
   updateHeaderStats();
+}
+function nextDayOf(b){ const d=b.data.find(x=>!state.completed[b.id+':'+x.day]); return d?d.day:(b.data[0]?b.data[0].day:null); }
+function renderStudyCarousel(){
+  const el=$('study-carousel'); if(!el) return;
+  el.innerHTML=BOOKS.filter(b=>b.data.length).map(b=>{
+    const day=nextDayOf(b), d=b.data.find(x=>x.day===day); if(!d) return '';
+    const learned=d.words.filter(w=>state.learned[wordKey(b.id,day,w.word)]).length;
+    const total=d.words.length, pct=total?Math.round(learned/total*100):0, done=!!state.completed[b.id+':'+day];
+    const strip=d.words.slice(0,7).map(w=>`<div class="sc-thumb loading" data-strip="1" data-word="${esc(w.word)}"></div>`).join('');
+    return `<div class="study-card" style="--bc:${b.color}">
+      <div class="sc-strip">${strip}</div>
+      <div class="sc-head"><span class="sc-title">${b.icon} ${esc(b.name)}</span>${done?'<span class="sc-done">✓ 완료</span>':''}</div>
+      <div class="sc-sub">${d.week?'WEEK '+d.week+' · ':''}DAY ${day} · ${esc(d.title||'')}</div>
+      <div class="pbar"><div class="pfill" style="width:${pct}%; background:linear-gradient(90deg,${b.color},${b.color}aa)"></div></div>
+      <div class="sc-meta">단어 ${total}개 · ${learned}/${total} 학습 · ${pct}%</div>
+      <button class="sc-cta" onclick="openDay('${b.id}',${day})">${done?'다시 보기':'학습하기'} →</button>
+    </div>`;
+  }).join('');
+  setupStripImages();
+}
+function setupStripImages(){
+  const els=document.querySelectorAll('#study-carousel .sc-thumb[data-strip]');
+  if(!('IntersectionObserver' in window)){ els.forEach(loadStripImg); return; }
+  const ob=new IntersectionObserver((es)=>{ es.forEach(e=>{ if(e.isIntersecting){ loadStripImg(e.target); ob.unobserve(e.target); } }); },{root:$('study-carousel'), rootMargin:'100px'});
+  els.forEach(el=>ob.observe(el));
+}
+async function loadStripImg(el){
+  if(el.dataset.done) return; el.dataset.done='1';
+  const w=el.getAttribute('data-word'); const q=String(w).split('/')[0].replace(/[()~]/g,' ').trim();
+  let url=imgCacheGet(w);
+  if(url===undefined){ try{ const r=await fetch('https://api.openverse.org/v1/images/?q='+encodeURIComponent(q)+'&page_size=1&mature=false'); const dt=await r.json(); const it=dt&&dt.results&&dt.results[0]; url=it?(it.thumbnail||it.url||''):''; }catch(e){ url=''; } imgCacheSet(w,url); }
+  el.classList.remove('loading');
+  if(url){ el.style.backgroundImage='url("'+url.replace(/"/g,'')+'")'; el.classList.add('imgset'); }
+  else { el.classList.add('noimg'); }
 }
 const DAILY_GOAL=20; // 하루 목표 단어 수 (링 채움 기준)
 function renderWeekCal(){
