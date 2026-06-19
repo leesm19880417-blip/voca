@@ -162,6 +162,24 @@
   .view.active { display: block; animation: fade .28s ease; }
   @keyframes fade { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
+  /* ===== Weekly calendar ===== */
+  .week-cal { display:flex; justify-content:space-between; gap:4px; background:var(--surface); border-radius:var(--r); padding:14px 12px; box-shadow:var(--shadow-sm); margin-bottom:14px; }
+  .cal-cell { flex:1; display:flex; flex-direction:column; align-items:center; gap:8px; }
+  .cal-dow { font-size:0.74em; font-weight:700; color:var(--text-light); }
+  .cal-dow.sun { color:#f87171; }
+  .cal-ring { position:relative; width:38px; height:38px; border-radius:50%; background:var(--surface-2); display:flex; align-items:center; justify-content:center; }
+  .cal-ring.has { background: conic-gradient(#22c55e var(--p), var(--surface-2) 0); }
+  .cal-inner { width:30px; height:30px; border-radius:50%; background:var(--surface); display:flex; align-items:center; justify-content:center; font-size:0.86em; font-weight:700; color:var(--text-mid); }
+  .cal-inner.today { background:var(--text); color:#fff; }
+  .cal-inner.fut { color:var(--text-light); }
+  .cal-check { position:absolute; top:-3px; right:-3px; width:16px; height:16px; border-radius:50%; background:#22c55e; color:#fff; font-size:0.6em; font-weight:800; display:flex; align-items:center; justify-content:center; border:2px solid var(--surface); }
+  body.dark .cal-inner.today { background:#fff; color:#111; }
+
+  /* ===== App-bar progress pill ===== */
+  .prog-pill { display:inline-flex; align-items:center; gap:5px; background:rgba(255,255,255,0.18); color:#fff; padding:5px 11px; border-radius:999px; font-weight:800; font-size:0.8em; cursor:pointer; }
+  .prog-pill .pp-dot { width:13px; height:13px; border-radius:50%; background:conic-gradient(#fff var(--p,0%), rgba(255,255,255,0.35) 0); }
+  .prog-pill .pp-dday { opacity:.92; font-weight:700; }
+
   /* ===== Hero / progress summary ===== */
   .hero {
     position: relative; overflow: hidden;
@@ -642,6 +660,7 @@
 <header class="app-bar">
   <div class="brand"><span class="mark">📚</span> 토익 VOCA</div>
   <div class="bar-actions">
+    <button class="prog-pill" id="prog-pill" onclick="setDday()" title="진도 · D-day 설정"><span class="pp-dot" id="pp-dot"></span><span id="pp-pct">0%</span><span class="pp-dday" id="pp-dday"></span></button>
     <button class="theme-btn" id="theme-btn" onclick="toggleDark()" aria-label="다크 모드">🌙</button>
     <button class="user-btn" onclick="openUser()" aria-label="사용자 설정">
       <span class="user-ico">⚙️</span><span class="user-name" id="user-name-label">게스트</span>
@@ -653,6 +672,7 @@
 
   <!-- 홈 -->
   <div id="view-home" class="view active">
+    <div class="week-cal" id="week-cal"></div>
     <div class="hero">
       <div class="ring">
         <svg width="64" height="64">
@@ -1058,7 +1078,7 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','my'];
@@ -1537,7 +1557,30 @@ function renderHome(){
   if($('review-count')) $('review-count').textContent = due ? `복습할 단어 ${due}개` : '복습할 단어 없음 (외운 단어는 자동 예약)';
   if($('review-card')) $('review-card').classList.toggle('rc-due', due>0);
   if($('review-go')) $('review-go').textContent = due ? `시작 (${due}) →` : '예약됨';
+  renderWeekCal();
   updateHeaderStats();
+}
+const DAILY_GOAL=20; // 하루 목표 단어 수 (링 채움 기준)
+function renderWeekCal(){
+  const el=$('week-cal'); if(!el) return;
+  const now=new Date(), today=srsToday(), dow=now.getDay();
+  const labels=['일','월','화','수','목','금','토'];
+  let html='';
+  for(let i=0;i<7;i++){
+    const offset=i-dow, dnum=today+offset;
+    const dt=new Date(now); dt.setDate(now.getDate()+offset);
+    const cnt=(state.studyDays||{})[dnum]||0;
+    const p=Math.min(100, Math.round(cnt/DAILY_GOAL*100));
+    const isToday=offset===0, done=cnt>=DAILY_GOAL, future=offset>0;
+    html+=`<div class="cal-cell">
+      <span class="cal-dow ${i===0?'sun':''}">${labels[i]}</span>
+      <div class="cal-ring${cnt>0?' has':''}${done?' done':''}" style="--p:${p}%">
+        <span class="cal-inner${isToday?' today':''}${future?' fut':''}">${dt.getDate()}</span>
+        ${done?'<span class="cal-check">✓</span>':''}
+      </div>
+    </div>`;
+  }
+  el.innerHTML=html;
 }
 
 // ============ 단어장 상세 (Day 목록) ============
@@ -1597,6 +1640,21 @@ function updateHeaderStats(){
   }
   const sc=$('streak-chip');
   if(sc){ if(state.streak>=1){ sc.style.display='inline-flex'; sc.textContent='🔥 '+state.streak+'일 연속'; } else sc.style.display='none'; }
+  // 앱바 진도/디데이 알약
+  if($('pp-pct')){
+    $('pp-pct').textContent=pct+'%';
+    if($('pp-dot')) $('pp-dot').style.setProperty('--p', pct+'%');
+    const dday=localStorage.getItem('dday'); let txt='';
+    if(dday){ const diff=Math.ceil((new Date(dday+'T00:00:00')-new Date(new Date().toDateString()))/86400000); txt = diff>0?('D-'+diff) : (diff===0?'D-DAY':('D+'+(-diff))); }
+    if($('pp-dday')) $('pp-dday').textContent=txt;
+  }
+}
+function setDday(){
+  const cur=localStorage.getItem('dday')||'';
+  const v=prompt('시험 날짜를 입력하세요 (예: 2026-08-15). 비우면 해제:', cur);
+  if(v===null) return;
+  if(v.trim()===''){ localStorage.removeItem('dday'); } else if(/^\d{4}-\d{2}-\d{2}$/.test(v.trim())){ localStorage.setItem('dday', v.trim()); } else { toast('날짜 형식: 2026-08-15'); return; }
+  updateHeaderStats(); toast('🎯 D-day 설정됨');
 }
 
 // ===== 다크 모드 =====
@@ -1795,6 +1853,7 @@ function srsRate(grade){
     const l=Math.min((prev.l||0)+1, SRS_INT.length);
     state.srs[key]={l, miss:0, due:srsToday()+SRS_INT[l-1]};
   }
+  { const td=srsToday(); if(!state.studyDays) state.studyDays={}; state.studyDays[td]=(state.studyDays[td]||0)+1; }
   saveState(); bumpStreak();
   if(!currentWords.length){ completeFlash(); return; }
   if(nextIdx>=currentWords.length) nextIdx=0;
