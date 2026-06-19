@@ -174,6 +174,21 @@
   .cal-inner.fut { color:var(--text-light); }
   .cal-check { position:absolute; top:-3px; right:-3px; width:16px; height:16px; border-radius:50%; background:#22c55e; color:#fff; font-size:0.6em; font-weight:800; display:flex; align-items:center; justify-content:center; border:2px solid var(--surface); }
   body.dark .cal-inner.today { background:#fff; color:#111; }
+  .week-cal { cursor:pointer; }
+  .week-cal-handle { display:flex; justify-content:center; margin:-6px 0 14px; cursor:pointer; }
+  .week-cal-handle span { width:38px; height:4px; border-radius:3px; background:var(--border); }
+  /* 월간 달력 */
+  .mc-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+  .mc-head h3 { font-size:1.1em; font-weight:800; }
+  .mc-nav { width:38px; height:38px; border-radius:50%; border:none; background:var(--surface-2); color:var(--text); font-size:1.3em; cursor:pointer; }
+  .mc-nav:active { transform:scale(0.9); }
+  .mc-dows { display:grid; grid-template-columns:repeat(7,1fr); gap:4px; margin-bottom:8px; }
+  .mc-dows span { text-align:center; font-size:0.76em; font-weight:700; color:var(--text-light); }
+  .mc-dows .sun { color:#f87171; } .mc-dows .sat { color:#60a5fa; }
+  .mc-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:6px 4px; }
+  .mc-cell { display:flex; align-items:center; justify-content:center; min-height:42px; }
+  .mc-cell.empty { visibility:hidden; }
+  .mc-stat { text-align:center; color:var(--text-mid); font-weight:700; font-size:0.86em; margin:16px 0 4px; }
 
   /* ===== App-bar progress pill ===== */
   .prog-pill { display:inline-flex; align-items:center; gap:5px; background:rgba(255,255,255,0.18); color:#fff; padding:5px 11px; border-radius:999px; font-weight:800; font-size:0.8em; cursor:pointer; }
@@ -690,7 +705,8 @@
 
   <!-- 홈 -->
   <div id="view-home" class="view active">
-    <div class="week-cal" id="week-cal"></div>
+    <div class="week-cal" id="week-cal" onclick="openMonthCal()"></div>
+    <div class="week-cal-handle" onclick="openMonthCal()"><span></span></div>
     <div class="hero">
       <div class="ring">
         <svg width="64" height="64">
@@ -1016,6 +1032,22 @@
     <button class="lc-pl-btn lc-pl-play" id="lc-pl-play" onclick="lcToggle()">⏸</button>
     <button class="lc-pl-btn" onclick="lcSkip(5)">5초 »</button>
     <div class="lc-pl-rates" id="lc-pl-rates"></div>
+  </div>
+</div>
+
+<!-- 월간 학습 달력 -->
+<div class="overlay" id="cal-overlay">
+  <div class="sheet" style="max-width:460px;">
+    <div class="grabber"></div>
+    <div class="mc-head">
+      <button class="mc-nav" onclick="calNav(-1)">‹</button>
+      <h3 id="cal-title">달력</h3>
+      <button class="mc-nav" onclick="calNav(1)">›</button>
+    </div>
+    <div class="mc-dows"><span class="sun">일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span class="sat">토</span></div>
+    <div class="mc-grid" id="cal-grid"></div>
+    <p class="mc-stat" id="cal-stat"></p>
+    <button class="btn btn-soft btn-block" onclick="closeMonthCal()" style="margin-top:6px;">닫기</button>
   </div>
 </div>
 
@@ -1614,6 +1646,27 @@ async function loadStripImg(el){
   el.classList.remove('loading');
   if(url){ el.style.backgroundImage='url("'+url.replace(/"/g,'')+'")'; el.classList.add('imgset'); }
   else { el.classList.add('noimg'); }
+}
+// ===== 월간 학습 달력 =====
+let _calY, _calM;
+function openMonthCal(){ const n=new Date(); _calY=n.getFullYear(); _calM=n.getMonth(); renderMonthCal(); $('cal-overlay').classList.add('active'); }
+function closeMonthCal(){ $('cal-overlay').classList.remove('active'); }
+function calNav(d){ _calM+=d; if(_calM<0){_calM=11;_calY--;} if(_calM>11){_calM=0;_calY++;} renderMonthCal(); }
+function renderMonthCal(){
+  const today=new Date(); const tMid=new Date(today.getFullYear(),today.getMonth(),today.getDate()).getTime(); const todayIdx=srsToday();
+  const startDow=new Date(_calY,_calM,1).getDay(); const days=new Date(_calY,_calM+1,0).getDate();
+  $('cal-title').textContent=_calY+'년 '+(_calM+1)+'월';
+  let html='', studied=0;
+  for(let i=0;i<startDow;i++) html+='<div class="mc-cell empty"></div>';
+  for(let d=1; d<=days; d++){
+    const offset=Math.round((new Date(_calY,_calM,d).getTime()-tMid)/86400000);
+    const dnum=todayIdx+offset, cnt=(state.studyDays||{})[dnum]||0;
+    const p=Math.min(100,Math.round(cnt/DAILY_GOAL*100)), done=cnt>=DAILY_GOAL, isToday=offset===0, future=offset>0;
+    if(cnt>0) studied++;
+    html+=`<div class="mc-cell"><div class="cal-ring${cnt>0?' has':''}${done?' done':''}" style="--p:${p}%"><span class="cal-inner${isToday?' today':''}${future?' fut':''}">${d}</span>${done?'<span class="cal-check">✓</span>':''}</div></div>`;
+  }
+  $('cal-grid').innerHTML=html;
+  $('cal-stat').textContent='이번 달 '+studied+'일 학습 · 🔥 연속 '+(state.streak||0)+'일';
 }
 const DAILY_GOAL=20; // 하루 목표 단어 수 (링 채움 기준)
 function renderWeekCal(){
@@ -2516,7 +2569,7 @@ function syncNow(){
 }
 
 // 오버레이 바깥 탭하면 닫기
-['confirm-overlay','user-overlay','addword-overlay','review-overlay'].forEach(id=>{
+['confirm-overlay','user-overlay','addword-overlay','review-overlay','cal-overlay'].forEach(id=>{
   const el=$(id); if(el) el.addEventListener('click',e=>{ if(e.target===el) el.classList.remove('active'); });
 });
 
