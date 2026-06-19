@@ -421,6 +421,9 @@
   }
   .flip-front { background: linear-gradient(160deg, #ffffff, #eef2ff); border: 1.5px solid var(--border); }
   .flip-back { background: linear-gradient(160deg, #eef2ff, #ffffff); border: 1.5px solid #c7d2fe; transform: rotateY(180deg); }
+  .fc-img { width: auto; max-width: 78%; margin-bottom: 14px; }
+  .fc-img img { display:block; max-height: 150px; max-width: 100%; border-radius: 12px; object-fit: cover; }
+  .fc-img.loading { width: 200px; height: 130px; border-radius: 12px; background:linear-gradient(90deg,var(--surface-2),#eef2f7,var(--surface-2)); background-size:200% 100%; animation:wimgsh 1.2s infinite; }
   .fc-word { font-size: 2.6em; font-weight: 800; color: var(--primary); letter-spacing: -1px; word-break: break-word; }
   .fc-pos { margin-top: 12px; font-size: 0.95em; color: var(--text-light); background: var(--surface); padding: 4px 14px; border-radius: 20px; }
   .fc-tap { margin-top: 26px; font-size: 0.8em; color: var(--text-light); opacity: 0.65; }
@@ -1620,7 +1623,10 @@ function renderFlashcard(){
   const w=currentWords[currentIdx];
   $('fc-count').textContent = _sessTotal ? `남은 ${currentWords.length}개 · 외움 ${_sessMastered}` : `${currentIdx+1} / ${currentWords.length}`;
   $('fc-progress').style.width = (_sessTotal ? (_sessMastered/_sessTotal*100) : ((currentIdx+1)/currentWords.length*100))+'%';
-  $('flip-front').innerHTML=`<div class="fc-word">${esc(w.word)}</div><div class="fc-pos">${posKor(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
+  const fcBook=w.book||currentBook;
+  const fcImg=imageBook(fcBook)?`<div class="fc-img wimg loading" data-word="${esc(w.word)}"></div>`:'';
+  $('flip-front').innerHTML=`${fcImg}<div class="fc-word">${esc(w.word)}</div><div class="fc-pos">${posKor(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
+  if(fcImg){ const ie=$('flip-front').querySelector('.wimg'); if(ie) loadWordImage(ie); }
   $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posKor(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div><div class="fc-ex">${highlightWord(w.example, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.example)}')">🔊</button></div><div class="fc-ex-ko">${esc(w.exampleKor)}</div>`;
   $('flip-card').classList.toggle('flipped', flashFlipped);
   if(autoSpeak) speak(w.word);  // 새 카드(앞면) 뜨면 단어 자동 발음
@@ -1664,23 +1670,31 @@ function fmtDays(d){ return d>=30?Math.round(d/30)+'개월 뒤':(d===1?'내일':
 function srsRate(grade){
   const w=currentWords[currentIdx]; if(!w) return;
   const bk=w.book||currentBook, dy=w.day||currentDay, key=wordKey(bk,dy,w.word);
+  const prev=state.srs[key]||{l:0,miss:0};
   currentWords.splice(currentIdx,1); // 현재 카드 큐에서 빼기
-  if(grade<2){
-    // 모름/애매 → 그날 안에서 다시 나오게 (뒤쪽 재삽입). 외울 때까지 반복.
-    if(grade===0) state.wrongs[key]={...w,day:dy,book:bk};
-    const off=grade===0?2:5;
-    currentWords.splice(Math.min(currentIdx+off,currentWords.length),0,w);
+  let nextIdx=currentIdx;
+  if(grade===0){
+    // 모름 → 큐 맨 뒤로 (다른 단어 먼저 돌고 다시). 3번 틀리면 즐겨찾기 자동 추가.
+    state.wrongs[key]={...w,day:dy,book:bk};
+    const miss=(prev.miss||0)+1;
+    state.srs[key]={l:0, miss, due:srsToday()};
+    if(miss>=3 && !state.bookmarks[key]){ state.bookmarks[key]={word:w.word,day:dy,book:bk}; toast('⭐ '+miss+'번 틀려서 즐겨찾기에 추가했어요'); }
+    currentWords.push(w);
+  } else if(grade===1){
+    // 애매 → 조금 뒤에 다시
+    state.srs[key]={...prev, due:srsToday()};
+    currentWords.splice(Math.min(currentIdx+5,currentWords.length),0,w);
   } else {
-    // 외움 → 이번 세션 통과 + 다음 복습일 예약(망각곡선)
+    // 외움 → 세션 통과 + 다음 복습일 예약, 틀린 횟수 초기화
     _sessMastered++;
     state.learned[key]=true; delete state.wrongs[key];
-    const l=Math.min((state.srs[key]||{l:0}).l+1, SRS_INT.length);
-    state.srs[key]={l, due:srsToday()+SRS_INT[l-1]};
+    const l=Math.min((prev.l||0)+1, SRS_INT.length);
+    state.srs[key]={l, miss:0, due:srsToday()+SRS_INT[l-1]};
   }
   saveState();
   if(!currentWords.length){ completeFlash(); return; }
-  if(currentIdx>=currentWords.length) currentIdx=0;
-  flashFlipped=false; advanceCard();
+  if(nextIdx>=currentWords.length) nextIdx=0;
+  currentIdx=nextIdx; flashFlipped=false; advanceCard();
 }
 function markKnown(known){ srsRate(known?2:0); } // 하위호환
 function dueWords(){
