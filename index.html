@@ -685,14 +685,13 @@
         <div class="flip-face flip-back" id="flip-back"></div>
       </div>
     </div>
-    <p class="card-hint">탭하면 뒤집혀요 · 평가하면 다음 복습일이 자동으로 정해져요</p>
+    <p class="card-hint">탭하면 뒤집혀요 · <b>외울 때까지</b> 그날 안에서 계속 반복돼요</p>
     <div class="srs-actions">
-      <button class="srs-btn srs-again" onclick="srsRate(0)">모름<small id="srs-t0">1일 뒤</small></button>
-      <button class="srs-btn srs-hard" onclick="srsRate(1)">애매<small id="srs-t1">3일 뒤</small></button>
-      <button class="srs-btn srs-good" onclick="srsRate(2)">외움<small id="srs-t2">7일 뒤</small></button>
+      <button class="srs-btn srs-again" onclick="srsRate(0)">모름<small>곧 다시</small></button>
+      <button class="srs-btn srs-hard" onclick="srsRate(1)">애매<small>조금 뒤 다시</small></button>
+      <button class="srs-btn srs-good" onclick="srsRate(2)">외움<small>통과 ✓</small></button>
     </div>
     <div class="card-actions">
-      <button class="btn btn-soft" onclick="prevCard()">← 이전</button>
       <button class="btn btn-soft" onclick="nextCard()">건너뛰기 →</button>
     </div>
   </div>
@@ -1028,7 +1027,7 @@ function saveState() { state.updatedAt = nowISO(); saveLocal(); schedulePush(); 
 // 모드 컨텍스트
 let currentBook='siwon', currentDay=null, currentWords=[], currentIdx=0, currentMode=null;
 let quizData=[], quizIdx=0, quizScore=0, quizWrong=[];
-let aqCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false, _reviewMode=false;
+let aqCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false, _reviewMode=false, _sessTotal=0, _sessMastered=0;
 let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동 발음 (기본 켜짐)
 
 const STACK_VIEWS = ['lc','book','day','mywords','flashcard','quiz','typing','result'];
@@ -1613,19 +1612,17 @@ function dayWords(){
 function startFlashcard(){
   const words=dayWords(); if(!words) return;
   currentWords=[...words]; currentIdx=0; flashFlipped=false; studySource='day'; _reviewMode=false;
+  _sessTotal=currentWords.length; _sessMastered=0;
   showView('flashcard'); renderFlashcard();
 }
 function renderFlashcard(){
   if(!currentWords.length) return;
-  const w=currentWords[currentIdx], total=currentWords.length;
-  $('fc-count').textContent=`${currentIdx+1} / ${total}`;
-  $('fc-progress').style.width=((currentIdx+1)/total*100)+'%';
+  const w=currentWords[currentIdx];
+  $('fc-count').textContent = _sessTotal ? `남은 ${currentWords.length}개 · 외움 ${_sessMastered}` : `${currentIdx+1} / ${currentWords.length}`;
+  $('fc-progress').style.width = (_sessTotal ? (_sessMastered/_sessTotal*100) : ((currentIdx+1)/currentWords.length*100))+'%';
   $('flip-front').innerHTML=`<div class="fc-word">${esc(w.word)}</div><div class="fc-pos">${posKor(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
   $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posKor(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div><div class="fc-ex">${highlightWord(w.example, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.example)}')">🔊</button></div><div class="fc-ex-ko">${esc(w.exampleKor)}</div>`;
   $('flip-card').classList.toggle('flipped', flashFlipped);
-  // 평가 버튼 예상 복습일
-  const cur=(state.srs[wordKey(w.book||currentBook, w.day||currentDay, w.word)]||{l:0});
-  if($('srs-t0')){ $('srs-t0').textContent=fmtDays(srsDaysFor(cur.l,0)); $('srs-t1').textContent=fmtDays(srsDaysFor(cur.l,1)); $('srs-t2').textContent=fmtDays(srsDaysFor(cur.l,2)); }
   if(autoSpeak) speak(w.word);  // 새 카드(앞면) 뜨면 단어 자동 발음
 }
 function flipCard(){
@@ -1644,7 +1641,7 @@ function syncAutoSpeakBtn(){
   b.textContent=autoSpeak?'🔊':'🔇';
   b.style.opacity=autoSpeak?'1':'0.45';
 }
-function nextCard(){ if(currentIdx<currentWords.length-1){ currentIdx++; advanceCard(); } else completeFlash(); }
+function nextCard(){ if(!currentWords.length){ completeFlash(); return; } currentIdx=(currentIdx+1)%currentWords.length; advanceCard(); }
 function prevCard(){ if(currentIdx>0){ currentIdx--; advanceCard(); } }
 function advanceCard(){
   const card=$('flip-card'), inner=card.querySelector('.flip-inner');
@@ -1667,14 +1664,23 @@ function fmtDays(d){ return d>=30?Math.round(d/30)+'개월 뒤':(d===1?'내일':
 function srsRate(grade){
   const w=currentWords[currentIdx]; if(!w) return;
   const bk=w.book||currentBook, dy=w.day||currentDay, key=wordKey(bk,dy,w.word);
-  const cur=state.srs[key]||{l:0};
-  let l=cur.l, days=srsDaysFor(l, grade);
-  if(grade===0){ l=0; state.wrongs[key]={...w,day:dy,book:bk}; if(_reviewMode) currentWords.push(w); }
-  else if(grade===1){ l=Math.max(1,l); }
-  else { l=Math.min(l+1,SRS_INT.length); state.learned[key]=true; delete state.wrongs[key]; }
-  state.srs[key]={l, due:srsToday()+days};
+  currentWords.splice(currentIdx,1); // 현재 카드 큐에서 빼기
+  if(grade<2){
+    // 모름/애매 → 그날 안에서 다시 나오게 (뒤쪽 재삽입). 외울 때까지 반복.
+    if(grade===0) state.wrongs[key]={...w,day:dy,book:bk};
+    const off=grade===0?2:5;
+    currentWords.splice(Math.min(currentIdx+off,currentWords.length),0,w);
+  } else {
+    // 외움 → 이번 세션 통과 + 다음 복습일 예약(망각곡선)
+    _sessMastered++;
+    state.learned[key]=true; delete state.wrongs[key];
+    const l=Math.min((state.srs[key]||{l:0}).l+1, SRS_INT.length);
+    state.srs[key]={l, due:srsToday()+SRS_INT[l-1]};
+  }
   saveState();
-  nextCard();
+  if(!currentWords.length){ completeFlash(); return; }
+  if(currentIdx>=currentWords.length) currentIdx=0;
+  flashFlipped=false; advanceCard();
 }
 function markKnown(known){ srsRate(known?2:0); } // 하위호환
 function dueWords(){
@@ -1690,12 +1696,14 @@ function startReview(){
   const list=dueWords();
   if(!list.length){ toast('오늘 복습할 단어가 없어요 👍'); return; }
   currentWords=list; currentIdx=0; flashFlipped=false; studySource='review'; _reviewMode=true;
+  _sessTotal=currentWords.length; _sessMastered=0;
   showView('flashcard'); renderFlashcard();
 }
 function shuffleFlashcards(){ currentWords=shuffle(currentWords); currentIdx=0; flashFlipped=false; renderFlashcard(); toast('🔀 섞었어요'); }
 function completeFlash(){
   if(studySource==='day' && currentDay){ state.completed[`${currentBook}:${currentDay}`]=true; saveState(); }
-  showResult(currentWords.length, currentWords.length, [], '플래시카드 완료!');
+  const tot=_sessTotal||_sessMastered;
+  showResult(_sessMastered||tot, tot, [], _reviewMode?'복습 완료! 🎉':'플래시카드 완료!');
 }
 
 // ============ 퀴즈 ============
@@ -1876,7 +1884,7 @@ function studyMyWords(mode){
   const list=(state.customWords||[]).map(w=>({...w, day:'my', book:'my'}));
   if(!list.length){ toast('단어가 없어요'); return; }
   studySource='custom'; currentBook='my'; currentDay='my';
-  if(mode==='flashcard'){ currentWords=list; currentIdx=0; flashFlipped=false; _reviewMode=false; showView('flashcard'); renderFlashcard(); }
+  if(mode==='flashcard'){ currentWords=list; currentIdx=0; flashFlipped=false; _reviewMode=false; _sessTotal=currentWords.length; _sessMastered=0; showView('flashcard'); renderFlashcard(); }
   else if(mode==='typing'){ studySource='custom'; setupTyping(list,'my'); studySource='custom'; }
   else { studySource='custom'; setupQuiz(list,'en-ko','my'); studySource='custom'; }
 }
@@ -2013,7 +2021,7 @@ function studyFromList(source,mode){
   const list = source==='bookmarks'?bookmarkWords():Object.values(state.wrongs).filter(Boolean);
   if(!list.length) return;
   studySource=source; currentDay=null;
-  if(mode==='flashcard'){ currentWords=list; currentIdx=0; flashFlipped=false; _reviewMode=false; showView('flashcard'); renderFlashcard(); }
+  if(mode==='flashcard'){ currentWords=list; currentIdx=0; flashFlipped=false; _reviewMode=false; _sessTotal=currentWords.length; _sessMastered=0; showView('flashcard'); renderFlashcard(); }
   else setupQuiz(list,'en-ko',null);
 }
 
