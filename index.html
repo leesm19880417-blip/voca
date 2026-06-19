@@ -207,6 +207,10 @@
   .word-card .wword { font-size: 1.15em; font-weight: 800; color: var(--primary); }
   .word-card .wpos { font-size: 0.74em; color: var(--text-light); background: var(--surface-2); padding: 1px 7px; border-radius: 6px; }
   .word-card .wpron { font-size: 0.8em; color: var(--text-light); }
+  .word-card .wimg { margin-bottom: 8px; min-height: 0; }
+  .word-card .wimg img { display:block; width:100%; max-height:180px; object-fit:cover; border-radius:10px; background:var(--surface-2); }
+  .word-card .wimg.loading { height:120px; border-radius:10px; background:linear-gradient(90deg,var(--surface-2),#eef2f7,var(--surface-2)); background-size:200% 100%; animation:wimgsh 1.2s infinite; }
+  @keyframes wimgsh { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
   .word-card .wtag { font-size: 0.68em; color: var(--text-light); }
   .word-card .wmean { color: var(--text); margin-top: 3px; font-weight: 500; }
   .word-card .wex { font-size: 0.85em; color: var(--text-mid); margin-top: 6px; font-style: italic; }
@@ -1520,9 +1524,11 @@ function renderWordList(words, book, day){
     const tip=w.tip?`<div class="wtip"><span class="tlabel">${esc(w.tipLabel||'만점 TIP')}</span>${esc(w.tip)}</div>`:'';
     // Part 5,6 기출 문제
     const quiz=w.quiz?`<div class="wquiz">Q. ${esc(w.quiz.sentence)}<br><span class="qopt">(A) ${esc(w.quiz.a)} &nbsp; (B) ${esc(w.quiz.b)}</span> → 정답 <span class="qans">(${esc(w.quiz.answer)})</span></div>`:'';
+    const img=imageBook(book)?`<div class="wimg loading" data-word="${esc(w.word)}"></div>`:'';
     return `<div class="word-card">
       <div class="wnum">${i+1}</div>
       <div class="wbody">
+        ${img}
         <div class="wtop"><span class="wword">${esc(w.word)}</span>${w.pos?`<span class="wpos">${posKor(w.pos)}</span>`:''}${w.pron?`<span class="wpron">${esc(w.pron)}</span>`:''}<button class="spk" onclick="speak('${speakAttr(w.word)}')" title="단어 발음">🔊</button></div>
         ${w.meaning?`<div class="wmean">${esc(w.meaning)}</div>`:''}
         ${deriv}
@@ -1533,6 +1539,37 @@ function renderWordList(words, book, day){
       <button class="star-btn ${on?'on':''}" onclick="toggleBookmark('${q(book)}',${day},'${q(w.word)}',this)">${on?'★':'☆'}<span class="slabel">${on?'저장됨':'즐겨찾기'}</span></button>
     </div>`;
   }).join('');
+  if(imageBook(book)) setupWordImages();
+}
+// ===== 단어별 연상 이미지 (무료·오픈 라이선스 Openverse, 보일 때만 로드 + 캐시) =====
+function imageBook(b){ return b==='siwon'||b==='top'; }
+let _imgObserver=null;
+function setupWordImages(){
+  const els=document.querySelectorAll('#word-list .wimg[data-word]');
+  if(_imgObserver) _imgObserver.disconnect();
+  if(!('IntersectionObserver' in window)){ els.forEach(loadWordImage); return; }
+  _imgObserver=new IntersectionObserver((ents)=>{ ents.forEach(e=>{ if(e.isIntersecting){ loadWordImage(e.target); _imgObserver.unobserve(e.target); } }); },{rootMargin:'250px'});
+  els.forEach(el=>_imgObserver.observe(el));
+}
+function imgCacheGet(w){ try{ const m=JSON.parse(localStorage.getItem('wimg_cache')||'{}'); return m[w]; }catch(e){ return undefined; } }
+function imgCacheSet(w,url){ try{ const m=JSON.parse(localStorage.getItem('wimg_cache')||'{}'); m[w]=url; localStorage.setItem('wimg_cache',JSON.stringify(m)); }catch(e){} }
+async function loadWordImage(el){
+  if(el.dataset.done) return; el.dataset.done='1';
+  const w=el.getAttribute('data-word'); if(!w){ el.remove(); return; }
+  const q=String(w).split('/')[0].replace(/[()~]/g,' ').trim(); // 검색용 정리
+  let url=imgCacheGet(w);
+  if(url===undefined){
+    try{
+      const res=await fetch('https://api.openverse.org/v1/images/?q='+encodeURIComponent(q)+'&page_size=1&mature=false');
+      const data=await res.json();
+      const r=data&&data.results&&data.results[0];
+      url=r?(r.thumbnail||r.url||''):'';
+    }catch(e){ url=''; }
+    imgCacheSet(w,url);
+  }
+  el.classList.remove('loading');
+  if(url){ const im=new Image(); im.loading='lazy'; im.alt=w; im.onerror=()=>{ el.style.display='none'; }; im.src=url; el.innerHTML=''; el.appendChild(im); }
+  else { el.style.display='none'; }
 }
 function toggleBookmark(book, day, word, btn){
   const key=wordKey(book,day,word);
