@@ -63,6 +63,57 @@
   }
   button { font-family: inherit; }
 
+  /* ===== Dark mode ===== */
+  body.dark {
+    --bg: #0b0f1d;
+    --surface: #161c2e;
+    --surface-2: #1f2740;
+    --primary-light: #242a4d;
+    --text: #eaeefb;
+    --text-mid: #aab4cc;
+    --text-light: #6f7a93;
+    --border: #2a3350;
+    --grad-soft: linear-gradient(160deg, #1a2138 0%, #232c49 100%);
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
+    --shadow: 0 8px 26px rgba(0,0,0,0.5);
+    --shadow-lg: 0 18px 48px rgba(0,0,0,0.6);
+  }
+  body.dark { background:
+      radial-gradient(1200px 500px at 100% -10%, rgba(124,58,237,0.18), transparent 60%),
+      radial-gradient(1000px 500px at -10% 0%, rgba(80,69,230,0.15), transparent 55%),
+      var(--bg); }
+  body.dark .flip-front { background: linear-gradient(160deg, #1b2138, #232c49); }
+  body.dark .flip-back { background: linear-gradient(160deg, #1d2540, #2a2150); border-color:#3a3170; }
+  body.dark .lc-q, body.dark .lc-set { background: var(--surface-2); }
+  body.dark .lc-ans { background: #11162a; }
+  body.dark .lc-bubble { background:#202747; } body.dark .lc-bubble.ok{ background:#13351f; } body.dark .lc-bubble.no{ background:#3a1620; } body.dark .lc-bubble.q{ background:#2e2a12; }
+  body.dark .bottom-nav { background: rgba(22,28,46,0.82); border-color: rgba(255,255,255,0.08); }
+  body.dark .review-card, body.dark .mywords-card { background: var(--surface); border-color: var(--border); }
+  body.dark .review-card.rc-due { background: linear-gradient(135deg,#2a1c10,#1a1f33); border-color:#7c4a1e; }
+  body.dark .lc-opt { background: var(--surface-2); color: var(--text-mid); border-color: var(--border); }
+  body.dark .type-input, body.dark .quiz-opt { background: var(--surface-2); }
+  body.dark .wimg img, body.dark .fc-img img { filter: brightness(.9); }
+
+  /* ===== App bar actions / theme btn ===== */
+  .bar-actions { display:flex; align-items:center; gap:8px; }
+  .theme-btn { background: rgba(255,255,255,0.18); border:none; color:#fff; width:36px; height:36px; border-radius:50%; cursor:pointer; font-size:1.05em; display:flex; align-items:center; justify-content:center; }
+  .theme-btn:active { transform: scale(0.9); }
+
+  /* ===== Entrance / stagger ===== */
+  @keyframes pop { from{ opacity:0; transform: translateY(12px) scale(.98); } to{ opacity:1; transform:none; } }
+  .book-grid > *, .day-grid > *, .word-list > * { animation: pop .42s cubic-bezier(.2,.7,.3,1) both; }
+  .book-grid > *:nth-child(2){animation-delay:.04s} .book-grid > *:nth-child(3){animation-delay:.08s} .book-grid > *:nth-child(4){animation-delay:.12s} .book-grid > *:nth-child(5){animation-delay:.16s} .book-grid > *:nth-child(n+6){animation-delay:.2s}
+  .day-grid > *:nth-child(even){animation-delay:.05s} .day-grid > *:nth-child(3n){animation-delay:.1s}
+  .word-list > *:nth-child(2){animation-delay:.03s} .word-list > *:nth-child(3){animation-delay:.06s} .word-list > *:nth-child(4){animation-delay:.09s} .word-list > *:nth-child(n+5){animation-delay:.12s}
+  @media (prefers-reduced-motion: reduce){ .book-grid>*,.day-grid>*,.word-list>*{ animation:none; } }
+
+  /* ===== Streak chip ===== */
+  .streak-chip { display:inline-flex; align-items:center; gap:4px; background:linear-gradient(135deg,#fb923c,#f97316); color:#fff; padding:2px 9px; border-radius:999px; font-size:0.72em; font-weight:800; box-shadow:0 3px 8px rgba(249,115,22,.4); }
+
+  /* ===== Confetti ===== */
+  #confetti { position:fixed; inset:0; pointer-events:none; z-index:2000; display:none; }
+  #confetti.on { display:block; }
+
   /* ===== App Bar ===== */
   .app-bar {
     position: sticky;
@@ -590,9 +641,12 @@
 
 <header class="app-bar">
   <div class="brand"><span class="mark">📚</span> 토익 VOCA</div>
-  <button class="user-btn" onclick="openUser()" aria-label="사용자 설정">
-    <span class="user-ico">⚙️</span><span class="user-name" id="user-name-label">게스트</span>
-  </button>
+  <div class="bar-actions">
+    <button class="theme-btn" id="theme-btn" onclick="toggleDark()" aria-label="다크 모드">🌙</button>
+    <button class="user-btn" onclick="openUser()" aria-label="사용자 설정">
+      <span class="user-ico">⚙️</span><span class="user-name" id="user-name-label">게스트</span>
+    </button>
+  </div>
 </header>
 
 <main class="app-main">
@@ -609,7 +663,7 @@
         <div class="pct" id="hero-pct">0%</div>
       </div>
       <div class="info">
-        <h2>오늘도 화이팅! 🔥</h2>
+        <h2>오늘도 화이팅! 🔥 <span class="streak-chip" id="streak-chip" style="display:none"></span></h2>
         <p id="hero-msg">Day를 선택해 학습을 시작하세요</p>
         <div class="mini-stats">
           <span>완료 <b id="ms-days">0</b> Day</span>
@@ -925,6 +979,7 @@
   </div>
 </div>
 
+<canvas id="confetti"></canvas>
 <div class="toast" id="toast"></div>
 <input type="file" id="import-file" accept="application/json" style="display:none" onchange="importData(this)">
 <input type="file" id="word-image" accept="image/*" style="display:none" onchange="onImageSelected(this)">
@@ -1003,7 +1058,7 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','my'];
@@ -1540,6 +1595,37 @@ function updateHeaderStats(){
       : days>=totalDays && totalDays>0 ? '모든 코스 완주! 대단해요 🏆'
       : `${days}개 Day 완료 · 단어 ${words}개 암기 중`;
   }
+  const sc=$('streak-chip');
+  if(sc){ if(state.streak>=1){ sc.style.display='inline-flex'; sc.textContent='🔥 '+state.streak+'일 연속'; } else sc.style.display='none'; }
+}
+
+// ===== 다크 모드 =====
+function applyDark(on){ document.body.classList.toggle('dark', on); const b=$('theme-btn'); if(b) b.textContent=on?'☀️':'🌙'; const m=document.querySelector('meta[name=theme-color]'); if(m) m.setAttribute('content', on?'#0b0f1d':'#6366f1'); }
+function toggleDark(){ const on=!document.body.classList.contains('dark'); localStorage.setItem('theme', on?'dark':'light'); applyDark(on); }
+function initDark(){ let t=localStorage.getItem('theme'); if(!t) t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'; applyDark(t==='dark'); }
+
+// ===== 연속 학습(스트릭) =====
+function bumpStreak(){
+  const today=srsToday(), last=state.lastStudyDay||0;
+  if(last===today) return;            // 오늘 이미 기록됨
+  state.streak = (last===today-1) ? (state.streak||0)+1 : 1;  // 어제 했으면 +1, 아니면 1로 리셋
+  state.lastStudyDay=today; saveState();
+  if($('streak-chip') && document.querySelector('#view-home.active')) updateHeaderStats();
+}
+
+// ===== 완료 축하 컨페티 =====
+function fireConfetti(){
+  const cv=$('confetti'); if(!cv) return; const ctx=cv.getContext('2d');
+  cv.width=innerWidth; cv.height=innerHeight; cv.classList.add('on');
+  const colors=['#6366f1','#a855f7','#ec4899','#f59e0b','#10b981','#38bdf8'];
+  const N=140, P=[];
+  for(let i=0;i<N;i++) P.push({x:Math.random()*cv.width, y:-20-Math.random()*cv.height*0.4, r:5+Math.random()*7, c:colors[i%colors.length], vy:3+Math.random()*4, vx:-2+Math.random()*4, rot:Math.random()*6, vr:-0.2+Math.random()*0.4});
+  let t=0;
+  (function tick(){
+    ctx.clearRect(0,0,cv.width,cv.height); t++;
+    P.forEach(p=>{ p.x+=p.vx; p.y+=p.vy; p.vy+=0.08; p.rot+=p.vr; ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.rot); ctx.fillStyle=p.c; ctx.fillRect(-p.r/2,-p.r/2,p.r,p.r*0.6); ctx.restore(); });
+    if(t<160) requestAnimationFrame(tick); else { ctx.clearRect(0,0,cv.width,cv.height); cv.classList.remove('on'); }
+  })();
 }
 
 // ============ Day 상세 ============
@@ -1709,7 +1795,7 @@ function srsRate(grade){
     const l=Math.min((prev.l||0)+1, SRS_INT.length);
     state.srs[key]={l, miss:0, due:srsToday()+SRS_INT[l-1]};
   }
-  saveState();
+  saveState(); bumpStreak();
   if(!currentWords.length){ completeFlash(); return; }
   if(nextIdx>=currentWords.length) nextIdx=0;
   currentIdx=nextIdx; flashFlipped=false; advanceCard();
@@ -1736,6 +1822,7 @@ function completeFlash(){
   if(studySource==='day' && currentDay){ state.completed[`${currentBook}:${currentDay}`]=true; saveState(); }
   const tot=_sessTotal||_sessMastered;
   showResult(_sessMastered||tot, tot, [], _reviewMode?'복습 완료! 🎉':'플래시카드 완료!');
+  fireConfetti();
 }
 
 // ============ 퀴즈 ============
@@ -2335,6 +2422,7 @@ document.addEventListener('keydown',e=>{
 });
 
 // ============ 초기화 ============
+initDark();
 renderHome();
 renderAQBooks();
 fbInit();
