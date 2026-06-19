@@ -189,6 +189,14 @@
   .mc-cell { display:flex; align-items:center; justify-content:center; min-height:42px; }
   .mc-cell.empty { visibility:hidden; }
   .mc-stat { text-align:center; color:var(--text-mid); font-weight:700; font-size:0.86em; margin:16px 0 4px; }
+  /* 학습량 막대그래프 */
+  .bar-chart { display:flex; align-items:flex-end; gap:4px; height:120px; margin-top:10px; }
+  .bar-col { flex:1; display:flex; flex-direction:column; align-items:center; gap:5px; height:100%; }
+  .bar-wrap { flex:1; width:100%; display:flex; align-items:flex-end; }
+  .bar { width:100%; border-radius:5px 5px 3px 3px; background:linear-gradient(180deg,#a5b4fc,#6366f1); min-height:3px; transition:height .5s; }
+  .bar.done { background:linear-gradient(180deg,#86efac,#22c55e); }
+  .bar.today { background:linear-gradient(180deg,#fdba74,#f97316); }
+  .bar-lbl { font-size:0.64em; color:var(--text-light); font-weight:600; }
 
   /* ===== App-bar progress pill ===== */
   .prog-pill { display:inline-flex; align-items:center; gap:5px; background:rgba(255,255,255,0.18); color:#fff; padding:5px 11px; border-radius:999px; font-weight:800; font-size:0.8em; cursor:pointer; }
@@ -1175,7 +1183,7 @@ function saveState() { state.updatedAt = nowISO(); saveLocal(); schedulePush(); 
 // 모드 컨텍스트
 let currentBook='siwon', currentDay=null, currentWords=[], currentIdx=0, currentMode=null;
 let quizData=[], quizIdx=0, quizScore=0, quizWrong=[];
-let aqCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false, _reviewMode=false, _sessTotal=0, _sessMastered=0;
+let aqCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false, _reviewMode=false, _sessTotal=0, _sessMastered=0, _swiped=false;
 let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동 발음 (기본 켜짐)
 
 const STACK_VIEWS = ['lc','book','day','mywords','flashcard','quiz','typing','result'];
@@ -1902,6 +1910,7 @@ function renderFlashcard(){
   if(autoSpeak) speak(w.word);  // 새 카드(앞면) 뜨면 단어 자동 발음
 }
 function flipCard(){
+  if(_swiped){ _swiped=false; return; } // 스와이프 후엔 뒤집지 않음
   flashFlipped=!flashFlipped;
   $('flip-card').classList.toggle('flipped', flashFlipped);
   if(autoSpeak) speak(flashFlipped ? currentWords[currentIdx].example : currentWords[currentIdx].word); // 뒷면=예문, 앞면=단어
@@ -2365,7 +2374,24 @@ function renderStats(){
       <div class="pbar" style="height:7px; background:var(--border); border-radius:4px; overflow:hidden;"><div style="height:100%; width:${pct}%; background:${b.color}; border-radius:4px;"></div></div>
     </div>`;
   }).join('');
+  // 최근 14일 학습량 막대그래프
+  const sd=state.studyDays||{}; const today=srsToday(); const N=14;
+  let maxc=1; for(let i=0;i<N;i++){ maxc=Math.max(maxc, sd[today-i]||0); }
+  const dows=['일','월','화','수','목','금','토'];
+  let bars='';
+  for(let i=N-1;i>=0;i--){
+    const dn=today-i, cnt=sd[dn]||0, h=Math.round(cnt/maxc*100);
+    const dt=new Date(); dt.setDate(dt.getDate()-i);
+    const isToday=i===0, done=cnt>=DAILY_GOAL;
+    bars+=`<div class="bar-col"><div class="bar-wrap"><div class="bar ${done?'done':''} ${isToday?'today':''}" style="height:${cnt?Math.max(8,h):3}%" title="${cnt}개"></div></div><span class="bar-lbl">${dt.getDate()}</span></div>`;
+  }
+  const monthDays=Object.keys(sd).filter(k=>(sd[k]>0)).length;
+  const studiedToday=sd[today]||0;
   $('stats-content').innerHTML=`
+    <div class="card" style="margin-bottom:14px;">
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;"><b style="font-size:0.95em;">📈 최근 14일 학습량</b><span style="font-size:0.8em; color:var(--text-light)">오늘 ${studiedToday}개 · 🔥 ${state.streak||0}일</span></div>
+      <div class="bar-chart">${bars}</div>
+    </div>
     <div class="stat-grid">
       <div class="stat-box"><div class="sv" style="color:var(--primary)">${days}/${totalDays}</div><div class="sl">완료한 Day</div></div>
       <div class="stat-box"><div class="sv" style="color:var(--success)">${learned}</div><div class="sl">학습 단어 / ${totalWords}</div></div>
@@ -2587,6 +2613,28 @@ document.addEventListener('keydown',e=>{
     else if(e.key==='Enter'&&$('quiz-next').style.display!=='none') nextQuizQuestion();
   }
 });
+
+// ===== 플래시카드 스와이프 (좌=모름, 우=외움) =====
+(function bindFlashSwipe(){
+  const card=document.getElementById('flip-card'); if(!card) return;
+  let sx=0, sy=0, on=false;
+  card.addEventListener('pointerdown', e=>{ sx=e.clientX; sy=e.clientY; on=true; try{card.setPointerCapture(e.pointerId);}catch(_){} });
+  card.addEventListener('pointermove', e=>{
+    if(!on) return; const dx=e.clientX-sx, dy=e.clientY-sy;
+    if(Math.abs(dx)>10) _swiped=true;
+    if(Math.abs(dx)>Math.abs(dy)){ card.style.transition='none'; card.style.transform='translateX('+dx+'px) rotate('+(dx/22)+'deg)'; card.style.opacity=String(1-Math.min(0.55,Math.abs(dx)/420)); }
+  });
+  const end=e=>{
+    if(!on) return; on=false; const dx=e.clientX-sx, dy=e.clientY-sy;
+    card.style.transition='transform .22s, opacity .22s'; card.style.transform=''; card.style.opacity='';
+    if(Math.abs(dx)>95 && Math.abs(dx)>Math.abs(dy)){
+      toast(dx>0?'외움 ✓':'모름 ↩');
+      setTimeout(()=>{ if(dx>0) srsRate(2); else srsRate(0); }, 60);
+    }
+  };
+  card.addEventListener('pointerup', end);
+  card.addEventListener('pointercancel', ()=>{ on=false; card.style.transition='transform .2s,opacity .2s'; card.style.transform=''; card.style.opacity=''; });
+})();
 
 // ============ 초기화 ============
 initDark();
