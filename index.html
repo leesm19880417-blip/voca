@@ -362,6 +362,20 @@
   .user-chip .del{ opacity:0.55; font-weight:700; padding:0 2px; }
   .mywords-card{ background:linear-gradient(135deg,#eef2ff,#fff); border:1.5px solid #c7d2fe; border-radius:var(--r); padding:15px 18px; margin-bottom:18px; display:flex; align-items:center; justify-content:space-between; cursor:pointer; box-shadow:var(--shadow-sm); gap:10px; }
   .mywords-card:active{ transform:scale(0.98); }
+  .review-card{ background:var(--surface); border:1.5px solid var(--border); border-radius:var(--r); padding:14px 18px; margin-bottom:12px; display:flex; align-items:center; justify-content:space-between; cursor:pointer; box-shadow:var(--shadow-sm); gap:10px; }
+  .review-card:active{ transform:scale(0.98); }
+  .review-card.rc-due{ background:linear-gradient(135deg,#fff7ed,#fff); border-color:#fdba74; }
+  .rc-left{ display:flex; align-items:center; gap:12px; }
+  .rc-ico{ font-size:1.6em; }
+  .rc-left b{ font-size:1.02em; } .rc-left small{ display:block; color:var(--text-light); font-size:0.8em; margin-top:1px; }
+  .rc-go{ font-weight:800; color:var(--text-light); white-space:nowrap; }
+  .rc-due .rc-go{ color:#ea580c; }
+  /* 플래시카드 평가(SRS) 버튼 */
+  .srs-actions{ display:flex; gap:8px; margin-top:14px; }
+  .srs-btn{ flex:1; border:none; border-radius:12px; padding:11px 6px; font-weight:800; font-size:1.0em; cursor:pointer; color:#fff; display:flex; flex-direction:column; align-items:center; gap:3px; }
+  .srs-btn small{ font-weight:600; font-size:0.66em; opacity:.95; }
+  .srs-btn:active{ transform:scale(0.95); }
+  .srs-again{ background:#ef4444; } .srs-hard{ background:#f59e0b; } .srs-good{ background:#22c55e; }
   .mywords-card b{ font-size:1.02em; }
   .mywords-card small{ color:var(--text-light); font-size:0.8em; }
   .mywords-card > span{ font-size:0.8em; color:var(--primary); font-weight:700; white-space:nowrap; }
@@ -583,6 +597,10 @@
         </div>
       </div>
     </div>
+    <div class="review-card" id="review-card" onclick="startReview()">
+      <div class="rc-left"><span class="rc-ico">🔁</span><div><b>오늘의 복습</b><small id="review-count">복습할 단어 0개</small></div></div>
+      <span class="rc-go" id="review-go">시작 →</span>
+    </div>
     <div class="mywords-card" onclick="openMyWords()">
       <div>📒 <b>내 단어장</b> <small id="mywords-count">0개 단어</small></div>
       <span>＋ 추가 / 학습 →</span>
@@ -667,12 +685,15 @@
         <div class="flip-face flip-back" id="flip-back"></div>
       </div>
     </div>
-    <p class="card-hint">탭하면 뒤집혀요 · 알면 ✓, 모르면 ✗</p>
+    <p class="card-hint">탭하면 뒤집혀요 · 평가하면 다음 복습일이 자동으로 정해져요</p>
+    <div class="srs-actions">
+      <button class="srs-btn srs-again" onclick="srsRate(0)">모름<small id="srs-t0">1일 뒤</small></button>
+      <button class="srs-btn srs-hard" onclick="srsRate(1)">애매<small id="srs-t1">3일 뒤</small></button>
+      <button class="srs-btn srs-good" onclick="srsRate(2)">외움<small id="srs-t2">7일 뒤</small></button>
+    </div>
     <div class="card-actions">
       <button class="btn btn-soft" onclick="prevCard()">← 이전</button>
-      <button class="btn btn-soft" onclick="nextCard()">다음 →</button>
-      <button class="btn btn-danger" onclick="markKnown(false)">아직 몰라요</button>
-      <button class="btn btn-success" onclick="markKnown(true)">알아요 ✓</button>
+      <button class="btn btn-soft" onclick="nextCard()">건너뛰기 →</button>
     </div>
   </div>
 
@@ -962,7 +983,7 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','my'];
@@ -1007,7 +1028,7 @@ function saveState() { state.updatedAt = nowISO(); saveLocal(); schedulePush(); 
 // 모드 컨텍스트
 let currentBook='siwon', currentDay=null, currentWords=[], currentIdx=0, currentMode=null;
 let quizData=[], quizIdx=0, quizScore=0, quizWrong=[];
-let aqCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false;
+let aqCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false, _reviewMode=false;
 let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동 발음 (기본 켜짐)
 
 const STACK_VIEWS = ['lc','book','day','mywords','flashcard','quiz','typing','result'];
@@ -1436,6 +1457,11 @@ function renderHome(){
     </div>`;
   }).join('');
   if($('mywords-count')) $('mywords-count').textContent=(state.customWords||[]).length+'개 단어';
+  // 오늘의 복습 카운트
+  const due=dueWords().length;
+  if($('review-count')) $('review-count').textContent = due ? `복습할 단어 ${due}개` : '복습할 단어 없음 (외운 단어는 자동 예약)';
+  if($('review-card')) $('review-card').classList.toggle('rc-due', due>0);
+  if($('review-go')) $('review-go').textContent = due ? `시작 (${due}) →` : '예약됨';
   updateHeaderStats();
 }
 
@@ -1586,7 +1612,7 @@ function dayWords(){
 }
 function startFlashcard(){
   const words=dayWords(); if(!words) return;
-  currentWords=[...words]; currentIdx=0; flashFlipped=false; studySource='day';
+  currentWords=[...words]; currentIdx=0; flashFlipped=false; studySource='day'; _reviewMode=false;
   showView('flashcard'); renderFlashcard();
 }
 function renderFlashcard(){
@@ -1597,6 +1623,9 @@ function renderFlashcard(){
   $('flip-front').innerHTML=`<div class="fc-word">${esc(w.word)}</div><div class="fc-pos">${posKor(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
   $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posKor(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div><div class="fc-ex">${highlightWord(w.example, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.example)}')">🔊</button></div><div class="fc-ex-ko">${esc(w.exampleKor)}</div>`;
   $('flip-card').classList.toggle('flipped', flashFlipped);
+  // 평가 버튼 예상 복습일
+  const cur=(state.srs[wordKey(w.book||currentBook, w.day||currentDay, w.word)]||{l:0});
+  if($('srs-t0')){ $('srs-t0').textContent=fmtDays(srsDaysFor(cur.l,0)); $('srs-t1').textContent=fmtDays(srsDaysFor(cur.l,1)); $('srs-t2').textContent=fmtDays(srsDaysFor(cur.l,2)); }
   if(autoSpeak) speak(w.word);  // 새 카드(앞면) 뜨면 단어 자동 발음
 }
 function flipCard(){
@@ -1626,14 +1655,42 @@ function advanceCard(){
   renderFlashcard();                 // 새 단어 내용 채우기
   requestAnimationFrame(()=>{ inner.style.transition=''; }); // 탭 뒤집기는 다시 정상
 }
-function markKnown(known){
-  const w=currentWords[currentIdx];
-  const bk=w.book||currentBook, dy=w.day||currentDay;
-  const key=wordKey(bk,dy,w.word);
-  if(known){ state.learned[key]=true; delete state.wrongs[key]; }
-  else state.wrongs[key]={...w, day:dy, book:bk};
+// ===== 망각곡선 복습(SRS) =====
+const SRS_INT=[1,3,7,14,30,60]; // 레벨 1~6의 복습 간격(일)
+function srsToday(){ return Math.floor(Date.now()/86400000); }
+function srsDaysFor(level, grade){
+  if(grade===0) return 1;                                  // 모름 → 내일 다시
+  if(grade===1) return SRS_INT[Math.max(0,level-1)]||1;    // 애매 → 현재 레벨 간격
+  return SRS_INT[Math.min(level, SRS_INT.length-1)];        // 외움 → 다음 레벨 간격
+}
+function fmtDays(d){ return d>=30?Math.round(d/30)+'개월 뒤':(d===1?'내일':d+'일 뒤'); }
+function srsRate(grade){
+  const w=currentWords[currentIdx]; if(!w) return;
+  const bk=w.book||currentBook, dy=w.day||currentDay, key=wordKey(bk,dy,w.word);
+  const cur=state.srs[key]||{l:0};
+  let l=cur.l, days=srsDaysFor(l, grade);
+  if(grade===0){ l=0; state.wrongs[key]={...w,day:dy,book:bk}; if(_reviewMode) currentWords.push(w); }
+  else if(grade===1){ l=Math.max(1,l); }
+  else { l=Math.min(l+1,SRS_INT.length); state.learned[key]=true; delete state.wrongs[key]; }
+  state.srs[key]={l, due:srsToday()+days};
   saveState();
   nextCard();
+}
+function markKnown(known){ srsRate(known?2:0); } // 하위호환
+function dueWords(){
+  const t=srsToday(), out=[];
+  BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
+    const s=state.srs[wordKey(b.id,d.day,w.word)];
+    if(s && s.due<=t) out.push({...w, book:b.id, day:d.day, _due:s.due});
+  })));
+  out.sort((a,b)=>a._due-b._due);
+  return out;
+}
+function startReview(){
+  const list=dueWords();
+  if(!list.length){ toast('오늘 복습할 단어가 없어요 👍'); return; }
+  currentWords=list; currentIdx=0; flashFlipped=false; studySource='review'; _reviewMode=true;
+  showView('flashcard'); renderFlashcard();
 }
 function shuffleFlashcards(){ currentWords=shuffle(currentWords); currentIdx=0; flashFlipped=false; renderFlashcard(); toast('🔀 섞었어요'); }
 function completeFlash(){
@@ -1819,7 +1876,7 @@ function studyMyWords(mode){
   const list=(state.customWords||[]).map(w=>({...w, day:'my', book:'my'}));
   if(!list.length){ toast('단어가 없어요'); return; }
   studySource='custom'; currentBook='my'; currentDay='my';
-  if(mode==='flashcard'){ currentWords=list; currentIdx=0; flashFlipped=false; showView('flashcard'); renderFlashcard(); }
+  if(mode==='flashcard'){ currentWords=list; currentIdx=0; flashFlipped=false; _reviewMode=false; showView('flashcard'); renderFlashcard(); }
   else if(mode==='typing'){ studySource='custom'; setupTyping(list,'my'); studySource='custom'; }
   else { studySource='custom'; setupQuiz(list,'en-ko','my'); studySource='custom'; }
 }
@@ -1956,7 +2013,7 @@ function studyFromList(source,mode){
   const list = source==='bookmarks'?bookmarkWords():Object.values(state.wrongs).filter(Boolean);
   if(!list.length) return;
   studySource=source; currentDay=null;
-  if(mode==='flashcard'){ currentWords=list; currentIdx=0; flashFlipped=false; showView('flashcard'); renderFlashcard(); }
+  if(mode==='flashcard'){ currentWords=list; currentIdx=0; flashFlipped=false; _reviewMode=false; showView('flashcard'); renderFlashcard(); }
   else setupQuiz(list,'en-ko',null);
 }
 
