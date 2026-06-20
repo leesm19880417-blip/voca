@@ -562,6 +562,9 @@
   .fc-meaning { font-size: 1.7em; font-weight: 800; color: var(--text); margin-bottom: 14px; word-break: keep-all; }
   .fc-word-sm { font-size: 1.15em; font-weight: 700; color: var(--primary); margin-bottom: 18px; }
   .fc-pos-sm { font-size: 0.7em; color: var(--text-light); font-weight: 500; }
+  .fc-tip { font-size: 0.9em; color: var(--text-mid); background: var(--surface-2); border-left: 3px solid var(--primary); border-radius: 8px; padding: 9px 11px; margin-bottom: 14px; max-width: 460px; text-align: left; line-height: 1.55; white-space: pre-line; }
+  .fc-tip .tlabel { display:inline-block; font-size:0.92em; font-weight:800; color:var(--primary); margin-right:5px; }
+  body.dark .fc-tip { background: rgba(99,102,241,0.14); }
   .fc-ex { font-size: 0.98em; color: var(--text-mid); font-style: italic; max-width: 460px; }
   .fc-ex-ko { font-size: 0.9em; color: var(--text-light); margin-top: 4px; max-width: 460px; }
   .card-hint { text-align: center; font-size: 0.76em; color: var(--text-light); margin: 12px 0 16px; }
@@ -1916,7 +1919,9 @@ function renderFlashcard(){
   const fcImg=imageBook(fcBook)?`<div class="fc-img wimg loading" data-word="${esc(w.word)}"></div>`:'';
   $('flip-front').innerHTML=`${fcImg}<div class="fc-word">${esc(w.word)}</div><div class="fc-pos">${posKor(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
   if(fcImg){ const ie=$('flip-front').querySelector('.wimg'); if(ie) loadWordImage(ie); }
-  $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posKor(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div><div class="fc-ex">${highlightWord(w.example, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.example)}')">🔊</button></div><div class="fc-ex-ko">${esc(w.exampleKor)}</div>`;
+  const fcTip=w.tip?`<div class="fc-tip"><span class="tlabel">${esc(w.tipLabel||'만점 TIP')}</span>${esc(w.tip)}</div>`:'';
+  const fcEx=w.example?`<div class="fc-ex">${highlightWord(w.example, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.example)}')">🔊</button></div>${w.exampleKor?`<div class="fc-ex-ko">${esc(w.exampleKor)}</div>`:''}`:'';
+  $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posKor(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div>${fcTip}${fcEx}`;
   $('flip-card').classList.toggle('flipped', flashFlipped);
   if(autoSpeak) speak(w.word);  // 새 카드(앞면) 뜨면 단어 자동 발음
 }
