@@ -1116,6 +1116,7 @@
 <script src="vocab_secret_top.js"></script>
 <script src="vocab_kyungsunsik.js"></script>
 <script src="vocab_kss_toeic.js"></script>
+<script src="vocab_noisaegim.js"></script>
 <script src="lc_data.js"></script>
 <script src="lc_answers.js"></script>
 <script src="lc_answers_p2.js"></script>
@@ -1132,6 +1133,7 @@ const BOOKS = [
   { id:'top',     name:'토익비밀과외(최빈출)', icon:'🎯', color:'#0ea5e9', data:(typeof VOCAB_SECRET_TOP !=='undefined'?VOCAB_SECRET_TOP :[]) },
   { id:'kss',     name:'경선식 중학 영단어', icon:'🧠', color:'#a855f7', data:(typeof VOCAB_KSS !=='undefined'?VOCAB_KSS :[]) },
   { id:'kst',     name:'경선식 토익', icon:'🚀', color:'#2563eb', data:(typeof VOCAB_KSS_TOEIC !=='undefined'?VOCAB_KSS_TOEIC :[]) },
+  { id:'ns',      name:'뇌새김 워드 토익', icon:'💭', color:'#f97316', data:(typeof VOCAB_NOISAEGIM !=='undefined'?VOCAB_NOISAEGIM :[]) },
 ];
 // 새 스키마(examples[]) → 기존 기능(플래시카드·퀴즈)용 단일 example/exampleKor 보강
 BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
@@ -1150,7 +1152,7 @@ function defState() {
   return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
-const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','my'];
+const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','my'];
 function migrateState(s){
   s = { ...defState(), ...(s||{}) };
   if(s.ver>=3) return s;
