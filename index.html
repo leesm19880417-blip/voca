@@ -1117,6 +1117,7 @@
 <script src="vocab_kyungsunsik.js"></script>
 <script src="vocab_kss_toeic.js"></script>
 <script src="vocab_noisaegim.js"></script>
+<script src="vocab_legend.js"></script>
 <script src="lc_data.js"></script>
 <script src="lc_answers.js"></script>
 <script src="lc_answers_p2.js"></script>
@@ -1134,6 +1135,7 @@ const BOOKS = [
   { id:'kss',     name:'경선식 중학 영단어', icon:'🧠', color:'#a855f7', data:(typeof VOCAB_KSS !=='undefined'?VOCAB_KSS :[]) },
   { id:'kst',     name:'경선식 토익', icon:'🚀', color:'#2563eb', data:(typeof VOCAB_KSS_TOEIC !=='undefined'?VOCAB_KSS_TOEIC :[]) },
   { id:'ns',      name:'뇌새김 워드 토익', icon:'💭', color:'#f97316', data:(typeof VOCAB_NOISAEGIM !=='undefined'?VOCAB_NOISAEGIM :[]) },
+  { id:'legend',  name:'레전드 필수영단어', icon:'🏆', color:'#e11d48', data:(typeof VOCAB_LEGEND !=='undefined'?VOCAB_LEGEND :[]) },
 ];
 // 새 스키마(examples[]) → 기존 기능(플래시카드·퀴즈)용 단일 example/exampleKor 보강
 BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
@@ -1152,7 +1154,7 @@ function defState() {
   return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
-const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','my'];
+const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
 function migrateState(s){
   s = { ...defState(), ...(s||{}) };
   if(s.ver>=3) return s;
@@ -2520,6 +2522,38 @@ function fbInit(){
 }
 function _ck(s){ try{ const o=Object.assign({}, s||{}); delete o.updatedAt; return JSON.stringify(o); }catch(e){ return 'x'+Math.random(); } }
 function _hasProg(s){ s=s||{}; return !!(Object.keys(s.learned||{}).length||Object.keys(s.bookmarks||{}).length||Object.keys(s.completed||{}).length||Object.keys(s.wrongs||{}).length||(s.quizHistory||[]).length); }
+// ===== 상태 병합(합집합) — 어느 쪽 기록도 사라지지 않게 로컬·클라우드를 합친다 =====
+function _mergeMap(x, y, pick){
+  const o = Object.assign({}, x||{});
+  const yy = y||{};
+  for(const k in yy){ if(!(k in o)) o[k]=yy[k]; else if(pick) o[k]=pick(o[k], yy[k]); }
+  return o;
+}
+function mergeStates(a, b){
+  a=a||{}; b=b||{};
+  const out = Object.assign({}, defState());
+  out.ver = 3;
+  out.completed = _mergeMap(a.completed, b.completed);   // 값이 true → 합집합
+  out.learned   = _mergeMap(a.learned,   b.learned);
+  out.bookmarks = _mergeMap(a.bookmarks, b.bookmarks);
+  out.studyDays = _mergeMap(a.studyDays, b.studyDays);
+  out.wrongs    = _mergeMap(a.wrongs, b.wrongs, (p,q)=>{  // 오답: 더 많은 횟수 보존
+    if(p&&q&&typeof p==='object'&&typeof q==='object'){ const r=Object.assign({}, q, p); r.count=Math.max(p.count||0, q.count||0); return r; }
+    return p||q;
+  });
+  out.srs = _mergeMap(a.srs, b.srs, (p,q)=>{              // SRS: 더 많이 학습된(reps↑)·더 최근(due↑) 쪽
+    const pr=(p&&p.reps)||0, qr=(q&&q.reps)||0; if(qr!==pr) return qr>pr?q:p;
+    const pd=(p&&p.due)||0, qd=(q&&q.due)||0; return qd>pd?q:p;
+  });
+  const qh=(a.quizHistory||[]).concat(b.quizHistory||[]); const qs=new Set();
+  out.quizHistory = qh.filter(h=>{ const k=JSON.stringify(h); if(qs.has(k)) return false; qs.add(k); return true; });
+  const cw=(a.customWords||[]).concat(b.customWords||[]); const cs=new Set();
+  out.customWords = cw.filter(w=>{ const k=(w&&w.word)||JSON.stringify(w); if(cs.has(k)) return false; cs.add(k); return true; });
+  out.streak = Math.max(a.streak||0, b.streak||0);
+  out.lastStudyDay = Math.max(a.lastStudyDay||0, b.lastStudyDay||0);
+  out.updatedAt = (a.updatedAt&&b.updatedAt) ? (a.updatedAt>b.updatedAt?a.updatedAt:b.updatedAt) : (a.updatedAt||b.updatedAt||null);
+  return out;
+}
 function attachSync(code){
   SYNC_CODE=code; cloud.code=code;
   if(fb.ref) fb.ref.off();
@@ -2532,16 +2566,21 @@ function attachSync(code){
     cloud.connected=true; setSyncUI('ok');
     const first=fb.initial; fb.initial=false;
     if(remote){
-      if(!first && fb.writeTimer) return;          // 편집 중인 내 변경 보호 (최초 로드는 무조건 클라우드 적용)
       const wasOld = !(remote.ver>=3);
       const rm = migrateState(remote);             // 구버전 클라우드 데이터도 새 키 형식으로 변환
-      if(_ck(rm)!==_ck(state)){
-        fb.applying=true;
-        state=rm;
-        saveLocal(); refreshView();
-        fb.applying=false;
+      if(first){
+        // 최초 로드: 클라우드와 로컬을 '합집합'으로 병합 → 업데이트/재접속 시 기존 기록이 절대 지워지지 않음
+        const merged = mergeStates(state, rm);
+        if(_ck(merged)!==_ck(state)){ fb.applying=true; state=merged; saveLocal(); refreshView(); fb.applying=false; }
+        if(_ck(merged)!==_ck(rm) || wasOld) fbWrite();   // 병합 결과(또는 새 형식)를 클라우드에도 반영
+      } else {
+        if(fb.writeTimer) return;                  // 편집 중인 내 변경 보호
+        if(!_hasProg(rm) && _hasProg(state)) return; // 빈 클라우드가 진도 있는 로컬을 덮어쓰지 못하게
+        if(_ck(rm)!==_ck(state)){
+          fb.applying=true; state=rm; saveLocal(); refreshView(); fb.applying=false;
+        }
+        if(wasOld) fbWrite();
       }
-      if(wasOld) fbWrite();                        // 클라우드도 새 형식으로 업그레이드
     } else if(first && _hasProg(state)){
       fbWrite(); // 클라우드 비었는데 로컬 진도 있으면 올림
     }
