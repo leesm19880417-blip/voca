@@ -349,6 +349,10 @@
   .word-card .exlabel { display:inline-block; font-size:0.62em; font-weight:700; color:#fff; background:var(--primary); border-radius:5px; padding:1px 5px; margin-right:5px; vertical-align:middle; }
   .word-card .wtip { font-size: 0.8em; color: var(--text-mid); margin-top: 8px; background: var(--surface-2); border-left: 3px solid var(--primary); border-radius: 6px; padding: 7px 9px; white-space: pre-line; line-height: 1.55; }
   .word-card .wtip .tlabel { display:inline-block; font-size:0.92em; font-weight:800; color:var(--primary); margin-right:5px; }
+  .word-card .wexpr { font-size: 0.8em; color: var(--text-mid); margin-top: 8px; background: #ecfdf5; border-left: 3px solid #10b981; border-radius: 6px; padding: 7px 9px; line-height: 1.55; }
+  .word-card .wexpr .elabel { display:block; font-size:0.92em; font-weight:800; color:#059669; margin-bottom:3px; }
+  .word-card .wexpr .ei { padding: 1px 0; }
+  body.dark .word-card .wexpr { background: rgba(16,185,129,0.12); }
   .word-card .wquiz { font-size: 0.8em; color: var(--text-mid); margin-top: 8px; background: #eef2ff; border-radius: 6px; padding: 7px 9px; line-height: 1.55; }
   .word-card .wquiz .qopt { color: var(--text-light); }
   .word-card .wquiz .qans { color: #4338ca; font-weight: 800; }
@@ -1108,6 +1112,7 @@
 <script src="vocab_hackers.js"></script>
 <script src="vocab_secret_top.js"></script>
 <script src="vocab_kyungsunsik.js"></script>
+<script src="vocab_kss_toeic.js"></script>
 <script src="lc_data.js"></script>
 <script src="lc_answers.js"></script>
 <script src="lc_answers_p2.js"></script>
@@ -1123,6 +1128,7 @@ const BOOKS = [
   { id:'hackers', name:'해커스',   icon:'📕', color:'#ef4444', data:(typeof VOCAB_HACKERS   !=='undefined'?VOCAB_HACKERS   :[]) },
   { id:'top',     name:'토익비밀과외(최빈출)', icon:'🎯', color:'#0ea5e9', data:(typeof VOCAB_SECRET_TOP !=='undefined'?VOCAB_SECRET_TOP :[]) },
   { id:'kss',     name:'경선식 중학 영단어', icon:'🧠', color:'#a855f7', data:(typeof VOCAB_KSS !=='undefined'?VOCAB_KSS :[]) },
+  { id:'kst',     name:'경선식 토익', icon:'🚀', color:'#2563eb', data:(typeof VOCAB_KSS_TOEIC !=='undefined'?VOCAB_KSS_TOEIC :[]) },
 ];
 // 새 스키마(examples[]) → 기존 기능(플래시카드·퀴즈)용 단일 example/exampleKor 보강
 BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
@@ -1141,7 +1147,7 @@ function defState() {
   return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
-const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','my'];
+const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','my'];
 function migrateState(s){
   s = { ...defState(), ...(s||{}) };
   if(s.ver>=3) return s;
@@ -1828,6 +1834,10 @@ function renderWordList(words, book, day){
     const ex=exList.map((e,j)=>`<div class="wex">${j===0?'<span class="exlabel">기출</span>':''}<button class="spk" onclick="speak('${speakAttr(e.en)}')" title="예문 발음">🔊</button> ${highlightWord(e.en, w.word)}</div>${e.ko?`<div class="wexk">${esc(e.ko)}</div>`:''}`).join('');
     // TIP / 연상 (tipLabel 지정 시 라벨 변경)
     const tip=w.tip?`<div class="wtip"><span class="tlabel">${esc(w.tipLabel||'만점 TIP')}</span>${esc(w.tip)}</div>`:'';
+    // 토익 출제 표현 (콜로케이션 등)
+    const expr=(w.toeicExpr&&w.toeicExpr.length)
+      ? `<div class="wexpr"><span class="elabel">★토익 출제 표현</span>${w.toeicExpr.map(t=>`<div class="ei">${esc(t)}</div>`).join('')}</div>`
+      : '';
     // Part 5,6 기출 문제
     const quiz=w.quiz?`<div class="wquiz">Q. ${esc(w.quiz.sentence)}<br><span class="qopt">(A) ${esc(w.quiz.a)} &nbsp; (B) ${esc(w.quiz.b)}</span> → 정답 <span class="qans">(${esc(w.quiz.answer)})</span></div>`:'';
     const img=imageBook(book)?`<div class="wimg loading" data-word="${esc(w.word)}"></div>`:'';
@@ -1839,6 +1849,7 @@ function renderWordList(words, book, day){
         ${w.meaning?`<div class="wmean">${esc(w.meaning)}</div>`:''}
         ${deriv}
         ${ex}
+        ${expr}
         ${quiz}
         ${tip}
       </div>
