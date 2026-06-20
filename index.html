@@ -391,15 +391,6 @@
   .sp-ctrl button:active{ transform:scale(0.96); }
   .sp-ctrl .prim{ background:var(--primary); color:#fff; }
   .sp-speak-big{ background:#0ea5e9; color:#fff; border:none; border-radius:13px; padding:10px 18px; font-weight:800; font-size:1em; cursor:pointer; }
-  .sp-mic{ margin-top:4px; background:#0ea5e9; color:#fff; border:none; border-radius:14px; padding:12px 22px; font-weight:800; font-size:1em; cursor:pointer; }
-  .sp-mic.rec{ background:#dc2626; animation:sppulse 1s infinite; }
-  @keyframes sppulse{ 0%,100%{opacity:1} 50%{opacity:.55} }
-  .sp-live{ margin-top:12px; width:100%; min-height:46px; background:#0f172a; color:#fff; border-radius:12px; padding:11px 13px; font-size:1.15em; font-weight:700; line-height:1.5; text-align:center; word-break:break-word; }
-  body.dark .sp-live{ background:#000; }
-  .sp-rec{ margin-top:14px; width:100%; background:var(--surface-2); border-radius:12px; padding:12px 13px; text-align:center; line-height:1.6; }
-  .sp-rec .sp-said{ font-size:0.85em; color:var(--text-mid); margin-top:5px; word-break:break-word; }
-  .sp-rec .sp-target{ margin-top:7px; font-weight:700; font-size:1.05em; word-break:keep-all; }
-  body.dark .sp-rec{ background:rgba(255,255,255,0.06); }
   .lc-tabs { display:flex; gap:7px; flex-wrap:wrap; padding: 4px 0 12px; position:sticky; top:0; background:var(--bg,#f8fafc); z-index:5; }
   .lc-tab { border:1px solid var(--surface-2); background:var(--surface); color:var(--text-mid); border-radius:999px; padding:6px 14px; font-size:0.85em; font-weight:700; cursor:pointer; }
   .lc-tab.on { background:var(--primary); color:#fff; border-color:var(--primary); }
@@ -806,7 +797,7 @@
       <div class="lc-entry-ico">🗣️</div>
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
-        <small>한글 보고 영어로 말하기 · 🎤 마이크로 발음 체크 · 3챕터</small>
+        <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
       </div>
       <span class="lc-entry-go">→</span>
     </div>
@@ -1168,7 +1159,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260620h';
+  window.APP_VERSION='20260620i';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1187,20 +1178,20 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260620h"></script>
-<script src="vocab_eduwill.js?v=20260620h"></script>
-<script src="vocab_wangchobo.js?v=20260620h"></script>
-<script src="vocab_hackers.js?v=20260620h"></script>
-<script src="vocab_secret_top.js?v=20260620h"></script>
-<script src="vocab_kyungsunsik.js?v=20260620h"></script>
-<script src="vocab_kss_toeic.js?v=20260620h"></script>
-<script src="vocab_noisaegim.js?v=20260620h"></script>
-<script src="vocab_legend.js?v=20260620h"></script>
-<script src="sentences.js?v=20260620h"></script>
-<script src="lc_data.js?v=20260620h"></script>
-<script src="lc_answers.js?v=20260620h"></script>
-<script src="lc_answers_p2.js?v=20260620h"></script>
-<script src="lc_answers_p34.js?v=20260620h"></script>
+<script src="vocabulary.js?v=20260620i"></script>
+<script src="vocab_eduwill.js?v=20260620i"></script>
+<script src="vocab_wangchobo.js?v=20260620i"></script>
+<script src="vocab_hackers.js?v=20260620i"></script>
+<script src="vocab_secret_top.js?v=20260620i"></script>
+<script src="vocab_kyungsunsik.js?v=20260620i"></script>
+<script src="vocab_kss_toeic.js?v=20260620i"></script>
+<script src="vocab_noisaegim.js?v=20260620i"></script>
+<script src="vocab_legend.js?v=20260620i"></script>
+<script src="sentences.js?v=20260620i"></script>
+<script src="lc_data.js?v=20260620i"></script>
+<script src="lc_answers.js?v=20260620i"></script>
+<script src="lc_answers_p2.js?v=20260620i"></script>
+<script src="lc_answers_p34.js?v=20260620i"></script>
 <script>
 'use strict';
 
@@ -1767,8 +1758,7 @@ function chapterItems(c){ return (c.units||[]).flatMap(u=>(u.items||[]).map(it=>
 function chapterProg(c){ const its=chapterItems(c); return {done: its.filter(it=>spLearned(c.ch,it.u,it.n)).length, total: its.length}; }
 function openSpeak(){ speakState={view:'chapters',ch:null,unit:null,idx:0,flipped:false,items:[]}; showView('speak'); renderSpeak(); }
 function speakBack(){
-  spStopRec();
-  if(speakState.view==='deck'){ speakState.view='units'; speakState.recResult=null; renderSpeak(); }
+  if(speakState.view==='deck'){ speakState.view='units'; renderSpeak(); }
   else if(speakState.view==='units'){ speakState.view='chapters'; speakState.ch=null; renderSpeak(); }
   else goHome();
 }
@@ -1805,84 +1795,14 @@ function renderSpeakCard(){
   el.innerHTML=`<div class="sp-deck">
     <div style="width:100%; display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;"><span class="sp-num">${speakState.idx+1} / ${items.length}</span><button style="background:none; border:none; color:var(--text-light); font-size:0.85em; cursor:pointer;" onclick="speakShuffle()">🔀 섞기</button></div>
     <div class="progress-track" style="margin-bottom:14px;"><div class="progress-track-fill" style="width:${(speakState.idx+1)/items.length*100}%"></div></div>
-    <div class="sp-card" onclick="speakFlip()"><div class="sp-num">#${it.n}</div><div class="sp-ko">${esc(it.ko)}</div>${ f ? `<div class="sp-en-row"><span class="sp-en">${esc(it.en)}</span><button class="sp-speak-big" onclick="event.stopPropagation(); speak('${speakAttr(it.en)}')">🔊</button></div><button class="sp-mic${spMicState==='listening'?' rec':''}" onclick="event.stopPropagation(); speakRecognize()">${spMicState==='listening'?'🎙️ 듣는 중… (탭하면 중지)':'🎤 마이크로 말해보기'}</button>${spMicState==='listening'?`<div class="sp-live" id="sp-live">${esc(speakState.recLive||'🎙️ 말해보세요…')}</div>`:''}${spRecHtml()}` : '<div class="sp-tap">탭하면 영어 정답 👆</div>' }</div>
+    <div class="sp-card" onclick="speakFlip()"><div class="sp-num">#${it.n}</div><div class="sp-ko">${esc(it.ko)}</div>${ f ? `<div class="sp-en-row"><span class="sp-en">${esc(it.en)}</span><button class="sp-speak-big" onclick="event.stopPropagation(); speak('${speakAttr(it.en)}')">🔊</button></div>` : '<div class="sp-tap">탭하면 영어 정답 👆</div>' }</div>
     <div class="sp-ctrl"><button onclick="speakPrev()">← 이전</button><button class="prim" onclick="speakNext()">다음 →</button></div>
   </div>`;
 }
-function speakFlip(){ spStopRec(); speakState.flipped=!speakState.flipped; if(speakState.flipped){ const it=speakState.items[speakState.idx]; speak(it.en); spMark(speakState.ch,speakState.unit,it.n); } renderSpeakCard(); }
-function speakNext(){ spStopRec(); speakState.recResult=null; if(speakState.idx<speakState.items.length-1){ speakState.idx++; speakState.flipped=false; renderSpeakCard(); } else { toast('이 주제 끝! 🎉'); } }
-function speakPrev(){ spStopRec(); speakState.recResult=null; if(speakState.idx>0){ speakState.idx--; speakState.flipped=false; renderSpeakCard(); } }
-function speakShuffle(){ spStopRec(); speakState.recResult=null; speakState.items=shuffle(speakState.items); speakState.idx=0; speakState.flipped=false; renderSpeakCard(); toast('🔀 섞었어요'); }
-// ----- 음성 인식(말하기 체크) -----
-let spMicState='idle', _spRec=null;
-function spStopRec(){ if(_spRec){ try{ _spRec.onresult=null; _spRec.onerror=null; _spRec.onend=null; _spRec.abort(); }catch(e){} _spRec=null; } spMicState='idle'; speakState.recLive=''; }
-function spNormWords(s){ return String(s||'').toLowerCase().replace(/[.,!?;:"'`()]/g,' ').replace(/\s+/g,' ').trim().split(' ').filter(Boolean); }
-function scoreSpeech(target, said){
-  const saidW=spNormWords(said);
-  const candidates=String(target).split(/\s+\/\s+/);   // 문장 전체 대안 (" / "로 구분)
-  let best={score:0, slots:[]};
-  for(const cand of candidates){
-    const slots=cand.trim().split(/\s+/).map(tok=> tok.toLowerCase().replace(/[.,!?;:"'`()]/g,'').split('/').map(x=>x.trim()).filter(Boolean)).filter(s=>s.length);
-    if(!slots.length) continue;
-    const pool=saidW.slice(), marks=[]; let matched=0;
-    for(const alts of slots){ let hit=false; for(const a of alts){ const i=pool.indexOf(a); if(i>=0){ pool.splice(i,1); hit=true; break; } } if(hit) matched++; marks.push({alts,hit}); }
-    const score=matched/slots.length;
-    if(score>best.score) best={score, slots:marks};
-  }
-  return best;
-}
-function spRecHtml(){
-  const r=speakState.recResult; if(!r || r.idx!==speakState.idx) return '';
-  const pct=Math.round(r.score*100);
-  const v = r.score>=0.8?'✅ 정확해요!': r.score>=0.5?'👍 거의 맞아요':'❌ 다시 해볼까요?';
-  const col = r.score>=0.8?'#16a34a': r.score>=0.5?'#d97706':'#dc2626';
-  const words=(r.slots||[]).map(s=>`<span style="color:${s.hit?'#16a34a':'#dc2626'};${s.hit?'':'opacity:.65;'}">${esc(s.alts[0])}</span>`).join(' ');
-  return `<div class="sp-rec" onclick="event.stopPropagation()"><div style="font-weight:800; color:${col}; font-size:1.05em;">${v} <span style="font-size:0.85em;">(${pct}%)</span></div><div class="sp-said">🗣️ 내가 말한 것: "${esc(r.said||'(인식 안 됨)')}"</div><div class="sp-target">${words||''}</div></div>`;
-}
-function speakRecognize(){
-  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
-  if(!SR){ toast('이 브라우저는 음성 인식을 지원하지 않아요 (Chrome 권장)'); return; }
-  if(spMicState==='listening'){ spStopRec(); renderSpeakCard(); return; }   // 다시 누르면 중지
-  const it=speakState.items[speakState.idx]; if(!it) return;
-  spStopRec(); speakState.recResult=null; speakState.recLive='';
-  let rec; try{ rec=new SR(); }catch(e){ toast('음성 인식을 시작할 수 없어요'); return; }
-  _spRec=rec; rec.lang='en-US'; rec.interimResults=true; rec.maxAlternatives=4; rec.continuous=false;
-  const myIdx=speakState.idx;
-  let finalText='';
-  spMicState='listening'; renderSpeakCard();
-  rec.onresult=function(e){
-    let interim='', gotFinal=false;
-    for(let i=e.resultIndex;i<e.results.length;i++){
-      const r=e.results[i];
-      if(r.isFinal){ finalText += r[0].transcript+' '; gotFinal=true; }
-      else interim += r[0].transcript+' ';
-    }
-    speakState.recLive=(finalText+interim).trim();   // 실시간 자막
-    if(gotFinal){
-      const said=finalText.trim();
-      const sr=scoreSpeech(it.en, said);
-      speakState.recResult={idx:myIdx, score:sr.score, slots:sr.slots, said:said};
-      speakState.recLive='';
-      if(sr.score>=0.8) spMark(speakState.ch,speakState.unit,it.n);
-      renderSpeakCard();
-    } else {
-      spUpdateLive();                                // 자막만 부드럽게 갱신(전체 리렌더 X)
-    }
-  };
-  rec.onerror=function(e){ if(e.error==='not-allowed'||e.error==='service-not-allowed') toast('🎤 마이크 권한을 허용해주세요'); else if(e.error==='no-speech') toast('소리가 잘 안 들렸어요. 다시 해보세요'); else if(e.error==='audio-capture') toast('마이크를 찾을 수 없어요'); };
-  rec.onend=function(){
-    spMicState='idle'; _spRec=null;
-    // 최종 결과가 아직 없으면 지금까지 들린 걸로 채점
-    if((!speakState.recResult || speakState.recResult.idx!==myIdx) && finalText.trim()){
-      const sr=scoreSpeech(it.en, finalText.trim());
-      speakState.recResult={idx:myIdx, score:sr.score, slots:sr.slots, said:finalText.trim()};
-      if(sr.score>=0.8) spMark(speakState.ch,speakState.unit,it.n);
-    }
-    speakState.recLive=''; renderSpeakCard();
-  };
-  try{ rec.start(); }catch(e){ spMicState='idle'; _spRec=null; toast('잠시 후 다시 시도해주세요'); renderSpeakCard(); }
-}
-function spUpdateLive(){ const el=document.getElementById('sp-live'); if(el) el.textContent = speakState.recLive || '🎙️ 말해보세요…'; }
+function speakFlip(){ speakState.flipped=!speakState.flipped; if(speakState.flipped){ const it=speakState.items[speakState.idx]; speak(it.en); spMark(speakState.ch,speakState.unit,it.n); } renderSpeakCard(); }
+function speakNext(){ if(speakState.idx<speakState.items.length-1){ speakState.idx++; speakState.flipped=false; renderSpeakCard(); } else { toast('이 주제 끝! 🎉'); } }
+function speakPrev(){ if(speakState.idx>0){ speakState.idx--; speakState.flipped=false; renderSpeakCard(); } }
+function speakShuffle(){ speakState.items=shuffle(speakState.items); speakState.idx=0; speakState.flipped=false; renderSpeakCard(); toast('🔀 섞었어요'); }
 // ===== 월간 학습 달력 =====
 let _calY, _calM;
 function openMonthCal(){ const n=new Date(); _calY=n.getFullYear(); _calM=n.getMonth(); renderMonthCal(); $('cal-overlay').classList.add('active'); }
