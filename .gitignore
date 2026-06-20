@@ -36,3 +36,7 @@ toeic-voca-backup-*.json
 _s1/
 _s2/
 _s3/
+
+# 핵심패턴233 음원(대용량)·작업폴더 — GitHub Pages 1GB 한도 보호
+_p233/
+영어회화 핵심패턴 233/
