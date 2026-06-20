@@ -394,6 +394,8 @@
   .sp-mic{ margin-top:4px; background:#0ea5e9; color:#fff; border:none; border-radius:14px; padding:12px 22px; font-weight:800; font-size:1em; cursor:pointer; }
   .sp-mic.rec{ background:#dc2626; animation:sppulse 1s infinite; }
   @keyframes sppulse{ 0%,100%{opacity:1} 50%{opacity:.55} }
+  .sp-live{ margin-top:12px; width:100%; min-height:46px; background:#0f172a; color:#fff; border-radius:12px; padding:11px 13px; font-size:1.15em; font-weight:700; line-height:1.5; text-align:center; word-break:break-word; }
+  body.dark .sp-live{ background:#000; }
   .sp-rec{ margin-top:14px; width:100%; background:var(--surface-2); border-radius:12px; padding:12px 13px; text-align:center; line-height:1.6; }
   .sp-rec .sp-said{ font-size:0.85em; color:var(--text-mid); margin-top:5px; word-break:break-word; }
   .sp-rec .sp-target{ margin-top:7px; font-weight:700; font-size:1.05em; word-break:keep-all; }
@@ -1166,7 +1168,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260620g';
+  window.APP_VERSION='20260620h';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1185,20 +1187,20 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260620g"></script>
-<script src="vocab_eduwill.js?v=20260620g"></script>
-<script src="vocab_wangchobo.js?v=20260620g"></script>
-<script src="vocab_hackers.js?v=20260620g"></script>
-<script src="vocab_secret_top.js?v=20260620g"></script>
-<script src="vocab_kyungsunsik.js?v=20260620g"></script>
-<script src="vocab_kss_toeic.js?v=20260620g"></script>
-<script src="vocab_noisaegim.js?v=20260620g"></script>
-<script src="vocab_legend.js?v=20260620g"></script>
-<script src="sentences.js?v=20260620g"></script>
-<script src="lc_data.js?v=20260620g"></script>
-<script src="lc_answers.js?v=20260620g"></script>
-<script src="lc_answers_p2.js?v=20260620g"></script>
-<script src="lc_answers_p34.js?v=20260620g"></script>
+<script src="vocabulary.js?v=20260620h"></script>
+<script src="vocab_eduwill.js?v=20260620h"></script>
+<script src="vocab_wangchobo.js?v=20260620h"></script>
+<script src="vocab_hackers.js?v=20260620h"></script>
+<script src="vocab_secret_top.js?v=20260620h"></script>
+<script src="vocab_kyungsunsik.js?v=20260620h"></script>
+<script src="vocab_kss_toeic.js?v=20260620h"></script>
+<script src="vocab_noisaegim.js?v=20260620h"></script>
+<script src="vocab_legend.js?v=20260620h"></script>
+<script src="sentences.js?v=20260620h"></script>
+<script src="lc_data.js?v=20260620h"></script>
+<script src="lc_answers.js?v=20260620h"></script>
+<script src="lc_answers_p2.js?v=20260620h"></script>
+<script src="lc_answers_p34.js?v=20260620h"></script>
 <script>
 'use strict';
 
@@ -1803,7 +1805,7 @@ function renderSpeakCard(){
   el.innerHTML=`<div class="sp-deck">
     <div style="width:100%; display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;"><span class="sp-num">${speakState.idx+1} / ${items.length}</span><button style="background:none; border:none; color:var(--text-light); font-size:0.85em; cursor:pointer;" onclick="speakShuffle()">🔀 섞기</button></div>
     <div class="progress-track" style="margin-bottom:14px;"><div class="progress-track-fill" style="width:${(speakState.idx+1)/items.length*100}%"></div></div>
-    <div class="sp-card" onclick="speakFlip()"><div class="sp-num">#${it.n}</div><div class="sp-ko">${esc(it.ko)}</div>${ f ? `<div class="sp-en-row"><span class="sp-en">${esc(it.en)}</span><button class="sp-speak-big" onclick="event.stopPropagation(); speak('${speakAttr(it.en)}')">🔊</button></div><button class="sp-mic${spMicState==='listening'?' rec':''}" onclick="event.stopPropagation(); speakRecognize()">${spMicState==='listening'?'🎙️ 듣는 중… (탭하면 중지)':'🎤 마이크로 말해보기'}</button>${spRecHtml()}` : '<div class="sp-tap">탭하면 영어 정답 👆</div>' }</div>
+    <div class="sp-card" onclick="speakFlip()"><div class="sp-num">#${it.n}</div><div class="sp-ko">${esc(it.ko)}</div>${ f ? `<div class="sp-en-row"><span class="sp-en">${esc(it.en)}</span><button class="sp-speak-big" onclick="event.stopPropagation(); speak('${speakAttr(it.en)}')">🔊</button></div><button class="sp-mic${spMicState==='listening'?' rec':''}" onclick="event.stopPropagation(); speakRecognize()">${spMicState==='listening'?'🎙️ 듣는 중… (탭하면 중지)':'🎤 마이크로 말해보기'}</button>${spMicState==='listening'?`<div class="sp-live" id="sp-live">${esc(speakState.recLive||'🎙️ 말해보세요…')}</div>`:''}${spRecHtml()}` : '<div class="sp-tap">탭하면 영어 정답 👆</div>' }</div>
     <div class="sp-ctrl"><button onclick="speakPrev()">← 이전</button><button class="prim" onclick="speakNext()">다음 →</button></div>
   </div>`;
 }
@@ -1813,7 +1815,7 @@ function speakPrev(){ spStopRec(); speakState.recResult=null; if(speakState.idx>
 function speakShuffle(){ spStopRec(); speakState.recResult=null; speakState.items=shuffle(speakState.items); speakState.idx=0; speakState.flipped=false; renderSpeakCard(); toast('🔀 섞었어요'); }
 // ----- 음성 인식(말하기 체크) -----
 let spMicState='idle', _spRec=null;
-function spStopRec(){ if(_spRec){ try{ _spRec.onresult=null; _spRec.onerror=null; _spRec.onend=null; _spRec.abort(); }catch(e){} _spRec=null; } spMicState='idle'; }
+function spStopRec(){ if(_spRec){ try{ _spRec.onresult=null; _spRec.onerror=null; _spRec.onend=null; _spRec.abort(); }catch(e){} _spRec=null; } spMicState='idle'; speakState.recLive=''; }
 function spNormWords(s){ return String(s||'').toLowerCase().replace(/[.,!?;:"'`()]/g,' ').replace(/\s+/g,' ').trim().split(' ').filter(Boolean); }
 function scoreSpeech(target, said){
   const saidW=spNormWords(said);
@@ -1842,23 +1844,45 @@ function speakRecognize(){
   if(!SR){ toast('이 브라우저는 음성 인식을 지원하지 않아요 (Chrome 권장)'); return; }
   if(spMicState==='listening'){ spStopRec(); renderSpeakCard(); return; }   // 다시 누르면 중지
   const it=speakState.items[speakState.idx]; if(!it) return;
-  spStopRec();
+  spStopRec(); speakState.recResult=null; speakState.recLive='';
   let rec; try{ rec=new SR(); }catch(e){ toast('음성 인식을 시작할 수 없어요'); return; }
-  _spRec=rec; rec.lang='en-US'; rec.interimResults=false; rec.maxAlternatives=4; rec.continuous=false;
+  _spRec=rec; rec.lang='en-US'; rec.interimResults=true; rec.maxAlternatives=4; rec.continuous=false;
   const myIdx=speakState.idx;
+  let finalText='';
   spMicState='listening'; renderSpeakCard();
   rec.onresult=function(e){
-    const res=e.results[0]; let bestText='', bestScore=-1;
-    for(let i=0;i<res.length;i++){ const t=res[i].transcript; const sc=scoreSpeech(it.en,t).score; if(sc>bestScore){ bestScore=sc; bestText=t; } }
-    const sr=scoreSpeech(it.en,bestText);
-    speakState.recResult={idx:myIdx, score:sr.score, slots:sr.slots, said:bestText};
-    if(sr.score>=0.8) spMark(speakState.ch,speakState.unit,it.n);
-    renderSpeakCard();
+    let interim='', gotFinal=false;
+    for(let i=e.resultIndex;i<e.results.length;i++){
+      const r=e.results[i];
+      if(r.isFinal){ finalText += r[0].transcript+' '; gotFinal=true; }
+      else interim += r[0].transcript+' ';
+    }
+    speakState.recLive=(finalText+interim).trim();   // 실시간 자막
+    if(gotFinal){
+      const said=finalText.trim();
+      const sr=scoreSpeech(it.en, said);
+      speakState.recResult={idx:myIdx, score:sr.score, slots:sr.slots, said:said};
+      speakState.recLive='';
+      if(sr.score>=0.8) spMark(speakState.ch,speakState.unit,it.n);
+      renderSpeakCard();
+    } else {
+      spUpdateLive();                                // 자막만 부드럽게 갱신(전체 리렌더 X)
+    }
   };
   rec.onerror=function(e){ if(e.error==='not-allowed'||e.error==='service-not-allowed') toast('🎤 마이크 권한을 허용해주세요'); else if(e.error==='no-speech') toast('소리가 잘 안 들렸어요. 다시 해보세요'); else if(e.error==='audio-capture') toast('마이크를 찾을 수 없어요'); };
-  rec.onend=function(){ spMicState='idle'; _spRec=null; renderSpeakCard(); };
+  rec.onend=function(){
+    spMicState='idle'; _spRec=null;
+    // 최종 결과가 아직 없으면 지금까지 들린 걸로 채점
+    if((!speakState.recResult || speakState.recResult.idx!==myIdx) && finalText.trim()){
+      const sr=scoreSpeech(it.en, finalText.trim());
+      speakState.recResult={idx:myIdx, score:sr.score, slots:sr.slots, said:finalText.trim()};
+      if(sr.score>=0.8) spMark(speakState.ch,speakState.unit,it.n);
+    }
+    speakState.recLive=''; renderSpeakCard();
+  };
   try{ rec.start(); }catch(e){ spMicState='idle'; _spRec=null; toast('잠시 후 다시 시도해주세요'); renderSpeakCard(); }
 }
+function spUpdateLive(){ const el=document.getElementById('sp-live'); if(el) el.textContent = speakState.recLive || '🎙️ 말해보세요…'; }
 // ===== 월간 학습 달력 =====
 let _calY, _calM;
 function openMonthCal(){ const n=new Date(); _calY=n.getFullYear(); _calM=n.getMonth(); renderMonthCal(); $('cal-overlay').classList.add('active'); }
