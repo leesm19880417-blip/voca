@@ -978,7 +978,7 @@
   <div class="sheet" style="max-width:440px;">
     <div class="grabber"></div>
     <h3>👤 사용자 설정</h3>
-    <p class="sub">사용자별로 <b>즐겨찾기·진도·오답</b>이 따로 저장돼요. 다른 기기에서 같은 이름을 입력하면 그 사용자의 진도가 그대로 이어집니다.</p>
+    <p class="sub"><b>폰·PC 어디서나</b> 같은 이름을 입력하면 진도·즐겨찾기·오답·마스터가 <b>그대로 이어지고 같이 저장</b>돼요. 지금 게스트로 한 진도도 처음 이름 정할 때 함께 가져옵니다. <br><span style="color:var(--text-light)">※ 이름이 곧 동기화 키예요. 모든 기기에서 똑같이 입력하세요(비밀번호 없음).</span></p>
     <div class="field">
       <label>사용자 이름</label>
       <input type="text" id="user-input" placeholder="예: 홍길동" autocapitalize="off" autocorrect="off" spellcheck="false">
@@ -2649,18 +2649,30 @@ function addUser(name){ const u=getUsers().filter(x=>x!==name); u.unshift(name);
 function delUser(name){ localStorage.setItem('toeic_users', JSON.stringify(getUsers().filter(x=>x!==name))); renderRecentUsers(); }
 function userLabel(n){ return (!n||n==='guest')?'게스트':n; }
 function updateUserLabel(){ const el=$('user-name-label'); if(el) el.textContent=userLabel(SYNC_CODE); }
-function switchUser(name){
+function switchUser(name, opts){
   name=String(name||'').trim(); if(!name) return;
   if(name===SYNC_CODE){ closeUser(); return; }
   if(fb.ref && fb.writeTimer){ try{ fb.ref.set(state); }catch(e){} }   // 미저장 변경만 마지막으로 올림
   if(fb.writeTimer){ clearTimeout(fb.writeTimer); fb.writeTimer=null; }
   if(fb.ref){ fb.ref.off(); fb.ref=null; }
-  state=defState(); saveLocal();
-  SYNC_CODE=name; cloud.code=name; localStorage.setItem('toeic_fb_code', name);
+  // 게스트로 쌓은 진도가 있으면 새 계정으로 '가져오기'(attachSync의 최초 병합으로 이어짐).
+  // 명명 사용자끼리 전환할 때만 로컬 초기화.
+  const carry = (opts && opts.carry!==undefined) ? opts.carry : (SYNC_CODE==='guest' && _hasProg(state));
+  if(!carry){ state=defState(); }
+  saveLocal();
+  SYNC_CODE=name; cloud.code=name; localStorage.setItem('toeic_fb_code', name); localStorage.setItem('toeic_named','1');
   addUser(name); updateUserLabel(); refreshView();
   if(fb.db){ attachSync(name); } else { setSyncUI('off'); }
-  toast('👤 '+userLabel(name)+'(으)로 전환');
+  toast(carry ? ('👤 '+userLabel(name)+' 시작 — 기존 진도를 가져왔어요') : ('👤 '+userLabel(name)+'(으)로 전환'));
   closeUser();
+}
+// 첫 실행 시 이름 설정 유도 (한 번만) — 모든 기기에서 진도가 같이 저장되도록
+function maybeOnboardName(){
+  try{
+    if(localStorage.getItem('toeic_named') || localStorage.getItem('toeic_onboard_seen')) return;
+    localStorage.setItem('toeic_onboard_seen','1');
+    setTimeout(function(){ if(SYNC_CODE==='guest'){ openUser(); toast('💾 이름을 정하면 폰·PC 어디서나 진도가 같이 저장돼요'); } }, 1000);
+  }catch(e){}
 }
 function openUser(){ const inp=$('user-input'); if(inp) inp.value=(SYNC_CODE==='guest')?'':SYNC_CODE; renderRecentUsers(); const o=$('user-overlay'); if(o) o.classList.add('active'); }
 function closeUser(){ const o=$('user-overlay'); if(o) o.classList.remove('active'); }
@@ -2725,6 +2737,7 @@ renderHome();
 renderAQBooks();
 fbInit();
 updateUserLabel();
+maybeOnboardName();
 </script>
 
 </body>
