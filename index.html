@@ -1114,7 +1114,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260620c';
+  window.APP_VERSION='20260620d';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1133,19 +1133,19 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260620c"></script>
-<script src="vocab_eduwill.js?v=20260620c"></script>
-<script src="vocab_wangchobo.js?v=20260620c"></script>
-<script src="vocab_hackers.js?v=20260620c"></script>
-<script src="vocab_secret_top.js?v=20260620c"></script>
-<script src="vocab_kyungsunsik.js?v=20260620c"></script>
-<script src="vocab_kss_toeic.js?v=20260620c"></script>
-<script src="vocab_noisaegim.js?v=20260620c"></script>
-<script src="vocab_legend.js?v=20260620c"></script>
-<script src="lc_data.js?v=20260620c"></script>
-<script src="lc_answers.js?v=20260620c"></script>
-<script src="lc_answers_p2.js?v=20260620c"></script>
-<script src="lc_answers_p34.js?v=20260620c"></script>
+<script src="vocabulary.js?v=20260620d"></script>
+<script src="vocab_eduwill.js?v=20260620d"></script>
+<script src="vocab_wangchobo.js?v=20260620d"></script>
+<script src="vocab_hackers.js?v=20260620d"></script>
+<script src="vocab_secret_top.js?v=20260620d"></script>
+<script src="vocab_kyungsunsik.js?v=20260620d"></script>
+<script src="vocab_kss_toeic.js?v=20260620d"></script>
+<script src="vocab_noisaegim.js?v=20260620d"></script>
+<script src="vocab_legend.js?v=20260620d"></script>
+<script src="lc_data.js?v=20260620d"></script>
+<script src="lc_answers.js?v=20260620d"></script>
+<script src="lc_answers_p2.js?v=20260620d"></script>
+<script src="lc_answers_p34.js?v=20260620d"></script>
 <script>
 'use strict';
 
@@ -1678,9 +1678,7 @@ function renderStudyCarousel(){
     const day=nextDayOf(b), d=b.data.find(x=>x.day===day); if(!d) return '';
     const learned=d.words.filter(w=>state.learned[wordKey(b.id,day,w.word)]).length;
     const total=d.words.length, pct=total?Math.round(learned/total*100):0, done=!!state.completed[b.id+':'+day];
-    const strip=d.words.slice(0,7).map(w=>`<div class="sc-thumb loading" data-strip="1" data-word="${esc(w.word)}"></div>`).join('');
     return `<div class="study-card" style="--bc:${b.color}">
-      <div class="sc-strip">${strip}</div>
       <div class="sc-head"><span class="sc-title">${b.icon} ${esc(b.name)}</span>${done?'<span class="sc-done">✓ 완료</span>':''}</div>
       <div class="sc-sub">${d.week?'WEEK '+d.week+' · ':''}DAY ${day} · ${esc(d.title||'')}</div>
       <div class="pbar"><div class="pfill" style="width:${pct}%; background:linear-gradient(90deg,${b.color},${b.color}aa)"></div></div>
@@ -1688,7 +1686,6 @@ function renderStudyCarousel(){
       <button class="sc-cta" onclick="openDay('${b.id}',${day})">${done?'다시 보기':'학습하기'} →</button>
     </div>`;
   }).join('');
-  setupStripImages();
 }
 function setupStripImages(){
   const els=document.querySelectorAll('#study-carousel .sc-thumb[data-strip]');
