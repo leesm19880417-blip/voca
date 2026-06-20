@@ -503,7 +503,11 @@
   .rc-go{ font-weight:800; color:var(--text-light); white-space:nowrap; }
   .rc-due .rc-go{ color:#ea580c; }
   /* 플래시카드 평가(SRS) 버튼 */
-  .srs-actions{ display:flex; gap:8px; margin-top:14px; }
+  .fc-master{ text-align:center; font-size:0.82em; color:var(--text-light); margin:10px 0 0; font-weight:700; letter-spacing:1px; }
+  .fc-master .dots{ letter-spacing:2px; }
+  .fc-master .md-on{ color:var(--success); } .fc-master .md-off{ color:var(--border); }
+  .fc-master.done{ color:var(--success); }
+  .srs-actions{ display:flex; gap:8px; margin-top:10px; }
   .srs-btn{ flex:1; border:none; border-radius:12px; padding:11px 6px; font-weight:800; font-size:1.0em; cursor:pointer; color:#fff; display:flex; flex-direction:column; align-items:center; gap:3px; }
   .srs-btn small{ font-weight:600; font-size:0.66em; opacity:.95; }
   .srs-btn:active{ transform:scale(0.95); }
@@ -737,6 +741,7 @@
         <div class="mini-stats">
           <span>완료 <b id="ms-days">0</b> Day</span>
           <span>단어 <b id="ms-words">0</b></span>
+          <span>🏆 <b id="ms-master">0</b></span>
           <span>⭐ <b id="ms-stars">0</b></span>
         </div>
       </div>
@@ -832,6 +837,7 @@
       </div>
     </div>
     <p class="card-hint">탭하면 뒤집혀요 · <b>외울 때까지</b> 그날 안에서 계속 반복돼요</p>
+    <div id="fc-master" class="fc-master"></div>
     <div class="srs-actions">
       <button class="srs-btn srs-again" onclick="srsRate(0)">모름<small>곧 다시</small></button>
       <button class="srs-btn srs-hard" onclick="srsRate(1)">애매<small>조금 뒤 다시</small></button>
@@ -1757,6 +1763,7 @@ function updateHeaderStats(){
   const totalDays=totalDayCount();
   $('ms-days').textContent=days;
   $('ms-words').textContent=words;
+  if($('ms-master')) $('ms-master').textContent=masteredCount();
   $('ms-stars').textContent=Object.keys(state.bookmarks).length;
   const pct=Math.round(words/totalWords*100);
   if($('hero-pct')){
@@ -1927,6 +1934,14 @@ function renderFlashcard(){
   const fcEx=w.example?`<div class="fc-ex">${highlightWord(w.example, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.example)}')">🔊</button></div>${w.exampleKor?`<div class="fc-ex-ko">${esc(w.exampleKor)}</div>`:''}`:'';
   $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posKor(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div>${fcTip}${fcEx}`;
   $('flip-card').classList.toggle('flipped', flashFlipped);
+  // 마스터 진척 표시 (서로 다른 날 MASTER_DAYS회 통과 → 졸업)
+  const fcm=$('fc-master');
+  if(fcm){
+    const ms=state.srs[wordKey(fcBook, w.day||currentDay, w.word)];
+    const pc=Math.min((ms&&ms.pc)||0, MASTER_DAYS);
+    if(ms&&ms.mastered){ fcm.className='fc-master done'; fcm.innerHTML='🏆 마스터 완료'; }
+    else { fcm.className='fc-master'; fcm.innerHTML='마스터까지 <span class="dots"><span class="md-on">'+'●'.repeat(pc)+'</span><span class="md-off">'+'○'.repeat(MASTER_DAYS-pc)+'</span></span> ('+pc+'/'+MASTER_DAYS+'일)'; }
+  }
   if(autoSpeak) speak(w.word);  // 새 카드(앞면) 뜨면 단어 자동 발음
 }
 function flipCard(){
@@ -1959,6 +1974,8 @@ function advanceCard(){
 }
 // ===== 망각곡선 복습(SRS) =====
 const SRS_INT=[1,3,7,14,30,60]; // 레벨 1~6의 복습 간격(일)
+const MASTER_DAYS=3; // 서로 다른 날 이만큼 '외움' 통과하면 마스터(졸업)
+function masteredCount(){ let n=0; const s=state.srs||{}; for(const k in s){ if(s[k]&&s[k].mastered) n++; } return n; }
 function srsToday(){ return Math.floor(Date.now()/86400000); }
 function srsDaysFor(level, grade){
   if(grade===0) return 1;                                  // 모름 → 내일 다시
@@ -1976,19 +1993,25 @@ function srsRate(grade){
     // 모름 → 큐 맨 뒤로 (다른 단어 먼저 돌고 다시). 3번 틀리면 즐겨찾기 자동 추가.
     state.wrongs[key]={...w,day:dy,book:bk};
     const miss=(prev.miss||0)+1;
-    state.srs[key]={l:0, miss, due:srsToday()};
+    // 모름 → 마스터 진척(pc) 초기화 (잊으면 다시 처음부터 — 철저하게)
+    state.srs[key]={l:0, miss, pc:0, pd:prev.pd, mastered:false, due:srsToday()};
     if(miss>=3 && !state.bookmarks[key]){ state.bookmarks[key]={word:w.word,day:dy,book:bk}; toast('⭐ '+miss+'번 틀려서 즐겨찾기에 추가했어요'); }
     currentWords.push(w);
   } else if(grade===1){
-    // 애매 → 조금 뒤에 다시
-    state.srs[key]={...prev, due:srsToday()};
+    // 애매 → 조금 뒤에 다시 (마스터 진척은 유지하되 이번 통과로는 안 침)
+    state.srs[key]={...prev, mastered:false, due:srsToday()};
     currentWords.splice(Math.min(currentIdx+5,currentWords.length),0,w);
   } else {
-    // 외움 → 세션 통과 + 다음 복습일 예약, 틀린 횟수 초기화
+    // 외움 → 세션 통과 + 다음 복습일 예약 + 마스터 진척(서로 다른 날만 카운트)
     _sessMastered++;
     state.learned[key]=true; delete state.wrongs[key];
     const l=Math.min((prev.l||0)+1, SRS_INT.length);
-    state.srs[key]={l, miss:0, due:srsToday()+SRS_INT[l-1]};
+    const tdy=srsToday();
+    let pc=prev.pc||0, pd=prev.pd;
+    if(pd!==tdy){ pc++; pd=tdy; }               // 하루 1회만 인정
+    const mastered=pc>=MASTER_DAYS;
+    state.srs[key]={l, miss:0, pc, pd, mastered, due: mastered ? tdy+9999 : tdy+SRS_INT[l-1]};
+    if(mastered && !prev.mastered) toast('🏆 마스터! "'+w.word+'" 졸업 🎓');
   }
   { const td=srsToday(); if(!state.studyDays) state.studyDays={}; state.studyDays[td]=(state.studyDays[td]||0)+1; }
   saveState(); bumpStreak();
@@ -2001,7 +2024,7 @@ function dueWords(){
   const t=srsToday(), out=[];
   BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
     const s=state.srs[wordKey(b.id,d.day,w.word)];
-    if(s && s.due<=t) out.push({...w, book:b.id, day:d.day, _due:s.due});
+    if(s && !s.mastered && s.due<=t) out.push({...w, book:b.id, day:d.day, _due:s.due});
   })));
   out.sort((a,b)=>a._due-b._due);
   return out;
@@ -2415,6 +2438,7 @@ function renderStats(){
     <div class="stat-grid">
       <div class="stat-box"><div class="sv" style="color:var(--primary)">${days}/${totalDays}</div><div class="sl">완료한 Day</div></div>
       <div class="stat-box"><div class="sv" style="color:var(--success)">${learned}</div><div class="sl">학습 단어 / ${totalWords}</div></div>
+      <div class="stat-box"><div class="sv" style="color:#d97706">🏆 ${masteredCount()}</div><div class="sl">마스터 (${MASTER_DAYS}일 졸업)</div></div>
       <div class="stat-box"><div class="sv" style="color:var(--warning)">${bm}</div><div class="sl">즐겨찾기</div></div>
       <div class="stat-box"><div class="sv" style="color:var(--danger)">${wr}</div><div class="sl">오답 단어</div></div>
       <div class="stat-box"><div class="sv" style="color:var(--primary)">${totalQ}</div><div class="sl">총 퀴즈 풀이</div></div>
@@ -2541,8 +2565,10 @@ function mergeStates(a, b){
     if(p&&q&&typeof p==='object'&&typeof q==='object'){ const r=Object.assign({}, q, p); r.count=Math.max(p.count||0, q.count||0); return r; }
     return p||q;
   });
-  out.srs = _mergeMap(a.srs, b.srs, (p,q)=>{              // SRS: 더 많이 학습된(reps↑)·더 최근(due↑) 쪽
-    const pr=(p&&p.reps)||0, qr=(q&&q.reps)||0; if(qr!==pr) return qr>pr?q:p;
+  out.srs = _mergeMap(a.srs, b.srs, (p,q)=>{              // SRS: 마스터·진척(pc)·레벨(l)·최근(due) 큰 쪽 보존
+    if(!!(p&&p.mastered)!==!!(q&&q.mastered)) return (p&&p.mastered)?p:q;
+    const pc1=(p&&p.pc)||0, qc1=(q&&q.pc)||0; if(pc1!==qc1) return qc1>pc1?q:p;
+    const pl=(p&&p.l)||0, ql=(q&&q.l)||0; if(pl!==ql) return ql>pl?q:p;
     const pd=(p&&p.due)||0, qd=(q&&q.due)||0; return qd>pd?q:p;
   });
   const qh=(a.quizHistory||[]).concat(b.quizHistory||[]); const qs=new Set();
