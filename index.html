@@ -390,6 +390,18 @@
   .sp-ctrl button{ flex:1; border:none; border-radius:13px; padding:13px 6px; font-weight:800; font-size:0.95em; cursor:pointer; background:var(--surface-2); color:var(--text); }
   .sp-ctrl button:active{ transform:scale(0.96); }
   .sp-ctrl .prim{ background:var(--primary); color:#fff; }
+  .sp-ctrl .ok{ background:#22c55e; color:#fff; }
+  .sp-deckhead{ width:100%; display:flex; align-items:center; gap:8px; }
+  .sp-deckhead .sp-num{ font-size:0.85em; }
+  .sp-known{ font-size:0.8em; font-weight:800; color:#16a34a; margin-left:auto; }
+  .sp-tg{ border:1.5px solid var(--border); background:var(--surface); color:var(--text-mid); border-radius:20px; padding:5px 12px; font-size:0.78em; font-weight:800; cursor:pointer; }
+  .sp-tg.on{ background:#fff7ed; border-color:#fdba74; color:#ea580c; }
+  body.dark .sp-tg.on{ background:rgba(234,88,12,0.18); }
+  .sp-mini{ background:var(--surface-2); border:none; border-radius:10px; padding:5px 9px; font-size:0.9em; cursor:pointer; }
+  .sp-card{ position:relative; }
+  .sp-card.done{ border-color:#86efac; }
+  body.dark .sp-card.done{ border-color:#15803d; }
+  .sp-badge{ position:absolute; top:10px; right:12px; background:#22c55e; color:#fff; font-size:0.72em; font-weight:800; padding:3px 9px; border-radius:20px; }
   .sp-speak-big{ background:#0ea5e9; color:#fff; border:none; border-radius:13px; padding:10px 18px; font-weight:800; font-size:1em; cursor:pointer; }
   .lc-tabs { display:flex; gap:7px; flex-wrap:wrap; padding: 4px 0 12px; position:sticky; top:0; background:var(--bg,#f8fafc); z-index:5; }
   .lc-tab { border:1px solid var(--surface-2); background:var(--surface); color:var(--text-mid); border-radius:999px; padding:6px 14px; font-size:0.85em; font-weight:700; cursor:pointer; }
@@ -1159,7 +1171,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260620i';
+  window.APP_VERSION='20260621a';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1178,20 +1190,20 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260620i"></script>
-<script src="vocab_eduwill.js?v=20260620i"></script>
-<script src="vocab_wangchobo.js?v=20260620i"></script>
-<script src="vocab_hackers.js?v=20260620i"></script>
-<script src="vocab_secret_top.js?v=20260620i"></script>
-<script src="vocab_kyungsunsik.js?v=20260620i"></script>
-<script src="vocab_kss_toeic.js?v=20260620i"></script>
-<script src="vocab_noisaegim.js?v=20260620i"></script>
-<script src="vocab_legend.js?v=20260620i"></script>
-<script src="sentences.js?v=20260620i"></script>
-<script src="lc_data.js?v=20260620i"></script>
-<script src="lc_answers.js?v=20260620i"></script>
-<script src="lc_answers_p2.js?v=20260620i"></script>
-<script src="lc_answers_p34.js?v=20260620i"></script>
+<script src="vocabulary.js?v=20260621a"></script>
+<script src="vocab_eduwill.js?v=20260621a"></script>
+<script src="vocab_wangchobo.js?v=20260621a"></script>
+<script src="vocab_hackers.js?v=20260621a"></script>
+<script src="vocab_secret_top.js?v=20260621a"></script>
+<script src="vocab_kyungsunsik.js?v=20260621a"></script>
+<script src="vocab_kss_toeic.js?v=20260621a"></script>
+<script src="vocab_noisaegim.js?v=20260621a"></script>
+<script src="vocab_legend.js?v=20260621a"></script>
+<script src="sentences.js?v=20260621a"></script>
+<script src="lc_data.js?v=20260621a"></script>
+<script src="lc_answers.js?v=20260621a"></script>
+<script src="lc_answers_p2.js?v=20260621a"></script>
+<script src="lc_answers_p34.js?v=20260621a"></script>
 <script>
 'use strict';
 
@@ -1785,22 +1797,43 @@ function renderSpeak(){
 function speakOpenChapter(ch){ speakState.ch=ch; speakState.view='units'; renderSpeak(); }
 function speakOpenUnit(ch,u){
   const c=SP().find(x=>x.ch===ch); const unit=c&&(c.units||[]).find(x=>x.u===u); if(!unit) return;
-  speakState.ch=ch; speakState.unit=u; speakState.items=(unit.items||[]).slice(); speakState.idx=0; speakState.flipped=false; speakState.view='deck'; renderSpeak();
+  speakState.ch=ch; speakState.unit=u; speakState.allItems=(unit.items||[]).slice(); speakState.onlyUnknown=false;
+  spApplyFilter(); speakState.view='deck'; renderSpeak();
 }
+function spApplyFilter(){
+  const all=speakState.allItems||[];
+  if(speakState.onlyUnknown){
+    const unk=all.filter(it=>!spLearned(speakState.ch,speakState.unit,it.n));
+    if(unk.length){ speakState.items=unk; } else { speakState.items=all.slice(); speakState.onlyUnknown=false; toast('이 주제는 다 외웠어요! 🎉'); }
+  } else speakState.items=all.slice();
+  speakState.idx=0; speakState.flipped=false;
+}
+function spToggleUnknown(){ speakState.onlyUnknown=!speakState.onlyUnknown; spApplyFilter(); renderSpeakCard(); toast(speakState.onlyUnknown?'✗ 안 외운 문장만 봐요':'전체 문장을 봐요'); }
 function renderSpeakCard(){
   const el=$('speak-content'); const c=SP().find(x=>x.ch===speakState.ch); const unit=c&&(c.units||[]).find(x=>x.u===speakState.unit);
   const title=$('speak-title'); if(title) title.innerHTML='🗣️ '+esc(unit?unit.title:(c?c.title:''));
   const items=speakState.items; if(!items.length){ el.innerHTML='<p>문장이 없어요.</p>'; return; }
   const it=items[speakState.idx], f=speakState.flipped;
+  const known=spLearned(speakState.ch,speakState.unit,it.n);
+  const all=speakState.allItems||items, total=all.length;
+  const knownCnt=all.filter(x=>spLearned(speakState.ch,speakState.unit,x.n)).length;
   el.innerHTML=`<div class="sp-deck">
-    <div style="width:100%; display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;"><span class="sp-num">${speakState.idx+1} / ${items.length}</span><button style="background:none; border:none; color:var(--text-light); font-size:0.85em; cursor:pointer;" onclick="speakShuffle()">🔀 섞기</button></div>
-    <div class="progress-track" style="margin-bottom:14px;"><div class="progress-track-fill" style="width:${(speakState.idx+1)/items.length*100}%"></div></div>
-    <div class="sp-card" onclick="speakFlip()"><div class="sp-num">#${it.n}</div><div class="sp-ko">${esc(it.ko)}</div>${ f ? `<div class="sp-en-row"><span class="sp-en">${esc(it.en)}</span><button class="sp-speak-big" onclick="event.stopPropagation(); speak('${speakAttr(it.en)}')">🔊</button></div>` : '<div class="sp-tap">탭하면 영어 정답 👆</div>' }</div>
-    <div class="sp-ctrl"><button onclick="speakPrev()">← 이전</button><button class="prim" onclick="speakNext()">다음 →</button></div>
+    <div class="sp-deckhead">
+      <span class="sp-num">${speakState.idx+1} / ${items.length}</span>
+      <span class="sp-known">✓ 외움 ${knownCnt}/${total}</span>
+      <button class="sp-tg${speakState.onlyUnknown?' on':''}" onclick="spToggleUnknown()">${speakState.onlyUnknown?'안 외운 것만':'전체'}</button>
+      <button class="sp-mini" onclick="speakShuffle()" title="섞기">🔀</button>
+    </div>
+    <div class="progress-track" style="margin:8px 0 14px;"><div class="progress-track-fill" style="width:${(speakState.idx+1)/items.length*100}%"></div></div>
+    <div class="sp-card${known?' done':''}" onclick="speakFlip()">${known?'<div class="sp-badge">✓ 외움</div>':''}<div class="sp-num">#${it.n}</div><div class="sp-ko">${esc(it.ko)}</div>${ f ? `<div class="sp-en-row"><span class="sp-en">${esc(it.en)}</span><button class="sp-speak-big" onclick="event.stopPropagation(); speak('${speakAttr(it.en)}')">🔊</button></div>` : '<div class="sp-tap">탭하면 영어 정답 보기 👆</div>' }</div>
+    ${ f
+      ? `<div class="sp-ctrl"><button onclick="spKnow(false)">✗ 아직</button><button class="ok" onclick="spKnow(true)">✓ 외웠어요</button></div>`
+      : `<div class="sp-ctrl"><button onclick="speakPrev()">← 이전</button><button class="prim" onclick="speakNext()">다음 →</button></div>` }
   </div>`;
 }
-function speakFlip(){ speakState.flipped=!speakState.flipped; if(speakState.flipped){ const it=speakState.items[speakState.idx]; speak(it.en); spMark(speakState.ch,speakState.unit,it.n); } renderSpeakCard(); }
-function speakNext(){ if(speakState.idx<speakState.items.length-1){ speakState.idx++; speakState.flipped=false; renderSpeakCard(); } else { toast('이 주제 끝! 🎉'); } }
+function speakFlip(){ speakState.flipped=!speakState.flipped; if(speakState.flipped){ speak(speakState.items[speakState.idx].en); } renderSpeakCard(); }
+function spKnow(known){ const it=speakState.items[speakState.idx]; if(known) spMark(speakState.ch,speakState.unit,it.n); speakNext(); }
+function speakNext(){ if(speakState.idx<speakState.items.length-1){ speakState.idx++; speakState.flipped=false; renderSpeakCard(); } else { speakState.flipped=false; renderSpeakCard(); toast('이 주제 끝! 🎉'); } }
 function speakPrev(){ if(speakState.idx>0){ speakState.idx--; speakState.flipped=false; renderSpeakCard(); } }
 function speakShuffle(){ speakState.items=shuffle(speakState.items); speakState.idx=0; speakState.flipped=false; renderSpeakCard(); toast('🔀 섞었어요'); }
 // ===== 월간 학습 달력 =====
@@ -2200,7 +2233,7 @@ function renderQuiz(){
   $('quiz-progress').style.width=((quizIdx+1)/total*100)+'%';
   $('quiz-score').textContent=`정답 ${quizScore}`;
   if(it.type==='ko-en'){ $('quiz-prompt').textContent='뜻에 맞는 영단어를 고르세요'; $('quiz-q').innerHTML=`${esc(it.meaning)} <small>(${posKor(it.pos)})</small>`; }
-  else { $('quiz-prompt').textContent='영단어의 뜻을 고르세요'; $('quiz-q').innerHTML=`${esc(it.word)} <small>(${posKor(it.pos)})</small>`; }
+  else { $('quiz-prompt').textContent='영단어의 뜻을 고르세요'; $('quiz-q').innerHTML=`${esc(it.word)} <small>(${posKor(it.pos)})</small> <button class="spk" onclick="speak('${speakAttr(it.word)}')" title="발음 듣기">🔊</button>`; speak(it.word); }
   $('quiz-options').innerHTML=it.options.map((opt,i)=>`<button class="quiz-option" data-opt="${esc(opt)}" onclick="answerQuiz(this,'${q(opt)}')"><span class="onum">${i+1}</span><span>${esc(opt)}</span></button>`).join('');
   $('quiz-fb').innerHTML=''; $('quiz-next').style.display='none';
 }
