@@ -1114,7 +1114,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260620a';
+  window.APP_VERSION='20260620b';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1133,19 +1133,19 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260620a"></script>
-<script src="vocab_eduwill.js?v=20260620a"></script>
-<script src="vocab_wangchobo.js?v=20260620a"></script>
-<script src="vocab_hackers.js?v=20260620a"></script>
-<script src="vocab_secret_top.js?v=20260620a"></script>
-<script src="vocab_kyungsunsik.js?v=20260620a"></script>
-<script src="vocab_kss_toeic.js?v=20260620a"></script>
-<script src="vocab_noisaegim.js?v=20260620a"></script>
-<script src="vocab_legend.js?v=20260620a"></script>
-<script src="lc_data.js?v=20260620a"></script>
-<script src="lc_answers.js?v=20260620a"></script>
-<script src="lc_answers_p2.js?v=20260620a"></script>
-<script src="lc_answers_p34.js?v=20260620a"></script>
+<script src="vocabulary.js?v=20260620b"></script>
+<script src="vocab_eduwill.js?v=20260620b"></script>
+<script src="vocab_wangchobo.js?v=20260620b"></script>
+<script src="vocab_hackers.js?v=20260620b"></script>
+<script src="vocab_secret_top.js?v=20260620b"></script>
+<script src="vocab_kyungsunsik.js?v=20260620b"></script>
+<script src="vocab_kss_toeic.js?v=20260620b"></script>
+<script src="vocab_noisaegim.js?v=20260620b"></script>
+<script src="vocab_legend.js?v=20260620b"></script>
+<script src="lc_data.js?v=20260620b"></script>
+<script src="lc_answers.js?v=20260620b"></script>
+<script src="lc_answers_p2.js?v=20260620b"></script>
+<script src="lc_answers_p34.js?v=20260620b"></script>
 <script>
 'use strict';
 
@@ -1225,7 +1225,9 @@ let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동
 
 const STACK_VIEWS = ['lc','book','day','mywords','flashcard','quiz','typing','result'];
 const $ = id => document.getElementById(id);
-const wordKey = (b,d,w) => `${b}:${d}:${w}`;
+// Firebase 키 금지문자(. # $ / [ ])는 _로 치환 — 안 하면 해당 단어 학습 시 클라우드 저장 전체가 실패함
+const safeKeyPart = s => String(s).replace(/[.#$/\[\]]/g, '_');
+const wordKey = (b,d,w) => `${b}:${d}:${safeKeyPart(w)}`;
 function shuffle(a){ a=[...a]; for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
 function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function q(s){ return String(s==null?'':s).replace(/'/g,"\\'").replace(/\\/g,'\\\\'); }
@@ -1891,7 +1893,7 @@ function renderWordList(words, book, day){
   if(imageBook(book)) setupWordImages();
 }
 // ===== 단어별 연상 이미지 (무료·오픈 라이선스 Openverse, 보일 때만 로드 + 캐시) =====
-function imageBook(b){ return b==='siwon'||b==='top'; }
+function imageBook(b){ return false; } // 단어별 자동 사진 비활성화(사용자 요청)
 let _imgObserver=null;
 function setupWordImages(){
   const els=document.querySelectorAll('#word-list .wimg[data-word]');

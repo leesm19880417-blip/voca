@@ -28,3 +28,6 @@ _tools/
 Thumbs.db
 .DS_Store
 desktop.ini
+
+# 개인 진도 백업 파일
+toeic-voca-backup-*.json
