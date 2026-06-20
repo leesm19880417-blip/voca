@@ -364,6 +364,33 @@
   .lc-entry-body b { font-size: 1.08em; }
   .lc-entry-body small { opacity:.9; font-size:0.78em; }
   .lc-entry-go { font-size: 1.4em; opacity:.9; }
+  /* ===== 1000문장 말하기 ===== */
+  .sp-chapter { background:var(--surface); border-radius:var(--r); box-shadow:var(--shadow-sm); padding:16px; margin-bottom:10px; display:flex; align-items:center; gap:13px; cursor:pointer; border-left:5px solid var(--primary); }
+  .sp-chapter:active{ transform:scale(0.99); }
+  .sp-chapter .ico{ font-size:1.7em; }
+  .sp-chapter .body{ flex:1; min-width:0; }
+  .sp-chapter .body b{ font-size:1.05em; }
+  .sp-chapter .body small{ display:block; color:var(--text-light); font-size:0.8em; margin-top:2px; }
+  .sp-chapter .pbar{ margin-top:8px; }
+  .sp-units{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .sp-unit{ background:var(--surface); border:1.5px solid var(--border); border-radius:14px; padding:13px; cursor:pointer; text-align:left; }
+  .sp-unit:active{ transform:scale(0.98); }
+  .sp-unit b{ font-size:0.96em; display:block; }
+  .sp-unit small{ color:var(--text-light); font-size:0.76em; }
+  .sp-unit .pbar{ margin-top:8px; }
+  .sp-deck{ display:flex; flex-direction:column; align-items:center; }
+  .sp-card{ width:100%; min-height:300px; background:linear-gradient(160deg,#f0f9ff,#fff); border:1.5px solid #bae6fd; border-radius:22px; box-shadow:var(--shadow); padding:26px 20px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:16px; cursor:pointer; text-align:center; }
+  body.dark .sp-card{ background:linear-gradient(160deg,#0f2030,#101826); border-color:#1e3a5f; }
+  .sp-num{ font-size:0.8em; color:var(--text-light); font-weight:700; }
+  .sp-ko{ font-size:1.6em; font-weight:800; color:var(--text); word-break:keep-all; line-height:1.4; }
+  .sp-en{ font-size:1.35em; font-weight:700; color:var(--primary); word-break:keep-all; line-height:1.45; }
+  .sp-en-row{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .sp-tap{ font-size:0.82em; color:var(--text-light); opacity:.7; }
+  .sp-ctrl{ display:flex; gap:9px; width:100%; margin-top:14px; }
+  .sp-ctrl button{ flex:1; border:none; border-radius:13px; padding:13px 6px; font-weight:800; font-size:0.95em; cursor:pointer; background:var(--surface-2); color:var(--text); }
+  .sp-ctrl button:active{ transform:scale(0.96); }
+  .sp-ctrl .prim{ background:var(--primary); color:#fff; }
+  .sp-speak-big{ background:#0ea5e9; color:#fff; border:none; border-radius:13px; padding:10px 18px; font-weight:800; font-size:1em; cursor:pointer; }
   .lc-tabs { display:flex; gap:7px; flex-wrap:wrap; padding: 4px 0 12px; position:sticky; top:0; background:var(--bg,#f8fafc); z-index:5; }
   .lc-tab { border:1px solid var(--surface-2); background:var(--surface); color:var(--text-mid); border-radius:999px; padding:6px 14px; font-size:0.85em; font-weight:700; cursor:pointer; }
   .lc-tab.on { background:var(--primary); color:#fff; border-color:var(--primary); }
@@ -765,6 +792,15 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
+    <div class="section-label">🗣️ 말하기 연습</div>
+    <div class="lc-entry" onclick="openSpeak()" style="background:linear-gradient(135deg,#0ea5e9,#22c55e);">
+      <div class="lc-entry-ico">🗣️</div>
+      <div class="lc-entry-body">
+        <b>기초영어 1000문장 말하기</b>
+        <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 · 3챕터</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
     <div class="section-label">📚 단어장 선택</div>
     <div class="book-grid" id="book-grid"></div>
   </div>
@@ -777,6 +813,15 @@
     </div>
     <div class="lc-tabs" id="lc-tabs"></div>
     <div class="lc-pages" id="lc-pages"></div>
+  </div>
+
+  <!-- 기초 1000문장 말하기 -->
+  <div id="view-speak" class="view">
+    <div class="stack-header">
+      <button class="icon-btn" onclick="speakBack()">←</button>
+      <div class="stack-title" id="speak-title">🗣️ 기초 1000문장 말하기</div>
+    </div>
+    <div id="speak-content"></div>
   </div>
 
   <!-- 단어장(책) 상세: Day 목록 -->
@@ -1114,7 +1159,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260620d';
+  window.APP_VERSION='20260620e';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1133,19 +1178,20 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260620d"></script>
-<script src="vocab_eduwill.js?v=20260620d"></script>
-<script src="vocab_wangchobo.js?v=20260620d"></script>
-<script src="vocab_hackers.js?v=20260620d"></script>
-<script src="vocab_secret_top.js?v=20260620d"></script>
-<script src="vocab_kyungsunsik.js?v=20260620d"></script>
-<script src="vocab_kss_toeic.js?v=20260620d"></script>
-<script src="vocab_noisaegim.js?v=20260620d"></script>
-<script src="vocab_legend.js?v=20260620d"></script>
-<script src="lc_data.js?v=20260620d"></script>
-<script src="lc_answers.js?v=20260620d"></script>
-<script src="lc_answers_p2.js?v=20260620d"></script>
-<script src="lc_answers_p34.js?v=20260620d"></script>
+<script src="vocabulary.js?v=20260620e"></script>
+<script src="vocab_eduwill.js?v=20260620e"></script>
+<script src="vocab_wangchobo.js?v=20260620e"></script>
+<script src="vocab_hackers.js?v=20260620e"></script>
+<script src="vocab_secret_top.js?v=20260620e"></script>
+<script src="vocab_kyungsunsik.js?v=20260620e"></script>
+<script src="vocab_kss_toeic.js?v=20260620e"></script>
+<script src="vocab_noisaegim.js?v=20260620e"></script>
+<script src="vocab_legend.js?v=20260620e"></script>
+<script src="sentences.js?v=20260620e"></script>
+<script src="lc_data.js?v=20260620e"></script>
+<script src="lc_answers.js?v=20260620e"></script>
+<script src="lc_answers_p2.js?v=20260620e"></script>
+<script src="lc_answers_p34.js?v=20260620e"></script>
 <script>
 'use strict';
 
@@ -1175,7 +1221,7 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, spDone:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
@@ -1234,7 +1280,7 @@ let quizData=[], quizIdx=0, quizScore=0, quizWrong=[];
 let aqCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false, _reviewMode=false, _sessTotal=0, _sessMastered=0, _swiped=false;
 let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동 발음 (기본 켜짐)
 
-const STACK_VIEWS = ['lc','book','day','mywords','flashcard','quiz','typing','result'];
+const STACK_VIEWS = ['lc','speak','book','day','mywords','flashcard','quiz','typing','result'];
 const $ = id => document.getElementById(id);
 // Firebase 키 금지문자(. # $ / [ ])는 _로 치환 — 안 하면 해당 단어 학습 시 클라우드 저장 전체가 실패함
 const safeKeyPart = s => String(s).replace(/[.#$/\[\]]/g, '_');
@@ -1702,6 +1748,61 @@ async function loadStripImg(el){
   if(url){ el.style.backgroundImage='url("'+url.replace(/"/g,'')+'")'; el.classList.add('imgset'); }
   else { el.classList.add('noimg'); }
 }
+// ===== 기초 1000문장 말하기 =====
+let speakState={ view:'chapters', ch:null, unit:null, idx:0, flipped:false, items:[] };
+function SP(){ return (typeof SENTENCES!=='undefined' && SENTENCES) ? SENTENCES : []; }
+function spKey(ch,u,n){ return 'sp:'+ch+':'+u+':'+n; }
+function spLearned(ch,u,n){ return !!(state.spDone && state.spDone[spKey(ch,u,n)]); }
+function spMark(ch,u,n){ if(!state.spDone) state.spDone={}; if(!state.spDone[spKey(ch,u,n)]){ state.spDone[spKey(ch,u,n)]=true; saveState(); } }
+function chapterItems(c){ return (c.units||[]).flatMap(u=>(u.items||[]).map(it=>({...it,u:u.u}))); }
+function chapterProg(c){ const its=chapterItems(c); return {done: its.filter(it=>spLearned(c.ch,it.u,it.n)).length, total: its.length}; }
+function openSpeak(){ speakState={view:'chapters',ch:null,unit:null,idx:0,flipped:false,items:[]}; showView('speak'); renderSpeak(); }
+function speakBack(){
+  if(speakState.view==='deck'){ speakState.view='units'; renderSpeak(); }
+  else if(speakState.view==='units'){ speakState.view='chapters'; speakState.ch=null; renderSpeak(); }
+  else goHome();
+}
+function renderSpeak(){
+  const el=$('speak-content'); if(!el) return;
+  const title=$('speak-title');
+  if(speakState.view==='chapters'){
+    if(title) title.innerHTML='🗣️ 기초 1000문장 말하기';
+    const chs=SP();
+    if(!chs.length){ el.innerHTML='<p style="color:var(--text-light); text-align:center; padding:34px;">문장 데이터를 준비 중이에요.</p>'; return; }
+    el.innerHTML='<div style="font-size:0.85em; color:var(--text-light); margin:2px 0 12px;">한글을 보고 영어로 말해본 뒤, 카드를 탭해서 정답과 발음을 확인하세요.</div>'+
+      chs.map(c=>{ const p=chapterProg(c); const pct=p.total?Math.round(p.done/p.total*100):0;
+        return `<div class="sp-chapter" onclick="speakOpenChapter(${c.ch})"><div class="ico">🗣️</div><div class="body"><b>${esc(c.title)}</b><small>${(c.units||[]).length}개 주제 · 문장 ${p.total}개 · ${p.done} 완료</small><div class="pbar"><div class="pfill" style="width:${pct}%; background:linear-gradient(90deg,#0ea5e9,#22c55e)"></div></div></div><span class="lc-entry-go" style="color:var(--text-light)">→</span></div>`;
+      }).join('');
+  } else if(speakState.view==='units'){
+    const c=SP().find(x=>x.ch===speakState.ch); if(!c){ speakState.view='chapters'; return renderSpeak(); }
+    if(title) title.innerHTML='🗣️ '+esc(c.title);
+    el.innerHTML='<div class="sp-units">'+(c.units||[]).map(u=>{
+        const tot=(u.items||[]).length, done=(u.items||[]).filter(it=>spLearned(c.ch,u.u,it.n)).length, pct=tot?Math.round(done/tot*100):0;
+        return `<div class="sp-unit" onclick="speakOpenUnit(${c.ch},${u.u})"><b>${esc(u.title)}</b><small>문장 ${tot}개 · ${done} 완료</small><div class="pbar"><div class="pfill" style="width:${pct}%; background:linear-gradient(90deg,#0ea5e9,#22c55e)"></div></div></div>`;
+      }).join('')+'</div>';
+  } else { renderSpeakCard(); }
+}
+function speakOpenChapter(ch){ speakState.ch=ch; speakState.view='units'; renderSpeak(); }
+function speakOpenUnit(ch,u){
+  const c=SP().find(x=>x.ch===ch); const unit=c&&(c.units||[]).find(x=>x.u===u); if(!unit) return;
+  speakState.ch=ch; speakState.unit=u; speakState.items=(unit.items||[]).slice(); speakState.idx=0; speakState.flipped=false; speakState.view='deck'; renderSpeak();
+}
+function renderSpeakCard(){
+  const el=$('speak-content'); const c=SP().find(x=>x.ch===speakState.ch); const unit=c&&(c.units||[]).find(x=>x.u===speakState.unit);
+  const title=$('speak-title'); if(title) title.innerHTML='🗣️ '+esc(unit?unit.title:(c?c.title:''));
+  const items=speakState.items; if(!items.length){ el.innerHTML='<p>문장이 없어요.</p>'; return; }
+  const it=items[speakState.idx], f=speakState.flipped;
+  el.innerHTML=`<div class="sp-deck">
+    <div style="width:100%; display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;"><span class="sp-num">${speakState.idx+1} / ${items.length}</span><button style="background:none; border:none; color:var(--text-light); font-size:0.85em; cursor:pointer;" onclick="speakShuffle()">🔀 섞기</button></div>
+    <div class="progress-track" style="margin-bottom:14px;"><div class="progress-track-fill" style="width:${(speakState.idx+1)/items.length*100}%"></div></div>
+    <div class="sp-card" onclick="speakFlip()"><div class="sp-num">#${it.n}</div><div class="sp-ko">${esc(it.ko)}</div>${ f ? `<div class="sp-en-row"><span class="sp-en">${esc(it.en)}</span><button class="sp-speak-big" onclick="event.stopPropagation(); speak('${speakAttr(it.en)}')">🔊</button></div>` : '<div class="sp-tap">탭하면 영어 정답 👆</div>' }</div>
+    <div class="sp-ctrl"><button onclick="speakPrev()">← 이전</button><button class="prim" onclick="speakNext()">다음 →</button></div>
+  </div>`;
+}
+function speakFlip(){ speakState.flipped=!speakState.flipped; if(speakState.flipped){ const it=speakState.items[speakState.idx]; speak(it.en); spMark(speakState.ch,speakState.unit,it.n); } renderSpeakCard(); }
+function speakNext(){ if(speakState.idx<speakState.items.length-1){ speakState.idx++; speakState.flipped=false; renderSpeakCard(); } else { toast('이 주제 끝! 🎉'); } }
+function speakPrev(){ if(speakState.idx>0){ speakState.idx--; speakState.flipped=false; renderSpeakCard(); } }
+function speakShuffle(){ speakState.items=shuffle(speakState.items); speakState.idx=0; speakState.flipped=false; renderSpeakCard(); toast('🔀 섞었어요'); }
 // ===== 월간 학습 달력 =====
 let _calY, _calM;
 function openMonthCal(){ const n=new Date(); _calY=n.getFullYear(); _calM=n.getMonth(); renderMonthCal(); $('cal-overlay').classList.add('active'); }
@@ -2589,6 +2690,7 @@ function mergeStates(a, b){
   out.learned   = _mergeMap(a.learned,   b.learned);
   out.bookmarks = _mergeMap(a.bookmarks, b.bookmarks);
   out.studyDays = _mergeMap(a.studyDays, b.studyDays);
+  out.spDone = _mergeMap(a.spDone, b.spDone);   // 1000문장 말하기 진행
   out.wrongs    = _mergeMap(a.wrongs, b.wrongs, (p,q)=>{  // 오답: 더 많은 횟수 보존
     if(p&&q&&typeof p==='object'&&typeof q==='object'){ const r=Object.assign({}, q, p); r.count=Math.max(p.count||0, q.count||0); return r; }
     return p||q;
