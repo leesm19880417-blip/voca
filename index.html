@@ -1114,7 +1114,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260620b';
+  window.APP_VERSION='20260620c';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1133,19 +1133,19 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260620b"></script>
-<script src="vocab_eduwill.js?v=20260620b"></script>
-<script src="vocab_wangchobo.js?v=20260620b"></script>
-<script src="vocab_hackers.js?v=20260620b"></script>
-<script src="vocab_secret_top.js?v=20260620b"></script>
-<script src="vocab_kyungsunsik.js?v=20260620b"></script>
-<script src="vocab_kss_toeic.js?v=20260620b"></script>
-<script src="vocab_noisaegim.js?v=20260620b"></script>
-<script src="vocab_legend.js?v=20260620b"></script>
-<script src="lc_data.js?v=20260620b"></script>
-<script src="lc_answers.js?v=20260620b"></script>
-<script src="lc_answers_p2.js?v=20260620b"></script>
-<script src="lc_answers_p34.js?v=20260620b"></script>
+<script src="vocabulary.js?v=20260620c"></script>
+<script src="vocab_eduwill.js?v=20260620c"></script>
+<script src="vocab_wangchobo.js?v=20260620c"></script>
+<script src="vocab_hackers.js?v=20260620c"></script>
+<script src="vocab_secret_top.js?v=20260620c"></script>
+<script src="vocab_kyungsunsik.js?v=20260620c"></script>
+<script src="vocab_kss_toeic.js?v=20260620c"></script>
+<script src="vocab_noisaegim.js?v=20260620c"></script>
+<script src="vocab_legend.js?v=20260620c"></script>
+<script src="lc_data.js?v=20260620c"></script>
+<script src="lc_answers.js?v=20260620c"></script>
+<script src="lc_answers_p2.js?v=20260620c"></script>
+<script src="lc_answers_p34.js?v=20260620c"></script>
 <script>
 'use strict';
 
@@ -1179,8 +1179,19 @@ function defState() {
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
+// 기존에 저장된 키 중 Firebase 금지문자(. # $ / [ ])를 _로 정리 (ver 무관, 불러올 때마다)
+function sanitizeStateKeys(s){
+  ['completed','learned','bookmarks','wrongs','srs','studyDays'].forEach(function(f){
+    const m=s[f]; if(!m || typeof m!=='object') return;
+    const o={};
+    for(const k in m){ o[k.replace(/[.#$/\[\]]/g,'_')] = m[k]; }
+    s[f]=o;
+  });
+  return s;
+}
 function migrateState(s){
   s = { ...defState(), ...(s||{}) };
+  s = sanitizeStateKeys(s);          // 항상 키 정리 → 슬래시 단어 때문에 저장 막히던 문제 방지
   if(s.ver>=3) return s;
   const mapObj = (obj, withVal) => {
     const out={};
