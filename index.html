@@ -255,6 +255,36 @@
   .hero .mini-stats { display: flex; gap: 14px; margin-top: 8px; }
   .hero .mini-stats span { font-size: 0.78em; color: var(--text-mid); }
   .hero .mini-stats b { color: var(--primary); }
+  /* ===== AI 번역 박스 ===== */
+  .trans-box { background: var(--surface); border:0.5px solid var(--border); border-radius: var(--r); box-shadow: var(--shadow-sm); padding: 14px; margin-bottom: 8px; }
+  .trans-head { font-size: 0.86em; font-weight: 800; color: var(--text-mid); display:flex; align-items:center; gap:6px; margin-bottom: 10px; }
+  .trans-head .ti { color: var(--primary); font-size: 1.2em; }
+  .trans-inwrap { display:flex; gap:8px; align-items:stretch; }
+  .trans-inwrap textarea { flex:1; resize:none; border:1.5px solid var(--border); border-radius:13px; padding:10px 12px; font-family:inherit; font-size:0.95em; background:var(--surface); color:var(--text); line-height:1.5; }
+  body.dark .trans-inwrap textarea { background: var(--surface-2); }
+  .trans-inwrap textarea:focus { outline:none; border-color:var(--primary); }
+  .trans-inwrap textarea::placeholder { color: var(--text-light); }
+  .trans-go { flex-shrink:0; align-self:stretch; background:var(--primary); color:#fff; border:none; border-radius:13px; padding:0 15px; font-weight:800; font-size:0.92em; cursor:pointer; display:flex; align-items:center; gap:5px; }
+  .trans-go:active { transform:scale(0.96); }
+  .trans-go .ti { font-size:1.1em; }
+  #trans-result:not(:empty) { margin-top: 12px; }
+  .trans-loading { font-size:0.88em; color:var(--text-light); text-align:center; padding:14px; }
+  .trans-err { font-size:0.86em; color:var(--danger); background:var(--danger-light); border-radius:10px; padding:10px 12px; }
+  .trans-out { background:var(--surface-2); border-radius:13px; padding:12px 13px; }
+  .trans-tr { font-size:1.15em; font-weight:800; color:var(--text); line-height:1.5; word-break:keep-all; }
+  .trans-pos { display:inline-block; font-size:0.72em; font-weight:800; color:var(--primary); background:var(--primary-light); border-radius:6px; padding:2px 8px; margin-top:7px; }
+  .trans-ex { font-size:0.9em; color:var(--text-mid); margin-top:9px; line-height:1.5; }
+  .trans-ex .exlabel { display:inline-block; font-size:0.66em; font-weight:800; color:#fff; background:var(--accent); border-radius:5px; padding:1px 6px; margin-right:5px; vertical-align:middle; }
+  .trans-exk { color:var(--text-light); font-size:0.92em; margin-top:2px; }
+  .trans-words { margin-top:11px; }
+  .trans-words .tw-head { font-size:0.78em; font-weight:800; color:var(--text-light); margin-bottom:7px; }
+  .tw-row { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:8px 11px; background:var(--surface-2); border-radius:11px; margin-bottom:6px; }
+  .tw-row b { color:var(--primary); font-size:0.98em; }
+  .tw-row .tw-pos { font-size:0.74em; color:var(--text-light); font-style:italic; margin:0 4px; }
+  .tw-row .tw-mean { font-size:0.9em; color:var(--text-mid); }
+  .tw-add { flex-shrink:0; background:var(--surface); border:0.5px solid var(--border); color:var(--accent); border-radius:9px; padding:6px 11px; font-size:0.8em; font-weight:800; cursor:pointer; white-space:nowrap; }
+  .tw-add:active { transform:scale(0.95); }
+  .tw-add.done { color:var(--success); border-color:var(--success); background:var(--success-light); }
 
   .section-label { font-size: 0.98em; font-weight: 800; color: var(--text); margin: 22px 2px 12px; display: flex; align-items: center; gap: 8px; letter-spacing: -0.4px; }
   .section-label::before { content:''; width:4px; height:16px; border-radius:3px; background:var(--grad); display:inline-block; }
@@ -835,6 +865,14 @@
         </div>
       </div>
     </div>
+    <div class="trans-box">
+      <div class="trans-head"><i class="ti ti-language" aria-hidden="true"></i> AI 번역 · 단어 분석</div>
+      <div class="trans-inwrap">
+        <textarea id="trans-input" rows="2" placeholder="한글이나 영어를 입력하세요 (단어·문장) — 자연스럽게 번역해드려요" onkeydown="if(event.key==='Enter'&&(event.metaKey||event.ctrlKey)){event.preventDefault();doTranslate();}"></textarea>
+        <button class="trans-go" onclick="doTranslate()" aria-label="번역"><i class="ti ti-sparkles" aria-hidden="true"></i> 번역</button>
+      </div>
+      <div id="trans-result"></div>
+    </div>
     <div class="section-label">📖 이어서 학습</div>
     <div class="study-carousel" id="study-carousel"></div>
     <div class="review-card" id="review-card" onclick="startReview()">
@@ -847,7 +885,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621p" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621q" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -856,7 +894,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621p" alt="기초영어 1000문장">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621q" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -864,7 +902,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621p" alt="영어회화 핵심패턴 233">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621q" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -872,7 +910,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openD100()">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621p" alt="왕초보 100일의 기적">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621q" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
@@ -1264,7 +1302,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260621p';
+  window.APP_VERSION='20260621q';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1283,23 +1321,23 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260621p"></script>
-<script src="vocab_eduwill.js?v=20260621p"></script>
-<script src="vocab_wangchobo.js?v=20260621p"></script>
-<script src="vocab_hackers.js?v=20260621p"></script>
-<script src="vocab_secret_top.js?v=20260621p"></script>
-<script src="vocab_kyungsunsik.js?v=20260621p"></script>
-<script src="vocab_kss_toeic.js?v=20260621p"></script>
-<script src="vocab_noisaegim.js?v=20260621p"></script>
-<script src="vocab_legend.js?v=20260621p"></script>
-<script src="sentences.js?v=20260621p"></script>
-<script src="p233.js?v=20260621p"></script>
-<script src="day100.js?v=20260621p"></script>
-<script src="comm.js?v=20260621p"></script>
-<script src="lc_data.js?v=20260621p"></script>
-<script src="lc_answers.js?v=20260621p"></script>
-<script src="lc_answers_p2.js?v=20260621p"></script>
-<script src="lc_answers_p34.js?v=20260621p"></script>
+<script src="vocabulary.js?v=20260621q"></script>
+<script src="vocab_eduwill.js?v=20260621q"></script>
+<script src="vocab_wangchobo.js?v=20260621q"></script>
+<script src="vocab_hackers.js?v=20260621q"></script>
+<script src="vocab_secret_top.js?v=20260621q"></script>
+<script src="vocab_kyungsunsik.js?v=20260621q"></script>
+<script src="vocab_kss_toeic.js?v=20260621q"></script>
+<script src="vocab_noisaegim.js?v=20260621q"></script>
+<script src="vocab_legend.js?v=20260621q"></script>
+<script src="sentences.js?v=20260621q"></script>
+<script src="p233.js?v=20260621q"></script>
+<script src="day100.js?v=20260621q"></script>
+<script src="comm.js?v=20260621q"></script>
+<script src="lc_data.js?v=20260621q"></script>
+<script src="lc_answers.js?v=20260621q"></script>
+<script src="lc_answers_p2.js?v=20260621q"></script>
+<script src="lc_answers_p34.js?v=20260621q"></script>
 <script>
 'use strict';
 
@@ -1808,7 +1846,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621p" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621q" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
@@ -1822,7 +1860,7 @@ function renderHome(){
   // 영어단어의 소통 — 단어장 목록(왕초보 위)에 카드로 표시
   const commTot=(typeof COMM!=='undefined'&&COMM)?COMM.reduce((s,c)=>s+(c.themes||[]).reduce((a,t)=>a+(t.items||[]).length,0),0):0;
   const commCard=`<div class="book-card" onclick="openComm()">
-      <img class="b-cover" src="covers/comm.jpg?v=20260621p" alt="영어단어의 소통" loading="lazy">
+      <img class="b-cover" src="covers/comm.jpg?v=20260621q" alt="영어단어의 소통" loading="lazy">
       <div class="b-body">
         <div class="b-name">영어단어의 소통</div>
         <div class="b-meta">상황·감각·일상·여가 · 표현 ${commTot}개</div>
@@ -2623,6 +2661,52 @@ function clearAllCustomWords(){
 const GEMINI_KEY = 'AQ.Ab8RN6K7Io8x5gBq8W7zcTkKg5nw5_QR-Kjvjc_nchrTXYxvvQ';      // Google AI Studio API 키
 const GEMINI_MODEL = 'gemini-2.5-flash';
 function geminiReady(){ return GEMINI_KEY && GEMINI_KEY.indexOf('PASTE')<0; }
+// ===== AI 번역 · 단어 분석 =====
+let _transData=null;
+async function geminiJSON(prompt){
+  const res=await fetch('https://generativelanguage.googleapis.com/v1beta/models/'+GEMINI_MODEL+':generateContent?key='+encodeURIComponent(GEMINI_KEY),{
+    method:'POST', headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({ contents:[{parts:[{text:prompt}]}], generationConfig:{temperature:0.3, responseMimeType:'application/json'} })
+  });
+  const data=await res.json();
+  if(data.error) throw new Error(data.error.message||'AI 오류');
+  let txt=''; try{ txt=data.candidates[0].content.parts[0].text; }catch(e){}
+  try{ return JSON.parse(txt); }catch(e){ const m=txt&&txt.match(/\{[\s\S]*\}/); if(m) return JSON.parse(m[0]); throw new Error('응답 파싱 실패'); }
+}
+async function doTranslate(){
+  const inp=$('trans-input'); const text=(inp.value||'').trim();
+  if(!text){ toast('번역할 내용을 입력하세요'); inp.focus(); return; }
+  if(!geminiReady()){ toast('AI 키 설정이 필요해요'); return; }
+  $('trans-result').innerHTML='<div class="trans-loading">🌐 AI가 번역·분석 중…</div>';
+  const prompt='당신은 한영 번역가이자 영어 사전입니다. 아래 입력을 분석해 JSON으로만 답하세요(설명/마크다운/코드블록 금지).\n입력: """'+text+'"""\n규칙:\n- 입력이 한국어면 자연스러운 영어로, 영어면 자연스러운 한국어로 번역하세요(직역이 아니라 원어민이 실제 쓰는 자연스러운 표현).\n- 단어 하나면 type="word", 그 이상이면 type="sentence".\n- words: type=sentence면 번역된 영어 문장에서 핵심 내용어(동사/명사/형용사/부사/유용한 숙어)를 골라 {en:영어, ko:한국어뜻, pos:품사}로(관사/전치사 같은 기능어 제외, 최대 8개). type=word면 그 단어 자체(영어 형태) 하나만 넣으세요(유의어·다른 단어 금지).\n- pos 값은 다음 약어 중 정확히 하나만(괄호·설명 없이): "n." "v." "adj." "adv." "prep." "conj." "pron." "int.".\n- example: type=word일 때만, 그 단어를 쓴 자연스러운 예문 {en, ko}.\nJSON 형식: {"lang":"ko|en","type":"word|sentence","translation":"번역문","pos":"단어면 품사 아니면 빈문자열","example":{"en":"","ko":""},"words":[{"en":"","ko":"","pos":""}]}';
+  try{ const d=await geminiJSON(prompt); renderTransResult(d, text); }
+  catch(e){ $('trans-result').innerHTML='<div class="trans-err">번역 실패: '+esc(String(e.message||e))+'</div>'; }
+}
+function renderTransResult(d, input){
+  _transData=d;
+  const enText=(d.lang==='ko') ? (d.translation||'') : input;
+  const isWord=d.type==='word';
+  let html='<div class="trans-out"><div class="trans-tr">'+esc(d.translation||'')+' <button class="spk" onclick="speak(\''+speakAttr(enText)+'\')" title="발음">🔊</button></div>';
+  if(isWord && d.pos) html+='<div><span class="trans-pos">'+esc(posKor(d.pos))+'</span></div>';
+  if(isWord && d.example && d.example.en) html+='<div class="trans-ex"><span class="exlabel">예문</span>'+esc(d.example.en)+' <button class="spk" onclick="speak(\''+speakAttr(d.example.en)+'\')">🔊</button><div class="trans-exk">'+esc(d.example.ko||'')+'</div></div>';
+  html+='</div>';
+  const words=d.words||[];
+  if(words.length){
+    html+='<div class="trans-words"><div class="tw-head">📒 단어 — ⭐ 눌러 내 단어장에 추가</div>'+
+      words.map((w,i)=>'<div class="tw-row"><div><b>'+esc(w.en)+'</b><span class="tw-pos">'+esc(posKor(w.pos||''))+'</span><span class="tw-mean">'+esc(w.ko||'')+'</span></div><button class="tw-add" onclick="addTransWord('+i+',this)">⭐ 추가</button></div>').join('')+'</div>';
+  }
+  $('trans-result').innerHTML=html;
+}
+function addTransWord(i, btn){
+  const w=_transData&&_transData.words&&_transData.words[i]; if(!w||!w.en) return;
+  if(!state.customWords) state.customWords=[];
+  if(state.customWords.some(x=>x.word&&String(x.word).toLowerCase()===String(w.en).toLowerCase())){ if(btn){btn.textContent='✓ 있음';btn.classList.add('done');btn.disabled=true;} toast('이미 단어장에 있어요'); return; }
+  const ex=(_transData.type==='word'&&_transData.example)?_transData.example:{};
+  state.customWords.unshift({ word:w.en, meaning:w.ko||'', pos:w.pos||'', example:ex.en||'', exampleKor:ex.ko||'' });
+  saveState(); if(typeof updateHeaderStats==='function') updateHeaderStats();
+  if(btn){ btn.textContent='✓ 추가됨'; btn.classList.add('done'); btn.disabled=true; }
+  toast('⭐ "'+w.en+'" 내 단어장에 추가');
+}
 const OCR_PROMPT = '이 이미지는 손으로 쓴 영어 단어장입니다. 각 항목에서 영어 단어와 한국어 뜻을 정확히 추출하세요. 각 단어마다 품사(n./v./adj./adv. 등)와, 자연스러운 영어 예문 1개와 그 한국어 번역도 만들어 주세요. 반드시 아래 JSON 배열로만 답하세요(설명·코드블록 금지): [{"word":"english","pos":"n.","meaning":"한국어뜻","example":"An English sentence.","exampleKor":"한국어 번역"}] 읽을 수 없는 항목은 제외하세요.';
 function pickWordImage(){
   if(!geminiReady()){ confirmDo('사진 인식 설정 필요','손글씨 사진 인식은 Gemini AI 키 설정이 필요해요. 설정 후 사용할 수 있어요. (직접 추가는 지금 바로 가능해요)', closeConfirm); return; }
