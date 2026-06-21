@@ -15,33 +15,34 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
   :root {
-    --bg: #eef1f6;
+    --bg: #faf7f2;
     --surface: #ffffff;
-    --surface-2: #f5f7fa;
-    --primary: #5145e6;
-    --primary-dark: #3d34c9;
-    --primary-light: #eef0fe;
-    --violet: #8b5cf6;
-    --accent: #ec4899;
-    --success: #10b981;
-    --success-light: #ecfdf5;
-    --danger: #ef4444;
+    --surface-2: #f4f0e9;
+    --primary: #0f766e;
+    --primary-dark: #0b5a53;
+    --primary-light: #e1f5ee;
+    --violet: #b45309;
+    --accent: #c2410c;
+    --accent-light: #faece7;
+    --success: #15803d;
+    --success-light: #ecfdf3;
+    --danger: #dc2626;
     --danger-light: #fef2f2;
-    --warning: #f59e0b;
+    --warning: #d97706;
     --warning-light: #fffbeb;
-    --text: #131a2b;
-    --text-mid: #4a5568;
-    --text-light: #9aa4b6;
-    --border: #e6eaf1;
-    --grad: linear-gradient(135deg, #6366f1 0%, #7c3aed 50%, #a855f7 100%);
-    --grad-soft: linear-gradient(160deg, #ffffff 0%, #f3f1fe 100%);
-    --shadow-sm: 0 1px 3px rgba(20,24,48,0.05), 0 1px 2px rgba(20,24,48,0.04);
-    --shadow: 0 6px 22px rgba(30,28,80,0.09);
-    --shadow-lg: 0 18px 48px rgba(30,28,80,0.18);
-    --shadow-brand: 0 10px 28px rgba(99,84,241,0.35);
+    --text: #292524;
+    --text-mid: #57534e;
+    --text-light: #a8a29e;
+    --border: #eae4db;
+    --grad: linear-gradient(135deg, #0f766e 0%, #0d9488 100%);
+    --grad-soft: linear-gradient(160deg, #ffffff 0%, #f7f3ec 100%);
+    --shadow-sm: 0 1px 2px rgba(41,37,36,0.04), 0 1px 3px rgba(41,37,36,0.05);
+    --shadow: 0 4px 18px rgba(41,37,36,0.07);
+    --shadow-lg: 0 16px 42px rgba(41,37,36,0.14);
+    --shadow-brand: 0 8px 22px rgba(15,118,110,0.26);
     --r-sm: 13px;
-    --r: 20px;
-    --r-lg: 26px;
+    --r: 18px;
+    --r-lg: 22px;
     --nav-h: 64px;
     --safe-b: env(safe-area-inset-bottom, 0px);
   }
@@ -50,8 +51,8 @@
   body {
     font-family: 'Pretendard', 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Segoe UI', sans-serif;
     background:
-      radial-gradient(1200px 500px at 100% -10%, rgba(124,58,237,0.08), transparent 60%),
-      radial-gradient(1000px 500px at -10% 0%, rgba(80,69,230,0.07), transparent 55%),
+      radial-gradient(1200px 520px at 100% -10%, rgba(194,65,12,0.06), transparent 60%),
+      radial-gradient(1000px 520px at -10% 0%, rgba(15,118,110,0.06), transparent 55%),
       var(--bg);
     background-attachment: fixed;
     color: var(--text);
@@ -65,22 +66,27 @@
 
   /* ===== Dark mode ===== */
   body.dark {
-    --bg: #0b0f1d;
-    --surface: #161c2e;
-    --surface-2: #1f2740;
-    --primary-light: #242a4d;
-    --text: #eaeefb;
-    --text-mid: #aab4cc;
-    --text-light: #6f7a93;
-    --border: #2a3350;
-    --grad-soft: linear-gradient(160deg, #1a2138 0%, #232c49 100%);
+    --bg: #1c1917;
+    --surface: #292524;
+    --surface-2: #3a322e;
+    --primary: #2dd4bf;
+    --primary-dark: #14b8a6;
+    --primary-light: #14302b;
+    --accent: #fb923c;
+    --accent-light: #3a2418;
+    --text: #f5f0ea;
+    --text-mid: #c7bfb6;
+    --text-light: #8a827a;
+    --border: #3a322e;
+    --grad: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+    --grad-soft: linear-gradient(160deg, #2a2522 0%, #332d29 100%);
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
     --shadow: 0 8px 26px rgba(0,0,0,0.5);
     --shadow-lg: 0 18px 48px rgba(0,0,0,0.6);
   }
   body.dark { background:
-      radial-gradient(1200px 500px at 100% -10%, rgba(124,58,237,0.18), transparent 60%),
-      radial-gradient(1000px 500px at -10% 0%, rgba(80,69,230,0.15), transparent 55%),
+      radial-gradient(1200px 520px at 100% -10%, rgba(251,146,60,0.10), transparent 60%),
+      radial-gradient(1000px 520px at -10% 0%, rgba(45,212,191,0.10), transparent 55%),
       var(--bg); }
   body.dark .flip-front { background: linear-gradient(160deg, #1b2138, #232c49); }
   body.dark .flip-back { background: linear-gradient(160deg, #1d2540, #2a2150); border-color:#3a3170; }
@@ -128,8 +134,10 @@
     box-shadow: 0 8px 24px rgba(80,69,230,0.28);
   }
   .app-bar::after { content:''; position:absolute; left:0; right:0; bottom:0; height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent); }
-  .app-bar .brand { display: flex; align-items: center; gap: 9px; font-size: 1.15em; font-weight: 800; letter-spacing: -0.4px; }
-  .app-bar .brand .mark { font-size: 1.2em; }
+  .app-bar .brand { display: flex; align-items: baseline; gap: 0; font-size: 1.5em; font-weight: 800; letter-spacing: -0.8px; }
+  .app-bar .brand .bw { color: var(--text); }
+  .app-bar .brand .bw-s { color: var(--primary); }
+  .app-bar .brand .bw-dot { color: var(--accent); font-weight: 800; }
   .sync-btn {
     background: rgba(255,255,255,0.18);
     border: none;
@@ -362,13 +370,14 @@
   .word-card .wquiz .qopt { color: var(--text-light); }
   .word-card .wquiz .qans { color: #4338ca; font-weight: 800; }
   /* ===== LC 공부하기 ===== */
-  .lc-entry { background: linear-gradient(135deg, #6366f1, #8b5cf6); color:#fff; border-radius: var(--r); padding: 16px; display:flex; align-items:center; gap:13px; cursor:pointer; box-shadow: var(--shadow-sm); margin-bottom: 6px; }
+  .lc-entry { background: var(--surface); color: var(--text); border:0.5px solid var(--border); border-radius: var(--r); padding: 12px 14px; display:flex; align-items:center; gap:13px; cursor:pointer; box-shadow: var(--shadow-sm); margin-bottom: 8px; transition: box-shadow .2s, border-color .2s; }
   .lc-entry:active { transform: scale(0.99); }
-  .lc-entry-ico { font-size: 1.9em; }
+  @media (hover:hover){ .lc-entry:hover{ box-shadow: var(--shadow); border-color: var(--primary); } }
+  .lc-entry-ico { font-size: 1.55em; width:54px; height:54px; flex-shrink:0; display:flex; align-items:center; justify-content:center; border-radius:13px; background:var(--primary-light); }
   .lc-entry-body { flex:1; min-width:0; display:flex; flex-direction:column; gap:2px; }
-  .lc-entry-body b { font-size: 1.08em; }
-  .lc-entry-body small { opacity:.9; font-size:0.78em; }
-  .lc-entry-go { font-size: 1.4em; opacity:.9; }
+  .lc-entry-body b { font-size: 1.02em; font-weight:800; }
+  .lc-entry-body small { color: var(--text-light); font-size:0.78em; }
+  .lc-entry-go { font-size: 1.3em; color: var(--text-light); }
   /* ===== 1000문장 말하기 ===== */
   .sp-chapter { background:var(--surface); border-radius:var(--r); box-shadow:var(--shadow-sm); padding:16px; margin-bottom:10px; display:flex; align-items:center; gap:13px; cursor:pointer; border-left:5px solid var(--primary); }
   .sp-chapter:active{ transform:scale(0.99); }
@@ -788,7 +797,7 @@
 <body>
 
 <header class="app-bar">
-  <div class="brand"><span class="mark">📚</span> 영어 Study</div>
+  <div class="brand"><span class="bw">영어</span><span class="bw bw-s"> Study</span><span class="bw-dot">.</span></div>
   <div class="bar-actions">
     <button class="prog-pill" id="prog-pill" onclick="setDday()" title="진도 · D-day 설정"><span class="pp-dot" id="pp-dot"></span><span id="pp-pct">0%</span><span class="pp-dday" id="pp-dday"></span></button>
     <button class="theme-btn" id="theme-btn" onclick="toggleDark()" aria-label="다크 모드">🌙</button>
@@ -807,9 +816,9 @@
     <div class="hero">
       <div class="ring">
         <svg width="64" height="64">
-          <circle cx="32" cy="32" r="27" fill="none" stroke="#e2e8f0" stroke-width="8"/>
+          <circle cx="32" cy="32" r="27" fill="none" stroke="#eae4db" stroke-width="8"/>
           <circle id="hero-ring" cx="32" cy="32" r="27" fill="none" stroke="url(#g)" stroke-width="8" stroke-linecap="round" stroke-dasharray="169.6" stroke-dashoffset="169.6"/>
-          <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#8b5cf6"/></linearGradient></defs>
+          <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs>
         </svg>
         <div class="pct" id="hero-pct">0%</div>
       </div>
@@ -836,7 +845,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621l" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621m" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -844,24 +853,24 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
-    <div class="lc-entry" onclick="openSpeak()" style="background:linear-gradient(135deg,#0ea5e9,#22c55e);">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621l" alt="기초영어 1000문장">
+    <div class="lc-entry" onclick="openSpeak()">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621m" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
       </div>
       <span class="lc-entry-go">→</span>
     </div>
-    <div class="lc-entry" onclick="openP233()" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621l" alt="영어회화 핵심패턴 233">
+    <div class="lc-entry" onclick="openP233()">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621m" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
       </div>
       <span class="lc-entry-go">→</span>
     </div>
-    <div class="lc-entry" onclick="openD100()" style="background:linear-gradient(135deg,#f43f5e,#f59e0b);">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621l" alt="왕초보 100일의 기적">
+    <div class="lc-entry" onclick="openD100()">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621m" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
@@ -1253,7 +1262,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260621l';
+  window.APP_VERSION='20260621m';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1272,23 +1281,23 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260621l"></script>
-<script src="vocab_eduwill.js?v=20260621l"></script>
-<script src="vocab_wangchobo.js?v=20260621l"></script>
-<script src="vocab_hackers.js?v=20260621l"></script>
-<script src="vocab_secret_top.js?v=20260621l"></script>
-<script src="vocab_kyungsunsik.js?v=20260621l"></script>
-<script src="vocab_kss_toeic.js?v=20260621l"></script>
-<script src="vocab_noisaegim.js?v=20260621l"></script>
-<script src="vocab_legend.js?v=20260621l"></script>
-<script src="sentences.js?v=20260621l"></script>
-<script src="p233.js?v=20260621l"></script>
-<script src="day100.js?v=20260621l"></script>
-<script src="comm.js?v=20260621l"></script>
-<script src="lc_data.js?v=20260621l"></script>
-<script src="lc_answers.js?v=20260621l"></script>
-<script src="lc_answers_p2.js?v=20260621l"></script>
-<script src="lc_answers_p34.js?v=20260621l"></script>
+<script src="vocabulary.js?v=20260621m"></script>
+<script src="vocab_eduwill.js?v=20260621m"></script>
+<script src="vocab_wangchobo.js?v=20260621m"></script>
+<script src="vocab_hackers.js?v=20260621m"></script>
+<script src="vocab_secret_top.js?v=20260621m"></script>
+<script src="vocab_kyungsunsik.js?v=20260621m"></script>
+<script src="vocab_kss_toeic.js?v=20260621m"></script>
+<script src="vocab_noisaegim.js?v=20260621m"></script>
+<script src="vocab_legend.js?v=20260621m"></script>
+<script src="sentences.js?v=20260621m"></script>
+<script src="p233.js?v=20260621m"></script>
+<script src="day100.js?v=20260621m"></script>
+<script src="comm.js?v=20260621m"></script>
+<script src="lc_data.js?v=20260621m"></script>
+<script src="lc_answers.js?v=20260621m"></script>
+<script src="lc_answers_p2.js?v=20260621m"></script>
+<script src="lc_answers_p34.js?v=20260621m"></script>
 <script>
 'use strict';
 
@@ -1797,7 +1806,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621l" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621m" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
@@ -1811,7 +1820,7 @@ function renderHome(){
   // 영어단어의 소통 — 단어장 목록(왕초보 위)에 카드로 표시
   const commTot=(typeof COMM!=='undefined'&&COMM)?COMM.reduce((s,c)=>s+(c.themes||[]).reduce((a,t)=>a+(t.items||[]).length,0),0):0;
   const commCard=`<div class="book-card" onclick="openComm()">
-      <img class="b-cover" src="covers/comm.jpg?v=20260621l" alt="영어단어의 소통" loading="lazy">
+      <img class="b-cover" src="covers/comm.jpg?v=20260621m" alt="영어단어의 소통" loading="lazy">
       <div class="b-body">
         <div class="b-name">영어단어의 소통</div>
         <div class="b-meta">상황·감각·일상·여가 · 표현 ${commTot}개</div>
