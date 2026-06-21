@@ -836,7 +836,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621g" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621h" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -845,7 +845,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()" style="background:linear-gradient(135deg,#0ea5e9,#22c55e);">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621g" alt="기초영어 1000문장">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621h" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -853,7 +853,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621g" alt="영어회화 핵심패턴 233">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621h" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -861,10 +861,18 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openD100()" style="background:linear-gradient(135deg,#f43f5e,#f59e0b);">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621g" alt="왕초보 100일의 기적">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621h" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
+    <div class="lc-entry" onclick="openComm()" style="background:linear-gradient(135deg,#14b8a6,#6366f1);">
+      <div class="lc-entry-ico">🗨️</div>
+      <div class="lc-entry-body">
+        <b>영어단어의 소통</b>
+        <small>상황·감각·일상·여가 표현 · 한글→영어+예문</small>
       </div>
       <span class="lc-entry-go">→</span>
     </div>
@@ -907,6 +915,15 @@
       <div class="stack-title" id="d100-title">🎯 왕초보 100일의 기적</div>
     </div>
     <div id="d100-content"></div>
+  </div>
+
+  <!-- 영어단어의 소통 -->
+  <div id="view-comm" class="view">
+    <div class="stack-header">
+      <button class="icon-btn" onclick="commBack()">←</button>
+      <div class="stack-title" id="comm-title">🗨️ 영어단어의 소통</div>
+    </div>
+    <div id="comm-content"></div>
   </div>
 
   <!-- 단어장(책) 상세: Day 목록 -->
@@ -1244,7 +1261,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260621g';
+  window.APP_VERSION='20260621h';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1263,22 +1280,23 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260621g"></script>
-<script src="vocab_eduwill.js?v=20260621g"></script>
-<script src="vocab_wangchobo.js?v=20260621g"></script>
-<script src="vocab_hackers.js?v=20260621g"></script>
-<script src="vocab_secret_top.js?v=20260621g"></script>
-<script src="vocab_kyungsunsik.js?v=20260621g"></script>
-<script src="vocab_kss_toeic.js?v=20260621g"></script>
-<script src="vocab_noisaegim.js?v=20260621g"></script>
-<script src="vocab_legend.js?v=20260621g"></script>
-<script src="sentences.js?v=20260621g"></script>
-<script src="p233.js?v=20260621g"></script>
-<script src="day100.js?v=20260621g"></script>
-<script src="lc_data.js?v=20260621g"></script>
-<script src="lc_answers.js?v=20260621g"></script>
-<script src="lc_answers_p2.js?v=20260621g"></script>
-<script src="lc_answers_p34.js?v=20260621g"></script>
+<script src="vocabulary.js?v=20260621h"></script>
+<script src="vocab_eduwill.js?v=20260621h"></script>
+<script src="vocab_wangchobo.js?v=20260621h"></script>
+<script src="vocab_hackers.js?v=20260621h"></script>
+<script src="vocab_secret_top.js?v=20260621h"></script>
+<script src="vocab_kyungsunsik.js?v=20260621h"></script>
+<script src="vocab_kss_toeic.js?v=20260621h"></script>
+<script src="vocab_noisaegim.js?v=20260621h"></script>
+<script src="vocab_legend.js?v=20260621h"></script>
+<script src="sentences.js?v=20260621h"></script>
+<script src="p233.js?v=20260621h"></script>
+<script src="day100.js?v=20260621h"></script>
+<script src="comm.js?v=20260621h"></script>
+<script src="lc_data.js?v=20260621h"></script>
+<script src="lc_answers.js?v=20260621h"></script>
+<script src="lc_answers_p2.js?v=20260621h"></script>
+<script src="lc_answers_p34.js?v=20260621h"></script>
 <script>
 'use strict';
 
@@ -1367,7 +1385,7 @@ let quizData=[], quizIdx=0, quizScore=0, quizWrong=[];
 let aqCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false, _reviewMode=false, _sessTotal=0, _sessMastered=0, _swiped=false;
 let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동 발음 (기본 켜짐)
 
-const STACK_VIEWS = ['lc','speak','p233','d100','book','day','mywords','flashcard','quiz','typing','result'];
+const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result'];
 const $ = id => document.getElementById(id);
 // Firebase 키 금지문자(. # $ / [ ])는 _로 치환 — 안 하면 해당 단어 학습 시 클라우드 저장 전체가 실패함
 const safeKeyPart = s => String(s).replace(/[.#$/\[\]]/g, '_');
@@ -1787,7 +1805,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621g" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621h" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
@@ -1968,6 +1986,44 @@ function renderD100(){
       ` : '' }
       <button class="d100-complete${done?' done':''}" onclick="d100Toggle(${d.day})">${done?'✓ 완료됨 (탭하면 취소)':'오늘 완료하기 ✓'}</button>
       <div class="sp-ctrl"><button onclick="d100Nav(-1)">← 이전 날</button><button class="prim" onclick="d100Nav(1)">다음 날 →</button></div>`;
+  }
+}
+// ===== 영어단어의 소통 =====
+let commState={ view:'cats', cat:null, theme:null, idx:0, flipped:false, items:[] };
+function CM(){ return (typeof COMM!=='undefined' && COMM) ? COMM : []; }
+function commExprCount(c){ return (c.themes||[]).reduce((s,th)=>s+(th.items||[]).length,0); }
+function openComm(){ commState={view:'cats',cat:null,theme:null,idx:0,flipped:false,items:[]}; showView('comm'); renderComm(); }
+function commBack(){ if(commState.view==='deck'){ commState.view='themes'; renderComm(); } else if(commState.view==='themes'){ commState.view='cats'; commState.cat=null; renderComm(); } else goHome(); }
+function commOpenCat(cat){ commState.cat=cat; commState.view='themes'; renderComm(); }
+function commOpenTheme(cat,theme){ const c=CM().find(x=>x.cat===cat); const th=c&&(c.themes||[]).find(x=>x.theme===theme); if(!th) return; commState.cat=cat; commState.theme=theme; commState.items=(th.items||[]).slice(); commState.idx=0; commState.flipped=false; commState.view='deck'; renderComm(); }
+function commFlip(){ commState.flipped=!commState.flipped; if(commState.flipped){ const it=commState.items[commState.idx]; if(it) speak(it.en); } renderComm(); }
+function commNext(){ if(commState.idx<commState.items.length-1){ commState.idx++; commState.flipped=false; renderComm(); } else toast('이 테마 끝! 🎉'); }
+function commPrev(){ if(commState.idx>0){ commState.idx--; commState.flipped=false; renderComm(); } }
+function commShuffle(){ commState.items=shuffle(commState.items); commState.idx=0; commState.flipped=false; renderComm(); toast('🔀 섞었어요'); }
+function renderComm(){
+  const el=$('comm-content'); if(!el) return; const t=$('comm-title');
+  if(commState.view==='cats'){
+    if(t) t.innerHTML='🗨️ 영어단어의 소통';
+    const cs=CM();
+    if(!cs.some(c=>(c.themes||[]).length)){ el.innerHTML='<p style="text-align:center;color:var(--text-light);padding:34px;">표현 데이터를 준비 중이에요.</p>'; return; }
+    el.innerHTML='<div style="font-size:0.85em;color:var(--text-light);margin:2px 0 12px;">상황·감각·일상·여가 4편. 한글 표현을 보고 영어로 말해본 뒤 탭해서 정답·예문·발음을 확인하세요.</div>'+
+      cs.map(c=>`<div class="sp-chapter" onclick="commOpenCat('${q(c.cat)}')" style="border-left-color:${c.color};"><div class="ico">${c.icon}</div><div class="body"><b>${esc(c.cat)}</b><small>${esc(c.desc||'')} · 표현 ${commExprCount(c)}개</small></div><span class="lc-entry-go" style="color:var(--text-light)">→</span></div>`).join('');
+  } else if(commState.view==='themes'){
+    const c=CM().find(x=>x.cat===commState.cat); if(!c){ commState.view='cats'; return renderComm(); }
+    if(t) t.innerHTML=(c.icon||'🗨️')+' '+esc(c.cat);
+    el.innerHTML='<div class="sp-units">'+(c.themes||[]).map(th=>`<div class="sp-unit" onclick="commOpenTheme('${q(c.cat)}','${q(th.theme)}')"><b>${esc(th.theme)}</b><small>표현 ${(th.items||[]).length}개</small></div>`).join('')+'</div>';
+  } else {
+    const c=CM().find(x=>x.cat===commState.cat); const th=c&&(c.themes||[]).find(x=>x.theme===commState.theme);
+    if(t) t.innerHTML=(c?c.icon:'🗨️')+' '+esc(th?th.theme:'');
+    const items=commState.items; if(!items.length){ el.innerHTML='<p>표현이 없어요.</p>'; return; }
+    const it=items[commState.idx], f=commState.flipped;
+    el.innerHTML=`<div class="sp-deck">
+      <div class="sp-deckhead"><span class="sp-num">${commState.idx+1} / ${items.length}</span><button class="sp-mini" onclick="commShuffle()" title="섞기">🔀</button></div>
+      <div class="progress-track" style="margin:8px 0 14px;"><div class="progress-track-fill" style="width:${(commState.idx+1)/items.length*100}%"></div></div>
+      <div class="sp-card" onclick="commFlip()"><div class="sp-ko">${esc(it.ko)}</div>${ f ? `<div class="sp-en-row"><span class="sp-en">${esc(it.en)}</span><button class="sp-speak-big" onclick="event.stopPropagation(); speak('${speakAttr(it.en)}')">🔊</button></div>` : '<div class="sp-tap">탭하면 영어 표현 보기 👆</div>' }</div>
+      ${ f && it.ex && it.ex.length ? `<div class="d100-sec"><div class="d100-sec-t">📝 예문</div>${it.ex.map(e=>`<div class="d100-dl"><div class="dl-body"><div class="dl-en">${esc(e.en)} <button class="spk" onclick="speak('${speakAttr(e.en)}')">🔊</button></div>${e.ko?`<div class="dl-ko">${esc(e.ko)}</div>`:''}</div></div>`).join('')}</div>` : '' }
+      <div class="sp-ctrl"><button onclick="commPrev()">← 이전</button><button class="prim" onclick="commNext()">다음 →</button></div>
+    </div>`;
   }
 }
 // ===== 월간 학습 달력 =====
