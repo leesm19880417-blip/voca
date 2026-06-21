@@ -708,12 +708,16 @@
   /* ===== Setting card / inputs ===== */
   .card { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow-sm); padding: 18px; }
   .field { margin-bottom: 14px; }
-  .field label { display: block; font-size: 0.85em; font-weight: 700; margin-bottom: 7px; }
+  .field label { display: block; font-size: 0.85em; font-weight: 700; margin-bottom: 7px; color: var(--text); }
   .field input, .field select {
     width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: var(--r-sm);
-    font-size: 1em; font-family: inherit; background: var(--surface);
+    font-size: 1em; font-family: inherit; background: var(--surface); color: var(--text);
   }
+  .field input::placeholder { color: var(--text-light); }
+  body.dark .field input, body.dark .field select { background: var(--surface-2); color: var(--text); }
   .field input:focus, .field select:focus { outline: none; border-color: var(--primary); }
+  /* 강제 로그인(게스트 제거) — 이름 입력 전엔 닫기 불가 */
+  .overlay.mandatory .grabber, .overlay.mandatory .user-close { display: none; }
   .chips { display: flex; gap: 8px; flex-wrap: wrap; }
   .chip { padding: 9px 15px; border-radius: 22px; border: 1.5px solid var(--border); background: var(--surface); cursor: pointer; font-size: 0.88em; font-weight: 600; transition: all .15s; }
   .chip:active { transform: scale(0.94); }
@@ -760,7 +764,8 @@
   @media (min-width: 560px) { .overlay { align-items: center; } .sheet { border-radius: 24px; } }
   @keyframes slideUp { from { transform: translateY(100%); } to { transform: translateY(0); } }
   .sheet .grabber { width: 40px; height: 4px; background: var(--border); border-radius: 3px; margin: 6px auto 16px; }
-  .sheet h3 { font-size: 1.15em; font-weight: 800; margin-bottom: 6px; }
+  .sheet h3 { font-size: 1.15em; font-weight: 800; margin-bottom: 6px; color: var(--text); }
+  .sheet { color: var(--text); }
   .sheet .sub { font-size: 0.86em; color: var(--text-light); margin-bottom: 16px; }
   .sync-status { display: flex; align-items: center; gap: 9px; padding: 12px 14px; border-radius: var(--r-sm); font-size: 0.88em; font-weight: 600; margin-bottom: 16px; }
   .sync-status.off { background: var(--surface-2); color: var(--text-light); }
@@ -831,7 +836,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621f" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621g" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -840,7 +845,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()" style="background:linear-gradient(135deg,#0ea5e9,#22c55e);">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621f" alt="기초영어 1000문장">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621g" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -848,7 +853,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621f" alt="영어회화 핵심패턴 233">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621g" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -856,7 +861,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openD100()" style="background:linear-gradient(135deg,#f43f5e,#f59e0b);">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621f" alt="왕초보 100일의 기적">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621g" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
@@ -1110,7 +1115,7 @@
     </div>
     <button class="btn btn-primary btn-block" onclick="applyUser()">이 이름으로 시작 / 전환</button>
     <div id="user-recent"></div>
-    <button class="btn btn-ghost btn-block" onclick="closeUser()" style="margin-top:14px;">닫기</button>
+    <button class="btn btn-ghost btn-block user-close" onclick="closeUser()" style="margin-top:14px;">닫기</button>
   </div>
 </div>
 
@@ -1239,7 +1244,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260621f';
+  window.APP_VERSION='20260621g';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1258,22 +1263,22 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260621f"></script>
-<script src="vocab_eduwill.js?v=20260621f"></script>
-<script src="vocab_wangchobo.js?v=20260621f"></script>
-<script src="vocab_hackers.js?v=20260621f"></script>
-<script src="vocab_secret_top.js?v=20260621f"></script>
-<script src="vocab_kyungsunsik.js?v=20260621f"></script>
-<script src="vocab_kss_toeic.js?v=20260621f"></script>
-<script src="vocab_noisaegim.js?v=20260621f"></script>
-<script src="vocab_legend.js?v=20260621f"></script>
-<script src="sentences.js?v=20260621f"></script>
-<script src="p233.js?v=20260621f"></script>
-<script src="day100.js?v=20260621f"></script>
-<script src="lc_data.js?v=20260621f"></script>
-<script src="lc_answers.js?v=20260621f"></script>
-<script src="lc_answers_p2.js?v=20260621f"></script>
-<script src="lc_answers_p34.js?v=20260621f"></script>
+<script src="vocabulary.js?v=20260621g"></script>
+<script src="vocab_eduwill.js?v=20260621g"></script>
+<script src="vocab_wangchobo.js?v=20260621g"></script>
+<script src="vocab_hackers.js?v=20260621g"></script>
+<script src="vocab_secret_top.js?v=20260621g"></script>
+<script src="vocab_kyungsunsik.js?v=20260621g"></script>
+<script src="vocab_kss_toeic.js?v=20260621g"></script>
+<script src="vocab_noisaegim.js?v=20260621g"></script>
+<script src="vocab_legend.js?v=20260621g"></script>
+<script src="sentences.js?v=20260621g"></script>
+<script src="p233.js?v=20260621g"></script>
+<script src="day100.js?v=20260621g"></script>
+<script src="lc_data.js?v=20260621g"></script>
+<script src="lc_answers.js?v=20260621g"></script>
+<script src="lc_answers_p2.js?v=20260621g"></script>
+<script src="lc_answers_p34.js?v=20260621g"></script>
 <script>
 'use strict';
 
@@ -1782,7 +1787,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621f" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621g" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
@@ -2940,7 +2945,7 @@ function changeSyncCode(){ const f=$('sync-code'); if(f){ const c=(f.value||'').
 function getUsers(){ try{ return JSON.parse(localStorage.getItem('toeic_users')||'[]'); }catch(e){ return []; } }
 function addUser(name){ const u=getUsers().filter(x=>x!==name); u.unshift(name); localStorage.setItem('toeic_users', JSON.stringify(u.slice(0,12))); }
 function delUser(name){ localStorage.setItem('toeic_users', JSON.stringify(getUsers().filter(x=>x!==name))); renderRecentUsers(); }
-function userLabel(n){ return (!n||n==='guest')?'게스트':n; }
+function userLabel(n){ return (!n||n==='guest')?'로그인':n; }
 function updateUserLabel(){ const el=$('user-name-label'); if(el) el.textContent=userLabel(SYNC_CODE); }
 function switchUser(name, opts){
   name=String(name||'').trim(); if(!name) return;
@@ -2967,9 +2972,11 @@ function maybeOnboardName(){
     setTimeout(function(){ if(SYNC_CODE==='guest'){ openUser(); toast('💾 이름을 정하면 폰·PC 어디서나 진도가 같이 저장돼요'); } }, 1000);
   }catch(e){}
 }
-function openUser(){ const inp=$('user-input'); if(inp) inp.value=(SYNC_CODE==='guest')?'':SYNC_CODE; renderRecentUsers(); const o=$('user-overlay'); if(o) o.classList.add('active'); }
-function closeUser(){ const o=$('user-overlay'); if(o) o.classList.remove('active'); }
-function applyUser(){ const inp=$('user-input'); if(!inp) return; const name=(inp.value||'').trim(); if(!name){ toast('이름을 입력하세요'); return; } switchUser(name); }
+function openUser(mandatory){ const inp=$('user-input'); if(inp) inp.value=(SYNC_CODE==='guest')?'':SYNC_CODE; renderRecentUsers(); const o=$('user-overlay'); if(o){ o.classList.toggle('mandatory', !!mandatory); o.classList.add('active'); } if(mandatory && inp) setTimeout(function(){ inp.focus(); }, 350); }
+function closeUser(){ const o=$('user-overlay'); if(o){ o.classList.remove('active'); o.classList.remove('mandatory'); } }
+function applyUser(){ const inp=$('user-input'); if(!inp) return; const name=(inp.value||'').trim(); if(!name){ toast('이름을 입력하세요'); if(inp) inp.focus(); return; } switchUser(name); }
+// 게스트 제거 — 본인 이름으로 로그인 안 돼 있으면 강제로 설정창
+function requireLogin(){ try{ if(!SYNC_CODE || SYNC_CODE==='guest'){ openUser(true); } }catch(e){} }
 function renderRecentUsers(){
   const box=$('user-recent'); if(!box) return;
   const users=getUsers();
@@ -2984,7 +2991,7 @@ function syncNow(){
 
 // 오버레이 바깥 탭하면 닫기
 ['confirm-overlay','user-overlay','addword-overlay','review-overlay','cal-overlay'].forEach(id=>{
-  const el=$(id); if(el) el.addEventListener('click',e=>{ if(e.target===el) el.classList.remove('active'); });
+  const el=$(id); if(el) el.addEventListener('click',e=>{ if(e.target===el){ if(id==='user-overlay' && el.classList.contains('mandatory')) return; el.classList.remove('active'); } });
 });
 
 // ============ 키보드 ============
@@ -3030,7 +3037,7 @@ renderHome();
 renderAQBooks();
 fbInit();
 updateUserLabel();
-maybeOnboardName();
+requireLogin();
 </script>
 
 </body>
