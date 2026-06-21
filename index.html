@@ -13,6 +13,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.31.0/dist/tabler-icons.min.css">
 <style>
   :root {
     --bg: #faf7f2;
@@ -102,7 +103,7 @@
 
   /* ===== App bar actions / theme btn ===== */
   .bar-actions { display:flex; align-items:center; gap:8px; }
-  .theme-btn { background: rgba(255,255,255,0.18); border:none; color:#fff; width:36px; height:36px; border-radius:50%; cursor:pointer; font-size:1.05em; display:flex; align-items:center; justify-content:center; }
+  .theme-btn { background: var(--surface-2); border:0.5px solid var(--border); color:var(--text-mid); width:36px; height:36px; border-radius:50%; cursor:pointer; font-size:1.05em; display:flex; align-items:center; justify-content:center; }
   .theme-btn:active { transform: scale(0.9); }
 
   /* ===== Entrance / stagger ===== */
@@ -125,15 +126,16 @@
     position: sticky;
     top: 0;
     z-index: 90;
-    background: var(--grad);
-    color: #fff;
-    padding: calc(env(safe-area-inset-top, 0px) + 15px) 18px 15px;
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    backdrop-filter: saturate(180%) blur(12px);
+    color: var(--text);
+    padding: calc(env(safe-area-inset-top, 0px) + 14px) 18px 14px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0 8px 24px rgba(80,69,230,0.28);
+    border-bottom: 0.5px solid var(--border);
   }
-  .app-bar::after { content:''; position:absolute; left:0; right:0; bottom:0; height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent); }
   .app-bar .brand { display: flex; align-items: baseline; gap: 0; font-size: 1.5em; font-weight: 800; letter-spacing: -0.8px; }
   .app-bar .brand .bw { color: var(--text); }
   .app-bar .brand .bw-s { color: var(--primary); }
@@ -207,8 +209,8 @@
   .bar-lbl { font-size:0.64em; color:var(--text-light); font-weight:600; }
 
   /* ===== App-bar progress pill ===== */
-  .prog-pill { display:inline-flex; align-items:center; gap:5px; background:rgba(255,255,255,0.18); color:#fff; padding:5px 11px; border-radius:999px; font-weight:800; font-size:0.8em; cursor:pointer; }
-  .prog-pill .pp-dot { width:13px; height:13px; border-radius:50%; background:conic-gradient(#fff var(--p,0%), rgba(255,255,255,0.35) 0); }
+  .prog-pill { display:inline-flex; align-items:center; gap:5px; background:var(--surface-2); border:0.5px solid var(--border); color:var(--text-mid); padding:5px 11px; border-radius:999px; font-weight:800; font-size:0.8em; cursor:pointer; }
+  .prog-pill .pp-dot { width:13px; height:13px; border-radius:50%; background:conic-gradient(var(--primary) var(--p,0%), var(--border) 0); }
   .prog-pill .pp-dday { opacity:.92; font-weight:700; }
 
   /* ===== Study carousel (이어서 학습) ===== */
@@ -566,7 +568,7 @@
   .spk { background:var(--primary-light); border:none; color:var(--primary); border-radius:8px; padding:2px 8px; cursor:pointer; font-size:0.9em; line-height:1; vertical-align:middle; margin-left:3px; }
   .spk:active { transform:scale(0.85); }
   .spk.big { font-size:0.8em; padding:9px 18px; border-radius:22px; margin-top:18px; font-weight:700; box-shadow:var(--shadow-sm); }
-  .user-btn { background:rgba(255,255,255,0.18); border:none; color:#fff; border-radius:20px; padding:7px 13px; cursor:pointer; display:flex; align-items:center; gap:6px; font-size:0.82em; font-weight:700; backdrop-filter:blur(8px); max-width:175px; }
+  .user-btn { background:var(--surface-2); border:0.5px solid var(--border); color:var(--text-mid); border-radius:20px; padding:7px 13px; cursor:pointer; display:flex; align-items:center; gap:6px; font-size:0.82em; font-weight:700; max-width:175px; }
   .user-btn:active{ transform:scale(0.94); }
   .user-btn .user-ico{ font-size:1.05em; }
   .user-name{ max-width:110px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
@@ -845,7 +847,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621m" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621n" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -854,7 +856,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621m" alt="기초영어 1000문장">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621n" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -862,7 +864,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621m" alt="영어회화 핵심패턴 233">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621n" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -870,7 +872,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openD100()">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621m" alt="왕초보 100일의 기적">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621n" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
@@ -1114,11 +1116,11 @@
 
 <!-- 하단 네비게이션 -->
 <nav class="bottom-nav">
-  <button class="nav-item active" data-tab="home"><span class="ni">🏠</span><span class="nl">홈</span></button>
-  <button class="nav-item" data-tab="bookmarks"><span class="ni">⭐</span><span class="nl">즐겨찾기</span></button>
-  <button class="nav-item" data-tab="wrongs"><span class="ni">📝</span><span class="nl">오답</span></button>
-  <button class="nav-item" data-tab="all-quiz"><span class="ni">🎯</span><span class="nl">평가</span></button>
-  <button class="nav-item" data-tab="stats"><span class="ni">📊</span><span class="nl">통계</span></button>
+  <button class="nav-item active" data-tab="home"><span class="ni"><i class="ti ti-home-2"></i></span><span class="nl">홈</span></button>
+  <button class="nav-item" data-tab="bookmarks"><span class="ni"><i class="ti ti-star"></i></span><span class="nl">즐겨찾기</span></button>
+  <button class="nav-item" data-tab="wrongs"><span class="ni"><i class="ti ti-clipboard-text"></i></span><span class="nl">오답</span></button>
+  <button class="nav-item" data-tab="all-quiz"><span class="ni"><i class="ti ti-target-arrow"></i></span><span class="nl">평가</span></button>
+  <button class="nav-item" data-tab="stats"><span class="ni"><i class="ti ti-chart-bar"></i></span><span class="nl">통계</span></button>
 </nav>
 
 <!-- 사용자 설정 모달 -->
@@ -1262,7 +1264,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260621m';
+  window.APP_VERSION='20260621n';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1281,23 +1283,23 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260621m"></script>
-<script src="vocab_eduwill.js?v=20260621m"></script>
-<script src="vocab_wangchobo.js?v=20260621m"></script>
-<script src="vocab_hackers.js?v=20260621m"></script>
-<script src="vocab_secret_top.js?v=20260621m"></script>
-<script src="vocab_kyungsunsik.js?v=20260621m"></script>
-<script src="vocab_kss_toeic.js?v=20260621m"></script>
-<script src="vocab_noisaegim.js?v=20260621m"></script>
-<script src="vocab_legend.js?v=20260621m"></script>
-<script src="sentences.js?v=20260621m"></script>
-<script src="p233.js?v=20260621m"></script>
-<script src="day100.js?v=20260621m"></script>
-<script src="comm.js?v=20260621m"></script>
-<script src="lc_data.js?v=20260621m"></script>
-<script src="lc_answers.js?v=20260621m"></script>
-<script src="lc_answers_p2.js?v=20260621m"></script>
-<script src="lc_answers_p34.js?v=20260621m"></script>
+<script src="vocabulary.js?v=20260621n"></script>
+<script src="vocab_eduwill.js?v=20260621n"></script>
+<script src="vocab_wangchobo.js?v=20260621n"></script>
+<script src="vocab_hackers.js?v=20260621n"></script>
+<script src="vocab_secret_top.js?v=20260621n"></script>
+<script src="vocab_kyungsunsik.js?v=20260621n"></script>
+<script src="vocab_kss_toeic.js?v=20260621n"></script>
+<script src="vocab_noisaegim.js?v=20260621n"></script>
+<script src="vocab_legend.js?v=20260621n"></script>
+<script src="sentences.js?v=20260621n"></script>
+<script src="p233.js?v=20260621n"></script>
+<script src="day100.js?v=20260621n"></script>
+<script src="comm.js?v=20260621n"></script>
+<script src="lc_data.js?v=20260621n"></script>
+<script src="lc_answers.js?v=20260621n"></script>
+<script src="lc_answers_p2.js?v=20260621n"></script>
+<script src="lc_answers_p34.js?v=20260621n"></script>
 <script>
 'use strict';
 
@@ -1806,7 +1808,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621m" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621n" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
@@ -1820,7 +1822,7 @@ function renderHome(){
   // 영어단어의 소통 — 단어장 목록(왕초보 위)에 카드로 표시
   const commTot=(typeof COMM!=='undefined'&&COMM)?COMM.reduce((s,c)=>s+(c.themes||[]).reduce((a,t)=>a+(t.items||[]).length,0),0):0;
   const commCard=`<div class="book-card" onclick="openComm()">
-      <img class="b-cover" src="covers/comm.jpg?v=20260621m" alt="영어단어의 소통" loading="lazy">
+      <img class="b-cover" src="covers/comm.jpg?v=20260621n" alt="영어단어의 소통" loading="lazy">
       <div class="b-body">
         <div class="b-name">영어단어의 소통</div>
         <div class="b-meta">상황·감각·일상·여가 · 표현 ${commTot}개</div>
