@@ -763,6 +763,16 @@
   .chip { padding: 9px 15px; border-radius: 22px; border: 1.5px solid var(--border); background: var(--surface); cursor: pointer; font-size: 0.88em; font-weight: 600; transition: all .15s; }
   .chip:active { transform: scale(0.94); }
   .chip.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+  .mw-count { background: var(--surface); border: 1.5px solid var(--border); border-radius: 16px; padding: 13px 15px; margin-bottom: 12px; }
+  .mw-count:empty { display: none; }
+  .mwc-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 9px; }
+  .mwc-title { font-weight: 700; font-size: 0.92em; }
+  .mwc-num { font-size: 0.86em; color: var(--text-light); }
+  .mwc-num b { font-size: 1.5em; color: var(--accent); margin-right: 1px; }
+  .mwc-range { width: 100%; margin: 2px 0 11px; accent-color: var(--accent); height: 5px; cursor: pointer; }
+  .mw-count .chips { gap: 7px; }
+  .mw-count .chip { padding: 7px 13px; font-size: 0.85em; }
+  .mw-count .chip.active { background: var(--accent); border-color: var(--accent); }
 
   /* ===== Stats ===== */
   .stat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 16px; }
@@ -885,7 +895,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621q" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621r" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -894,7 +904,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621q" alt="기초영어 1000문장">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621r" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -902,7 +912,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621q" alt="영어회화 핵심패턴 233">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621r" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -910,7 +920,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openD100()">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621q" alt="왕초보 100일의 기적">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621r" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
@@ -1004,6 +1014,7 @@
       <button class="mode-btn" onclick="openAddWord()"><span class="m-ico">✏️</span><span class="m-txt"><b>직접 추가</b><small>단어·뜻 입력</small></span></button>
       <button class="mode-btn" onclick="pickWordImage()"><span class="m-ico">📷</span><span class="m-txt"><b>사진으로 추가</b><small>손글씨 인식</small></span></button>
     </div>
+    <div class="mw-count" id="mw-count"></div>
     <div class="mode-grid" id="mw-study" style="grid-template-columns:1fr 1fr 1fr;"></div>
     <div class="section-label">📖 내 단어 목록</div>
     <div class="word-list" id="mywords-list"></div>
@@ -1302,7 +1313,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260621q';
+  window.APP_VERSION='20260621r';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1321,23 +1332,23 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260621q"></script>
-<script src="vocab_eduwill.js?v=20260621q"></script>
-<script src="vocab_wangchobo.js?v=20260621q"></script>
-<script src="vocab_hackers.js?v=20260621q"></script>
-<script src="vocab_secret_top.js?v=20260621q"></script>
-<script src="vocab_kyungsunsik.js?v=20260621q"></script>
-<script src="vocab_kss_toeic.js?v=20260621q"></script>
-<script src="vocab_noisaegim.js?v=20260621q"></script>
-<script src="vocab_legend.js?v=20260621q"></script>
-<script src="sentences.js?v=20260621q"></script>
-<script src="p233.js?v=20260621q"></script>
-<script src="day100.js?v=20260621q"></script>
-<script src="comm.js?v=20260621q"></script>
-<script src="lc_data.js?v=20260621q"></script>
-<script src="lc_answers.js?v=20260621q"></script>
-<script src="lc_answers_p2.js?v=20260621q"></script>
-<script src="lc_answers_p34.js?v=20260621q"></script>
+<script src="vocabulary.js?v=20260621r"></script>
+<script src="vocab_eduwill.js?v=20260621r"></script>
+<script src="vocab_wangchobo.js?v=20260621r"></script>
+<script src="vocab_hackers.js?v=20260621r"></script>
+<script src="vocab_secret_top.js?v=20260621r"></script>
+<script src="vocab_kyungsunsik.js?v=20260621r"></script>
+<script src="vocab_kss_toeic.js?v=20260621r"></script>
+<script src="vocab_noisaegim.js?v=20260621r"></script>
+<script src="vocab_legend.js?v=20260621r"></script>
+<script src="sentences.js?v=20260621r"></script>
+<script src="p233.js?v=20260621r"></script>
+<script src="day100.js?v=20260621r"></script>
+<script src="comm.js?v=20260621r"></script>
+<script src="lc_data.js?v=20260621r"></script>
+<script src="lc_answers.js?v=20260621r"></script>
+<script src="lc_answers_p2.js?v=20260621r"></script>
+<script src="lc_answers_p34.js?v=20260621r"></script>
 <script>
 'use strict';
 
@@ -1423,7 +1434,7 @@ function saveState() { state.updatedAt = nowISO(); saveLocal(); schedulePush(); 
 // 모드 컨텍스트
 let currentBook='siwon', currentDay=null, currentWords=[], currentIdx=0, currentMode=null;
 let quizData=[], quizIdx=0, quizScore=0, quizWrong=[];
-let aqCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false, _reviewMode=false, _sessTotal=0, _sessMastered=0, _swiped=false;
+let aqCount=20, myStudyCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false, _reviewMode=false, _sessTotal=0, _sessMastered=0, _swiped=false;
 let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동 발음 (기본 켜짐)
 
 const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result'];
@@ -1846,7 +1857,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621q" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621r" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
@@ -1860,7 +1871,7 @@ function renderHome(){
   // 영어단어의 소통 — 단어장 목록(왕초보 위)에 카드로 표시
   const commTot=(typeof COMM!=='undefined'&&COMM)?COMM.reduce((s,c)=>s+(c.themes||[]).reduce((a,t)=>a+(t.items||[]).length,0),0):0;
   const commCard=`<div class="book-card" onclick="openComm()">
-      <img class="b-cover" src="covers/comm.jpg?v=20260621q" alt="영어단어의 소통" loading="lazy">
+      <img class="b-cover" src="covers/comm.jpg?v=20260621r" alt="영어단어의 소통" loading="lazy">
       <div class="b-body">
         <div class="b-name">영어단어의 소통</div>
         <div class="b-meta">상황·감각·일상·여가 · 표현 ${commTot}개</div>
@@ -2605,6 +2616,7 @@ function openMyWords(){ showView('mywords'); renderMyWords(); }
 function renderMyWords(){
   const list=state.customWords||[];
   if($('mw-sub')) $('mw-sub').textContent=`${list.length}개 단어`;
+  renderMwCount(list.length);
   $('mw-study').innerHTML = list.length ? `
     <button class="mode-btn" onclick="studyMyWords('flashcard')"><span class="m-ico">📇</span><span class="m-txt"><b>카드</b></span></button>
     <button class="mode-btn" onclick="studyMyWords('quiz')"><span class="m-ico">🎯</span><span class="m-txt"><b>퀴즈</b></span></button>
@@ -2625,9 +2637,39 @@ function renderMyWords(){
     </div>
   </div>`).join('');
 }
+function renderMwCount(total){
+  const el=$('mw-count'); if(!el) return;
+  if(!total){ el.innerHTML=''; return; }
+  if(myStudyCount>total) myStudyCount=total;
+  if(myStudyCount<1) myStudyCount=Math.min(20,total);
+  const presets=[10,20,30,40,50,100].filter(n=>n<total);
+  el.innerHTML=`
+    <div class="mwc-row">
+      <span class="mwc-title">🎲 랜덤 출제 개수</span>
+      <span class="mwc-num"><b id="mwc-val">${myStudyCount}</b>개 <small>/ 전체 ${total}</small></span>
+    </div>
+    <input type="range" class="mwc-range" id="mwc-range" min="1" max="${total}" value="${myStudyCount}" oninput="setMyStudyCount(+this.value,true)">
+    <div class="chips" id="mw-chips">
+      ${presets.map(n=>`<button class="chip${n===myStudyCount?' active':''}" onclick="setMyStudyCount(${n})">${n}</button>`).join('')}
+      <button class="chip${myStudyCount===total?' active':''}" onclick="setMyStudyCount(${total})">전체 ${total}</button>
+    </div>`;
+}
+function setMyStudyCount(n,fromSlider){
+  const total=(state.customWords||[]).length||1;
+  myStudyCount=Math.max(1,Math.min(n,total));
+  const v=$('mwc-val'); if(v) v.textContent=myStudyCount;
+  if(!fromSlider){ const r=$('mwc-range'); if(r) r.value=myStudyCount; }
+  document.querySelectorAll('#mw-chips .chip').forEach(c=>{
+    const cn=c.textContent.indexOf('전체')>=0 ? total : parseInt(c.textContent,10);
+    c.classList.toggle('active', cn===myStudyCount);
+  });
+}
 function studyMyWords(mode){
-  const list=(state.customWords||[]).map(w=>({...w, day:'my', book:'my'}));
-  if(!list.length){ toast('단어가 없어요'); return; }
+  const all=(state.customWords||[]).map(w=>({...w, day:'my', book:'my'}));
+  if(!all.length){ toast('단어가 없어요'); return; }
+  const n=Math.max(1,Math.min(myStudyCount||all.length, all.length));
+  const list=shuffle(all).slice(0,n);
+  if(n<all.length) toast(`🎲 랜덤 ${n}개 출제 (전체 ${all.length})`);
   studySource='custom'; currentBook='my'; currentDay='my';
   if(mode==='flashcard'){ currentWords=list; currentIdx=0; flashFlipped=false; _reviewMode=false; _sessTotal=currentWords.length; _sessMastered=0; showView('flashcard'); renderFlashcard(); }
   else if(mode==='typing'){ studySource='custom'; setupTyping(list,'my'); studySource='custom'; }
