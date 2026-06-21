@@ -409,6 +409,28 @@
   .pt-body{ flex:1; min-width:0; }
   .pt-en{ font-weight:800; color:var(--text); font-size:1.02em; }
   .pt-ko{ color:var(--text-mid); font-size:0.86em; margin-top:2px; word-break:keep-all; }
+  .d100-prog{ background:var(--surface); border-radius:var(--r); box-shadow:var(--shadow-sm); padding:15px; margin-bottom:14px; }
+  .d100-grid{ display:grid; grid-template-columns:repeat(10,1fr); gap:6px; }
+  .d100-cell{ aspect-ratio:1; border:1.5px solid var(--border); background:var(--surface); border-radius:9px; font-weight:800; font-size:0.82em; color:var(--text-mid); cursor:pointer; padding:0; }
+  .d100-cell:active{ transform:scale(0.94); }
+  .d100-cell.on{ background:#f43f5e; border-color:#f43f5e; color:#fff; }
+  .d100-card{ position:relative; background:linear-gradient(160deg,#fff1f2,#fff); border:1.5px solid #fecdd3; border-radius:22px; box-shadow:var(--shadow); padding:26px 20px; display:flex; flex-direction:column; align-items:center; gap:14px; cursor:pointer; text-align:center; min-height:200px; justify-content:center; }
+  body.dark .d100-card{ background:linear-gradient(160deg,#2a1620,#161019); border-color:#7f1d3a; }
+  .d100-card.done{ border-color:#86efac; }
+  .d100-ko{ font-size:1.7em; font-weight:800; color:var(--text); word-break:keep-all; line-height:1.4; }
+  .d100-en-row{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:center; }
+  .d100-en{ font-size:1.5em; font-weight:800; color:#f43f5e; word-break:keep-all; }
+  .d100-sec{ background:var(--surface); border-radius:14px; box-shadow:var(--shadow-sm); padding:13px 15px; margin-top:11px; }
+  .d100-sec-t{ font-size:0.82em; font-weight:800; color:var(--text-light); margin-bottom:9px; }
+  .d100-dl{ display:flex; gap:9px; margin-bottom:9px; }
+  .d100-dl .dlab{ flex-shrink:0; width:24px; height:24px; border-radius:50%; background:var(--surface-2); color:var(--text-mid); font-weight:800; font-size:0.78em; display:flex; align-items:center; justify-content:center; }
+  .d100-dl .dl-en{ font-weight:700; color:var(--text); }
+  .d100-dl .dl-ko{ font-size:0.85em; color:var(--text-light); margin-top:2px; }
+  .d100-voc{ font-size:0.92em; color:var(--text-mid); padding:3px 0; }
+  .d100-voc b{ color:var(--primary); }
+  .d100-tip{ font-size:0.88em; color:var(--text-mid); line-height:1.6; white-space:pre-line; }
+  .d100-complete{ width:100%; margin-top:14px; border:none; border-radius:14px; padding:14px; font-weight:800; font-size:1.02em; cursor:pointer; background:#f43f5e; color:#fff; }
+  .d100-complete.done{ background:var(--surface-2); color:var(--success); }
   .sp-speak-big{ background:#0ea5e9; color:#fff; border:none; border-radius:13px; padding:10px 18px; font-weight:800; font-size:1em; cursor:pointer; }
   .lc-tabs { display:flex; gap:7px; flex-wrap:wrap; padding: 4px 0 12px; position:sticky; top:0; background:var(--bg,#f8fafc); z-index:5; }
   .lc-tab { border:1px solid var(--surface-2); background:var(--surface); color:var(--text-mid); border-radius:999px; padding:6px 14px; font-size:0.85em; font-weight:700; cursor:pointer; }
@@ -828,6 +850,14 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
+    <div class="lc-entry" onclick="openD100()" style="background:linear-gradient(135deg,#f43f5e,#f59e0b);">
+      <div class="lc-entry-ico">🎯</div>
+      <div class="lc-entry-body">
+        <b>왕초보 영어회화 100일의 기적</b>
+        <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
     <div class="section-label">📚 단어장 선택</div>
     <div class="book-grid" id="book-grid"></div>
   </div>
@@ -858,6 +888,15 @@
       <div class="stack-title" id="p233-title">💬 핵심패턴 233</div>
     </div>
     <div id="p233-content"></div>
+  </div>
+
+  <!-- 왕초보 영어회화 100일의 기적 -->
+  <div id="view-d100" class="view">
+    <div class="stack-header">
+      <button class="icon-btn" onclick="d100Back()">←</button>
+      <div class="stack-title" id="d100-title">🎯 왕초보 100일의 기적</div>
+    </div>
+    <div id="d100-content"></div>
   </div>
 
   <!-- 단어장(책) 상세: Day 목록 -->
@@ -1195,7 +1234,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260621b';
+  window.APP_VERSION='20260621c';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1214,21 +1253,22 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260621b"></script>
-<script src="vocab_eduwill.js?v=20260621b"></script>
-<script src="vocab_wangchobo.js?v=20260621b"></script>
-<script src="vocab_hackers.js?v=20260621b"></script>
-<script src="vocab_secret_top.js?v=20260621b"></script>
-<script src="vocab_kyungsunsik.js?v=20260621b"></script>
-<script src="vocab_kss_toeic.js?v=20260621b"></script>
-<script src="vocab_noisaegim.js?v=20260621b"></script>
-<script src="vocab_legend.js?v=20260621b"></script>
-<script src="sentences.js?v=20260621b"></script>
-<script src="p233.js?v=20260621b"></script>
-<script src="lc_data.js?v=20260621b"></script>
-<script src="lc_answers.js?v=20260621b"></script>
-<script src="lc_answers_p2.js?v=20260621b"></script>
-<script src="lc_answers_p34.js?v=20260621b"></script>
+<script src="vocabulary.js?v=20260621c"></script>
+<script src="vocab_eduwill.js?v=20260621c"></script>
+<script src="vocab_wangchobo.js?v=20260621c"></script>
+<script src="vocab_hackers.js?v=20260621c"></script>
+<script src="vocab_secret_top.js?v=20260621c"></script>
+<script src="vocab_kyungsunsik.js?v=20260621c"></script>
+<script src="vocab_kss_toeic.js?v=20260621c"></script>
+<script src="vocab_noisaegim.js?v=20260621c"></script>
+<script src="vocab_legend.js?v=20260621c"></script>
+<script src="sentences.js?v=20260621c"></script>
+<script src="p233.js?v=20260621c"></script>
+<script src="day100.js?v=20260621c"></script>
+<script src="lc_data.js?v=20260621c"></script>
+<script src="lc_answers.js?v=20260621c"></script>
+<script src="lc_answers_p2.js?v=20260621c"></script>
+<script src="lc_answers_p34.js?v=20260621c"></script>
 <script>
 'use strict';
 
@@ -1258,7 +1298,7 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, spDone:{}, updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, spDone:{}, d100done:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
@@ -1317,7 +1357,7 @@ let quizData=[], quizIdx=0, quizScore=0, quizWrong=[];
 let aqCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false, _reviewMode=false, _sessTotal=0, _sessMastered=0, _swiped=false;
 let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동 발음 (기본 켜짐)
 
-const STACK_VIEWS = ['lc','speak','p233','book','day','mywords','flashcard','quiz','typing','result'];
+const STACK_VIEWS = ['lc','speak','p233','d100','book','day','mywords','flashcard','quiz','typing','result'];
 const $ = id => document.getElementById(id);
 // Firebase 키 금지문자(. # $ / [ ])는 _로 치환 — 안 하면 해당 단어 학습 시 클라우드 저장 전체가 실패함
 const safeKeyPart = s => String(s).replace(/[.#$/\[\]]/g, '_');
@@ -1879,6 +1919,41 @@ function renderP233(){
     const u=P233().find(x=>x.unit===p233State.unit); if(!u){ p233State.view='units'; return renderP233(); }
     if(t) t.innerHTML='💬 Unit '+u.unit+'. '+esc(u.title);
     el.innerHTML=u.items.map(p=>`<div class="pt-card" onclick="speak('${ptSpeakText(p.en)}')"><div class="pt-no">${p.no}</div><div class="pt-body"><div class="pt-en">${esc(p.en)}</div><div class="pt-ko">${esc(p.ko)}</div></div><button class="spk" onclick="event.stopPropagation(); speak('${ptSpeakText(p.en)}')" title="발음 듣기">🔊</button></div>`).join('');
+  }
+}
+// ===== 왕초보 영어회화 100일의 기적 =====
+let d100State={ view:'list', day:null, flipped:false };
+function D100(){ return (typeof DAYS100!=='undefined' && DAYS100) ? DAYS100 : []; }
+function d100Done(n){ return !!(state.d100done && state.d100done[n]); }
+function d100Count(){ return Object.keys(state.d100done||{}).length; }
+function d100Mark(n,on){ if(!state.d100done) state.d100done={}; if(on) state.d100done[n]=true; else delete state.d100done[n]; saveState(); }
+function openD100(){ d100State={view:'list',day:null,flipped:false}; showView('d100'); renderD100(); }
+function d100Back(){ if(d100State.view==='day'){ d100State.view='list'; renderD100(); } else goHome(); }
+function d100OpenDay(n){ d100State.day=n; d100State.view='day'; d100State.flipped=false; renderD100(); }
+function d100Flip(){ d100State.flipped=!d100State.flipped; if(d100State.flipped){ const d=D100().find(x=>x.day===d100State.day); if(d) speak(d.en); } renderD100(); }
+function d100Toggle(n){ const now=!d100Done(n); d100Mark(n,now); renderD100(); if(typeof updateHeaderStats==='function') updateHeaderStats(); if(now){ bumpStreak&&bumpStreak(); toast('💪 DAY '+n+' 완료! ('+d100Count()+'/100)'); } }
+function d100Nav(dir){ const days=D100(); const idx=days.findIndex(x=>x.day===d100State.day); const ni=idx+dir; if(ni<0||ni>=days.length){ toast(dir>0?'마지막 날이에요 🎉':'첫 날이에요'); return; } d100State.day=days[ni].day; d100State.flipped=false; renderD100(); }
+function renderD100(){
+  const el=$('d100-content'); if(!el) return; const t=$('d100-title');
+  if(d100State.view==='list'){
+    if(t) t.innerHTML='🎯 왕초보 100일의 기적';
+    const days=D100(); if(!days.length){ el.innerHTML='<p style="text-align:center;color:var(--text-light);padding:34px;">100일 데이터를 준비 중이에요.</p>'; return; }
+    const done=d100Count();
+    el.innerHTML=`<div class="d100-prog"><div class="d100-prog-top"><b style="font-size:1.3em;color:#f43f5e;">${done}</b> / ${days.length} 완료${state.streak>=1?` · 🔥 ${state.streak}일 연속`:''}</div><div class="progress-track" style="margin-top:9px;"><div class="progress-track-fill" style="width:${done/days.length*100}%; background:linear-gradient(90deg,#f43f5e,#f59e0b);"></div></div><div style="font-size:0.8em;color:var(--text-light);margin-top:8px;">하루 1표현씩, 100일이면 기적이 일어나요 ✨</div></div>
+      <div class="d100-grid">${days.map(d=>`<button class="d100-cell${d100Done(d.day)?' on':''}" onclick="d100OpenDay(${d.day})">${d.day}</button>`).join('')}</div>`;
+  } else {
+    const d=D100().find(x=>x.day===d100State.day); if(!d){ d100State.view='list'; return renderD100(); }
+    if(t) t.innerHTML='🎯 DAY '+d.day+' / 100';
+    const f=d100State.flipped, done=d100Done(d.day);
+    el.innerHTML=`
+      <div class="d100-card${done?' done':''}" onclick="d100Flip()">${done?'<div class="sp-badge">✓ 완료</div>':''}<div class="sp-num">DAY ${d.day}</div><div class="d100-ko">${esc(d.ko)}</div>${ f ? `<div class="d100-en-row"><span class="d100-en">${esc(d.en)}</span><button class="sp-speak-big" onclick="event.stopPropagation(); speak('${speakAttr(d.en)}')">🔊</button></div>` : '<div class="sp-tap">탭하면 영어 표현 보기 👆</div>' }</div>
+      ${ f ? `
+      ${ (d.dialog&&d.dialog.length)?`<div class="d100-sec"><div class="d100-sec-t">💬 대화</div>${d.dialog.map((l,i)=>`<div class="d100-dl"><span class="dlab">${String.fromCharCode(65+i)}</span><div class="dl-body"><div class="dl-en">${esc(l.en)} <button class="spk" onclick="speak('${speakAttr(l.en)}')">🔊</button></div>${l.ko?`<div class="dl-ko">${esc(l.ko)}</div>`:''}</div></div>`).join('')}</div>`:'' }
+      ${ (d.vocab&&d.vocab.length)?`<div class="d100-sec"><div class="d100-sec-t">📒 단어</div>${d.vocab.map(v=>`<div class="d100-voc"><b>${esc(v.en)}</b> · ${esc(v.ko)}</div>`).join('')}</div>`:'' }
+      ${ d.tip?`<div class="d100-sec"><div class="d100-sec-t">💡 꿀팁</div><div class="d100-tip">${esc(d.tip)}</div></div>`:'' }
+      ` : '' }
+      <button class="d100-complete${done?' done':''}" onclick="d100Toggle(${d.day})">${done?'✓ 완료됨 (탭하면 취소)':'오늘 완료하기 ✓'}</button>
+      <div class="sp-ctrl"><button onclick="d100Nav(-1)">← 이전 날</button><button class="prim" onclick="d100Nav(1)">다음 날 →</button></div>`;
   }
 }
 // ===== 월간 학습 달력 =====
@@ -2769,6 +2844,7 @@ function mergeStates(a, b){
   out.bookmarks = _mergeMap(a.bookmarks, b.bookmarks);
   out.studyDays = _mergeMap(a.studyDays, b.studyDays);
   out.spDone = _mergeMap(a.spDone, b.spDone);   // 1000문장 말하기 진행
+  out.d100done = _mergeMap(a.d100done, b.d100done); // 왕초보 100일 완료
   out.wrongs    = _mergeMap(a.wrongs, b.wrongs, (p,q)=>{  // 오답: 더 많은 횟수 보존
     if(p&&q&&typeof p==='object'&&typeof q==='object'){ const r=Object.assign({}, q, p); r.count=Math.max(p.count||0, q.count||0); return r; }
     return p||q;
