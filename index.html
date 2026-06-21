@@ -250,26 +250,31 @@
   .section-label::before { content:''; width:4px; height:16px; border-radius:3px; background:var(--grad); display:inline-block; }
 
   /* ===== Book Grid ===== */
-  .book-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .book-grid { display: flex; flex-direction: column; gap: 10px; }
   .book-card {
     background: var(--surface);
-    padding: 18px 16px;
+    padding: 12px 14px;
     border-radius: var(--r);
     box-shadow: var(--shadow-sm);
     cursor: pointer;
     transition: transform .15s, box-shadow .2s;
     border: 1.5px solid transparent;
     position: relative;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 14px;
   }
-  .book-card:active { transform: scale(0.97); }
-  @media (hover: hover) { .book-card:hover { box-shadow: var(--shadow); border-color: var(--primary); transform: translateY(-2px); } }
-  .book-card .b-ico { font-size: 1.55em; line-height: 1; width: 46px; height: 46px; display:flex; align-items:center; justify-content:center; border-radius: 14px; background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--border); }
-  .book-card .b-name { font-size: 1.06em; font-weight: 800; margin: 11px 0 2px; letter-spacing:-0.3px; }
-  .book-card .b-meta { font-size: 0.76em; color: var(--text-light); margin-bottom: 12px; }
+  .book-card:active { transform: scale(0.99); }
+  @media (hover: hover) { .book-card:hover { box-shadow: var(--shadow); border-color: var(--primary); } }
+  .book-card .b-cover { width: 56px; height: 76px; flex-shrink: 0; border-radius: 8px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.18); background: var(--surface-2); }
+  .book-card .b-ico { font-size: 1.8em; line-height: 1; width: 56px; height: 76px; flex-shrink: 0; display:flex; align-items:center; justify-content:center; border-radius: 8px; background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--border); }
+  .book-card .b-body { flex: 1; min-width: 0; }
+  .book-card .b-name { font-size: 1.05em; font-weight: 800; margin: 0 0 3px; letter-spacing:-0.3px; }
+  .book-card .b-meta { font-size: 0.76em; color: var(--text-light); margin-bottom: 8px; }
   .book-card .pbar { height: 7px; background: var(--surface-2); border-radius: 5px; overflow: hidden; }
   .book-card .pfill { height: 100%; border-radius: 4px; transition: width .4s; }
-  .book-card .b-pct { position: absolute; top: 16px; right: 16px; font-size: 0.78em; font-weight: 800; color: var(--text-light); }
+  .book-card .b-pct { position: absolute; top: 12px; right: 14px; font-size: 0.78em; font-weight: 800; color: var(--text-light); }
+  .lc-entry-cover { width: 46px; height: 62px; border-radius: 7px; object-fit: cover; box-shadow: 0 2px 8px rgba(0,0,0,0.25); flex-shrink:0; }
 
   /* ===== Day Grid ===== */
   .day-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
@@ -826,7 +831,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <div class="lc-entry-ico">🎧</div>
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621d" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -835,7 +840,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()" style="background:linear-gradient(135deg,#0ea5e9,#22c55e);">
-      <div class="lc-entry-ico">🗣️</div>
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621d" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -843,7 +848,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);">
-      <div class="lc-entry-ico">💬</div>
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621d" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -1234,7 +1239,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260621c';
+  window.APP_VERSION='20260621d';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1253,22 +1258,22 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260621c"></script>
-<script src="vocab_eduwill.js?v=20260621c"></script>
-<script src="vocab_wangchobo.js?v=20260621c"></script>
-<script src="vocab_hackers.js?v=20260621c"></script>
-<script src="vocab_secret_top.js?v=20260621c"></script>
-<script src="vocab_kyungsunsik.js?v=20260621c"></script>
-<script src="vocab_kss_toeic.js?v=20260621c"></script>
-<script src="vocab_noisaegim.js?v=20260621c"></script>
-<script src="vocab_legend.js?v=20260621c"></script>
-<script src="sentences.js?v=20260621c"></script>
-<script src="p233.js?v=20260621c"></script>
-<script src="day100.js?v=20260621c"></script>
-<script src="lc_data.js?v=20260621c"></script>
-<script src="lc_answers.js?v=20260621c"></script>
-<script src="lc_answers_p2.js?v=20260621c"></script>
-<script src="lc_answers_p34.js?v=20260621c"></script>
+<script src="vocabulary.js?v=20260621d"></script>
+<script src="vocab_eduwill.js?v=20260621d"></script>
+<script src="vocab_wangchobo.js?v=20260621d"></script>
+<script src="vocab_hackers.js?v=20260621d"></script>
+<script src="vocab_secret_top.js?v=20260621d"></script>
+<script src="vocab_kyungsunsik.js?v=20260621d"></script>
+<script src="vocab_kss_toeic.js?v=20260621d"></script>
+<script src="vocab_noisaegim.js?v=20260621d"></script>
+<script src="vocab_legend.js?v=20260621d"></script>
+<script src="sentences.js?v=20260621d"></script>
+<script src="p233.js?v=20260621d"></script>
+<script src="day100.js?v=20260621d"></script>
+<script src="lc_data.js?v=20260621d"></script>
+<script src="lc_answers.js?v=20260621d"></script>
+<script src="lc_answers_p2.js?v=20260621d"></script>
+<script src="lc_answers_p34.js?v=20260621d"></script>
 <script>
 'use strict';
 
@@ -1770,18 +1775,22 @@ function bookStats(b){
   });
   return { learned, total, doneDays, days:b.data.length };
 }
+const COVER={ siwon:'covers/siwon.jpg', top:'covers/top.jpg', eduwill:'covers/eduwill.jpg', wang:'covers/wang.jpg', hackers:'covers/hackers.jpg', kss:'covers/kss.jpg', kst:'covers/kst.jpg', legend:'covers/legend.jpg' };
 function renderHome(){
   const grid=$('book-grid');
   grid.innerHTML=BOOKS.map(b=>{
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621d" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
-      <div class="b-ico">${b.icon}</div>
-      <div class="b-name">${esc(b.name)}</div>
-      <div class="b-meta">${ready?`${s.days} Day · ${s.total}단어 · 완료 ${s.doneDays}일`:'데이터 준비 중'}</div>
-      <div class="pbar"><div class="pfill" style="width:${pct}%; background:linear-gradient(90deg, ${b.color}, ${b.color}aa);"></div></div>
+      ${cov}
+      <div class="b-body">
+        <div class="b-name">${esc(b.name)}</div>
+        <div class="b-meta">${ready?`${s.days} Day · ${s.total}단어 · 완료 ${s.doneDays}일`:'데이터 준비 중'}</div>
+        <div class="pbar"><div class="pfill" style="width:${pct}%; background:linear-gradient(90deg, ${b.color}, ${b.color}aa);"></div></div>
+      </div>
     </div>`;
   }).join('');
   if($('mywords-count')) $('mywords-count').textContent=(state.customWords||[]).length+'개 단어';
