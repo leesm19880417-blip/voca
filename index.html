@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
-<title>토익 비밀과외 VOCA</title>
+<title>영어 Study</title>
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#6366f1">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="토익 VOCA">
+<meta name="apple-mobile-web-app-title" content="영어 Study">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%93%9A%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -783,7 +783,7 @@
 <body>
 
 <header class="app-bar">
-  <div class="brand"><span class="mark">📚</span> 토익 VOCA</div>
+  <div class="brand"><span class="mark">📚</span> 영어 Study</div>
   <div class="bar-actions">
     <button class="prog-pill" id="prog-pill" onclick="setDday()" title="진도 · D-day 설정"><span class="pp-dot" id="pp-dot"></span><span id="pp-pct">0%</span><span class="pp-dday" id="pp-dday"></span></button>
     <button class="theme-btn" id="theme-btn" onclick="toggleDark()" aria-label="다크 모드">🌙</button>
@@ -831,7 +831,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621e" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621f" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -840,7 +840,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()" style="background:linear-gradient(135deg,#0ea5e9,#22c55e);">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621e" alt="기초영어 1000문장">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621f" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -848,7 +848,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621e" alt="영어회화 핵심패턴 233">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621f" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -856,7 +856,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openD100()" style="background:linear-gradient(135deg,#f43f5e,#f59e0b);">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621e" alt="왕초보 100일의 기적">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621f" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
@@ -1239,7 +1239,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260621e';
+  window.APP_VERSION='20260621f';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1258,22 +1258,22 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260621e"></script>
-<script src="vocab_eduwill.js?v=20260621e"></script>
-<script src="vocab_wangchobo.js?v=20260621e"></script>
-<script src="vocab_hackers.js?v=20260621e"></script>
-<script src="vocab_secret_top.js?v=20260621e"></script>
-<script src="vocab_kyungsunsik.js?v=20260621e"></script>
-<script src="vocab_kss_toeic.js?v=20260621e"></script>
-<script src="vocab_noisaegim.js?v=20260621e"></script>
-<script src="vocab_legend.js?v=20260621e"></script>
-<script src="sentences.js?v=20260621e"></script>
-<script src="p233.js?v=20260621e"></script>
-<script src="day100.js?v=20260621e"></script>
-<script src="lc_data.js?v=20260621e"></script>
-<script src="lc_answers.js?v=20260621e"></script>
-<script src="lc_answers_p2.js?v=20260621e"></script>
-<script src="lc_answers_p34.js?v=20260621e"></script>
+<script src="vocabulary.js?v=20260621f"></script>
+<script src="vocab_eduwill.js?v=20260621f"></script>
+<script src="vocab_wangchobo.js?v=20260621f"></script>
+<script src="vocab_hackers.js?v=20260621f"></script>
+<script src="vocab_secret_top.js?v=20260621f"></script>
+<script src="vocab_kyungsunsik.js?v=20260621f"></script>
+<script src="vocab_kss_toeic.js?v=20260621f"></script>
+<script src="vocab_noisaegim.js?v=20260621f"></script>
+<script src="vocab_legend.js?v=20260621f"></script>
+<script src="sentences.js?v=20260621f"></script>
+<script src="p233.js?v=20260621f"></script>
+<script src="day100.js?v=20260621f"></script>
+<script src="lc_data.js?v=20260621f"></script>
+<script src="lc_answers.js?v=20260621f"></script>
+<script src="lc_answers_p2.js?v=20260621f"></script>
+<script src="lc_answers_p34.js?v=20260621f"></script>
 <script>
 'use strict';
 
@@ -1782,7 +1782,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621e" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621f" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
