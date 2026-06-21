@@ -8619,52 +8619,52 @@ const SENTENCES = [
     "items": [
      {
       "n": 1,
-      "ko": "안경 없이도 그거 읽을 수 있어.",
+      "ko": "나 이거 전에 해봤어.",
       "en": "I have done it before."
      },
      {
       "n": 2,
-      "ko": "안경 없이 그거 읽고 싶어.",
+      "ko": "나 그 애 만나 본 적 있어.",
       "en": "I have met her/him before."
      },
      {
       "n": 3,
-      "ko": "너 그거 읽어 봐도 돼. 좋은 책이야.",
+      "ko": "나 그거 들어 봤어.",
       "en": "I have heard it/that."
      },
      {
       "n": 4,
-      "ko": "이거 읽어 봐도 돼. 내 허락 필요없어.",
+      "ko": "나 저분 본 적 있는데. 어딘지는 기억이 안 나.",
       "en": "I have seen her/him before, but I don't remember where (it was)."
      },
      {
       "n": 5,
-      "ko": "이번달엔 우리 이 책을 읽는 게 좋을 것 같아요.",
+      "ko": "나 이거 전에 써 봤어.",
       "en": "I have used it before."
      },
      {
       "n": 6,
-      "ko": "내가 먼저 읽어 보고, 알려줄게.",
+      "ko": "우리 이거 먹어 봤잖아. 기억나?",
       "en": "We have tried it. Do you remember(it)?"
      },
      {
       "n": 7,
-      "ko": "이 책 읽기 어려워.",
+      "ko": "생각해 봤어. 그리고, 가기로 했어.",
       "en": "I have thought about it. And I (have) decided to go there."
      },
      {
       "n": 8,
-      "ko": "난 책 읽을 거야.",
+      "ko": "나 그 영화 3번 봤어.",
       "en": "I have seen the/that movie 3 times."
      },
      {
       "n": 9,
-      "ko": "이 책 읽지 뭐.",
+      "ko": "우리 전에 만나 본 적 있어요. 작년이었죠.",
       "en": "We have met before. It was last year."
      },
      {
       "n": 10,
-      "ko": "나 지금 책 읽어.",
+      "ko": "나 그거 읽어 봤어. 좋은 책이야.",
       "en": "I have read it. It is a good/nice/great book."
      },
      {

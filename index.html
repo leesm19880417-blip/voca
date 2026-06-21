@@ -624,6 +624,12 @@
   .rc-left{ display:flex; align-items:center; gap:12px; }
   .rc-ico{ font-size:1.6em; }
   .rc-left b{ font-size:1.02em; } .rc-left small{ display:block; color:var(--text-light); font-size:0.8em; margin-top:1px; }
+  .rm-grid{ display:flex; flex-direction:column; gap:10px; }
+  .rm-btn{ display:flex; align-items:center; gap:13px; text-align:left; background:var(--surface-2); border:1.5px solid var(--border); border-radius:14px; padding:14px 16px; cursor:pointer; transition:all .12s; }
+  .rm-btn:active{ transform:scale(0.98); }
+  .rm-btn:hover{ border-color:var(--primary); }
+  .rm-ico{ font-size:1.7em; flex-shrink:0; }
+  .rm-txt b{ font-size:1.02em; display:block; } .rm-txt small{ display:block; color:var(--text-light); font-size:0.8em; margin-top:2px; }
   .rc-go{ font-weight:800; color:var(--text-light); white-space:nowrap; }
   .rc-due .rc-go{ color:#ea580c; }
   /* 플래시카드 평가(SRS) 버튼 */
@@ -942,7 +948,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260622c" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260622d" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -951,7 +957,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260622c" alt="기초영어 1000문장">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260622d" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -959,7 +965,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260622c" alt="영어회화 핵심패턴 233">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260622d" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -967,7 +973,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openD100()">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260622c" alt="왕초보 100일의 기적">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260622d" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
@@ -1338,6 +1344,21 @@
   </div>
 </div>
 
+<!-- 오늘의 복습: 방식 선택 -->
+<div class="overlay" id="reviewmode-overlay">
+  <div class="sheet" style="max-width:440px;">
+    <div class="grabber"></div>
+    <h3>🔁 오늘의 복습</h3>
+    <p class="sub" id="reviewmode-sub" style="margin-bottom:16px;">복습할 단어 0개 · 방식을 골라주세요</p>
+    <div class="rm-grid">
+      <button class="rm-btn" onclick="startReviewMode('flashcard')"><span class="rm-ico">📇</span><span class="rm-txt"><b>카드로 복습</b><small>앞뒤 뒤집으며 외움/모름 체크</small></span></button>
+      <button class="rm-btn" onclick="startReviewMode('en-ko')"><span class="rm-ico">🎯</span><span class="rm-txt"><b>영 → 한 퀴즈</b><small>영어 보고 뜻 고르기</small></span></button>
+      <button class="rm-btn" onclick="startReviewMode('ko-en')"><span class="rm-ico">✏️</span><span class="rm-txt"><b>한 → 영 퀴즈</b><small>뜻 보고 영어 고르기</small></span></button>
+    </div>
+    <button class="btn btn-ghost btn-block" onclick="closeReviewMode()" style="margin-top:10px;">취소</button>
+  </div>
+</div>
+
 <!-- 사진 인식 결과 검토 모달 -->
 <div class="overlay" id="review-overlay">
   <div class="sheet">
@@ -1360,7 +1381,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260622c';
+  window.APP_VERSION='20260622d';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1379,23 +1400,23 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260622c"></script>
-<script src="vocab_eduwill.js?v=20260622c"></script>
-<script src="vocab_wangchobo.js?v=20260622c"></script>
-<script src="vocab_hackers.js?v=20260622c"></script>
-<script src="vocab_secret_top.js?v=20260622c"></script>
-<script src="vocab_kyungsunsik.js?v=20260622c"></script>
-<script src="vocab_kss_toeic.js?v=20260622c"></script>
-<script src="vocab_noisaegim.js?v=20260622c"></script>
-<script src="vocab_legend.js?v=20260622c"></script>
-<script src="sentences.js?v=20260622c"></script>
-<script src="p233.js?v=20260622c"></script>
-<script src="day100.js?v=20260622c"></script>
-<script src="comm.js?v=20260622c"></script>
-<script src="lc_data.js?v=20260622c"></script>
-<script src="lc_answers.js?v=20260622c"></script>
-<script src="lc_answers_p2.js?v=20260622c"></script>
-<script src="lc_answers_p34.js?v=20260622c"></script>
+<script src="vocabulary.js?v=20260622d"></script>
+<script src="vocab_eduwill.js?v=20260622d"></script>
+<script src="vocab_wangchobo.js?v=20260622d"></script>
+<script src="vocab_hackers.js?v=20260622d"></script>
+<script src="vocab_secret_top.js?v=20260622d"></script>
+<script src="vocab_kyungsunsik.js?v=20260622d"></script>
+<script src="vocab_kss_toeic.js?v=20260622d"></script>
+<script src="vocab_noisaegim.js?v=20260622d"></script>
+<script src="vocab_legend.js?v=20260622d"></script>
+<script src="sentences.js?v=20260622d"></script>
+<script src="p233.js?v=20260622d"></script>
+<script src="day100.js?v=20260622d"></script>
+<script src="comm.js?v=20260622d"></script>
+<script src="lc_data.js?v=20260622d"></script>
+<script src="lc_answers.js?v=20260622d"></script>
+<script src="lc_answers_p2.js?v=20260622d"></script>
+<script src="lc_answers_p34.js?v=20260622d"></script>
 <script>
 'use strict';
 
@@ -1927,7 +1948,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260622c" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260622d" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
@@ -1941,7 +1962,7 @@ function renderHome(){
   // 영어단어의 소통 — 단어장 목록(왕초보 위)에 카드로 표시
   const commTot=(typeof COMM!=='undefined'&&COMM)?COMM.reduce((s,c)=>s+(c.themes||[]).reduce((a,t)=>a+(t.items||[]).length,0),0):0;
   const commCard=`<div class="book-card" onclick="openComm()">
-      <img class="b-cover" src="covers/comm.jpg?v=20260622c" alt="영어단어의 소통" loading="lazy">
+      <img class="b-cover" src="covers/comm.jpg?v=20260622d" alt="영어단어의 소통" loading="lazy">
       <div class="b-body">
         <div class="b-name">영어단어의 소통</div>
         <div class="b-meta">상황·감각·일상·여가 · 표현 ${commTot}개</div>
@@ -2507,6 +2528,16 @@ function srsRate(grade){
   currentIdx=nextIdx; flashFlipped=false; advanceCard();
 }
 function markKnown(known){ srsRate(known?2:0); } // 하위호환
+// 퀴즈 복습용: 카드 큐와 무관하게 SRS 일정만 갱신(정답=외움, 오답=모름). 마스터 졸업시 true 반환
+function srsSchedule(bk, dy, word, ok){
+  const key=wordKey(bk,dy,word); const prev=state.srs[key]||{l:0,miss:0}; const tdy=srsToday();
+  if(!ok){ state.srs[key]={l:0, miss:(prev.miss||0)+1, pc:0, pd:prev.pd, mastered:false, due:tdy}; return false; }
+  const l=Math.min((prev.l||0)+1, SRS_INT.length);
+  let pc=prev.pc||0, pd=prev.pd; if(pd!==tdy){ pc++; pd=tdy; }
+  const mastered=pc>=MASTER_DAYS;
+  state.srs[key]={l, miss:0, pc, pd, mastered, due: mastered ? tdy+9999 : tdy+SRS_INT[l-1]};
+  return mastered && !prev.mastered;
+}
 function dueWords(){
   const t=srsToday(), out=[];
   BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
@@ -2516,12 +2547,26 @@ function dueWords(){
   out.sort((a,b)=>a._due-b._due);
   return out;
 }
+let _reviewList=null;
 function startReview(){
   const list=dueWords();
   if(!list.length){ toast('오늘 복습할 단어가 없어요 👍'); return; }
-  currentWords=list; currentIdx=0; flashFlipped=false; studySource='review'; _reviewMode=true;
-  _sessTotal=currentWords.length; _sessMastered=0;
-  showView('flashcard'); renderFlashcard();
+  _reviewList=list;
+  const sub=$('reviewmode-sub'); if(sub) sub.textContent='복습할 단어 '+list.length+'개 · 방식을 골라주세요';
+  $('reviewmode-overlay').classList.add('active');
+}
+function closeReviewMode(){ $('reviewmode-overlay').classList.remove('active'); }
+function startReviewMode(mode){
+  closeReviewMode();
+  const list=(_reviewList&&_reviewList.length)?_reviewList.slice():dueWords();
+  if(!list.length){ toast('오늘 복습할 단어가 없어요 👍'); return; }
+  studySource='review'; _reviewMode=true;
+  if(mode==='flashcard'){
+    currentWords=list; currentIdx=0; flashFlipped=false; _sessTotal=currentWords.length; _sessMastered=0;
+    showView('flashcard'); renderFlashcard();
+  } else {
+    currentBook='review'; currentDay='review'; setupQuiz(list, mode, 'review');
+  }
 }
 function shuffleFlashcards(){ currentWords=shuffle(currentWords); currentIdx=0; flashFlipped=false; renderFlashcard(); toast('🔀 섞었어요'); }
 function completeFlash(){
@@ -2535,7 +2580,7 @@ function completeFlash(){
 function startQuiz(type){ const words=dayWords(); if(!words) return; studySource='day'; setupQuiz(words,type,currentDay); }
 function distractorPool(){
   // 혼합 출처(전체평가-전체, 즐겨찾기, 오답) 퀴즈는 전 단어장에서 보기 생성
-  if(studySource==='bookmarks'||studySource==='wrongs'||(studySource==='all'&&aqBook==='all')) return allWords();
+  if(studySource==='review'||studySource==='bookmarks'||studySource==='wrongs'||(studySource==='all'&&aqBook==='all')) return allWords();
   const b=bookById(currentBook);
   if(b && b.data.length) return b.data.flatMap(d=>d.words);
   return allWords();
@@ -2586,6 +2631,7 @@ function answerQuiz(btn, ans){
     quizWrong.push(it);
     $('quiz-fb').innerHTML=`<div class="feedback no">❌ 정답: ${esc(it.correct)}</div><div class="explain"><span class="ew">${esc(it.word)}</span> ${posTag(it.pos)} — ${esc(it.meaning)}<span class="ee">${highlightWord(it.example, it.word)}</span><span class="eek">${esc(it.exampleKor)}</span></div>`;
   }
+  if(studySource==='review'){ if(srsSchedule(bk,dy,it.word, correct)) toast('🏆 마스터! "'+it.word+'" 졸업 🎓'); }
   saveState(); updateHeaderStats();
   $('quiz-score').textContent=`정답 ${quizScore}`;
   $('quiz-next').style.display='block';
