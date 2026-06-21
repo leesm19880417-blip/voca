@@ -258,15 +258,25 @@
   /* ===== AI 번역 박스 ===== */
   .trans-box { background: var(--surface); border:0.5px solid var(--border); border-radius: var(--r); box-shadow: var(--shadow-sm); padding: 14px; margin-bottom: 8px; }
   .trans-head { font-size: 0.86em; font-weight: 800; color: var(--text-mid); display:flex; align-items:center; gap:6px; margin-bottom: 10px; }
+  .trans-head { justify-content:space-between; }
+  .trans-head > span { display:flex; align-items:center; gap:6px; }
   .trans-head .ti { color: var(--primary); font-size: 1.2em; }
-  .trans-inwrap { display:flex; gap:8px; align-items:stretch; }
-  .trans-inwrap textarea { flex:1; resize:none; border:1.5px solid var(--border); border-radius:13px; padding:10px 12px; font-family:inherit; font-size:0.95em; background:var(--surface); color:var(--text); line-height:1.5; }
-  body.dark .trans-inwrap textarea { background: var(--surface-2); }
-  .trans-inwrap textarea:focus { outline:none; border-color:var(--primary); }
-  .trans-inwrap textarea::placeholder { color: var(--text-light); }
-  .trans-go { flex-shrink:0; align-self:stretch; background:var(--primary); color:#fff; border:none; border-radius:13px; padding:0 15px; font-weight:800; font-size:0.92em; cursor:pointer; display:flex; align-items:center; gap:5px; }
-  .trans-go:active { transform:scale(0.96); }
+  .trans-clear { background:none; border:none; color:var(--text-light); font-size:0.78em; font-weight:700; cursor:pointer; display:flex; align-items:center; gap:3px; padding:3px 5px; }
+  .trans-clear .ti { color:var(--text-light); font-size:1.05em; }
+  .trans-clear:active { transform:scale(0.95); }
+  .trans-ta { width:100%; box-sizing:border-box; resize:none; border:1.5px solid var(--border); border-radius:13px; padding:10px 12px; font-family:inherit; font-size:0.95em; background:var(--surface); color:var(--text); line-height:1.5; }
+  body.dark .trans-ta { background: var(--surface-2); }
+  .trans-ta:focus { outline:none; border-color:var(--primary); }
+  .trans-ta::placeholder { color: var(--text-light); }
+  .trans-actions { display:flex; gap:8px; margin-top:8px; }
+  .trans-photo { flex:1; background:var(--surface-2); color:var(--text-mid); border:1.5px solid var(--border); border-radius:13px; padding:10px; font-weight:800; font-size:0.9em; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:6px; }
+  .trans-photo .ti { color:var(--accent); font-size:1.15em; }
+  .trans-photo:active { transform:scale(0.97); }
+  .trans-go { flex:1; background:var(--primary); color:#fff; border:none; border-radius:13px; padding:10px; font-weight:800; font-size:0.92em; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:5px; }
+  .trans-go:active { transform:scale(0.97); }
   .trans-go .ti { font-size:1.1em; }
+  .trans-src { font-size:0.82em; color:var(--text-light); background:var(--surface-2); border-left:3px solid var(--accent); border-radius:8px; padding:7px 10px; margin-bottom:9px; line-height:1.4; }
+  .trans-src b { color:var(--text-mid); font-weight:700; }
   #trans-result:not(:empty) { margin-top: 12px; }
   .trans-loading { font-size:0.88em; color:var(--text-light); text-align:center; padding:14px; }
   .trans-err { font-size:0.86em; color:var(--danger); background:var(--danger-light); border-radius:10px; padding:10px 12px; }
@@ -779,6 +789,40 @@
   .stat-box { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow-sm); padding: 16px; text-align: center; }
   .stat-box .sv { font-size: 1.8em; font-weight: 900; }
   .stat-box .sl { font-size: 0.76em; color: var(--text-light); margin-top: 2px; }
+  /* ===== 분석 섹션 ===== */
+  .ana-goal { margin-bottom: 14px; }
+  .ag-top { display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  .ag-dday .ag-l { font-size:0.78em; color:var(--text-light); font-weight:700; }
+  .ag-dday .ag-v { font-size:2.3em; font-weight:900; color:var(--text); letter-spacing:-1px; line-height:1.05; }
+  .ag-dday .ag-s { font-size:0.8em; color:var(--text-mid); margin-top:2px; }
+  .ring-svg { width:80px; height:80px; flex-shrink:0; }
+  .ag-nums { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:14px; padding-top:14px; border-top:1px solid var(--border); }
+  .ag-nums > div { text-align:center; }
+  .agn-v { font-size:1.5em; font-weight:900; color:var(--text); letter-spacing:-0.5px; }
+  .agn-l { font-size:0.74em; color:var(--text-light); margin-top:1px; }
+  .goal-set { margin-top:13px; border-top:1px solid var(--border); padding-top:11px; }
+  .goal-set summary { font-size:0.83em; font-weight:700; color:var(--text-mid); cursor:pointer; list-style:none; display:flex; align-items:center; gap:6px; }
+  .goal-set summary::-webkit-details-marker { display:none; }
+  .goal-set summary .ti { color:var(--accent); }
+  .goal-form { display:flex; flex-wrap:wrap; gap:9px; align-items:flex-end; margin-top:11px; }
+  .goal-form label { display:flex; flex-direction:column; gap:4px; font-size:0.75em; color:var(--text-light); font-weight:700; flex:1; min-width:120px; }
+  .goal-form input { border:1.5px solid var(--border); border-radius:10px; padding:9px 10px; font-family:inherit; font-size:0.95em; background:var(--surface); color:var(--text); }
+  body.dark .goal-form input { background:var(--surface-2); }
+  .goal-form input:focus { outline:none; border-color:var(--primary); }
+  .goal-form .btn { flex:0 0 auto; padding:9px 18px; }
+  .ana-metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-bottom:14px; }
+  .ana-metrics .stat-box { padding:13px 6px; }
+  .ana-metrics .sv { font-size:1.04em; line-height:1.2; }
+  .ana-head { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px; margin-bottom:6px; }
+  .ana-legend { font-size:0.74em; color:var(--text-light); font-weight:700; display:flex; align-items:center; gap:4px; }
+  .ana-legend i { width:9px; height:9px; border-radius:50%; display:inline-block; margin-left:7px; }
+  .line-svg { width:100%; height:auto; display:block; }
+  .ana-x { display:flex; justify-content:space-between; font-size:0.72em; color:var(--text-light); margin-top:2px; padding:0 4px; }
+  .ana-2col { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px; }
+  .gauge-card { text-align:center; padding:14px 10px 12px; }
+  .gc-title { font-size:0.82em; font-weight:800; color:var(--text-mid); }
+  .gauge-svg { width:100%; max-width:150px; height:auto; margin:4px auto 0; display:block; }
+  .gc-sub { font-size:0.74em; color:var(--text-light); margin-top:2px; }
   .history-row { display: flex; justify-content: space-between; align-items: center; padding: 12px; background: var(--surface-2); border-radius: var(--r-sm); margin-bottom: 8px; }
   .history-row .hl b { font-size: 0.92em; }
   .history-row .hl small { display: block; color: var(--text-light); font-size: 0.76em; }
@@ -876,13 +920,15 @@
       </div>
     </div>
     <div class="trans-box">
-      <div class="trans-head"><i class="ti ti-language" aria-hidden="true"></i> AI 번역 · 단어 분석</div>
-      <div class="trans-inwrap">
-        <textarea id="trans-input" rows="2" placeholder="한글이나 영어를 입력하세요 (단어·문장) — 자연스럽게 번역해드려요" onkeydown="if(event.key==='Enter'&&(event.metaKey||event.ctrlKey)){event.preventDefault();doTranslate();}"></textarea>
+      <div class="trans-head"><span><i class="ti ti-language" aria-hidden="true"></i> AI 번역 · 단어 분석</span><button class="trans-clear" id="trans-clear" onclick="resetTrans()" style="display:none"><i class="ti ti-rotate" aria-hidden="true"></i> 초기화</button></div>
+      <textarea id="trans-input" class="trans-ta" rows="2" placeholder="한글이나 영어를 입력하세요 (단어·문장) — 자연스럽게 번역해드려요" onkeydown="if(event.key==='Enter'&&(event.metaKey||event.ctrlKey)){event.preventDefault();doTranslate();}"></textarea>
+      <div class="trans-actions">
+        <button class="trans-photo" onclick="pickTransImage()"><i class="ti ti-camera" aria-hidden="true"></i> 사진 번역</button>
         <button class="trans-go" onclick="doTranslate()" aria-label="번역"><i class="ti ti-sparkles" aria-hidden="true"></i> 번역</button>
       </div>
       <div id="trans-result"></div>
     </div>
+    <input type="file" id="trans-image" accept="image/*" style="display:none" onchange="onTransImageSelected(this)">
     <div class="section-label">📖 이어서 학습</div>
     <div class="study-carousel" id="study-carousel"></div>
     <div class="review-card" id="review-card" onclick="startReview()">
@@ -895,7 +941,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621r" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621s" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -904,7 +950,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621r" alt="기초영어 1000문장">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621s" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -912,7 +958,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621r" alt="영어회화 핵심패턴 233">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621s" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -920,7 +966,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openD100()">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621r" alt="왕초보 100일의 기적">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621s" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
@@ -1313,7 +1359,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260621r';
+  window.APP_VERSION='20260621s';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1332,23 +1378,23 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260621r"></script>
-<script src="vocab_eduwill.js?v=20260621r"></script>
-<script src="vocab_wangchobo.js?v=20260621r"></script>
-<script src="vocab_hackers.js?v=20260621r"></script>
-<script src="vocab_secret_top.js?v=20260621r"></script>
-<script src="vocab_kyungsunsik.js?v=20260621r"></script>
-<script src="vocab_kss_toeic.js?v=20260621r"></script>
-<script src="vocab_noisaegim.js?v=20260621r"></script>
-<script src="vocab_legend.js?v=20260621r"></script>
-<script src="sentences.js?v=20260621r"></script>
-<script src="p233.js?v=20260621r"></script>
-<script src="day100.js?v=20260621r"></script>
-<script src="comm.js?v=20260621r"></script>
-<script src="lc_data.js?v=20260621r"></script>
-<script src="lc_answers.js?v=20260621r"></script>
-<script src="lc_answers_p2.js?v=20260621r"></script>
-<script src="lc_answers_p34.js?v=20260621r"></script>
+<script src="vocabulary.js?v=20260621s"></script>
+<script src="vocab_eduwill.js?v=20260621s"></script>
+<script src="vocab_wangchobo.js?v=20260621s"></script>
+<script src="vocab_hackers.js?v=20260621s"></script>
+<script src="vocab_secret_top.js?v=20260621s"></script>
+<script src="vocab_kyungsunsik.js?v=20260621s"></script>
+<script src="vocab_kss_toeic.js?v=20260621s"></script>
+<script src="vocab_noisaegim.js?v=20260621s"></script>
+<script src="vocab_legend.js?v=20260621s"></script>
+<script src="sentences.js?v=20260621s"></script>
+<script src="p233.js?v=20260621s"></script>
+<script src="day100.js?v=20260621s"></script>
+<script src="comm.js?v=20260621s"></script>
+<script src="lc_data.js?v=20260621s"></script>
+<script src="lc_answers.js?v=20260621s"></script>
+<script src="lc_answers_p2.js?v=20260621s"></script>
+<script src="lc_answers_p34.js?v=20260621s"></script>
 <script>
 'use strict';
 
@@ -1378,7 +1424,7 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, spDone:{}, d100done:{}, updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
@@ -1536,7 +1582,17 @@ function speakBuiltin(text){
 function speakAttr(s){ return String(s==null?'':s).replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 // ============ 화면 전환 ============
+const STUDY_VIEWS=['flashcard','quiz','typing','speak','comm','d100','p233','lc','day'];
+let _curView=null, _studyClock=0;
+function bankStudyTime(){
+  if(_curView&&STUDY_VIEWS.includes(_curView)&&_studyClock){
+    const sec=Math.min(Math.round((Date.now()-_studyClock)/1000), 600); // 1회 최대 10분(자리비움 방지)
+    if(sec>0){ const td=srsToday(); if(!state.studySeconds) state.studySeconds={}; state.studySeconds[td]=(state.studySeconds[td]||0)+sec; }
+  }
+  _studyClock=Date.now();
+}
 function showView(name){
+  bankStudyTime(); _curView=name; _studyClock=Date.now();
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
   $('view-'+name).classList.add('active');
   if(name==='flashcard') syncAutoSpeakBtn();
@@ -1557,6 +1613,10 @@ document.querySelectorAll('.nav-item').forEach(btn=>{
   });
 });
 function goHome(){ if(typeof lcStop==='function'){ lcStop(); closeLcFs(); } showView('home'); renderHome(); }
+// 학습 시간 적립: 30초마다 + 화면 가림/이탈 시
+setInterval(()=>{ if(document.visibilityState==='visible' && _curView && STUDY_VIEWS.includes(_curView)){ bankStudyTime(); if(typeof saveState==='function') saveState(); } }, 30000);
+document.addEventListener('visibilitychange',()=>{ if(document.visibilityState==='hidden'){ bankStudyTime(); if(typeof saveState==='function') saveState(); } else { _studyClock=Date.now(); } });
+window.addEventListener('beforeunload', bankStudyTime);
 
 // ============ LC 공부하기 ============
 let lcFilter = 'all';
@@ -1857,7 +1917,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621r" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621s" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
@@ -1871,7 +1931,7 @@ function renderHome(){
   // 영어단어의 소통 — 단어장 목록(왕초보 위)에 카드로 표시
   const commTot=(typeof COMM!=='undefined'&&COMM)?COMM.reduce((s,c)=>s+(c.themes||[]).reduce((a,t)=>a+(t.items||[]).length,0),0):0;
   const commCard=`<div class="book-card" onclick="openComm()">
-      <img class="b-cover" src="covers/comm.jpg?v=20260621r" alt="영어단어의 소통" loading="lazy">
+      <img class="b-cover" src="covers/comm.jpg?v=20260621s" alt="영어단어의 소통" loading="lazy">
       <div class="b-body">
         <div class="b-name">영어단어의 소통</div>
         <div class="b-meta">상황·감각·일상·여가 · 표현 ${commTot}개</div>
@@ -2720,15 +2780,20 @@ async function doTranslate(){
   if(!text){ toast('번역할 내용을 입력하세요'); inp.focus(); return; }
   if(!geminiReady()){ toast('AI 키 설정이 필요해요'); return; }
   $('trans-result').innerHTML='<div class="trans-loading">🌐 AI가 번역·분석 중…</div>';
+  { const cl=$('trans-clear'); if(cl) cl.style.display='flex'; }
   const prompt='당신은 한영 번역가이자 영어 사전입니다. 아래 입력을 분석해 JSON으로만 답하세요(설명/마크다운/코드블록 금지).\n입력: """'+text+'"""\n규칙:\n- 입력이 한국어면 자연스러운 영어로, 영어면 자연스러운 한국어로 번역하세요(직역이 아니라 원어민이 실제 쓰는 자연스러운 표현).\n- 단어 하나면 type="word", 그 이상이면 type="sentence".\n- words: type=sentence면 번역된 영어 문장에서 핵심 내용어(동사/명사/형용사/부사/유용한 숙어)를 골라 {en:영어, ko:한국어뜻, pos:품사}로(관사/전치사 같은 기능어 제외, 최대 8개). type=word면 그 단어 자체(영어 형태) 하나만 넣으세요(유의어·다른 단어 금지).\n- pos 값은 다음 약어 중 정확히 하나만(괄호·설명 없이): "n." "v." "adj." "adv." "prep." "conj." "pron." "int.".\n- example: type=word일 때만, 그 단어를 쓴 자연스러운 예문 {en, ko}.\nJSON 형식: {"lang":"ko|en","type":"word|sentence","translation":"번역문","pos":"단어면 품사 아니면 빈문자열","example":{"en":"","ko":""},"words":[{"en":"","ko":"","pos":""}]}';
   try{ const d=await geminiJSON(prompt); renderTransResult(d, text); }
   catch(e){ $('trans-result').innerHTML='<div class="trans-err">번역 실패: '+esc(String(e.message||e))+'</div>'; }
 }
 function renderTransResult(d, input){
   _transData=d;
-  const enText=(d.lang==='ko') ? (d.translation||'') : input;
+  const cl=$('trans-clear'); if(cl) cl.style.display='flex';
+  const src=d.source||(d._fromPhoto?input:'');
+  const enText=(d.lang==='ko') ? (d.translation||'') : (src||input);
   const isWord=d.type==='word';
-  let html='<div class="trans-out"><div class="trans-tr">'+esc(d.translation||'')+' <button class="spk" onclick="speak(\''+speakAttr(enText)+'\')" title="발음">🔊</button></div>';
+  let html='';
+  if(src) html+='<div class="trans-src"><b>📷 인식한 문장</b><br>'+esc(src)+'</div>';
+  html+='<div class="trans-out"><div class="trans-tr">'+esc(d.translation||'')+' <button class="spk" onclick="speak(\''+speakAttr(enText)+'\')" title="발음">🔊</button></div>';
   if(isWord && d.pos) html+='<div><span class="trans-pos">'+esc(posKor(d.pos))+'</span></div>';
   if(isWord && d.example && d.example.en) html+='<div class="trans-ex"><span class="exlabel">예문</span>'+esc(d.example.en)+' <button class="spk" onclick="speak(\''+speakAttr(d.example.en)+'\')">🔊</button><div class="trans-exk">'+esc(d.example.ko||'')+'</div></div>';
   html+='</div>';
@@ -2748,6 +2813,43 @@ function addTransWord(i, btn){
   saveState(); if(typeof updateHeaderStats==='function') updateHeaderStats();
   if(btn){ btn.textContent='✓ 추가됨'; btn.classList.add('done'); btn.disabled=true; }
   toast('⭐ "'+w.en+'" 내 단어장에 추가');
+}
+function resetTrans(){
+  _transData=null;
+  const inp=$('trans-input'); if(inp) inp.value='';
+  const r=$('trans-result'); if(r) r.innerHTML='';
+  const cl=$('trans-clear'); if(cl) cl.style.display='none';
+  if(inp) inp.focus();
+}
+function pickTransImage(){
+  if(!geminiReady()){ toast('AI 키 설정이 필요해요'); return; }
+  $('trans-image').click();
+}
+function onTransImageSelected(input){
+  const file=input.files&&input.files[0]; input.value='';
+  if(!file) return;
+  const reader=new FileReader();
+  reader.onload=function(e){ const u=e.target.result; const base64=u.split(',')[1]; const mime=(u.match(/^data:(.*?);/)||[])[1]||'image/jpeg'; translateImage(base64, mime); };
+  reader.readAsDataURL(file);
+}
+async function translateImage(base64, mime){
+  if(!geminiReady()){ toast('AI 키 설정이 필요해요'); return; }
+  $('trans-result').innerHTML='<div class="trans-loading">📷 사진을 읽고 번역 중…</div>';
+  { const cl=$('trans-clear'); if(cl) cl.style.display='flex'; }
+  const prompt='이 이미지 속의 글(영어 또는 한국어 단어·문장)을 읽고 번역·분석해 JSON으로만 답하세요(설명/마크다운/코드블록 금지).\n규칙:\n- source: 이미지에서 읽은 원문 텍스트(여러 줄이면 공백으로 이어붙이기).\n- 원문이 한국어면 자연스러운 영어로, 영어면 자연스러운 한국어로 번역(직역 금지, 원어민이 실제 쓰는 표현).\n- 단어 하나면 type="word", 그 이상이면 type="sentence".\n- words: type=sentence면 번역된 영어 문장에서 핵심 내용어(동사/명사/형용사/부사/유용한 숙어)를 {en,ko,pos}로(기능어 제외, 최대 8개). type=word면 그 단어 자체(영어 형태) 하나만.\n- pos 값은 다음 약어 중 정확히 하나만(괄호·설명 없이): "n." "v." "adj." "adv." "prep." "conj." "pron." "int.".\n- example: type=word일 때만, 그 단어를 쓴 자연스러운 예문 {en, ko}.\nJSON: {"source":"읽은원문","lang":"ko|en","type":"word|sentence","translation":"번역문","pos":"단어면 품사 아니면 빈문자열","example":{"en":"","ko":""},"words":[{"en":"","ko":"","pos":""}]}';
+  try{
+    const res=await fetch('https://generativelanguage.googleapis.com/v1beta/models/'+GEMINI_MODEL+':generateContent?key='+encodeURIComponent(GEMINI_KEY),{
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({ contents:[{ parts:[ {text:prompt}, {inline_data:{mime_type:mime, data:base64}} ] }], generationConfig:{ temperature:0.3, responseMimeType:'application/json' } })
+    });
+    const data=await res.json();
+    if(data.error) throw new Error(data.error.message||'AI 오류');
+    let txt=''; try{ txt=data.candidates[0].content.parts[0].text; }catch(e){}
+    let d=null; try{ d=JSON.parse(txt); }catch(e){ const m=txt&&txt.match(/\{[\s\S]*\}/); if(m) d=JSON.parse(m[0]); }
+    if(!d||!d.translation){ $('trans-result').innerHTML='<div class="trans-err">사진에서 글자를 읽지 못했어요. 더 밝고 또렷한 사진으로 다시 시도해 보세요.</div>'; return; }
+    d._fromPhoto=true;
+    renderTransResult(d, d.source||'');
+  }catch(e){ $('trans-result').innerHTML='<div class="trans-err">사진 번역 실패: '+esc(String(e.message||e))+'</div>'; }
 }
 const OCR_PROMPT = '이 이미지는 손으로 쓴 영어 단어장입니다. 각 항목에서 영어 단어와 한국어 뜻을 정확히 추출하세요. 각 단어마다 품사(n./v./adj./adv. 등)와, 자연스러운 영어 예문 1개와 그 한국어 번역도 만들어 주세요. 반드시 아래 JSON 배열로만 답하세요(설명·코드블록 금지): [{"word":"english","pos":"n.","meaning":"한국어뜻","example":"An English sentence.","exampleKor":"한국어 번역"}] 읽을 수 없는 항목은 제외하세요.';
 function pickWordImage(){
@@ -2899,6 +3001,97 @@ function startAllQuiz(type){
 }
 
 // ============ 통계 (전 단어장 통합) ============
+// ===== 분석(통계) 헬퍼 =====
+function fmtDur(sec){ sec=Math.round(sec||0); const h=Math.floor(sec/3600), m=Math.floor(sec%3600/60); if(h>0) return h+'시간 '+(m?m+'분':''); if(m>0) return m+'분'; return (sec||0)+'초'; }
+function gaugeSVG(pct, color, center){
+  pct=Math.max(0,Math.min(100,pct||0));
+  const r=52, C=Math.PI*r, off=C*(1-pct/100);
+  return '<svg viewBox="0 0 120 74" class="gauge-svg">'
+    +'<path d="M8 62 A52 52 0 0 1 112 62" fill="none" stroke="var(--border)" stroke-width="11" stroke-linecap="round"/>'
+    +'<path d="M8 62 A52 52 0 0 1 112 62" fill="none" stroke="'+color+'" stroke-width="11" stroke-linecap="round" stroke-dasharray="'+C.toFixed(1)+'" stroke-dashoffset="'+off.toFixed(1)+'"/>'
+    +'<text x="60" y="57" text-anchor="middle" font-size="21" font-weight="800" fill="'+color+'">'+center+'</text></svg>';
+}
+function ringSVG(pct, color){
+  pct=Math.max(0,Math.min(100,pct||0));
+  const r=33, c=2*Math.PI*r, off=c*(1-pct/100);
+  return '<svg viewBox="0 0 80 80" class="ring-svg"><circle cx="40" cy="40" r="33" fill="none" stroke="var(--border)" stroke-width="8"/>'
+    +'<circle cx="40" cy="40" r="33" fill="none" stroke="'+color+'" stroke-width="8" stroke-linecap="round" stroke-dasharray="'+c.toFixed(1)+'" stroke-dashoffset="'+off.toFixed(1)+'" transform="rotate(-90 40 40)"/>'
+    +'<text x="40" y="46" text-anchor="middle" font-size="18" font-weight="800" fill="var(--text)">'+Math.round(pct)+'%</text></svg>';
+}
+function dualLineSVG(s1, s2){
+  const N=s1.length, W=320, H=116, pl=8, pr=8, pt=12, pb=16;
+  let max=1; for(let i=0;i<N;i++){ max=Math.max(max, s1[i]||0, s2[i]||0); }
+  const X=i=> pl+(W-pl-pr)*(N<=1?0.5:i/(N-1));
+  const Y=v=> pt+(H-pt-pb)*(1-(v||0)/max);
+  const path=s=> s.map((v,i)=>(i?'L':'M')+X(i).toFixed(1)+' '+Y(v).toFixed(1)).join(' ');
+  const dots=(s,c)=> s.map((v,i)=>'<circle cx="'+X(i).toFixed(1)+'" cy="'+Y(v).toFixed(1)+'" r="2.2" fill="'+c+'"/>').join('');
+  return '<svg viewBox="0 0 320 116" class="line-svg">'
+    +'<line x1="8" y1="'+(H-pb)+'" x2="'+(W-pr)+'" y2="'+(H-pb)+'" stroke="var(--border)" stroke-width="1"/>'
+    +'<path d="'+path(s1)+'" fill="none" stroke="var(--primary)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>'
+    +'<path d="'+path(s2)+'" fill="none" stroke="var(--accent)" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>'
+    +dots(s1,'var(--primary)')+dots(s2,'var(--accent)')+'</svg>';
+}
+function saveGoal(){
+  const dv=($('goal-date')||{}).value||''; const tv=parseInt(($('goal-target')||{}).value,10);
+  state.examDate=dv||null; state.targetWords=(tv&&tv>0)?tv:null;
+  saveState(); renderStats(); toast('🎯 목표를 저장했어요');
+}
+function analyticsHTML(){
+  const totalWords=BOOKS.reduce((s,b)=>s+b.data.reduce((x,d)=>x+d.words.length,0),0);
+  const learned=Object.keys(state.learned).length;
+  const mastered=masteredCount();
+  const target=(state.targetWords&&state.targetWords>0)?state.targetWords:totalWords;
+  const progressPct=target?Math.min(100,learned/target*100):0;
+  const masteryPct=learned?mastered/learned*100:0;
+  const ss=state.studySeconds||{}, sd=state.studyDays||{};
+  let totalSec=0, secDays=0; for(const k in ss){ if(ss[k]>0){ totalSec+=ss[k]; secDays++; } }
+  const avgSec=secDays?totalSec/secDays:0;
+  const totalQ=state.quizHistory.length;
+  const avg=totalQ?Math.round(state.quizHistory.reduce((s,x)=>s+x.score/x.total*100,0)/totalQ):0;
+  // D-day
+  let dday='—', dsub='목표일 미설정';
+  if(state.examDate){ const ms=new Date(state.examDate+'T00:00:00').getTime()-Date.now(); const dd=Math.ceil(ms/86400000); dday=dd>0?('D-'+dd):dd===0?'D-DAY':('D+'+(-dd)); const d=new Date(state.examDate+'T00:00:00'); dsub=(d.getMonth()+1)+'월 '+d.getDate()+'일 시험'; }
+  // 14일 시리즈: 신규 단어 vs 복습 문항
+  const today=srsToday(), N=14;
+  const revMap={}; (state.quizHistory||[]).forEach(x=>{ const dn=Math.floor(new Date(x.date).getTime()/86400000); revMap[dn]=(revMap[dn]||0)+(x.total||0); });
+  const s1=[], s2=[]; for(let i=N-1;i>=0;i--){ const dn=today-i; s1.push(sd[dn]||0); s2.push(revMap[dn]||0); }
+  const lbl=i=>{ const dt=new Date(); dt.setDate(dt.getDate()-(N-1-i)); return (dt.getMonth()+1)+'.'+dt.getDate(); };
+  return `
+    <div class="card ana-goal">
+      <div class="ag-top">
+        <div class="ag-dday"><div class="ag-l">시험일까지</div><div class="ag-v">${dday}</div><div class="ag-s">${dsub}</div></div>
+        ${ringSVG(progressPct,'var(--primary)')}
+      </div>
+      <div class="ag-nums">
+        <div><div class="agn-v">${target.toLocaleString()}</div><div class="agn-l">암기 목표</div></div>
+        <div><div class="agn-v" style="color:var(--success)">${learned.toLocaleString()}</div><div class="agn-l">암기 완료</div></div>
+        <div><div class="agn-v" style="color:#d97706">${mastered.toLocaleString()}</div><div class="agn-l">🏆 마스터</div></div>
+      </div>
+      <details class="goal-set">
+        <summary><i class="ti ti-target" aria-hidden="true"></i> 목표 설정 (시험일 · 목표 단어 수)</summary>
+        <div class="goal-form">
+          <label>시험일<input type="date" id="goal-date" value="${state.examDate||''}"></label>
+          <label>목표 단어<input type="number" id="goal-target" min="1" placeholder="${totalWords}" value="${state.targetWords||''}"></label>
+          <button class="btn btn-primary" onclick="saveGoal()">저장</button>
+        </div>
+      </details>
+    </div>
+    <div class="ana-metrics">
+      <div class="stat-box"><div class="sv" style="color:var(--primary)">${fmtDur(totalSec)}</div><div class="sl">누적 학습시간</div></div>
+      <div class="stat-box"><div class="sv" style="color:var(--accent)">${fmtDur(avgSec)}</div><div class="sl">일 평균 시간</div></div>
+      <div class="stat-box"><div class="sv" style="color:var(--violet)">${avg}%</div><div class="sl">평균 정답률</div></div>
+      <div class="stat-box"><div class="sv" style="color:#ea580c">🔥 ${state.streak||0}</div><div class="sl">연속 학습일</div></div>
+    </div>
+    <div class="card" style="margin-bottom:14px;">
+      <div class="ana-head"><b style="font-size:0.95em;">📈 최근 14일 학습 추이</b><span class="ana-legend"><i style="background:var(--primary)"></i>신규 단어 <i style="background:var(--accent)"></i>복습 문항</span></div>
+      ${dualLineSVG(s1,s2)}
+      <div class="ana-x"><span>${lbl(0)}</span><span>${lbl(Math.floor(N/2))}</span><span>${lbl(N-1)}</span></div>
+    </div>
+    <div class="ana-2col">
+      <div class="card gauge-card"><div class="gc-title">전체 진척도</div>${gaugeSVG(progressPct,'var(--primary)',Math.round(progressPct)+'%')}<div class="gc-sub">${learned}/${target} 단어</div></div>
+      <div class="card gauge-card"><div class="gc-title">마스터율</div>${gaugeSVG(masteryPct,'#d97706',Math.round(masteryPct)+'%')}<div class="gc-sub">${mastered}/${learned||0} 졸업</div></div>
+    </div>`;
+}
 function renderStats(){
   const days=Object.keys(state.completed).length;
   const totalDays=totalDayCount();
@@ -2933,8 +3126,9 @@ function renderStats(){
   const monthDays=Object.keys(sd).filter(k=>(sd[k]>0)).length;
   const studiedToday=sd[today]||0;
   $('stats-content').innerHTML=`
+    ${analyticsHTML()}
     <div class="card" style="margin-bottom:14px;">
-      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;"><b style="font-size:0.95em;">📈 최근 14일 학습량</b><span style="font-size:0.8em; color:var(--text-light)">오늘 ${studiedToday}개 · 🔥 ${state.streak||0}일</span></div>
+      <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px;"><b style="font-size:0.95em;">📊 최근 14일 학습량</b><span style="font-size:0.8em; color:var(--text-light)">오늘 ${studiedToday}개 · 🔥 ${state.streak||0}일</span></div>
       <div class="bar-chart">${bars}</div>
     </div>
     <div class="stat-grid">
@@ -3063,6 +3257,7 @@ function mergeStates(a, b){
   out.learned   = _mergeMap(a.learned,   b.learned);
   out.bookmarks = _mergeMap(a.bookmarks, b.bookmarks);
   out.studyDays = _mergeMap(a.studyDays, b.studyDays);
+  out.studySeconds = _mergeMap(a.studySeconds, b.studySeconds, (p,q)=>Math.max(p||0,q||0)); // 학습시간: 큰 쪽 보존
   out.spDone = _mergeMap(a.spDone, b.spDone);   // 1000문장 말하기 진행
   out.d100done = _mergeMap(a.d100done, b.d100done); // 왕초보 100일 완료
   out.wrongs    = _mergeMap(a.wrongs, b.wrongs, (p,q)=>{  // 오답: 더 많은 횟수 보존
@@ -3081,6 +3276,8 @@ function mergeStates(a, b){
   out.customWords = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.customWords||[]).slice() : (b.customWords||[]).slice();
   out.streak = Math.max(a.streak||0, b.streak||0);
   out.lastStudyDay = Math.max(a.lastStudyDay||0, b.lastStudyDay||0);
+  out.examDate = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.examDate||b.examDate||null) : (b.examDate||a.examDate||null);
+  out.targetWords = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.targetWords||b.targetWords||null) : (b.targetWords||a.targetWords||null);
   out.updatedAt = (a.updatedAt&&b.updatedAt) ? (a.updatedAt>b.updatedAt?a.updatedAt:b.updatedAt) : (a.updatedAt||b.updatedAt||null);
   return out;
 }
