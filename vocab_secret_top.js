@@ -8,7 +8,7 @@ const VOCAB_SECRET_TOP = [
     "no": 1,
     "word": "increase",
     "pos": "n./v.",
-    "meaning": "(명) ❶ 증가 ❷ 인상 / (동) ❶ 증가하다 ❷ 인상하다",
+    "meaning": "(명) ① 증가 ② 인상 / (동) ① 증가하다 ② 인상하다",
     "derivatives": [],
     "examples": [
      {
@@ -27,7 +27,7 @@ const VOCAB_SECRET_TOP = [
     "no": 2,
     "word": "available",
     "pos": "a.",
-    "meaning": "(형) ❶ (물건을) 구할 수 있는, 이용 가능한 ❷ (사람이) 시간이 되는",
+    "meaning": "(형) ① (물건을) 구할 수 있는, 이용 가능한 ② (사람이) 시간이 되는",
     "derivatives": [],
     "examples": [
      {
@@ -61,7 +61,7 @@ const VOCAB_SECRET_TOP = [
     "no": 4,
     "word": "designed",
     "pos": "a.",
-    "meaning": "(형) ❶ 고안된 ❷ 계획된",
+    "meaning": "(형) ① 고안된 ② 계획된",
     "derivatives": [],
     "examples": [
      {
@@ -91,7 +91,7 @@ const VOCAB_SECRET_TOP = [
     "no": 6,
     "word": "review",
     "pos": "n./v.",
-    "meaning": "(명) ❶ 검토 ❷ 평가 ❸ 후기 / (동) ❶ 검토하다 ❷ 평가하다",
+    "meaning": "(명) ① 검토 ② 평가 ③ 후기 / (동) ① 검토하다 ② 평가하다",
     "derivatives": [],
     "examples": [
      {
@@ -133,7 +133,7 @@ const VOCAB_SECRET_TOP = [
     "no": 8,
     "word": "performance",
     "pos": "n.",
-    "meaning": "(명) ❶ 성과, 실적 ❷ 수행 ❸ 공연",
+    "meaning": "(명) ① 성과, 실적 ② 수행 ③ 공연",
     "derivatives": [],
     "examples": [
      {
@@ -276,7 +276,7 @@ const VOCAB_SECRET_TOP = [
     "no": 17,
     "word": "profitable",
     "pos": "a.",
-    "meaning": "(형) ❶ 수익성이 있는 ❷ 이득이 되는",
+    "meaning": "(형) ① 수익성이 있는 ② 이득이 되는",
     "derivatives": [],
     "examples": [
      {
@@ -306,7 +306,7 @@ const VOCAB_SECRET_TOP = [
     "no": 19,
     "word": "organization",
     "pos": "n.",
-    "meaning": "(명) ❶ 조직, 단체 ❷ 준비",
+    "meaning": "(명) ① 조직, 단체 ② 준비",
     "derivatives": [],
     "examples": [
      {
@@ -321,7 +321,7 @@ const VOCAB_SECRET_TOP = [
     "no": 20,
     "word": "advance",
     "pos": "n./v.",
-    "meaning": "(명) ❶ 발전 ❷ 전진 / (동) ❶ 발전하다, 진보하다 ❷ 다가가다, 진격하다",
+    "meaning": "(명) ① 발전 ② 전진 / (동) ① 발전하다, 진보하다 ② 다가가다, 진격하다",
     "derivatives": [],
     "examples": [
      {
@@ -355,7 +355,7 @@ const VOCAB_SECRET_TOP = [
     "no": 22,
     "word": "certificate",
     "pos": "n.",
-    "meaning": "(명) ❶ 상품권 ❷ 증서",
+    "meaning": "(명) ① 상품권 ② 증서",
     "derivatives": [],
     "examples": [
      {
@@ -374,7 +374,7 @@ const VOCAB_SECRET_TOP = [
     "no": 23,
     "word": "experience",
     "pos": "n./v.",
-    "meaning": "(명) ❶ 경험 ❷ 경력 / (동) 경험하다",
+    "meaning": "(명) ① 경험 ② 경력 / (동) 경험하다",
     "derivatives": [],
     "examples": [
      {
@@ -408,7 +408,7 @@ const VOCAB_SECRET_TOP = [
     "no": 25,
     "word": "thoroughly",
     "pos": "ad.",
-    "meaning": "(부) ❶ 철저히, 철두철미하게 ❷ 대단히, 완전히",
+    "meaning": "(부) ① 철저히, 철두철미하게 ② 대단히, 완전히",
     "derivatives": [],
     "examples": [
      {
@@ -438,7 +438,7 @@ const VOCAB_SECRET_TOP = [
     "no": 27,
     "word": "assign",
     "pos": "v.",
-    "meaning": "(동) ❶ (업무 등을) 배정하다 ❷ (사람 등을) 배치하다",
+    "meaning": "(동) ① (업무 등을) 배정하다 ② (사람 등을) 배치하다",
     "derivatives": [],
     "examples": [
      {
@@ -457,7 +457,7 @@ const VOCAB_SECRET_TOP = [
     "no": 28,
     "word": "decline",
     "pos": "n./v.",
-    "meaning": "(명) ❶ 하락, 감소 ❷ 거절 / (동) ❶ 하락하다, 감소하다 ❷ 거절하다",
+    "meaning": "(명) ① 하락, 감소 ② 거절 / (동) ① 하락하다, 감소하다 ② 거절하다",
     "derivatives": [],
     "examples": [
      {
@@ -480,7 +480,7 @@ const VOCAB_SECRET_TOP = [
     "no": 29,
     "word": "briefly",
     "pos": "ad.",
-    "meaning": "(부) ❶ 간단히 ❷ 잠깐, 잠시",
+    "meaning": "(부) ① 간단히 ② 잠깐, 잠시",
     "derivatives": [],
     "examples": [
      {
@@ -499,7 +499,7 @@ const VOCAB_SECRET_TOP = [
     "no": 30,
     "word": "promote",
     "pos": "v.",
-    "meaning": "(동) ❶ 홍보하다 ❷ 촉진하다 ❸ 승진시키다",
+    "meaning": "(동) ① 홍보하다 ② 촉진하다 ③ 승진시키다",
     "derivatives": [],
     "examples": [
      {
@@ -551,7 +551,7 @@ const VOCAB_SECRET_TOP = [
     "no": 2,
     "word": "payment",
     "pos": "n.",
-    "meaning": "(명) ❶ 지불, 납입 ❷ 지불금, 납입금",
+    "meaning": "(명) ① 지불, 납입 ② 지불금, 납입금",
     "derivatives": [],
     "examples": [
      {
@@ -566,7 +566,7 @@ const VOCAB_SECRET_TOP = [
     "no": 3,
     "word": "vary",
     "pos": "v.",
-    "meaning": "(동) ❶ (크기 등이) 서로[각기] 다르다 ❷ (상황이) 다르다",
+    "meaning": "(동) ① (크기 등이) 서로[각기] 다르다 ② (상황이) 다르다",
     "derivatives": [],
     "examples": [
      {
@@ -600,7 +600,7 @@ const VOCAB_SECRET_TOP = [
     "no": 5,
     "word": "precisely",
     "pos": "ad.",
-    "meaning": "(부) ❶ 바로, 꼭 ❷ 정확히",
+    "meaning": "(부) ① 바로, 꼭 ② 정확히",
     "derivatives": [],
     "examples": [
      {
@@ -634,7 +634,7 @@ const VOCAB_SECRET_TOP = [
     "no": 7,
     "word": "certain",
     "pos": "a.",
-    "meaning": "(형) ❶ 확실한, 틀림없는 ❷ 특정한",
+    "meaning": "(형) ① 확실한, 틀림없는 ② 특정한",
     "derivatives": [],
     "examples": [
      {
@@ -668,7 +668,7 @@ const VOCAB_SECRET_TOP = [
     "no": 9,
     "word": "significant",
     "pos": "a.",
-    "meaning": "(형) ❶ 중요한 ❷ 상당한",
+    "meaning": "(형) ① 중요한 ② 상당한",
     "derivatives": [],
     "examples": [
      {
@@ -687,7 +687,7 @@ const VOCAB_SECRET_TOP = [
     "no": 10,
     "word": "widely",
     "pos": "ad.",
-    "meaning": "(부) ❶ 광범위하게, 널리 ❷ 크게, 대단히",
+    "meaning": "(부) ① 광범위하게, 널리 ② 크게, 대단히",
     "derivatives": [],
     "examples": [
      {
@@ -706,7 +706,7 @@ const VOCAB_SECRET_TOP = [
     "no": 11,
     "word": "variety",
     "pos": "n.",
-    "meaning": "(명) ❶ 여러 가지, 갖가지 ❷ (제품) 종류",
+    "meaning": "(명) ① 여러 가지, 갖가지 ② (제품) 종류",
     "derivatives": [],
     "examples": [
      {
@@ -744,7 +744,7 @@ const VOCAB_SECRET_TOP = [
     "no": 13,
     "word": "outstanding",
     "pos": "a.",
-    "meaning": "(형) ❶ 우수한, 뛰어난 ❷ 미지불된",
+    "meaning": "(형) ① 우수한, 뛰어난 ② 미지불된",
     "derivatives": [],
     "examples": [
      {
@@ -842,7 +842,7 @@ const VOCAB_SECRET_TOP = [
     "no": 19,
     "word": "advise",
     "pos": "v.",
-    "meaning": "(동) ❶ 권고하다, 충고하다 ❷ 알리다",
+    "meaning": "(동) ① 권고하다, 충고하다 ② 알리다",
     "derivatives": [],
     "examples": [
      {
@@ -861,7 +861,7 @@ const VOCAB_SECRET_TOP = [
     "no": 20,
     "word": "measure",
     "pos": "n./v.",
-    "meaning": "(명) ❶ 조치, 정책 ❷ 양, 정도 / (동) (치수 등을) 측정하다, 재다",
+    "meaning": "(명) ① 조치, 정책 ② 양, 정도 / (동) (치수 등을) 측정하다, 재다",
     "derivatives": [],
     "examples": [
      {
@@ -880,7 +880,7 @@ const VOCAB_SECRET_TOP = [
     "no": 21,
     "word": "initiative",
     "pos": "n.",
-    "meaning": "(명) ❶ 계획 ❷ 솔선수범, 진취성 ❸ 주도(권)",
+    "meaning": "(명) ① 계획 ② 솔선수범, 진취성 ③ 주도(권)",
     "derivatives": [],
     "examples": [
      {
@@ -914,7 +914,7 @@ const VOCAB_SECRET_TOP = [
     "no": 23,
     "word": "assure",
     "pos": "v.",
-    "meaning": "(동) ❶ 확신시키다, 장담하다 ❷ 보장하다",
+    "meaning": "(동) ① 확신시키다, 장담하다 ② 보장하다",
     "derivatives": [],
     "examples": [
      {
@@ -944,7 +944,7 @@ const VOCAB_SECRET_TOP = [
     "no": 25,
     "word": "orderly",
     "pos": "a.",
-    "meaning": "(형) ❶ 질서정연한 ❷ 정돈된",
+    "meaning": "(형) ① 질서정연한 ② 정돈된",
     "derivatives": [],
     "examples": [
      {
@@ -978,7 +978,7 @@ const VOCAB_SECRET_TOP = [
     "no": 27,
     "word": "early",
     "pos": "a./ad.",
-    "meaning": "(형) ❶ 이른 ❷ 빠른 / (부) ❶ 일찍 ❷ 빨리",
+    "meaning": "(형) ① 이른 ② 빠른 / (부) ① 일찍 ② 빨리",
     "derivatives": [],
     "examples": [
      {
@@ -1012,7 +1012,7 @@ const VOCAB_SECRET_TOP = [
     "no": 29,
     "word": "capacity",
     "pos": "n.",
-    "meaning": "(명) ❶ 수용 인원, 용량 ❷ 생산 능력",
+    "meaning": "(명) ① 수용 인원, 용량 ② 생산 능력",
     "derivatives": [],
     "examples": [
      {
@@ -1567,7 +1567,7 @@ const VOCAB_SECRET_TOP = [
     "no": 2,
     "word": "position",
     "pos": "n./v.",
-    "meaning": "명 ❶ 위치 ❷ 자리 ❸ 직책 / 동 배치하다, 위치하다",
+    "meaning": "명 ① 위치 ② 자리 ③ 직책 / 동 배치하다, 위치하다",
     "derivatives": [],
     "examples": [
      {
@@ -1601,7 +1601,7 @@ const VOCAB_SECRET_TOP = [
     "no": 4,
     "word": "promptly",
     "pos": "ad.",
-    "meaning": "부 ❶ 즉시 ❷ 정확히 제 시간에",
+    "meaning": "부 ① 즉시 ② 정확히 제 시간에",
     "derivatives": [],
     "examples": [
      {
@@ -1650,7 +1650,7 @@ const VOCAB_SECRET_TOP = [
     "no": 7,
     "word": "complete",
     "pos": "v./a.",
-    "meaning": "동 ❶ 완료하다, 끝마치다 ❷ 기입하다, 작성하다 / 형 ❶ 완성된, 완전한 ❷ 모든 것이 갖춰진, 완비된",
+    "meaning": "동 ① 완료하다, 끝마치다 ② 기입하다, 작성하다 / 형 ① 완성된, 완전한 ② 모든 것이 갖춰진, 완비된",
     "derivatives": [],
     "examples": [
      {
@@ -1684,7 +1684,7 @@ const VOCAB_SECRET_TOP = [
     "no": 9,
     "word": "description",
     "pos": "n.",
-    "meaning": "명 ❶ 설명 ❷ 묘사",
+    "meaning": "명 ① 설명 ② 묘사",
     "derivatives": [],
     "examples": [
      {
@@ -1699,7 +1699,7 @@ const VOCAB_SECRET_TOP = [
     "no": 10,
     "word": "return",
     "pos": "v.",
-    "meaning": "동 ❶ 돌아오다 ❷ 반납하다, 돌려주다 ❸ 반품하다",
+    "meaning": "동 ① 돌아오다 ② 반납하다, 돌려주다 ③ 반품하다",
     "derivatives": [],
     "examples": [
      {
@@ -1722,7 +1722,7 @@ const VOCAB_SECRET_TOP = [
     "no": 11,
     "word": "transfer",
     "pos": "n./v.",
-    "meaning": "명 ❶ 이전, 이동 ❷ 환승 ❸ 전근 / 동 ❶ 이동하다, 이전하다 ❷ (교통편) 갈아타다 ❸ (다른 직장으로) 전근하다",
+    "meaning": "명 ① 이전, 이동 ② 환승 ③ 전근 / 동 ① 이동하다, 이전하다 ② (교통편) 갈아타다 ③ (다른 직장으로) 전근하다",
     "derivatives": [],
     "examples": [
      {
@@ -1805,7 +1805,7 @@ const VOCAB_SECRET_TOP = [
     "no": 16,
     "word": "heavy",
     "pos": "a.",
-    "meaning": "형 ❶ 무거운 ❷ (양이) 많은 ❸ (정도가) 심한",
+    "meaning": "형 ① 무거운 ② (양이) 많은 ③ (정도가) 심한",
     "derivatives": [],
     "examples": [
      {
@@ -1877,7 +1877,7 @@ const VOCAB_SECRET_TOP = [
     "no": 20,
     "word": "pleased",
     "pos": "a.",
-    "meaning": "형 ❶ 기쁜 ❷ 즐거운",
+    "meaning": "형 ① 기쁜 ② 즐거운",
     "derivatives": [],
     "examples": [
      {
@@ -1937,7 +1937,7 @@ const VOCAB_SECRET_TOP = [
     "no": 24,
     "word": "figure",
     "pos": "n./v.",
-    "meaning": "명 ❶ 수치 ❷ 인물 ❸ 모양, 형태 / 동 ❶ 생각하다 ❷ 계산하다",
+    "meaning": "명 ① 수치 ② 인물 ③ 모양, 형태 / 동 ① 생각하다 ② 계산하다",
     "derivatives": [],
     "examples": [
      {
@@ -2001,7 +2001,7 @@ const VOCAB_SECRET_TOP = [
     "no": 28,
     "word": "series",
     "pos": "n.",
-    "meaning": "명 ❶ 일련, 연속 ❷ (라디오·텔레비전의) 시리즈",
+    "meaning": "명 ① 일련, 연속 ② (라디오·텔레비전의) 시리즈",
     "derivatives": [],
     "examples": [
      {
@@ -2039,7 +2039,7 @@ const VOCAB_SECRET_TOP = [
     "no": 30,
     "word": "present",
     "pos": "n./v./a.",
-    "meaning": "명 ❶ 현재 ❷ 선물 / 동 ❶ 수여하다, 주다 ❷ 제시하다, 제출하다 / 형 ❶ 현재의 ❷ 참석한, 출석한",
+    "meaning": "명 ① 현재 ② 선물 / 동 ① 수여하다, 주다 ② 제시하다, 제출하다 / 형 ① 현재의 ② 참석한, 출석한",
     "derivatives": [],
     "examples": [
      {
@@ -2083,7 +2083,7 @@ const VOCAB_SECRET_TOP = [
     "no": 2,
     "word": "notable",
     "pos": "형.",
-    "meaning": "형. ❶ 주목할 만한, 눈에 띄는 ❷ 유명한, 중요한",
+    "meaning": "형. ① 주목할 만한, 눈에 띄는 ② 유명한, 중요한",
     "derivatives": [],
     "examples": [
      {
@@ -2102,7 +2102,7 @@ const VOCAB_SECRET_TOP = [
     "no": 3,
     "word": "compelling",
     "pos": "형.",
-    "meaning": "형. ❶ 눈을 뗄 수 없는, 강렬한 ❷ 설득력 있는",
+    "meaning": "형. ① 눈을 뗄 수 없는, 강렬한 ② 설득력 있는",
     "derivatives": [],
     "examples": [
      {
@@ -2222,7 +2222,7 @@ const VOCAB_SECRET_TOP = [
     "no": 11,
     "word": "operate",
     "pos": "동.",
-    "meaning": "동. ❶ 작동하다, 가동되다 ❷ 운영되다, 운영하다",
+    "meaning": "동. ① 작동하다, 가동되다 ② 운영되다, 운영하다",
     "derivatives": [],
     "examples": [
      {
@@ -2241,7 +2241,7 @@ const VOCAB_SECRET_TOP = [
     "no": 12,
     "word": "attraction",
     "pos": "명.",
-    "meaning": "명. ❶ 명소, 명물 ❷ 매력",
+    "meaning": "명. ① 명소, 명물 ② 매력",
     "derivatives": [],
     "examples": [
      {
@@ -2271,7 +2271,7 @@ const VOCAB_SECRET_TOP = [
     "no": 14,
     "word": "recruit",
     "pos": "명./동.",
-    "meaning": "명. 신입 사원 / 동. ❶ 모집하다, 뽑다 ❷ (팀 등을) 구성하다",
+    "meaning": "명. 신입 사원 / 동. ① 모집하다, 뽑다 ② (팀 등을) 구성하다",
     "derivatives": [],
     "examples": [
      {
@@ -2354,7 +2354,7 @@ const VOCAB_SECRET_TOP = [
     "no": 19,
     "word": "authorize",
     "pos": "동.",
-    "meaning": "동. ❶ 권한을 부여하다 ❷ 인가하다, 허가하다",
+    "meaning": "동. ① 권한을 부여하다 ② 인가하다, 허가하다",
     "derivatives": [],
     "examples": [
      {
@@ -2403,7 +2403,7 @@ const VOCAB_SECRET_TOP = [
     "no": 22,
     "word": "halfway",
     "pos": "부.",
-    "meaning": "부. ❶ 절반쯤에, 중간에 ❷ 부분적으로, 불완전하게",
+    "meaning": "부. ① 절반쯤에, 중간에 ② 부분적으로, 불완전하게",
     "derivatives": [],
     "examples": [
      {
