@@ -836,7 +836,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621h" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260621i" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -845,7 +845,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()" style="background:linear-gradient(135deg,#0ea5e9,#22c55e);">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621h" alt="기초영어 1000문장">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260621i" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -853,7 +853,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()" style="background:linear-gradient(135deg,#8b5cf6,#ec4899);">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621h" alt="영어회화 핵심패턴 233">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260621i" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -861,7 +861,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openD100()" style="background:linear-gradient(135deg,#f43f5e,#f59e0b);">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621h" alt="왕초보 100일의 기적">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260621i" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
@@ -1261,7 +1261,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260621h';
+  window.APP_VERSION='20260621i';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1280,37 +1280,37 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260621h"></script>
-<script src="vocab_eduwill.js?v=20260621h"></script>
-<script src="vocab_wangchobo.js?v=20260621h"></script>
-<script src="vocab_hackers.js?v=20260621h"></script>
-<script src="vocab_secret_top.js?v=20260621h"></script>
-<script src="vocab_kyungsunsik.js?v=20260621h"></script>
-<script src="vocab_kss_toeic.js?v=20260621h"></script>
-<script src="vocab_noisaegim.js?v=20260621h"></script>
-<script src="vocab_legend.js?v=20260621h"></script>
-<script src="sentences.js?v=20260621h"></script>
-<script src="p233.js?v=20260621h"></script>
-<script src="day100.js?v=20260621h"></script>
-<script src="comm.js?v=20260621h"></script>
-<script src="lc_data.js?v=20260621h"></script>
-<script src="lc_answers.js?v=20260621h"></script>
-<script src="lc_answers_p2.js?v=20260621h"></script>
-<script src="lc_answers_p34.js?v=20260621h"></script>
+<script src="vocabulary.js?v=20260621i"></script>
+<script src="vocab_eduwill.js?v=20260621i"></script>
+<script src="vocab_wangchobo.js?v=20260621i"></script>
+<script src="vocab_hackers.js?v=20260621i"></script>
+<script src="vocab_secret_top.js?v=20260621i"></script>
+<script src="vocab_kyungsunsik.js?v=20260621i"></script>
+<script src="vocab_kss_toeic.js?v=20260621i"></script>
+<script src="vocab_noisaegim.js?v=20260621i"></script>
+<script src="vocab_legend.js?v=20260621i"></script>
+<script src="sentences.js?v=20260621i"></script>
+<script src="p233.js?v=20260621i"></script>
+<script src="day100.js?v=20260621i"></script>
+<script src="comm.js?v=20260621i"></script>
+<script src="lc_data.js?v=20260621i"></script>
+<script src="lc_answers.js?v=20260621i"></script>
+<script src="lc_answers_p2.js?v=20260621i"></script>
+<script src="lc_answers_p34.js?v=20260621i"></script>
 <script>
 'use strict';
 
 // ============ 단어장(책) 정의 ============
 const BOOKS = [
   { id:'siwon',   name:'토익비밀과외', icon:'📘', color:'#6366f1', data:(typeof VOCABULARY      !=='undefined'?VOCABULARY      :[]) },
-  { id:'eduwill', name:'에듀윌',   icon:'📙', color:'#f59e0b', data:(typeof VOCAB_EDUWILL   !=='undefined'?VOCAB_EDUWILL   :[]) },
-  { id:'wang',    name:'왕초보',   icon:'📗', color:'#10b981', data:(typeof VOCAB_WANGCHOBO !=='undefined'?VOCAB_WANGCHOBO :[]) },
-  { id:'hackers', name:'해커스',   icon:'📕', color:'#ef4444', data:(typeof VOCAB_HACKERS   !=='undefined'?VOCAB_HACKERS   :[]) },
   { id:'top',     name:'토익비밀과외(최빈출)', icon:'🎯', color:'#0ea5e9', data:(typeof VOCAB_SECRET_TOP !=='undefined'?VOCAB_SECRET_TOP :[]) },
-  { id:'kss',     name:'경선식 중학 영단어', icon:'🧠', color:'#a855f7', data:(typeof VOCAB_KSS !=='undefined'?VOCAB_KSS :[]) },
-  { id:'kst',     name:'경선식 토익', icon:'🚀', color:'#2563eb', data:(typeof VOCAB_KSS_TOEIC !=='undefined'?VOCAB_KSS_TOEIC :[]) },
-  { id:'ns',      name:'뇌새김 워드 토익', icon:'💭', color:'#f97316', data:(typeof VOCAB_NOISAEGIM !=='undefined'?VOCAB_NOISAEGIM :[]) },
+  { id:'hackers', name:'해커스(토익)',   icon:'📕', color:'#ef4444', data:(typeof VOCAB_HACKERS   !=='undefined'?VOCAB_HACKERS   :[]) },
+  { id:'eduwill', name:'에듀윌(토익)',   icon:'📙', color:'#f59e0b', data:(typeof VOCAB_EDUWILL   !=='undefined'?VOCAB_EDUWILL   :[]) },
+  { id:'kst',     name:'경선식(토익)', icon:'🚀', color:'#2563eb', data:(typeof VOCAB_KSS_TOEIC !=='undefined'?VOCAB_KSS_TOEIC :[]) },
+  { id:'ns',      name:'뇌새김(토익)', icon:'💭', color:'#f97316', data:(typeof VOCAB_NOISAEGIM !=='undefined'?VOCAB_NOISAEGIM :[]) },
+  { id:'wang',    name:'왕초보영단어',   icon:'📗', color:'#10b981', data:(typeof VOCAB_WANGCHOBO !=='undefined'?VOCAB_WANGCHOBO :[]) },
   { id:'legend',  name:'레전드 필수영단어', icon:'🏆', color:'#e11d48', data:(typeof VOCAB_LEGEND !=='undefined'?VOCAB_LEGEND :[]) },
+  { id:'kss',     name:'경선식(중학)', icon:'🧠', color:'#a855f7', data:(typeof VOCAB_KSS !=='undefined'?VOCAB_KSS :[]) },
 ];
 // 새 스키마(examples[]) → 기존 기능(플래시카드·퀴즈)용 단일 example/exampleKor 보강
 BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
@@ -1805,7 +1805,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621h" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260621i" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
