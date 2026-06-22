@@ -47,8 +47,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "belong",
     "meaning": "(~에) 속하다",
-    "pos": "v.",
-    "img": "kstn1_img/p009_1.jpg"
+    "pos": "v."
    },
    {
     "word": "volunteer",
@@ -75,8 +74,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "branch",
     "meaning": "1. 나뭇가지 2. (회사나 프랜차이즈의) 지점",
-    "pos": "n.",
-    "img": "kstn1_img/p011_0.jpg"
+    "pos": "n."
    },
    {
     "word": "designate",
@@ -155,8 +153,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "shelf",
     "meaning": "선반",
-    "pos": "n.",
-    "img": "kstn1_img/p017_1.jpg"
+    "pos": "n."
    },
    {
     "word": "separate",
@@ -178,8 +175,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "widespread",
     "meaning": "넓게 펼쳐진, 광범위한",
-    "pos": "adj.",
-    "img": "kstn1_img/p019_0.jpg"
+    "pos": "adj."
    },
    {
     "word": "associate",
@@ -213,8 +209,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "wholesale",
     "meaning": "도매 / 도매의",
-    "pos": "n./adj.",
-    "img": "kstn1_img/p021_2.jpg"
+    "pos": "n./adj."
    },
    {
     "word": "raise",
@@ -248,8 +243,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "detail",
     "meaning": "세부 사항, 상세한 설명 / 상세히 말하다",
-    "pos": "n./v.",
-    "img": "kstn1_img/p023_1.jpg"
+    "pos": "n./v."
    },
    {
     "word": "manual",
@@ -305,8 +299,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "debt",
     "meaning": "빚, 채무",
-    "pos": "n.",
-    "img": "kstn1_img/p027_1.jpg"
+    "pos": "n."
    },
    {
     "word": "authority",
@@ -338,8 +331,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "obstacle",
     "meaning": "방해, 장애(물)",
-    "pos": "n.",
-    "img": "kstn1_img/p029_0.jpg"
+    "pos": "n."
    },
    {
     "word": "consume",
@@ -350,8 +342,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "operate",
     "meaning": "(회사·기계·시스템 등을) 운영하다, 작동시키다, 작동하다",
-    "pos": "v.",
-    "img": "kstn1_img/p029_2.jpg"
+    "pos": "v."
    },
    {
     "word": "attorney",
@@ -374,8 +365,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "decade",
     "meaning": "10년",
-    "pos": "n.",
-    "img": "kstn1_img/p031_0.jpg"
+    "pos": "n."
    },
    {
     "word": "donation",
@@ -451,8 +441,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "beverage",
     "meaning": "음료, 마실 것",
-    "pos": "n.",
-    "img": "kstn1_img/p036_0.jpg"
+    "pos": "n."
    },
    {
     "word": "rapid",
@@ -521,7 +510,8 @@ const VOCAB_KSTN1 = [
    {
     "word": "further",
     "meaning": "(adj.) 그 이상의, 추가적인 (adv.) 더욱",
-    "pos": "adj./adv."
+    "pos": "adj./adv.",
+    "img": "kstn1_img/p040_1.jpg"
    },
    {
     "word": "dish",
@@ -537,20 +527,17 @@ const VOCAB_KSTN1 = [
    {
     "word": "manage",
     "meaning": "1. 경영하다, 관리하다 2. 간신히(가까스로) 해내다",
-    "pos": "v.",
-    "img": "kstn1_img/p041_1.jpg"
+    "pos": "v."
    },
    {
     "word": "election",
     "meaning": "선거",
-    "pos": "n.",
-    "img": "kstn1_img/p041_2.jpg"
+    "pos": "n."
    },
    {
     "word": "currency",
     "meaning": "통화, 화폐",
-    "pos": "n.",
-    "img": "kstn1_img/p041_3.jpg"
+    "pos": "n."
    },
    {
     "word": "attend",
@@ -622,8 +609,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "evidence",
     "meaning": "증거",
-    "pos": "n.",
-    "img": "kstn1_img/p047_0.jpg"
+    "pos": "n."
    },
    {
     "word": "issue",
@@ -741,14 +727,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "author",
     "meaning": "저자, 작가",
-    "pos": "n.",
-    "img": "kstn1_img/p055_0.jpg"
+    "pos": "n."
    },
    {
     "word": "frustrate",
     "meaning": "좌절시키다, 불만스럽게 만들다",
-    "pos": "v.",
-    "img": "kstn1_img/p055_1.jpg"
+    "pos": "v."
    },
    {
     "word": "utility",
@@ -765,8 +749,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "procedure",
     "meaning": "과정, 절차",
-    "pos": "n.",
-    "img": "kstn1_img/p056_1.jpg"
+    "pos": "n."
    },
    {
     "word": "suit",
@@ -799,8 +782,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "meet",
     "meaning": "1. 만나다 2. 충족시키다",
-    "pos": "v.",
-    "img": "kstn1_img/p059_0.jpg"
+    "pos": "v."
    },
    {
     "word": "oppose",
@@ -811,8 +793,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "departure",
     "meaning": "출발",
-    "pos": "n.",
-    "img": "kstn1_img/p060_0.jpg"
+    "pos": "n."
    },
    {
     "word": "district",
@@ -924,14 +905,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "property",
     "meaning": "재산, 자산, 부동산",
-    "pos": "n.",
-    "img": "kstn1_img/p067_1.jpg"
+    "pos": "n."
    },
    {
     "word": "borrow",
     "meaning": "(물건 등을) 빌리다, 돈을 꾸다",
-    "pos": "v.",
-    "img": "kstn1_img/p067_2.jpg"
+    "pos": "v."
    },
    {
     "word": "form",
@@ -953,8 +932,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "fail",
     "meaning": "실패하다",
-    "pos": "v.",
-    "img": "kstn1_img/p069_0.jpg"
+    "pos": "v."
    },
    {
     "word": "severe",
@@ -965,8 +943,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "add",
     "meaning": "더하다, 합치다, 추가하다",
-    "pos": "v.",
-    "img": "kstn1_img/p069_2.jpg"
+    "pos": "v."
    },
    {
     "word": "object",
@@ -1011,8 +988,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "refer",
     "meaning": "1. 말하다, 언급하다, 가리키다 2. 참고하다, 참조하다 3. 회부하다, 보내다, 맡기다",
-    "pos": "v.",
-    "img": "kstn1_img/p073_0.jpg"
+    "pos": "v."
    },
    {
     "word": "variety",
@@ -1045,14 +1021,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "facility",
     "meaning": "시설, 설비",
-    "pos": "n.",
-    "img": "kstn1_img/p075_1.jpg"
+    "pos": "n."
    },
    {
     "word": "encounter",
     "meaning": "(위험·곤란 등에) 직면하다, 마주치다",
-    "pos": "v.",
-    "img": "kstn1_img/p075_2.jpg"
+    "pos": "v."
    },
    {
     "word": "distribution",
@@ -1075,14 +1049,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "delay",
     "meaning": "연기, 지연; 연기하다, 늦추다",
-    "pos": "n./v.",
-    "img": "kstn1_img/p077_0.jpg"
+    "pos": "n./v."
    },
    {
     "word": "appreciate",
     "meaning": "1. 감사하다 2. (진가를) 인정하다, 높이 평가하다",
-    "pos": "v.",
-    "img": "kstn1_img/p077_1.jpg"
+    "pos": "v."
    },
    {
     "word": "mechanical",
@@ -1128,8 +1100,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "crucial",
     "meaning": "결정적인, 중대한",
-    "pos": "adj.",
-    "img": "kstn1_img/p080_0.jpg"
+    "pos": "adj."
    },
    {
     "word": "value",
@@ -1140,8 +1111,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "invaluable",
     "meaning": "매우 귀중한",
-    "pos": "adj.",
-    "img": "kstn1_img/p081_0.jpg"
+    "pos": "adj."
    },
    {
     "word": "enterprise",
@@ -1175,14 +1145,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "inventory",
     "meaning": "재고조사, 물품 목록, 재고",
-    "pos": "n.",
-    "img": "kstn1_img/p083_1.jpg"
+    "pos": "n."
    },
    {
     "word": "cancel",
     "meaning": "취소하다, 중지하다",
-    "pos": "v.",
-    "img": "kstn1_img/p083_2.jpg"
+    "pos": "v."
    },
    {
     "word": "maintain",
@@ -1339,8 +1307,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "capture",
     "meaning": "사로잡다, 포착하다, (관심 등을) 사로잡다",
-    "pos": "v.",
-    "img": "kstn1_img/p093_0.jpg"
+    "pos": "v."
    },
    {
     "word": "grant",
@@ -1351,8 +1318,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "downsizing",
     "meaning": "규모 축소",
-    "pos": "n.",
-    "img": "kstn1_img/p093_2.jpg"
+    "pos": "n."
    },
    {
     "word": "survey",
@@ -1386,8 +1352,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "deal",
     "meaning": "거래하다, 다루다, 처리하다; 거래",
-    "pos": "v./n.",
-    "img": "kstn1_img/p095_1.jpg"
+    "pos": "v./n."
    },
    {
     "word": "administer",
@@ -1410,8 +1375,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "confuse",
     "meaning": "혼동하다, 혼란시키다",
-    "pos": "v.",
-    "img": "kstn1_img/p097_1.jpg"
+    "pos": "v."
    },
    {
     "word": "profession",
@@ -1421,8 +1385,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "crop",
     "meaning": "농작물, 수확",
-    "pos": "n.",
-    "img": "kstn1_img/p098_0.jpg"
+    "pos": "n."
    },
    {
     "word": "summary",
@@ -1450,7 +1413,8 @@ const VOCAB_KSTN1 = [
    {
     "word": "fee",
     "meaning": "수수료, 사용료, 처리 비용, 서비스료",
-    "pos": "n."
+    "pos": "n.",
+    "img": "kstn1_img/p100_0.jpg"
    },
    {
     "word": "itinerary",
@@ -1471,14 +1435,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "aisle",
     "meaning": "(극장·비행기 등의 좌석 사이의) 통로, 복도",
-    "pos": "n.",
-    "img": "kstn1_img/p101_1.jpg"
+    "pos": "n."
    },
    {
     "word": "showing",
     "meaning": "성과, 실적",
-    "pos": "n.",
-    "img": "kstn1_img/p101_2.jpg"
+    "pos": "n."
    },
    {
     "word": "indicate",
@@ -1501,14 +1463,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "challenge",
     "meaning": "1. 도전하다, 이의를 제기하다, 어려움을 주다 / 도전 2. 힘든 일, 어려움",
-    "pos": "v./n.",
-    "img": "kstn1_img/p103_1.jpg"
+    "pos": "v./n."
    },
    {
     "word": "minimum",
     "meaning": "최소의 / 최소한도",
-    "pos": "adj./n.",
-    "img": "kstn1_img/p103_2.jpg"
+    "pos": "adj./n."
    },
    {
     "word": "revenue",
@@ -1537,8 +1497,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "bull/bear market",
     "meaning": "(주식 시장의) 상승/하락 장세",
-    "pos": "n.",
-    "img": "kstn1_img/p105_1.jpg"
+    "pos": "n."
    },
    {
     "word": "similar",
@@ -1606,8 +1565,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "recognize",
     "meaning": "1. 알아차리다 2. 인정하다, 승인하다",
-    "pos": "v.",
-    "img": "kstn1_img/p111_1.jpg"
+    "pos": "v."
    },
    {
     "word": "content",
@@ -1633,8 +1591,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "collective",
     "meaning": "집단의, 공동의",
-    "pos": "adj.",
-    "img": "kstn1_img/p113_0.jpg"
+    "pos": "adj."
    },
    {
     "word": "fit",
@@ -1645,8 +1602,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "require",
     "meaning": "요구하다, 필요로 하다",
-    "pos": "v.",
-    "img": "kstn1_img/p115_0.jpg"
+    "pos": "v."
    },
    {
     "word": "acquire",
@@ -1713,8 +1669,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "timely",
     "meaning": "시기적절한",
-    "pos": "adj.",
-    "img": "kstn1_img/p119_1.jpg"
+    "pos": "adj."
    }
   ]
  },
@@ -1794,14 +1749,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "overdue",
     "meaning": "(지불·반납 등의) 기한이 지난, 지체된",
-    "pos": "adj.",
-    "img": "kstn1_img/p123_2.jpg"
+    "pos": "adj."
    },
    {
     "word": "cause",
     "meaning": "원인, 이유; 초래하다, 야기하다",
-    "pos": "n./v.",
-    "img": "kstn1_img/p123_3.jpg"
+    "pos": "n./v."
    },
    {
     "word": "cargo",
@@ -1834,8 +1787,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "congestion",
     "meaning": "(교통) 정체, 혼잡",
-    "pos": "n.",
-    "img": "kstn1_img/p125_1.jpg"
+    "pos": "n."
    },
    {
     "word": "book",
@@ -1845,8 +1797,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "room",
     "meaning": "1. 방 2. 공간, 자리 3. 여지, 가능성",
-    "pos": "n.",
-    "img": "kstn1_img/p127_0.jpg"
+    "pos": "n."
    }
   ]
  },
@@ -1857,8 +1808,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "budget",
     "meaning": "예산; 예산을 세우다",
-    "pos": "n./v.",
-    "img": "kstn1_img/p128_0.jpg"
+    "pos": "n./v."
    },
    {
     "word": "pollution",
@@ -1891,13 +1841,13 @@ const VOCAB_KSTN1 = [
    {
     "word": "option",
     "meaning": "선택권, 선택사항",
-    "pos": "n.",
-    "img": "kstn1_img/p131_1.jpg"
+    "pos": "n."
    },
    {
     "word": "lest ~ (should)",
     "meaning": "~하지 않도록",
-    "pos": "conj."
+    "pos": "conj.",
+    "img": "kstn1_img/p131_2.jpg"
    },
    {
     "word": "productivity",
@@ -1913,14 +1863,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "balance",
     "meaning": "1. 균형  2. 잔액, 잔금",
-    "pos": "n.",
-    "img": "kstn1_img/p133_0.jpg"
+    "pos": "n."
    },
    {
     "word": "note",
     "meaning": "1. 메모, 쪽지, 필기  2. 언급하다  3. 주목하다, 주의하다 / 주목, 주의",
-    "pos": "n./v.",
-    "img": "kstn1_img/p133_1.jpg"
+    "pos": "n./v."
    },
    {
     "word": "destroy",
@@ -1954,14 +1902,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "systematic",
     "meaning": "체계적인, 유기적인",
-    "pos": "adj.",
-    "img": "kstn1_img/p135_0.jpg"
+    "pos": "adj."
    },
    {
     "word": "alive",
     "meaning": "살아있는",
-    "pos": "adj.",
-    "img": "kstn1_img/p135_1.jpg"
+    "pos": "adj."
    },
    {
     "word": "award",
@@ -2018,8 +1964,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "yet",
     "meaning": "1. (부정문) 아직  2. (의문문) 이미, 벌써  3. 그러나",
-    "pos": "adv./conj.",
-    "img": "kstn1_img/p139_0.jpg"
+    "pos": "adv./conj."
    },
    {
     "word": "warrant",
@@ -2064,14 +2009,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "simplify",
     "meaning": "단순화하다",
-    "pos": "v.",
-    "img": "kstn1_img/p141_1.jpg"
+    "pos": "v."
    },
    {
     "word": "partial",
     "meaning": "1. 부분적인  2. 편파적인",
-    "pos": "adj.",
-    "img": "kstn1_img/p141_2.jpg"
+    "pos": "adj."
    },
    {
     "word": "sequence",
@@ -2253,8 +2196,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "lease",
     "meaning": "v. 임차하다(빌리다), 임대하다(빌려주다) n. (집 등의) 임대차 계약",
-    "pos": "v./n.",
-    "img": "kstn1_img/p155_0.jpg"
+    "pos": "v./n."
    },
    {
     "word": "apparent",
@@ -2322,8 +2264,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "exception",
     "meaning": "예외",
-    "pos": "n.",
-    "img": "kstn1_img/p159_0.jpg"
+    "pos": "n."
    },
    {
     "word": "delight",
@@ -2334,8 +2275,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "markedly",
     "meaning": "현저하게, 눈에 띄게",
-    "pos": "adv.",
-    "img": "kstn1_img/p159_2.jpg"
+    "pos": "adv."
    },
    {
     "word": "cab",
@@ -2368,8 +2308,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "demotion",
     "meaning": "강등",
-    "pos": "n.",
-    "img": "kstn1_img/p161_1.jpg"
+    "pos": "n."
    },
    {
     "word": "consult",
@@ -2397,8 +2336,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "name",
     "meaning": "임명하다, 지명하다",
-    "pos": "v.",
-    "img": "kstn1_img/p163_0.jpg"
+    "pos": "v."
    },
    {
     "word": "industry",
@@ -2611,8 +2549,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "quarterly",
     "meaning": "한 해 네 번의, 분기의",
-    "pos": "adj.",
-    "img": "kstn1_img/p175_1.jpg"
+    "pos": "adj."
    },
    {
     "word": "throughout",
@@ -2646,8 +2583,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "view",
     "meaning": "바라봄, 경치, 견해; 바라보다, ~라고 생각하다",
-    "pos": "n./v.",
-    "img": "kstn1_img/p177_1.jpg"
+    "pos": "n./v."
    },
    {
     "word": "feedback",
@@ -2674,8 +2610,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "lower",
     "meaning": "(가격·양 등을) 낮추다; (가격 등이) 보다 싼, 낮은",
-    "pos": "v./adj.",
-    "img": "kstn1_img/p180_0.jpg"
+    "pos": "v./adj."
    },
    {
     "word": "division",
@@ -2701,14 +2636,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "respect",
     "meaning": "① 존경하다 ② 면, 사항, 점",
-    "pos": "v./n.",
-    "img": "kstn1_img/p181_1.jpg"
+    "pos": "v./n."
    },
    {
     "word": "lot",
     "meaning": "한 구획의 땅, 부지",
-    "pos": "n.",
-    "img": "kstn1_img/p181_2.jpg"
+    "pos": "n."
    },
    {
     "word": "nearby",
@@ -2736,20 +2669,17 @@ const VOCAB_KSTN1 = [
    {
     "word": "teller",
     "meaning": "은행 창구직원",
-    "pos": "n.",
-    "img": "kstn1_img/p183_2.jpg"
+    "pos": "n."
    },
    {
     "word": "seldom",
     "meaning": "드물게, 거의 ~ 않다",
-    "pos": "adv.",
-    "img": "kstn1_img/p183_3.jpg"
+    "pos": "adv."
    },
    {
     "word": "embassy",
     "meaning": "대사관",
-    "pos": "n.",
-    "img": "kstn1_img/p183_4.jpg"
+    "pos": "n."
    },
    {
     "word": "portfolio",
@@ -2787,8 +2717,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "redeem",
     "meaning": "(상품권·쿠폰·포인트 등을) 교환하다, 현금화하다, 사용하다",
-    "pos": "v.",
-    "img": "kstn1_img/p185_2.jpg"
+    "pos": "v."
    },
    {
     "word": "feature",
@@ -2956,14 +2885,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "impending",
     "meaning": "임박한, 곧 일어날, 다가오는",
-    "pos": "adj.",
-    "img": "kstn1_img/p197_1.jpg"
+    "pos": "adj."
    },
    {
     "word": "used car",
     "meaning": "중고차",
-    "pos": "n.",
-    "img": "kstn1_img/p197_2.jpg"
+    "pos": "n."
    },
    {
     "word": "spokesperson",
@@ -2974,26 +2901,22 @@ const VOCAB_KSTN1 = [
    {
     "word": "conditional",
     "meaning": "조건부의",
-    "pos": "adj.",
-    "img": "kstn1_img/p199_1.jpg"
+    "pos": "adj."
    },
    {
     "word": "slowdown",
     "meaning": "경기 후퇴, 감속",
-    "pos": "n.",
-    "img": "kstn1_img/p199_2.jpg"
+    "pos": "n."
    },
    {
     "word": "percentage",
     "meaning": "백분율, 비율",
-    "pos": "n.",
-    "img": "kstn1_img/p199_3.jpg"
+    "pos": "n."
    },
    {
     "word": "spacious",
     "meaning": "널찍한",
-    "pos": "adj.",
-    "img": "kstn1_img/p201_0.jpg"
+    "pos": "adj."
    },
    {
     "word": "expressly",
@@ -3021,20 +2944,17 @@ const VOCAB_KSTN1 = [
    {
     "word": "beneficiary",
     "meaning": "수익자, 수혜자, (연금·보험 등의) 수취인",
-    "pos": "n.",
-    "img": "kstn1_img/p203_1.jpg"
+    "pos": "n."
    },
    {
     "word": "benefactor",
     "meaning": "(자선 단체 등의) 후원자, 선행을 베푸는 사람",
-    "pos": "n.",
-    "img": "kstn1_img/p203_2.jpg"
+    "pos": "n."
    },
    {
     "word": "automation",
     "meaning": "자동화",
-    "pos": "n.",
-    "img": "kstn1_img/p203_3.jpg"
+    "pos": "n."
    }
   ]
  },
@@ -3051,14 +2971,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "deliver",
     "meaning": "1. 배달하다, 전달하다 2. (연설·발표 등을) 하다",
-    "pos": "v.",
-    "img": "kstn1_img/p207_0.jpg"
+    "pos": "v."
    },
    {
     "word": "on-site",
     "meaning": "현장의; 현장에서",
-    "pos": "adj./adv.",
-    "img": "kstn1_img/p207_1.jpg"
+    "pos": "adj./adv."
    },
    {
     "word": "Please be advised that ~",
@@ -3068,26 +2986,22 @@ const VOCAB_KSTN1 = [
    {
     "word": "post",
     "meaning": "1. 게시하다, 공지하다 2. 배치하다, 파견하다; 직책 3. 우편으로 보내다",
-    "pos": "v./n.",
-    "img": "kstn1_img/p207_3.jpg"
+    "pos": "v./n."
    },
    {
     "word": "confidence",
     "meaning": "1. 자신감, 신뢰 2. 비밀",
-    "pos": "n.",
-    "img": "kstn1_img/p209_0.jpg"
+    "pos": "n."
    },
    {
     "word": "soft copy",
     "meaning": "전자 파일 형태의 문서",
-    "pos": "n.",
-    "img": "kstn1_img/p209_1.jpg"
+    "pos": "n."
    },
    {
     "word": "fill the order",
     "meaning": "주문을 처리하다(완성시키다)",
-    "pos": "v.",
-    "img": "kstn1_img/p209_2.jpg"
+    "pos": "v."
    },
    {
     "word": "cordial",
@@ -3108,26 +3022,22 @@ const VOCAB_KSTN1 = [
    {
     "word": "constructive",
     "meaning": "건설적인, 생산적인, 유익한",
-    "pos": "adj.",
-    "img": "kstn1_img/p211_0.jpg"
+    "pos": "adj."
    },
    {
     "word": "outage",
     "meaning": "(전기·가스·통신 등의) 공급 중단, 정전, 서비스 중단",
-    "pos": "n.",
-    "img": "kstn1_img/p211_1.jpg"
+    "pos": "n."
    },
    {
     "word": "net profit",
     "meaning": "순이익",
-    "pos": "n.",
-    "img": "kstn1_img/p211_2.jpg"
+    "pos": "n."
    },
    {
     "word": "track",
     "meaning": "1. 트랙, 경주로, 길 2. 뒤쫓다, 추적하다; 추적",
-    "pos": "n./v.",
-    "img": "kstn1_img/p211_3.jpg"
+    "pos": "n./v."
    },
    {
     "word": "be supposed to",
@@ -3137,8 +3047,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "garlic",
     "meaning": "마늘",
-    "pos": "n.",
-    "img": "kstn1_img/p212_1.jpg"
+    "pos": "n."
    }
   ]
  },
@@ -3332,14 +3241,12 @@ const VOCAB_KSTN1 = [
    {
     "word": "stem",
     "meaning": "1. 유래하다, 생기다(~ from) 2. 막다, 억제하다",
-    "pos": "v.",
-    "img": "kstn1_img/p225_0.jpg"
+    "pos": "v."
    },
    {
     "word": "showcase",
     "meaning": "n. 진열장, 공개행사, 전시회 v. 전시하다, 공개하다",
-    "pos": "n./v.",
-    "img": "kstn1_img/p225_1.jpg"
+    "pos": "n./v."
    },
    {
     "word": "adhere",
@@ -3361,8 +3268,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "draft",
     "meaning": "n. 초안 v. 초안을 잡다",
-    "pos": "n./v.",
-    "img": "kstn1_img/p227_0.jpg"
+    "pos": "n./v."
    },
    {
     "word": "refrain",
@@ -3407,8 +3313,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "affix",
     "meaning": "1. 붙이다, 첨부하다 2. (서명을) 하다",
-    "pos": "v.",
-    "img": "kstn1_img/p231_0.jpg"
+    "pos": "v."
    },
    {
     "word": "in spite of",
@@ -3475,8 +3380,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "upset",
     "meaning": "1. 화가 난, 속상한; 화나게 하다; 속상함 2. 뒤엎다, (계획·상황을) 망치다",
-    "pos": "adj./v./n.",
-    "img": "kstn1_img/p235_2.jpg"
+    "pos": "adj./v./n."
    },
    {
     "word": "upset",
@@ -3509,8 +3413,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "signify",
     "meaning": "의미하다, 뜻하다",
-    "pos": "v.",
-    "img": "kstn1_img/p237_2.jpg"
+    "pos": "v."
    },
    {
     "word": "bulletin",
@@ -3592,8 +3495,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "raw",
     "meaning": "가공하지 않은, 날것의",
-    "pos": "adj.",
-    "img": "kstn1_img/p242_1.jpg"
+    "pos": "adj."
    },
    {
     "word": "thereby",
@@ -3615,8 +3517,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "pill",
     "meaning": "알약",
-    "pos": "n.",
-    "img": "kstn1_img/p243_1.jpg"
+    "pos": "n."
    },
    {
     "word": "waive",
@@ -3627,8 +3528,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "insolvent",
     "meaning": "지급불능의, 파산의",
-    "pos": "adj.",
-    "img": "kstn1_img/p243_3.jpg"
+    "pos": "adj."
    },
    {
     "word": "rid",
@@ -3645,8 +3545,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "premises",
     "meaning": "(한 사업체가 사용하는) 부지, 구내",
-    "pos": "n.",
-    "img": "kstn1_img/p244_2.jpg"
+    "pos": "n."
    }
   ]
  }
