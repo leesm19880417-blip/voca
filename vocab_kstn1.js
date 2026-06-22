@@ -16,7 +16,7 @@ const VOCAB_KSTN1 = [
      }
     ],
     "toeicExpr": [
-     "share prices 주가 · purchase/sell shares 주식을 매입하다/매도하다",
+     "share prices 주가  purchase/sell shares 주식을 매입하다/매도하다",
      "market share 시장 점유율 (← market에서 차지하는 share(몫))",
      "share information 정보를 공유하다",
      "annual shareholders' meeting 연례주주총회"
@@ -24,30 +24,29 @@ const VOCAB_KSTN1 = [
    },
    {
     "word": "offer",
-    "pron": "[ɔːfər]",
+    "pron": "[ɔ́ːfər]",
     "pos": "v./n.",
     "meaning": "v. 제공하다, 제안하다  n. 제공, 제안, 할인(제안)",
-    "tip": "옷을 싸게 거저 [[b]]퍼[[/b]]줄 테니 사세요! 하고 옷을 싼값에 [[r]]제공하다[[/r]], [[r]](싼값을) 제안하다[[/r]]",
+    "tip": "옷을 싸게 거저 [[b]]퍼[[/b]]줄 테니 사세요! 하고 옷을 싼값에 [[r]]제공하다[[/r]], (싼값을) [[r]]제안하다[[/r]]",
     "toeicExpr": [
      "offer a discount/service 할인을/서비스를 제공하다",
-     "offer a proposal 제안을 하다 · offer to help 돕겠다고 제안하다",
-     "job offer 일자리 제의 · special offer 특별 할인(제공)",
+     "offer a proposal 제안을 하다  offer to help 돕겠다고 제안하다",
+     "job offer 일자리 제의  special offer 특별 할인(제공)",
      "one-time offer 딱 한 번만 제공되는 기회",
      "promotional offer 판매촉진을 위한 (가격 인하) 제안",
-     "on offer 제공되는, 판매 중인 (← 전치사 on: (계속) ~중인)",
+     "on offer 제공되는, 판매 중인 (← 전치사 on: (계속) →중인)",
      "items/services on offer 판매 중인 상품/서비스",
-     "offer A B A에게 B를 제공하다 (4형식 동사로 쓰임)",
-     "The company offered customers a 20% discount on all items. 그 회사는 고객들에게 모든 상품에 대해 20% 할인을 제공했다."
+     "offer A B A에게 B를 제공하다 (4형식 동사로도 쓰임)  The company offered customers a 20% discount on all items. 그 회사는 고객들에게 모든 상품에 대해 20% 할인을 제공했다."
     ],
     "examVar": [
      {
-      "en": "The company launched several promotional offers to attract new customers during the holiday season.",
+      "en": "1. The company launched several promotional offers to attract new customers during the holiday season.",
       "ko": "그 회사는 연휴 기간 동안 새로운 고객을 유치하기 위해 여러 판촉 행사를 시작했다."
      },
      {
-      "en": "offer와 provide의 차이를 묻는 문제가 자주 출제되었다.",
-      "note": "offer는 4형식 동사로도 쓰여 <offer 사람 something> 형태로 with 없이 쓰인다.  *provide 사람 with something: …에게 ~을 제공하다",
-      "opt": "The training program will ___ participants with practical skills. → offer (X) / provide (O)",
+      "en": "2. offer와 provide의 차이를 묻는 문제가 자주 출제되었다.",
+      "note": "offer는 4형식 동사로도 쓰여 <offer 사람 something> 형태로 with 없이 쓰인다. * provide 사람 with something: …에게 ~을 제공하다",
+      "opt": "The training program will ______ participants with practical skills.  offer (X)  provide (O)",
       "ko": "그 교육 프로그램은 참가자들에게 실용적인 기술을 제공할 것이다."
      }
     ]
@@ -57,7 +56,7 @@ const VOCAB_KSTN1 = [
     "pron": "[fiks]",
     "pos": "v.",
     "meaning": "v. 1. 고정시키다, (일시·가격 등을) 정하다  2. 수리하다, 바로잡다",
-    "tip": "[[b]]픽![[/b]] 쓰러지려는 탑을 막대로 받쳐서 [[r]]고정시키다[[/r]], [[r]]수리하다[[/r]]. 그리고 일시, 가격 등을 [[r]]고정시키다[[/r]], 즉 [[r](일시·가격 등을) 정하다[[/r]]",
+    "tip": "[[b]]픽![[/b]] 쓰러지려는 탑을 막대로 받쳐서 [[r]]고정시키다[[/r]], [[r]]수리하다[[/r]]. 그리고 일시, 가격 등을 [[r]]고정시키다[[/r]], 즉 [[r]](일시·가격 등을) 정하다[[/r]]",
     "toeicExpr": [
      "fixed price 정가 (← 고정된 가격)",
      "fix the price/date 가격을/날짜를 정하다",
@@ -71,8 +70,8 @@ const VOCAB_KSTN1 = [
     "sup": "1",
     "pron": "[bɔːrd]",
     "pos": "n./v.",
-    "meaning": "1. n. 판자, 게시판  2. v. (차·배·비행기 등을) 타다",
-    "tip": "① black[[r]]board[[/r]]([[r]]칠판[[/r]])는 black(검은) [[r]]판자, 게시판[[/r]]  ② 스키장에서 [[b]]보드[[/b]]를 [[r]]타다[[/r]]. 또는 옛날에는 배에 board(판자)를 대고 그것을 타고 올라가 배에 [[r]]타다[[/r]]",
+    "meaning": "1. n. 판자, 게시판  2. v. (차ㆍ배ㆍ비행기 등을) 타다",
+    "tip": "① [[b]]blackboard[[/b]](칠판)는 black(검은) [[r]]판자, 게시판[[/r]]\n② 스키장에서 [[b]]보드[[/b]]를 [[r]]타다[[/r]]. 또는 옛날에는 배에 [[b]]board[[/b]](판자)를 대고 그것을 타고 올라가 배에 [[r]]타다[[/r]]",
     "derivatives": [
      {
       "word": "boarding",
@@ -82,8 +81,8 @@ const VOCAB_KSTN1 = [
     "toeicExpr": [
      "notice-board = bulletin board 게시판",
      "board a flight/bus/train 비행기/버스/기차에 타다",
-     "boarding pass 탑승권 · boarding area 탑승장",
-     "on board 탑승한, (사람·짐이) 타고 있는 (on: 교통수단 위에(on) 접촉한 상태)",
+     "boarding pass 탑승권  boarding area 탑승장",
+     "on board 탑승한, (사람, 짐이) 타고 있는 (on: 교통수단 위에(on) 접촉한 상태)",
      "passengers on board 탑승 중인 승객",
      "all items on board 기내에 있는 모든 물품"
     ]
@@ -110,21 +109,21 @@ const VOCAB_KSTN1 = [
    },
    {
     "word": "aboard",
-    "pron": "[əbɔːrd]",
+    "pron": "[əbɔ́ːrd]",
     "pos": "prep./ad.",
     "meaning": "prep. ~에 탑승하여, ~에 탑승한  ad. 탑승하여",
-    "tip": "① 스키장에서 [[b]]어, 보드[[/b]]를 [[r]]타고[[/r]]  ② [a + board(타다, 탑승하다)] [[r](배, 비행기 등에) 타고, 탑승하여[[/r]]",
+    "tip": "① 스키장에서 [[b]]어, 보드[[/b]]를 [[r]]타고[[/r]]\n② [a + board(타다, 탑승하다)] [[r]](배, 비행기 등에) 타고, 탑승하여[[/r]]",
     "toeicExpr": [
      "passengers aboard the aircraft 항공기에 탑승한 승객들",
      "all passengers aboard 탑승 중인 모든 승객",
-     "welcome aboard 탑승을 환영하다",
+     "welcome aboard 탑승을 환영합니다",
      "go aboard the plane/ship 비행기에/배에 탑승하다"
     ],
     "examVar": [
      {
       "en": "Once aboard, refreshments will be served.",
       "ko": "탑승하고 나면, 음료가 제공됩니다.",
-      "note": "*Once aboard = Once you are aboard"
+      "note": "Once aboard = Once you are aboard"
      },
      {
       "en": "There were more than 300 passengers aboard the vessel.",
@@ -145,16 +144,16 @@ const VOCAB_KSTN1 = [
      }
     ],
     "toeicExpr": [
-     "be neatly arranged 깔끔하게 정돈되어 있다 · arrange files 파일을 정리하다",
-     "arrange a meeting 회의를 준비하다 · arrange an appointment 약속을 잡다",
+     "be neatly arranged 깔끔하게 정돈되어 있다  arrange files 파일을 정리하다",
+     "arrange a meeting 회의를 준비하다  arrange an appointment 약속을 잡다",
      "arrange a ride to the hotel 호텔로 가는 교통수단을 마련하다",
-     "make arrangements 준비를 하다 · travel arrangement 여행 준비",
+     "make arrangements 준비를 하다  travel arrangement 여행 준비",
      "seating arrangements 좌석 배치"
     ]
    },
    {
     "word": "belong",
-    "pron": "[bilɔːŋ]",
+    "pron": "[bilɔ́ːŋ]",
     "pos": "v.",
     "meaning": "v. (~에) 속하다",
     "tip": "[[b]]B조[[/b]]에 [[b]]long[[/b]](길게) 줄 서 있는 사람들은 [[r]]B조에 속하다[[/r]]",
@@ -172,7 +171,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "en": "This equipment ___ the marketing department, not the sales department.",
+      "en": "This equipment _______ the marketing department, not the sales department.",
       "opt": "(A) belong  (B) belongs to  (C) belonging  (D) belonged",
       "ans": "(B)",
       "ko": "이 장비는 영업부가 아니라 마케팅 부서에 속한다.",
@@ -182,10 +181,10 @@ const VOCAB_KSTN1 = [
    },
    {
     "word": "volunteer",
-    "pron": "[vɑ̀ləntíər]",
+    "pron": "[vὰləntíər]",
     "pos": "n./v.",
     "meaning": "n. 자원봉사자  v. 자진하여 하다",
-    "tip": "\"제가 할게요!\" 하고 (제)[[b]]발[[/b]]로 [[r]]튀어나오는[[/r]] [[r]]자원봉사자[[/r]]",
+    "tip": "\"제가 할게요!\" 하고 (제)[[b]]발로 튀어[[/b]]나오는 [[r]]자원봉사자[[/r]]",
     "derivatives": [
      {
       "word": "voluntary",
@@ -206,18 +205,18 @@ const VOCAB_KSTN1 = [
    },
    {
     "word": "domestic",
-    "pron": "[dəméstik]",
+    "pron": "[daméstik]",
     "pos": "a.",
     "meaning": "a. 국내의, 가정의",
-    "tip": "국경선 [[b]]담[[/b]]벼락[[b]]에서[[/b]] [[b]]틱![[/b]] 하고 [[r]]국내의[[/r]] 영역으로 들어오는 밀입국자",
+    "tip": "국경선 [[b]]담[[/b]](벽락)[[?]][[b]]에서[[/b]] [[b]]틱[[/b]]! 하고 [[r]]국내[[/r]]의 영역으로 들어오는 밀입국자",
     "toeicExpr": [
-     "domestic flight 국내선 · domestic market/product 국내 시장/제품"
+     "domestic flight 국내선  domestic market/product 국내 시장/제품"
     ]
    },
    {
     "word": "caution",
-    "pron": "[kɔ́ːʃən]",
-    "pos": "n./v.",
+    "pron": "[kɔ́:ʃən]",
+    "pos": "n. / v.",
     "meaning": "n. 조심, 경고  v. 주의(경고)를 주다",
     "tip": "낯선 사람이 [[b]]꼬션?(꼬셔?)[[/b]] 조심해야 해! 즉, [[r]]조심, 경고[[/r]]",
     "derivatives": [
@@ -232,8 +231,8 @@ const VOCAB_KSTN1 = [
     ],
     "toeicExpr": [
      "exercise caution 주의하다 (빈칸에 exercise를 넣는 문제가 출제되었음)",
-     "use extreme caution 매우 주의하다 · caution sign 경고 표지판",
-     "safety caution 안전 경고 · caution on the label 라벨의 경고문",
+     "use extreme caution 매우 주의하다  caution sign 경고 표지판",
+     "safety caution 안전 경고  caution on the label 라벨의 경고문",
      "be cautioned to follow instructions 지시를 따르라는 주의를 받다",
      "be cautioned to slow down 속도를 줄이라는 주의를 받다",
      "be cautious about investing/driving 투자에/운전에 조심하다",
@@ -243,22 +242,21 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "en": "Use extreme caution when swimming in the ocean.",
+      "en": "1. Use extreme caution when swimming in the ocean.",
       "ko": "바다에서 수영할 때는 세심한 주의를 기울여라."
      },
      {
-      "en": "He was cautioned against being late.",
+      "en": "2. He was cautioned against being late.",
       "ko": "그는 지각하지 말라고 주의를 받았다."
      },
      {
-      "en": "The expert is cautiously optimistic about our chances of success.",
+      "en": "3. The expert is cautiously optimistic about our chances of success.",
       "ko": "그 전문가는 우리의 성공 가능성에 대해 조심스럽게 낙관적이다."
      }
     ]
    },
    {
     "word": "sold out",
-    "pos": "a.",
     "meaning": "다 팔린, 매진된",
     "tip": "[[b]]sold[[/b]](팔린) + [[b]]out[[/b]](강조) 완전히 다 팔린, 즉 [[r]]매진된[[/r]]",
     "derivatives": [
@@ -268,28 +266,28 @@ const VOCAB_KSTN1 = [
      },
      {
       "word": "sell out",
-      "meaning": "매진되다, 매진시키다 (sell은 '팔다, 팔리다', 즉 타동사·자동사 둘 다 쓰인다.)"
+      "meaning": "매진되다, 매진시키다 (sell은 '팔다, 팔리다', 즉 타동사, 자동사 둘 다 쓰인다.)"
      }
     ],
     "toeicExpr": [
-     "completely sold out 완전히 매진된 · almost sold out 거의 매진된",
+     "completely sold out 완전히 매진된  almost sold out 거의 매진된",
      "The concert tickets are sold out. 콘서트 티켓은 매진입니다.",
      "ticket sellout 티켓 매진",
-     "sell out in minutes 몇 분 만에 매진되다 · sell out completely 완전히 매진되다",
+     "sell out in minutes 몇 분 만에 매진되다  sell out completely 완전히 매진되다",
      "Tickets for the play usually sell out before the weekend. 그 연극 티켓은 보통 주말 전에 매진된다.",
      "Tickets sold out. 티켓이 매진되었다. (자동사 과거형태로 과거에 매진되었다는 사실을 말함)",
      "Tickets are sold out. (현재 다 팔린 상태를 뜻함)"
     ],
     "examVar": [
      {
-      "en": "The concert tickets ___ within an hour of going on sale.",
+      "en": "1. The concert tickets ______ within an hour of going on sale.",
       "opt": "(A) sold out  (B) are sold out  (C) sellout  (D) selling out",
       "ans": "(A)",
       "ko": "콘서트 티켓은 판매 시작 후 한 시간 만에 매진되었다.",
       "note": "과거 시제이고, 다 팔린 상태(be sold out)가 아니라 다 팔린 동작(sell out)을 나타내므로 (A)가 정답이다."
      },
      {
-      "en": "All the rooms at the resort are ___ for the holiday weekend.",
+      "en": "2. All the rooms at the resort are ______ for the holiday weekend.",
       "opt": "(A) sold out  (B) sell out  (C) selling out  (D) sellout",
       "ans": "(A)",
       "ko": "리조트의 모든 객실은 연휴 기간에 매진되었다.",
@@ -299,18 +297,18 @@ const VOCAB_KSTN1 = [
    },
    {
     "word": "branch",
-    "pron": "미[bræntʃ] 영[brɑːntʃ]",
+    "pron": "미 [bræntʃ] 영 [brɑːntʃ]",
     "pos": "n.",
     "meaning": "n. 1. 나뭇가지  2. (회사나 프랜차이즈의) 지점",
-    "tip": "① 불엔(불에는) [[b]]취~[[/b]] 하고 잘 타는 [[r]]나뭇가지[[/r]]  ② [[b]]branch[[/b]](나뭇가지)가 갈라져 나가듯 본사에서 갈라져 나간 [[r]]지점[[/r]]",
+    "tip": "① [[b]]불엔[[/b]](불에는) [[b]]취[[/b]]~ 하고 잘 타는 [[r]]나뭇가지[[/r]]\n② [[b]]branch[[/b]](나뭇가지)가 갈라져 나가듯 본사에서 갈라져 나간 [[r]]지점[[/r]]",
     "toeicExpr": [
      "tree branch 나뭇가지",
-     "branch office 지점 · main branch 본점 · bank branch 은행 지점"
+     "branch office 지점  main branch 본점  bank branch 은행 지점"
     ]
    },
    {
     "word": "designate",
-    "pron": "[dézignèit]",
+    "pron": "[dèzignéit]",
     "pos": "v.",
     "meaning": "v. 1. 가리키다, 지정하다  2. 임명하다",
     "tip": "\"[[b]]돼지 그것으로 내에이트[[/b]](내세요!)\" 하며 돼지 무리 중의 하나를 [[r]]가리키다[[/r]], 오늘의 저녁거리로 [[r]]임명하다[[/r]]",
@@ -333,7 +331,7 @@ const VOCAB_KSTN1 = [
     "word": "eager",
     "pron": "[íːgər]",
     "pos": "a.",
-    "meaning": "a. 간절히 바라는, 열망하는",
+    "meaning": "간절히 바라는, 열망하는",
     "tip": "\"[[b]]이거[[/b]] 사줘요!\" 하며 아이가 장난감을 갖기를 [[r]]간절히 바라는[[/r]]",
     "toeicExpr": [
      "eager + to부정사 / eager for + 명사: ~하기를 열망하는",
@@ -345,8 +343,8 @@ const VOCAB_KSTN1 = [
     "word": "baggage",
     "pron": "[bǽgidʒ]",
     "pos": "n.",
-    "meaning": "n. (여행할 때의) 수하물, 짐",
-    "tip": "여행할 때 가지고 가는 [[b]]bag이지[[/b]](가방이지), 즉 여행용 [[r]]수하물, 짐[[/r]]",
+    "meaning": "(여행할 때의) 수하물, 짐",
+    "tip": "여행할 때 가지고 가는 [[b]]bag이지[[/b]](가방이지), 즉 여행용 [[r]]수하물[[/r]], [[r]]짐[[/r]]",
     "derivatives": [
      {
       "word": "luggage",
@@ -354,16 +352,16 @@ const VOCAB_KSTN1 = [
      }
     ],
     "toeicExpr": [
-     "carry-on baggage 기내 휴대용 수하물 · baggage claim 수하물 찾는 곳",
-     "extra luggage 추가 수하물 · excess luggage 초과 수하물"
+     "carry-on baggage 기내 휴대용 수하물  baggage claim 수하물 찾는 곳",
+     "extra luggage 추가 수하물  excess luggage 초과 수하물"
     ]
    },
    {
     "word": "immediate",
     "pron": "[imíːdiət]",
     "pos": "a.",
-    "meaning": "a. 1. 즉시의, 당장의  2. (시간·거리·관계 등이) 가장 가까운, 직속의",
-    "tip": "홍길동을 적이 칼로 내려치는 순간 [[r]]즉시의, 당장의[[/r]] 속도로 [[b]]이미 뒤[[/b]]에 적이 [[r]]가까운[[/r]] 위치에 [[b]]있다[[/b]]",
+    "meaning": "1. 즉시의, 당장의  2. (시간 · 거리 · 관계 등이) 가장 가까운, 직속의",
+    "tip": "홍길동을 적이 칼로 내려치는 순간 [[r]]즉시의, 당장의[[/r]] 속도로 [[b]]이미[[/b]] 적의 [[b]]뒤[[/b]]에 [[r]]가까운[[/r]] 위치에 [[r]]있다[[/r]]",
     "derivatives": [
      {
       "word": "immediately",
@@ -375,22 +373,22 @@ const VOCAB_KSTN1 = [
      "immediate opening 바로 채용 가능한 자리 (opening: 공석)",
      "immediate availability 즉시 이용(근무, 제공) 가능",
      "immediate availability for work 즉시 근무 가능함",
-     "immediate supervisor 직속 상사 · immediate family 직계 가족",
-     "respond immediately 즉시 대응하다 · leave immediately 즉시 떠나다",
+     "immediate supervisor 직속 상사  immediate family 직계 가족",
+     "respond immediately 즉시 대응하다  leave immediately 즉시 떠나다",
      "immediately after ~ 직후 (= directly after)",
      "The store reopened immediately after the inspection was completed. 점검이 완료된 직후 가게는 다시 영업을 재개했습니다."
     ],
     "examVar": [
      {
-      "en": "Please obtain approval from your immediate supervisor before proceeding.",
+      "en": "1. Please obtain approval from your immediate supervisor before proceeding.",
       "ko": "진행하기 전에 직속 상사의 승인을 받으세요."
      },
      {
-      "en": "There is an immediate opening in the accounting department.",
+      "en": "2. There is an immediate opening in the accounting department.",
       "ko": "회계 부서에 즉시 충원이 가능한 공석이 있습니다."
      },
      {
-      "en": "Applicants with immediate availability will be given priority.",
+      "en": "3. Applicants with immediate availability will be given priority.",
       "ko": "즉시 근무가 가능한 지원자가 우선 고려됩니다."
      }
     ]
@@ -399,10 +397,10 @@ const VOCAB_KSTN1 = [
     "word": "agenda",
     "pron": "[ədʒéndə]",
     "pos": "n.",
-    "meaning": "n. 협의 사항, 안건",
+    "meaning": "협의 사항, 안건",
     "tip": "[[b]]어젠[[/b]] 결론을 못 내서 오늘 한 번 [[b]]더[[/b]] 협의할 [[r]]협의 사항, 안건[[/r]]",
     "toeicExpr": [
-     "meeting agenda 회의 안건 · set the agenda 안건을 정하다",
+     "meeting agenda 회의 안건  set the agenda 안건을 정하다",
      "put the issue on the agenda 그 문제를 안건에 올리다"
     ],
     "examVar": [
@@ -416,8 +414,8 @@ const VOCAB_KSTN1 = [
     "word": "certificate",
     "pron": "미[sərtífikeit] 영[sərtífikət]",
     "pos": "n.",
-    "meaning": "n. 증명서, 면허증",
-    "tip": "① 가로 세로 [[b]]thirty[[/b]](30)미리가 되도록 [[b]]cut[[/b]](자른) [[r]]증명서, 면허증[[/r]]에 붙일 사진  ② [[b]]certain[[/b]](확실한) 것임을 증명하는 것",
+    "meaning": "증명서, 면허증",
+    "tip": "① 가로 세로 [[b]]thirty[[/b]](30)미리가 되도록 [[b]]cut[[/b]](자른) [[r]]증명서, 면허증[[/r]]에 붙일 사진\n② [[b]]certain[[/b]](확실한) 것임을 증명하는 것",
     "derivatives": [
      {
       "word": "certification",
@@ -429,35 +427,35 @@ const VOCAB_KSTN1 = [
      }
     ],
     "toeicExpr": [
-     "gift certificate 상품권 · medical certificate 진단서",
+     "gift certificate 상품권  medical certificate 진단서",
      "official certificate 공식 증명서",
-     "certification process 인증 절차 · certification exam 자격 시험",
+     "certification process 인증 절차  certification exam 자격 시험",
      "certification requirements 인증 요건",
-     "certify the results 결과를 증명하다 · certify a product 제품을 인증하다"
+     "certify the results 결과를 증명하다  certify a product 제품을 인증하다"
     ]
    },
    {
     "word": "closely",
     "pron": "[klóusli]",
     "pos": "ad.",
-    "meaning": "ad. 1. 바싹, 가까이  2. 면밀히, 주의 깊게",
+    "meaning": "1. 바싹, 가까이  2. 면밀히, 주의 깊게",
     "tip": "[[b]]close[[/b]](가까운) + [[b]]ly[[/b]](부·어) 어떤 것을 [[r]]가까이[[/r]] 보다, 즉 [[r]]면밀히, 주의 깊게[[/r]] 보다",
     "derivatives": [
      {
       "word": "close",
-      "meaning": "가까운, 면밀한; 닫다"
+      "meaning": "가까운, 면밀한: 닫다"
      }
     ],
     "toeicExpr": [
-     "examine closely 면밀히 조사하다 · read closely 꼼꼼히 읽다",
+     "examine closely 면밀히 조사하다  read closely 꼼꼼히 읽다",
      "work closely with the team 팀과 긴밀히 협력하다",
      "closely related to the project 그 프로젝트와 밀접하게 관련된",
      "keep a close eye on market trends 시장 동향을 면밀히 관찰하다"
     ],
     "examVar": [
      {
-      "en": "The supervisor will examine the safety procedures ___ to ensure compliance with regulations.",
-      "opt": "(A) nearly  (B) closely  (C) close  (D) closing",
+      "en": "The supervisor will examine the safety procedures _______ to ensure compliance with regulations.",
+      "opt": "(A) nearly    (B) closely    (C) close    (D) closing",
       "ans": "(B)",
       "ko": "감독관은 규정 준수를 보장하기 위해 안전 절차를 면밀히 검사할 것이다."
      }
@@ -467,8 +465,8 @@ const VOCAB_KSTN1 = [
     "word": "negotiate",
     "pron": "[nigóuʃièit]",
     "pos": "v.",
-    "meaning": "v. 협상하다",
-    "tip": "\"8:2로 나누는데 [[b]]니 것이 eight[[/b]](8)이라고? 내 것이 eight(8)이야!\"라고 말하며 [[r]]협상하다[[/r]]",
+    "meaning": "협상하다",
+    "tip": "\"8:2로 나누는데 [[b]]니 것이 eight[[/b]](8)이라고? 내 것이 eight(8)이야\"라고 말하며 [[r]]협상하다[[/r]]",
     "derivatives": [
      {
       "word": "negotiation",
@@ -484,10 +482,10 @@ const VOCAB_KSTN1 = [
    },
    {
     "word": "diverse",
-    "pron": "[daivə́ːrs, divə́ːrs]",
-    "pos": "a.",
-    "meaning": "a. 다양한, 가지각색의",
-    "tip": "거리에 사람들이 [[r]]다양한, 가지각색의[[/r]] 옷을 [[b]]다 입었수[[/b]].",
+    "pron": "[daivə́ːr]s, divə́ːr)s]",
+    "pos": "ad.",
+    "meaning": "다양한, 가지각색의",
+    "tip": "거리에 사람들이 [[r]]다양한, 가지각색[[/r]]의 옷을 [[b]]다 입었수[[/b]].",
     "derivatives": [
      {
       "word": "diversity",
@@ -499,7 +497,7 @@ const VOCAB_KSTN1 = [
      }
     ],
     "toeicExpr": [
-     "diverse range of products 다양한 종류의 제품들",
+     "diverse range of products 다양한 종류에 제품들",
      "a wide diversity of products 다양한 제품들",
      "diversify into new markets 새로운 시장으로 다각화하다",
      "diversify its products 제품을 다양화하다"
@@ -509,23 +507,23 @@ const VOCAB_KSTN1 = [
     "word": "power",
     "pron": "[páuər]",
     "pos": "n.",
-    "meaning": "n. 1. 힘, 권한, 권력  2. 전력, 전원",
-    "tip": "① 자신이 결정할 수 있는 [[b]]파워[[/b]](힘), 즉 [[r]]권한, 권력[[/r]]  ② 전기의 [[b]]파워[[/b]](힘), 즉 [[r]]전력, 전원[[/r]]",
+    "meaning": "1. 힘, 권한, 권력  2. 전력, 전원",
+    "tip": "① 자신이 결정할 수 있는 [[b]]파워(힘)[[/b]], 즉 [[r]]권한, 권력[[/r]]  ② 전기의 [[b]]파워(힘)[[/b]], 즉 [[r]]전력, 전원[[/r]]",
     "toeicExpr": [
      "have the power to approve contracts 계약을 승인할 권한이 있다",
      "have the power to cancel reservations 예약을 취소할 권한이 있다",
-     "power outage 정전 · power supply 전원 공급",
-     "restore power 전력을 복구하다 · cut off power 전원을 차단하다"
+     "power outage 정전   power supply 전원 공급",
+     "restore power 전력을 복구하다   cut off power 전원을 차단하다"
     ],
     "examVar": [
      {
-      "en": "The director has the ___ to approve budget increases.",
-      "opt": "(A) power  (B) energy  (C) force  (D) strength",
+      "en": "1. The director has the ______ to approve budget increases.",
+      "opt": "(A) power   (B) energy   (C) force   (D) strength",
       "ans": "(A)",
       "ko": "그 이사는 예산 증액을 승인할 권한을 가지고 있다."
      },
      {
-      "en": "The factory halted production due to a sudden power outage.",
+      "en": "2. The factory halted production due to a sudden power outage.",
       "ko": "그 공장은 갑작스러운 정전으로 생산을 중단했다."
      }
     ]
@@ -534,8 +532,8 @@ const VOCAB_KSTN1 = [
     "word": "available",
     "pron": "[əvéiləbl]",
     "pos": "a.",
-    "meaning": "a. 이용할 수 있는, 구할 수 있는, 시간 여유가 있는",
-    "tip": "[[b]]어[[/b]], [[b]]배가 일억불[[/b]] 주면 [[r]]구할 수 있는[[/r]], [[r]]이용할 수 있는[[/r]], 이용할 [[r]]시간 여유가 있는[[/r]]",
+    "meaning": "이용할 수 있는, 구할 수 있는, 시간 여유가 있는",
+    "tip": "[[b]]어,[[/b]] 배가 [[b]]일억불[[/b]] 주면 [[r]]구할 수 있는, 이용할 수 있는, 이용할 시간 여유가 있는[[/r]]",
     "derivatives": [
      {
       "word": "unavailable",
@@ -553,29 +551,32 @@ const VOCAB_KSTN1 = [
      "available for purchase 구매 가능한",
      "The manager is unavailable. 관리자는 만날 수 없다.",
      "Some items are unavailable. 어떤 품목들은 구할 수 없다(품절이 되었다).",
-     "product availability 제품 재고 여부 · room availability 객실 이용 가능 여부",
-     "check availability 가능 여부를 확인하다 · immediate availability 즉시 사용 가능성"
+     "product availability 제품 재고 여부",
+     "room availability 객실 이용 가능 여부",
+     "check availability 가능 여부를 확인하다",
+     "mmediate availability 즉시 사용 가능성"
     ],
     "examVar": [
      {
-      "en": "Are you available now?",
+      "note": "빈칸에 available이 들어가는 문제가 자주 출제되었다.",
+      "en": "1. Are you available now?",
       "ko": "지금 시간 있으세요?"
      },
      {
-      "en": "The professor is available for consultation from 9 to 12 every morning.",
+      "en": "2. The professor is available for consultation from 9 to 12 every morning.",
       "ko": "교수님은 매일 오전 9시에서 12시까지 면담에 응하실 수 있습니다."
      },
      {
-      "en": "Only first class is available.",
+      "en": "3. Only first class is available.",
       "ko": "일등석밖에 없습니다."
      },
      {
-      "en": "We don't have any rooms available.",
+      "en": "4. We don't have any rooms available.",
       "ko": "빈방이 없는데요."
      },
      {
-      "en": "It is now available for $115.",
-      "ko": "지금은 115달러로 구입할 수 있다."
+      "en": "5. It is now available for $115.",
+      "ko": "지금은 115달러에 구입할 수 있다."
      }
     ]
    }
@@ -587,123 +588,547 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "expert",
-    "meaning": "전문가; 숙련된, 능숙한",
-    "pos": "n./adj."
+    "pron": "[ékspə:rt]",
+    "pos": "n./a.",
+    "meaning": "n. 전문가  a. 숙련된, 능숙한",
+    "tip": "X를 구하는 문제를 보자마자 [[b]]퍼뜩[[/b]] 풀어버리는 수학 [[r]]전문가[[/r]]",
+    "derivatives": [
+     {
+      "word": "expertise",
+      "meaning": "전문 지식, 전문 기술"
+     }
+    ],
+    "toeicExpr": [
+     "marketing/technical/financial expert 마케팅/기술/재무 전문가",
+     "expert advice 전문가 조언  expert guidance 전문적인 지침",
+     "분야에는 in – 특정 분야 · 전문영역(학문/기술/산업)",
+     "expert in finance 금융 분야 전문가",
+     "expert in data analysis 데이터 분석 전문가",
+     "활동에는 at – 어떤 활동을 '능숙하게 수행'",
+     "expert at negotiating contracts 계약 협상에 능숙한",
+     "expert at analyzing market trends 시장 분석에 능숙한",
+     "주제에는 on – 특정 주제 · 이슈 · 사건",
+     "expert on tax reform 세제 개혁에 관한 전문가",
+     "expert on consumer behavior trends 소비자 행동 트렌드 전문가",
+     "technical/financial/marketing expertise 기술적/재무/마케팅 전문 지식"
+    ],
+    "examVar": [
+     {
+      "en": "expert와 expertise를 구분하는 문제가 자주 출제되었다.\n예) She has gained valuable ______ through years of research in biotechnology.",
+      "opt": "(A) expert  (B) experts  (C) expertise  (D) expertly",
+      "ans": "(C)",
+      "ko": "그녀는 수년간의 생명공학 연구를 통해 귀중한 전문 지식을 습득했다."
+     },
+     {
+      "en": "expert + in/at/on 구분 문제가 자주 출제되었다.\n예) Dr. Kim is an expert ______ analyzing consumer behavior trends.",
+      "opt": "(A) at  (B) in  (C) on  (D) for",
+      "ans": "(A)",
+      "ko": "김 박사는 소비자 행동 트렌드 분석에 능숙하다.",
+      "note": "analyze = 활동 → expert at"
+     }
+    ]
    },
    {
     "word": "shelf",
-    "meaning": "선반",
-    "pos": "n."
+    "pron": "[ʃelf]",
+    "pos": "n.",
+    "meaning": "n. 선반",
+    "tip": "물은 [[b]]셀프[[/b]]라고 써놓은 식당 [[r]]선반[[/r]]",
+    "toeicExpr": [
+     "on the shelf 선반 위에  bookshelf 책꽂이, 책장  display shelf 진열 선반"
+    ]
    },
    {
     "word": "separate",
-    "meaning": "분리하다; 분리된, 따로따로의",
-    "pos": "v./adj."
+    "pron": "v. [sépərèit]  a. [sépərət]",
+    "pos": "v./a.",
+    "meaning": "v. 분리하다  a. 분리된, 따로따로의",
+    "tip": "이 사과만 [[b]]새퍼렇다[[/b]], 그래서 빨간 사과와 [[r]]분리된[[/r]], [[r]]분리하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "separately",
+      "meaning": "따로따로, 개별적으로"
+     }
+    ],
+    "toeicExpr": [
+     "separate A from B A를 B로부터 분리하다",
+     "separate recyclable items from regular waste 재활용품을 일반 쓰레기로부터 분리하다",
+     "separate room 독립된 방  separate account 별도의 계좌",
+     "separate items 각각의 항목  separate forms 별도의 양식",
+     "be kept separate 따로 보관되다",
+     "Hazardous materials must be kept separate. 위험 물질은 따로 보관되어야 한다.",
+     "pay separately 따로 계산하다  ship separately 개별 배송하다",
+     "be charged separately 별도로 부과되다"
+    ]
    },
    {
     "word": "admit",
-    "meaning": "1. 인정하다 2. (입장·입국 등을) 허가하다",
-    "pos": "v."
+    "pron": "[ədmít]",
+    "pos": "v.",
+    "meaning": "1. 인정하다  2. (입장ㆍ입국 등을) 허가하다",
+    "tip": "북한군이 땅굴의 [[b]]어두운[[/b]] [[b]]밑[[/b]]을 통해 월남하자 [[r]]입국을 허가하다[[/r]]. 그리고 탈북자로 [[r]]인정하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "admission",
+      "meaning": "입장, (입장ㆍ입국 등의) 허가"
+     }
+    ],
+    "toeicExpr": [
+     "admit responsibility/a mistake/an error 책임을/실수를/오류를 인정하다",
+     "admit to + 동명사/명사: ~을 인정하다",
+     "admit to making a mistake 실수했음을 인정하다",
+     "admit to causing the delay 지연을 초래했음을 인정하다",
+     "be admitted to the event 행사에 입장 허가되다",
+     "admit customers 고객을 들이다",
+     "admit visitors until 5 P.M. 오후 5시까지 방문객 입장을 허용하다",
+     "admit that ~을 인정하다",
+     "She admitted that she forgot to send the revised document. 그녀는 수정된 문서를 보내는 것을 잊었음을 인정했다.",
+     "admission fee 입장료  free admission 무료 입장",
+     "admission ticket 입장권"
+    ],
+    "examVar": [
+     {
+      "en": "The technician finally admitted to _______ the system files without permission.",
+      "opt": "(A) modify  (B) modified  (C) modifying  (D) modification",
+      "ans": "(C)",
+      "ko": "기술자는 허가 없이 시스템 파일을 수정한 것을 결국 인정했다."
+     }
+    ]
    },
    {
     "word": "remark",
-    "meaning": "말, 논평; 말하다, 논평하다",
-    "pos": "n./v."
+    "pron": "[rimά:rk]",
+    "pos": "n. v.",
+    "meaning": "n. 말, 논평  v. 말하다, 논평하다",
+    "tip": "[[b]]니[[/b]]가 [[r]]말[[/r]]을 [[b]]크[[/b]]게 하여 [[r]]말하다, 논평하다[[/r]]",
+    "toeicExpr": [
+     "remark that ~ ~라고 언급하다  remark on an issue 사안에 대해 언급하다",
+     "remark briefly 간단히 언급하다",
+     "opening remark 개회사  closing remark 폐회사",
+     "brief remark 짧은 발언  make a remark 발언하다"
+    ],
+    "examVar": [
+     {
+      "en": "Before the award ceremony begins, the host will deliver the opening remarks to welcome all attendees.",
+      "ko": "시상식이 시작되기 전에, 사회자가 모든 참석자들을 환영하기 위한 개회사를 할 예정이다."
+     }
+    ]
    },
    {
     "word": "widespread",
-    "meaning": "넓게 펼쳐진, 광범위한",
-    "pos": "adj."
+    "pron": "[wáidsprèd]",
+    "pos": "a.",
+    "meaning": "a. 넓게 펼쳐진, 광범위한",
+    "tip": "[[[b]]wide[[/b]](넓은) + [[b]]spread[[/b]](펴다, 펼치다)] [[r]]넓게 펼쳐진, 광범위한[[/r]]",
+    "toeicExpr": [
+     "widespread use/impact/distribution 광범위한 사용/영향/분포"
+    ]
    },
    {
     "word": "associate",
-    "meaning": "①관련 짓다, 관련시키다, 제휴하다 / 제휴한 ②(사업·직장) 파트너, 동료 ③(직급) 부-, 준-, 보조 직원",
-    "pos": "v./n./adj."
+    "pron": "v. [əsóuʃièit]\na. n. [əsóuʃiət]",
+    "pos": "v. a. n.",
+    "meaning": "1. v. 연관 짓다, 관련시키다, 제휴하다  a. 제휴한\n2. n. (사업ㆍ직장) 파트너, 동료  3. a. (직급) 부-, 준-  n. 보조 직원",
+    "tip": "\"[[b]]어서 오시죠[[/b]] [[b]]eight(8)[[/b]]명이 모였어요.\" 하며 사업 파트너 8명이 서로 인사하며 서로의 사업을 [[r]]연관 짓다, 관련시키다, 제휴하다[[/r]]. 그래서 대표 1인 빼고 모두 [[r]]부[[/r]]이사가 된다.",
+    "derivatives": [
+     {
+      "word": "association",
+      "meaning": "연합, 제휴"
+     }
+    ],
+    "toeicExpr": [
+     "associate with ~와 연관 짓다",
+     "be associated with ~와 관련되어 있다",
+     "associate A with B A를 B와 연관짓다",
+     "be closely associated with ~와 밀접하게 관련되다",
+     "be directly associated with ~와 직접적으로 관련되다",
+     "business associate 사업(업무) 파트너",
+     "associate company 계열사 (← 파트너 회사)",
+     "in association with ~와 협력하여, ~와 연합하여",
+     "associate position 준(부) 직책  associate director 부이사",
+     "associate manager 부매니저  associate membership 준회원 자격",
+     "sales associate 판매 보조 직원  research associate 연구 보조원"
+    ],
+    "examVar": [
+     {
+      "en": "The delays were found to be directly associated _______ a software malfunction.",
+      "note": "with (O) to (X)",
+      "ko": "그 지연은 소프트웨어 오작동과 직접적으로 관련이 있는 것으로 밝혀졌다.",
+      "opt": "associate with, be associated with, in association with 표현에서 전치사 with를 넣는 문제가 자주 출제되었다."
+     },
+     {
+      "en": "All marketing materials must be reviewed by our business _______.",
+      "opt": "(A) associate  (B) associated  (C) association  (D) associating",
+      "ans": "(A)",
+      "ko": "모든 마케팅 자료는 우리 업무 파트너가 검토해야 한다.",
+      "note": "associate가 동사/명사/형용사 중 무엇인지 판단하게 하는 문제가 자주 출제되었다."
+     },
+     {
+      "en": "The research _______ analyzed customer preferences across regions.",
+      "opt": "(A) associated  (B) associate  (C) associates  (D) association",
+      "ans": "(C)",
+      "ko": "연구 보조원들은 지역별 고객 선호도를 분석했다."
+     }
+    ]
    },
    {
     "word": "current",
-    "meaning": "현재의, 유행하는 / 흐름, 유행, 경향",
-    "pos": "adj./n."
+    "pron": "미[kə́:rənt] 영[kʌ́rənt]",
+    "pos": "a./n.",
+    "meaning": "a. 현재의, 유행하는 n. 흐름, 유행, 경향",
+    "tip": "[[b]]고런[[/b]](그런) [[b]]투[[/b]]로 말하거나 행동하는 것은 [[r]]현재의, 유행하는, 경향[[/r]]",
+    "derivatives": [
+     {
+      "word": "currently",
+      "meaning": "지금, 현재, 최근에"
+     }
+    ],
+    "toeicExpr": [
+     "current situation 현재 상황  current issue 현안",
+     "currently available 현재 이용 가능한  currently closed 현재 문이 닫혀 있다"
+    ],
+    "examVar": [
+     {
+      "note": "currently는 현재의 흐름이나 경향을 나타내는 말이기 때문에 현재시제 또는 현재 진행형 시제와 함께 쓰인다. currently + 과거시제(X), 미래시제(X), 완료시제(거의 쓰이지 않음)",
+      "en": "The company currently ______ over 500 workers worldwide.",
+      "opt": "(A) employed  (B) employs  (C) employing  (D) had employed",
+      "ko": "그 회사는 전 세계적으로 500명 이상의 직원을 고용하고 있다.",
+      "ans": "(B)"
+     },
+     {
+      "note": "currently와 presently를 구분하는 문제가 출제되었다.",
+      "en": "The elevator is ______ out of service for maintenance.",
+      "opt": "(A) currently  (B) presently  (C) present  (D) current",
+      "ko": "그 엘리베이터는 현재 점검으로 운행되지 않는다.",
+      "ans": "(A)"
+     },
+     {
+      "note": "presently는 '곧, 이내'란 뜻으로 미래시제와 같이 써야 한다."
+     }
+    ]
    },
    {
     "word": "consist",
-    "meaning": "①구성되다(of) ②일치하다",
-    "pos": "v."
+    "pron": "[kənsíst]",
+    "pos": "v.",
+    "meaning": "v. 1. 구성되다(of)  2. 일치하다",
+    "tip": "내 형제는 나, 작은 누나, [[b]]큰 sister[[/b]](누나)로 [[r]]구성되다[[/r]], 모두 생김새가 [[r]]일치하다[[/r]]",
+    "toeicExpr": [
+     "consist of ~으로 구성되다  * be consisted of (X) – 수동태는 틀린 표현",
+     "consist mainly/largely/entirely of 주로/대부분/오직 ~으로 구성되다",
+     "The committee consists of five senior managers. 그 위원회는 다섯 명의 고위 관리자들로 구성된다.",
+     "The team consists mainly of part-time workers. 그 팀은 주로 시간제 직원들로 구성된다."
+    ],
+    "examVar": [
+     {
+      "note": "consist는 자동사로 수동태로 쓰이지 않고 전치사 of와 함께 쓰이는 점이 자주 출제되었다.",
+      "en": "The training program ______ of three main courses and two optional workshops.",
+      "opt": "(A) consists  (B) is consisted  (C) consisting  (D) consist",
+      "ko": "그 교육 프로그램은 세 개의 주요 과정과 두 개의 선택 워크숍으로 구성된다.",
+      "ans": "(A)"
+     }
+    ]
    },
    {
     "word": "qualify",
-    "meaning": "자격을 주다, 자격을 얻다, 조건을 충족하다",
-    "pos": "v."
+    "pron": "미[kwάləfài] 영[kwɔ́lifài]",
+    "pos": "v.",
+    "meaning": "v. 자격을 주다, 자격을 얻다, 조건을 충족하다",
+    "tip": "[[b]]권리 파이[[/b]]를 만들 [[b]]권리[[/b]], 즉 제빵사 [[r]]자격을 주다[[/r]], [[r]]자격을 얻다[[/r]], [[r]]조건을 충족하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "qualification",
+      "meaning": "자격, 자격 요건"
+     },
+     {
+      "word": "unqualified",
+      "meaning": "자격이 없는"
+     }
+    ],
+    "toeicExpr": [
+     "qualify for the position 그 직책에 자격을 갖추다",
+     "qualify for a loan 대출 자격을 충족하다",
+     "highly qualified applicant 고도로 자격을 갖춘 지원자",
+     "best qualified for the role 그 역할에 가장 적합한 자격을 갖추고 있는",
+     "essential/required qualifications 필수/요구되는 자격조건",
+     "job qualifications 직무 자격 요건",
+     "academic qualifications 학력, 학위 자격",
+     "meet the qualifications 자격 요건을 충족하다",
+     "professional qualifications 전문 자격",
+     "unqualified applicant 자격이 없는 지원자",
+     "be unqualified for the position 해당 직책에 자격이 없다"
+    ]
    },
    {
     "word": "agent",
-    "meaning": "대리인, 담당자",
-    "pos": "n."
+    "pron": "[éidʒənt]",
+    "pos": "n.",
+    "meaning": "n. 대리인, 담당자",
+    "tip": "[[b]]A 전투[[/b]], B 전투, C 전투 등이 많아서 장군이 직접 나가지 않고 대신 보낸 [[r]]대리인, 담당자[[/r]]",
+    "derivatives": [
+     {
+      "word": "agency",
+      "meaning": "대행사, 기관"
+     }
+    ],
+    "toeicExpr": [
+     "travel/sales agent 여행/영업 대리인",
+     "insurance agent 보험 대리인  booking agent 예약 담당자",
+     "travel agency 여행사  trade agency 무역회사",
+     "public agency 공공기관  marketing agency 마케팅 대행사"
+    ]
    },
    {
     "word": "wholesale",
-    "meaning": "도매 / 도매의",
-    "pos": "n./adj."
+    "pron": "[hóulsèil]",
+    "pos": "n./a.",
+    "meaning": "n. 도매 a. 도매의",
+    "tip": "상품 [[b]]whole[[/b]](전체의) [[b]]sale[[/b]](판매), 즉 [[r]]도매[[/r]], [[r]]도매의[[/r]]",
+    "toeicExpr": [
+     "wholesale price/market/business 도매 가격/시장/사업"
+    ]
    },
    {
     "word": "raise",
-    "meaning": "①(위로) 올리다 / 올림, 인상 ②기르다, 키우다",
-    "pos": "v./n."
+    "sup": "1",
+    "pron": "[reiz]",
+    "pos": "v./n.",
+    "meaning": "1. v. (위로) 올리다 n. 올림, 인상  2. v. 기르다, 키우다",
+    "tip": "\"올리다\" → 돼지나 야채의 키를 [[b]]raise[[/b]](올리다), 즉 [[r]]기르다, 키우다[[/r]]",
+    "toeicExpr": [
+     "raise prices/taxes/production 가격을/세금을/생산량을 올리다",
+     "pay raise 급여 인상  raise in rent 임대료 인상",
+     "get a raise 봉급이 오르다",
+     "raise children/animals 아이를/동물을 기르다"
+    ],
+    "examVar": [
+     {
+      "en": "The company plans to raise the prices of its products next month due to higher production costs.",
+      "ko": "그 회사는 생산비 증가로 인해 다음 달 자사 제품 가격을 인상할 계획이다."
+     }
+    ]
    },
    {
     "word": "raise",
+    "sup": "2",
+    "pron": "[reiz]",
+    "pos": "v.",
     "meaning": "(돈을) 마련하다, 모금하다",
-    "pos": "v."
+    "tip": "돈을 (쌓아) [[b]]raise[[/b]](올리다), 즉 [[r]]돈을 마련하다[[/r]]",
+    "toeicExpr": [
+     "raise funds 자금을 마련하다  raise a donation 기부금을 모으다",
+     "fund-raising 자금 마련, 모금 활동",
+     "fundraiser 모금 행사, 모금 담당자  fund-raiser 모금 행사",
+     "charity fundraiser 자선 모금 행사"
+    ],
+    "examVar": [
+     {
+      "en": "The charity event aims to raise funds for local hospitals.",
+      "ko": "그 자선 행사는 지역 병원들을 위한 자금을 모으는 것을 목표로 한다."
+     }
+    ]
    },
    {
     "word": "raise",
-    "meaning": "(문제·이의 등을) 제기하다",
-    "pos": "v."
+    "sup": "3",
+    "pron": "[reiz]",
+    "pos": "v.",
+    "meaning": "(문제 · 이의 등을) 제기하다",
+    "tip": "\"저기요!\" 하며 팔을 들어 [[b]]raise[[/b]](올리다), 즉 [[r]](문제 · 이의 등을) 제기하다[[/r]]",
+    "toeicExpr": [
+     "raise an issue/complaint 문제를/불만을 제기하다",
+     "raise a question 질문을 제기하다  raise concerns 우려를 제기하다",
+     "raise objections 반대 의견을 제기하다"
+    ],
+    "examVar": [
+     {
+      "en": "The report has raised concerns about the company's financial stability.",
+      "ko": "그 보고서는 회사의 재정 안정성에 대한 우려를 제기했다."
+     }
+    ]
    },
    {
     "word": "emergency",
+    "pron": "[imə́:rdʒənsi]",
+    "pos": "n.",
     "meaning": "비상사태, 긴급 상황",
-    "pos": "n."
+    "tip": "\"[[b]]임마, 전시[[/b]]야! 지금은 전쟁 중이야\" 즉, [[r]]비상사태, 긴급 상황[[/r]]",
+    "toeicExpr": [
+     "emergency exit 비상구  in case of emergency 비상시에는",
+     "emergency room 응급실  emergency landing 비상 착륙"
+    ]
    },
    {
     "word": "bother",
-    "meaning": "①귀찮게 하다, 신경 쓰이게 하다, 신경 쓰다 ②애쓰다, 굳이 ~하다",
-    "pos": "v."
+    "pron": "[báðər]",
+    "pos": "v.",
+    "meaning": "1. 귀찮게 하다, 신경 쓰이게 하다, 신경 쓰다  2. 애쓰다, 굳이 ~하다",
+    "tip": "\"술 [[b]]받어[[/b]]!\" 하며 직장 상사가 억지로 마시게 [[r]]귀찮게 하다, 신경 쓰이게 하다[[/r]]. 그래서 [[r]]굳이[[/r]] 억지로 마시느라 [[r]]애쓰다[[/r]]",
+    "toeicExpr": [
+     "Sorry to bother you. 귀찮게 해서 죄송합니다.",
+     "Don't bother to ~ 굳이 ~하지 마세요 (← ~하는 것을 신경 쓰지 마세요)",
+     "Don't bother to print it. 굳이 프린트는 하지 마세요."
+    ],
+    "examVar": [
+     {
+      "en": "1. The manager said, \"Don't bother to submit the report today. Tomorrow is fine.\"",
+      "ko": "\"오늘 보고서를 굳이 제출 안 해도 됩니다. 내일도 괜찮습니다.\"라고 매니저가 말했다."
+     },
+     {
+      "en": "2. Please do not bother the staff with additional requests during the event.",
+      "ko": "행사 중에는 추가 요청으로 직원들을 귀찮게 하지 말아주세요."
+     }
+    ]
    },
    {
     "word": "detail",
-    "meaning": "세부 사항, 상세한 설명 / 상세히 말하다",
-    "pos": "n./v."
+    "pron": "[ditéil]",
+    "pos": "n.",
+    "meaning": "n. 세부 사항, 상세한 설명  v. 상세히 말하다",
+    "tip": "선생님이 공룡의 [[b]]뒤 tail[[/b]](꼬리) 부분의 [[r]]세부 사항[[/r]]까지 [[r]]상세히 설명하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "detailed",
+      "meaning": "상세한, 정밀한"
+     }
+    ],
+    "toeicExpr": [
+     "in detail 자세하게  detail the process/result 절차를/결과를 상세히 말하다",
+     "세부 사항은 여러 개이기 때문에 항상 복수 형태를 쓴다.",
+     "provide details 세부 사항을 제공하다  further details 추가적인 세부 사항",
+     "detailed information 상세한 정보  detailed instruction/plan 세부 지침/계획"
+    ],
+    "examVar": [
+     {
+      "en": "Please review the attached document for further ________.",
+      "opt": "(A) details  (B) detail  (C) detailing  (D) detailed",
+      "ans": "(A)",
+      "ko": "자세한 내용은 첨부 문서를 확인하세요."
+     }
+    ]
    },
    {
     "word": "manual",
-    "meaning": "①손으로 하는, 수동의 ②안내서, 설명서",
-    "pos": "adj./n."
+    "pron": "[mǽnjuəl]",
+    "pos": "a./n.",
+    "meaning": "1. a. 손으로 하는, 수동의  2. n. 안내서, 설명서",
+    "tip": "[[b]]메뉴[[/b]]가 [[b]]all[[/b]](모두) 적혀 있는 메뉴판 [[r]]안내서, 설명서[[/r]]의 음식들을 [[r]]손으로 하는[[/r]] 손짜장집",
+    "derivatives": [
+     {
+      "word": "manually",
+      "meaning": "수동으로"
+     }
+    ],
+    "toeicExpr": [
+     "manual settings 수동 설정",
+     "read the manual 설명서를 읽다  user manual 사용 설명서",
+     "be controlled/operated manually 수동으로 제어되다/작동되다"
+    ],
+    "examVar": [
+     {
+      "en": "Please refer to the user manual before installing the device.",
+      "ko": "기기를 설치하기 전에 사용자 설명서를 참고하세요."
+     }
+    ]
    },
    {
     "word": "manufacture",
-    "meaning": "제조 / 제조하다",
-    "pos": "n./v."
+    "pron": "[mænjufǽktʃər]",
+    "pos": "n. v.",
+    "meaning": "n. 제조  v. 제조하다",
+    "tip": "온라인 판매를 위해 음식점에서 [[b]]메뉴[[/b]]에 있는 것을 [[b]]팩[[/b]]으로 [[b]]처[[/b]]리하여 [[r]]제조, 제조하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "manufacturer",
+      "meaning": "제조업자, 제조회사"
+     }
+    ],
+    "toeicExpr": [
+     "manufacture goods 상품을 제조하다",
+     "date of manufacture 제조 일자",
+     "electronics manufacturer 전자제품 제조업체"
+    ]
    },
    {
     "word": "regulation",
-    "meaning": "규율, 규정, 규제",
-    "pos": "n."
+    "pron": "[règjuléiʃən]",
+    "pos": "n.",
+    "meaning": "n. 규율, 규정, 규제",
+    "tip": "왕인 [[b]]내[[/b]]가 [[r]]규율[[/r]]을 [[b]]내이션[[/b]](내다). 그러니 따르라는 [[r]]규율, 규정, 규제[[/r]]",
+    "derivatives": [
+     {
+      "word": "regulate",
+      "meaning": "규제하다"
+     }
+    ],
+    "toeicExpr": [
+     "safety/traffic regulations 안전/traffic 규정",
+     "government/environmental regulation 정부/환경 규제",
+     "adhere to company regulations 회사 규정을 준수하다",
+     "be subject to regulations 규제 대상이다",
+     "in accordance with regulations 규정에 따라",
+     "regulate prices 가격을 규제하다  regulate traffic 교통을 통제하다"
+    ]
    },
    {
     "word": "endeavor",
-    "meaning": "노력 / 노력하다",
-    "pos": "n./v."
+    "pron": "[indévər]",
+    "pos": "n. v.",
+    "meaning": "n. 노력  v. 노력하다",
+    "tip": "운동선수가 [[b]]인대[[/b]]가 [[b]]붜[[/b]](부어) 오를 정도로 [[r]]노력, 노력하다[[/r]]",
+    "toeicExpr": [
+     "endeavor to reduce costs 비용 절감에 노력하다",
+     "endeavor to meet the deadline 마감 준수를 위해 노력하다"
+    ]
    },
    {
     "word": "opportunity",
-    "meaning": "기회",
-    "pos": "n."
+    "pron": "미[ɑːpərtúːnəti] 영[ɔ̀pətúːnəti]",
+    "pos": "n.",
+    "meaning": "n. 기회",
+    "tip": "지금 [[b]]아파트[[/b]] 분양 신청서를 [[b]]너티[[/b]](넣지)! 분양받을 [[r]]기회[[/r]]!",
+    "toeicExpr": [
+     "job/employment/career opportunity 취업/취업/경력개발 기회",
+     "opportunity for + 명사: ~을 위한 기회 (← for: ~을 위한, ~을 위하여)",
+     "opportunity for promotion 승진을 위한 기회",
+     "opportunity for growth 성장할 기회",
+     "take/miss the opportunity 기회를 활용하다/놓치다"
+    ]
    },
    {
     "word": "locate",
-    "meaning": "~에 위치시키다, 위치를 찾아내다",
-    "pos": "v."
+    "pron": "[lóukeit]",
+    "pos": "v.",
+    "meaning": "v. 1. ~에 위치시키다  2. 위치를 찾아내다",
+    "tip": "북한이 [[b]]로케트[[/b]]를 휴전선 근처에 [[r]]위치시키다[[/r]], 남한이 그 [[r]]위치를 찾아내다[[/r]]",
+    "derivatives": [
+     {
+      "word": "located",
+      "meaning": "~에 위치한"
+     },
+     {
+      "word": "location",
+      "meaning": "장소, 위치"
+     },
+     {
+      "word": "relocate",
+      "meaning": "이전시키다, 재배치하다 (← 접두어 re는 'again(다시)'의 의미)"
+     },
+     {
+      "word": "relocation",
+      "meaning": "이전, 재배치"
+     }
+    ],
+    "toeicExpr": [
+     "be conveniently located 편리하게 위치하다",
+     "be perfectly located 완벽한 입지에 자리잡다",
+     "locate the problem/source 문제를/출처를 찾아내다",
+     "The technician quickly located the problem in the engine. 기술자는 엔진의 문제를 신속하게 찾아냈다.",
+     "convenient location 편리한 위치",
+     "remote location 외진/떨어진 위치",
+     "relocate the office 사무실을 이전하다",
+     "relocate employees 직원을 재배치하다"
+    ]
    }
   ]
  },
@@ -713,123 +1138,545 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "direction",
-    "meaning": "①방향, 길 안내(-s 복수) ②지시, 지시사항(-s 복수)",
-    "pos": "n."
+    "pron": "[dirékʃən]",
+    "pos": "n.",
+    "meaning": "n. 1. 방향, 길 안내(-s 복수)  2. 지시, 지시사항(-s 복수)",
+    "tip": "가야 할 방향이 [[b]]뒤랬션!(뒤랬어!)[[/b]] 즉, [[r]]방향, 지시[[/r]]",
+    "derivatives": [
+     {
+      "word": "direct",
+      "meaning": "1. 지시하다, 안내하다  2. 직접적인, 똑바른  3. 안내하다, 보내다 (← 방향을 알려주다)"
+     },
+     {
+      "word": "directly",
+      "meaning": "직접, 곧바로, 즉시"
+     },
+     {
+      "word": "director",
+      "meaning": "이사, 감독"
+     },
+     {
+      "word": "directive",
+      "meaning": "지침, 지시, 명령"
+     },
+     {
+      "word": "redirect",
+      "meaning": "(다른 곳으로) 다시 보내다, 전용하다"
+     }
+    ],
+    "toeicExpr": [
+     "give directions 길을 알려주다, 지시를 내리다",
+     "direction of the project 프로젝트 추진 방향",
+     "follow directions 지시를 따르다  under the direction of ~의 지시/감독하에",
+     "direct contact/connection 직접 연락/연결  direct flight 직항편",
+     "direct supervisor 직속 상사",
+     "direct A to B A를 B로 안내하다, 보내다",
+     "direct customers to the service desk 고객을 안내 데스크로 안내하다",
+     "direct calls to the appropriate department 전화를 해당 부서로 돌리다",
+     "direct complaints to the manager 불만 사항을 매니저에게 보내다",
+     "report directly to ~에게 직접 보고하다  directly contact 직접 연락하다",
+     "arrive directly 곧바로 도착하다  go directly to 곧바로 ~로 가다",
+     "directly after (=immediately after) ~직후에",
+     "directly after the meeting 회의 직후에  directly after arriving 도착하자마자",
+     "be directed to ~로 보내지다",
+     "All complaints should be directed to the HR department. 모든 불만은 인사 부서로 보내져야 합니다.",
+     "company director 회사 이사  board of directors 이사회",
+     "managing director 전무이사, 대표이사  executive director 상무이사, 전무이사",
+     "finance director 재무이사  marketing director 마케팅 이사",
+     "human resources director 인사 이사  film director 영화 감독",
+     "follow a directive 지시를 따르다  issue a directive 지시를 내리다",
+     "under the directive of ~의 지시하에  safety directive 안전 지시",
+     "company directives 회사 지침",
+     "redirect funds/resources 자금을/자원을 전용하다(다른 곳에 쓰다)",
+     "redirect A to B A를 B로 돌리다(다시 보내다)",
+     "Please redirect all customer calls to the support team. 모든 고객 전화를 지원팀으로 돌려주세요."
+    ],
+    "examVar": [
+     {
+      "en": "The receptionist gave clear ________ to the conference room.",
+      "opt": "(A) direction  (B) directive  (C) directions  (D) directing",
+      "ans": "(C)",
+      "ko": "접수원은 회의실까지 가는 명확한 길 안내를 제공했다.",
+      "note": "direction이 \"방향, 지시\"란 뜻일 때는 추상적 의미로 단수형을 쓰지만 \"길 안내, 지시사항\"이란 뜻일 때는 다수의 길 안내 및 지시사항들이 포함되므로 복수형으로 쓰인다."
+     },
+     {
+      "en": "Inquiries regarding refunds will be directed to the accounting department.",
+      "ko": "환불 관련 문의는 회계부서로 보내질 것입니다.",
+      "note": "<direct A to B (A를 B로 안내하다, 보내다)> 형태가 자주 출제되었다."
+     },
+     {
+      "en": "Employees must obtain approval from their direct supervisor before taking time off.",
+      "ko": "직원들은 휴가를 내기 전에 직속 상사의 승인을 받아야 한다."
+     },
+     {
+      "en": "All employees must follow the new safety directive issued this morning.",
+      "ko": "전 직원은 오늘 아침 발표된 새로운 안전 지침을 따라야 한다."
+     }
+    ]
    },
    {
     "word": "core",
-    "meaning": "중심, 핵심 / 중심적인, 핵심적인",
-    "pos": "n./adj."
+    "pron": "[kɔːr]",
+    "pos": "n./a.",
+    "meaning": "n. 중심, 핵심  a. 중심적인, 핵심적인",
+    "tip": "[[b]]코[[/b]]는 얼굴의 중간에 위치한 [[r]]중심, 핵심[[/r]]",
+    "toeicExpr": [
+     "core values/function/business 핵심 가치/기능/사업"
+    ]
    },
    {
     "word": "debt",
-    "meaning": "빚, 채무",
-    "pos": "n."
+    "pron": "[det]",
+    "pos": "n.",
+    "meaning": "n. 빚, 채무",
+    "tip": "[[b]]b는 묵음[[/b]] [[r]]大[[/r]](크게) [[r]]투[[/r]]자하기 위해 은행에서 얻은 [[r]]빚, 채무[[/r]]",
+    "toeicExpr": [
+     "pay off a debt 빚을 갚다  be in debt 빚을 지다 (← 빚 속에 있다)"
+    ]
    },
    {
     "word": "authority",
-    "meaning": "①권한, 권력 ②(권한을 가진) 정부 기관, 당국 ③전문가",
-    "pos": "n."
+    "pron": "미[əθɔ́ːrəti, əθɑ́rəti] 영[ɔːθɔ́rəti]",
+    "pos": "n.",
+    "meaning": "n. 1. 권한, 권력  2. (권한을 가진) 정부 기관, 당국  3. 전문가",
+    "tip": "\"[[b]]옷 싸라 티셔츠까지![[/b]] 옷 싸서 당장 나가!\" 하고 재개발 지역 주민들을 내쫓을 수 있는 군청, 시청 등의 [[r]]정부 기관의 권한, 권력[[/r]]",
+    "derivatives": [
+     {
+      "word": "authorize",
+      "meaning": "허가하다, 권한을 부여하다 (← 어(그래) (마음대로) 써라(이즈)!)"
+     },
+     {
+      "word": "authorization",
+      "meaning": "허가, 인가"
+     },
+     {
+      "word": "authorized",
+      "meaning": "공인된, 승인된"
+     },
+     {
+      "word": "unauthorized",
+      "meaning": "승인되지 않은, 불법의"
+     }
+    ],
+    "toeicExpr": [
+     "have the authority to approve/access/hire 승인할/접근할/채용할 권한이 있다",
+     "local/government/health/financial authorities 지방/정부/보건/금융 당국",
+     "a recognized authority on consumer behavior 소비자 행동 분야에서 인정받는 전문가",
+     "authorize a payment/refund/access 결제를/환불을/접근을 승인하다(허가하다)",
+     "be authorized to approve 승인할 권한을 부여받다",
+     "written authorization 서면 승인",
+     "authorized dealer 공인 대리점",
+     "authorized service center 공인된 서비스 센터",
+     "unauthorized reproduction 불법 복제"
+    ],
+    "examVar": [
+     {
+      "en": "The new manager has the ________ to approve business trips and expense reports.",
+      "opt": "(A) authority  (B) author  (C) authorize  (D) authorization",
+      "ans": "(A)",
+      "ko": "새 매니저는 출장과 비용 보고서를 승인할 권한이 있다.",
+      "note": "authority와 authorization을 구분하는 문제가 자주 출제되었다."
+     },
+     {
+      "en": "Ms. Jenkins is an ________ on international trade law and will give a lecture at the conference.",
+      "opt": "(A) authority  (B) authorization  (C) authorize  (D) authoritative",
+      "ans": "(A)",
+      "ko": "Jenkins 씨는 국제 무역법의 전문가이며 회의에서 강의를 할 예정이다.",
+      "note": "authority가 '전문가, 권위자'의 뜻으로도 출제되었다."
+     }
+    ]
    },
    {
     "word": "vehicle",
+    "pron": "[víːikl]",
+    "pos": "n.",
     "meaning": "차량",
-    "pos": "n."
+    "tip": "[[r]]차량[[/r]]이 와서 옆으로 [[b]]비킬[[/b]]",
+    "toeicExpr": [
+     "motor vehicle 자동차  company vehicle 회사 차량"
+    ]
    },
    {
     "word": "soar",
+    "pron": "[sɔːr]",
+    "pos": "v.",
     "meaning": "(물가 등이) 치솟다, 급등하다",
-    "pos": "v."
+    "tip": "미사일을 [[b]]쏘[[/b]]아서 하늘 높이 [[r]]치솟다[[/r]]",
+    "toeicExpr": [
+     "prices/sales/demand soared 가격이/판매량이/수요가 급등했다",
+     "soaring prices/demand 치솟는 물가/수요"
+    ]
    },
    {
     "word": "proper",
+    "pron": "[práːpər]",
+    "pos": "a.",
     "meaning": "적당한, 적절한, 올바른",
-    "pos": "adj."
+    "tip": "남기지 않도록 식판에 [[r]]적당한[[/r]] 양만 [[b]]퍼라 퍼[[/b]]!",
+    "derivatives": [
+     {
+      "word": "properly",
+      "meaning": "적절하게"
+     }
+    ],
+    "toeicExpr": [
+     "proper amount 적당한 양  proper procedures 적절한 절차",
+     "proper maintenance 올바른 유지보수",
+     "function properly 제대로 작동하다  properly trained 적절하게 훈련된"
+    ]
    },
    {
     "word": "measure",
-    "meaning": "①재다, 측정하다 / 측정, 치수 ②조치",
-    "pos": "v./n."
+    "pron": "[méʒər]",
+    "pos": "1. v. n.  2. n.",
+    "meaning": "1. v. 재다, 측정하다  n. 측정, 치수  2. n. 조치",
+    "tip": "① 양복점에서 \"허리를 줄자로 [[b]]매줘[[/b]]\" 즉, 허리 [[r]]치수[[/r]]를 [[r]]측정하다[[/r]]\n② 상처 난 부위를 붕대로 [[b]]매줘[[/b]]! 즉, [[r]]조치[[/r]]를 취하다",
+    "toeicExpr": [
+     "measure the length/distance 길이를/거리를 재다",
+     "measure the performance/effectiveness 성과를/효과를 측정하다",
+     "take measures(=take actions/steps) 조치를 취하다",
+     "safety/security measures 안전/보안 조치",
+     "preventive/emergency measures 예방/긴급 조치"
+    ],
+    "examVar": [
+     {
+      "en": "'take measures (조치를 취하다)' 표현을 물어보는 문제가 자주 출제되었다. 조치를 취할 때는 여러 단계, 여러 가지 조치를 취하기 때문에 복수형을 쓴다.\nThe company decided to take ______ to prevent further data breaches.",
+      "opt": "(A) measure  (B) measurable  (C) measures  (D) measuring",
+      "ans": "(C)",
+      "ko": "그 회사는 추가적인 데이터 유출을 막기 위해 조치를 취하기로 결정했다."
+     }
+    ]
    },
    {
     "word": "obstacle",
+    "pron": "미[ábstəkl] 영[ɔ́bstəkl]",
+    "pos": "n.",
     "meaning": "방해, 장애(물)",
-    "pos": "n."
+    "tip": "축구에서 [[b]]앞서[[/b]] 들어오는 태클은 공격의 [[r]]방해, 장애물[[/r]]",
+    "toeicExpr": [
+     "overcome/remove an obstacle 장애물을 극복하다/제거하다",
+     "obstacle to success 성공의 장애물 (to: ~쪽으로; 성공쪽으로 가는 데 있어 장애물)"
+    ]
    },
    {
     "word": "consume",
-    "meaning": "①(돈·에너지 등을) 쓰다, 소비하다 ②먹다, 마시다",
-    "pos": "v."
+    "pron": "[kənsúːm]",
+    "pos": "v.",
+    "meaning": "v. 1. (돈·에너지 등을) 쓰다, 소비하다  2. 먹다, 마시다",
+    "tip": "먹고 마시는 데 돈을 [[b]]큰[[/b]](크게) [[b]]씀[[/b]], 즉 돈을 [[r]]쓰다, 소비하다, 먹다, 마시다[[/r]]",
+    "derivatives": [
+     {
+      "word": "consumer",
+      "meaning": "소비자"
+     },
+     {
+      "word": "consumption",
+      "meaning": "소비, 섭취"
+     }
+    ],
+    "toeicExpr": [
+     "consume energy/goods/time 에너지를/상품을/시간을 소비하다",
+     "consumer demand 소비자 수요  consumer preference(s) 소비자 선호",
+     "consumer complaints 소비자 불만",
+     "time-consuming process 시간이 오래 걸리는 과정",
+     "energy consumption 에너지 소비",
+     "consume beverages/food 음료를/음식을 섭취하다"
+    ]
    },
    {
     "word": "operate",
-    "meaning": "(회사·기계·시스템 등을) 운영하다, 작동시키다, 작동하다",
-    "pos": "v."
+    "pron": "미[ápərèit] 영[ɔ́pərèit]",
+    "pos": "v.",
+    "meaning": "v. (회사·기계·시스템 등을) 운영하다, 운영되다, 작동시키다, 작동하다",
+    "tip": "\"[[b]]앞[[/b]]에 있는 흙을 [[b]]퍼래이(트)[[/b]](트)([[b]]푸다[[/b]]) 하면서 굴삭기를 [[r]]작동시키다, 운영하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "operation",
+      "meaning": "조종, 경영, 관리, 수술"
+     },
+     {
+      "word": "operational",
+      "meaning": "조작상의, 경영상의, 작동 중인"
+     }
+    ],
+    "toeicExpr": [
+     "operate a business/facility 사업을/시설을 운영하다",
+     "operate around the clock 24시간 운영되다",
+     "operate machinery/equipment 기계를/장비를 작동하다",
+     "in operation 운영 중, 가동 중  out of operation 작동 중단, 운영되지 않는",
+     "business operation 사업 운영  restaurant operations 음식점 운영"
+    ],
+    "examVar": [
+     {
+      "en": "operate가 자동사로 사용되는 문제가 자주 출제되었다.\nMany small businesses cannot continue to operate without additional funding.",
+      "ko": "많은 소규모 기업은 추가 자금 없이 계속 운영될 수 없다."
+     },
+     {
+      "en": "The new automated system is now in operation and will improve overall efficiency.",
+      "ko": "새 자동화 시스템은 현재 운영 중이며 전반적인 효율을 향상시킬 것이다."
+     }
+    ]
    },
    {
     "word": "attorney",
-    "meaning": "변호사",
-    "pos": "n."
+    "pron": "[ətə́:rni]",
+    "pos": "n.",
+    "meaning": "n. 변호사",
+    "tip": "친구가 실수한 것인데 \"그러면 좀 [[b]]어떠니?[[/b]]\"라며 변호하는 [[r]]변호사[[/r]]",
+    "toeicExpr": [
+     "company attorney 회사 소속 변호사",
+     "corporate attorney 기업 변호사",
+     "attorney at law 법률 변호사"
+    ]
    },
    {
     "word": "prosper",
-    "meaning": "번영하다, 번창하다",
-    "pos": "v."
+    "pron": "미[práspər] 영[prɔ́spər]",
+    "pos": "v.",
+    "meaning": "v. 번영하다, 번창하다",
+    "tip": "돈을 [[b]]플러스[[/b]]하여 담고 또 [[b]]퍼[[/b]] 담을 정도로 회사가 [[r]]번영하다, 번창하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "prosperous",
+      "meaning": "번영하는"
+     },
+     {
+      "word": "prosperity",
+      "meaning": "번영"
+     }
+    ],
+    "toeicExpr": [
+     "prosper rapidly/steadily 빠르게/꾸준히 번영하다",
+     "prosperous business 번창하는 사업  prosperous economy 번영하는 경제",
+     "economic prosperity 경제적 번영  national prosperity 국가의 번영"
+    ]
    },
    {
     "word": "contrary",
-    "meaning": "반대의; 정반대",
-    "pos": "adj./n."
+    "pron": "미[kántreri] 영[kɔ́ntrəri]",
+    "pos": "a./n.",
+    "meaning": "a. 반대의  n. 정반대",
+    "tip": "자동차 핸들을 [[r]]반대의[[/r]] 방향으로 [[b]]큰[[/b]](크게) [[b]]틀어리[[/b]]!",
+    "toeicExpr": [
+     "on the contrary 그에 반하여  Many expected sales to drop. On the contrary, they increased. 많은 사람들은 매출이 떨어질 것이라 예상했다. 반대로 오히려 증가했다.",
+     "contrary to ~와는 반대로, ~와 달리  contrary to expectations 예상과는 반대로  contrary to predictions 예측과 달리"
+    ],
+    "examVar": [
+     {
+      "en": "Contrary to popular belief, the new policy actually reduces costs.",
+      "ko": "일반적인 믿음과는 반대로, 새로운 정책은 실제로 비용을 줄인다."
+     }
+    ]
    },
    {
     "word": "decade",
-    "meaning": "10년",
-    "pos": "n."
+    "pron": "[dékeid]",
+    "pos": "n.",
+    "meaning": "n. 10년",
+    "tip": "[[b]][데케이드 → 大 케익도][[/b]] 설립한 지 [[r]]10년[[/r]]이 돼서 [[b]]大케익도[[/b]] 사서 기념하는",
+    "toeicExpr": [
+     "over the past decade 지난 10년 동안  over the last decade 지난 10년간",
+     "for a decade 10년 동안"
+    ]
    },
    {
     "word": "donation",
-    "meaning": "기부, 기증",
-    "pos": "n."
+    "pron": "[dounéiʃən]",
+    "pos": "n.",
+    "meaning": "n. 기부, 기증",
+    "tip": "[[b]]돈을 내이션[[/b]](내서), 즉 [[r]]기부, 기증[[/r]]",
+    "derivatives": [
+     {
+      "word": "donate",
+      "meaning": "기부하다, 기증하다"
+     },
+     {
+      "word": "donor",
+      "meaning": "기증자"
+     }
+    ],
+    "toeicExpr": [
+     "make a donation 기부하다  receive a donation 기부를 받다  donation request 기부 요청  charitable donation 자선 기부",
+     "donate money/funds/goods 돈을/자금을/물품을 기부하다",
+     "corporate donor 기업 기부자  individual donor 개인 기부자  regular donor 정기 기부자"
+    ]
    },
    {
     "word": "emerge",
-    "meaning": "나오다, 나타나다, 떠오르다",
-    "pos": "v."
+    "pron": "[imə́:rdʒ]",
+    "pos": "v.",
+    "meaning": "v. 나오다, 나타나다, 떠오르다",
+    "tip": "\"이게 [[b]]뭐지?![[/b]]\" 무언가가 물속에서 [[r]]나오다, 나타나다[[/r]]",
+    "toeicExpr": [
+     "emerge as a leader 리더로 떠오르다",
+     "emerge as a key competitor 주요 경쟁자로 떠오르다",
+     "emerge from the meeting 회의에서 나오다",
+     "emerge from the crisis 위기에서 벗어나다  newly emerged 새롭게 등장한",
+     "it emerged that ~ ~라는 사실이 드러났다  It emerged that the issue was caused by outdated software. 그 문제가 오래된 소프트웨어 때문에 발생했다는 사실이 밝혀졌다."
+    ]
    },
    {
     "word": "pharmacy",
-    "meaning": "약국",
-    "pos": "n."
+    "pron": "[fá:rməsi]",
+    "pos": "n.",
+    "meaning": "n. 약국",
+    "tip": "팔에 [[b]]못이[[/b]] 박혀 치료약을 구하러 달려간 [[r]]약국[[/r]]",
+    "derivatives": [
+     {
+      "word": "pharmacist",
+      "meaning": "약사"
+     }
+    ],
+    "toeicExpr": [
+     "local pharmacy 동네 약국  hospital pharmacy 병원 약국  run a pharmacy 약국을 운영하다",
+     "pharmacist assistant 약사 보조원"
+    ]
    },
    {
     "word": "candidate",
-    "meaning": "후보자, 지원자",
-    "pos": "n."
+    "pron": "[kǽndidèit]",
+    "pos": "n.",
+    "meaning": "n. 후보자, 지원자",
+    "tip": "예쁜 [[b]]캔디[[/b]]와 [[b]]데이트[[/b]]하려고 길게 줄 서 있는 [[r]]후보자, 지원자[[/r]]",
+    "toeicExpr": [
+     "job candidate 구직 지원자",
+     "qualified candidate 자격을 갖춘 후보자",
+     "candidate for the position 그 직책에 지원한 사람"
+    ]
    },
    {
     "word": "notice",
-    "meaning": "①통지, 공지, 안내문 ②알아차리다, 주목하다; 주목",
-    "pos": "n./v."
+    "pron": "[nóutis]",
+    "pos": "n./v.",
+    "meaning": "1. n. 통지, 공지, 안내문  2. v. 알아차리다, 주목하다  n. 주목",
+    "tip": "[[b]]Know This![[/b]](이것을 알아라!) 하고 사무실 문에 붙여놓은 [[r]]통지, 공지[[/r]]한 것을 쉽게 [[r]]알아차리다, 주목하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "notify",
+      "meaning": "통지하다, 통보하다"
+     },
+     {
+      "word": "notification",
+      "meaning": "통지, 알림"
+     }
+    ],
+    "toeicExpr": [
+     "advance/written notice 사전/서면 통지  cancellation notice 취소 통지",
+     "until further notice 추후 공지가 있을 때까지  notice board 공지판, 게시판",
+     "notify someone of/that ~ …에게 ~을 알리다",
+     "Please notify us of any schedule changes. 일정 변경이 있으면 저희에게 알려 주세요.",
+     "be notified of ~에 대해 통보받다 (of: ~에 관하여)",
+     "Participants will be notified of the results by e-mail. 참가자들은 이메일로 결과를 통보받을 것이다.",
+     "advance notification 사전 통보  written notification 서면 통지",
+     "notice a difference 차이를 알아차리다  hardly notice 거의 알아차리지 못하다",
+     "take notice of ~을 주목하다",
+     "Customers are starting to take notice of the improved quality of our products. 고객들이 우리 제품의 향상된 품질에 주목하기 시작하고 있다."
+    ],
+    "examVar": [
+     {
+      "note": "announce, notify, inform의 차이를 묻는 문제가 출제되었다.\n* notify/inform은 'notify/inform + 사람 + of/about + 내용' 형태로 쓰인다.\n* announce는 사람을 바로 뒤에 목적어로 쓰지 않고 'announce + 내용'",
+      "en": "The CEO will ______ the company's expansion plans at the annual meeting next week.",
+      "opt": "(A) announce  (B) notify  (C) inform  (D) advise",
+      "ans": "(A)",
+      "ko": "CEO는 다음 주 연례 회의에서 회사의 확장 계획을 발표할 것이다."
+     },
+     {
+      "en": "The HR department will ______ all employees of the revised health insurance policy.",
+      "opt": "(A) notify  (B) informed  (C) announce  (D) report",
+      "ans": "(A)",
+      "ko": "인사 부서는 개정된 건강 보험 정책을 모든 직원에게 알릴 것이다."
+     },
+     {
+      "note": "notice는 시험에 자주 출제된다.",
+      "en": "Please give at least two weeks' notice before resigning from the company.",
+      "ko": "회사에서 사직하기 전에 최소 2주 전에 사직 통보를 해 주십시오.\n* give + 기간 + notice → '~만큼의 사전 통보를 하다'"
+     },
+     {
+      "en": "The use of the conference room will not be allowed until further notice.",
+      "ko": "회의실 사용은 추후 통보가 있을 때까지 허용되지 않습니다."
+     }
+    ]
    },
    {
     "word": "divide",
-    "meaning": "나누다, 쪼개다",
-    "pos": "v."
+    "pron": "[diváid]",
+    "pos": "v.",
+    "meaning": "v. 나누다, 쪼개다",
+    "tip": "홍길동이 [[b]]뒤[[/b]]에 있는 [[b]]바위도[[/b]] 둘로 [[r]]나누다, 쪼개다[[/r]]",
+    "toeicExpr": [
+     "divide A into B A를 B로 나누다 (← into: '결과'의 의미로 쓰여 A를 나눈 결과 B가 된다는 의미)",
+     "be divided into ~ ~로 나뉘다",
+     "The report is divided into three sections. 그 보고서는 세 개의 부분으로 나누어져 있다.",
+     "divide the profits 이익을 분배하다",
+     "divide by category 범주별로 나누다"
+    ],
+    "examVar": [
+     {
+      "en": "The participants were divided ______ four small groups for the activity.",
+      "opt": "(A) to  (B) into  (C) by  (D) among",
+      "ans": "(B)",
+      "ko": "참가자들은 활동을 위해 네 개의 작은 그룹으로 나누어졌다."
+     }
+    ]
    },
    {
     "word": "slight",
-    "meaning": "약간의, 경미한",
-    "pos": "adj."
+    "pron": "[slait]",
+    "pos": "a.",
+    "meaning": "a. 약간의, 경미한",
+    "tip": "[[b]]슬[[/b]] [[b]]light[[/b]]하게(가볍게) 했어. 즉, [[r]]약간의, 경미한[[/r]] 양만큼만 마셨어.",
+    "derivatives": [
+     {
+      "word": "slightly",
+      "meaning": "약간, 가볍게"
+     }
+    ],
+    "toeicExpr": [
+     "slight difference 약간의 차이  slight problem 사소한 문제",
+     "slightly better 약간 더 좋은  slightly different 약간 다른",
+     "slightly more expensive 약간 더 비싼"
+    ]
    },
    {
     "word": "launch",
-    "meaning": "①(사업 등을) 시작하다, (제품 등을) 출시하다; 시작, 출시 ②(로켓을) 발사하다, 진수시키다",
-    "pos": "v./n."
+    "pron": "[lɔːntʃ]",
+    "pos": "v./n.",
+    "meaning": "1. v. (사업 등을) 시작하다, (제품 등을) 출시하다  n. 시작, 출시\n2. v. (로켓을) 발사하다, 진수시키다",
+    "tip": "로켓을 [[b]]long[[/b]](길게) 궤적을 그리며 [[b]]치이~[[/b]] [[r]]발사하다[[/r]] 그렇게 전쟁을 [[r]]시작하다, 시작[[/r]]",
+    "toeicExpr": [
+     "launch a product 제품을 출시하다  launch a campaign 캠페인을 시작하다",
+     "launch a service 서비스를 개시하다  launch a project 프로젝트를 시작하다",
+     "product launch 상품 출시",
+     "launch a missile 미사일을 발사하다  launch a ship 배를 진수시키다"
+    ]
    },
    {
     "word": "role",
-    "meaning": "역할, 직무",
-    "pos": "n."
+    "pron": "[roul]",
+    "pos": "n.",
+    "meaning": "n. 역할, 직무",
+    "tip": "[[b]]놀[[/b]] 수 없어요, 팀장으로서 맡은 [[r]]역할[[/r]]이 있어서.",
+    "toeicExpr": [
+     "important role 중요한 역할  key role 핵심 역할  leading role 주도적인 역할",
+     "play a … role in ~ ~에서 …한 역할을 하다  She played a key role in launching the new product. 그녀는 신제품 출시에서 핵심 역할을 했다.",
+     "take on a role 역할을 맡다 (← take on: ~을 맡다, 떠맡다)"
+    ],
+    "examVar": [
+     {
+      "en": "work role '직무 역할'의 뜻으로 자주 출제되었다.",
+      "note": "To apply for the supervisor position, please describe your previous work role.",
+      "ko": "감독직에 지원하려면, 이전 직무 역할을 설명하십시오."
+     },
+     {
+      "en": "play/take on/assume a role – 동사 콜로케이션 문제가 자주 출제되었다.",
+      "note": "The research team will play a key role in developing the new product line.",
+      "ko": "연구팀은 신제품 라인 개발에서 중요한 역할을 할 것이다."
+     },
+     {
+      "en": "The new system will play a critical role in improving workplace efficiency.",
+      "ko": "새 시스템은 직장 효율 향상에 중요한 역할을 할 것이다."
+     }
+    ]
    }
   ]
  },
@@ -839,123 +1686,510 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "charge",
-    "meaning": "①요금, 청구하다 ②책임 ③고소, 비난, 고소하다, 비난하다",
-    "pos": "n./v."
+    "sup": "1",
+    "pron": "[tʃɑːrdʒ]",
+    "pos": "n./v.",
+    "meaning": "1. n. 요금, 청구하다  2. n. 책임  3. n. 고소, 비난  v. 고소하다, 비난하다",
+    "tip": "사람을 발로 [[b]]차지[[/b]], 그래서 폭행죄로 [[r]]고소하다, 비난하다[[/r]], 또한 치료비 [[r]]요금[[/r]]을 청구하고 [[r]]책임[[/r]] 지우다",
+    "toeicExpr": [
+     "service charge 봉사료, 팁(tip)  extra charge 추가요금  free of charge 공짜로, 무료로",
+     "be charged for ~에 대해 요금이 청구되다 (← for: ~에 대하여)  Customers will not be charged for shipping on orders over $50. 50달러 이상의 주문에는 배송 요금이 청구되지 않습니다.",
+     "be in charge of ~을 담당하다, 책임지다 (← ~의 책임 속에 있다)  Ms. Lee is in charge of the marketing team. Lee 씨는 마케팅 팀을 담당하고 있습니다.",
+     "take charge of ~을 떠맡다, 책임지다 (← ~의 책임을 취하다)  He will take charge of the project next week. 그는 다음 주에 그 프로젝트를 맡게 될 것이다.",
+     "person in charge 담당자, 책임자  Please contact the person in charge for details. 자세한 사항은 담당자에게 문의하세요.",
+     "be charged with ~로 비난받다, 고소당하다 (← ~을 가지고(with) 비난받다)  The company was charged with discrimination. 그 회사는 차별로 비난을 받았다."
+    ],
+    "examVar": [
+     {
+      "en": "Guests will not be ______ for parking during their stay at the hotel.",
+      "opt": "(A) cost  (B) charged  (C) priced  (D) spent",
+      "ans": "(B)",
+      "ko": "투숙객은 호텔에 머무는 동안 주차 요금이 부과되지 않습니다."
+     },
+     {
+      "en": "Mr. Han will be in charge of arranging the annual seminar.",
+      "ko": "Han 씨가 연례 세미나를 준비하는 일을 맡게 될 것이다."
+     }
+    ]
    },
    {
     "word": "charge",
-    "meaning": "①카드 결제, 카드로 결제하다 ②충전하다",
-    "pos": "n./v."
+    "sup": "2",
+    "pron": "[tʃɑːrdʒ]",
+    "pos": "n./v.",
+    "meaning": "1. n. 카드 결제  v. 카드로 결제하다  2. v. 충전하다",
+    "tip": "① 저녁은 내 [[b]]차지[[/b]]야! 하며 [[r]]카드 결제[[/r]]를 하다\n② 핸드폰 배터리 칸이 언제 다 [[b]]차지[[/b]]? 즉, [[r]]충전하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "charger",
+      "meaning": "충전기"
+     }
+    ],
+    "toeicExpr": [
+     "Cash or charge? 현금으로 계산하시나요? 아니면 신용카드로 계산하시나요?  Please charge it. 카드 결제 주세요.  Can I charge this? 이거 카드로 결제해도 되나요?",
+     "charge a phone/battery 휴대폰을/배터리를 충전하다",
+     "fully charged 완전히 충전된",
+     "phone charger 휴대폰 충전기  wireless charger 무선 충전기  portable charger 휴대용 충전기"
+    ]
    },
    {
     "word": "beverage",
+    "pron": "[bévəridʒ]",
+    "pos": "n.",
     "meaning": "음료, 마실 것",
-    "pos": "n."
+    "tip": "탄산 [[r]]음료[[/r]]를 너무 많이 마시면 [[b]]배[[/b]]를 [[b]]버리지[[/b]]!",
+    "toeicExpr": [
+     "alcoholic beverage 알코올 음료  hot beverage 뜨거운 음료"
+    ]
    },
    {
     "word": "rapid",
+    "pron": "[ræpid]",
+    "pos": "a.",
     "meaning": "빠른, 신속한",
-    "pos": "adj."
+    "tip": "\"내 [[b]]피두[[/b]] 사용해!\" 하며 수혈이 시급한 환자에게 달려간 [[r]]빠른, 신속한[[/r]] 속도",
+    "derivatives": [
+     {
+      "word": "rapidly",
+      "meaning": "빠르게"
+     }
+    ],
+    "toeicExpr": [
+     "rapid increase 빠른 증가",
+     "rapid growth/response 빠른 성장/응답",
+     "rapidly expand 빠르게 확장하다  spread rapidly 빠르게 퍼지다"
+    ]
    },
    {
     "word": "coverage",
-    "meaning": "①(신문·TV의) 보도 ②보장 범위, 적용 범위",
-    "pos": "n."
+    "pron": "[kávəridʒ]",
+    "pos": "n.",
+    "meaning": "1. (신문ㆍTV의) 보도  2. 보장 범위, 적용 범위",
+    "tip": "① TV를 [[b]]꺼버리지[[/b]], 즉 보기 싫은 뉴스에 대한 [[r]]보도[[/r]]\n② 내가 [[b]]커버[[/b]]할 수 있는 [[r]]범위[[/r]]",
+    "derivatives": [
+     {
+      "word": "cover",
+      "meaning": "1. 덮개: 덮다  2. 포함하다  3. 보도하다, 취재하다, 다루다  4. 커버해주다, 대신하다, 비용을 부담하다  5. 보험으로 보장하다"
+     }
+    ],
+    "toeicExpr": [
+     "media coverage 언론 보도  news coverage 뉴스 보도",
+     "insurance coverage 보험 보장 범위  full coverage 전면 보장",
+     "cover the cost 비용을 포함하다  cover all expenses 모든 경비를 포함하다  Meals are not covered. 식사는 제공되지 않는다.",
+     "cover a story 기사를 취재하다  cover the news 뉴스를 보도하다  cover a topic 주제를 다루다",
+     "cover travel costs 여행 경비를 부담하다  cover accommodation fees 숙박비를 부담하다  cover a shift 근무를 대신하다  cover for an absent colleague 결근한 동료를 대신하다",
+     "be covered by insurance 보험 적용을 받다"
+    ],
+    "examVar": [
+     {
+      "note": "1. cover가 '보도하다, 취재하다, 다루다'라는 의미로 쓰이는 문제가 자주 출제되었다.",
+      "en": "Several reporters were assigned to cover the international summit held in Geneva.",
+      "ko": "여러 기자들이 제네바에서 열린 국제 정상 회담을 보도하기 위해 배정되었다."
+     },
+     {
+      "note": "2. cover가 '비용을 부담하다, 대신하다'의 의미로 쓰이는 문제가 자주 출제되었다.",
+      "en": "The company will cover all travel expenses for employees attending the conference.",
+      "ko": "회사는 회의에 참석하는 직원들의 모든 출장 비용을 부담할 것이다."
+     }
+    ]
    },
    {
     "word": "collect",
+    "pron": "[kəlékt]",
+    "pos": "v.",
     "meaning": "모으다, 수집하다",
-    "pos": "v."
+    "tip": "[[b]]걸레[[/b]] [[b]]two[[/b]](2)개로 먼지를 한 곳에 [[r]]모으다, 수집하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "collection",
+      "meaning": "수집, 수집물, 수금, 수거"
+     }
+    ],
+    "toeicExpr": [
+     "collect data 데이터를 수집하다  collect donations 기부금을 모으다",
+     "fund collection campaign 기금 모금 캠페인  garbage collection 쓰레기 수거"
+    ]
    },
    {
     "word": "purchase",
-    "meaning": "사다, 구입하다; 구입",
-    "pos": "v./n."
+    "pron": "[pə́:rtʃəs]",
+    "pos": "v.",
+    "meaning": "사다, 구입하다  n. 구입",
+    "tip": "시장 바닥에 좌판을 [[b]]펼쳤수[[/b]], 그러자 사람들이 [[r]]사다, 구입하다[[/r]]",
+    "toeicExpr": [
+     "purchase a new computer 새로운 컴퓨터를 구매하다  purchase date 구매한 날짜  bulk purchase 대량 구매  within 3 days of purchase 구입일로부터 3일 이내에"
+    ]
    },
    {
     "word": "duty",
-    "meaning": "①의무, 업무 ②세금",
-    "pos": "n."
+    "pron": "[djú:ti]",
+    "pos": "n.",
+    "meaning": "1. 의무, 업무  2. 세금",
+    "tip": "① [[b]]둘이[[/b]서 이거 다 해놔! 즉, 두 사람의 [[r]]의무, 업무[[/r]]\n② 국민의 [[r]]의무[[/r]] 중 하나인 [[r]]세금[[/r]]",
+    "toeicExpr": [
+     "one's primary duty ~의 주요 업무  job duties 직무, 담당 업무  assigned duties 배정된 업무  off duty 비번의  on duty 당번인, 근무 중인 (← on: 계속 ~중인)",
+     "duty-free 면세의  duty-free shop 면세점"
+    ]
    },
    {
     "word": "deserve",
+    "pron": "[dizə́:rv]",
+    "pos": "v.",
     "meaning": "~할 만하다, ~을 받을 만하다",
-    "pos": "v."
+    "tip": "그 나쁜 놈이 결국 [[b]]디저부[[/b]]렸어, 디질만 했지. [[r]]~할 만하다, 천벌을 받을 만하다[[/r]]",
+    "toeicExpr": [
+     "deserve recognition 인정을 받을 가치가 있다",
+     "deserve attention 주목받을 만하다",
+     "deserve consideration 고려될 가치가 있다",
+     "deserve credit for the achievement 그 성과에 대해 칭찬받을 만하다",
+     "deserve to be promoted 승진할 자격이 있다",
+     "deserve to be rewarded 보상받아야 한다"
+    ],
+    "examVar": [
+     {
+      "note": "deserve(~할 만하다, ~을 받을 만하다)는 타동사로 뒤에 전치사 없이 바로 목적어를 취한다.",
+      "en": "The proposal deserves careful reconsideration before it is finalized.",
+      "ko": "그 제안서는 최종 확정되기 전에 신중한 재검토를 받을 가치가 있다."
+     }
+    ]
    },
    {
     "word": "occupy",
+    "pron": "미[ɑkjupài] 영[ɔ́kjupài]",
+    "pos": "v.",
     "meaning": "차지하다, 맡다",
-    "pos": "v."
+    "tip": "[[b]]아쿠! 파이[[/b]]를 동생이 벌써 [[r]]차지하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "occupant",
+      "meaning": "점유자, 거주자 (-ant, -ent는 '~사람, ~것'을 의미하는 어미)"
+     },
+     {
+      "word": "occupancy",
+      "meaning": "(건물·토지·방 등의) 점유, 사용, 이용률"
+     },
+     {
+      "word": "occupied",
+      "meaning": "1. (방 등이) 사용 중인 (← 방이 누구에 의해 차지된) 2. 바쁜 (← 사람이 어떤 일에 의해 점령된 상태인)"
+     }
+    ],
+    "toeicExpr": [
+     "occupy a position 직책을 맡다  occupy a seat 자리를 차지하다",
+     "building/apartment/room occupant 건물/아파트/방 거주자",
+     "seat occupant 좌석 이용자, 승객",
+     "hotel occupancy 호텔 객실 이용률  building occupancy 건물 사용(점유)",
+     "room occupancy 객실 사용(점유)  occupancy rate 점유율, 이용률",
+     "maximum occupancy 최대 수용 인원",
+     "be fully occupied 꽉 차다, 바쁘다  occupied room 사용 중인 방",
+     "occupied seat 사용 중인 좌석",
+     "The hotel was fully occupied during the holiday season. 그 호텔은 휴가철 동안 완전히 만실이었습니다.",
+     "be occupied with ~로 바쁘다",
+     "He is occupied with customer inquiries this morning. 그는 오늘 아침 고객 문의로 바쁘다."
+    ],
+    "examVar": [
+     {
+      "en": "1. The previous occupant of the apartment left several pieces of furniture behind.",
+      "ko": "그 아파트의 이전 거주자는 가구 몇 개를 두고 떠났다."
+     },
+     {
+      "en": "2. The manager is currently occupied with preparing the quarterly performance report.",
+      "ko": "그 관리자는 현재 분기 실적 보고서를 준비하느라 바쁘다."
+     }
+    ]
    },
    {
     "word": "occupation",
-    "meaning": "1. 직업 2. 점유, 점령",
-    "pos": "n."
+    "pron": "미[ɑkjupéiʃən] 영[ɔ́kjupéiʃən]",
+    "pos": "n.",
+    "meaning": "1. 직업  2. 점유, 점령",
+    "tip": "① 나의 [[r]]직업[[/r]]이 나에게 [[b]]아쿠! pay[[/b]](봉급)을 [[b]]주셔[[/b]].\n② occupy(점령하다)의 명사형",
+    "toeicExpr": [
+     "current occupation 현재 직업  occupation field 직업란(항목)",
+     "occupation in the building 건물 내 점유  duration of occupation 점유 기간"
+    ],
+    "examVar": [
+     {
+      "en": "occupation, occupant, occupancy를 구분하는 문제가 자주 출제되었다.",
+      "ko": "Please indicate your name, address, and ______ on the application form.",
+      "opt": "(A) occupation  (B) occupancy  (C) occupant  (D) occupying",
+      "ans": "(A)",
+      "note": "신청서에 이름, 주소, 직업을 기입해 주세요."
+     }
+    ]
    },
    {
     "word": "register",
-    "meaning": "(v.) 등록하다 (n.) 등록부",
-    "pos": "v./n."
+    "pron": "[rédʒistər]",
+    "pos": "v.",
+    "meaning": "v. 등록하다  n. 등록부",
+    "tip": "지원서를 [[b]]내지[[/b]], 신인 [[b]]스타[[/b]] 오디션에. 즉, [[r]]등록하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "registration",
+      "meaning": "등록"
+     }
+    ],
+    "toeicExpr": [
+     "register for a membership/course 멤버십에/강좌에 등록하다",
+     "register online 온라인 등록하다",
+     "registered participants 등록된 참가자",
+     "registration form/process 등록 양식/절차",
+     "advance registration 사전 등록",
+     "registration desk 등록 데스크, 접수처"
+    ]
    },
    {
     "word": "dedicate",
+    "pron": "[dédikèit]",
+    "pos": "v.",
     "meaning": "헌신하다, 전념하다",
-    "pos": "v."
+    "tip": "식구들을 먹여살리기 위해 [[b]]daddy[[/b]](아빠)가 탄광에서 석탄을 [[b]]케이트[[/b]](캐다), 즉 식구들을 위해 [[r]]헌신하다, 전념하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "dedicated",
+      "meaning": "1. 헌신적인  2. 전용의, 전담의 (← ~에게만 전념된)"
+     },
+     {
+      "word": "dedication",
+      "meaning": "헌신, 전념"
+     }
+    ],
+    "toeicExpr": [
+     "dedicate A to B A를 B에 바치다",
+     "dedicate time to improving customer service 고객 서비스 개선에 시간을 바치다",
+     "dedicate efforts to cost reduction 비용 절감에 노력을 기울이다",
+     "dedicated service 전담 서비스  dedicated line 전용 회선",
+     "dedication to the company 회사에 대한 헌신",
+     "professional dedication 직업적 헌신",
+     "be dedicated to + 명사/동명사: ~에 전념하다 (← to: ~쪽으로)",
+     "The staff is dedicated to providing excellent service. 직원들은 훌륭한 서비스를 제공하는 데 전념하고 있다."
+    ],
+    "examVar": [
+     {
+      "en": "1. The team is fully dedicated to improving customer satisfaction.",
+      "ko": "그 팀은 고객 만족도 향상에 전념하고 있다."
+     },
+     {
+      "en": "2. 'be dedicated to A (A에 전념하다)'에서 A에 동명사/명사가 온다는 점을 묻는 문제가 자주 출제되었다.\nThe team is dedicated to ______ new ways to improve productivity.",
+      "opt": "(A) develop  (B) development  (C) developing  (D) developed",
+      "ans": "(C)",
+      "ko": "그 팀은 생산성을 향상시킬 새로운 방법을 개발하는 데 전념하고 있다."
+     }
+    ]
    },
    {
     "word": "fundamental",
+    "pron": "[fʌndəméntl]",
+    "pos": "a.",
     "meaning": "기본적인, 근본적인, 핵심적인",
-    "pos": "adj."
+    "tip": "집을 짓기 위해 땅을 [[b]]판다[[/b]] 그리고 철근으로 [[b]]맨[[/b]] 틀을 만든다, 이것이 [[r]]기본적인, 핵심적인[[/r]] 작업",
+    "derivatives": [
+     {
+      "word": "fundamentally",
+      "meaning": "기본적으로, 근본적으로"
+     }
+    ],
+    "toeicExpr": [
+     "fundamental principles/knowledge 기본 원칙/지식",
+     "fundamental change/problem 근본적 변화/문제",
+     "fundamentally different 근본적으로 다른"
+    ]
    },
    {
     "word": "further",
-    "meaning": "(adj.) 그 이상의, 추가적인 (adv.) 더욱",
-    "pos": "adj./adv."
+    "pron": "[fə́:rðər]",
+    "pos": "a.",
+    "meaning": "a. 그 이상의, 추가적인  ad. 더욱",
+    "tip": "① [[r]]그 이상으로, 더욱[[/r]] 팔을 쭉 더 [[b]]뻗어[[/b]]\n② [[b]]far[[/b]](멀리)의 비교급",
+    "toeicExpr": [
+     "further information 추가 정보  further details 더 자세한 사항들",
+     "further notice 추후 통보  until further notice 추후 공지가 있을 때까지"
+    ],
+    "examVar": [
+     {
+      "en": "The management requested further information before approving the budget proposal.",
+      "ko": "경영진은 예산안을 승인하기 전에 추가 정보를 요청했다."
+     }
+    ]
    },
    {
     "word": "dish",
-    "meaning": "1. 접시 2. 요리, 음식",
-    "pos": "n."
+    "pron": "[diʃ]",
+    "pos": "n.",
+    "meaning": "1. 접시  2. 요리, 음식",
+    "tip": "[[b]]dish[[/b]](접시) 위에 있는 [[r]]요리, 음식[[/r]]",
+    "toeicExpr": [
+     "main dish 주 요리  side dish 반찬  signature dish 대표 요리"
+    ]
    },
    {
     "word": "precise",
+    "pron": "[prisáis]",
+    "pos": "a.",
     "meaning": "정확한, 정밀한",
-    "pos": "adj."
+    "tip": "신축성 있는 [[b]]free 사이즈[[/b]]의 장갑은 누구에게나 [[r]]정확한, 정밀한[[/r]] 사이즈",
+    "derivatives": [
+     {
+      "word": "precisely",
+      "meaning": "정확하게, 정밀하게"
+     }
+    ],
+    "toeicExpr": [
+     "precise measurement 정확한 측정  precise location 정확한 위치",
+     "precisely regulate the temperature 온도를 정확하게 조절하다",
+     "calculate the city's traffic volume precisely 도시의 교통량을 정확하게 계산하다"
+    ]
    },
    {
     "word": "manage",
-    "meaning": "1. 경영하다, 관리하다 2. 간신히(가까스로) 해내다",
-    "pos": "v."
+    "pron": "[mǽnidʒ]",
+    "pos": "v.",
+    "meaning": "1. 경영하다, 관리하다  2. 간신히(가까스로) 해내다",
+    "tip": "[[b]]매니저(manager)[[/b]]가 식당을 [[r]]관리하다[[/r]], 종업원도 없이 [[r]]간신히 해내다[[/r]]",
+    "derivatives": [
+     {
+      "word": "management",
+      "meaning": "관리, 운영"
+     }
+    ],
+    "toeicExpr": [
+     "manage a team 팀을 관리하다  manage finances 재정을 관리하다",
+     "well-managed 잘 관리된",
+     "management skills 관리 능력  project management 프로젝트 관리",
+     "manage to do 어떻게든 ~해내다, 간신히 ~해내다",
+     "manage to complete the task 과업을 가까스로 완료하다",
+     "manage to meet the deadline 마감을 겨우 맞추다",
+     "Despite the delay, we managed to finish the project on time. 지연에도 불구하고 우리는 프로젝트를 제시간에 끝낼 수 있었다."
+    ],
+    "examVar": [
+     {
+      "en": "Despite the tight schedule, the team was able to manage to submit the proposal before the deadline.",
+      "ko": "빠듯한 일정에도 불구하고 팀은 마감 전에 제안서를 제출하는 데 어떻게든 성공했다."
+     }
+    ]
    },
    {
     "word": "election",
+    "pron": "[ilékʃən]",
+    "pos": "n.",
     "meaning": "선거",
-    "pos": "n."
+    "tip": "[[r]]선거[[/r]]에서 1번 후보에 표를 써서 [[b]]냈션[[/b]](냈어).",
+    "derivatives": [
+     {
+      "word": "elect",
+      "meaning": "선출하다, 선택하다"
+     }
+    ],
+    "toeicExpr": [
+     "board election 이사회 선거  hold an election 선거를 실시하다",
+     "election campaign 선거 운동  elect a representative 대표를 선출하다"
+    ]
    },
    {
     "word": "currency",
+    "pron": "[kə́:rənsi]",
+    "pos": "n.",
     "meaning": "통화, 화폐",
-    "pos": "n."
+    "tip": "원시시대에는 [[b]]커런[[/b]](커다란) 과일의 [[b]]씨[[/b]]가 [[r]]통화, 화폐[[/r]]",
+    "toeicExpr": [
+     "foreign currency 외화  local currency 현지 통화",
+     "currency exchange 환전  currency exchange rate 환율"
+    ]
    },
    {
     "word": "attend",
-    "meaning": "1. 출석하다, 참석하다 2. 시중들다, 간호하다",
-    "pos": "v."
+    "pron": "[əténd]",
+    "pos": "v.",
+    "meaning": "v. 1. 출석하다, 참석하다  2. 시중들다, 간호하다",
+    "tip": "[[b]]어! ten[[/b]](10)명이나 되는 하인들이 가마를 [[b]]드[[/b]](들어) [[r]]시중들다[[/r]]",
+    "derivatives": [
+     {
+      "word": "attendance",
+      "meaning": "출석, 참석"
+     },
+     {
+      "word": "attendee",
+      "meaning": "참석자 (← -ee: '~하는 사람'을 뜻하는 접미어 ◎ employee 종업원)"
+     },
+     {
+      "word": "attendant",
+      "meaning": "보조원, 안내원"
+     }
+    ],
+    "toeicExpr": [
+     "attend a conference/ceremony 회의에/예식에 참석하다",
+     "attend a patient 환자를 간호하다",
+     "attend to a customer 고객을 응대하다",
+     "mandatory attendance 의무적인(필수적인) 참여",
+     "in full attendance 만석인, 사람들이 가득 찬",
+     "conference/seminar/workshop attendee 회의/세미나/워크샵 참석자",
+     "flight attendant 항공 승무원",
+     "parking attendant 주차 요원",
+     "room attendant 객실 관리 직원(호텔)"
+    ],
+    "examVar": [
+     {
+      "en": "attendee / attendant / attendance / attention의 의미 및 형태 혼동 문제가 자주 출제되었다.",
+      "opt": "The hotel ______ will assist guests with their luggage at the entrance.\n(A) attendant  (B) attendee  (C) attendance  (D) attention",
+      "ans": "(A)",
+      "ko": "호텔 안내원이 입구에서 손님들의 짐을 도와줄 것이다."
+     }
+    ]
    },
    {
     "word": "fuel",
-    "meaning": "연료, 에너지",
-    "pos": "n."
+    "pron": "[fjúːəl]",
+    "pos": "n.",
+    "meaning": "n. 연료, 에너지",
+    "tip": "[[r]]연료, 에너지[[/r]]인 석탄이나 석유에 불을 [[b]]피울[[/b]]",
+    "toeicExpr": [
+     "fuel consumption/efficiency/cost 연료 소비량/효율/비",
+     "fossil fuel 화석 연료"
+    ]
    },
    {
     "word": "threat",
-    "meaning": "(n.) 위협, 협박 (v.) 위협하다",
-    "pos": "n./v."
+    "pron": "[θret]",
+    "pos": "n./v.",
+    "meaning": "n. 위협, 협박  v. 위협하다",
+    "tip": "[[b]]쓰렛[[/b]]빠(슬리퍼)로 때리려 하며 [[r]]위협, 협박[[/r]]",
+    "toeicExpr": [
+     "potential threat 잠재적 위협",
+     "security threat 보안 위협",
+     "environmental threat 환경적 위협"
+    ]
    },
    {
     "word": "highly",
-    "meaning": "매우, 몹시",
-    "pos": "adv."
+    "pron": "[háili]",
+    "pos": "ad.",
+    "meaning": "ad. 매우, 몹시",
+    "tip": "[[b]]high[[/b]](높은) + [[b]]ly[[/b]](부·어) (어떠한 정도가) 높게, 즉 [[r]]매우, 몹시[[/r]]",
+    "toeicExpr": [
+     "highly qualified 고도의 자격을 갖춘",
+     "highly recommended 매우 추천되는",
+     "highly skilled/trained 고도로 숙련된/훈련된",
+     "highly efffective 매우 효과적인",
+     "highly competitive 경쟁이 매우 치열한"
+    ],
+    "examVar": [
+     {
+      "en": "high(높은, 높게) vs highy(매우, 몹시)",
+      "note": "예1, 예2 비교 문제"
+     },
+     {
+      "en": "The CEO is a ______ respected leader in the international business community.",
+      "opt": "(A) high  (B) highly  (C) height  (D) highest",
+      "ans": "(B)",
+      "ko": "그 CEO는 국제 비즈니스계에서 매우 존경받는 지도자이다."
+     },
+     {
+      "en": "The workers stacked the boxes ______ on the storage shelves.",
+      "opt": "(A) high  (B) highly  (C) height  (D) higher",
+      "ans": "(A)",
+      "ko": "작업자들은 상자들을 보관 선반 위에 높게 쌓았다."
+     }
+    ]
    }
   ]
  },
@@ -965,123 +2199,641 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "appropriate",
+    "pron": "[əpróupriət]",
+    "pos": "a.",
     "meaning": "적당한, 적절한",
-    "pos": "adj."
+    "tip": "미역국 끓일 때는 소금을 [[b]]5프로[[/b]]만 [[b]]뿌리엇[[/b]]!(뿌려!), 즉 5프로가 [[r]]적당한, 적절한[[/r]]",
+    "derivatives": [
+     {
+      "word": "appropriately",
+      "meaning": "적당히, 적절히"
+     },
+     {
+      "word": "inappropriate",
+      "meaning": "부적당한, 부적절한"
+     }
+    ],
+    "toeicExpr": [
+     "appropriate measures/actions/dress 적절한 조치/조치/복장",
+     "dress appropriately 적절히 옷을 입다",
+     "function appropriately 제대로 작동하다",
+     "inappropriate behavior/comment 부적절한 행동/발언"
+    ]
    },
    {
     "word": "classify",
+    "pron": "[klǽsəfài]",
+    "pos": "v.",
     "meaning": "분류하다",
-    "pos": "v."
+    "tip": "[[b]]class[[/b]](학급, 계급)별로 학생들을 [[r]]분류하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "classification",
+      "meaning": "분류"
+     },
+     {
+      "word": "classified",
+      "meaning": "1. 분류된  2. 기밀의 (← 따로 분류하여 숨김)"
+     }
+    ],
+    "toeicExpr": [
+     "classify A as B A를 B로 분류하다 (형용사, 성질, 용도에는 as: ~로서)",
+     "be classified as confidential 기밀로 분류되다",
+     "be classified as hazardous 위험물로 분류되다",
+     "classify A by B A를 B에 따라 분류하다 (분류 기준에는 by: ~에 의하여)",
+     "classify products by category 제품을 항목별로 나누다",
+     "classify documents by importance 문서를 중요도별로 분류하다",
+     "classify A into B A를 분류하여 B가 되게 하다 (그룹으로 나누어질 때는 into: 결과)",
+     "classify products into three categories 제품을 세 개의 항목으로 분류하다",
+     "classify applicants into two groups 지원자를 두 그룹으로 나누다",
+     "classified information/documents/materials 기밀 정보/문서/자료",
+     "classification system/process 분류 시스템/절차"
+    ],
+    "examVar": [
+     {
+      "note": "classify와 함께 쓰이는 전치사 구분 문제가 자주 출제되었다."
+     },
+     {
+      "en": "The material is classified as hazardous waste.",
+      "ko": "그 물질은 위험 폐기물로 분류된다."
+     },
+     {
+      "en": "The files were classified into three groups.",
+      "ko": "그 파일들은 세 개의 그룹으로 분류되었다."
+     }
+    ]
    },
    {
     "word": "apply",
+    "sup": "1",
+    "pron": "[əplái]",
+    "pos": "v.",
     "meaning": "적용하다, 적용되다",
-    "pos": "v."
+    "tip": "\"방정식을 적용해서 [[b]]어[[/b]], 문제를 [[b]]풀라이[[/b]]!\" 즉, 방정식을 [[r]]적용하다, 적용되다[[/r]]",
+    "derivatives": [
+     {
+      "word": "applicable",
+      "meaning": "적용할 수 있는, 적용될 수 있는(들어맞는)"
+     }
+    ],
+    "toeicExpr": [
+     "apply a rule/discount 규칙을/할인을 적용하다",
+     "apply to all employees 모든 직원에게 적용되다",
+     "apply to this case 이 경우에 적용되다",
+     "applicable law/regulations 적용 가능한 법규/규정",
+     "applicable sales tax 적용할 수 있는(해당사항에 맞는) 물품 판매세",
+     "if applicable 해당되는 경우에 (← 적용할 수 있다면)",
+     "not applicable (N/A) 해당 없음 (← 적용할 수 없는)"
+    ],
+    "examVar": [
+     {
+      "en": "1. Please complete all sections of the form, leaving blank those that are not applicable.",
+      "ko": "해당되지 않는 항목은 비워 두고, 양식의 모든 항목을 작성해 주십시오."
+     },
+     {
+      "note": "2. applicable과 used의 사용 차이를 묻는 문제가 출제되었다.",
+      "en": "The new safety regulations are only ______ to construction companies.",
+      "opt": "applicable (O)  used (X)",
+      "ko": "새로운 안전 규정은 건설 회사에만 적용된다.",
+      "note2": "빈칸에 used가 들어가면, <be used to + 명사>가 되어 '~에 익숙해지다'라는 의미가 된다. 굳이 used가 답이 되려면 뒤의 to를 장소의 in으로 바꿔야 한다."
+     }
+    ]
    },
    {
     "word": "apply",
+    "sup": "2",
+    "pron": "[əplái]",
+    "pos": "v.",
     "meaning": "지원하다, 신청하다",
-    "pos": "v."
+    "tip": "[[b]]어, fly[[/b]](날고 싶습니다)라고 면접에서 말하며 공군에 [[r]]지원하다, 신청하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "application",
+      "meaning": "1. 적용, 응용  2. 지원, 지원서"
+     },
+     {
+      "word": "applicant",
+      "meaning": "지원자, 신청자 (← -ant, -ent: ~사람, ~것)"
+     }
+    ],
+    "toeicExpr": [
+     "apply online/by email 온라인으로/이메일로 지원하다",
+     "* apply for + 직책/기회: ~에 지원하다, ~을 신청하다 (← for: ~을 위해, ~에 대해)",
+     "* apply to + 기관/대상: ~에 지원하다, ~에 적용하다 (← to: ~쪽으로, ~에)",
+     "apply for a job 일자리에 지원하다",
+     "apply for a visa 비자를 신청하다",
+     "apply to a university 대학에 지원하다",
+     "apply to a company 회사에 지원하다",
+     "application form 신청서, 지원서   job application 구직 지원서",
+     "application process 지원 절차   loan application 대출 신청",
+     "job applicant 구직 지원자",
+     "applicant for a position 직책 지원자"
+    ],
+    "examVar": [
+     {
+      "note": "1. applicant, application, appliance(장치, 전기장치)를 구별하는 문제가 자주 출제되었다.",
+      "en": "All ______ must submit their resumes by next Friday.",
+      "opt": "(A) applicants  (B) applications  (C) appliances  (D) applies",
+      "ko": "모든 지원자들은 다음 주 금요일까지 이력서를 제출해야 한다.",
+      "ans": "(A)"
+     },
+     {
+      "note": "2. apply와 함께 쓰는 전치사 구분 문제가 출제되었다.",
+      "en": "More than 300 people have decided to apply for the internship program this year.",
+      "ko": "올해 300명 이상의 사람들이 그 인턴십 프로그램에 지원하기로 결정했다."
+     },
+     {
+      "en": "The new safety rules will apply to all workers at the construction site.",
+      "ko": "새로운 안전 규정은 건설 현장의 모든 근로자들에게 적용될 것이다."
+     }
+    ]
    },
    {
     "word": "decorate",
-    "meaning": "장식하다, 꾸미다",
-    "pos": "v."
+    "pron": "[dékərèit]",
+    "pos": "v.",
+    "meaning": "v. 장식하다, 꾸미다",
+    "tip": "아프리카 원주민이 [[b]]大(큰) 코[[/b]]를 뼈 조각 등으로 [[r]]장식하다, 꾸미다[[/r]]",
+    "derivatives": [
+     {
+      "word": "decoration",
+      "meaning": "장식"
+     }
+    ],
+    "toeicExpr": [
+     "decorate the cake with a cream 크림으로 케이크를 장식하다",
+     "be beautifully decorated 아름답게 장식되다",
+     "office decoration 사무실 장식",
+     "interior decoration 실내 장식, 인테리어"
+    ]
    },
    {
     "word": "will",
-    "meaning": "의지, 의지력",
-    "pos": "n."
+    "pron": "[wil]",
+    "pos": "n.",
+    "meaning": "n. 의지, 의지력",
+    "tip": "[[b]]will[[/b]](미래에 ~할 것이다), 즉 뭘 하겠다는 [[r]]의지[[/r]]",
+    "derivatives": [
+     {
+      "word": "willingly",
+      "meaning": "기꺼이, 자발적으로 (← 의지를 가지고)"
+     }
+    ],
+    "toeicExpr": [
+     "overcome obstacles through strength of will 의지로 어려움을 극복하다",
+     "be willing to do 기꺼이 ~하다",
+     "be willing to accept the offer 기꺼이 그 제안을 받아들이다",
+     "be willing to provide additional information 기꺼이 추가 정보를 제공하다"
+    ],
+    "examVar": [
+     {
+      "en": "The supplier was willing to offer a discount in order to secure a long-term contract.",
+      "ko": "그 공급업체는 장기 계약을 확보하기 위해 할인을 기꺼이 제공할 의사가 있었다."
+     }
+    ]
    },
    {
     "word": "pursue",
-    "meaning": "뒤쫓다, 추구하다",
-    "pos": "v."
+    "pron": "[pərsúː]",
+    "pos": "v.",
+    "meaning": "v. 뒤쫓다, 추구하다",
+    "tip": "로켓 주먹 [[b]]팔이 슈우~[[/b]] 하고 적을 [[r]]뒤쫓다[[/r]]",
+    "derivatives": [
+     {
+      "word": "pursuit",
+      "meaning": "추구, 추적"
+     }
+    ],
+    "toeicExpr": [
+     "pursue a new career 새로운 직업을 추구하다",
+     "pursue a goal 목표를 추구하다",
+     "pursuit of happiness/success 행복/성공 추구",
+     "career pursuits 직업적 추구"
+    ]
    },
    {
     "word": "evidence",
-    "meaning": "증거",
-    "pos": "n."
+    "pron": "[évidəns]",
+    "pos": "n.",
+    "meaning": "n. 증거",
+    "tip": "비싼 술집에서 쓴 신용카드 영수증을 시어머니가 며느리에게 보이며 \"[[r]]애비가 돈을 쓴 증거[[/r]]다.\"",
+    "derivatives": [
+     {
+      "word": "evident",
+      "meaning": "분명한, 명백한"
+     }
+    ],
+    "toeicExpr": [
+     "clear evidence 명확한 증거",
+     "provide evidence 증거를 제시하다",
+     "clearly evident 명백히 분명한",
+     "evident difference 분명한 차이"
+    ]
    },
    {
     "word": "issue",
-    "meaning": "1. (n.) 문제, 쟁점 2. (v.) 발행하다, 발표하다 / (n.) 발행분, (잡지의) 호 3. (v.) 발급하다, 공식적으로 내주다",
-    "pos": "n./v."
+    "pron": "[íʃuː]",
+    "pos": "n./v.",
+    "meaning": "1. n. 문제, 쟁점\n2. v. (잡지·돈·채권·주식 등을) 발행하다, 발표하다  n. 발행분, (잡지의) 호\n3. v. 발급하다, 공식적으로 내주다",
+    "tip": "① 무슨 [[r]]문제[[/r]]라도 [[b]]있슈[[/b]]?\n② 창구 직원이나 점포 직원이 \"여기 [[b]]있슈[[/b]](받으세요)\" 하며 [[r]]종이로 된 것들을 주다[[/r]], 즉 [[r]](잡지의) 호, 티켓, 면허증, 영수증 등을 내주다, 발행하다, 발급하다[[/r]]",
+    "toeicExpr": [
+     "important issue 중요한 문제",
+     "current issue 현재 쟁점, 현안",
+     "raise an issue 문제를 제기하다",
+     "issue a report 보고서를 발행하다",
+     "issue a notice 공지문을 발행하다",
+     "issue new shares 신주를 발행하다",
+     "issue corporate bonds 회사채를 발행하다",
+     "issue a statement 성명을 발표하다",
+     "issue a warning 경고를 발령하다",
+     "issue a permit/license/receipt 허가증을/면허증을/영수증을 발급하다",
+     "issue a ticket 티켓을 발권하다",
+     "issue a refund 환불하다 (← 환불을 공식적으로 내주다)",
+     "the first issue 창간호(첫 발행물), 첫 번째 논점"
+    ],
+    "examVar": [
+     {
+      "note": "1. 'issue a refund'가 수동태 형태로 자주 출제되었다.",
+      "en": "A full refund will be ______ to customers who return defective products.",
+      "opt": "(A) issued  (B) paid  (C) charged  (D) announced",
+      "ans": "(A)",
+      "ko": "불량 제품을 반품하는 고객에게 전액 환불될 것이다."
+     },
+     {
+      "note": "2. issue의 다양한 의미를 묻는 문제들이 자주 출제되었다.",
+      "en": "Parking permits are issued at the front desk.",
+      "ko": "주차 허가증은 프런트 데스크에서 발급된다."
+     },
+     {
+      "en": "The article appeared in the latest issue of the magazine.",
+      "ko": "그 기사는 잡지 최신호에 실렸다."
+     },
+     {
+      "en": "The company plans to issue new shares next quarter.",
+      "ko": "그 회사는 다음 분기에 신주를 발행할 계획이다."
+     }
+    ]
    },
    {
     "word": "gather",
-    "meaning": "모으다, 수집하다, 모이다",
-    "pos": "v."
+    "pron": "[gǽðər]",
+    "pos": "v.",
+    "meaning": "v. 모으다, 수집하다, 모이다",
+    "tip": "개에게 과자를 주자 동네 [[b]]개들[[/b]]이 [[r]]더 모이다[[/r]], [[r]]모으다[[/r]]",
+    "toeicExpr": [
+     "gather information/evidence 정보를/증거를 수집하다",
+     "gather in the lobby 로비에 모이다",
+     "gather for a meeting 회의에 모이다"
+    ]
    },
    {
     "word": "party",
-    "meaning": "1. 파티, 모임 2. 단체, 일행 3. 당사자, 측",
-    "pos": "n."
+    "pron": "[pɑ́ːrti]",
+    "pos": "n.",
+    "meaning": "n. 1. 파티, 모임  2. 단체, 일행  3. 당사자, 측",
+    "tip": "[[b]]파티[[/b]]에 모인 [[r]]단체[[/r]]에서 서로 인사하는 각각의 [[r]]당사자[[/r]]",
+    "toeicExpr": [
+     "tour party 관광 단체, 관광 일행  traveling party 여행 일행",
+     "a party of 25 25명으로 이루어진 단체",
+     "contracting party 계약 당사자  third party 제3자",
+     "interested party 이해 당사자  opposing party 반대 측",
+     "host party 주최 측",
+     "only the interested party 해당 이해 당사자만"
+    ],
+    "examVar": [
+     {
+      "note": "party가 '당사자'라는 의미로 쓰이는 문제가 자주 출제되었다.",
+      "en": "Only the interested party will be contacted regarding the final decision.",
+      "ko": "최종 결정과 관련해서는 해당 이해 당사자에게만 연락이 갈 것이다."
+     }
+    ]
    },
    {
     "word": "prove",
-    "meaning": "입증하다, 입증되다, ~으로 판명되다",
-    "pos": "v."
+    "pron": "[pruːv]",
+    "pos": "v.",
+    "meaning": "v. 입증하다, 입증되다, ~으로 판명되다",
+    "tip": "문제를 [[b]]풀어[[/b]]봐서 정답이 0임을 [[r]]입증하다[[/r]], [[r]]~으로 판명되다[[/r]]",
+    "derivatives": [
+     {
+      "word": "proof",
+      "meaning": "증명, 증거, 증빙 서류"
+     }
+    ],
+    "toeicExpr": [
+     "prove that ~ ~임을 증명하다",
+     "prove the effectiveness 효과를 입증하다",
+     "prove the value 가치를 입증하다",
+     "prove useful 유용함이 입증되다(판명되다)",
+     "prove to be effective 효과가 있음이 드러나다",
+     "proof of purchase/payment/identity 구매/지불/신분 증명",
+     "proof of employment/income 재직/소득 증명"
+    ],
+    "examVar": [
+     {
+      "en": "The store requires proof of purchase for all returns.",
+      "ko": "그 매장은 모든 반품에 대해 구매 증빙을 요구한다."
+     }
+    ]
    },
    {
     "word": "approval",
-    "meaning": "허가, 허락",
-    "pos": "n."
+    "pron": "[əprúːvəl]",
+    "pos": "n.",
+    "meaning": "n. 허가, 허락",
+    "tip": "\"[[b]]앞으로 벌[[/b]]을 주도록 하세요.\" 하고 학부모가 선생님에게 체벌을 [[r]]허가, 허락[[/r]]",
+    "derivatives": [
+     {
+      "word": "approve",
+      "meaning": "승인하다, 찬성하다"
+     }
+    ],
+    "toeicExpr": [
+     "gain/receive/obtain approval 승인을 얻다",
+     "final approval 최종 승인  approval process 승인 절차",
+     "approve a plan/proposal/budget 계획을/제안을/예산을 승인하다"
+    ],
+    "examVar": [
+     {
+      "note": "'prove(입증하다)'와 'approve(승인하다)'의 의미를 구분하는 문제가 자주 출제되었다.",
+      "en": "The board will not _______ the proposal until all financial risks are fully evaluated.",
+      "opt": "approve (O)  prove (X)",
+      "ko": "이사회는 모든 재무적 위험이 완전히 평가되기 전까지 그 제안을 승인하지 않을 것이다."
+     }
+    ]
    },
    {
     "word": "stimulate",
-    "meaning": "자극하다, 촉진하다",
-    "pos": "v."
+    "pron": "[stímjulèit]",
+    "pos": "v.",
+    "meaning": "v. 자극하다, 촉진하다",
+    "tip": "꼴찌 성적표가 내 머리에서 [[b]]steam을(김을) 내이트[[/b]](내도록) 공부 의지를 [[r]]자극하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "stimulus",
+      "meaning": "자극, 자극제, 부양책"
+     }
+    ],
+    "toeicExpr": [
+     "stimulate growth 성장을 촉진하다",
+     "stimulate demand 수요를 자극하다",
+     "stimulus for innovation 혁신을 위한 자극"
+    ]
    },
    {
     "word": "adapt",
-    "meaning": "(~에 맞게) 조정하다, 적응하다",
-    "pos": "v."
+    "pron": "[ədǽpt]",
+    "pos": "v.",
+    "meaning": "v. (~에 맞게) 조정하다, 적응하다",
+    "tip": "[[b]]어댑터(adapter)[[/b]]로 220볼트 전압을 110볼트에 맞게 [[r]]조정하다[[/r]], 110볼트에 [[r]]적응하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "adaptable",
+      "meaning": "쉽게 적응하는, 적응할 수 있는"
+     },
+     {
+      "word": "adaptability",
+      "meaning": "적응력, 융통성"
+     },
+     {
+      "word": "adaptation",
+      "meaning": "적응"
+     },
+     {
+      "word": "adapter",
+      "meaning": "어댑터"
+     }
+    ],
+    "toeicExpr": [
+     "adapt to ~에 적응하다 (← to: ~쪽으로)",
+     "adapt to change 변화에 적응하다",
+     "adapt to new environments 새로운 환경에 적응하다",
+     "adapt the design/strategy 설계를/전략을 조정하다(수정하다)",
+     "adaptable to various business needs 다양한 비즈니스 요구에 적응할 수 있는",
+     "highly adaptable to economic change 경제 변화에 매우 쉽게 적응할 수 있는",
+     "adaptability to changes 변화에 대한 적응력",
+     "adaptability in the workplace 직장에서의 적응력",
+     "adaptation to market conditions 시장 상황에 대한 적응",
+     "adaptation to new regulations 새 규정에 대한 적응",
+     "power/USB adapter 전원/USB 어댑터"
+    ],
+    "examVar": [
+     {
+      "en": "Employees must quickly adapt to the new software system to maintain productivity.",
+      "ko": "직원들은 생산성을 유지하기 위해 새로운 소프트웨어 시스템에 빠르게 적응해야 한다."
+     }
+    ]
    },
    {
     "word": "adopt",
+    "pron": "[ədápt]",
+    "pos": "v.",
     "meaning": "채택하다, 받아들이다",
-    "pos": "v."
+    "tip": "시험 문제를 잘못 출제하여 [[b]]오답두[[/b]] 맞는 답으로 [[r]]채택하다, 받아들이다[[/r]]",
+    "derivatives": [
+     {
+      "word": "adoption",
+      "meaning": "채택, 도입"
+     }
+    ],
+    "toeicExpr": [
+     "adopt a policy/strategy 정책을/전략을 채택하다",
+     "recently adopted policy 최근에 도입하게 된 규정",
+     "adoption of a plan 계획 채택",
+     "adoption of digital payment systems 디지털 결제 시스템 도입"
+    ],
+    "examVar": [
+     {
+      "en": "adopt, adapt, adept(숙련된, 정통한)를 구분하는 문제가 자주 출제되었다.\nThe company decided to ______ a new marketing strategy to attract more customers.",
+      "opt": "(A) adapt (B) adopt (C) adept (D) addition",
+      "ans": "(B)",
+      "ko": "그 회사는 더 많은 고객을 유치하기 위해 새로운 마케팅 전략을 채택하기로 결정했다."
+     }
+    ]
    },
    {
     "word": "potential",
-    "meaning": "가능성이 있는, 잠재하는 / 가능성, 잠재력",
-    "pos": "adj./n."
+    "pron": "[pəténʃəl]",
+    "pos": "a./n.",
+    "meaning": "a. 가능성이 있는, 잠재하는 n. 가능성, 잠재력",
+    "tip": "[[b]]포[[/b]]탄이 터질가 봐 멀리서 [[b]]ten[[/b]](10)까지 [[b]]서[[/b]]가며(새며) 안전한지 확인하다, 즉 터질 [[r]]가능성이 있는, 잠재력[[/r]]",
+    "derivatives": [
+     {
+      "word": "potentially",
+      "meaning": "잠재적으로"
+     }
+    ],
+    "toeicExpr": [
+     "potential risk/customer 잠재적인 위험/고객",
+     "potential candidate 유력한(잠재력이 있는) 후보",
+     "growth/market/sales potential 성장/시장/매출 잠재력",
+     "profit potential 수익 가능성",
+     "potentially dangerous/harmful 잠재적으로 위험한/해로운"
+    ]
    },
    {
     "word": "delete",
+    "pron": "[dilíːt]",
+    "pos": "v.",
     "meaning": "삭제하다, 지우다",
-    "pos": "v."
+    "tip": "컴퓨터 자판의 [[b]]delete[[/b]]로 글자를 [[r]]삭제하다, 지우다[[/r]]",
+    "toeicExpr": [
+     "delete a file/message 파일을/메시지를 삭제하다",
+     "delete permanently 영구적으로 삭제하다"
+    ]
    },
    {
     "word": "equipment",
+    "pron": "[ikwípmənt]",
+    "pos": "n.",
     "meaning": "장비, 장비 설치",
-    "pos": "n."
+    "tip": "교정한 상태로 [[b]]이[[/b]](이빨을) [[b]]keep[[/b]](유지하는) 장치가 이빨마다 [[r]]많다[[/r]]. 즉, 치아교정 [[r]]장비, 장비 설치[[/r]]",
+    "derivatives": [
+     {
+      "word": "equip",
+      "meaning": "장비를 갖추다, 채비하다"
+     }
+    ],
+    "toeicExpr": [
+     "office/cleaning/medical equipment 사무/청소/의료 장비",
+     "fully equipped 완전히 장비된(갖춰진)",
+     "properly equipped 적절하게 장비된",
+     "equip A with B A에 B를 장비하다(갖추게 하다)",
+     "The company equipped the office with new computers. 회사는 사무실에 새 컴퓨터를 갖추었다.",
+     "be equipped with ~을 갖추고 있다",
+     "The hotel is equipped with modern facilities. 그 호텔은 현대식 시설을 갖추고 있다."
+    ],
+    "examVar": [
+     {
+      "en": "1. equipment는 불가산 명사로 복수형은 잘못된 표현임을 묻는 문제가 자주 출제되었다.\nThe company purchased new ______ for the research laboratory.",
+      "opt": "equipment (O)  equipments (X)",
+      "ko": "그 회사는 연구소를 위해 새로운 장비를 구입했다."
+     },
+     {
+      "note": "2. <be equipped with>에서 equipped 또는 with가 답이 되는 문제가 자주 출제되었다."
+     },
+     {
+      "note": "3. protective equipment 보호 장비  * protecting(X) equipment"
+     }
+    ]
    },
    {
     "word": "contaminate",
+    "pron": "[kəntǽmineit]",
+    "pos": "v.",
     "meaning": "오염시키다, 더럽히다",
-    "pos": "v."
+    "tip": "대중목욕탕 욕조에서 [[b]]큰 때를 미네![[/b]] (이트) 즉, 물을 [[r]]오염시키다, 더럽히다[[/r]]",
+    "derivatives": [
+     {
+      "word": "contamination",
+      "meaning": "오염"
+     }
+    ],
+    "toeicExpr": [
+     "contaminate water/food 물을/음식을 오염시키다",
+     "contaminate the environment 환경을 오염시키다",
+     "environmental contamination 환경 오염",
+     "bacterial contamination 세균 오염",
+     "food contamination incident 식품 오염 사고"
+    ]
    },
    {
     "word": "engage",
-    "meaning": "①참여하다, 참여시키다, 관심을 끌다 ②종사하다, 고용하다 ③교류하다, 소통하다",
-    "pos": "v."
+    "pron": "[ingéidʒ]",
+    "pos": "v.",
+    "meaning": "v. 1. 참여하다, 참여시키다, 관심을 끌다  2. 종사하다, 고용하다  3. 교류하다, 소통하다",
+    "tip": "① 당신 회사와 직원들을 나에게 [[b]]인계[[/b]]하는 거지? 그렇게 내가 그 일에 [[r]]관심이 끌려 직접 참여하다, 종사하다[[/r]]. 그 직원까지 내가 [[r]]고용하다[[/r]]\n② '[[r]]참여하다[[/r]]'란 뜻에서 모임에 참여하여 다른 사람들과 [[r]]교류하다, 소통하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "engaging",
+      "meaning": "남의 마음을 끄는, 매력적인 (← 관심을 끌다)"
+     },
+     {
+      "word": "engagement",
+      "meaning": "1. 참여, 관여도  2. 약속, 계약 (← 인계하기로 약속)"
+     }
+    ],
+    "toeicExpr": [
+     "engage in ~에 참여하다, 종사하다",
+     "engage in discussions 논의에 참여하다",
+     "engage in business 사업에 종사하다",
+     "be engaged in ~에 참여하다, 몰두하다",
+     "be engaged in a project 프로젝트에 참여하다",
+     "be engaged in product development 제품 개발에 참여하다(몰두하다)",
+     "engage the audience 청중의 관심을 끌다",
+     "engage the public 대중의 관심을 끌다",
+     "engage a consultant/expert 컨설턴트를/전문가를 고용하다",
+     "engage with clients/employees 고객과/직원들과 소통하다",
+     "engaging presentation 마음을 끄는(몰입도 높은) 프레젠테이션",
+     "engaging speaker 청중을 사로잡는 연설자",
+     "engaging advertisement 관심을 끄는 광고",
+     "customer/employee engagement 고객/직원 참여도",
+     "prior engagement 이미 잡힌 약속  business engagement 업무 계약"
+    ],
+    "examVar": [
+     {
+      "en": "1. The interns will have opportunities to engage in various hands-on projects during the program.",
+      "ko": "인턴들은 프로그램 동안 다양한 실습 프로젝트에 참여할 기회를 갖게 될 것이다."
+     },
+     {
+      "en": "2. The workshop was led by an engaging speaker who kept the audience interested throughout the session.",
+      "ko": "그 워크숍은 세션 내내 청중의 관심을 유지시킨 매력적인(남의 마음을 끄는) 연사가 진행했다."
+     }
+    ]
    },
    {
     "word": "steady",
-    "meaning": "꾸준한, 지속적인",
-    "pos": "adj."
+    "pron": "[stédi]",
+    "pos": "a.",
+    "meaning": "a. 꾸준한, 지속적인",
+    "tip": "① [[b]]스테디[[/b]]셀러(steady seller)란 [[r]]꾸준한, 안정된, 지속적인[[/r]] 판매를 보이는 책을 말함\n② [[b]]study[[/b]](공부)를 열심히 하여 1년 내내 [[r]]안정된, 꾸준한[[/r]] 점수",
+    "derivatives": [
+     {
+      "word": "steadfast",
+      "meaning": "확고한, 변함없는"
+     }
+    ],
+    "toeicExpr": [
+     "steady growth/increase 꾸준한 성장/증가",
+     "steady income/pace/supply 안정적인 수입/속도/공급",
+     "steadfast belief 확고한 신념"
+    ]
    },
    {
     "word": "brief",
-    "meaning": "(시간·글 등이) 짧은, 간결한 / 간단히 설명하다",
-    "pos": "adj./v."
+    "pron": "[briːf]",
+    "pos": "a./v.",
+    "meaning": "a. (시간·글 등이) 짧은, 간결한  v. 간단히 설명하다",
+    "tip": "① 성냥에 붙은 [[b]]불이 프~[[/b]] 하고 금방 꺼지다, 즉 타는 [[r]](시간이) 짧은, 간결한[[/r]]\n② 회사에서 [[b]]브리핑[[/b]](briefing)한다는 말은 [[r]]간단한[[/r]] 요약 보고를 뜻함",
+    "derivatives": [
+     {
+      "word": "briefing",
+      "meaning": "요약 보고, 사전 상황 설명"
+     }
+    ],
+    "toeicExpr": [
+     "brief summary/speech/meeting 간략한 요약/연설/회의",
+     "He would like to brief you about an error. 그는 당신에게 한 오류에 대해서 간단히 알리고 싶어 합니다.",
+     "staff briefing 직원 대상 브리핑"
+    ],
+    "examVar": [
+     {
+      "note": "brief가 동사 의미로 쓰이는 문제가 자주 출제되었다.",
+      "en": "The manager will brief the team on the new safety procedures before the shift begins.",
+      "ko": "관리자는 교대근무가 시작되기 전에 새로운 안전 절차에 대해 팀에게 간단히 설명할 것이다."
+     }
+    ]
    },
    {
     "word": "destination",
-    "meaning": "목적지, 목표",
-    "pos": "n."
+    "pron": "[dèstənéiʃən]",
+    "pos": "n.",
+    "meaning": "n. 목적지, 목표",
+    "tip": "\"나의 [[r]]목표, 목적지[[/r]]는 [[b]]대(大)스타[[/b]] 되는 거야, 우리 [[b]]nation[[/b]](나라)에서.\"",
+    "toeicExpr": [
+     "travel/tourist destination 여행지, 여행 목적지",
+     "delivery destination 배송 목적지  final destination 최종 목적지"
+    ]
    }
   ]
  },
@@ -1091,123 +2843,533 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "urgent",
+    "pron": "[ə́:rdʒənt]",
+    "pos": "a.",
     "meaning": "긴급한",
-    "pos": "adj."
+    "tip": "[[b]]어! 전투[[/b]]가 일어나서 [[r]]긴급한[[/r]]",
+    "derivatives": [
+     {
+      "word": "urgently",
+      "meaning": "긴급히"
+     },
+     {
+      "word": "urgency",
+      "meaning": "긴급, 급박한 일"
+     },
+     {
+      "word": "urge",
+      "meaning": "촉구하다, 재촉하다"
+     }
+    ],
+    "toeicExpr": [
+     "urgent matter/request/message 긴급 사안/요청/메시지",
+     "call an urgent meeting 긴급회의를 소집하다",
+     "be urgently needed/required 시급히 필요하다/요구되다",
+     "due to the urgency 긴급성 때문에",
+     "the urgency of the matter 사안의 긴급성",
+     "urge + 목적어 + to부정사: …에게 ~하도록 촉구하다",
+     "Mr. Han urged all staffs to come to the meeting. 한 씨는 모든 직원들이 그 회의에 참여할 것을 촉구했다.",
+     "strongly urge 강력히 촉구하다  urge action 조치를 촉구하다"
+    ],
+    "examVar": [
+     {
+      "en": "urgent와 urging을 구분하는 문제가 자주 출제되었다.\nBecause of an _______ safety issue, the supervisor ordered all employees to evacuate the building immediately.",
+      "opt": "(A) urgency  (B) urgent  (C) urgently  (D) urging",
+      "ans": "(B)",
+      "ko": "긴급한 안전 문제 때문에, 감독관은 모든 직원에게 즉시 건물을 대피하라고 지시했다.",
+      "note": "urging은 urge의 분사형으로 \"(사람이) ~하라고 재촉하는, 촉구하는\""
+     }
+    ]
    },
    {
     "word": "stress",
-    "meaning": "①압박, 스트레스 ②강조, 강세 / 강조하다",
-    "pos": "n./v."
+    "pron": "[stres]",
+    "pos": "1. n. 2. n. v.",
+    "meaning": "1. n. 압박, 스트레스  2. n. 강조, 강세  v. 강조하다",
+    "tip": "매일 공부만 [[r]]강조[[/r]]하는 부모님의 말에 [[r]]스트레스[[/r]]를 받다",
+    "toeicExpr": [
+     "under stress 스트레스를 받는 상태에서",
+     "work-related stress 업무 관련 스트레스",
+     "stress management 스트레스 관리",
+     "place/put stress on ~을 강조하다 (on: 초점, 행동의 대상 앞에)",
+     "place stress on efficiency/training 효율성을/교육을 강조하다",
+     "put stress on customer service 고객 서비스를 강조하다"
+    ]
    },
    {
     "word": "task",
+    "pron": "[tæsk]",
+    "pos": "n.",
     "meaning": "해야 할 일, 업무, 과제",
-    "pos": "n."
+    "tip": "[[b]]desk[[/b]](책상)에 앉아 [[r]]해야 할 일, 업무[[/r]]",
+    "toeicExpr": [
+     "assign a task 과제를 할당하다  assigned task 할당된 업무",
+     "complete/perform a task 업무를 완료하다/수행하다",
+     "take on a task 업무를 맡다 (← take on: ~을 떠맡다)"
+    ]
    },
    {
     "word": "author",
+    "pron": "[ɔ́:θər]",
+    "pos": "n.",
     "meaning": "저자, 작가",
-    "pos": "n."
+    "tip": "[[b]]\"오~[[/b]] 글 좀 [[b]]써[[/b]]주세요!\" 하고 부탁당하는 [[r]]저자, 작가[[/r]]",
+    "toeicExpr": [
+     "best-selling author 베스트셀러 작가  original author 원저자"
+    ]
    },
    {
     "word": "frustrate",
+    "pron": "[frʌ́streit]",
+    "pos": "v.",
     "meaning": "좌절시키다, 불만스럽게 만들다",
-    "pos": "v."
+    "tip": "스트레이트 파마를 하고 나타난 여자친구에게 \"[[b]]풀어, 스트레이트![[/b]] 더 못생겨 보여!\"라고 여자친구는 [[r]]좌절시키다, 불만스럽게 만들다[[/r]]",
+    "derivatives": [
+     {
+      "word": "frustrated",
+      "meaning": "좌절한"
+     },
+     {
+      "word": "frustrating",
+      "meaning": "좌절시키는"
+     },
+     {
+      "word": "frustration",
+      "meaning": "좌절"
+     }
+    ],
+    "toeicExpr": [
+     "feel frustrated 좌절감을 느끼다",
+     "frustrate the plan 계획을 좌절시키다",
+     "frustrating situation 답답한(좌절스러운) 상황",
+     "express frustration 불만(좌절감)을 표현하다"
+    ],
+    "examVar": [
+     {
+      "en": "frustrated와 frustrating을 구분하는 문제가 자주 출제되었다.\nCustomers were extremely _______ by the repeated delivery delays.",
+      "opt": "(A) frustrating  (B) frustrated  (C) frustrate  (D) frustration",
+      "ko": "반복된 배송 지연 때문에 고객들은 매우 좌절했다."
+     },
+     {
+      "en": "The frequent system errors were very _______ to the staff.",
+      "opt": "(A) frustrated  (B) frustrate  (C) frustrating  (D) frustration",
+      "ko": "잦은 시스템 오류는 직원들에게 매우 좌절스러운 일이었다."
+     }
+    ]
    },
    {
     "word": "utility",
-    "meaning": "①유용성, 쓸모 있는 것 ②(수도·전기 등의) 공익 시설",
-    "pos": "n."
+    "pron": "[ju:tíləti]",
+    "pos": "n.",
+    "meaning": "1. 유용성, 쓸모 있는 것  2. (수도·전기 등의) 공익 시설",
+    "tip": "① 업무능력에 있어서 [[b]]you[[/b]](너가) 튐, 즉 너는 회사에 [[r]]쓸모 있는 것, 유용성[[/r]] ② 국민들에게 [[r]]쓸모 있고 유용한 (수도·전기 등의) 공익 시설[[/r]]",
+    "derivatives": [
+     {
+      "word": "utilities",
+      "meaning": "공공요금"
+     },
+     {
+      "word": "utilize",
+      "meaning": "이용하다"
+     }
+    ],
+    "toeicExpr": [
+     "utility value 유용성 가치  utility room 다용도실",
+     "public utilities (전기, 가스 등의) 공공 서비스 (업체)",
+     "(public) utility bill/charge/rate 공공 요금  water utility rate 수도 요금",
+     "utility company (전기, 수도, 가스 등을 공급하는) 공공 기관",
+     "no utilities included 공과금은 포함되지 않음 (공과금 별도)",
+     "utilize resources/data/technology 자원을/데이터를/기술을 활용하다"
+    ],
+    "examVar": [
+     {
+      "en": "공공요금(전기·가스·수도)은 utilities(복수형)를 쓴다.\nThe monthly rent includes maintenance fees and all _______ such as water and electricity.",
+      "opt": "(A) utilities  (B) utility  (C) utilization  (D) utilized",
+      "ans": "(A)",
+      "ko": "월세에는 관리비와 수도, 전기 같은 모든 공공요금이 포함됩니다."
+     }
+    ]
    },
    {
     "word": "derive",
+    "pron": "[diráiv]",
+    "pos": "v.",
     "meaning": "이끌어내다, 얻다, 유래되다",
-    "pos": "v."
+    "tip": "낭만적인 해안가 [[b]]드라이브[[/b]]를 시켜주어 그녀의 환심을 [[r]]이끌어내다, 얻다[[/r]]",
+    "derivatives": [
+     {
+      "word": "derivative",
+      "meaning": "도출해낸, 파생된; 파생물, 파생상품"
+     }
+    ],
+    "toeicExpr": [
+     "derive benefit from ~로부터 이익을 얻다",
+     "derive A from B A를 B로부터 얻다 (from: ~로부터)",
+     "derive benefits from strategic partnerships 전략적 제휴에서 혜택을 얻다",
+     "derive inspiration from customer feedback 고객 피드백에서 영감을 얻다",
+     "be derived from ~에서 유래하다, 나오다",
+     "be derived from natural ingredients 천연 성분에서 유래하다",
+     "be derived from historical data 과거 데이터에서 도출되다",
+     "be derivative of A A에서 파생되다 (of: ~에서 비롯된)",
+     "be derivative of earlier designs 초기 디자인에서 파생되다",
+     "be derivative of a competitor's product 경쟁사 제품에서 파생되다",
+     "derivative product 파생 상품"
+    ]
    },
    {
     "word": "procedure",
+    "pron": "[prəsí:dʒər]",
+    "pos": "n.",
     "meaning": "과정, 절차",
-    "pos": "n."
+    "tip": "선생님이 수학 문제풀이 [[r]]과정, 절차[[/r]]를 풀어 써 줘.",
+    "toeicExpr": [
+     "safety/standard/operating/application procedure 보안/표준/작업/지원 절차"
+    ]
    },
    {
     "word": "suit",
-    "meaning": "①수트, 신사복 한 벌 ②어울리다, 적합하다, 적합하게 하다, 만족시키다",
-    "pos": "n./v."
+    "pron": "미[su:t] 영[sju:t]",
+    "pos": "1. n. / 2. v.",
+    "meaning": "1. n. 수트, 신사복 한 벌  2. v. 어울리다, 적합하다, 적합하게 하다, 만족시키다",
+    "tip": "옷 가게에서 [[b]]suit[[/b]](수트)가 손님에게 잘 [[r]]어울리다, 적합하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "suitable",
+      "meaning": "어울리는, 적합한"
+     }
+    ],
+    "toeicExpr": [
+     "wear a suit 정장을 입다",
+     "suit one's needs 요구를 만족시키다  suit one's taste 취향에 맞다",
+     "suit the occasion 경우에 적합하다",
+     "be suited to ~에 적합하다, 어울리다",
+     "She is suited to the role of a teacher. 그녀는 교사 역할에 적합하다.",
+     "What time will suit you best? 몇 시가 편하세요? (리스닝 빈출 표현)",
+     "suitable for the job 그 일에 적합한",
+     "suitable candidate/location/clothing 적합한 후보자/장소/복장"
+    ]
    },
    {
     "word": "aware",
+    "pron": "[əwέər]",
+    "pos": "a.",
     "meaning": "~을 알고 있는",
-    "pos": "adj."
+    "tip": "A: 이거 알아?  B: [[b]]어[[/b]] 외워서 알고 있어. 즉, [[r]]알고 있는[[/r]]",
+    "derivatives": [
+     {
+      "word": "awareness",
+      "meaning": "인식, 알고 있음"
+     }
+    ],
+    "toeicExpr": [
+     "be aware of ~을 알고 있다  become aware of ~을 인지하게 되다",
+     "be aware of the policy 규정을 알고 있다",
+     "be aware of the issue 문제를 알고 있다",
+     "brand awareness 브랜드 인지도",
+     "raise awareness of ~에 대한 인식을 높이다"
+    ]
    },
    {
     "word": "convince",
+    "pron": "[kənvíns]",
+    "pos": "v.",
     "meaning": "납득시키다, 설득하다, 확신시키다",
-    "pos": "v."
+    "tip": "납골당 건설 반대 탄원서의 [[b]]칸[[/b]]이 [[b]]빈[[/b]] 서명란에 이름을 [[b]]쓰[[/b]]라고 동네 주민들을 [[r]]납득시키다, 설득하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "convincing",
+      "meaning": "설득력 있는"
+     }
+    ],
+    "toeicExpr": [
+     "convince + 사람 + to do …가 ~하도록 설득하다",
+     "The manager convinced the team to work overtime. 관리자는 팀이 초과 근무를 하도록 설득했다.",
+     "convince + 사람 + that절 …에게 ~라고 확신시키다",
+     "convince customers that the product is reliable 고객들에게 그 제품이 신뢰할 수 있다고 확신시키다",
+     "be convinced that ~ ~라고 확신하다",
+     "We are convinced that sales will improve next year. 우리는 내년에 매출이 오를 것이라고 확신한다.",
+     "be convinced of ~을 확신하다",
+     "be convinced of the plan's success 그 계획의 성공을 확신하다",
+     "be firmly convinced of the company's potential 회사의 잠재력을 굳게 확신하다",
+     "convincing argument/evidence/explanation 설득력 있는 주장/증거/설명",
+     "convince A of B A에게 B를 납득시키다, A에게 B라고 설득하다",
+     "convince customers of the product's value 제품의 가치에 대해 고객들을 납득시키다"
+    ],
+    "examVar": [
+     {
+      "note": "1. convince와 persuade를 구분하는 문제가 자주 출제되었다. * convince + 사람 + that절: …에게 ~을 확신시키다 (확신에 초점) * persuade + 사람 + to 동사원형: …가 ~하도록 설득하다 (보통 that절을 취하지 않는다.)",
+      "en": "The consultant ______ the executives that the strategy would improve long-term growth.",
+      "opt": "convinced (O) persuaded (X)",
+      "ko": "컨설턴트는 그 전략이 장기 성장을 개선할 것이라고 임원들을 설득했다."
+     },
+     {
+      "en": "2. The marketing director tried to convince investors ______ the product's long-term potential.",
+      "opt": "(A) for  (B) of  (C) about  (D) with",
+      "ans": "(B)",
+      "ko": "마케팅 이사는 투자자들에게 그 제품의 장기적인 잠재력을 납득시키려고 했다."
+     }
+    ]
    },
    {
     "word": "still",
+    "pron": "[stil]",
+    "pos": "ad.",
     "meaning": "아직도, 여전히",
-    "pos": "adv."
+    "tip": "헤어진 연인이 [[r]]아직도, 여전히[[/r]] 기억에 [[b]]스칠[[/b]]",
+    "toeicExpr": [
+     "still remain 여전히 남아 있다  still growing 여전히 성장하는"
+    ],
+    "examVar": [
+     {
+      "note": "still과 yet의 차이를 묻는 문제가 자주 출제되었다.\n* still: 어떤 일이 지금도 계속되고 있을 때 사용하며, 주로 긍정문에서 be 동사 뒤나 일반동사 앞에 위치한다.\n* yet: 어떤 일이 아직 일어나지 않았거나, 완료 여부를 물을 때 사용하며, 주로 부정문이나 의문문에서 문장 끝에 둔다.",
+      "en": "Despite the bad weather, the construction project is _______ on schedule.   still (O) yet (X)",
+      "ko": "악천후에도 불구하고 그 건설 프로젝트는 여전히 일정대로 진행 중이다."
+     },
+     {
+      "en": "The shipment has not arrived at the warehouse _______.   still (X) yet (O)",
+      "ko": "그 화물은 창고에 아직 도착하지 않았다."
+     }
+    ]
    },
    {
     "word": "function",
-    "meaning": "기능, 작동 / (제대로) 작동하다",
-    "pos": "n./v."
+    "pron": "[fʌ́ŋkʃən]",
+    "pos": "n./v.",
+    "meaning": "n. 기능, 작동  v. (제대로) 작동하다",
+    "tip": "[[b]]펑![[/b]] 터지며 [[b]]시원[[/b]]하게 에어백이 [[r]]제대로 작동하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "functional",
+      "meaning": "기능적인, 실용적인, 작동하는"
+     }
+    ],
+    "toeicExpr": [
+     "function properly 제대로 작동하다",
+     "main/primary function 주요 기능",
+     "function as a substitute 대체품으로서 역할을 하다",
+     "fully functional 완벽하게 작동하는",
+     "functional equipment 정상 작동하는 장비",
+     "functional system 기능적인 시스템",
+     "functional design 실용적인 디자인"
+    ]
    },
    {
     "word": "meet",
-    "meaning": "1. 만나다 2. 충족시키다",
-    "pos": "v."
+    "pron": "[miːt]",
+    "pos": "v.",
+    "meaning": "v. 1. 만나다  2. 충족시키다",
+    "tip": "유명 아이돌이 팬들과 [[b]]meet[[/b]](만나주어서) 팬들의 욕구를 [[r]]충족시키다[[/r]]",
+    "toeicExpr": [
+     "meet requirements/expectations 요구를/기대를 충족하다",
+     "meet demand 수요를 충족하다",
+     "meet a deadline 마감일을 지키다"
+    ],
+    "examVar": [
+     {
+      "en": "The proposal must meet all safety requirements before it can be approved by the board.",
+      "ko": "그 제안서는 이사회 승인을 받기 전에 모든 안전 요구 사항을 충족해야 한다."
+     }
+    ]
    },
    {
     "word": "oppose",
-    "meaning": "반대하다",
-    "pos": "v."
+    "pron": "[əpóuz]",
+    "pos": "v.",
+    "meaning": "v. 반대하다",
+    "tip": "\"그 법안을 (뒤)[[b]]엎어주[[/b]]세요!\" 하고 [[r]]반대하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "opposition",
+      "meaning": "반대, 저항"
+     },
+     {
+      "word": "opposite",
+      "meaning": "반대편의, 맞은편의, 상반하는"
+     },
+     {
+      "word": "opponent",
+      "meaning": "반대자, 적수, 상대 (← -ent: ~사람, ~것)"
+     }
+    ],
+    "toeicExpr": [
+     "oppose the proposal/plan/decision 그 제안에/계획에/결정에 반대하다",
+     "openly oppose 공개적으로 반대하다",
+     "be opposed to + 동명사/명사: ~을 반대하다",
+     "Many citizens are opposed to raising taxes. 많은 시민들이 세금 인상을 반대한다.",
+     "in opposition to ~에 반대하여",
+     "Many workers were in opposition to the new policy. 많은 근로자들이 그 새로운 정책에 반대했다.",
+     "on the opposite side 맞은편 쪽에",
+     "opposite direction/opinion 반대 방향/의견",
+     "political opponent 정치적 반대자",
+     "business opponent 비즈니스 경쟁자"
+    ],
+    "examVar": [
+     {
+      "en": "The labor union is strongly opposed to _______ the current retirement policy.",
+      "opt": "(A) change  (B) changing  (C) changed  (D) to change",
+      "ans": "(B)",
+      "ko": "노동조합은 현 퇴직 정책 변경에 강하게 반대한다.",
+      "note": "be opposed to + 동명사/명사"
+     },
+     {
+      "en": "품사와 의미 구분 문제가 출제되었다.\nThe company defeated its strongest _______ in the market last quarter.",
+      "opt": "(A) opponent  (B) opposition  (C) opposing  (D) oppose",
+      "ans": "(A)",
+      "ko": "그 회사는 지난 분기에 시장에서 가장 강력한 경쟁자를 물리쳤다."
+     },
+     {
+      "en": "object to와 oppose를 구분하는 문제가 출제되었다.\nSeveral employees strongly _______ to working overtime without extra pay.",
+      "opt": "(A) oppose  (B) object  (C) opposition  (D) opposed",
+      "ans": "(B)",
+      "ko": "몇몇 직원들은 추가 수당 없이 야근하는 것에 강하게 반대한다.",
+      "note": "object는 자동사이므로 뒤에 전치사 to를 취한다. oppose는 타동사로 전치사 없이 목적어를 취한다."
+     }
+    ]
    },
    {
     "word": "departure",
-    "meaning": "출발",
-    "pos": "n."
+    "pron": "[dipá:rtʃə(r)]",
+    "pos": "n.",
+    "meaning": "n. 출발",
+    "tip": "짓궂은 친구들이 보트 [[b]]뒤[[/b]]에 친구를 [[b]]빠쳐[[/b]]버리고 그냥 [[r]]출발[[/r]]",
+    "derivatives": [
+     {
+      "word": "depart",
+      "meaning": "출발하다"
+     },
+     {
+      "word": "cf. arrival",
+      "meaning": "도착"
+     }
+    ],
+    "toeicExpr": [
+     "departure time 출발 시간  scheduled departure 예정된 출발",
+     "departure from the airport/station 공항/역에서 출발",
+     "depart for New York 뉴욕으로 출발하다  depart on time 정시에 출발하다",
+     "on arrival 도착 시에, 도착하자마자 (← on + 명사/동명사: ~하자마자)",
+     "arrival time 도착 시간",
+     "Please report to the reception desk on arrival. 도착하자마자 안내 데스크에 신고하십시오."
+    ]
    },
    {
     "word": "district",
-    "meaning": "구역, 지역",
-    "pos": "n."
+    "pron": "[dístrikt]",
+    "pos": "n.",
+    "meaning": "n. 구역, 지역",
+    "tip": "[[b]]뒤[[/b]] street[[b]]([[/b]]거리[[b]])[[/b]]의 깡패 집단 [[r]]구역, 지역[[/r]]",
+    "toeicExpr": [
+     "business/financial district 상업/금융 지구",
+     "residential district 주거지 구역"
+    ]
    },
    {
     "word": "count",
-    "meaning": "1. 세다, 계산하다 2. 중요하다",
-    "pos": "v."
+    "pron": "[kaunt]",
+    "pos": "v.",
+    "meaning": "v. 1. 세다, 계산하다  2. 중요하다",
+    "tip": "숨겨둔 금덩어리 5개를 누가 가져갔을까 봐 매일 [[b]]count[[/b]](세다), 즉 금덩어리가 그만큼 [[r]]중요하다[[/r]]",
+    "toeicExpr": [
+     "count losses 손실을 계산하다",
+     "Every detail counts. 모든 세부 사항이 중요하다."
+    ]
    },
    {
     "word": "count on",
     "meaning": "~에 의존하다, 믿다, 기대하다",
-    "pos": "v."
+    "tip": "헨젤과 그레텔이 빵조각을 하나 둘 [[b]]count[[/b]](세면서) 집으로 [[b]]온[[/b]], 즉, 길을 찾기 위해 빵조각에 [[r]]의존하다, 믿다[[/r]]",
+    "toeicExpr": [
+     "You can count on me. 저를 믿으세요.",
+     "count on your support 당신의 지원에 의지하다",
+     "count on success 성공을 기대하다",
+     "count on continued support 지속적인 지원을 기대하다"
+    ],
+    "examVar": [
+     {
+      "en": "You can always count on our support whenever you need assistance.",
+      "ko": "당신이 도움이 필요할 때는 언제든지 우리의 지원을 믿어도 된다."
+     }
+    ]
    },
    {
     "word": "account",
-    "meaning": "1. (예금) 계좌 2. 중요, 중요함",
-    "pos": "n."
+    "sup": "1",
+    "pron": "[əkáunt]",
+    "pos": "n.",
+    "meaning": "n. 1. (예금) 계좌  2. 중요, 중요함",
+    "tip": "금액의 0을 하나 [[b]]a[[/b]](하나) [[b]]count[[/b]](세는) 것이 [[r]]중요한[[/r]] [[r]](예금) 계좌[[/r]]",
+    "toeicExpr": [
+     "bank account 계좌  account holder 예금주",
+     "account number 계좌번호  savings account 보통예금",
+     "account balance 계좌 잔고",
+     "of little account 거의 중요하지 않는"
+    ]
    },
    {
     "word": "account",
-    "meaning": "1. n. 계산, 계산서, 회계 2. n. 설명 / v. 설명하다",
-    "pos": "n./v."
+    "sup": "2",
+    "pron": "[əkáunt]",
+    "pos": "n./v.",
+    "meaning": "1. n. 계산, 계산서, 회계  2. n. 설명  v. 설명하다",
+    "tip": "수학 선생님이 하나 [[b]]a[[/b]](하나) [[b]]count[[/b]](세면서) [[r]]계산[[/r]] 방법을 [[r]]설명하다[[/r]]",
+    "toeicExpr": [
+     "settle an account 결제하다, 계산을 마무리하다",
+     "The customer settled the account before leaving the hotel. 고객은 호텔을 떠나기 전에 계산을 마쳤다.",
+     "accounting department 회계 부서",
+     "account for ~을 설명하다; (비율을) 차지하다",
+     "The manager could not account for the missing documents. 관리자는 분실된 문서를 설명할 수 없었다.",
+     "Online sales account for 40% of total revenue. 온라인 매출이 전체 수익의 40%를 차지한다."
+    ],
+    "examVar": [
+     {
+      "en": "Online sales now account for more than half of the company's total revenue.",
+      "ko": "온라인 매출은 이제 회사 전체 매출의 절반 이상을 차지한다."
+     }
+    ]
    },
    {
     "word": "on account of",
     "meaning": "~ 때문에",
-    "pos": "prep."
+    "tip": "직역하면 '~의 계산/설명 위에서', 즉 [[r]]~ 때문에[[/r]]",
+    "toeicExpr": [
+     "delayed/closed on account of ~ 때문에 지연되다/문을 닫다",
+     "The shipment was delayed on account of customs inspections. 화물은 세관 검사 때문에 지연되었다."
+    ]
    },
    {
     "word": "take ~ into account",
     "meaning": "~을 고려하다",
-    "pos": "v."
+    "tip": "직역하면 '~을 계산(account) 속에 넣다', 즉 [[r]]~을 고려하다[[/r]]",
+    "toeicExpr": [
+     "take circumstances into account 상황을 고려하다",
+     "take cost into account 비용을 고려하다",
+     "The final report fully took customer feedback into account. 최종 보고서는 고객 피드백을 충분히 반영했다."
+    ],
+    "examVar": [
+     {
+      "en": "When evaluating applicants, the committee will take previous work experience into account.",
+      "ko": "지원자들을 평가할 때 위원회는 이전 업무 경력을 고려할 것이다."
+     }
+    ]
    },
    {
     "word": "shortage",
-    "meaning": "부족",
-    "pos": "n."
+    "pron": "[ʃɔ́:rtidʒ]",
+    "pos": "n.",
+    "meaning": "n. 부족",
+    "tip": "빨랫줄 길이가 1미터 [[b]]short[[/b]](짧은), 즉 1미터 [[r]]부족[[/r]]",
+    "derivatives": [
+     {
+      "word": "short",
+      "meaning": "부족한, 짧은"
+     }
+    ],
+    "toeicExpr": [
+     "labor/housing shortage 인력/주택 부족",
+     "shortage of workers/supplies/space 인력/물자/공간 부족",
+     "in short 요약하면, 간단히 말해",
+     "run short of ~이 부족하다",
+     "We are running short of office supplies. 사무용품이 부족해지고 있다."
+    ]
    }
   ]
  },
@@ -1217,123 +3379,533 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "violation",
-    "meaning": "침해, 위반",
-    "pos": "n."
+    "pron": "[vàiəléiʃən]",
+    "pos": "n.",
+    "meaning": "n. 침해, 위반",
+    "tip": "새벽에 이웃이 [[b]]바이올린[[/b]] 소리를 크게 [[b]]내선[[/b]](내다), 즉 사생활 [[r]]침해[[/r]], [[r]]위반[[/r]]",
+    "derivatives": [
+     {
+      "word": "violate",
+      "meaning": "위반하다, 침해하다"
+     }
+    ],
+    "toeicExpr": [
+     "violation of regulations 규정 위반",
+     "violation of company policy 회사 정책 위반",
+     "violation of safety rules 안전 규칙 위반"
+    ]
    },
    {
     "word": "violence",
-    "meaning": "폭력, 폭행",
-    "pos": "n."
+    "pron": "[váiələns]",
+    "pos": "n.",
+    "meaning": "n. 폭력, 폭행",
+    "tip": "깡패가 돈 갚으라고 사람에게 [[b]]바위 all[[/b]](모두를) 던져 [[b]]넣었수[[/b]], 즉 [[r]]폭력[[/r]], [[r]]폭행[[/r]]",
+    "toeicExpr": [
+     "violence prevention 폭력 예방",
+     "prevent workplace violence 직장 내 폭력을 예방하다"
+    ],
+    "examVar": [
+     {
+      "note": "violence와 violation을 구분하는 문제가 자주 출제되었다.",
+      "en": "Any _______ of company policies must be reported immediately to the HR department.",
+      "opt": "violation (O)  violence (X)",
+      "ko": "회사 규정의 어떤 위반도 즉시 인사 부서에 보고되어야 한다."
+     }
+    ]
    },
    {
     "word": "staff",
-    "meaning": "n. 직원 / v. 직원을 배치하다, 인력을 투입하다",
-    "pos": "n./v."
+    "pron": "미[stæf] 영[staːf]",
+    "pos": "n./v.",
+    "meaning": "n. 직원 v. 직원을 배치하다, 인력을 투입하다",
+    "tip": "대리-과장-차장-부장 등과 같이 [[b]]step[[/b]](단계)별로 있는 [[r]]직원[[/r]], [[r]]직원을 배치하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "staffing",
+      "meaning": "직원 배치, 인력 투입"
+     }
+    ],
+    "toeicExpr": [
+     "staff shortage/member 직원 부족/구성원",
+     "staff a branch/department 지점에/부서에 직원을 배치하다",
+     "staff the event 행사에 인력을 투입하다",
+     "be staffed with ~로 직원이 채워져 있다",
+     "The hospital is fully staffed with qualified nurses. 그 병원은 자격 있는 간호사들로 인력이 완전히 배치되어 있다.",
+     "staffing needs 인력 (배치) 필요",
+     "staffing agency 인력 파견 회사",
+     "staffing plan 인력 배치 계획"
+    ],
+    "examVar": [
+     {
+      "note": "staff와 staffing의 차이를 구분하는 문제가 출제되었다.",
+      "en": "The company hired a _______ agency to find temporary workers for the busy season.",
+      "opt": "(A) staff  (B) staffing  (C) staffed  (D) staffs",
+      "ans": "(B)",
+      "ko": "회사는 성수기를 위해 임시 직원을 구할 인력 파견 회사를 고용했다."
+     },
+     {
+      "en": "The clinic is currently _______ with experienced nurses.",
+      "opt": "(A) staff  (B) staffing  (C) staffed  (D) staffs",
+      "ans": "(C)",
+      "ko": "그 진료소는 현재 숙련된 간호사들로 인력이 배치되어 있다."
+     }
+    ]
    },
    {
     "word": "privilege",
-    "meaning": "n. 특권, 특혜, 영광 / v. 특권을 주다",
-    "pos": "n./v."
+    "pron": "[prívəlidʒ]",
+    "pos": "n./v.",
+    "meaning": "n. 특권, 특혜, 영광 v. 특권을 주다",
+    "tip": "은행장이기 때문에 은행에서 돈을 [[b]]free[[/b]](자유롭게) [[b]]빌리지[[/b]], 즉 자유롭게 돈을 빌릴 수 있는 [[r]]특권, 특혜[[/r]]",
+    "toeicExpr": [
+     "special/exclusive privileges 특별 혜택",
+     "membership/employee privileges 회원/직원 혜택",
+     "access privileges 접근 특권",
+     "user privileges 사용자 특권",
+     "have the privilege of ~의 영광(특권)을 가지다",
+     "have the privilege of working with you 함께 일하게 되어 영광이다",
+     "have the privilege of attending the event 행사에 참석하게 되어 영광이다"
+    ]
    },
    {
     "word": "analyze",
-    "meaning": "분석하다",
-    "pos": "v."
+    "pron": "[ǽnəlàiz]",
+    "pos": "v.",
+    "meaning": "v. 분석하다",
+    "tip": "임신한 아내가 임신했으니 내년 34살에 날지 [[b]]애 날 나이[[/b]]를 계산하며 [[r]]분석하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "analysis",
+      "meaning": "분석"
+     },
+     {
+      "word": "analytic",
+      "meaning": "분석적인"
+     }
+    ],
+    "toeicExpr": [
+     "analyze data/results 데이터를/결과를 분석하다",
+     "market analysis 시장 분석  detailed analysis 상세한 분석",
+     "analytic skills 분석적 능력"
+    ]
    },
    {
     "word": "right",
-    "meaning": "1. adj. 옳은 2. adj. 오른쪽의 3. n. 권리",
-    "pos": "adj./n."
+    "pron": "[rait]",
+    "meaning": "1. a. 옳은  2. a. 오른쪽의  3. n. 권리",
+    "tip": "왼쪽 도로는 역주행이지만 [[b]]right[[/b]](오른쪽) 도로는 차를 운전할 [[r]]권리[[/r]]가 있다.",
+    "derivatives": [
+     {
+      "word": "rightfully",
+      "meaning": "옳게도, 당연하게도, 정당하게"
+     }
+    ],
+    "toeicExpr": [
+     "the right to access 접근할 권리",
+     "the right to use 사용할 권리",
+     "rightfully claim/complain 정당하게 주장하다/불평하다",
+     "rightfully belong to 마땅히 ~에게 속하다"
+    ]
    },
    {
     "word": "copyright",
-    "meaning": "저작권, 판권",
-    "pos": "n."
+    "pron": "[kɔ́piràit]",
+    "pos": "n.",
+    "meaning": "n. 저작권, 판권",
+    "tip": "책을 [[b]]copy[[/b]](복사)하여 팔 [[b]]right[[/b]](권리), 즉 [[r]]저작권, 판권[[/r]]",
+    "toeicExpr": [
+     "copyright infringement 저작권 침해",
+     "copyright on the software program 그 소프트웨어 프로그램에 대한 저작권"
+    ]
    },
    {
     "word": "term",
-    "meaning": "1. 기간, 학기 2. 말, 용어 3. (-s) 조건, 약관",
-    "pos": "n."
+    "pron": "[təːrm]",
+    "pos": "n.",
+    "meaning": "n. 1. 기간, 학기  2. 말, 용어  3. (-s) 조건, 약관",
+    "tip": "① \"Good morning, [[b]]Tom[[/b]].\"은 1학년 1[[r]]학기 기간[[/r]] 동안 처음 배우는 [[r]]말, 용어[[/r]]  ② 어떤 [[b]]term[[/b]](기간) 동안만 한다는 [[r]]조건[[/r]]",
+    "toeicExpr": [
+     "long-term 장기적인  short-term 단기적인",
+     "school term 학기  long-term goal 장기적인 목표",
+     "technical term 기술 용어  legal terms 법률 용어",
+     "payment terms 결제 조건  lease terms 임대 조건",
+     "terms and conditions 약관, 조건 (← conditions: 조건들)",
+     "All the terms and conditions are laid out in the contract. 모든 (계약) 조건들은 계약서에 제시되어 있습니다.",
+     "in terms of ~의 관점에서, ~ 측면에서 (← ~의 조건 내에서 보면)",
+     "In terms of cost, this plan is more efficient. 비용 측면에서 이 계획이 더 효율적이다."
+    ],
+    "examVar": [
+     {
+      "note": "'terms(조건·약관)'와 'term(기간·용어)'의 의미 차이를 구분하는 문제가 자주 출제되었다. 조건이나 약관은 여러 가지로 구성되어 있기 때문에 복수형을 쓴다.",
+      "en": "The contract will be renewed only if both parties agree to the new ______.  terms (O)  term (X)",
+      "ko": "그 계약은 두 당사자가 새 약관에 동의하는 경우에만 갱신될 것이다."
+     },
+     {
+      "en": "The product is highly competitive in terms of price and overall quality.",
+      "ko": "그 제품은 가격과 전반적인 품질 측면에서 경쟁력이 매우 높다."
+     }
+    ]
    },
    {
     "word": "declare",
-    "meaning": "1. 선언하다, 공표하다 2. (소득·세금 등을) 신고하다",
-    "pos": "v."
+    "pron": "[diklέər]",
+    "pos": "v.",
+    "meaning": "v. 1. 선언하다, 공표하다  2. (소득·세금 등을) 신고하다",
+    "tip": "\"[[b]]뒤[[/b]]에 [[b]]클[[/b]](큰) 명품백에 대한 세금을 [[b]]내요[[/b]](낼게요).\"라고 세관원에게 [[r]]공표하다, 신고하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "declaration",
+      "meaning": "선언, 발표, 신고"
+     }
+    ],
+    "toeicExpr": [
+     "declare that the merger was approved 합병이 승인되었다고 발표하다",
+     "declare income/tax 소득을/세금을 신고하다",
+     "declare goods 물품을 신고하다 (세관)",
+     "official declaration 공식 선언",
+     "customs/income declaration 세관/소득 신고"
+    ]
    },
    {
     "word": "persuade",
-    "meaning": "설득하다, 설득하여 ~하게 시키다",
-    "pos": "v."
+    "pron": "[parswéid]",
+    "pos": "v.",
+    "meaning": "v. 설득하다, 설득하여 ~하게 시키다",
+    "tip": "\"이 길은 [[b]]bus way다[[/b]]!\"라며 자가용은 다니지 말라고 경찰이 [[r]]설득하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "persuasive",
+      "meaning": "설득력 있는"
+     },
+     {
+      "word": "persuasively",
+      "meaning": "설득력 있게"
+     }
+    ],
+    "toeicExpr": [
+     "persuade A to + 동사원형: A를 설득하여 ~하게 하다",
+     "The salesperson persuaded the client to buy the premium plan. 영업사원은 고객을 설득해 프리미엄 요금제를 구매하게 했다.",
+     "persuasive speech/presentation/argument 설득력 있는 연설/발표/주장",
+     "persuasively explain/speak 설득력 있게 설명하다/말하다"
+    ]
    },
    {
     "word": "property",
-    "meaning": "재산, 자산, 부동산",
-    "pos": "n."
+    "pron": "미 [prɔ́parti] 영 [prɔ́parti]",
+    "pos": "n.",
+    "meaning": "n. 재산, 자산, 부동산",
+    "tip": "재산이 많으면 그 [[r]]재산[[/r]]을 [[b]]풀어[[/b]] [[b]]파티[[/b]]를 즐기는 부자들",
+    "toeicExpr": [
+     "private property 사유 재산  intellectual property 지적 재산",
+     "property owner 부동산 소유주  commercial property 상업용 부동산",
+     "residential property 주거용 부동산"
+    ]
    },
    {
     "word": "borrow",
-    "meaning": "(물건 등을) 빌리다, 돈을 꾸다",
-    "pos": "v."
+    "pron": "[bɔ́:rou]",
+    "pos": "v.",
+    "meaning": "v. (물건 등을) 빌리다, 돈을 꾸다",
+    "tip": "\"[[b]]바로[[/b]] 돌려줄게.\" 하며 돈을 [[r]]빌리다[[/r]]",
+    "toeicExpr": [
+     "borrow equipment/tools 장비를/도구를 빌리다",
+     "borrow a laptop for a presentation 발표를 위해 노트북을 빌리다"
+    ],
+    "examVar": [
+     {
+      "en": "The company decided to ______ additional funds from the bank to expand its operations.",
+      "opt": "(A) lend  (B) rent  (C) borrow  (D) lease",
+      "ans": "(C)",
+      "ko": "회사는 사업 확장을 위해 은행에서 추가 자금을 빌리기로 결정했다.",
+      "note": "lend (작은 물건, 돈 등을) 빌려주다 / rent (부동산, 차, 큰 기계 등을) 임대하다, 임차하다 / lease (장기 계약으로 건물, 장비, 차량 등을) 임대하다, 임차하다"
+     }
+    ]
    },
    {
     "word": "form",
-    "meaning": "1. n. 서식, 기입용지 2. n. 형태, 모양, 형식 / v. 구성하다, 형성하다",
-    "pos": "n./v."
+    "pron": "[fɔːrm]",
+    "pos": "n./v.",
+    "meaning": "1. n. 서식, 기입용지  2. n. 형태, 모양, 형식  v. 구성하다, 형성하다",
+    "tip": "[[b]]폼[[/b]]이 멋있다고 할 때 폼은 그 사람의 [[r]]모양[[/r]]이나 [[r]]형태[[/r]]를 말하며, 어떠한 [[r]]형태[[/r]]를 갖춘 서식 용지인 [[r]]기입용지, 서식[[/r]]",
+    "derivatives": [
+     {
+      "word": "formation",
+      "meaning": "구성, 형성"
+     }
+    ],
+    "toeicExpr": [
+     "application form 지원서  registration form 등록양식, 신청서",
+     "fill out the form 양식을 작성하다 (← fill(채우다) + out(완전히))",
+     "complete the form 서류를 작성하다",
+     "in written form 서면 형식으로",
+     "form a committee 위원회를 구성하다",
+     "business formation 사업 설립  team formation 팀 구성"
+    ],
+    "examVar": [
+     {
+      "en": "The receptionist asked all visitors to fill out the registration _______ before entering the building.",
+      "note": "form (O)  note (X)",
+      "ko": "안내 직원은 모든 방문자에게 그 건물에 들어오기 전에 등록양식을 작성할 것을 요청했다."
+     }
+    ]
    },
    {
     "word": "beforehand",
+    "pron": "[bifɔ́ːrhænd]",
+    "pos": "ad.",
     "meaning": "미리, 사전에",
-    "pos": "adv."
+    "tip": "다른 사람의 [[b]]hand[[/b]](손)이 닿기 [[b]]before[[/b]](전에) [[r]]미리, 사전에[[/r]] 가져가다",
+    "toeicExpr": [
+     "prepare/inform ~ beforehand 사전에 ~을 준비하다/알리다",
+     "book tickets beforehand 티켓을 미리 예매하다"
+    ]
    },
    {
     "word": "adequate",
+    "pron": "[ǽdikwət]",
+    "pos": "a.",
     "meaning": "적당한, 적절한, 충분한",
-    "pos": "adj."
+    "tip": "축구 11명 다 찼으니 [[b]]애[[/b]]들이 [[b]]뒤[[/b]]에서 기다리지만 [[b]]cut[[/b]]!(잘라!), 즉 이미 인원이 [[r]]적당한, 적절한, 충분한[[/r]]",
+    "derivatives": [
+     {
+      "word": "adequately",
+      "meaning": "적절하게, 충분히"
+     },
+     {
+      "word": "inadequate",
+      "meaning": "부적절한, 불충분한"
+     }
+    ],
+    "toeicExpr": [
+     "adequate preparation 적절한 준비",
+     "adequate time/information/resources 충분한 시간/정보/자원",
+     "more than adequate 충분하고도 남는",
+     "adequately prepared/trained 충분히(적절히) 준비된/훈련된",
+     "inadequate response 부적절한 대응  inadequate resources 불충분한 자원"
+    ],
+    "examVar": [
+     {
+      "note": "'more than adequate' 표현이 출제되었다.",
+      "en": "The budget is more than adequate to cover all the expenses.",
+      "ko": "그 예산은 모든 비용을 충당하기에 충분하고도 남는다."
+     }
+    ]
    },
    {
     "word": "fail",
+    "pron": "[feil]",
+    "pos": "v.",
     "meaning": "실패하다",
-    "pos": "v."
+    "tip": "후보 중에 \"[[b]]빼[[/b]]! 1번은.\" 즉, 1번은 합격에 [[r]]실패하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "failure",
+      "meaning": "(기계 등의) 고장, 실패"
+     }
+    ],
+    "toeicExpr": [
+     "fail an exam 시험에 떨어지다",
+     "fail to meet a deadline 마감일을 지키지 못하다",
+     "system/mechanical/equipment failure 시스템/기계/장비 고장",
+     "failure to pay the bill 요금 미납"
+    ]
    },
    {
     "word": "severe",
+    "pron": "[sivíər]",
+    "pos": "a.",
     "meaning": "엄격한, 심한, 심각한",
-    "pos": "adj."
+    "tip": "밤늦게 들어온 아이에게 \"지금이 밤 [[b]]12시여[[/b]]!\"라고 야단치는 [[r]]엄격한[[/r]], 야단이 [[r]]심한[[/r]] 아버지",
+    "derivatives": [
+     {
+      "word": "severely",
+      "meaning": "심하게, 엄하게"
+     }
+    ],
+    "toeicExpr": [
+     "severe damage/loss/condition 심각한 피해/손실/상태",
+     "severe weather 악천후",
+     "severely restricted 엄격히 제한된"
+    ]
    },
    {
     "word": "add",
+    "pron": "[æd]",
+    "pos": "v.",
     "meaning": "더하다, 합치다, 추가하다",
-    "pos": "v."
+    "tip": "뷔페식당에서 3살짜리 [[b]]애두[[/b]] 돈을 내야 하는 인원이 [[r]]더하다, 추가하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "addition",
+      "meaning": "합, 첨가, 덧셈"
+     },
+     {
+      "word": "additional",
+      "meaning": "추가적인"
+     }
+    ],
+    "toeicExpr": [
+     "add to the list/schedule 목록에/일정에 추가하다",
+     "add a comment 의견을 덧붙이다",
+     "add details 세부사항을 추가하다",
+     "in addition to + 명사/동명사: ~에 더하여, ~ 외에도",
+     "In addition to free breakfast, the hotel offers complimentary parking. 무료 조식뿐만 아니라, 그 호텔은 무료 주차도 제공한다.",
+     "make additions 추가하다",
+     "in addition 게다가, 또한",
+     "The company offers health insurance. In addition, it provides paid vacation. 그 회사는 건강 보험을 제공한다. 또한 유급 휴가도 제공한다.",
+     "additional information/charge/documents 추가적인 정보/비용/서류"
+    ],
+    "examVar": [
+     {
+      "note": "1. in addition to 다음에 명사/동명사가 오는 문제가 자주 출제되었다.",
+      "en": "In addition to _______ the report, the assistant prepared a presentation.",
+      "opt": "(A) review  (B) reviews  (C) reviewing  (D) reviewed",
+      "ans": "(C)",
+      "ko": "보고서를 검토하는 것에 더해, 그 비서는 발표 자료를 준비했다."
+     },
+     {
+      "note": "2. 'In addition to + 명사' vs 'In addition, + 완전한 문장' (쉼표 유무 + 문장 구조로 판단)",
+      "en": "_______, the company will provide additional training for new employees.",
+      "opt": "(A) In addition to  (B) In addition  (C) In addition for  (D) In addition with",
+      "ans": "(B)",
+      "ko": "또한 회사는 신입 사원을 위한 추가 교육을 제공할 것이다."
+     }
+    ]
    },
    {
     "word": "object",
-    "meaning": "1. 물건, 물체 2. 목표, 대상 3. 반대하다",
-    "pos": "n./v."
+    "pron": "n. [ɑ́bdʒekt]\nv. [əbdʒékt]",
+    "pos": "n./v.",
+    "meaning": "1. n. 물건, 물체  2. n. 목표, 대상  3. v. 반대하다",
+    "tip": "우리 비행기 [[b]]앞[[/b]]에서 날아오는 [[b]]제트[[/b]]기 같은 [[b]]물체[[/b]]는 우리를 [[r]]반대하는[[/r]] 적으로 격추해야 할 [[r]]목표, 대상[[/r]]",
+    "derivatives": [
+     {
+      "word": "objection",
+      "meaning": "반대"
+     }
+    ],
+    "toeicExpr": [
+     "lost object 분실물  object on display 전시된 물건  valuable object 귀중품",
+     "the main object of the meeting 회의의 주요 목적",
+     "the main object 주된 목적  object of concern 우려의 대상",
+     "object to + 명사/동명사: ~에 반대하다, 이의를 제기하다 (← to: 전치사로 '~쪽을 향해')",
+     "object to the proposal 제안에 이의를 제기하다",
+     "object to changing the schedule 일정 변경에 반대하다",
+     "objection to + 명사/동명사: ~에 대한 반대 (← to: 전치사로 '~쪽을 향')",
+     "raise an objection to the proposal 제안에 반대 의견을 제기하다",
+     "have no objection to the plan 그 계획에 반대하지 않다",
+     "raise an objection 이의를 제기하다"
+    ],
+    "examVar": [
+     {
+      "en": "Several employees strongly objected to the proposed changes in the work schedule.",
+      "ko": "여러 직원들이 제안된 근무 일정 변경에 강하게 반대했다."
+     },
+     {
+      "en": "The client strongly objected to ___ an additional service fee.",
+      "opt": "charging (O)  charge (X)",
+      "ko": "고객은 추가 서비스 요금을 부과하는 것에 강하게 반대했다."
+     },
+     {
+      "en": "The board raised an objection to ___ the budget without further review.",
+      "opt": "approving (O)  approve (X)",
+      "ko": "이사회는 추가 검토 없이 예산을 승인하는 것에 대해 반대 의견을 제기했다."
+     }
+    ]
    },
    {
     "word": "objective",
-    "meaning": "1. 객관적인 2. 목표, 목적",
-    "pos": "adj./n."
+    "pron": "[əbdʒéktiv]",
+    "pos": "a./n.",
+    "meaning": "1. a. 객관적인  2. n. 목표, 목적",
+    "tip": "① [[b]]5부[[/b]]에 걸친 사람 '[[b]]젝[[/b]]'에 대한 긴 [[b]]TV[[/b]] 프로그램으로 [[r]]객관적인[[/r]]\n② [[b]]object[[/b]](목표) [[b]]TV[[/b]] TV와 같은 화면 레더에 잡힌 [[b]]object[[/b]](물체, 목표), 즉 [[r]]목표, 목적[[/r]]",
+    "derivatives": [
+     {
+      "word": "objectively",
+      "meaning": "객관적으로"
+     }
+    ],
+    "toeicExpr": [
+     "objective analysis/evidence 객관적인 분석/증거",
+     "main objective 주요 목표  long-term objective 장기적 목표",
+     "judge objectively 객관적으로 판단하다  analyze objectively 객관적으로 분석하다"
+    ],
+    "examVar": [
+     {
+      "note": "object to(반대하다), objection(반대), objective(목표, 목적) 구분 문제가 자주 출제되었다.",
+      "en": "The committee chairperson asked if anyone had any ___ to the proposed changes.",
+      "opt": "(A) object  (B) objectives  (C) objection  (D) objected",
+      "ans": "(C)",
+      "ko": "위원회 의장이 제안된 변경 사항들에 대해 이의가 있는 사람이 있는지 물었다."
+     }
+    ]
    },
    {
     "word": "stack",
-    "meaning": "더미, 많음; 쌓다, 쌓이다, 누적되다",
-    "pos": "n./v."
+    "pron": "[stæk]",
+    "pos": "n./v.",
+    "meaning": "n. 더미, 많음  v. 쌓다, 쌓이다, 누적되다",
+    "tip": "햄버거 빵 위에 [[b]]스테이크[[/b]] 고기 [[r]]더미를 쌓다[[/r]]",
+    "toeicExpr": [
+     "a stack of papers/files 종이/파일 더미",
+     "stack boxes 상자를 쌓다",
+     "stack shelves with products 선반에 상품을 쌓다",
+     "stack up 쌓이다, 누적되다 (up: 위로)",
+     "stack up costs/tasks 비용이/업무가 누적되다"
+    ]
    },
    {
     "word": "subject",
-    "meaning": "1. (실험) 대상, 피실험자 2. 주제, 화제",
-    "pos": "n."
+    "pron": "[sʌ́bdʒikt]",
+    "pos": "n.",
+    "meaning": "n. 1. (실험) 대상, 피실험자  2. 주제, 화제",
+    "tip": "현미경 [[b]]sub[[/b]](밑에서) 주사를 [[b]]찍[[/b]] 하고 맞는 쥐와 같은 [[r]](실험) 대상, 피실험자[[/r]]. 이러한 \"쥐의 해부\"가 오늘 생물 시간의 [[r]]주제, 화제[[/r]]",
+    "toeicExpr": [
+     "research/test subject 연구 대상(자)",
+     "subject of debate 논쟁의 대상",
+     "subject of discussion/debate 토론/논쟁 주제",
+     "main subject 주요 주제"
+    ]
    },
    {
     "word": "be subject to",
-    "meaning": "1. ~의 대상이 되다, ~의 적용을 받다 2. ~하기 쉽다 3. ~에 달려있다, ~에 따라 결정되다",
-    "pos": "v."
+    "pos": "+ 명사/동명사",
+    "meaning": "1. ~의 대상이 되다, ~의 적용을 받다  2. ~하기 쉽다\n3. ~에 달려있다, ~에 따라 결정되다",
+    "tip": "[[b]]be[[/b]] + [[b]]subject[[/b]](대상) + [[b]]to[[/b]](전치사: ~쪽으로)] [[r]]~쪽으로 대상이 되다[[/r]], 즉 [[r]]~을 당하기 쉽다, ~에 따라 결정되다[[/r]]",
+    "toeicExpr": [
+     "be subject to approval 승인 대상이다(승인을 받아야 한다)",
+     "be subject to tax 세금 대상이다(세금이 부과된다)",
+     "be subject to change/delay 변경될/지연될 수 있다 (← 변경/지연 대상이다)",
+     "be subject to negotiation 협상 결과에 달려있다",
+     "be subject to availability (재고좌석 등) 가능 여부에 따라 달라지다",
+     "Hotel rooms are subject to availability at the time of booking. 호텔 객실은 예약 시 가능 여부에 달려있다."
+    ],
+    "examVar": [
+     {
+      "en": "All promotional materials are subject to approval by the legal department before distribution.",
+      "ko": "모든 홍보 자료는 배포되기 전에 법무팀의 승인 대상이다."
+     },
+     {
+      "en": "All schedules are subject to ___ without prior notice.",
+      "opt": "(A) change  (B) changing  (C) be changed  (D) changeable",
+      "ans": "(A)",
+      "ko": "모든 일정은 사전 통보 없이 변경될 수 있다.",
+      "note": "전치사 to 다음에 명사 change(변경)가 와야 하고, changing(동명사)은 뒤에 목적어가 필요하다."
+     }
+    ]
    },
    {
     "word": "toll",
-    "meaning": "(유료 도로·다리 등의) 통행료",
-    "pos": "n."
+    "pron": "[toul]",
+    "pos": "n.",
+    "meaning": "1. (유료 도로·다리 등의) 통행료",
+    "tip": "고속도로 [[b]]톨게이트(toll gate)[[/b]]에서 받는 [[r]]통행료[[/r]]",
+    "toeicExpr": [
+     "toll-free 무료의  bridge toll 다리 통행세",
+     "toll bridge (통행료가 부과되는) 유료 다리  toll road 유료 도로",
+     "expressway(=highway) toll 고속도로 통행료"
+    ]
    }
   ]
  },
@@ -1343,123 +3915,556 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "refer",
-    "meaning": "1. 말하다, 언급하다, 가리키다 2. 참고하다, 참조하다 3. 회부하다, 보내다, 맡기다",
-    "pos": "v."
+    "pron": "[rifə́:r]",
+    "pos": "v.",
+    "meaning": "1. 말하다, 언급하다, 가리키다  2. 참고하다, 참조하다  3. 회부하다, 보내다, 맡기다",
+    "tip": "무뚝뚝한 여보! 내가 [[r]]이뻐[[/r]]? 여기 있는 연예인 사진 [[b]]two[[/b]](2) 장을 [[r]]보낼 테니[[/r]], [[r]]참고하여[[/r]] 내가 누구만큼 이쁜지 [[r]]말 좀 해줘[[/r]]!",
+    "derivatives": [
+     {
+      "word": "reference",
+      "meaning": "1. 언급 2. 참고 3. 추천서, 추천인 (← 결정에 참고할 만한 사람)"
+     }
+    ],
+    "toeicExpr": [
+     "refer to + 명사: ~을 언급하다, 가리키다, 참고하다",
+     "refer to the issue/report 해당 사안을/보고서를 언급하다",
+     "as referred to above 위에서 언급한 대로",
+     "as referred to below 아래에서 언급한 대로",
+     "refer to the figure/chart 수치를/도표를 가리키다",
+     "refer to the manual 설명서를 참고하다",
+     "refer to A as B A를 B라고 언급하다",
+     "refer to the position as temporary 그 직위를 임시직이라고 부르다",
+     "refer to the plan as a success 그 계획을 성공으로 지칭하다",
+     "refer A to B A를 B에게 회부하다(맡기다, 의뢰하다)",
+     "be referred to the department 부서로 회부되다",
+     "refer the matter to HR 사안을 인사팀에 회부하다 (HR: Human Resources 인사팀)",
+     "make reference to ~을 언급하다, ~을 참고로 들다",
+     "make reference to the policy 정책을 언급하다(참고로 들다)",
+     "in reference to ~에 관한 (← ~쪽에 대한 언급/참고 내에서)",
+     "in reference to your inquiry/request 귀하의 문의와/요청과 관련하여",
+     "in reference to the email 해당 이메일과 관련하여",
+     "References available upon request 요구 시 참조자료 가능",
+     "for reference 참고용으로  reference guide 참고 안내서",
+     "letter of reference 추천서  reference letter 추천서",
+     "professional references 직무 관련 추천인, 경력 추천인",
+     "provide a reference 추천인을 제공하다  list a reference 추천인을 기재하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The downtown area is often referred to as the business hub of the city.",
+      "ko": "도심 지역은 종종 그 도시의 비즈니스 중심지로 불린다."
+     },
+     {
+      "en": "2. Please refer to the attached document for further details.",
+      "ko": "자세한 사항은 첨부 문서를 참고해 주십시오."
+     },
+     {
+      "en": "3. In reference to the meeting scheduled for Friday, please review the attached agenda.",
+      "ko": "금요일로 예정된 회의와 관련하여 첨부된 안건을 검토해 주십시오."
+     },
+     {
+      "en": "4. Applicants must provide two professional references.",
+      "ko": "지원자는 직무 추천인 2명을 제공해야 합니다."
+     }
+    ]
    },
    {
     "word": "variety",
+    "pron": "[vəráiəti]",
+    "pos": "n.",
     "meaning": "다양성",
-    "pos": "n."
+    "tip": "'[[b]]버라이어티 쇼[[/b]]'란 [[r]]다양성[[/r]]이 있는 쇼",
+    "toeicExpr": [
+     "a wide variety of = a large variety of 매우 다양한",
+     "a wide variety of goods 다양한 상품  a variety of opinion 다양한 의견"
+    ]
    },
    {
     "word": "vary",
+    "pron": "[vέəri]",
+    "pos": "v.",
     "meaning": "각기 다르다, 달라지다",
-    "pos": "v."
+    "tip": "[[b]]블루베리, 스트로베리, 크랜베리[[/b]] 등 베리는 [[r]]각기 다르다[[/r]]",
+    "derivatives": [
+     {
+      "word": "various",
+      "meaning": "다양한"
+     },
+     {
+      "word": "variable",
+      "meaning": "변하기 쉬운; 변수 (← -able: ~하기 쉬운, ~할 수 있는)"
+     },
+     {
+      "word": "invariable",
+      "meaning": "변함없는 (← in: not을 뜻하는 접두어)"
+     },
+     {
+      "word": "variation",
+      "meaning": "변화, 변동"
+     }
+    ],
+    "toeicExpr": [
+     "vary in size/price/quality 크기/가격/품질이 각기 다르다",
+     "various reasons/forms/purposes 다양한 이유/형태/목적",
+     "variable costs 변동비(변동 비용)  variable rate 변동 금리",
+     "be invariable in quality 품질이 항상 일정하다",
+     "significant variation 상당한 변화  variation in prices 가격 변동"
+    ],
+    "examVar": [
+     {
+      "en": "The company provides _______ services to meet the needs of its clients.",
+      "ko": "그 회사는 고객의 요구를 충족하기 위해 다양한 서비스를 제공한다.",
+      "note": "various와 variable을 구분하는 문제가 출제되었다.  various (O) variable (X)"
+     }
+    ]
    },
    {
     "word": "source",
+    "pron": "[sɔːrs]",
+    "pos": "n.",
     "meaning": "원천, 출처",
-    "pos": "n."
+    "tip": "\"이 [[b]]소스[[/b]]는 뭘 넣어서 이렇게 맛있지?\" 하고 궁금해하는 [[b]]소스[[/b]]의 [[r]]원천, 출처[[/r]]",
+    "toeicExpr": [
+     "source of income 소득원  source material 자료 출처",
+     "energy source 에너지원  source of information 정보원"
+    ]
    },
    {
     "word": "swift",
+    "pron": "[swift]",
+    "pos": "a.",
     "meaning": "신속한, 빠른",
-    "pos": "adj."
+    "tip": "아파트에 화재가 나자 문 앞의 [[b]]수위부터[[/b]] [[r]]신속한, 빠른[[/r]] 탈출",
+    "derivatives": [
+     {
+      "word": "swiftly",
+      "meaning": "신속히, 빨리"
+     }
+    ],
+    "toeicExpr": [
+     "swift action/response/decision 신속한 조치/대응/결정",
+     "recover/change swiftly 신속히 회복하다/변화하다"
+    ]
    },
    {
     "word": "shift",
-    "meaning": "1. 바꾸다; 변화 2. 교대 근무",
-    "pos": "v./n."
+    "pron": "[ʃift]",
+    "pos": "1. v. n. / 2. n.",
+    "meaning": "1. v. 바꾸다  n. 변화  2. n. 교대 근무",
+    "tip": "① 컴퓨터의 [[b]]쉬프트[[/b]] 키로 소문자를 대문자로 [[r]]바꾸다[[/r]]  ② (근무를) 바꾸다 → [[r]]교대 근무[[/r]]",
+    "toeicExpr": [
+     "shift the schedule 일정을 바꾸다  shift in demand 수요 변화",
+     "day/night/morning/evening shift 주간/야간/오전/저녁 (교대) 근무",
+     "work in shifts 교대 근무로 일하다  shift schedule 교대 근무 일정, 근무표"
+    ],
+    "examVar": [
+     {
+      "en": "1. Due to the increase in production demand, the factory decided to add an additional night shift starting next month.",
+      "ko": "생산 수요 증가로 인해 공장은 다음 달부터 야간 근무조를 추가하기로 했다."
+     },
+     {
+      "en": "2. Because the customer support center operates 24 hours a day, all employees must work in shifts to ensure full coverage.",
+      "ko": "고객 지원 센터는 하루 24시간 운영되므로 모든 직원은 전체 운영을 위해 교대 근무를 해야 한다."
+     }
+    ]
    },
    {
     "word": "facility",
+    "pron": "[fəsíləti]",
+    "pos": "n.",
     "meaning": "시설, 설비",
-    "pos": "n."
+    "tip": "조선시대 백성들이 물을 [[b]]퍼서 씰[[/b]](씻는) 공동 우물 [[r]]시설[[/r]]",
+    "derivatives": [
+     {
+      "word": "facilitate",
+      "meaning": "(일을) 용이하게 하다, 촉진하다 (← 생산 시설이 일을 용이하게 하다)"
+     }
+    ],
+    "toeicExpr": [
+     "아래 표현들 각각에서 facility(단수), facilities(복수) 모두 가능하고 시설이 여러 개일 때는 복수형을, 한 개일 때는 단수형을 쓴다.",
+     "sports facility 체육 시설(체육관 1개 또는 수영장 한 개)",
+     "sports facilities 체육 시설(체육관, 수영장, 코트 등을 묶어서 말할 때)",
+     "manufacturing facilities 생산 시설  research facilities 연구 시설",
+     "facilitate communication 의사소통을 원활히 하다",
+     "facilitate growth 성장을 촉진하다"
+    ]
    },
    {
     "word": "encounter",
+    "pron": "[inkáuntər]",
+    "pos": "v.",
     "meaning": "(위험·곤란 등에) 직면하다, 마주치다",
-    "pos": "v."
+    "tip": "무전취식하고 도망치려다가 [[b]]잉! 카운터[[/b]]에서 주인을 [[r]]마주치다, (곤란에) 직면하다[[/r]]",
+    "toeicExpr": [
+     "encounter difficulties/problems 어려움에/문제에 직면하다"
+    ]
    },
    {
     "word": "distribution",
+    "pron": "[distribjúːʃən]",
+    "pos": "n.",
     "meaning": "분배, 유통, 분포",
-    "pos": "n."
+    "tip": "집집마다 [[b]]this[[/b]](이) [[b]]tree[[/b]](나무)를 심으라고 전국에 [[b]]부으션[[/b]](부으셔서), 즉 [[r]]분배, 유통, 분포[[/r]]",
+    "derivatives": [
+     {
+      "word": "distribute",
+      "meaning": "분배하다, 나누어 주다"
+     }
+    ],
+    "toeicExpr": [
+     "distribution center 물류 센터  product distribution 제품 유통",
+     "distribute goods 상품을 유통하다"
+    ],
+    "examVar": [
+     {
+      "en": "The manager distributed the updated manuals to all employees.",
+      "ko": "관리자가 모든 직원에게 새 매뉴얼을 배포했다."
+     }
+    ]
    },
    {
     "word": "contribution",
+    "pron": "미[kòntribjúːʃən] 영[kɔ̀ntribjúːʃən]",
+    "pos": "n.",
     "meaning": "공헌, 기부, 기부금",
-    "pos": "n."
+    "tip": "[[b]]country[[/b]](나라)를 위해 노력 또는 기부금을 [[b]]부으션[[/b]](부으셔서), 즉 [[r]]공헌, 기부, 기부금[[/r]]",
+    "derivatives": [
+     {
+      "word": "contribute",
+      "meaning": "공헌하다, 기여하다, 기부하다"
+     }
+    ],
+    "toeicExpr": [
+     "make a contribution 기여하다  social contribution 사회적 기여, 사회공헌  charitable contribution 자선 기부",
+     "contribute to + 명사/동명사: ~에 기여하다, 공헌하다 (← to: 전치사로 '~쪽으로')  contribute to success 성공에 기여하다  contribute to society 사회에 공헌하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. Regular maintenance contributes ___ extending the lifespan of equipment.",
+      "opt": "(A) to  (B) for  (C) in  (D) by",
+      "ans": "(A)",
+      "ko": "정기적인 유지 관리는 장비 수명을 연장하는 데 기여한다."
+     },
+     {
+      "en": "2. Regular maintenance contributes to ___ equipment failures.",
+      "opt": "(A) prevent  (B) preventing  (C) prevented  (D) be prevented",
+      "ans": "(B)",
+      "ko": "정기적인 유지 관리는 장비 고장을 예방하는 데 기여한다."
+     }
+    ]
    },
    {
     "word": "amusing",
+    "pron": "[əmjúːziŋ]",
+    "pos": "a.",
     "meaning": "재미있는, 즐거운",
-    "pos": "adj."
+    "tip": "[[b]]어!! music[[/b]](음악)에 맞춰 춤추며 [[r]]재미있는, 즐거운[[/r]]",
+    "derivatives": [
+     {
+      "word": "amusement",
+      "meaning": "즐거움, 오락"
+     }
+    ],
+    "toeicExpr": [
+     "amusing story/performance 재미있는 이야기/공연",
+     "amusement park 놀이공원  amusement industry 오락 산업"
+    ]
    },
    {
     "word": "delay",
-    "meaning": "연기, 지연; 연기하다, 늦추다",
-    "pos": "n./v."
+    "pron": "[diléi]",
+    "pos": "n. v.",
+    "meaning": "n. 연기, 지연  v. 연기하다, 늦추다",
+    "tip": "\"돈을 [[b]]딜[[/b]](뒤에) [[b]]내이[[/b]](내겠어요!)\" 하며 지불을 [[r]]연기, 연기하다[[/r]]",
+    "toeicExpr": [
+     "delay a meeting/project 회의를/프로젝트를 연기하다",
+     "delay in delivery 배송 지연  cause a delay 지연을 초래하다"
+    ]
    },
    {
     "word": "appreciate",
-    "meaning": "1. 감사하다 2. (진가를) 인정하다, 높이 평가하다",
-    "pos": "v."
+    "pron": "[əpríːʃièit]",
+    "pos": "v.",
+    "meaning": "1. 감사하다  2. (진가를) 인정하다, 높이 평가하다",
+    "tip": "산삼을 발견하자, 자신의 몸을 [[b]]엎으리[[/b]](시) [[b]]에잇[[/b]]! 절을 하며 산신령께 [[r]]감사하다[[/r]], 진짜 산삼임을 [[r]](진가를) 인정하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "appreciation",
+      "meaning": "감사, 인정"
+     },
+     {
+      "word": "appreciative",
+      "meaning": "감사하는"
+     }
+    ],
+    "toeicExpr": [
+     "greatly appreciate 대단히 감사하다  appreciate the support 지원에 감사하다",
+     "appreciation for your support 당신의 지원에 대한 감사",
+     "appreciate the effort 노고를 인정하다(노고에 감사하다)",
+     "appreciation of his achievement 그의 업적에 대한 인정",
+     "be appreciative of ~에 감사하다  They were very appreciative of all the kindness they had received. 그들은 그들이 받은 모든 친절함에 매우 감사해했다."
+    ]
    },
    {
     "word": "mechanical",
+    "pron": "[məkǽnikəl]",
+    "pos": "a.",
     "meaning": "기계의, 기계적인",
-    "pos": "adj."
+    "tip": "땅에서 [[b]]뭐를 캐니 칼로[[/b]]? 칼 말고 땅을 뚫는 [[r]]기계[[/r]] 장치를 이용해!",
+    "derivatives": [
+     {
+      "word": "mechanic",
+      "meaning": "기계공, 정비사"
+     },
+     {
+      "word": "mechanism",
+      "meaning": "기계 장치, 메커니즘(사물의 작용 원리나 절차)"
+     }
+    ],
+    "toeicExpr": [
+     "mechanical failure 기계적 고장  mechanical device 기계 장치",
+     "auto mechanic 자동차 정비공  certified mechanic 공인 정비사  repair mechanic 수리 기사",
+     "locking mechanism 잠금 장치  opening mechanism 개폐 장치  pricing mechanism 가격 결정 메커니즘  approval mechanism 승인 절차"
+    ],
+    "examVar": [
+     {
+      "en": "The delay was caused by a ___ failure in the production line.",
+      "opt": "mechanical (O)  mechanic (X)",
+      "ko": "생산 라인의 기계적 고장으로 인해 지연이 발생했다.",
+      "note": "mechanical과 mechanic을 구분하는 문제가 자주 출제되었다."
+     }
+    ]
    },
    {
     "word": "bind",
-    "meaning": "묶다, 제본하다, (법적·계약적으로) 구속하다",
-    "pos": "v."
+    "pron": "[baind]",
+    "pos": "v.",
+    "meaning": "묶다, 제본하다, (법적·계약적으로) 구속하다 (bind–bound–bound)",
+    "tip": "[[b]]바인더[[/b]](binder)로 서류들을 한데 [[r]]묶다, 제본하다[[/r]]. 그리고 법으로 [[r]]묶다[[/r]], 즉 [[r]]구속하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "binder",
+      "meaning": "바인더, 서류철"
+     }
+    ],
+    "toeicExpr": [
+     "bind together 서로 묶다  bind with a clip 클립으로 묶다",
+     "bind documents 문서를 제본하다  bound reports 제본된 보고서",
+     "bind the parties to the agreement 당사자들을 계약에 구속하다(의무를 지우다)",
+     "be bound by ~에 의해 구속되다",
+     "be bound by company policy 회사 방침에 따라야 하다",
+     "be bound by the terms/agreement 조건에/계약에 구속되다",
+     "file binder 파일 바인더"
+    ]
    },
    {
     "word": "be bound to",
     "meaning": "~하게 되어 있다, 반드시 ~하다",
-    "pos": "v."
+    "tip": "be bound([[b]]묶여진, 매인[[/b]]) to ~: [[r]]~하도록 묶여 있다[[/r]], 즉 [[r]]~하게 되어 있다[[/r]]",
+    "toeicExpr": [
+     "be bound to happen 반드시 일어나게 되어 있다",
+     "be bound to cause delays 지연을 초래할 수밖에 없다",
+     "be bound to succeed 반드시 성공하게 되어 있다",
+     "The delay is bound to affect the project schedule. 그 지연은 프로젝트 일정에 영향을 미칠 수밖에 없다."
+    ]
    },
    {
     "word": "device",
-    "meaning": "1. 장치, 기기 2. 수단, 방법",
-    "pos": "n."
+    "pron": "[diváis]",
+    "pos": "n.",
+    "meaning": "1. 장치, 기기  2. 수단, 방법",
+    "tip": "뒤 바위 쓰(다): (바위를 클라이밍 장치로 쓸까? 하고) 집 [[b]]뒤 바위[[/b]]를 무슨 [[r]]장치[[/r]]로, 어떤 [[r]]방법[[/r]]으로 [[b]]쓰[[/b]]는 것이 좋을지 device([[r]]궁리하다, 고안하다[[/r]])",
+    "derivatives": [
+     {
+      "word": "devise",
+      "meaning": "(장치·방법 등을) 궁리하다, 고안하다"
+     }
+    ],
+    "toeicExpr": [
+     "electronic device 전자 기기  mobile device 모바일 기기",
+     "safety device 안전장치",
+     "devise a plan/strategy/method 계획을/전략을/방법을 고안하다"
+    ],
+    "examVar": [
+     {
+      "note": "device와 devise를 구분하는 문제가 출제되었다.",
+      "en": "The marketing team was asked to ______ a new strategy to attract younger customers.   devise (O)  device (X)",
+      "ko": "마케팅 팀은 더 젊은 고객을 끌어들이기 위한 새로운 전략을 고안하라는 요청을 받았다."
+     }
+    ]
    },
    {
     "word": "advertise",
+    "pron": "[ǽdvərtàiz]",
+    "pos": "v.",
     "meaning": "광고하다",
-    "pos": "v."
+    "tip": "[[b]]애두 보[[/b]]는데 야한 망사 [[b]]타이즈[[/b]]를 [[r]]광고하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "advertisement(=ad)",
+      "meaning": "광고"
+     }
+    ],
+    "toeicExpr": [
+     "advertise a product 제품을 광고하다",
+     "advertise through social media 소셜 미디어를 통해 광고하다",
+     "online/TV advertisement 온라인/TV 광고",
+     "advertisement agency 광고 대행사"
+    ]
    },
    {
     "word": "reasonable",
-    "meaning": "1. 합리적인, 타당한 2. 비싸지 않은",
-    "pos": "adj."
+    "pron": "[ríːzanəbl]",
+    "pos": "a.",
+    "meaning": "1. 합리적인, 타당한  2. 비싸지 않은",
+    "tip": "그 가격일 만한 [[b]]reason[[/b]](이유가) [[b]]able[[/b]](있을 만한), 즉 [[r]]합리적인, 타당한, 비싸지 않은[[/r]]",
+    "derivatives": [
+     {
+      "word": "reasonably",
+      "meaning": "사리에 맞게, 합리적으로"
+     }
+    ],
+    "toeicExpr": [
+     "reasonable price/decision/explanation 합리적인 가격/결정/설명",
+     "at reasonable rates 적절한(저렴한) 가격으로",
+     "reasonably priced 적당하게 가격이 매겨진, 저렴한"
+    ],
+    "examVar": [
+     {
+      "en": "The hotel offers comfortable rooms at a reasonable price.",
+      "ko": "그 호텔은 합리적인 가격에 편안한 객실을 제공한다."
+     },
+     {
+      "en": "Please submit the report within a reasonable amount of time.",
+      "ko": "보고서를 합리적인(타당한) 시간 내에 제출해 주십시오."
+     }
+    ]
    },
    {
     "word": "concerned",
-    "meaning": "1. 걱정스러운, 염려하는 2. 관계 있는",
-    "pos": "adj."
+    "pron": "[kənsə́ːrnd]",
+    "pos": "a.",
+    "meaning": "1. 걱정스러운, 염려하는  2. 관계 있는",
+    "tip": "① 군에 간 [[b]]큰 son도[[/b]](아들도) [[r]]걱정스러운, 염려하는[[/r]]\n② 이 사건에 경제계의 [[b]]큰 손도[[/b]] [[r]]관계 있는[[/r]]",
+    "derivatives": [
+     {
+      "word": "concern",
+      "meaning": "염려하다, ~에 관계하다; 염려, 관심"
+     },
+     {
+      "word": "concerning",
+      "meaning": "~에 관하여"
+     }
+    ],
+    "toeicExpr": [
+     "be concerned about ~에 대해 걱정하다",
+     "be concerned about safety/delays 안전에/지연에 대해 걱정하다",
+     "be concerned with ~와 관련 있다, ~을 다루다, 담당하다",
+     "be concerned with the issue 그 문제와 관련이 있다",
+     "be concerned with product development 제품 개발을 다루다(담당하다)",
+     "major concern 주요 관심사  prime concern 최우선 관심사",
+     "concerning the report/issue 보고서/문제에 관한",
+     "questions concerning the schedule/policy 일정에/정책에 관한 질문들",
+     "questions concerning eligibility 자격 요건에 관한 질문들"
+    ],
+    "examVar": [
+     {
+      "note": "questions concerning ~ \"~에 관한 질문\" (question이란 단어와 함께 자주 출제되었다.)",
+      "en": "He refused to answer questions concerning his wage.",
+      "ko": "그는 그의 임금에 관한 질문에 대답하기를 거절했다."
+     },
+     {
+      "note": "전치사 구분 문제로 자주 출제되었다.",
+      "en": "I'm concerned ______ the continuing pollution of the environment.   about (O)  with (X)",
+      "ko": "나는 계속되는 환경오염이 걱정스럽다."
+     },
+     {
+      "en": "The project is concerned ______ reducing operational costs.   with (O)  about (X)",
+      "ko": "그 프로젝트는 운영 비용 절감과 관련되어 있다."
+     },
+     {
+      "en": "What is your prime concern these days?",
+      "ko": "요즘 당신의 주된 관심사는 무엇입니까?"
+     }
+    ]
    },
    {
     "word": "crucial",
+    "pron": "[krúːʃəl]",
+    "pos": "a.",
     "meaning": "결정적인, 중대한",
-    "pos": "adj."
+    "tip": "\"무릎 [[b]]꿇으셔[[/b]]!\"라고 경찰이 소리치며 범인에게 내민 [[r]]결정적인, 중대한[[/r]] 증거",
+    "toeicExpr": [
+     "crucial information/decision/role 중요한 정보/결정/역할"
+    ]
    },
    {
     "word": "value",
-    "meaning": "n. 가치 v. 가치 있게 여기다, 소중히 하다",
-    "pos": "n./v."
+    "pron": "[vǽljuː]",
+    "pos": "n./v.",
+    "meaning": "n. 가치  v. 가치 있게 여기다, 소중히 하다",
+    "tip": "[[r]]가치[[/r]]가 [[b]]별루[[/b]](별로)야.",
+    "derivatives": [
+     {
+      "word": "valuable",
+      "meaning": "가치 있는, 귀중한 (← -able: 가치가 있을 만한) (사물을 수식한다.)"
+     },
+     {
+      "word": "valued",
+      "meaning": "가치 있는, 소중한 (사람, 사물 모두 수식한다.)"
+     },
+     {
+      "word": "valuables",
+      "meaning": "귀중품 (시계, 반지, 목걸이 등등 다수이기 때문에 복수형을 쓴다.)"
+     }
+    ],
+    "toeicExpr": [
+     "market value 시장 가치, 시가",
+     "valuable items 귀중품",
+     "valuable information/experience 귀중한 정보/경험",
+     "valued customer 소중한 고객",
+     "valued relationship 소중한 관계",
+     "store your valuables 귀중품을 보관하다",
+     "keep valuables safe 귀중품을 안전하게 보관하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. valued와 valuable을 구분하는 문제가 자주 출제되었다.\n* valued + 사람/관계\n* valuable + 사물/정보/시간/자산 (보통 사람을 수식하지 않음)\nThe company expressed its gratitude to all its ______ customers for their continued support.",
+      "opt": "(A) valuable  (B) valued  (C) valuing  (D) valuation",
+      "ans": "(B)",
+      "ko": "회사는 지속적인 지원에 대해 모든 소중한 고객들에게 감사를 표했다."
+     },
+     {
+      "en": "2. For security reasons, please do not leave your ______ unattended in the hotel lobby.",
+      "opt": "(A) valuables  (B) valuable  (C) valuation  (D) value",
+      "ans": "(A)",
+      "ko": "보안상의 이유로, 호텔 로비에 귀중품을 방치하지 말아 주십시오."
+     }
+    ]
    },
    {
     "word": "invaluable",
+    "pron": "[invǽljuəbl]",
+    "pos": "a.",
     "meaning": "매우 귀중한",
-    "pos": "adj."
+    "tip": "[[b]]in[[/b]](not) + [[b]]value[[/b]](가치) + [[b]]able[[/b]](~할 수 있는)] [[r]]가치를 매길 수 없는, 즉 매우 귀중한[[/r]]",
+    "toeicExpr": [
+     "invaluable resource/experience/asset 매우 귀중한 자원/경험/자산",
+     "invaluable contribution/assistance 매우 귀중한(막대한) 기여/도움"
+    ]
    },
    {
     "word": "enterprise",
+    "pron": "[éntərpràiz]",
+    "pos": "n.",
     "meaning": "기업, 회사, 사업",
-    "pos": "n."
+    "tip": "공모전 프로젝트에 1등 해서, 그 [[r]]기업, 회사[[/r]]에 [[b]]enter[[/b]](들어가) 취업할 수 있는 [[b]]prize[[/b]](상)을 받다.",
+    "toeicExpr": [
+     "business enterprise 사업체   private enterprise 민간 기업",
+     "large-scale enterprise 대기업",
+     "joint enterprise 공동 사업   new enterprise 신규 사업(회사)",
+     "launch an enterprise 사업을 시작하다"
+    ]
    }
   ]
  },
@@ -1469,123 +4474,531 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "accord",
+    "pron": "[əkɔ́ːrd]",
+    "pos": "v.",
     "meaning": "일치하다, 부합하다",
-    "pos": "v."
+    "tip": "[[b]]에[[/b]] 전기 [[b]]코드[[/b]]가 콘센트 구멍과 딱 [[r]]일치하다, 부합하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "accordingly",
+      "meaning": "따라서, 그에 따라 (← (앞의 내용과) 일치하여)"
+     }
+    ],
+    "toeicExpr": [
+     "accord with company policy 회사 방침과 일치하다",
+     "accord with regulations 규정에 부합하다",
+     "according to ~에 따라, ~에 따르면 (← ~쪽으로 일치시켜 말하면)",
+     "According to the weather forecast, the weather will improve soon. 일기 예보에 따르면, 날씨가 곧 좋아질 것이라고 한다.",
+     "in accordance with ~에 따라서, ~에 일치하여 (← ~와의 일치 속에서)",
+     "in accordance with the time and place 때와 장소에 따라",
+     "The weather was bad; accordingly, the event was postponed. 날씨가 나빴다. 따라서 행사가 연기되었다.",
+     "Please follow the instructions accordingly. 지시 사항을 그에 맞게 따르세요."
+    ],
+    "examVar": [
+     {
+      "en": "1. According to the survey results, most customers prefer the updated design.",
+      "ko": "조사 결과에 따르면, 대부분의 고객이 업데이트된 디자인을 선호한다."
+     },
+     {
+      "en": "2. Payments will be processed in accordance with the terms of the contract.",
+      "ko": "지급은 계약 조건에 따라 처리될 것이다."
+     }
+    ]
    },
    {
     "word": "clearly",
+    "pron": "[klíərli]",
+    "pos": "ad.",
     "meaning": "분명히, 명확하게, 뚜렷하게",
-    "pos": "adv."
+    "tip": "[[b]]clear[[/b]](분명한, 깨끗한)의 부사형",
+    "toeicExpr": [
+     "clearly state/indicate/understand 명확히 명시하다/나타내다/이해하다",
+     "clearly visible/printed 선명하게 보이는/인쇄된",
+     "clearly audible 뚜렷하게 들리는"
+    ],
+    "examVar": [
+     {
+      "en": "The new attendance policy is clearly stated in the employee handbook.",
+      "ko": "새로운 근태 정책은 직원 안내서에 명확히 명시되어 있다."
+     }
+    ]
    },
    {
     "word": "devote",
+    "pron": "[divóut]",
+    "pos": "v.",
     "meaning": "헌신하다, (노력·시간 등을) 쏟다",
-    "pos": "v."
+    "tip": "떠내려갈 [[b]]보트[[/b]]를 바다에 뛰어들어 [[b]]뒤[[/b]]로 가서 [[b]]보트[[/b]]를 밀어줄 정도로 자신을 [[r]]헌신하다, (노력·시간 등을) 쏟다[[/r]]",
+    "derivatives": [
+     {
+      "word": "devotion",
+      "meaning": "헌신"
+     }
+    ],
+    "toeicExpr": [
+     "devote A to B A를 B에 바치다 (← to: 전치사 '~쪽으로')",
+     "The company devotes resources to developing new products. 회사는 신제품 개발에 자원을 투입한다.",
+     "devote time to ~ ~에 시간을 바치다",
+     "devote effort to ~ ~에 노력을 기울이다",
+     "devotion to customer service 고객 서비스에 대한 헌신",
+     "devotion to professional growth 전문성 향상에 대한 헌신"
+    ],
+    "examVar": [
+     {
+      "en": "The research team will devote more resources to developing a reliable testing method.",
+      "ko": "연구팀은 신뢰할 만한 테스트 방법을 개발하는 데 더 많은 자원을 투입할 예정이다."
+     }
+    ]
    },
    {
     "word": "inventory",
+    "pron": "미 [ínvəntɔ̀ːri] 영 [ínvəntəri]",
+    "pos": "n.",
     "meaning": "재고조사, 물품 목록, 재고",
-    "pos": "n."
+    "tip": "전당포 창고 [[b]]in[[/b]](안에서) [[b]]번[[/b]](벌은) 물건들을 [[b]]털이[[/b]](털어내어) [[r]]물품 목록[[/r]]과 [[r]]재고조사[[/r]]하다",
+    "toeicExpr": [
+     "inventory levels/list/management 재고 수준/목록/관리",
+     "inventory shortage 재고 부족   out of inventory 재고가 없는",
+     "take inventory 재고 조사를 하다   conduct an inventory 재고 조사를 실시하다"
+    ]
    },
    {
     "word": "cancel",
+    "pron": "[kǽnsl]",
+    "pos": "v.",
     "meaning": "취소하다, 중지하다",
-    "pos": "v."
+    "tip": "맥주 한 [[b]]캔[[/b]]의 술을 마시고 운전하여 면허를 [[r]]취소하다, 중지하다[[/r]]",
+    "toeicExpr": [
+     "cancel an order 주문을 취소하다   cancel a reservation 예약을 취소하다",
+     "cancel the contract/event 계약을/이벤트를 취소하다"
+    ]
    },
    {
     "word": "maintain",
-    "meaning": "1. 유지하다, 관리하다 2. 주장하다",
-    "pos": "v."
+    "pron": "[meintéin]",
+    "pos": "v.",
+    "meaning": "1. 유지하다, 관리하다  2. 주장하다",
+    "tip": "줄에 [[b]]메인[[/b]] 깡패 [[b]]떼[[/b]]들을 감옥 [[b]]in[[/b]](안에) 평생 [[r]]유지하고, 관리해야[[/r]] 한다고 [[r]]주장하다[[/r]]",
+    "toeicExpr": [
+     "maintain quality/standards/productivity 품질을/기준을/생산성을 유지하다",
+     "maintain equipment/facilities/buildings 장비를/시설들을/건물들을 관리하다",
+     "maintain one's rights 권리를 주장하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The company must maintain accurate financial records for at least five years.",
+      "ko": "회사는 최소 5년 동안 정확한 재무 기록을 유지해야 한다."
+     },
+     {
+      "en": "2. The spokesperson firmly maintained that the company had followed all safety regulations.",
+      "ko": "대변인은 회사가 모든 안전 규정을 준수했다고 강하게 주장했다."
+     }
+    ]
    },
    {
     "word": "lag",
-    "meaning": "v. 뒤처지다 n. 뒤처짐, 지연",
-    "pos": "v./n."
+    "pron": "[læg]",
+    "pos": "v./n.",
+    "meaning": "v. 뒤처지다  n. 뒤처짐, 지연",
+    "tip": "[[b]]leg[[/b]](다리)를 다쳐서 무리에서 [[r]]뒤처지다[[/r]]",
+    "toeicExpr": [
+     "lag behind ~보다 뒤떨어지다, 뒤처지다  lag behind schedule 일정에 늦다",
+     "lag behind competitors 경쟁사보다 뒤처지다",
+     "time lag 시간 지연  a lag in production 생산 지연"
+    ],
+    "examVar": [
+     {
+      "en": "Smaller firms often lag behind large corporations in technology adoption.",
+      "ko": "소규모 기업들은 기술 도입에서 대기업들보다 종종 뒤처진다."
+     }
+    ]
    },
    {
     "word": "convention",
-    "meaning": "1. 모임, 회의, 행사 2. 조약, 협약 3. 관습, 관례, 관행",
-    "pos": "n."
+    "pron": "[kənvénʃən]",
+    "pos": "n.",
+    "meaning": "n. 1. 모임, 회의, 행사  2. 조약, 협약  3. 관습, 관례, 관행",
+    "tip": "[[b]]컨벤션[[/b]] 센터에서 1년에 한 번 [[r]]모임, 회의[[/r]]를 하여 [[r]]조약[[/r]]을 맺는 것이 그 부족들의 [[r]]관습, 관례, 관행[[/r]]",
+    "derivatives": [
+     {
+      "word": "conventional",
+      "meaning": "관습적인, 관례적인"
+     },
+     {
+      "word": "convene",
+      "meaning": "모임을 갖다, 소집하다"
+     }
+    ],
+    "toeicExpr": [
+     "annual convention 연례 회의(모임)  international convention 국제 회의(협약)",
+     "industry/trade convention 산업/무역 박람회(행사)",
+     "sign a convention 협약에 서명하다",
+     "by convention 관례에 따라",
+     "conventional methods 관습적인(관행적인) 방법",
+     "conventional approach 관례적인(기존의) 접근법",
+     "convene for a meeting 회의에 모이다  convene a meeting 회의를 소집하다",
+     "convene the board 이사회를 소집하다"
+    ],
+    "examVar": [
+     {
+      "note": "conventional과 traditional의 의미 차이를 구분하는 문제가 출제되었다.",
+      "en": "The company decided to use a more ______ approach to ensure consistent results in all manufacturing facilities.",
+      "opt": "conventional (O)  traditional (X)",
+      "ko": "회사는 모든 제조 시설에서 일관된 결과를 확보하기 위해 보다 일반적인/관례적인 방식을 사용하기로 결정했다.",
+      "note2": "traditional = 역사ㆍ문화ㆍ관습적으로 전해 내려온 / conventional = 관례적인, 보통의, 일반적인 표준 방식의"
+     }
+    ]
    },
    {
     "word": "complex",
-    "meaning": "adj. 복잡한, 복합(체)의 n. 복합체, 종합빌딩",
-    "pos": "adj./n."
+    "pron": "a. [kəmpléks]  n. [kɑ́mpleks, kɑ́ːpleks]",
+    "pos": "a./n.",
+    "meaning": "a. 복잡한, 복합(체)의  n. 복합체, 종합빌딩",
+    "tip": "선생님이 [[b]]컴[[/b]]으로(컴퓨터로) [[b]]플랬슈[[/b]]. 여러 공식이 [[r]]복합적으로 합쳐진 복잡한[[/r]] 문제라서.",
+    "derivatives": [
+     {
+      "word": "complexity",
+      "meaning": "복잡성"
+     }
+    ],
+    "toeicExpr": [
+     "complex structure 복잡적인 구조",
+     "complex issue/system 복잡한 문제/시스템",
+     "office/shopping/industrial/residential complex 사무/쇼핑/산업/주거 단지",
+     "increase in complexity 복잡성의 증가",
+     "complexity in design 디자인의 복잡성"
+    ]
    },
    {
     "word": "compensation",
-    "meaning": "보상, 배상",
-    "pos": "n."
+    "pron": "[kɑ̀mpənséiʃən]",
+    "pos": "n.",
+    "meaning": "n. 보상, 배상",
+    "tip": "\"돈으로 [[r]]갚어[[/r]]\"라고 [[b]]say션[[/b]](말하셔), 즉 [[r]]보상, 배상[[/r]] 하셔!",
+    "derivatives": [
+     {
+      "word": "compensate",
+      "meaning": "보상하다"
+     }
+    ],
+    "toeicExpr": [
+     "compensation package 보상 패키지",
+     "financial compensation 금전적 보상",
+     "claim compensation 보상을 청구하다",
+     "compensate for damage/loss 피해를/손실을 보상하다",
+     "compensate A for B A에게 B에 대해 보상하다 (← for: ~에 대해 (대상))",
+     "The HR department will compensate employees for any overtime hours worked. 인사부는 초과 근무 시간에 대해 직원들에게 보상할 것이다."
+    ],
+    "examVar": [
+     {
+      "note": "'compensate A for B (A에게 B를 보상하다)' 구문을 묻는 문제가 자주 출제되었다.",
+      "en": "The company agreed to compensate the customer for the damage caused by the defective product.",
+      "ko": "그 회사는 불량 제품으로 인해 발생한 피해에 대해 고객에게 보상하기로 동의했다."
+     }
+    ]
    },
    {
     "word": "actually",
-    "meaning": "실제로, 사실은",
-    "pos": "adv."
+    "pron": "[ǽktʃuəli]",
+    "pos": "ad.",
+    "meaning": "ad. 실제로, 사실은",
+    "tip": "여자 친구에게 외투를 벗어주고는 안 춥다고 하더니 [[r]]실제로는 [[b]]액! 추월리[[/b]](춥다)[[/r]]",
+    "derivatives": [
+     {
+      "word": "actual",
+      "meaning": "실제적인"
+     }
+    ],
+    "toeicExpr": [
+     "actually happened 실제로 일어난",
+     "actually occurred 실제로 발생한",
+     "actually completed 실제로 완료된",
+     "actually available 실제로 이용 가능한",
+     "actual cost/results/figures 실제 비용/결과/수치"
+    ]
    },
    {
     "word": "former",
+    "pron": "[fɔ́:rmər]",
+    "pos": "a.",
     "meaning": "예전의",
-    "pos": "adj."
+    "tip": "친구의 변한 헤어스타일을 보고 \"[[r]]예전의[[/r]] 머리는 [[b]]퍼머[[/b]] 머리였잖아!\"",
+    "toeicExpr": [
+     "former employee 전직 직원  former manager/CEO 전임 관리자/CEO",
+     "former address 이전 주소"
+    ],
+    "examVar": [
+     {
+      "note": "former와 formal(공식적인)을 구분하는 문제가 출제되었다.",
+      "en": "The company invited several _______ employees to speak at the anniversary event.",
+      "opt": "former (O) formal (X)",
+      "ko": "회사는 기념 행사에서 연설하도록 여러 명의 이전 직원들을 초대했다."
+     }
+    ]
    },
    {
     "word": "means",
-    "meaning": "1. 수단, 방법 2. 재산, 자금",
-    "pos": "n."
+    "pron": "[mi:nz]",
+    "pos": "n.",
+    "meaning": "1. 수단, 방법  2. 재산, 자금",
+    "tip": "[[b]]미인s[[/b]](미인들)이 그 미를 [[r]]수단, 방법[[/r]]으로 해서 배우나 모델 등을 해서 얻은 [[r]]재산, 자금[[/r]]",
+    "toeicExpr": [
+     "means of transportation/communication 교통/의사소통 수단",
+     "adequate means 충분한 자금"
+    ],
+    "examVar": [
+     {
+      "note": "means(수단, 방법)는 항상 복수형으로 쓰임을 묻는 문제가 자주 출제되었다.",
+      "en": "The company is looking for a reliable _______ of reducing shipping costs.",
+      "opt": "means (O) mean (X)",
+      "ko": "회사는 배송 비용을 줄일 수 있는 신뢰할 만한 방법을 찾고 있다."
+     }
+    ]
    },
    {
     "word": "by means of",
     "meaning": "~에 의하여, ~의 도움으로",
-    "pos": "prep."
+    "tip": "[[[b]]by[[/b]](~에 의해) + [[b]]means[[/b]](수단, 방법) + [[b]]of[[/b]](~의)] ~의 수단에 의해, 즉 [[r]]~에 의하여[[/r]]",
+    "toeicExpr": [
+     "by means of technology 기술에 의하여  by means of negotiation 협상에 의하여",
+     "The factory was able to reduce production costs by means of technology. 그 공장은 기술의 도움으로 생산 비용을 줄일 수 있었다."
+    ]
    },
    {
     "word": "by all means",
     "meaning": "반드시, 물론이죠",
-    "pos": "adv."
+    "tip": "[[[b]]by[[/b]](~에 의해) + [[b]]all[[/b]](모든) + [[b]]means[[/b]](수단, 방법)] 모든 수단에 의해, 즉 [[r]]반드시[[/r]]",
+    "toeicExpr": [
+     "by all means necessary/possible 필요한/가능한 모든 수단을 동원해",
+     "reduce costs by all means available 가능한 모든 수단으로 비용을 절감하다",
+     "\"By all means.\" 물론이죠. (← 1문도시 그렇습니다.)",
+     "By all means, please proceed. 물론입니다, 진행하세요.",
+     "By all means, feel free to ask. 물론이죠, 편하게 물어보세요."
+    ]
    },
    {
     "word": "by no means",
     "meaning": "결코 ~않다",
-    "pos": "adv."
+    "tip": "[[[b]]by[[/b]](~에 의해) + [[b]]no[[/b]](어떠한 ~도 없다) + [[b]]means[[/b]](수단, 방법)] 어떠한 수단에 의해서도 ~않다, 즉 [[r]]결코 ~않다[[/r]]",
+    "toeicExpr": [
+     "by no means accurate 결코 정확하지 않은",
+     "by no means acceptable 결코 용납될 수 없는",
+     "The report is by no means accurate and requires further revision. 그 보고서는 결코 정확하지 않으며 추가 수정이 필요하다."
+    ],
+    "examVar": [
+     {
+      "note": "by means of(~에 의하여), by all means(물론이지, 반드시), by no means(결코 ~아니다)를 구분하는 문제가 자주 출제되었다.",
+      "en": "The technical issue was resolved _______ a temporary software patch created by the support team.",
+      "opt": "(A) by all means  (B) by no means  (C) by means of  (D) by any means",
+      "ans": "(C)",
+      "ko": "기술적 문제는 지원팀이 만든 임시 소프트웨어 패치를 통해 해결되었다."
+     }
+    ]
    },
    {
     "word": "prompt",
-    "meaning": "1. adj. 즉각적인, 신속한 2. v. 자극하다, 촉발하다",
-    "pos": "adj./v."
+    "pron": "미[prɑːmpt] 영[prɔmpt]",
+    "pos": "1. a. / 2. v.",
+    "meaning": "1. a. 즉각적인, 신속한  2. v. 자극하다, 촉발하다",
+    "tip": "지금 [[b]]from[[/b]](부터)라도 빨리 해야지! 시험이 하루 남았다는 사실이 [[r]]즉각적인, 신속한[[/r]] 공부를 [[r]]자극하다, 촉발하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "promptly",
+      "meaning": "신속하게"
+     }
+    ],
+    "toeicExpr": [
+     "prompt response/action 신속한 대응/조치",
+     "prompt delivery/payment 신속한 배송/지불",
+     "prompt review/investigation 검토를/조사를 촉발하다",
+     "prompt customers to do 고객에게 ~하도록 자극하다",
+     "prompt employees to do 직원들이 ~하도록 촉발하다",
+     "pay promptly 신속히 지불하다  respond/reply promptly 즉시 응답하다/답장하다"
+    ],
+    "examVar": [
+     {
+      "en": "Please pay the invoice promptly to avoid penalties.",
+      "ko": "벌금을 피하려면 청구서를 신속히 지불하세요."
+     }
+    ]
    },
    {
     "word": "responsibility",
+    "pron": "미[rispὰnsəbíləti] 영[rispɔ́nsəbíləti]",
+    "pos": "n.",
     "meaning": "책임, 의무",
-    "pos": "n."
+    "tip": "니 스폰서가 [[b]]빌러티[[/b]](빌렸지), 즉 그 스폰서의 [[r]]책임[[/r]]",
+    "derivatives": [
+     {
+      "word": "responsible",
+      "meaning": "책임이 있는"
+     }
+    ],
+    "toeicExpr": [
+     "assume responsibility 책임을 맡다",
+     "full/shared/moral responsibility 전적인/공동/도덕적 책임",
+     "take responsibility for ~에 대한 책임을 지다 (← for: ~에 대해)",
+     "take responsibility for the mistake/delay 실수에/지연에 대한 책임을 지다",
+     "be responsible for ~에 책임이 있다",
+     "be responsible for safety/operations 안전을/운영을 책임지다(담당하다)"
+    ],
+    "examVar": [
+     {
+      "en": "The HR department is responsible for recruiting new employees.",
+      "ko": "인사부서는 신입 직원을 채용하는 일을 책임지고 있다(담당한다)."
+     }
+    ]
    },
    {
     "word": "serious",
+    "pron": "미[síriəs] 영[síəriəs]",
+    "pos": "a.",
     "meaning": "심각한, 중대한",
-    "pos": "adj."
+    "tip": "이가 [[b]]시리었수[[/b]](시렸수). 치과에 가야 할 정도로 통증이 [[r]]심각한, 중대한[[/r]]",
+    "derivatives": [
+     {
+      "word": "seriously",
+      "meaning": "진지하게, 심각하게"
+     }
+    ],
+    "toeicExpr": [
+     "serious problem/damage 심각한 문제/피해",
+     "serious mistake 중대한 실수",
+     "serious injury 중상",
+     "take ~ seriously ~을 진지하게(심각하게) 받아들이다"
+    ]
    },
    {
     "word": "correspond",
-    "meaning": "1. 일치하다, 부합하다 2. 교신하다, 서신 왕래하다",
-    "pos": "v."
+    "pron": "[kɔ̀ːraspánd]",
+    "pos": "v.",
+    "meaning": "1. 일치하다, 부합하다  2. 교신하다, 서신 왕래하다",
+    "tip": "① [[b]]코러스[[/b]]는 [[b]]반드[[/b]]시 가수와 화음이 [[r]]일치해야[[/r]] 해서 서로 수신호를 주고받으며 [[r]]교신하다[[/r]] ② [[b]]cor[[/b]](함께) 서로의 편지에 [[b]]respond[[/b]](대답하며) [[r]]교신하다, 서신 왕래하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "corresponding",
+      "meaning": "일치하는, 상응하는"
+     },
+     {
+      "word": "correspondence",
+      "meaning": "서신, 서신 교환, 일치, 부합"
+     }
+    ],
+    "toeicExpr": [
+     "correspond closely/exactly 밀접히/정확히 일치하다",
+     "correspond to the data/figures 데이터와/수치와 일치하다",
+     "correspond with ~와 편지를 주고받다; ~와 일치하다",
+     "correspond with actual results 실제 결과와 일치하다",
+     "correspond with reported numbers 보고된 수치와 일치하다",
+     "correspond with clients/suppliers 고객과/공급업체와 연락하다",
+     "corresponding data 일치하는 데이터",
+     "corresponding figures/section 해당 수치/부분",
+     "business correspondence 업무상 서신",
+     "official correspondence 공식 서신"
+    ],
+    "examVar": [
+     {
+      "en": "The updated data no longer correspond with the figures shown in last month's report.",
+      "ko": "업데이트된 데이터는 지난달 보고서에 제시된 수치와 더 이상 일치하지 않는다."
+     }
+    ]
    },
    {
     "word": "behalf",
+    "pron": "[bihǽf]",
+    "pos": "n.",
     "meaning": "이익",
-    "pos": "n."
+    "tip": "가뭄에 하느님이 [[b]]비[[/b]]를 내려 [[b]]help[[/b]](도와주는) 것은 농부의 [[r]]이익[[/r]]",
+    "toeicExpr": [
+     "on behalf of (= on one's behalf) ~을 대표하여, ~을 대신하여, ~을 위하여 (← ~의 이익 위에서)",
+     "on behalf of the company 회사를 대표하여",
+     "on behalf of our staff 직원들을 대신하여",
+     "on behalf of customers' interests 고객의 이익을 위해"
+    ],
+    "examVar": [
+     {
+      "en": "The assistant manager will speak to the clients on behalf of the director, who is currently overseas.",
+      "ko": "부장님이 현재 해외에 있기 때문에, 대리님이 부장님을 대신하여 고객들과 대화할 예정이다."
+     }
+    ]
    },
    {
     "word": "ease",
-    "meaning": "1. 쉬움 2. 편안함; (마음을) 편하게 하다, (걱정·규제 등을) 완화하다",
-    "pos": "n./v."
+    "pron": "[iːz]",
+    "pos": "1. n. / 2. n. / v.",
+    "meaning": "1. n. 쉬움  2. n. 편안함  v. (마음을) 편하게 하다, (걱정·규제 등을) 완화하다",
+    "tip": "① \"내게 잘못한 건 다 [[b]]잊으[[/b]](잊어)\" 하고 친구가 [[r]]마음을 편하게 하다[[/r]], 고통을 [[r]]완화하다[[/r]] ② [[b]]easy[[/b]](쉬운, 편안한)의 명사형: [[r]]쉬움[[/r]]",
+    "toeicExpr": [
+     "with ease 손쉽게 (← 쉬움을 가지고)",
+     "complete the task with ease 과업을 쉽게 완료하다",
+     "handle requests with ease 요청을 수월하게 처리하다",
+     "at ease 편안하게",
+     "feel at ease 편안함을 느끼다  be at ease 편안한 상태이다",
+     "make clients feel at ease 고객을 편안하게 하다",
+     "ease restrictions/requirements 규제를/요건을 완화하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The new software allows employees to generate detailed reports _______ ease, even during peak hours.",
+      "opt": "with (O) at (X)",
+      "ko": "새 소프트웨어를 사용하면 피크 시간대에도 직원들이 상세 보고서를 손쉽게 생성할 수 있다."
+     },
+     {
+      "en": "2. The new management policy aims to ease employees' concerns about workload increases.",
+      "ko": "새로운 관리 정책은 업무량 증가에 대한 직원들의 우려를 완화하는 것을 목표로 한다."
+     }
+    ]
    },
    {
     "word": "address",
-    "meaning": "1. 주소 2. 연설; 연설하다 3. (어려운 문제 등을) 다루다, 처리하다",
-    "pos": "n./v."
+    "pron": "[ədrés]",
+    "pos": "1. n. / 2. n. / 3. v.",
+    "meaning": "1. n. 주소  2. n. 연설  v. 연설하다  3. v. (어려운 문제 등을) 다루다, 처리하다",
+    "tip": "대통령 [[r]]연설[[/r]]이 있는 [[r]]주소[[/r]]가 [[b]]어디랬어?[[/b]] 하며 묻는 행인의 문제를 경찰이 [[r]]처리하다[[/r]]",
+    "toeicExpr": [
+     "mailing address 우편 주소  email address 이메일 주소",
+     "deliver an address 연설을 하다",
+     "address the audience 청중에게 연설하다 (타동사이기 때문에 address to the audience는 틀림)",
+     "will be addressed in the meeting 회의에서 다루어질 것이다",
+     "address customer complaints 고객 불만을 처리하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. address(다루다, 처리하다)의 의미를 묻는 문제가 자주 출제되었다.\n에) The manager promised to address customer concerns as quickly as possible.",
+      "ko": "관리자는 고객의 우려 사항을 가능한 한 빨리 처리하겠다고 약속했다."
+     },
+     {
+      "en": "2. The CEO will address all employees at tomorrow's company-wide meeting.",
+      "ko": "그 CEO는 내일 열리는 전사 회의에서 모든 직원들에게 연설할 것이다."
+     }
+    ]
    },
    {
     "word": "significant",
+    "pron": "[siɡnífikənt]",
+    "pos": "a.",
     "meaning": "중요한, 상당한",
-    "pos": "adj."
+    "tip": "빛보증에 함부로 싸인을 하면 안 되듯이 [[b]]sign[[/b]]ificant [[b]]sign[[/b]](싸인)은 [[r]]상당히 중요한[[/r]]",
+    "derivatives": [
+     {
+      "word": "significantly",
+      "meaning": "상당히"
+     }
+    ],
+    "toeicExpr": [
+     "significant change/role 중요한 변화/역할",
+     "significant transformation 상당한 변화",
+     "significant amount of money 상당한 양의 돈",
+     "significantly improve/reduce 상당히 개선하다/줄이다",
+     "differ significantly 상당히 다르다"
+    ],
+    "examVar": [
+     {
+      "note": "significantly가 들어가는 문제가 자주 출제되었다.",
+      "en": "The company's profits significantly increased by 80% after launching the new product line.",
+      "ko": "신제품 라인을 출시한 후 회사의 수익이 80%나 현저하게 증가했다."
+     }
+    ]
    }
   ]
  },
@@ -1595,123 +5008,589 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "strategy",
+    "pron": "[strǽtədʒi]",
+    "pos": "n.",
     "meaning": "전술, 전략",
-    "pos": "n."
+    "tip": "지뢰를 설치하여 [[b]]수풀에서[[/b]] [[b]]터지[[/b]]도록 하는 [[r]]전술, 전략[[/r]]",
+    "derivatives": [
+     {
+      "word": "strategic",
+      "meaning": "전략상의"
+     }
+    ],
+    "toeicExpr": [
+     "business/investment/marketing strategy 경영/투자/시장 전략",
+     "strategic planning/decision/partnership/location 전략적 기획/결정/제휴/위치"
+    ],
+    "examVar": [
+     {
+      "en": "The company is focusing on strategic planning to expanding to Asian markets.",
+      "ko": "그 회사는 아시아 시장으로 확장하기 위해 전략적 기획에 집중하고 있다."
+     },
+     {
+      "en": "The company is developing a new ______ strategy to attract younger customers.",
+      "opt": "marketing (O)  market (X)",
+      "ko": "회사는 젊은 고객을 유치하기 위해 새로운 마케팅 전략을 개발하고 있다."
+     }
+    ]
    },
    {
     "word": "flexible",
+    "pron": "[fléksibl, fléksəbl]",
+    "pos": "a.",
     "meaning": "구부리기 쉬운, 융통성 있는",
-    "pos": "adj."
+    "tip": "껌 종이를 [[b]]풀래![[/b]] 그리고 껌을 구부려 [[b]]씹을[[/b]]. 껌은 [[r]]구부리기 쉬운[[/r]], 즉 [[r]]융통성 있는[[/r]]",
+    "derivatives": [
+     {
+      "word": "flexibility",
+      "meaning": "융통성, 유연성"
+     }
+    ],
+    "toeicExpr": [
+     "flexible schedule 유연한 일정",
+     "flexible working hours 탄력 근무 시간",
+     "flexible policy/approach 융통성 있는 정책/접근법",
+     "flexibility in work hours 근무 시간의 유연성",
+     "scheduling flexibility 일정 조정의 유연성"
+    ]
    },
    {
     "word": "contract",
-    "meaning": "1. 계약; 계약하다 2. 줄어들다, 수축시키다 3. (질병 등이) 걸리다",
-    "pos": "n./v."
+    "pron": "n. [kάntrækt]\nv. [kəntrǽkt]",
+    "pos": "n./v.",
+    "meaning": "1. n. 계약  v. 계약하다  2. v. 줄어들다, 수축시키다  3. v. (질병 등이) 걸리다",
+    "tip": "\"권투시합을 [[b]]act![[/b]](하겠습니다!)\"라고 [[r]]계약하고[[/r]] 체중을 감량하여 체중이 [[r]]줄어들다[[/r]], 과도한 체중감량으로 [[r]]병에 걸리다[[/r]]",
+    "derivatives": [
+     {
+      "word": "contractor",
+      "meaning": "계약자, 도급업자"
+     },
+     {
+      "word": "subcontractor",
+      "meaning": "하도급업체(2차 업체)"
+     }
+    ],
+    "toeicExpr": [
+     "sign a contract 계약을 체결하다  enter into a contract 계약을 체결하다",
+     "contract with a supplier 공급업체와 계약하다",
+     "contract for services 서비스 계약을 하다",
+     "contract in market share 시장 점유율이 줄어들다",
+     "contract the flu 독감에 걸리다",
+     "licensed contractor 인가를 받은 하청업체  hire a contractor 외주업체를 고용하다",
+     "primary contractor and subcontractor 주 계약업체와 하도급업체"
+    ],
+    "examVar": [
+     {
+      "note": "contract는 '계약, 계약하다'란 뜻으로 가장 많이 출제되었지만 그 이외의 뜻도 시험에 출제되었다.",
+      "en": "Due to the unexpected drop in consumer spending, the retail sector began to contract for the first time in years.",
+      "ko": "소비자 지출의 예상치 못한 감소로 소매 부문은 수년 만에 처음으로 줄어들기 시작했다."
+     },
+     {
+      "en": "Several employees had to take sick leave after they contracted a seasonal virus during the business trip.",
+      "ko": "여러 직원들이 출장 중 계절성 바이러스에 걸린 뒤 병가를 내야 했다."
+     }
+    ]
    },
    {
     "word": "local",
+    "pron": "[lóukəl]",
+    "pos": "a.",
     "meaning": "지방의",
-    "pos": "adj."
+    "tip": "서울보다 [[b]]low[[/b]](아래) [[r]]지방의, 지역[[/r]]의 사무실에 [[b]]call[[/b]](전화하다)",
+    "derivatives": [
+     {
+      "word": "locally",
+      "meaning": "지역적으로, 현지에서"
+     }
+    ],
+    "toeicExpr": [
+     "local business/community/economy/residents 지역 사업체/사회/경제/주민",
+     "operate locally 지역 단위로 운영되다  sourced locally 현지에서 조달된  produced locally 현지 생산된"
+    ]
    },
    {
     "word": "obstruct",
+    "pron": "[əbstrʌ́kt]",
+    "pos": "v.",
     "meaning": "방해하다, 가로막다",
-    "pos": "v."
+    "tip": "도로에서 [[b]]앞[[/b]]s(앞의) [[b]]트럭[[/b]]이 다른 차량을 [[r]]가로막다, 방해하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "obstruction",
+      "meaning": "방해, 장애, 방해물"
+     }
+    ],
+    "toeicExpr": [
+     "obstruct access 접근을 막다  obstruct traffic 교통을 방해하다  obstruct the entrance 입구를 막다",
+     "cause obstruction 장애를 일으키다  without obstruction 방해 없이"
+    ]
    },
    {
     "word": "intention",
+    "pron": "[inténʃən]",
+    "pos": "n.",
     "meaning": "의도, 목적",
-    "pos": "n."
+    "tip": "번지 점프 위에서 마음 [[b]]in[[/b]](속에서) 하나, 둘… [[b]]ten[[/b]](10)까지 [[b]]셔[[/b]](세다), 왜냐하면 뛰어내리려는 [[r]]의도, 목적[[/r]]으로",
+    "derivatives": [
+     {
+      "word": "intentional",
+      "meaning": "고의의, 계획된"
+     },
+     {
+      "word": "intentionally",
+      "meaning": "의도적으로"
+     },
+     {
+      "word": "unintentionally",
+      "meaning": "비의도적으로, 무심코"
+     },
+     {
+      "word": "intend",
+      "meaning": "의도하다, 계획하다"
+     }
+    ],
+    "toeicExpr": [
+     "have no intention of changing the policy 정책을 변경할 의도가 없다",
+     "with the intention of reducing costs 비용을 절감할 목적으로",
+     "clear intention to invest 투자하려는 명확한 의도",
+     "intentional act/violation 고의 행위/위반",
+     "intentionally ignore 의도적으로 무시하다  intentionally delay 일부러 지연시키다  act unintentionally 무심코 행동하다",
+     "intend + to부정사: ~할 작정이다, ~할 계획이다  intend to hire new employees 신입 직원을 채용할 작정이다  intend to launch a new product 신제품을 출시할 계획이다"
+    ]
    },
    {
     "word": "capture",
+    "pron": "[kǽptʃər]",
+    "pos": "v.",
     "meaning": "사로잡다, 포착하다, (관심 등을) 사로잡다",
-    "pos": "v."
+    "tip": "화면을 [[b]]캡처[[/b]]하여 한 장면을 [[r]]사로잡다, 포착하다[[/r]]",
+    "toeicExpr": [
+     "capture attention 관심을 끌다  capture a moment 순간을 포착하다  capture opportunities 기회를 포착하다"
+    ]
    },
    {
     "word": "grant",
-    "meaning": "1. 승인하다, 허가하다; 승인, 허가 2. 보조금",
-    "pos": "v./n."
+    "pron": "미 [grænt] 영 [grɑːnt]",
+    "pos": "1. v. 승인하다, 허가하다  n. 승인, 허가  2. n. 보조금",
+    "meaning": "1. v. 승인하다, 허가하다  n. 승인, 허가  2. n. 보조금",
+    "tip": "\"[[b]]그랜[[/b]](그래)! 그렇게 해\"라는 [[b]]투로[[/b]] [[r]]보조금[[/r]]을 [[r]]승인하다, 허가하다[[/r]]",
+    "toeicExpr": [
+     "grant permission 허가를 주다  grant access 접근을 허용하다  grant a request 요청을 승인하다",
+     "take it for granted that ~ ~을 당연한 것으로 여기다 (← ~을 승인된 것으로 여기다)  Many employees take it for granted that overtime work will be compensated. 많은 직원들은 초과 근무가 보상될 것이라고 당연하게 여긴다.",
+     "research grant 연구 보조금  government grant 정부 보조금  grant application 보조금 신청"
+    ],
+    "examVar": [
+     {
+      "en": "The research team received a government grant to support its new project.",
+      "ko": "연구팀은 새로운 프로젝트를 지원하기 위해 정부의 보조금을 받았다."
+     }
+    ]
    },
    {
     "word": "downsizing",
+    "pron": "[dáunsàiziŋ]",
+    "pos": "n.",
     "meaning": "규모 축소",
-    "pos": "n."
+    "tip": "[[b]][down[[/b]](아래로) + [[b]]size[[/b]](크기) + [[b]]ing][[/b]] [[b]]down[[/b]](아래로) [[r]]사이즈[[/r]]를 줄임, 즉 [[r]]규모 축소[[/r]]",
+    "derivatives": [
+     {
+      "word": "downsize",
+      "meaning": "소형화하다, (구조조정 등으로) 축소하다"
+     }
+    ],
+    "toeicExpr": [
+     "workforce/operations downsizing 인원/운영 축소",
+     "downsize a department 부서를 축소하다  downsize staff 직원을 줄이다"
+    ]
    },
    {
     "word": "survey",
-    "meaning": "조사하다; 조사",
-    "pos": "v./n."
+    "pron": "[sərvéi]",
+    "pos": "v./n.",
+    "meaning": "v. 조사하다  n. 조사",
+    "tip": "질문지에 답을 [[b]]써봐이[[/b]]! 하며 여론을 [[r]]조사, 조사하다[[/r]]",
+    "toeicExpr": [
+     "conduct a survey 조사를 실시하다",
+     "market/customer survey 시장/고객 조사",
+     "survey form 설문지"
+    ]
    },
    {
     "word": "eventually",
-    "meaning": "결국, 드디어",
-    "pos": "adv."
+    "pron": "[ivéntʃuəli]",
+    "pos": "ad.",
+    "meaning": "ad. 결국, 드디어",
+    "tip": "기상청에서 매번 추울 것이란 예보가 틀리다가 [[r]]결국, 드디어[[/r]] [[b]]이벤[[/b]](이번엔) [[b]]추워[[/b]]리",
+    "toeicExpr": [
+     "eventually reach an agreement 결국 합의에 도달하다",
+     "eventually decide to relocate 결국 이전하기로 결정하다"
+    ],
+    "examVar": [
+     {
+      "en": "After several delays, the project was eventually completed last month.",
+      "ko": "여러 차례 지연 끝에 그 프로젝트는 결국 지난달 완료되었다."
+     }
+    ]
    },
    {
     "word": "alter",
-    "meaning": "바꾸다, 수정하다",
-    "pos": "v."
+    "pron": "[ɔ́:ltər]",
+    "pos": "v.",
+    "meaning": "v. 바꾸다, 수정하다",
+    "tip": "보고서가 [[b]]all[[/b]](모두) [[b]]터[[/b]]서 다시 [[r]]바꾸다, 수정하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "alterable",
+      "meaning": "변경할 수 있는 (← -able: ~할 수 있는, ~할만한)"
+     },
+     {
+      "word": "unalterable",
+      "meaning": "변경할 수 없는 (← un-: not)"
+     }
+    ],
+    "toeicExpr": [
+     "alter a plan/contract 계획을/계약을 변경하다",
+     "alter the schedule 일정을 수정하다",
+     "alterable terms 변경 가능한 조건",
+     "easily alterable 쉽게 수정할 수 있는",
+     "unalterable decision 변경할 수 없는 결정"
+    ]
    },
    {
     "word": "alternative",
-    "meaning": "대안, 대체; 대안의, 대체의",
-    "pos": "n./adj."
+    "pron": "[ɔ:ltə́:rnətiv]",
+    "pos": "n./a.",
+    "meaning": "n. 대안, 대체  a. 대안의, 대체의",
+    "tip": "[[b]]alter[[/b]](바꾸다) 너 [[b]]TV[[/b]]: [[b]]alter![[/b]](바꿔!) [[r]]너[[/r]]의 소니 [[r]]TV[[/r]]를 [[r]]대안[[/r]]인 삼성 TV로 [[r]]대체[[/r]]해라!",
+    "derivatives": [
+     {
+      "word": "alternatively",
+      "meaning": "대안으로, 그 대신에"
+     }
+    ],
+    "toeicExpr": [
+     "provide/find an alternative 대안을 제시하다/찾다",
+     "as an alternative 대안으로서",
+     "alternative method 대체 방법",
+     "alternatives to ~에 대한 대안, 대체물",
+     "alternatives to fossil fuels 화석연료의 대안들",
+     "alternatives to plastic bags 비닐봉투의 대안들(대체품들)",
+     "alternatively, + 문장: 대안으로, 그 대신에",
+     "You can pay by credit card. Alternatively, you may use cash. 신용카드로 결제할 수 있습니다. 그 대신에 현금을 사용할 수도 있습니다."
+    ],
+    "examVar": [
+     {
+      "en": "The government is promoting eco-friendly alternatives _______ to single-use plastic bags.",
+      "opt": "(A) replacements (B) alternatives (C) substitutions (D) exchanges",
+      "ko": "정부는 일회용 비닐봉투의 친환경적 대안을 장려하고 있다.",
+      "note": "나머지 보기들은 전치사 to와 호응하지 않음 'replacement(교체) for/of', 'substitution(대체, 교환) for', 'exchange(바꾸다/교환하다) A for/with B'처럼 to와 호응하지 않음"
+     }
+    ]
    },
    {
     "word": "alternate",
-    "meaning": "1. 번갈아 하는, 하나 거르는; 번갈아 하다 2. 대체의",
-    "pos": "adj./v."
+    "pron": "a. [ɔ́:ltərnət] v. [ɔ́:ltərnèit]",
+    "pos": "a./v.",
+    "meaning": "1. a. 번갈아 하는, 하나 거르는  v. 번갈아 하다  2. a. 대체의",
+    "tip": "서로 [[b]]alter![[/b]](바꿔!) 너희들 [[b]]two[[/b]](두 사람), 즉 [[r]]번갈아 하는[[/r]], 계속 하지 않고 [[r]]하나 거르는[[/r]]. 그리고 각각은 서로의 [[r]]대안[[/r]]",
+    "derivatives": [
+     {
+      "word": "alternately",
+      "meaning": "번갈아, 교대로"
+     }
+    ],
+    "toeicExpr": [
+     "alternate shifts 교대 근무",
+     "on alternate days 격일로",
+     "alternate schedule 교대 일정",
+     "alternate between A and B A와 B를 번갈아 하다",
+     "alternate tasks 업무를 교대로 하다",
+     "alternate routes 대체 도로",
+     "alternate method 대체 방법",
+     "work/speak alternately 번갈아 근무하다/말하다"
+    ],
+    "examVar": [
+     {
+      "en": "alternate와 alternative를 구분하는 문제가 자주 출제되었다.",
+      "opt": "The company is seeking an _______ to fossil fuels to reduce carbon emissions.  alternate (X) alternative (O)",
+      "ko": "회사는 탄소 배출을 줄이기 위해 화석연료의 대안을 찾고 있다.",
+      "note": "alternative to + 명사: ~에 대한 대안, 대체물  alternate가 '대체의'라는 의미도 있으나 TOEIC에서는 '예비·차선책' 정도로 제한됨"
+     },
+     {
+      "en": "To reduce traffic congestion, the city has implemented a rule allowing certain vehicles to operate only on alternate days.",
+      "ko": "교통 혼잡을 줄이기 위해, 시는 특정 차량이 이틀에 한 번만 운행할 수 있는 규정을 시행했다."
+     }
+    ]
    },
    {
     "word": "deal",
-    "meaning": "거래하다, 다루다, 처리하다; 거래",
-    "pos": "v./n."
+    "pron": "[di:l]",
+    "pos": "v./n.",
+    "meaning": "v. 거래하다, 다루다, 처리하다  n. 거래",
+    "tip": "중고차 [[b]]딜러(dealer)[[/b]]가 중고차를 [[r]]거래하다, 다루다, 처리하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "dealer",
+      "meaning": "상인, 취급자, 판매업자"
+     },
+     {
+      "word": "dealership",
+      "meaning": "대리점, 판매점"
+     }
+    ],
+    "toeicExpr": [
+     "deal with ~을 다루다, 처리하다",
+     "deal with customer complaints 고객 불만을 처리하다",
+     "deal with an issue 문제를 처리하다",
+     "deal with requests 요청을 처리하다",
+     "business/fair deal 상업/공정 거래",
+     "make a deal 거래를 성사시키다",
+     "authorized dealer 공식 판매업자",
+     "exclusive dealer 독점 판매업체",
+     "car dealership 자동차 대리점",
+     "authorized dealership 공식 대리점"
+    ],
+    "examVar": [
+     {
+      "en": "All customer complaints will be dealt with promptly.",
+      "ko": "모든 고객 불만은 신속히 처리될 것입니다."
+     },
+     {
+      "en": "He was a _______ in antiques.  dealer (O) dealership (X)",
+      "ko": "그는 골동품 상인이었다."
+     }
+    ]
    },
    {
     "word": "administer",
-    "meaning": "1. 경영하다, 관리하다, 운영하다 2. (테스트 등을) 실시하다",
-    "pos": "v."
+    "pron": "[ədmínistər]",
+    "pos": "v.",
+    "meaning": "v. 1. 경영하다, 관리하다, 운영하다  2. (테스트 등을) 실시하다",
+    "tip": "① 부모에게 편의점을 [[b]]얻으[[/b]](얻어) 그 [[b]]미니스톱[[/b]]을 [[r]]경영하다, 관리하다, 운영하다[[/r]]\n② 부모는 자식이 잘 [[r]]운영하는지[[/r]] 테스트를 [[r]]실시하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "administration",
+      "meaning": "경영, 관리, 행정, 행정부"
+     },
+     {
+      "word": "administrator",
+      "meaning": "관리자, 행정관"
+     },
+     {
+      "word": "administrative",
+      "meaning": "관리(행정)상의, 행정부의"
+     }
+    ],
+    "toeicExpr": [
+     "administer a company 회사를 경영하다",
+     "administer a program 프로그램을 운영하다",
+     "administer an exam/a test 시험을/테스트를 실시하다",
+     "business administration 사업 경영",
+     "government administration 정부 행정",
+     "school administrator 학교 행정관",
+     "system administrator 시스템 관리자",
+     "administrative staff/office 행정 직원/사무실",
+     "administrative agency 행정 기관",
+     "administrative authority 행정 당국"
+    ],
+    "examVar": [
+     {
+      "en": "The training program is administered by the human resources department.",
+      "ko": "그 교육 프로그램은 인사부에 의해 운영되고 있다."
+     },
+     {
+      "en": "The certification exam will be administered next Friday at the main office.",
+      "ko": "자격 시험은 다음 주 금요일 본사에서 실시될 것이다."
+     }
+    ]
    },
    {
     "word": "identity",
-    "meaning": "1. 신원, 신분, 정체(성) 2. 일치, 동일함",
-    "pos": "n."
+    "pron": "[aidéntəti]",
+    "pos": "n.",
+    "meaning": "n. 1. 신원, 신분, 정체(성)  2. 일치, 동일함",
+    "tip": "① 죽은 채로 발견된 [[b]]아이[[/b]]에게 [[b]]댄다[[/b]](대본다), [[b]]티[[/b]]셔츠를 입은 아이 사진을. 그랬더니 [[r]]신원, 정체가 일치, 동일함[[/r]]\n② 로그인할 때 [[b]]ID[[/b]]는 바로 [[b]]id[[/b]]entification의 약자다. 즉, [[r]]신원, 정체[[/r]]",
+    "derivatives": [
+     {
+      "word": "identify",
+      "meaning": "1. (신원을) 확인하다, 밝히다  2. 동일시하다"
+     },
+     {
+      "word": "identification(=ID)",
+      "meaning": "신원 확인, 신분증"
+     },
+     {
+      "word": "identical",
+      "meaning": "동일한, 똑같은"
+     }
+    ],
+    "toeicExpr": [
+     "verify someone's identity 신원을 확인하다",
+     "confirm identity 신원을 확인하다",
+     "proof of identity 신원 증명   identity card 신분증",
+     "company's identity 회사의 정체성(이미지)   brand identity 브랜드 정체성",
+     "corporate identity 기업 정체성(이미지)",
+     "identify the cause/problem/risks 원인을/문제를/위험 요소를 파악하다",
+     "request/require identification 신분증을 요구하다/필요로 하다",
+     "identical results 동일한 결과"
+    ],
+    "examVar": [
+     {
+      "en": "identity와 identification을 구분하는 문제가 자주 출제되었다.\nCustomers are asked to show a photo ______ at the counter.",
+      "opt": "(A) identity  (B) identify  (C) ID  (D) identifying",
+      "ans": "(C)",
+      "ko": "고객은 창구에서 사진이 부착된 신분증을 제시해야 한다."
+     }
+    ]
    },
    {
     "word": "argue",
-    "meaning": "논쟁하다, 주장하다",
-    "pos": "v."
+    "pron": "[áːrgjuː]",
+    "pos": "v.",
+    "meaning": "v. 논쟁하다, 주장하다",
+    "tip": "[[b]]아구[[/b]](아가리)를 크게 벌려가며 [[r]]논쟁하다, 주장하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "argument",
+      "meaning": "논쟁"
+     },
+     {
+      "word": "arguable",
+      "meaning": "논쟁의 여지가 있는, 확실하지 않은"
+     }
+    ],
+    "toeicExpr": [
+     "argue that costs should be reduced 비용을 줄여야 한다고 주장하다",
+     "argue for a change in policy 정책 변경을 주장하다",
+     "argue against the proposal 제안에 반대하다",
+     "strong argument 강력한 주장",
+     "make an argument 주장을 하다",
+     "arguable point/claim 논의의 여지가 있는 점/주장"
+    ]
    },
    {
     "word": "confuse",
-    "meaning": "혼동하다, 혼란시키다",
-    "pos": "v."
+    "pron": "[kənfjúːz]",
+    "pos": "v.",
+    "meaning": "v. 혼동하다, 혼란시키다",
+    "tip": "두꺼비집의 [[b]]큰 퓨즈[[/b]] 여러 개 중에 어떤 것을 차단해야 할지 [[r]]혼동하다, 혼란시키다[[/r]]",
+    "derivatives": [
+     {
+      "word": "confusion",
+      "meaning": "혼란, 혼동"
+     }
+    ],
+    "toeicExpr": [
+     "confuse customers 고객을 혼란시키다",
+     "confuse the situation 상황을 복잡하게 하다",
+     "confuse fact with opinion 사실을 의견과 혼동하다",
+     "cause/avoid confusion 혼란을 초래하다/피하다"
+    ]
    },
    {
     "word": "profession",
-    "meaning": "직업",
-    "pos": "n."
+    "pron": "[prəféʃən]",
+    "pos": "n.",
+    "meaning": "n. 직업",
+    "tip": "[[b]]프로[[/b]] 수준의 [[b]]패션[[/b]] 감각으로 얻게 된 패션 관련 [[r]]직업[[/r]]",
+    "derivatives": [
+     {
+      "word": "professional",
+      "meaning": "직업의, 프로의; 전문가"
+     },
+     {
+      "word": "professionalism",
+      "meaning": "직업적 태도, 전문성"
+     }
+    ],
+    "toeicExpr": [
+     "teaching profession 교직   medical profession 의료계",
+     "professional achievement 직업상의 업적",
+     "professional translator 전문적인 통역인",
+     "professionals of the academic community 학계의 전문가들",
+     "show professionalism 프로다운 태도를 보이다",
+     "lack of professionalism 전문성 부족"
+    ],
+    "examVar": [
+     {
+      "en": "profession과 professional을 구분하는 문제가 출제되었다.\nThe seminar was attended by several industry ______ from across the country.",
+      "opt": "professionals (O)  professions (X)  professionalism (X)",
+      "ko": "그 세미나에는 전국의 여러 업계 전문가들이 참석했다."
+     }
+    ]
    },
    {
     "word": "crop",
-    "meaning": "농작물, 수확",
-    "pos": "n."
+    "pron": "미[krɑːp] 영[krɔp]",
+    "pos": "n.",
+    "meaning": "n. 농작물, 수확",
+    "tip": "빨리 [[b]]\"크라(커라) 압!\"[[/b]] 하고 기합을 넣어주는 [[r]]농작물, 수확물[[/r]]",
+    "toeicExpr": [
+     "a crop of wheat/rice 밀/쌀 작물   crop production 작물 생산"
+    ]
    },
    {
     "word": "summary",
-    "meaning": "요약; 요약한",
-    "pos": "n./adj."
+    "pron": "[sʌ́məri]",
+    "pos": "n. / a.",
+    "meaning": "n. 요약  a. 요약한",
+    "tip": "[[b]]써(쓰다) 머리[[/b]]말만 모아서, 즉 [[r]]요약, 요약한[[/r]]",
+    "derivatives": [
+     {
+      "word": "summarize",
+      "meaning": "요약하다"
+     },
+     {
+      "word": "sum",
+      "meaning": "합, 합계; 합계하다"
+     }
+    ],
+    "toeicExpr": [
+     "brief summary 간략한 요약",
+     "summarize the report 보고서를 요약하다",
+     "total sum 총합   the sum of sales 판매액의 합계",
+     "sum up 합산하다 (← up: 강조의 뜻으로 '완전히')"
+    ]
    },
    {
     "word": "embark",
-    "meaning": "시작하다, 착수하다",
-    "pos": "v."
+    "pron": "[imbɑ́ːrk]",
+    "pos": "v.",
+    "meaning": "v. 시작하다, 착수하다",
+    "tip": "시간이 [[b]]임박[[/b]]해서야 [[r]]시작하다, 착수하다[[/r]]",
+    "toeicExpr": [
+     "embark on(upon) something ~을 착수하다 (← on: (행위의 대상) ~을)",
+     "embark on a project 프로젝트에 착수하다",
+     "embark on research 연구에 착수하다",
+     "embark on a new venture 새로운 사업을 시작하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company is preparing to embark on a major restructuring plan to improve overall efficiency.",
+      "ko": "회사는 전반적인 효율성을 개선하기 위해 대규모 구조조정 계획을 시작할 준비를 하고 있다."
+     }
+    ]
    },
    {
     "word": "combination",
-    "meaning": "결합, 배합, 조합",
-    "pos": "n."
+    "pron": "미[kàmbinéiʃən] 영[kɔ̀mbinéiʃən]",
+    "pos": "n.",
+    "meaning": "n. 결합, 배합, 조합",
+    "tip": "[[b]]큰 비 내리션[[/b]]. 그것은 저기압과 고기압이 [[r]]결합, 조합[[/r]]했기 때문",
+    "derivatives": [
+     {
+      "word": "combine",
+      "meaning": "결합시키다, 합병시키다"
+     }
+    ],
+    "toeicExpr": [
+     "a combination of talent and effort 재능과 노력의 결합",
+     "unique/color combination 독특한/색상 조합",
+     "combine A with B A와 B를 결합하다",
+     "The company plans to combine traditional methods with modern technology. 회사는 전통적 방법을 현대 기술과 결합할 계획이다.",
+     "combine efforts 힘을 합치다",
+     "combine functions 기능을 통합하다"
+    ]
    }
   ]
  },
@@ -1721,123 +5600,551 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "fee",
+    "pron": "[fi:]",
+    "pos": "n.",
     "meaning": "수수료, 사용료, 처리 비용, 서비스료",
-    "pos": "n."
+    "tip": "내 [[b]]피[[/b]] 같은 돈이 [[r]]수수료[[/r]]로 다 빠져나가네!",
+    "toeicExpr": [
+     "admission fee 입장료   membership fee 회원 가입비",
+     "service fee 서비스 요금   registration fee 등록비",
+     "processing/handling/application/cancellation fee 처리/취급/신청/취소 수수료",
+     "annual fee 연회비   additional fee 추가 요금   late fee 연체료",
+     "delivery fee 배달료(내부 · 지역 배송)   shipping fee 운송료(장거리 · 국제 배송)"
+    ],
+    "examVar": [
+     {
+      "note": "fee, price, cost를 구분하는 문제가 자주 출제되었다.\n* fee: 서비스나 등록 절차의 대가, 입장료, 수수료\n* price: 유형의 상품 판매 가격\n* cost: 지출이나 비용 전반"
+     },
+     {
+      "en": "The bank charges a small ______ for processing international wire transfers.",
+      "opt": "(A) price   (B) cost   (C) fee   (D) expense",
+      "ans": "(C)",
+      "ko": "그 은행은 국제 송금 처리를 위해 소액의 수수료를 부과한다."
+     },
+     {
+      "en": "The listed ______ of the office furniture includes delivery and installation.",
+      "opt": "(A) fee   (B) price   (C) expense   (D) charge",
+      "ans": "(B)",
+      "ko": "그 사무용 가구의 표시된 가격에는 배송과 설치가 포함되어 있다."
+     },
+     {
+      "en": "The company reduced operating ______ by switching to a more efficient supplier.",
+      "opt": "(A) fees   (B) prices   (C) costs   (D) charges",
+      "ans": "(C)",
+      "ko": "그 회사는 더 효율적인 공급업체로 전환함으로써 운영 비용을 줄였다."
+     }
+    ]
    },
    {
     "word": "itinerary",
+    "pron": "미[aitínərèri] 영[aitínərəri]",
+    "pos": "n.",
     "meaning": "여정, 여행 스케줄",
-    "pos": "n."
+    "tip": "[[b]]이 티[[/b]]셔츠를 여행 가방에 [[b]]넣어리[[/b]], [[r]]여행 스케줄[[/r]]에 맞춰 입기 위해.",
+    "toeicExpr": [
+     "travel/flight itinerary 여행/비행 일정",
+     "business travel itinerary 출장 일정표"
+    ]
    },
    {
     "word": "accuracy",
+    "pron": "[ǽkjurəsi]",
+    "pos": "n.",
     "meaning": "정확성, 정확도",
-    "pos": "n."
+    "tip": "총을 쏠 때 [[b]]애꾸눈[[/b]]으로 조준하면 [[b]]역시[[/b]] 높아지는 [[r]]정확성, 정확도[[/r]]",
+    "derivatives": [
+     {
+      "word": "accurate",
+      "meaning": "정확한"
+     },
+     {
+      "word": "inaccurate",
+      "meaning": "부정확한"
+     }
+    ],
+    "toeicExpr": [
+     "high accuracy 높은 정확도   accuracy rate 정확률",
+     "accuracy of information 정보의 정확성",
+     "accurate information/measurement/description 정확한 정보/측정/설명",
+     "inaccurate information 부정확한 정보"
+    ]
    },
    {
     "word": "beneficial",
+    "pron": "[bènəfíʃəl]",
+    "pos": "a.",
     "meaning": "이로운, 이익을 주는",
-    "pos": "adj."
+    "tip": "[[r]]이익을 주는[[/r]] 사업 때문에 형편이 (두) [[b]]배나 피셔[[/b]]",
+    "derivatives": [
+     {
+      "word": "benefit",
+      "meaning": "이익, 복지 혜택; 이익을 얻다, 이익을 주다"
+     }
+    ],
+    "toeicExpr": [
+     "beneficial effect/relationship 유익한 효과/관계",
+     "beneficial to ~에 유익한, ~에 도움이 되는 (to: ~에게, ~쪽으로 * for가 아님을 유의)",
+     "beneficial to employees/customers 직원들에게/고객에게 도움이 되는",
+     "beneficial to productivity/health 생산성에/건강에 도움이 되는",
+     "employee benefits 직원 복리후생   economic benefit 경제적 이득",
+     "additional/tax benefits 추가적인/세제 혜택",
+     "benefit customers 고객에게 이익을 주다",
+     "benefit both parties 양측 모두에게 이익을 주다",
+     "benefit from A로부터 이익을 얻다",
+     "benefit from experience/training 경험으로부터/교육으로부터 이익을 얻다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The new training program is expected to be beneficial ______ all newly hired employees.",
+      "opt": "(A) for   (B) with   (C) to   (D) by",
+      "ans": "(C)",
+      "ko": "새로운 교육 프로그램은 새로 채용된 모든 직원들에게 유익할 것으로 예상된다."
+     },
+     {
+      "en": "2. Customers can benefit from lower prices during the promotional period.",
+      "ko": "고객들은 할인 기간 동안 더 낮은 가격으로부터 이익을 누릴 수 있다."
+     }
+    ]
    },
    {
     "word": "aisle",
-    "meaning": "(극장·비행기 등의 좌석 사이의) 통로, 복도",
-    "pos": "n."
+    "pron": "[ail]",
+    "pos": "n.",
+    "meaning": "(극장 · 비행기 등의 좌석 사이의) 통로, 복도",
+    "tip": "[[b]]아일[[/b]](아이를) 안전하게 창가 쪽 좌석이 아닌 [[r]]통로[[/r]] 쪽 좌석에 앉히는",
+    "toeicExpr": [
+     "aisle seat 통로 쪽 좌석   store aisle 매장 통로   clear the aisle 통로를 비우다"
+    ]
    },
    {
     "word": "showing",
+    "pron": "[ʃóuiŋ]",
+    "pos": "n.",
     "meaning": "성과, 실적",
-    "pos": "n."
+    "tip": "[[b]]show[[/b]](보여주다) + [[b]]ing[[/b]](명 · 어)] (이룬 것을) [[r]]보여주는 것, 즉 성과, 실적[[/r]]",
+    "toeicExpr": [
+     "strong/weak/initial showing 좋은/저조한/초기 성과",
+     "overall/sales/quarterly/solid showing 전반적인/판매/분기/안정적인 실적"
+    ]
    },
    {
     "word": "indicate",
-    "meaning": "나타내다, 가리키다, 표시하다",
-    "pos": "v."
+    "pron": "[índikèit]",
+    "pos": "v.",
+    "meaning": "v. 나타내다, 가리키다, 표시하다",
+    "tip": "동굴에 쓰여 있는 [[b]]인디[[/b]]언 글자의 의미를 [[b]]케이트[[/b]](캐다), 즉 그 글자가 무엇을 [[r]]나타내다, 가리키다[[/r]]",
+    "derivatives": [
+     {
+      "word": "indication",
+      "meaning": "징후, 신호, 지시, 표시"
+     },
+     {
+      "word": "indicative",
+      "meaning": "나타내는, 보여주는"
+     },
+     {
+      "word": "indicator",
+      "meaning": "지표, 가리키는 것"
+     }
+    ],
+    "toeicExpr": [
+     "indicate that ~ ~을 나타내다, 시사하다",
+     "researches/studies/results indicate that ~ 조사는/연구는/결과는 ~을 보여준다",
+     "clear/early indication 명확한/초기 징후  indication of growth 성장의 징후",
+     "be indicative of ~을 나타내다",
+     "be indicative of growth/a trend 성장을/추세를 나타내다",
+     "economic indicator 경제 지표  performance/market indicator 성과/시장 지표"
+    ],
+    "examVar": [
+     {
+      "en": "indication, show, showing의 차이를 묻는 문제가 자주 출제되었다.",
+      "note": "indication 간접적인 징후 / show 직접적으로 보여주는 것 / showing 성과, 실적",
+      "ko": "그 보고서는 온라인 쇼핑에 대한 관심 증가의 명확한 징후를 제공한다.",
+      "opt": "The report provides a clear ______ of increased interest in online shopping. (A) indication (B) show (C) showing (D) shows",
+      "ans": "(A)"
+     },
+     {
+      "en": "Employee turnover rates are indicative of low workplace morale.",
+      "ko": "직원 이직률은 직장 내 사기 저하를 나타낸다."
+     }
+    ]
    },
    {
     "word": "assemble",
-    "meaning": "모으다, 모이다, 조립하다",
-    "pos": "v."
+    "pron": "[əsémbl]",
+    "pos": "v.",
+    "meaning": "v. 모으다, 모이다, 조립하다",
+    "tip": "너무 추워서 [[b]]어! 센불[[/b]] 주위로 사람들이 [[r]]모이다, 모으다[[/r]]",
+    "derivatives": [
+     {
+      "word": "assembly",
+      "meaning": "집회, 모임, 조립"
+     },
+     {
+      "word": "disassemble",
+      "meaning": "해체하다, 분해하다"
+     }
+    ],
+    "toeicExpr": [
+     "assemble a team 팀을 모으다(구성하다)  assemble parts 부품을 조립하다",
+     "assemble at the hall 강당에 모이다",
+     "annual assembly 연례 총회  assembly line 조립 라인",
+     "assembly plant 조립공장",
+     "disassemble equipment/machine 장비를/기계를 분해하다"
+    ],
+    "examVar": [
+     {
+      "en": "The factory improved efficiency by upgrading its assembly line.",
+      "ko": "공장은 조립 라인을 개선하여 효율성을 높였다."
+     }
+    ]
    },
    {
     "word": "deny",
-    "meaning": "부인하다, 거절하다",
-    "pos": "v."
+    "pron": "[dinái]",
+    "pos": "v.",
+    "meaning": "v. 부인하다, 거절하다",
+    "tip": "[[b]]뒤[[/b]]로 [[b]]나이[[/b]]를 숨기고 미성년자임을 [[r]]부인하다[[/r]], 술집 주인은 입장을 [[r]]거절하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "denial",
+      "meaning": "부인"
+     }
+    ],
+    "toeicExpr": [
+     "deny permission/access 허가를/접근을 거절하다",
+     "denial of a request 요청의 거부  denial of an application 신청 거부",
+     "denial of coverage (보험) 보장 거부"
+    ],
+    "examVar": [
+     {
+      "en": "deny는 to부정사는 목적어로 취할 수 없고, 동명사를 목적어로 취한다.",
+      "opt": "The worker denied ______ the safety rules during the project. (A) violate (B) to violate (C) violated (D) violating",
+      "ko": "그 근로자는 프로젝트 중 안전 규정을 위반한 사실을 부인했다.",
+      "note": "to부정사가 아닌 동명사만을 목적어로 취하는 동사  avoid, mind, deny, enjoy, stop, consider, suggest, finish + 동명사 (O) / to부정사 (X)"
+     },
+     {
+      "note": "암기법> 아범이([[b]]avo mi[[/b]]) [[r]]부인[[/r]]에게 인스타([[b]]en sto[[/b]])그램에 큰 시([[b]]consi[[/b]]) 써제([[b]]sugge[[/b]])끼는 것을 \"끝내라\"고 한다.  av[[b]]oi[[/b]]d, m[[b]]i[[/b]]nd, den[[b]]y[[/b]]([[r]]부인하다[[/r]])  e[[b]]n[[/b]]joy, s[[b]]to[[/b]]p  [[b]]consi[[/b]]der, [[b]]sugge[[/b]]st  fini[[b]]sh[[/b]](끝내라!)"
+     }
+    ]
    },
    {
     "word": "challenge",
-    "meaning": "1. 도전하다, 이의를 제기하다, 어려움을 주다 / 도전 2. 힘든 일, 어려움",
-    "pos": "v./n."
+    "pron": "[t∫ǽlindʒ]",
+    "pos": "v./n.",
+    "meaning": "1. v. 도전하다, 이의를 제기하다, 어려움을 주다  n. 도전  2. n. 힘든 일, 어려움",
+    "tip": "[[r]]힘든 일, 어려운 일[[/r]]에 [[b]]challenge[[/b]](도전하다), 즉 힘들어서 못할 것 같다는 데 [[r]]이의를 제기하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "challenging",
+      "meaning": "도전적인, (흥미롭기도 하며) 힘든"
+     }
+    ],
+    "toeicExpr": [
+     "face a challenge 도전에 직면하다",
+     "overcome a challenge 도전을(어려움을) 극복하다",
+     "challenge a decision 결정에 이의를 제기하다 (← 결정에 도전하다)",
+     "pose a challenge 도전과제를 제기하다(초래하다)",
+     "challenge employees 직원들에게 어려움을 주다",
+     "challenge to beginners 초보자에게는 어려운 과제",
+     "challenging task/project 도전적인(힘든) 과제/프로젝트"
+    ]
    },
    {
     "word": "minimum",
-    "meaning": "최소의 / 최소한도",
-    "pos": "adj./n."
+    "pron": "[mínəməm]",
+    "pos": "a./n.",
+    "meaning": "a. 최소의  n. 최소한도",
+    "tip": "[[b]]mini[[/b]](small) + [[b]]mum[[/b]](명사형 어미)] [[r]]최소의, 최소한도[[/r]]",
+    "derivatives": [
+     {
+      "word": "minimize",
+      "meaning": "최소화하다"
+     },
+     {
+      "word": "maximum",
+      "meaning": "최고점; 최대의, 극대의"
+     }
+    ],
+    "toeicExpr": [
+     "minimum wage 최저 임금  at a minimum 최소한으로",
+     "minimum requirement/charge/standard 최소 요건/요금/기준",
+     "minimize costs 비용을 최소화하다  minimize risks 위험을 최소화하다",
+     "maximum capacity 최대 수용 인원  maximum speed 최고 속도",
+     "maximum limit 최대 한도"
+    ]
    },
    {
     "word": "revenue",
-    "meaning": "매출, 매출액",
-    "pos": "n."
+    "pron": "[révənjùː]",
+    "pos": "n.",
+    "meaning": "n. 매출, 매출액",
+    "tip": "\"올해 [[b]]내[[/b]]가 얼마나 [[b]]버누[[/b]]\" 즉, 내 [[r]]매출[[/r]]이 얼마니?",
+    "toeicExpr": [
+     "annual revenue 연간 (매출)수입",
+     "generate revenue 매출을 창출하다",
+     "increase revenue 매출을 늘리다",
+     "revenue growth 매출 성장",
+     "revenue source 매출원"
+    ],
+    "examVar": [
+     {
+      "note": "revenue와 profit을 구분하는 문제가 출제되었다. * revenue (비용을 차감하지 않은) 매출 / profit 매출에서 비용 차감 후 이익"
+     },
+     {
+      "en": "After deducting taxes, rent, and labor expenses, the company reported a net _______ of $3 million.",
+      "opt": "profit (O) revenue (X)",
+      "ko": "세금, 임대료, 인건비를 공제한 후 회사는 300만 달러의 순이익을 보고했다. (net profit: 순이익)"
+     },
+     {
+      "en": "The decline in customer orders directly caused a drop in the firm's total sales amount, resulting in lower _______.",
+      "opt": "revenue (O) profit (X)",
+      "ko": "고객 주문 감소는 회사의 총 판매액 감소로 직결되어 더 낮은 매출로 이어졌다."
+     }
+    ]
    },
    {
     "word": "simultaneous",
-    "meaning": "동시의",
-    "pos": "adj."
+    "pron": "미[sàiməltéiniəs] 영[sìməltéiniəs]",
+    "pos": "a.",
+    "meaning": "a. 동시의",
+    "tip": "식목일에 정부가 정한 나무를 [[b]]심[[/b]]을 시간이 [[b]]ten[[/b]](10)[[b]]시이었수[[/b]], 즉 [[r]]동시의[[/r]] 전국적인 나무 심기 운동",
+    "derivatives": [
+     {
+      "word": "simultaneously",
+      "meaning": "동시에"
+     }
+    ],
+    "toeicExpr": [
+     "simultaneous events 동시에 일어나는 사건",
+     "simultaneous operations/interpretation 동시 작업/통역",
+     "occur/work simultaneously 동시에 발생하다/일하다"
+    ]
    },
    {
     "word": "consign",
-    "meaning": "맡기다, 탁송하다",
-    "pos": "v."
+    "pron": "[kənsáin]",
+    "pos": "v.",
+    "meaning": "v. 맡기다, 탁송하다",
+    "tip": "소포에 [[b]]큰 싸인[[/b]](서명)을 해서 우체국에 [[r]]맡기다[[/r]], 소포로 [[r]]탁송하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "consignment",
+      "meaning": "위탁, 탁송, 위탁 화물"
+     }
+    ],
+    "toeicExpr": [
+     "consign goods to a retail store 물품을 소매점에 (판매를 위해) 위탁하다",
+     "consign the documents to the client 서류를 고객에게 보내다",
+     "send/receive a consignment 위탁 화물을 보내다/받다"
+    ]
    },
    {
     "word": "majority",
-    "meaning": "대다수, 대부분",
-    "pos": "n."
+    "pron": "[mədʒɔ́ːrəti]",
+    "pos": "n.",
+    "meaning": "n. 대다수, 대부분",
+    "tip": "월드컵 경기 응원을 위해 [[b]]모조리[[/b]] 붉은 [[b]]티[[/b]](셔츠)를 입은 [[r]]대다수, 대부분[[/r]]",
+    "toeicExpr": [
+     "the majority of 대다수의 ~",
+     "the majority of people/respondents 대다수의 사람들/응답자"
+    ],
+    "examVar": [
+     {
+      "note": "1. most와 majority를 비교하는 문제가 자주 출제되었다. * most + 명사 * most of + the/this/that/my/our + 명사 * the majority of + 명사"
+     },
+     {
+      "en": "_______ the information provided was accurate.",
+      "opt": "(A) Most of (B) Majority of (C) The majority (D) Most",
+      "ans": "(A)",
+      "ko": "제공된 정보의 대부분은 정확했다.",
+      "note": "Most가 답이 되려면 Most information provided ~ 형태로 와야 한다."
+     },
+     {
+      "note": "2. most, majority, almost(거의, 대체로), mostly(대부분, 주로)와의 비교 문제가 자주 출제되었다."
+     },
+     {
+      "en": "_______ employees prefer flexible working hours.",
+      "opt": "(A) Almost (B) Mostly (C) Most (D) Majority",
+      "ans": "(C)",
+      "ko": "대부분의 직원들이 유연 근무를 선호한다.",
+      "note": "명사를 직접 수식하려면 most가 와야 한다. almost/mostly는 부사이기 때문에 명사를 수식할 수 없고 majority는 반드시 the majority of 형태로 와야 한다."
+     },
+     {
+      "en": "_______ the participants completed the survey on time.",
+      "opt": "(A) Most (B) Almost (C) Majority (D) Most of",
+      "ans": "(D)",
+      "ko": "참가자들 대부분이 설문을 제시간에 완료했다.",
+      "note": "'most of + the/소유격/지시사 + 명사' 구조만 가능하다. 뒤에 the participants(정관사+명사)가 있으므로 most가 오려면 뒤에 the가 없어야 하고, almost/mostly는 부사이기 때문에 명사를 수식할 수 없다. majority는 반드시 the majority of 형태로 와야 한다."
+     }
+    ]
    },
    {
     "word": "bull/bear market",
+    "pos": "n.",
     "meaning": "(주식 시장의) 상승/하락 장세",
-    "pos": "n."
+    "tip": "[[b]]황소(bull)[[/b]]가 싸울 때 뿔로 치켜올리듯 [[r]]상승하는[[/r]] 모습과 [[b]]곰(bear)[[/b]]이 위에서 내려치는 듯하게 [[r]]하락하는[[/r]] 것에 빗댄 표현",
+    "toeicExpr": [
+     "enter a bull market 상승장에 진입하다",
+     "remain in a bear market 하락세가 지속되다"
+    ]
    },
    {
     "word": "similar",
-    "meaning": "같은, 유사한",
-    "pos": "adj."
+    "pron": "[símilər]",
+    "pos": "a.",
+    "meaning": "a. 같은, 유사한",
+    "tip": "에이 [[b]]씨[[/b]]! [[b]]mirror[[/b]](거울)에 나와 [[r]]같은, 유사한[[/r]] 것이 있네!",
+    "derivatives": [
+     {
+      "word": "similarly",
+      "meaning": "유사하게, 비슷하게"
+     },
+     {
+      "word": "similarity",
+      "meaning": "유사성"
+     }
+    ],
+    "toeicExpr": [
+     "be similar to A A와 유사하다 (to: ~쪽으로  * similar with가 아님을 주의)",
+     "be similar to the original plan 원래 계획과 비슷하다",
+     "be similar to the previous model 이전 모델과 비슷하다",
+     "in a similar way 비슷한 방법으로   similar situation 유사한 상황",
+     "similarly designed 유사하게 설계된   act similarly 비슷하게 행동하다",
+     "similarity between A and B A와 B 사이의 유사성"
+    ],
+    "examVar": [
+     {
+      "en": "The new model is similar _______ the previous version in terms of design.",
+      "opt": "(A) with   (B) as   (C) to   (D) for",
+      "ans": "(C)",
+      "ko": "새 모델은 디자인 면에서 이전 버전과 유사하다."
+     }
+    ]
    },
    {
     "word": "heavily",
-    "meaning": "1. 매우, 심하게 2. 많이, 대량으로",
-    "pos": "adv."
+    "pron": "[hévili]",
+    "pos": "ad.",
+    "meaning": "ad. 1. 매우, 심하게  2. 많이, 대량으로",
+    "tip": "① 내 동생은 뚱뚱해서 [[r]]몹시, 심하게[[/r]] [[b]]heavy리[[/b]](무거울리)\n② [[r]]많이, 대량으로[[/r]] 사서 [[b]]heavy리[[/b]](무거울리)",
+    "toeicExpr": [
+     "heavily involved in 깊이 관여된",
+     "heavily dependent on 크게 의존하는",
+     "rely heavily on online sales for revenue 매출의 대부분을 온라인 판매에 의존하다",
+     "be heavily affected by ~에 의해 큰 영향을 받다",
+     "be heavily damaged/congested/affected 심하게 손상되다/혼잡하다/영향받다",
+     "be heavily invested in 대규모로 투자되다",
+     "be heavily used 많이 사용되다",
+     "heavily advertised 대대적으로 광고된",
+     "heavily populated 인구가 밀집한"
+    ]
    },
    {
     "word": "regard",
-    "meaning": "1. 점, 사항 2. 관계 3. ~으로 여기다",
-    "pos": "n./v."
+    "pron": "[rigá:rd]",
+    "pos": "n./v.",
+    "meaning": "1. n. 점, 사항  2. n. 관계  3. v. ~으로 여기다",
+    "tip": "[[b]]re[[/b]](뒤에서) [[b]](보디)가드[[/b]]처럼 따라다니는 [[r]]사항, 관점[[/r]]을 볼 때 앞사람과의 [[r]]관계[[/r]]를 보디가드로 [[r]]여기다[[/r]]",
+    "toeicExpr": [
+     "in this regard 이 점에 있어서 (← 이러한 점 내에서)\nWe have no further comments in this regard.\n이 점에 관해서는 더 이상 언급할 내용이 없다.",
+     "with regard to (=in regard to) ~에 관하여\nPlease contact me with regard to your recent order.\n최근 주문에 관해 저에게 연락해 주세요.\nIn regard to your inquiry, we will send the requested documents by Friday.\n귀하의 문의에 관해서 요청하신 문서를 금요일까지 보내드리겠습니다.",
+     "regarding ~에 관련하여, ~에 관하여\nregarding payment/procedures 지불/절차에 관련하여",
+     "regardless of ~에 관계없이\nregardless of age or gender 나이와 성별에 상관없이",
+     "regard A as B A를 B로 여기다, 간주하다\nWe regard customer satisfaction as our highest priority.\n우리는 고객 만족을 가장 중요한 우선순위로 여긴다."
+    ],
+    "examVar": [
+     {
+      "en": "1. Many customers regard the updated model as a major improvement over the previous version.",
+      "ko": "많은 고객들은 업데이트된 모델을 이전 버전에 비해 큰 개선이라고 여긴다."
+     },
+     {
+      "en": "2. If you have any questions regarding the updated policy, please contact the HR department.",
+      "ko": "업데이트된 정책에 관하여 질문이 있으시면 인사 부서로 연락해 주십시오."
+     }
+    ]
    },
    {
     "word": "electronically",
-    "meaning": "온라인으로, 컴퓨터 통신망으로",
-    "pos": "adv."
+    "pron": "미 [ilektránikəli] 영 [ilektrɔ́nikəli]",
+    "pos": "ad.",
+    "meaning": "ad. 온라인으로, 컴퓨터 통신망으로",
+    "tip": "[[b]]electron[[/b]](전자) 상으로",
+    "toeicExpr": [
+     "submit electronically 온라인으로 제출하다",
+     "pay electronically 전자 결제를 하다",
+     "transfer funds electronically 전자 송금하다"
+    ]
    },
    {
     "word": "policy",
-    "meaning": "정책, 방침, (보험) 약관",
-    "pos": "n."
+    "pron": "미 [páləsi] 영 [pɔ́ləsi]",
+    "pos": "n.",
+    "meaning": "n. 정책, 방침, (보험) 약관",
+    "tip": "① 나라에서 돈을 마련하기 위해 [[b]]팔어[[/b]], 하나의 [[b]]시[[/b]]를. 그러한 나라의 [[r]]정책, 방침[[/r]]\n② 보험에 있어서의 [[r]]정책이나 방침[[/r]]을 써놓은 [[r]]보험 약관[[/r]]",
+    "toeicExpr": [
+     "return/employment/company policy 환불/고용/회사 정책",
+     "insurance policy 보험 약관"
+    ],
+    "examVar": [
+     {
+      "en": "Customers are required to review their insurance policy carefully before signing the document.",
+      "ko": "고객은 문서에 서명하기 전에 자신의 보험 계약서를 주의 깊게 검토해야 한다."
+     }
+    ]
    },
    {
     "word": "dispute",
-    "meaning": "논쟁하다, 분쟁하다, 이의를 제기하다 / 논쟁, 분쟁",
-    "pos": "v./n."
+    "pron": "[dispjú:t]",
+    "pos": "v./n.",
+    "meaning": "v. 논쟁하다, 분쟁하다, 이의를 제기하다  n. 논쟁, 분쟁",
+    "tip": "[[b]]this[[/b]](이) 핵 미사일을 [[b]]퓨~[[/b]] 쏴버릴끼야! 하며 북한이 미국 대표와 [[r]]논쟁하다, 분쟁하다[[/r]]",
+    "toeicExpr": [
+     "resolve a dispute 분쟁을 해결하다",
+     "dispute over contract terms 계약 조건에 대한 분쟁",
+     "dispute the decision with management 경영진과 결정을 두고 다투다"
+    ]
    },
    {
     "word": "comprise",
+    "pron": "[kəmpráiz]",
+    "pos": "v.",
     "meaning": "포함하다, ~으로 구성되다, 구성하다",
-    "pos": "v."
+    "tip": "[[b]]컴[[/b]](컴퓨터)를 [[b]]prize[[/b]](상)에 [[r]]포함하다[[/r]], [[r]]구성되다[[/r]]",
+    "toeicExpr": [
+     "comprise A and B A와 B로 구성되다",
+     "comprise several parts 여러 부분으로 구성되다",
+     "comprise the following items 다음 품목들로 구성되다",
+     "be comprised of ~으로 구성되다",
+     "The committee is comprised of five experienced members. 그 위원회는 다섯 명의 경험 많은 구성원으로 이루어져 있다."
+    ],
+    "examVar": [
+     {
+      "en": "comprise가 능동 형태로 '~으로 구성되다, ~을 포함하다'라는 의미로 쓰일 때 전치사 of를 쓰지 않는다는 점을 묻는 문제가 자주 출제되었다.",
+      "opt": "The advisory board ______ experts from various fields, including finance, technology, and healthcare. (A) consists (B) is composed (C) comprises (D) is made",
+      "ans": "(C)",
+      "ko": "그 자문위원회는 금융, 기술, 의료 등 다양한 분야의 전문가들로 구성되어 있다.",
+      "note": "comprise는 'be comprised of'의 수동 형태와는 달리 능동에서는 뒤에 전치사가 없이 바로 목적어가 오는 구조(comprise + 명사)를 갖는다. consists of / is composed of / is made of는 모두 of가 필요하므로 comprise와 구조가 다르다."
+     }
+    ]
    },
    {
     "word": "selection",
+    "pron": "[silékʃən]",
+    "pos": "n.",
     "meaning": "선택, 선발",
-    "pos": "n."
+    "tip": "A, B, C 중에서 [[b]]씰[[/b]](C를) 골라 [[b]]낫셔[[/b]](냈어), 즉 C를 [[r]]선택[[/r]], [[r]]선발[[/r]]",
+    "derivatives": [
+     {
+      "word": "select",
+      "meaning": "선택하다, 선발하다"
+     }
+    ],
+    "toeicExpr": [
+     "job selection 직무 선발, 채용 선발  product selection 제품 선택",
+     "wide selection 다양한 선택",
+     "select candidates 후보자를 선발하다  automatically select 자동으로 선택하다"
+    ]
    }
   ]
  },
@@ -1847,113 +6154,599 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "inform",
+    "pron": "[infɔ́:rm]",
+    "pos": "v.",
     "meaning": "알리다, 통보하다",
-    "pos": "v."
+    "tip": "[[b]]information[[/b]](정보)의 동사형 [[r]]알리다[[/r]]",
+    "derivatives": [
+     {
+      "word": "informed",
+      "meaning": "정보를 알고 있는, 통보받은 (← 과거분사형 형용사로 수동으로 생각하면 '정보를 얻어서 알고 있는'이란 뜻이 됨)"
+     },
+     {
+      "word": "informative",
+      "meaning": "정보를 제공하는, 유익한"
+     }
+    ],
+    "toeicExpr": [
+     "inform A of/about B A에게 B에 관하여 알리다 (← of: ~에 관하여)",
+     "inform employees of policy updates 직원들에게 정책 변경 사항을 알리다",
+     "inform participants of the venue change 참가자들에게 장소 변경을 알리다",
+     "inform customers about the schedule change 고객에게 일정 변경에 대해 알리다",
+     "inform passengers about flight delays 승객들에게 항공편 지연에 대해 알리다",
+     "inform + 사람 + that절: …에게 ~을 알리다",
+     "Please inform the client that the shipment has been delayed. 배송이 지연되었다는 사실을 고객에게 알려 주십시오",
+     "keep + 목적어 + informed ~에게 지속적으로 알리다",
+     "keep team members informed about deadlines 팀원들에게 마감일을 지속적으로 공지하다",
+     "keep employees informed of operational updates 운영 관련 업데이트를 직원들에게 알리다",
+     "stay informed 정보를 지속적으로 얻다",
+     "stay informed about company news 회사 소식을 계속 파악하다",
+     "stay informed of schedule changes 일정 변경 사항을 숙지하다",
+     "informative presentation/seminar/article 유익한(정보를 주는) 발표/세미나/기사"
+    ],
+    "examVar": [
+     {
+      "en": "The company will inform customers of the delay in shipment.",
+      "ko": "회사는 배송 지연에 대해 고객에게 알릴 것이다."
+     },
+     {
+      "en": "All applicants will be informed of the interview results by e-mail.",
+      "ko": "모든 지원자는 면접 결과를 이메일로 통보받을 것이다."
+     },
+     {
+      "en": "Managers should keep employees ______ of any changes to company procedures.",
+      "opt": "(A) inform (B) informing (C) informed (D) informative",
+      "ans": "(C)",
+      "ko": "관리자는 회사 절차 변경 사항에 대해 직원들이 알고 있도록 해야 한다."
+     },
+     {
+      "en": "The manager will ______ employees that the office will be closed for maintenance this weekend.",
+      "opt": "inform (O) explain (X) announce (X)",
+      "ko": "관리자는 직원들에게 이번 주말 사무실이 점검으로 휴무라고 알릴 것이다.",
+      "note": "explain, announce는 4형식으로 쓰이지 않는 동사로 'explain/announce + (to 사람) + that절'과 같이 사람 앞에 to를 반드시 써주어야 한다."
+     },
+     {
+      "en": "informed와 informative를 구분하는 문제가 출제되었다. The workshop was highly ______ and helped participants understand the new regulations.",
+      "opt": "informative (O) informed (X)",
+      "ko": "그 워크숍은 매우 유익한 내용이어서 참가자들이 새로운 규정을 이해하는 데 도움이 되었다."
+     }
+    ]
    },
    {
     "word": "estate",
+    "pron": "[istéit]",
+    "pos": "n.",
     "meaning": "재산, 부동산",
-    "pos": "n."
+    "tip": "한 갑부가 \"[[b]]이 스테이트[[/b]](주)에 있는 땅이 모두 내 [[r]]재산, 부동산[[/r]]이야.\"",
+    "toeicExpr": [
+     "real estate 부동산 (← 써서 없어지는 재산이 아닌 real(실제의) 재산, 즉 부동산)",
+     "estate agent 부동산 중개인",
+     "commercial/residential real estate 상업용/주거용 부동산",
+     "real estate market/investment 부동산 시장/투자"
+    ]
    },
    {
     "word": "recognize",
-    "meaning": "1. 알아차리다 2. 인정하다, 승인하다",
-    "pos": "v."
+    "pron": "[rékəgnàiz]",
+    "pos": "v.",
+    "meaning": "1. 알아차리다  2. 인정하다, 승인하다",
+    "tip": "\"내 [[b]]꺼구나[[/b]]!(이즈)\" 하고 잃어버렸던 자신의 책을 [[r]]알아차리다[[/r]]. 그 책에 쓰여 있는 이름을 보고 친구가 내 것임을 [[r]]인정하다, 승인하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "recognition",
+      "meaning": "1. 인식, 인지  2. 인정  3. 표창, 공로 (← 인정하여 주는 상)"
+     }
+    ],
+    "toeicExpr": [
+     "recognize a problem 문제를 알아차리다",
+     "recognize a face 얼굴을 알아보다",
+     "recognize the need for ~의 필요성을 인지하다",
+     "recognize outstanding performance 뛰어난 성과를 인정하다",
+     "recognize employees' efforts 직원들의 노력을 인정하다",
+     "recognize a certification 자격증을 승인하다",
+     "internationally recognized standard 국제적으로 승인된 기준",
+     "officially recognized program 공식 승인된 프로그램",
+     "voice/facial recognition system 음성/얼굴 인식 시스템",
+     "automatic recognition 자동 인식",
+     "government recognition 정부 승인",
+     "international recognition 국제적 승인",
+     "receive recognition 인정을 받다",
+     "in recognition of ~을 인정하여 (← ~의 인정 속에서)",
+     "in recognition of outstanding performance 뛰어난 성과를 인정하여",
+     "employee recognition 직원 표창",
+     "recognition for long-term service 장기근속 표창"
+    ]
    },
    {
     "word": "content",
-    "meaning": "1. 내용, 내용물 2. 만족한",
-    "pos": "n./adj."
+    "pron": "n. 미[kántent] 영[kɔ́ntent]\na. [kəntént]",
+    "pos": "n./a.",
+    "meaning": "1. n. 내용, 내용물  2. a. 만족한",
+    "tip": "① 산속의 왠 큰 [[b]]텐트[[/b]] 안에 [[r]]내용물[[/r]]이 무엇인지 궁금해하다.\n② 큰 [[b]]텐트[[/b]]에서 자니 넓어서 [[r]]만족한[[/r]]",
+    "derivatives": [
+     {
+      "word": "discontent",
+      "meaning": "불만; 불만스러운"
+     }
+    ],
+    "toeicExpr": [
+     "email/document/report/training content 이메일/문서/보고서/교육 내용",
+     "be content with A A에 만족하다",
+     "feel content with the result 결과에 만족하다",
+     "remain content with the decision 결정에 만족한 상태로 남다",
+     "employee discontent 직원들의 불만",
+     "be discontent with the policy 정책에 불만이다"
+    ]
    },
    {
     "word": "emigrate",
+    "pron": "[émigrèit]",
+    "pos": "v.",
     "meaning": "(다른 나라로) 이주하다",
-    "pos": "v."
+    "tip": "[[b]]애미[[/b]]가 great(큰) 나라 미국으로 [[r]]이주하다[[/r]] (접두어 e는 'out'을 뜻하여 밖으로 나가다, 즉 다른 나라로 이주하다)",
+    "derivatives": [
+     {
+      "word": "emigrant",
+      "meaning": "(타국으로 가는) 이민자, 이주민 (← -ant, -ent: 1. ~사람, ~것  2. 형·어)"
+     },
+     {
+      "word": "emigration",
+      "meaning": "(타국으로의) 이주"
+     }
+    ],
+    "toeicExpr": [
+     "emigrate to the U.S. 미국으로 이주하다   emigrate abroad 해외로 이주하다",
+     "emigrant worker 해외로 이주한 노동자  emigrant community 해외 이민자 사회",
+     "emigration policy/process 이민 정책/절차"
+    ]
    },
    {
     "word": "immigrate",
+    "pron": "[ímigrèit]",
+    "pos": "v.",
     "meaning": "(외국으로부터) 이주해 오다",
-    "pos": "v."
+    "tip": "나는 애미보다 먼저 [[b]]이미[[/b]] great(큰) 나라 미국으로 [[r]]이주해 와 있다[[/r]]. (접두어 im은 '안으로'를 뜻하여 우리나라로 이주해 들어오다)",
+    "derivatives": [
+     {
+      "word": "immigrant",
+      "meaning": "(타국에서 온) 이민자, 이주민"
+     },
+     {
+      "word": "immigration",
+      "meaning": "(타국으로부터의) 이주"
+     }
+    ],
+    "toeicExpr": [
+     "immigrate to the U.S. 미국으로 이민해 오다   immigrate permanently 영구적으로 이민해 오다",
+     "immigrant worker (이주해 들어온) 이민 노동자",
+     "immigration counter 출입국 심사대   immigration officer 입국 심사관   immigration office 출입국 관리 사무소"
+    ],
+    "examVar": [
+     {
+      "en": "emigrate와 immigrate의 의미 차이를 구분하는 문제가 자주 출제되었다.",
+      "note": "예) After living in France for several years, Mr. Lee decided to ________ to Canada for better career opportunities.   emigrate (O)  immigrate (X)",
+      "ko": "프랑스에서 여러 해 거주한 후, 이 씨는 더 나은 커리어 기회를 위해 캐나다로 이주하기로 결정했다."
+     }
+    ]
    },
    {
     "word": "debate",
-    "meaning": "토론하다; 토론, 논쟁",
-    "pos": "v./n."
+    "pron": "[dibéit]",
+    "pos": "v./n.",
+    "meaning": "v. 토론하다 n. 토론, 논쟁",
+    "tip": "[[b]]뒷 배가 있다[[/b]], 앞 배는 시간이 촉박하니 뒷 배를 타는 것이 어떨지 서로 [[r]]토론하다, 논쟁하다[[/r]]",
+    "toeicExpr": [
+     "hold a debate 토론을 열다  public debate 공개 토론",
+     "debate an issue 쟁점을 토론하다"
+    ]
    },
    {
     "word": "collective",
+    "pron": "[kəléktiv]",
+    "pos": "a.",
     "meaning": "집단의, 공동의",
-    "pos": "adj."
+    "tip": "① [[b]]collect[[/b]](모으다, 수집하다)의 형용사형으로 사람들이 모인, 즉 [[r]]집단의, 공동의[[/r]]   ② 옛날 유일하게 [[b]]칼라 TV[[/b]]가 있는 부자집에서 마을 사람들이 [[r]]집단의, 공동의[[/r]] TV 시청",
+    "toeicExpr": [
+     "collective effort/decision/action 집단적 노력/결정/행동   collective responsibility 공동 책임"
+    ]
    },
    {
     "word": "fit",
-    "meaning": "1. ~에 알맞다, 들어맞다; 알맞은, 적합한; 적합한 것(사람) 2. 건강한",
-    "pos": "v./adj./n."
+    "pron": "[fit]",
+    "pos": "1. v./a./n. 2. a.",
+    "meaning": "1. v. ~에 알맞다, (치수·타입 등이) 들어맞다  a. 알맞은, 적합한  n. 적합한 것(사람)\n2. a. 건강한",
+    "tip": "① 사건 장소의 [[b]]핏[[/b]]자국과 용의자 피의 혈액형이 딱 [[r]]들어맞다[[/r]]   ② 휘트니스 클럽([[b]]fit[[/b]]ness club)에서 [[b]]fit[[/b]]은 [[r]]건강한[[/r]]",
+    "derivatives": [
+     {
+      "word": "fitness",
+      "meaning": "1. 적합성, 적합  2. 신체 건강, 체력"
+     }
+    ],
+    "toeicExpr": [
+     "fit perfectly 완벽하게 맞다   fit well 잘 맞다",
+     "be fit for ~에 알맞다, 적합하다 (← for: ~을 위해, ~에 대해)",
+     "be fit for use/purpose/role/position 사용하기에/목적에/역할에/직책에 적합하다",
+     "be fit for duty 근무 수행에 적합하다",
+     "be fit + to부정사: ~하기에 적합하다",
+     "be fit to work/operate 일하기에/운영하기에 적합하다(할 수 있는 상태이다)",
+     "a good fit 잘 맞음, 적합함   a perfect fit 완벽한 적합",
+     "fit into (계획·일정·범위에) 들어맞다 (← into(안으로) 딱 들어갈 정도로 fit(들어맞다))",
+     "fit into a plan/schedule/strategy 계획에/일정에/전략에 부합하다",
+     "fit into a budget 예산 범위에 맞다",
+     "stay fit 건강을 유지하다",
+     "test of fitness 적합성 평가   fitness for duty 근무 적합성",
+     "maintain fitness 체력을 유지하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The equipment is not ________ for use in extreme temperatures.",
+      "opt": "(A) fit   (B) fitting   (C) fitted   (D) fitness",
+      "ans": "(A)",
+      "ko": "그 장비는 극한 온도에서 사용하기에 적합하지 않다.",
+      "note": "be fit for = 적합하다 → 형용사 fit 필요. 자동사로 수동형 fitted는 불가."
+     },
+     {
+      "en": "2. The new policy does not fit ________ the company's long-term strategy.",
+      "opt": "(A) into   (B) for   (C) with   (D) to",
+      "ans": "(A)",
+      "ko": "그 새로운 정책은 회사의 장기 전략에 부합하지 않는다.",
+      "note": "<be fit + for + 명사 / to부정사>에서 (fit은 형용사), fit into에서 (fit은 동사) 문제에서는 동사 fit이기 때문에 뒤에 전치사 into를 써야 한다."
+     }
+    ]
+   },
+   {
+    "word": "demand",
+    "pron": "미[dimǽnd] 영[dimάːnd]",
+    "pos": "v. 요구하다 n. 요구, 수요",
+    "meaning": "v. 요구하다 n. 요구, 수요",
+    "tip": "교실 [[b]]뒤[[/b]]에 [[b]]man[[/b]](남자) 두 학생에게 답안지를 앞으로 걷으라고 선생님이 [[r]]요구, 요구하다[[/r]]",
+    "toeicExpr": [
+     "demand compensation/a refund 보상금을/환불을 요구하다",
+     "demand for eco-friendly products 친환경 제품에 대한 수요",
+     "demand for skilled workers 숙련 노동자에 대한 수요",
+     "meet the demand 수요를 충족시키다",
+     "in high demand 수요가 많은, 인기 있는 (← in은 '상태'의 의미: 수요가 많은 상태인)",
+     "consumer/market demand 소비자/시장 수요"
+    ],
+    "examVar": [
+     {
+      "en": "The manager demanded that the report _______ by the end of the day.",
+      "opt": "(A) is submitted (B) be submitted (C) was submitted (D) has been submitted",
+      "ans": "(B)",
+      "ko": "관리자는 그 보고서가 오늘 안에 제출되기를 요구했다.",
+      "note": "다음 동사들 다음에 오는 that절에서는 보통 '~해야 한다(should)'는 의미가 들어가기 때문에 <(should) + 동사원형> 형태를 쓴다. 명령(order) 충고(advise, recommend) 주장(insist) 요구(require, request, demand) 결정(determine, decide) 제안(suggest)  [암기법] 명충(한 놈) 주요 결정(란 말이야!) ~해야 한다고 명령하다, 충고하다, 주장하다"
+     }
+    ]
+   },
+   {
+    "word": "request",
+    "pron": "[rikwést]",
+    "pos": "n. 요청, 요구 v. 요청하다",
+    "meaning": "n. 요청, 요구 v. 요청하다",
+    "tip": "① 불우이웃 돕기 모금 방송 '사랑의 [[b]]리퀘스트[[/b]]'에서 사랑의 성금을 [[r]]요청, 요청하다[[/r]]\n② [[b]]re[[/b]](다시) [[b]]quest[[/b]](질문)하며 설명해달라고 선생님께 [[r]]요청, 요청하다[[/r]]",
+    "toeicExpr": [
+     "request information/permission/a refund 정보를/허가를/환불을 요청하다"
+    ],
+    "examVar": [
+     {
+      "note": "ask와 request의 차이를 묻는 문제가 자주 출제되었다.\n* request that + 주어 + (should) 동사원형: \"명령, 충고, 주장, 요구, 결정, 제안 + that + 주어 + (should) 동사원형\"\n* request + 사물 (request는 사람을 직접적으로 목적어로 취하지 않음)\n  ask for + 사물 (ask 뒤에 요청사항을 바로 넣지 않고 전치사 for를 써야 함)\n* ask + 사람 + to 동사원형 (request는 이러한 5형식 형태로 쓰이지 않음)"
+     },
+     {
+      "en": "The supervisor _______ that the report be finalized before noon.",
+      "opt": "requested (O)  asked (X)",
+      "ko": "감독자는 그 보고서가 정오 이전에 완료될 것을 요청했다.",
+      "note": "request that + 주어 + 동사원형(be)"
+     },
+     {
+      "en": "The manager will _______ additional funding for the new project.",
+      "opt": "request (O)  ask (X)",
+      "ko": "관리자는 새 프로젝트를 위해 추가 자금을 요청할 것이다.",
+      "note": "ask가 답이 되려면 뒤에 바로 for가 와야 함"
+     }
+    ]
    },
    {
     "word": "require",
-    "meaning": "요구하다, 필요로 하다",
-    "pos": "v."
+    "pron": "[rikwáiər]",
+    "pos": "v. 요구하다, 필요로 하다",
+    "meaning": "v. 요구하다, 필요로 하다",
+    "tip": "\"이 차가 [[b]]니 car여[[/b]]? 좀 빌려줄래?\" 하고 [[r]]요구하다[[/r]], 차를 [[r]]필요로 하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "requirement",
+      "meaning": "요구조건, 필요물"
+     }
+    ],
+    "toeicExpr": [
+     "require + 목적어 + to부정사: …로 하여금 ~하도록 요구하다 (5형식)",
+     "require employees to attend 직원들이 참석하도록 요구하다",
+     "require applicants to submit 지원자들이 제출하도록 요구하다",
+     "be required to submit 제출해야 하다 (← 제출하도록 요구되어진다)",
+     "be required to attend 참석해야 하다",
+     "require approval/experience/maintenance 승인을/경력을/유지보수를 필요로 하다",
+     "job/safety/basic requirement 직무/안전/기본 요건",
+     "meet the requirement 요구조건을 충족하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. Company policy _______ employees to wear ID badges at all times.",
+      "opt": "(A) needs (B) requests (C) requires (D) asks",
+      "ans": "(C)",
+      "ko": "회사 정책은 직원들이 항상 신분증을 착용하도록 요구한다.",
+      "note": "need는 5형식으로 쓰지 않음. 그리고 '필요로 하다'란 의미가 어울리지 않음 회사 정책은 의무/필수 요건이기 때문에 request(요청하다)와 ask(부탁하다)보다는 require(요구한다)가 더 적절함"
+     },
+     {
+      "en": "2. Customers are _______ to keep receipts for refunds.",
+      "opt": "(A) requesting (B) requested (C) required (D) requiring",
+      "ans": "(C)",
+      "ko": "고객은 환불을 위해 영수증을 보관해야 한다.",
+      "note": "수동태 형태이며, 환불 조건은 의무/필수 요건이기 때문에 requested(요청된다)보다는 required(요구된다)가 더 적절함"
+     },
+     {
+      "en": "3. The company policy requires that each employee _______ a confidentiality agreement.",
+      "opt": "(A) sign (B) signs (C) signed (D) signing",
+      "ans": "(A)",
+      "ko": "회사 정책은 각 직원이 기밀 유지 계약서에 서명할 것을 요구한다.",
+      "note": "\"명령, 충고, 주장, 요구, 결정, 제안 + that + 주어 + (should) 동사원형\""
+     }
+    ]
    },
    {
     "word": "acquire",
-    "meaning": "얻다, 획득하다",
-    "pos": "v."
+    "pron": "[əkwáiər]",
+    "pos": "v. 얻다, 획득하다",
+    "meaning": "v. 얻다, 획득하다",
+    "tip": "이재민에게 나눠주는 쌀을 [[b]]얻[[/b]](얻다)[[b]]와요[[/b]]! 즉, [[r]]얻다, 획득하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "acquirement",
+      "meaning": "획득, 습득"
+     },
+     {
+      "word": "acquisition",
+      "meaning": "(기업) 인수, 취득"
+     }
+    ],
+    "toeicExpr": [
+     "acquire knowledge/experience/information 지식을/경험을/정보를 습득하다(얻다)",
+     "acquirement of skill 기술 습득",
+     "business acquisition 기업 인수",
+     "asset acquisition 자산 취득"
+    ]
    },
    {
     "word": "recommend",
+    "pron": "[rèkəménd]",
+    "pos": "v.",
     "meaning": "추천하다, 권하다",
-    "pos": "v."
+    "tip": "★ \"[[b]]내 꺼 맨드[[/b]]러준(만들어준) 곳이야.\" 하며 자신의 옷을 멋지게 만들어준 가게를 [[r]]추천하다, 권하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "recommendation",
+      "meaning": "추천, 권장"
+     }
+    ],
+    "toeicExpr": [
+     "highly recommend 강력히 추천하다  recommend a product 제품을 추천하다",
+     "recommendation letter 추천서  strong recommendation 강력한 추천"
+    ],
+    "examVar": [
+     {
+      "en": "The doctor recommended that the patient _______ additional tests.",
+      "opt": "(A) undergo  (B) undergoes  (C) underwent  (D) undergoing",
+      "ans": "(A)",
+      "ko": "의사는 환자가 추가 검사를 받을 것을 권했다.",
+      "note": "\"명령, 충고, 주장, 요구, 결정, 제안 + that + 주어 + (should) 동사원형\""
+     }
+    ]
    },
    {
     "word": "refuse",
+    "pron": "[rifjúːz]",
+    "pos": "v.",
     "meaning": "거절하다, 거부하다",
-    "pos": "v."
+    "tip": "★ \"[[b]]니(너)[[/b]] 담배 [[b]]피우지?[[/b]]\" 하고 담배를 건네자 싫다고 [[r]]거절하다, 거부하다[[/r]]",
+    "toeicExpr": [
+     "refuse an offer 제안을 거절하다  refuse a request 요청을 거절하다"
+    ]
    },
    {
     "word": "despite",
+    "pron": "[dispáit]",
+    "pos": "prep.",
     "meaning": "~에도 불구하고 (= in spite of)",
-    "pos": "prep."
+    "tip": "★ 고려청자는 [[b]]this[[/b]](이렇게) [[b]]파이[[/b]]였음에도 불구하고 1억이야.",
+    "toeicExpr": [
+     "despite difficulties 어려움에도 불구하고  despite objections 반대에도 불구하고",
+     "despite the fact that ~ ~라는 사실에도 불구하고",
+     "Despite the fact that sales dropped, the company reported a profit. 매출이 줄었음에도 불구하고, 회사는 이익을 보고했다."
+    ],
+    "examVar": [
+     {
+      "en": "_______ his limited experience, Mr. Park successfully completed the project on time.",
+      "opt": "(A) Despite  (B) Nevertheless  (C) Although  (D) However",
+      "ans": "(A)",
+      "ko": "경험이 제한적이었음에도 불구하고, 박 씨는 프로젝트를 제시간에 성공적으로 마쳤다.",
+      "note": "nevertheless와 however는 전치사가 아닌 접속부사로 문장 전체를 이어 주는 역할을 하며 전치사처럼 명사구 앞에 직접 올 수 없다. although는 접속사로 뒤에 '주어+동사'가 오는 절이 필요하므로 현재 문장 구조와 맞지 않는다."
+     }
+    ]
    },
    {
     "word": "formal",
+    "pron": "[fɔ́ːrml]",
+    "pos": "a.",
     "meaning": "격식을 차린, 공식적인",
-    "pos": "adj."
+    "tip": "★ [[b]]폼을[[/b]] 중요시하는, 즉 옷이나 행동에 있어 [[r]]격식을 차린, 공식적인[[/r]]",
+    "derivatives": [
+     {
+      "word": "formally",
+      "meaning": "공식적으로"
+     },
+     {
+      "word": "informal",
+      "meaning": "비공식적인"
+     }
+    ],
+    "toeicExpr": [
+     "formal dress 격식을 차린 복장(정장)  formal business attire 정장 차림",
+     "formal invitation/agreement 공식 초대/합의",
+     "formally announce/accept 공식적으로 발표하다/수락하다",
+     "informal gathering/meeting 비공식 모임/회의"
+    ]
    },
    {
     "word": "duplicate",
-    "meaning": "복사, 사본; 복사하다",
-    "pos": "n./v."
+    "pron": "n. [djúːplikət] v. [djúːplikèit]",
+    "pos": "n. / v.",
+    "meaning": "n. 복사, 사본 v. 복사하다",
+    "tip": "★ 원판과 복사판 [[b]]두[[/b]] 개로 [[b]]풀리게[[/b]] [[r]]복사하다, 복사[[/r]]",
+    "derivatives": [
+     {
+      "word": "duplication",
+      "meaning": "중복"
+     }
+    ],
+    "toeicExpr": [
+     "make a duplicate 복사본을 만들다  duplicate copy 사본",
+     "duplicate a document/file 문서/파일을 복사하다",
+     "avoid duplication 중복을 피하다  duplication of work 업무의 중복"
+    ],
+    "examVar": [
+     {
+      "en": "duplicate와 duplication을 구분하는 문제가 출제되었다.\nThe new approval process was implemented to prevent unnecessary _______ of work across departments.",
+      "opt": "duplication (O)  duplicate (X)",
+      "ko": "새로운 승인 절차는 부서 간 불필요한 업무 중복을 방지하기 위해 도입되었다."
+     }
+    ]
    },
    {
     "word": "capable",
+    "pron": "[kéipəbl]",
+    "pos": "a.",
     "meaning": "~할 수 있는, 유능한",
-    "pos": "adj."
+    "tip": "★ [[b]]케이(K)[[/b]]라는 사람을 [[b]]뽑을[[/b]] 거야. 그 사람이 [[r]]~할 수 있는, 유능한[[/r]]",
+    "toeicExpr": [
+     "be capable of + 동명사: ~할 수 있다",
+     "be capable of handling multiple tasks 여러 업무를 처리할 수 있다",
+     "be capable of completing the project 프로젝트를 완료할 수 있다",
+     "be capable of meeting deadlines 마감일을 맞출 수 있다"
+    ]
    },
    {
     "word": "estimation",
+    "pron": "[èstiméiʃən]",
+    "pos": "n.",
     "meaning": "평가, 추정, 산정",
-    "pos": "n."
+    "tip": "★ 송아지에게 [[b]]S 띠[[/b]]를 목에 [[b]]매서[[/b]]. 즉, S 등급으로 [[r]]평가, 추정, 산정[[/r]]",
+    "derivatives": [
+     {
+      "word": "estimate",
+      "meaning": "1. 평가하다, 추정하다  2. 견적"
+     }
+    ],
+    "toeicExpr": [
+     "cost estimation 비용 산정(추정)  time estimation 시간 추정",
+     "estimate the cost/time 비용을/시간을 추정하다",
+     "cost estimate 비용 견적",
+     "request/receive an estimate 견적을 요청하다/받다"
+    ],
+    "examVar": [
+     {
+      "en": "Please provide a written estimate for the installation work by the end of the day.",
+      "ko": "오늘 안으로 설치 작업에 대한 서면 견적을 제공해 주십시오."
+     }
+    ]
    },
    {
     "word": "readily",
-    "meaning": "기꺼이, 선뜻",
-    "pos": "adv."
+    "pron": "[rédəli]",
+    "pos": "ad.",
+    "meaning": "ad. 기꺼이, 선뜻",
+    "tip": "[[b]]ready[[/b]](준비가 된) + ly(부ㆍ어)] 이미 ~을 할 [[b]]준비가 된[[/b]] 상태로, 즉 [[r]]기꺼이, 선뜻[[/r]]",
+    "toeicExpr": [
+     "readily accept an offer 제안을 기꺼이 받아들이다",
+     "readily help 기꺼이 돕다"
+    ]
    },
    {
     "word": "satisfy",
-    "meaning": "만족시키다, (요구·조건 등을) 충족시키다",
-    "pos": "v."
+    "pron": "[sǽtisfài]",
+    "pos": "v.",
+    "meaning": "v. 만족시키다, (요구ㆍ조건 등을) 충족시키다",
+    "tip": "시장에서 사온 새 [[b]]티s[[/b]](티셔츠들)과 [[b]]파이[[/b]]로 아이를 [[r]]만족시키다[[/r]], 아이들 요구를 [[r]]충족시키다[[/r]]",
+    "derivatives": [
+     {
+      "word": "satisfaction",
+      "meaning": "만족"
+     },
+     {
+      "word": "satisfied",
+      "meaning": "(사람이) 만족한 (← 과거분사형 형용사로 수동의 의미로 '만족을 받은')"
+     },
+     {
+      "word": "satisfactory",
+      "meaning": "(결과ㆍ조건 등이) 만족스러운"
+     },
+     {
+      "word": "dissatisfaction",
+      "meaning": "불만, 불만족"
+     }
+    ],
+    "toeicExpr": [
+     "satisfy a requirement/condition 요구 사항을/조건을 충족시키다",
+     "customer satisfaction 고객 만족  job satisfaction 직무 만족도",
+     "be satisfied with ~에 만족하다 (← with: 감정, 판단의 대상 앞에 와서 '~에 대해')",
+     "be satisfied with the results/service 결과에/서비스에 만족하다",
+     "satisfactory performance/result 만족스러운 성과/결과",
+     "express dissatisfaction with the delivery service 배송 서비스에 대한 불만을 표현하다",
+     "show dissatisfaction with the product quality 제품 품질에 불만을 보이다"
+    ],
+    "examVar": [
+     {
+      "en": "1. Customers were satisfied with the service they received.",
+      "ko": "고객들은 자신들이 받은 서비스에 만족했다."
+     },
+     {
+      "en": "2. They reached a ______ compromise.",
+      "opt": "satisfactory (O)  satisfied (X)",
+      "ko": "그들은 만족할 만한 타협을 보았다.",
+      "note": "satisfied: (사람이) 만족한 / satisfactory: (결과, 조건 등이) 만족스러운"
+     }
+    ]
    },
    {
     "word": "commodity",
-    "meaning": "상품, 물품",
-    "pos": "n."
+    "pron": "미[kəmádəti] 영[kəmɔ́dəti]",
+    "pos": "n.",
+    "meaning": "n. 상품, 물품",
+    "tip": "시장에서 파는 [[b]]커[[/b]]다란 [[b]]마더[[/b]](엄마) [[b]]티[[/b]]셔츠와 같은 [[r]]상품, 물품[[/r]]",
+    "toeicExpr": [
+     "commodity prices/trading/demand 상품 가격/거래/수요"
+    ]
    },
    {
     "word": "timely",
-    "meaning": "시기적절한",
-    "pos": "adj."
+    "pron": "[táimli]",
+    "pos": "a.",
+    "meaning": "a. 시기적절한",
+    "tip": "[[b]]time[[/b]](시간) 적절한, 즉 [[r]]시기적절한[[/r]]",
+    "derivatives": [
+     {
+      "word": "untimely",
+      "meaning": "때 이른, 시기상조의"
+     }
+    ],
+    "toeicExpr": [
+     "timely response/decision 시기적절한 응답/결정",
+     "in a timely manner = in a timely fashion 적절한 시기에, 제시간에",
+     "untimely announcement/decision 시기상조의 발표/결정"
+    ],
+    "examVar": [
+     {
+      "en": "The customer service team handled the complaint in a timely manner, preventing further dissatisfaction.",
+      "ko": "고객 서비스팀은 불만을 시기적절한 방식으로 처리하여 추가적인 불만을 막았다."
+     }
+    ]
    }
   ]
  },
@@ -1963,113 +6756,494 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "affiliate",
-    "meaning": "제휴하다, 가입시키다; 계열회사",
-    "pos": "v./n."
+    "pron": "v. [əfílièit]\nn. [əfíliət]",
+    "pos": "v. n.",
+    "meaning": "v. 제휴하다, 가입시키다  n. 계열회사",
+    "tip": "작은 회사가 큰 회사에 \"[[b]]업힐리 에잇[[/b]]\" 하고 업혀 [[r]]제휴하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "affiliation",
+      "meaning": "제휴 (관계), 소속 상태"
+     }
+    ],
+    "toeicExpr": [
+     "company affiliate 계열사  corporate affiliate 기업 계열사",
+     "be affiliated with a university/large corporation 대학과/대기업과 제휴되어 있다",
+     "business/university affiliation 사업/대학 제휴(관계)"
+    ],
+    "examVar": [
+     {
+      "en": "1. The startup is officially affiliated with several international research institutes to develop new renewable-energy technologies.",
+      "ko": "그 스타트업은 새로운 재생 에너지 기술을 개발하기 위해 여러 국제 연구 기관과 공식적으로 제휴되어 있다."
+     },
+     {
+      "en": "2. The agreement strengthened the firm's long-standing _______ with local suppliers.",
+      "opt": "affiliation (O)  affiliate (X)",
+      "ko": "그 계약은 지역 공급업체들과의 회사의 오랜 제휴 관계를 강화했다."
+     }
+    ]
    },
    {
     "word": "hard",
-    "meaning": "1. 열심히 2. 어려운, 힘든 3. 단단한, 딱딱한",
-    "pos": "adv./adj."
+    "pron": "[hɑːrd]",
+    "pos": "ad. a.",
+    "meaning": "1. ad. 열심히  2. a. 어려운, 힘든  3. a. 단단한, 딱딱한",
+    "tip": "① [[b]]하두[[/b]](하도) [[r]]열심히[[/r]] 공부했어. 그 [[r]]어려운, 힘든[[/r]] 사법고시를 준비 중이라서.\n② soft(부드러운) 웨어의 반대말인 [[b]]하드웨어[[/b]]는 [[r]]단단한[[/r]] 제품",
+    "derivatives": [
+     {
+      "word": "hardship",
+      "meaning": "어려움, 고난"
+     },
+     {
+      "word": "hardworking",
+      "meaning": "열심히 일하는, 근면한"
+     }
+    ],
+    "toeicExpr": [
+     "work hard 열심히 일하다  try hard 열심히 노력하다",
+     "hard times 힘든 시기  hard task 어려운 과제",
+     "hard material 단단한 재질  hard hat 안전모",
+     "financial hardship 경제적 어려움  face hardship 어려움에 직면하다"
+    ]
    },
    {
     "word": "hardly",
-    "meaning": "거의 ~않다",
-    "pos": "adv."
+    "pron": "[hɑːrdli]",
+    "pos": "ad.",
+    "meaning": "ad. 거의 ~않다",
+    "tip": "듣기평가가 [[b]]하[[/b]]~ 들리지 않아. 즉, [[r]]거의 ~않다[[/r]]",
+    "toeicExpr": [
+     "hardly know 거의 모르다  hardly ever exercise 거의 운동하지 않다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The employees worked _______ to complete the project before the deadline.",
+      "opt": "hard (O) hardly (X)",
+      "ko": "직원들은 마감일 전에 프로젝트를 끝내기 위해 열심히 일했다."
+     },
+     {
+      "en": "2. She hardly ever eats out because she prefers cooking at home.",
+      "ko": "그녀는 집에서 요리하는 것을 좋아해서 거의 외식하지 않는다."
+     }
+    ]
    },
    {
     "word": "barely",
-    "meaning": "1. 거의 ~않다(~없다) 2. 간신히, 겨우",
-    "pos": "adv."
+    "pron": "[bέərli]",
+    "pos": "ad.",
+    "meaning": "ad. 1. 거의 ~않다(~없다)  2. 간신히, 겨우",
+    "tip": "이런 무인도에 [[b]]배[[/b]]가 [[b]]올 리[[/b]] [[r]]거의 없다[[/r]]. 그래서 [[r]]간신히, 겨우[[/r]] 빠져나가다",
+    "toeicExpr": [
+     "barely visible 거의 보이지 않는  barely hear/see 거의 듣지/보지 못하다",
+     "barely(간신히) + enough/meet/pass/survive/manage/succeed",
+     "barely meet the deadline 간신히 마감일을 맞추다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The company barely met the deadline for submitting the report.",
+      "ko": "그 회사는 보고서 제출 마감일을 간신히 맞췄다."
+     },
+     {
+      "en": "2. Sales have barely improved despite the promotional campaign.",
+      "ko": "판촉 캠페인에도 불구하고 매출은 거의 개선되지 않았다."
+     }
+    ]
    },
    {
     "word": "scarce",
-    "meaning": "부족한, 드문",
-    "pos": "adj."
+    "pron": "[skεərs]",
+    "pos": "a.",
+    "meaning": "a. 부족한, 드문",
+    "tip": "광산의 금을 너무 많이 [[b]]슥! 캐었수[[/b]]. 그래서 이제는 [[r]]부족한, 드문[[/r]]",
+    "derivatives": [
+     {
+      "word": "scarcely",
+      "meaning": "1. 거의 ~않다 (← 드물게 ~하다) 2. 간신히, 겨우"
+     }
+    ],
+    "toeicExpr": [
+     "scarce resources/commodity 희소 자원/상품",
+     "scarce information 드문 정보",
+     "scarcely noticed the error 그 오류를 거의 알아차리지 못했다",
+     "scarcely changed over the years 수년간 거의 변하지 않았다"
+    ],
+    "examVar": [
+     {
+      "en": "It was so dark that she could scarcely see the path ahead.",
+      "ko": "너무 어두워서 그녀는 앞길을 거의 볼 수 없었다."
+     }
+    ]
    },
    {
     "word": "rare",
-    "meaning": "드문, 진귀한",
-    "pos": "adj."
+    "pron": "[rεər]",
+    "pos": "a.",
+    "meaning": "a. 드문, 진귀한",
+    "tip": "한국에서는 스테이크를 [[b]]rare[[/b]]로 먹는 사람이 [[r]]드문, 진귀한[[/r]]",
+    "derivatives": [
+     {
+      "word": "rarely",
+      "meaning": "거의 ~않다 (← 드물게 ~하다)"
+     }
+    ],
+    "toeicExpr": [
+     "rare opportunity 드문 기회  rare species 희귀 종",
+     "rarely happen 거의 일어나지 않다  rarely use 거의 사용하지 않다"
+    ],
+    "examVar": [
+     {
+      "en": "Discounts of this size are rarely offered to first-time clients.",
+      "ko": "이 정도 규모의 할인은 신규 고객에게 거의 제공되지 않습니다."
+     }
+    ]
    },
    {
     "word": "mobile",
-    "meaning": "이동할 수 있는, 움직일 수 있는",
-    "pos": "adj."
+    "pron": "[móubəl]",
+    "pos": "a.",
+    "meaning": "a. 이동할 수 있는, 움직일 수 있는",
+    "tip": "★ [[b]]모바일[[/b]] 게임이란 스마트폰 등으로 가지고 [[r]]이동할 수 있는, 움직일 수 있는[[/r]] 게임",
+    "derivatives": [
+     {
+      "word": "mobility",
+      "meaning": "이동성, 기동력"
+     }
+    ],
+    "toeicExpr": [
+     "mobile phone 휴대전화  mobile device/payment 모바일 기기/결제",
+     "improve mobility 기동성을 향상시키다"
+    ]
    },
    {
     "word": "namely",
-    "meaning": "즉, 다시 말하면",
-    "pos": "adv."
+    "pron": "[néimli]",
+    "pos": "ad.",
+    "meaning": "ad. 즉, 다시 말하면",
+    "tip": "★ [[[b]]name[[/b]](이름) + [[b]]ly[[/b]](부·어)] 이름하여 [[r]]즉, 다시 말하면[[/r]]",
+    "examVar": [
+     {
+      "en": "The store sells many types of electronics, namely TVs, laptops, and smartphones.",
+      "ko": "그 가게는 여러 전자제품을 판다. 즉, TV, 노트북, 스마트폰 등을 판다."
+     }
+    ]
    },
    {
     "word": "convey",
-    "meaning": "운반하다, 전달하다",
-    "pos": "v."
+    "pron": "[kənvéi]",
+    "pos": "v.",
+    "meaning": "v. 운반하다, 전달하다",
+    "tip": "★ [[b]]큰 배 2[[/b]](두 개)로 물건을 [[r]]운반하다, 전달하다[[/r]]",
+    "toeicExpr": [
+     "convey information/goods/a message 정보를/물품을/메시지를 전달하다"
+    ],
+    "examVar": [
+     {
+      "en": "The manager emphasized that the training schedule should be conveyed to all team members by tomorrow.",
+      "ko": "매니저는 교육 일정이 내일까지 모든 팀원에게 전달되어야 한다고 강조했다."
+     }
+    ]
    },
    {
     "word": "official",
-    "meaning": "공적인, 공식적인; 공무원",
-    "pos": "adj./n."
+    "pron": "[əfíʃəl]",
+    "pos": "a./n.",
+    "meaning": "a. 공적인, 공식적인  n. 공무원",
+    "tip": "★ 개인의 집이 아닌 [[b]]office[[/b]](사무실)에서 하는 일의, 즉 [[r]]공적인, 공식적인, 공무원[[/r]]",
+    "derivatives": [
+     {
+      "word": "officially",
+      "meaning": "공식적으로"
+     }
+    ],
+    "toeicExpr": [
+     "government official 공무원",
+     "official statement/visit/certificate 공식 성명/방문/증명서",
+     "officially approved 공식 승인된  officially open 공식적으로 개점하다"
+    ]
    },
    {
     "word": "due",
-    "meaning": "1. 지급 기일이 된 2. 정당한, 받을 자격이 있는 3. 내야 할 돈(회비, 사용료)",
-    "pos": "adj./n."
+    "sup": "1",
+    "pron": "[dju:]",
+    "pos": "a./n.",
+    "meaning": "1. a. 지급 기일이 된  2. a. 정당한, 받을 자격이 있는  3. n. 내야 할 돈(회비, 사용료)",
+    "tip": "★ \"[[r]]지급 기일이 되었[[/r]]으니, [[r]]내야 할 돈[[/r]]을 [[b]]주[[/b]](주세요!) 즉, 받을 사람의 [[r]]정당한, 받을 자격이 있는[[/r]] 요구",
+    "toeicExpr": [
+     "be due on + 날짜: ~에 마감이다 (← on: 특정한 날짜 앞에)",
+     "be due by + 날짜: ~까지 제출/지급해야 한다 (← by: ~까지)",
+     "The report is due on Friday. 보고서는 금요일까지 제출해야 한다.",
+     "Payment must be made by April 30. 결제는 4월 30일까지 이루어져야 한다.",
+     "due date 만기일, 납기일  payment is due 지불 기일이 되었다",
+     "balance due 미지불 잔액  amount due 지불해야 할 총액",
+     "be due to employees 직원들에게 지급되어야 한다",
+     "compensation/recognition/credit due 받을 자격이 있는 인정/공로/보상",
+     "membership dues 회원 회비  annual dues 연회비"
+    ]
    },
    {
     "word": "due",
-    "meaning": "1. ~때문에(to) 2. ~하기로 되어 있는(be ~ to)",
-    "pos": "adj."
+    "sup": "2",
+    "pron": "[dju:]",
+    "pos": "a.",
+    "meaning": "a. 1. ~ 때문에(to)  2. ~하기로 되어 있는(be ~ to)",
+    "tip": "★ \"돈 [[b]]주[[/b]](주세요!)\" 즉, 지급 기일이 되었기 [[r]]때문에[[/r]] 주기로 [[r]]되어 있는[[/r]] 돈 주세요!",
+    "toeicExpr": [
+     "due to + 명사: ~ 때문에, ~으로 인하여",
+     "due to high demand 높은 수요로 인해  due to maintenance 점검으로 인해",
+     "due to a scheduling conflict 일정 충돌로 인해",
+     "be due to + 동사원형: ~할 예정이다",
+     "The meeting is due to start in 10 minutes. 회의는 10분 후에 시작될 예정이다."
+    ],
+    "examVar": [
+     {
+      "en": "The afternoon flight was delayed due to heavy fog in the area.",
+      "ko": "오후 비행기는 해당 지역의 짙은 안개 때문에 지연되었다."
+     }
+    ]
    },
    {
     "word": "overdue",
-    "meaning": "(지불·반납 등의) 기한이 지난, 지체된",
-    "pos": "adj."
+    "pron": "[óuvərdju:]",
+    "pos": "a.",
+    "meaning": "a. (지불·반납 등의) 기한이 지난, 지체된",
+    "tip": "★ [[[b]]over[[/b]](~넘어) + [[b]]due[[/b]](만기가 된)] 만기가 넘은, 즉 [[r]]기한이 지난, 지체된[[/r]]",
+    "toeicExpr": [
+     "overdue payment/bill/invoice 연체된 납부금/청구서/송장",
+     "The payment is overdue, and a late fee will be applied. 해당 결제는 연체되었으며, 연체료가 부과됩니다."
+    ]
    },
    {
     "word": "cause",
-    "meaning": "원인, 이유; 초래하다, 야기하다",
-    "pos": "n./v."
+    "pron": "[kɔ:z]",
+    "pos": "n./v.",
+    "meaning": "n. 원인, 이유  v. 초래하다, 야기하다",
+    "tip": "★ (be)[[b]]cause[[/b]](~ 때문에), 즉 [[r]]원인, 이유, 초래하다[[/r]]",
+    "toeicExpr": [
+     "the cause of the problem 문제의 원인",
+     "cause confusion/delay/concern 혼란을/지연을/우려를 초래하다",
+     "cause + A + to부정사: A가 ~하도록 야기하다 (5형식)",
+     "Rising fuel prices caused the airline to raise ticket fares. 연료비 상승이 항공사로 하여금 항공권 요금을 인상하게 만들었다."
+    ],
+    "examVar": [
+     {
+      "en": "The heavy snowfall caused several major highways _______ for hours.",
+      "opt": "(A) closing  (B) to closing  (C) to close  (D) closed",
+      "ans": "(C)",
+      "ko": "폭설로 인해 주요 고속도로 몇 곳이 몇 시간 동안 폐쇄되었다."
+     }
+    ]
    },
    {
     "word": "cargo",
-    "meaning": "화물",
-    "pos": "n."
+    "pron": "[ká:rgou]",
+    "pos": "n.",
+    "meaning": "n. 화물",
+    "tip": "[[r]]화물[[/r]]을 다 싣고 화물 [[b]]car[[/b]](차)가 [[b]]go[[/b]](가다)",
+    "toeicExpr": [
+     "cargo ship 화물선  cargo plane 화물기",
+     "cargo load 화물 적재(량)  cargo capacity 화물 적재량"
+    ]
    },
    {
     "word": "thoroughly",
-    "meaning": "완전히, 철저하게",
-    "pos": "adv."
+    "pron": "미[θə́:rouli] 영[θʌ́rəuli]",
+    "pos": "ad.",
+    "meaning": "ad. 완전히, 철저하게",
+    "tip": "오이를 잘게 채 썰 듯 [[r]]완전히, 철저하게[[/r]] [[b]]써럴리[[/b]](썰다)",
+    "toeicExpr": [
+     "thoroughly check/review/inspect 철저히 확인하다/검토하다/점검하다"
+    ]
    },
    {
     "word": "optimal",
-    "meaning": "최상의, 최적의",
-    "pos": "adj."
+    "pron": "미[áptiməl] 영[ɔ́ptiməl]",
+    "pos": "a.",
+    "meaning": "a. 최상의, 최적의",
+    "tip": "1등인 맨 [[b]]앞 팀[[/b]]을 이길 수 있는 [[r]]최상의, 최적의[[/r]] 팀",
+    "derivatives": [
+     {
+      "word": "optimum",
+      "meaning": "최적 조건; 최적의"
+     },
+     {
+      "word": "optimize",
+      "meaning": "최대한 활용하다, 최적화하다"
+     }
+    ],
+    "toeicExpr": [
+     "optimal condition/performance/level/solution 최상의 상태/성능/수준/해결책",
+     "at the optimum level 최상의 수준에서",
+     "optimize resources 자원을 최대한 활용하다",
+     "optimize workflow 작업 과정을 최적화하다"
+    ]
    },
    {
     "word": "fine",
-    "meaning": "1. 좋은, 괜찮은; 훌륭하게, 잘 2. 벌금; 벌금을 과하다",
-    "pos": "adj./adv./n./v."
+    "pron": "[fain]",
+    "pos": "a./ad./n./v.",
+    "meaning": "1. a. 좋은, 괜찮은  ad. 훌륭하게, 잘  2. n. 벌금  v. 벌금을 과하다",
+    "tip": "음주운전으로 건물에 [[b]]파인[[/b]] 것에 대해 [[r]]벌금, 벌금을 과하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "finely",
+      "meaning": "잘게, 정교하게, 미세하게"
+     }
+    ],
+    "toeicExpr": [
+     "fine quality 우수한 품질  fine weather 맑은 날씨  work fine 잘 작동하다",
+     "perform fine 훌륭하게 수행하다  go fine 잘 진행되다",
+     "parking fine 주차 위반 벌금  pay a fine 과태료를 납부하다",
+     "impose a fine 벌금을 부과하다"
+    ],
+    "examVar": [
+     {
+      "note": "1. fine이 '벌금'이라는 명사 의미로 쓰이는 문제가 자주 출제되었다.",
+      "en": "Drivers who park illegally will have to pay a substantial fine.",
+      "ko": "불법 주차를 한 운전자들은 상당한 벌금을 내야 한다."
+     },
+     {
+      "note": "2. fine(부사로 '훌륭하게, 잘), finely(잘게, 미세하게) 구분 문제가 자주 출제되었다.",
+      "en": "The agreement was approved and is proceeding ______.",
+      "opt": "fine (O)  finely (X)",
+      "ko": "그 계약은 승인되었고 문제없이 진행되고 있다."
+     }
+    ]
    },
    {
     "word": "accept",
-    "meaning": "받아들이다, 수락하다",
-    "pos": "v."
+    "pron": "[əksépt]",
+    "pos": "v.",
+    "meaning": "v. 받아들이다, 수락하다",
+    "tip": "[[b]]억[[/b]] 원어치의 선물 [[b]]세트[[/b]]를 날름 [[r]]받아들이다, 수락하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "acceptance",
+      "meaning": "수락, 용인"
+     },
+     {
+      "word": "acceptable",
+      "meaning": "수락할 수 있는, 받아들일 수 있는"
+     },
+     {
+      "word": "acceptably",
+      "meaning": "기꺼이 받아들일 수 있게"
+     }
+    ],
+    "toeicExpr": [
+     "accept an offer/invitation 제안을/초대를 수락하다",
+     "letter of acceptance 합격/승인 통지서",
+     "formal acceptance 공식 수락",
+     "conditional acceptance 조건부 승인",
+     "socially acceptable 사회적으로 용인되는",
+     "acceptable level 허용 가능한 수준",
+     "speak/behave acceptably 기꺼이 받아들일 수 있게 말하다/행동하다"
+    ]
    },
    {
     "word": "congestion",
-    "meaning": "(교통) 정체, 혼잡",
-    "pos": "n."
+    "pron": "[kəndʒéstʃən]",
+    "pos": "n.",
+    "meaning": "n. (교통) 정체, 혼잡",
+    "tip": "큰 [[b]]죄[[/b]]를 지은 죄인이 검거되는 것을 보려고 몰려든 [[b]]수천[[/b]] 대의 자동차가 [[r]]교통 정체, 혼잡[[/r]]",
+    "derivatives": [
+     {
+      "word": "congested",
+      "meaning": "혼잡한"
+     }
+    ],
+    "toeicExpr": [
+     "traffic congestion 교통 정체",
+     "ease congestion on the road 도로 위 혼잡을 완화시키다",
+     "congested area/road/traffic 혼잡한 지역/도로/교통"
+    ]
    },
    {
     "word": "book",
-    "meaning": "1. 책 2. 예약하다",
-    "pos": "n./v."
+    "pron": "[buk]",
+    "pos": "n./v.",
+    "meaning": "1. n. 책  2. v. 예약하다",
+    "tip": "① 인기가 높은 [[b]]book[[/b]](책)을 미리 사기로 [[r]]예약하다[[/r]]\n② 부킹: 부킹닷컴, 부킹하다 등에서 부킹(booking)의 [[b]]book[[/b]]은 [[r]]예약하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "booking",
+      "meaning": "예약"
+     }
+    ],
+    "toeicExpr": [
+     "book a flight/ticket/room 항공권을/표를/방을 예약하다",
+     "make a booking 예약하다",
+     "confirm/cancel a booking 예약을 확인하다/취소하다",
+     "online booking 온라인 예약  booking confirmation 예약 확인"
+    ],
+    "examVar": [
+     {
+      "en": "The client asked the assistant to book a larger conference room for next Monday's meeting.",
+      "ko": "고객은 다음 주 월요일 회의를 위해 더 큰 회의실을 예약해 달라고 비서에게 요청했다."
+     }
+    ]
+   },
+   {
+    "word": "work",
+    "pron": "[wəːrk]",
+    "pos": "n./v.",
+    "meaning": "1. n. 일  v. 일하다, 연구하다  2. v. 작동하다  3. v. 효과가 있다",
+    "tip": "① 학생이나 교수들이 [[r]]일하다 → 연구하다, 공부하다[[/r]]\n② 기계가 [[r]]일을 하다 → 작동하다[[/r]]\n③ 약이나 어떤 방법 등이 그것의 맡은 [[r]]일을 해내다 → 효과가 있다[[/r]]",
+    "toeicExpr": [
+     "work experience 업무 경험  work environment 근무 환경",
+     "work on ~에 착수하다, ~을 작업하다 (← on: 행위의 대상 앞에서 '~을')",
+     "work on a project 프로젝트를 진행하다",
+     "work on a report 보고서를 작성하다",
+     "work on a design 디자인 작업을 하다",
+     "work properly 제대로 작동하다  make it work 작동하게 하다",
+     "The new marketing strategy really worked. 새로운 마케팅 전략이 정말 효과가 있었다."
+    ],
+    "examVar": [
+     {
+      "note": "work는 '업무'의 의미일 때는 여러 가지 일들의 복합이라도 불가산 명사로 단수로 쓰인다.",
+      "en": "She has a lot of ______ to finish before the deadline.",
+      "opt": "(A) work  (B) works  (C) job  (D) working",
+      "ko": "그녀는 마감일까지 끝내야 할 많은 업무가 있다.",
+      "ans": "(A)"
+     },
+     {
+      "note": "job은 특정 직업 1개의 의미",
+      "en": "The new security system does not work properly.",
+      "ko": "새 보안 시스템이 제대로 작동하지 않는다."
+     },
+     {
+      "en": "She stayed late to work on the budget proposal.",
+      "ko": "그녀는 예산 제안서를 작업하기 위해 늦게까지 남았다."
+     }
+    ]
+   },
+   {
+    "word": "join",
+    "pron": "[dʒɔin]",
+    "pos": "v.",
+    "meaning": "v. 참여하다, 가입하다",
+    "tip": "A조, B조와 같은 [[b]]조[[/b]] [[b]]in[[/b]](안에) 들어가 [[r]]참여하다, 가입하다[[/r]]",
+    "toeicExpr": [
+     "join a company 회사에 입사하다  join a team 팀에 합류하다",
+     "join a meeting 회의에 참여하다"
+    ]
    },
    {
     "word": "room",
-    "meaning": "1. 방 2. 공간, 자리 3. 여지, 가능성",
-    "pos": "n."
+    "pron": "[ruːm]",
+    "pos": "n.",
+    "meaning": "n. 1. 방  2. 공간, 자리  3. 여지, 가능성",
+    "tip": "[[b]]room[[/b]](방) → [[r]]공간, 자리[[/r]] → 어떤 일이 발생할 수 있는 [[r]]공간[[/r]], 즉 [[r]]여지, 가능성[[/r]]",
+    "toeicExpr": [
+     "make room for ~을 위해 공간/자리를 마련하다, 자리를 양보하다",
+     "The office is being reorganized to make room for new computers. 사무실은 새 컴퓨터를 들여놓기 위해 재배치되고 있다.",
+     "room for improvement 개선의 여지  room for expansion 확장의 여지"
+    ],
+    "examVar": [
+     {
+      "en": "The sales report shows strong performance this quarter, but there is still room for improvement in customer satisfaction.",
+      "ko": "이번 분기 매출 보고서에 따르면 실적은 좋지만, 고객 만족도 면에서는 여전히 개선의 여지가 있다."
+     }
+    ]
    }
   ]
  },
@@ -2079,108 +7253,536 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "budget",
-    "meaning": "예산; 예산을 세우다",
-    "pos": "n./v."
+    "pron": "[bʌ́dʒit]",
+    "pos": "n./v.",
+    "meaning": "n. 예산  v. 예산을 세우다",
+    "tip": "올해 얼마를 비용으로 써서 얼마를 [[b]]벌지?[[/b]] 하고 [[r]]예산, 예산을 세우다[[/r]]",
+    "toeicExpr": [
+     "annual budget 연간 예산  limited budget 제한된 예산",
+     "budget cut 예산 삭감  within the budget 예산 범위 내에서",
+     "exceed the budget 예산을 초과하다",
+     "on a tight budget 빠듯한 예산으로",
+     "budget $10,000 for the project 프로젝트에 1만 달러를 예산으로 책정하다",
+     "budget efficiently 효율적으로 예산을 계획하다"
+    ],
+    "examVar": [
+     {
+      "note": "budget이 동사로도 자주 출제되었다.",
+      "en": "The project manager advised each department to carefully budget for unexpected expenses in the upcoming quarter.",
+      "ko": "프로젝트 매니저는 다음 분기에 발생할 수 있는 예상치 못한 비용에 대비해 각 부서가 신중하게 예산을 책정하도록 조언했다."
+     }
+    ]
    },
    {
     "word": "pollution",
-    "meaning": "오염",
-    "pos": "n."
+    "pron": "[pəlúːʃən]",
+    "pos": "n.",
+    "meaning": "n. 오염",
+    "tip": "바다의 [[b]]뻘[[/b]]에 오줌을 [[b]]누션[[/b]](누다), 즉 바다의 [[r]]오염[[/r]]",
+    "derivatives": [
+     {
+      "word": "pollute",
+      "meaning": "오염시키다"
+     },
+     {
+      "word": "pollutant",
+      "meaning": "오염 물질 (←-ant: ~사람(것))"
+     }
+    ],
+    "toeicExpr": [
+     "air/water/environmental/industrial pollution 대기/수질/환경/산업 오염",
+     "reduce pollution 오염을 줄이다  pollution levels 오염 수준",
+     "pollute the environment 환경을 오염시키다",
+     "toxic pollutant 유독성 오염 물질"
+    ],
+    "examVar": [
+     {
+      "en": "The factory was fined for releasing a harmful _______ into the river.",
+      "opt": "pollutant (O)  pollution (X)",
+      "ko": "그 공장은 강에 해로운 오염 물질을 방출한 것에 대해 벌금을 부과받았다."
+     }
+    ]
    },
    {
     "word": "finance",
-    "meaning": "재정, 자금",
-    "pos": "n."
+    "pron": "[fáinæns, finǽns]",
+    "pos": "n.",
+    "meaning": "n. 재정, 자금",
+    "tip": "파이낸스: [[b]]파이낸스[[/b]] 센터란 [[r]]재정[[/r]]이나 [[r]]자금[[/r]]과 같이 돈을 관리하는 금융 회사",
+    "derivatives": [
+     {
+      "word": "financial",
+      "meaning": "재정상의, 금융상의"
+     }
+    ],
+    "toeicExpr": [
+     "finance department 재무 부서  finance report 재무 보고서",
+     "financial support 재정 지원  financial stability 재정 안정",
+     "financial transaction 금융 거래  financial institution 금융 기관"
+    ]
    },
    {
     "word": "criterion",
-    "meaning": "(평가의) 기준",
-    "pos": "n."
+    "pron": "[kraitíəriən]",
+    "pos": "n.",
+    "meaning": "n. (평가의) 기준",
+    "tip": "신인배우 오디션에서 얼마나 [[b]]cry[[/b]](우는) 연기가 [[b]]튀어리언?[[/b]](튀는가가) [[r]]평가의 기준[[/r]]",
+    "derivatives": [
+     {
+      "word": "criteria",
+      "meaning": "기준들(복수형)"
+     }
+    ],
+    "toeicExpr": [
+     "evaluation criterion 평가 기준  selection criterion 선발 기준",
+     "meet the criteria 기준들을 충족하다",
+     "according to the criteria 기준들에 따라"
+    ],
+    "examVar": [
+     {
+      "en": "The primary _______ for evaluating job applicants is relevant work experience.",
+      "opt": "criterion (O)  criteria (X)",
+      "ko": "지원자를 평가하는 주요 기준은 관련 업무 경험이다.",
+      "note": "criteria(복수형)는 단수 동사 is와 수의 불일치"
+     }
+    ]
    },
    {
     "word": "assist",
-    "meaning": "돕다, 원조하다",
-    "pos": "v."
+    "pron": "[əsíst]",
+    "pos": "v.",
+    "meaning": "v. 돕다, 원조하다",
+    "tip": "축구에서 [[b]]어시스트[[/b]]로 슛을 넣는 것을 [[r]]돕다[[/r]]",
+    "derivatives": [
+     {
+      "word": "assistant",
+      "meaning": "조수; 보조의 (←-ant: 1. ~사람(것) 2. 형용사 어미)"
+     },
+     {
+      "word": "assistance",
+      "meaning": "거듦, 보조"
+     }
+    ],
+    "toeicExpr": [
+     "assist customers 고객을 돕다  assist team members 팀원을 보조하다",
+     "assist with ~을 돕다 (← with: ~을 대상으로)",
+     "assist with customer inquiries 고객 문의를 돕다",
+     "assist with data analysis 데이터 분석을 돕다",
+     "assist A with B A에게 B를 도와주다 (← with: ~을 대상으로)",
+     "The technician will assist customers with installation issues. 기술자가 고객의 설치 문제를 도와드릴 것입니다.",
+     "personal assistant 개인 비서  assistant manager 부매니저",
+     "technical assistance 기술 지원"
+    ],
+    "examVar": [
+     {
+      "en": "If you have a project we can assist with, please call us at 532-6682 for a consultation.",
+      "ko": "만약 당신이 우리가 도울 수 있는 프로젝트를 갖고 있다면 상담을 위해서 532-6682로 우리에게 전화주세요."
+     },
+     {
+      "en": "The staff member assisted the manager with preparing the presentation.",
+      "ko": "그 직원은 매니저의 프레젠테이션 준비를 도왔다."
+     }
+    ]
+   },
+   {
+    "word": "investment",
+    "pron": "[invéstmant]",
+    "pos": "n.",
+    "meaning": "n. 투자",
+    "tip": "우리 회사 [[b]]in[[/b]](안에) [[b]]best[[/b]](최고의) 기술과 제품들이 [[r]]많다[[/r]]. 그러니 [[r]]투자[[/r]]하세요.",
+    "derivatives": [
+     {
+      "word": "invest",
+      "meaning": "투자하다"
+     }
+    ],
+    "toeicExpr": [
+     "make an investment 투자를 하다",
+     "foreign investment 해외 투자",
+     "real estate investment 부동산 투자",
+     "long-term/short-term investment 장기/단기 투자",
+     "invest funds/effort/time 자금을/노력을/시간을 투자하다"
+    ]
+   },
+   {
+    "word": "receipt",
+    "pron": "[risí:t]",
+    "pos": "n.",
+    "meaning": "n. 영수증, 받기, 수령",
+    "tip": "[[b]]receive[[/b]](받다)의 명사형으로, [[r]]받은 것을 증명하는 영수증[[/r]]",
+    "toeicExpr": [
+     "payment receipt 지불 영수증",
+     "issue a receipt 영수증을 발급하다",
+     "receipt of goods 물품 수령  proof of receipt 수령 증빙",
+     "upon receipt 수령 즉시 (← on(upon): ~하자마자)"
+    ],
+    "examVar": [
+     {
+      "note": "receipt가 '수령, 접수'라는 의미로 쓰인다는 점을 묻는 문제가 자주 출제되었다.",
+      "en": "The shipment will be prepared upon receipt of the signed confirmation form.",
+      "ko": "서명된 확인서를 수령하는 즉시 배송 준비가 이루어질 것이다."
+     }
+    ]
+   },
+   {
+    "word": "receptive",
+    "pron": "[riséptiv]",
+    "pos": "a.",
+    "meaning": "a. 잘 받아들이는, 수용적인",
+    "tip": "[[b]]receive[[/b]](받다)의 형용사형] [[r]]잘 받아들이는[[/r]]",
+    "derivatives": [
+     {
+      "word": "reception",
+      "meaning": "1. 환영회, (사람을) 맞이함, 접수처  2. 반응, 평가 (← 받아들이는 태도)"
+     },
+     {
+      "word": "receptionist",
+      "meaning": "접수계원"
+     }
+    ],
+    "toeicExpr": [
+     "receptive to new ideas 새로운 아이디어를 잘 받아들이다",
+     "hold a reception 환영회를 열다  reception desk 접수대",
+     "positive/mixed reception 긍정적인/엇갈린 반응(평가)",
+     "ask the receptionist for help 접수 담당자에게 도움을 요청하다",
+     "receptionist at the lobby 로비의 접수 담당자"
+    ],
+    "examVar": [
+     {
+      "note": "reception이 '반응, 평가, 접수처'의 의미로 사용되는 것을 묻는 문제가 자주 출제되었다.",
+      "en": "The film met with a mixed reception when it was first released.",
+      "ko": "그 영화는 처음 개봉되었을 때 엇갈린 평가를 받았다."
+     },
+     {
+      "en": "All visitors must register at the reception upon arrival.",
+      "ko": "모든 방문객은 도착 시 접수처에 등록해야 한다."
+     }
+    ]
    },
    {
     "word": "yield",
-    "meaning": "(수익·결과를) 내다, 초래하다; 생산량, 수익, 수익률",
-    "pos": "v./n."
+    "pron": "[ji:ld]",
+    "pos": "v./n.",
+    "meaning": "v. (수익·결과를) 내다, 초래하다  n. 생산량, 수익, 수익률",
+    "tip": "[[b]]일두[[/b]](일도) 열심히 해서 [[r]](수익·결과를) 내다, 초래하다[[/r]]",
+    "toeicExpr": [
+     "yield profits/results 이익을/결과를 산출하다",
+     "total yield 총 산출량  high yield 고수익  annual yield 연간 수익(률), 연간 생산량"
+    ],
+    "examVar": [
+     {
+      "en": "1. The investment is expected to yield higher returns over time.",
+      "ko": "그 투자는 시간이 지나면서 더 높은 수익을 낼 것으로 예상된다."
+     },
+     {
+      "en": "2. This bond offers a higher annual yield than comparable products.",
+      "ko": "이 채권은 유사 상품보다 더 높은 연간 수익률을 제공한다."
+     },
+     {
+      "en": "3. The new strategy has already yielded positive results.",
+      "ko": "새로운 전략은 이미 긍정적인 결과를 만들어냈다."
+     }
+    ]
    },
    {
     "word": "option",
-    "meaning": "선택권, 선택사항",
-    "pos": "n."
+    "pron": "미[ápʃən] 영[ɔ́pʃən]",
+    "pos": "n.",
+    "meaning": "n. 선택권, 선택사항",
+    "tip": "자동차를 살 때 [[r]]선택사항[[/r]]을 [[b]]옵션[[/b]]이라고 한다.",
+    "derivatives": [
+     {
+      "word": "optional",
+      "meaning": "선택적인"
+     },
+     {
+      "word": "opt",
+      "meaning": "택하다, 선택하다"
+     }
+    ],
+    "toeicExpr": [
+     "payment option 지불 선택권  available option 이용 가능한 선택",
+     "delivery option 배송 옵션",
+     "optional participation 선택적 참여  optional service 선택 서비스",
+     "opt for + 명사 / opt + to부정사: ~을 선택하다",
+     "opt for alternative/change 대안을/변화를 선택하다",
+     "opt to stay 머물기로 하다  opt to cancel 취소하기로 결정하다"
+    ]
    },
    {
     "word": "lest ~ (should)",
+    "pos": "동사원형",
     "meaning": "~하지 않도록",
-    "pos": "conj."
+    "tip": "다른 것은 다 해도, 그것만은 [[b]]last[[/b]](마지막으로) [[b]]should[[/b]](~해야 하다), 즉 그것만은 [[r]]하지 않도록[[/r]]",
+    "toeicExpr": [
+     "lest he (should) forget 그가 잊지 않도록",
+     "The manager spoke quietly lest he (should) disturb the meeting in the next room. 매니저는 옆방 회의를 방해하지 않도록 조용히 말했다."
+    ],
+    "examVar": [
+     {
+      "note": "lest + '(should) + 동사원형'이 오는 것을 묻는 문제가 자주 출제되었다.",
+      "en": "The scientists wore protective gear lest they be exposed to harmful chemicals.",
+      "ko": "과학자들은 해로운 화학 물질에 노출되지 않도록 보호 장비를 착용했다."
+     }
+    ]
    },
    {
     "word": "productivity",
+    "pron": "미[pròudʌktívəti] 영[prɔ́dʌktívəti]",
+    "pos": "n.",
     "meaning": "생산성",
-    "pos": "n."
+    "tip": "[[b]]produce[[/b]](생산하다)의 명사형",
+    "derivatives": [
+     {
+      "word": "product",
+      "meaning": "제품"
+     },
+     {
+      "word": "productive",
+      "meaning": "생산적인"
+     }
+    ],
+    "toeicExpr": [
+     "increase/maintain/enhance productivity 생산성을 높이다/유지하다/강화하다",
+     "productivity gains 생산성 향상  employee productivity 직원 생산성",
+     "finished product 완제품  launch a product 제품을 출시하다",
+     "product quality/design/description 제품 품질/설계/설명",
+     "highly productive 매우 효율적인  productive results 생산적인 결과"
+    ],
+    "examVar": [
+     {
+      "en": "The new software has greatly improved employee ________.",
+      "opt": "(A) product  (B) productive  (C) productivity  (D) production",
+      "ans": "(C)",
+      "ko": "새 소프트웨어는 직원들의 생산성을 크게 향상시켰다."
+     }
+    ]
    },
    {
     "word": "struggle",
-    "meaning": "고군분투하다, 싸우다, 애쓰다; 고생, 어려움, 투쟁",
-    "pos": "v./n."
+    "pron": "[strʌɡl]",
+    "pos": "v.",
+    "meaning": "v. 고군분투하다, 싸우다, 애쓰다  n. 고생, 어려움, 투쟁",
+    "tip": "화물운송 노조가 [[b]]수[[/b]]많은 [[b]]트럭을[[/b]] 몰고와 [[r]]투쟁, 싸우다, 고군분투하다[[/r]]",
+    "toeicExpr": [
+     "economic/financial struggle 경제적/재정적 어려움",
+     "struggle for ~을 얻기 위해 노력하다 (← for: ~를 위해)",
+     "struggle for success 성공을 위해 애쓰다",
+     "struggle with ~와 씨름하다, ~ 가지고 힘들어하다 (← with: ~와, ~을 가지고)",
+     "struggle with difficulties 어려움과 싸우다",
+     "struggle with staff shortage 인력 부족으로 고생하다",
+     "struggle to meet the deadline 마감일을 맞추려고 애쓰다"
+    ],
+    "examVar": [
+     {
+      "en": "struggle for/with의 전치사를 구분하는 문제가 자주 출제되었다.",
+      "ko": "Due to recent budget cuts, many departments continue to struggle ________ staffing shortages.",
+      "note": "with (O)  for (X)",
+      "opt": "최근 예산 삭감으로 인해 많은 부서들이 인력 부족 문제로 계속 어려움을 겪고 있다."
+     }
+    ]
    },
    {
     "word": "balance",
+    "pron": "[bǽləns]",
+    "pos": "n.",
     "meaning": "1. 균형  2. 잔액, 잔금",
-    "pos": "n."
+    "tip": "수입과 지출의 [[b]]밸런스[[/b]]를 맞추고 난 나머지 금액, 즉 [[r]]잔액, 잔금[[/r]]",
+    "toeicExpr": [
+     "work-life balance 일과 삶의 균형",
+     "account/current/remaining balance 계좌/현재/남은 잔액",
+     "outstanding balance 미결제 잔액  closing balance 기말 잔액",
+     "balance due 미납 금액"
+    ],
+    "examVar": [
+     {
+      "en": "Please pay the remaining balance by the end of the month.",
+      "ko": "월말까지 남은 잔액을 지불해 주십시오."
+     }
+    ]
    },
    {
     "word": "note",
-    "meaning": "1. 메모, 쪽지, 필기  2. 언급하다  3. 주목하다, 주의하다 / 주목, 주의",
-    "pos": "n./v."
+    "pron": "[nout]",
+    "meaning": "1. n. 메모, 쪽지, 필기  2. v. 언급하다  3. v. 주목하다, 주의하다  n. 주목, 주의",
+    "tip": "[[b]]노트[[/b]]에 열심히 [[b]]필기[[/b]]를 하면서 선생님이 [[r]]언급하는[[/r]] 말을 [[r]]주목하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "notable",
+      "meaning": "주목할 만한, 눈에 띄는"
+     }
+    ],
+    "toeicExpr": [
+     "take a note 메모하다  leave a note 쪽지를 남기다",
+     "specially/frequently noted 특별히/자주 언급된  note briefly 간단히 언급하다",
+     "please note (that) ~을 주목(주의)해 주시기 바랍니다.",
+     "Please note that the office will be closed on Monday. 사무실이 월요일에 닫힌다는 점에 유의해 주세요.",
+     "take note of ~을 주목하다 (← of: ~에 관하여)",
+     "Please take note of what the speaker says. 강연자가 말하는 것에 주목해 주세요.",
+     "notable discovery/achievement/improvement 주목할 만한 발견/성과/향상"
+    ]
    },
    {
     "word": "destroy",
+    "pron": "[distrɔ́i]",
+    "pos": "v.",
     "meaning": "파괴하다, 파기하다",
-    "pos": "v."
+    "tip": "[[b]]this[[/b]](이) [[b]]트로이[[/b]] 목마를 이용해 성을 [[r]]파괴하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "destructive",
+      "meaning": "파괴적인"
+     },
+     {
+      "word": "destruction",
+      "meaning": "파괴"
+     }
+    ],
+    "toeicExpr": [
+     "destroy confidential documents 기밀 문서를 파기하다",
+     "destroy outdated records 오래된 기록을 폐기하다",
+     "destructive impact 파괴적인 영향",
+     "natural destruction 자연적 파괴"
+    ]
    },
    {
     "word": "durable",
+    "pron": "[djúərəbl]",
+    "pos": "a.",
     "meaning": "오래가는, 내구력이 있는",
-    "pos": "adj."
+    "tip": "오래 써서 [[b]]드러블[[/b]](드러울) 정도로 [[r]]오래가는, 내구력이 있는[[/r]]",
+    "derivatives": [
+     {
+      "word": "durability",
+      "meaning": "내구성"
+     }
+    ],
+    "toeicExpr": [
+     "durable product 내구성이 강한 제품  durable performance 오래가는 성능",
+     "high/exceptional durability 높은/뛰어난 내구성"
+    ]
    },
    {
     "word": "duration",
+    "pron": "미[djuréiʃən] 영[djuəréiʃən]",
+    "pos": "n.",
     "meaning": "지속, 지속 기간",
-    "pos": "n."
+    "tip": "고기를 숙성시키기 위해 3일간 [[b]]두래이! 시원[[/b]]한 냉장고에. 즉, 3일간의 [[r]]지속, 지속 기간[[/r]]",
+    "toeicExpr": [
+     "for the duration of ~하는 동안 내내",
+     "for the duration of the contract/project/event 계약/프로젝트/행사 기간 동안",
+     "short duration 짧은 기간  extended duration 장기간",
+     "fixed duration 고정된(정해진) 기간"
+    ],
+    "examVar": [
+     {
+      "en": "The conference room will be unavailable for the duration of the renovation work.",
+      "ko": "공사 작업이 진행되는 동안 내내 회의실은 이용할 수 없습니다."
+     }
+    ]
    },
    {
     "word": "workforce",
+    "pron": "[wə́:rkfɔ:rs]",
+    "pos": "n.",
     "meaning": "노동력, 인력, 직원 수, 직원 전체",
-    "pos": "n."
+    "tip": "[[b]]work[[/b]](노동) + [[b]]force[[/b]](힘)] [[r]]노동력[[/r]]",
+    "toeicExpr": [
+     "skilled workforce 숙련된 인력  increase workforce 인력을 늘리다",
+     "workforce training 직원 교육",
+     "expand/reduce/downsize the workforce 인력을 확충하다/감축하다/축소하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company's workforce ______ expected to increase next year.",
+      "opt": "(A) are  (B) were  (C) is  (D) have been",
+      "ans": "(C)",
+      "ko": "그 회사의 인력은 내년에 증가할 것으로 예상된다.",
+      "note": "workforce는 집합명사 → 전체 덩어리로 볼 때 단수 취급이 원칙"
+     }
+    ]
    },
    {
     "word": "acknowledge",
+    "pron": "미[ӕknɑ́lidʒ, əknɑ́lidʒ] 영[əknɔ́lidʒ]",
+    "pos": "v.",
     "meaning": "1. 인정하다  2. 확인하다",
-    "pos": "v."
+    "tip": "친구의 설명을 듣고 \"[[b]]어쿠![[/b]] [[b]]knowledge[[/b]](지식)이 풍부하구나.\"라며 똑똑함을 [[r]]인정하다, 확인하다[[/r]]",
+    "toeicExpr": [
+     "acknowledge responsibility/contribution 책임을/기여를 인정하다",
+     "acknowledge receipt of documents/the email 문서/이메일 수령을 확인하다",
+     "acknowledge the request/order 요청을/주문을 확인하다"
+    ]
    },
    {
     "word": "systematic",
+    "pron": "[sìstəmӕtik]",
+    "pos": "a.",
     "meaning": "체계적인, 유기적인",
-    "pos": "adj."
+    "tip": "[[b]]system[[/b]](체계, 조직) + [[b]]tic[[/b]](형·어)] [[r]]체계적인, 유기적인[[/r]]",
+    "toeicExpr": [
+     "systematic approach/analysis 체계적인 접근/분석"
+    ]
    },
    {
     "word": "alive",
+    "pron": "[əláiv]",
+    "pos": "a.",
     "meaning": "살아있는",
-    "pos": "adj."
+    "tip": "[[b]]a[[/b]](서술 형용사를 만드는 접두어) + [[b]]live[[/b]](살다)] [[r]]살아 있는[[/r]]",
+    "derivatives": [
+     {
+      "word": "live",
+      "meaning": "살다; 살아 있는, 생방송의; 생중계로, 실황으로"
+     }
+    ],
+    "toeicExpr": [
+     "be alive after the accident 사고 후 살아 있다",
+     "keep the business alive 사업을 유지하다",
+     "live broadcast 생방송  live performance 생중계 공연"
+    ],
+    "examVar": [
+     {
+      "note": "live와 alive를 구분하는 문제가 자주 출제되었다.\n* alive는 명사를 수식하는 한정적 용법으로는 쓰지 못하고 서술적 용법으로만 쓰인다.",
+      "en": "All tickets for the band's first ______ performance sold out within minutes.",
+      "opt": "(A) lively  (B) alive  (C) live  (D) living",
+      "ans": "(C)",
+      "ko": "그 밴드의 첫 라이브 공연 표는 몇 분 만에 매진되었다."
+     },
+     {
+      "note": "* alive와 같이 명사를 수식하지 않고 서술적 용법으로만 쓰이는 형용사\n(아래의 형용사들이 다른 명사를 수식하는 것을 본 적이 없음을 기억하며 학습)\nalone 혼자인  asleep 잠든  afraid 두려운  awake 깨어 있는  aware 알고 있는  ashamed 부끄러운  content 만족한  glad 기쁜  sorry 미안한  ready 준비된  worth ~할 가치가 있는"
+     }
+    ]
    },
    {
     "word": "award",
-    "meaning": "(상·장학금 등을) 수여하다 / 상, 수상",
-    "pos": "v./n."
+    "pron": "[əwɔ́:rd]",
+    "pos": "v. n.",
+    "meaning": "v. (상·장학금 등을) 수여하다  n. 상, 수상",
+    "tip": "[[b]]어! word[[/b]](단어) 시험 1등에게 [[r]]상[[/r]]을 [[r]]수여하다[[/r]]",
+    "toeicExpr": [
+     "award a prize 상을 수여하다  receive an award 상을 받다",
+     "award ceremony 시상식  award winner 수상자",
+     "monetary award 금전 보상"
+    ]
    },
    {
     "word": "positive",
+    "pron": "미[pázətiv] 영[pɔ́zətiv]",
+    "pos": "a.",
     "meaning": "긍정적인, 확신하고 있는",
-    "pos": "adj."
+    "tip": "A: \"내 아들은 빠져있어 TV에.\"\nB: \"공부 잘하는 애니가 분명히 EBS [[b]]TV에 빠져[[/b]] 있을 거야.\"라며 [[r]]긍정적인, 확신하고 있는[[/r]]",
+    "toeicExpr": [
+     "positive attitude/feedback/outcome/effect 긍정적인 태도/피드백/결과/영향",
+     "be positive that ~ ~임을 확신하다",
+     "She is positive about her chances of getting the promotion. 그녀는 승진할 가능성에 대해 확신하고 있다."
+    ],
+    "examVar": [
+     {
+      "en": "The company is positive that demand will increase next quarter.",
+      "ko": "회사는 다음 분기에 수요가 증가할 것이라고 확신한다."
+     }
+    ]
    }
   ]
  },
@@ -2190,118 +7792,479 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "cope",
-    "meaning": "맞서다, 대처하다",
-    "pos": "v."
+    "pron": "[koup]",
+    "pos": "v.",
+    "meaning": "v. 맞서다, 대처하다",
+    "tip": "두 마리의 소가 [[b]]코[[/b]]를 [[b]]프우~[[/b]] 하며 [[r]]맞서다, 대처하다[[/r]]",
+    "toeicExpr": [
+     "cope with ~에 맞서다, 대처하다 (← with: ~을 대상으로)",
+     "cope with stress/difficulties 스트레스에/어려움에 대처하다(맞서다)",
+     "cope with the current financial difficulties 지금의 재정난에 대처하다"
+    ],
+    "examVar": [
+     {
+      "en": "Companies must learn to cope with unexpected changes in consumer demand.",
+      "ko": "기업들은 소비자 수요의 예상치 못한 변화에 대처하는 법을 배워야 한다."
+     }
+    ]
    },
    {
     "word": "stick",
-    "meaning": "1. 붙이다  2. 막대, 막대기",
-    "pos": "v./n."
+    "pron": "[stik]",
+    "pos": "v./n.",
+    "meaning": "1. v. 붙이다(stick–stuck–stuck)  2. n. 막대, 막대기",
+    "tip": "① [[b]]스티커[[/b]](sticker)를 [[r]]붙이다[[/r]]\n② 치즈스틱, 드럼스틱, 립스틱에서 [[b]]스틱[[/b]]은 [[r]]막대기[[/r]]",
+    "derivatives": [
+     {
+      "word": "stuck",
+      "meaning": "움직일 수 없는, 꽉 막힌 (← 붙여놓서 움직일 수 없는, 꽉 막힌)"
+     }
+    ],
+    "toeicExpr": [
+     "stick to the wall 벽에 붙이다",
+     "stick a label 라벨을 붙이다",
+     "stick with ~을 계속 유지하다, 고수하다 (← with(~와 함께) 붙어있다)",
+     "stick with the original decision 원래 결정을 유지하다",
+     "stick with the current plan 현재 계획을 계속하다",
+     "stick to ~을 고수하다, 엄격히 지키다 (← to(~쪽으로, ~을 향하여) 붙어있다)",
+     "stick to the plan 계획을 고수하다",
+     "stick to the schedule/rules 일정을/규칙을 지키다",
+     "stick to company policy 회사 정책을 준수하다",
+     "be stuck in traffic 교통 체증에 갇히다",
+     "be stuck in an elevator 엘리베이터에 갇히다",
+     "be stuck at the airport 공항에 발이 묶이다",
+     "memory stick 메모리 스틱(USB)"
+    ]
    },
    {
     "word": "organization",
+    "pron": "미[ɔ̀ːrɡənizéiʃən] 영[ɔ̀ːrɡənaizéiʃən]",
+    "pos": "n.",
+    "meaning": "n. 조직, 단체",
+    "tip": "(들어)[[b]]오거나[[/b]] 하려면 [[r]]나이[[/r]]를 [[b]]재서[[/b]]. 노인회와 같이 나이 제한을 두는 [[r]]조직, 단체[[/r]]",
+    "derivatives": [
+     {
+      "word": "organize",
+      "meaning": "조직하다, 계획하다, 정리하다"
+     },
+     {
+      "word": "reorganize",
+      "meaning": "재편성하다, 재조직하다"
+     }
+    ],
+    "toeicExpr": [
+     "nonprofit organization 비영리 단체  international organization 국제기구  government organization 정부 기관",
+     "organize a meeting/event/workshop 회의/행사/워크숍을 기획하다",
+     "organize files/documents 파일/문서를 정리하다",
+     "organize a schedule 일정을 계획하다",
+     "reorganize management 경영진을 재배치하다",
+     "reorganize the department/structure 부서를/구조를 재편성하다"
+    ]
+   },
+   {
+    "word": "organize",
     "meaning": "조직, 단체",
-    "pos": "n."
+    "tip": "[[b]]오거나[[/b]] 머리땋은 [[b]]나이[[/b]]든 [[b]]재션[[/b]] 나이 많은 있는 [[r]]조직, 단체[[/r]]",
+    "toeicExpr": [
+     "nonprofit organization 비영리 단체",
+     "international organization 국제기구",
+     "government organization 정부 기관",
+     "organize a meeting/event/workshop 회의/행사/워크숍을 기획하다",
+     "organize files/documents 파일/문서를 정리하다",
+     "organize a schedule 일정을 계획하다",
+     "reorganize management 경영진을 재배치하다",
+     "reorganize the department/structure 부서를/구조를 재편성하다"
+    ]
    },
    {
     "word": "capacity",
+    "pron": "[kəpǽsəti]",
+    "pos": "n.",
     "meaning": "1. 능력  2. 용량, 수용력",
-    "pos": "n."
+    "tip": "마라톤 선수가 [[b]]커[[/b]]다란 [[b]]폐 써티[[/b]](썼지), 즉 폐의 [[r]]용량[[/r]]이 커서 오래 달릴 수 있는 [[r]]능력[[/r]]",
+    "toeicExpr": [
+     "production/operating capacity 생산/운영 능력",
+     "seating capacity 좌석 수용 능력",
+     "storage capacity 저장 용량",
+     "maximum capacity 최대 수용 능력",
+     "be filled to capacity 꽉 차다, 초만원이다 (← 수용력까지 차다)",
+     "at full capacity 최대 수용 능력으로, 최대 가동 상태로"
+    ],
+    "examVar": [
+     {
+      "en": "The manufacturing plant is operating at full _______ to meet customer demand.",
+      "opt": "(A) ability  (B) capacity  (C) capability  (D) efficiency",
+      "ans": "(B)",
+      "ko": "그 제조 공장은 고객 수요를 충족하기 위해 최대 가동으로 운영되고 있다."
+     }
+    ]
    },
    {
     "word": "chat",
-    "meaning": "잡담하다 / 잡담",
-    "pos": "v./n."
+    "pron": "[tʃæt]",
+    "pos": "v.",
+    "meaning": "v. 잡담하다  n. 잡담",
+    "tip": "인터넷 [[b]]채팅[[/b]](chatting)이란 인터넷상에서 하는 [[r]]잡담[[/r]]",
+    "toeicExpr": [
+     "have a chat 잡담하다",
+     "chat online 온라인으로 대화하다",
+     "chat over coffee 커피를 마시며 이야기하다"
+    ]
    },
    {
     "word": "efficient",
+    "pron": "[ifíʃənt]",
+    "pos": "a.",
     "meaning": "효율적인, 능률적인",
-    "pos": "adj."
+    "tip": "다른 학생은 1페이지를 펴고 있을 때 나는 핵심적인 사항만 봐서 벌써 [[b]]2페이지를 피셔[[/b]](펴다), 즉 [[r]]효율적인, 능률적인[[/r]] 공부",
+    "derivatives": [
+     {
+      "word": "efficiency",
+      "meaning": "능률, 효율"
+     },
+     {
+      "word": "efficiently",
+      "meaning": "효율적으로, 능률적으로"
+     }
+    ],
+    "toeicExpr": [
+     "efficient use of time 시간의 효율적 사용",
+     "cost-efficient system 비용 효율적인 시스템",
+     "energy-efficient equipment 에너지 효율 장비",
+     "a fuel-efficient car 연료 효율성(연비)가 좋은 차",
+     "efficiency wages 능률급",
+     "energy efficiency 에너지 효율성",
+     "operate efficiently 효율적으로 운영되다",
+     "work efficiently 효율적으로 일하다",
+     "manage resources efficiently 자원을 효율적으로 관리하다"
+    ]
    },
    {
     "word": "yet",
-    "meaning": "1. (부정문) 아직  2. (의문문) 이미, 벌써  3. 그러나",
-    "pos": "adv./conj."
+    "pron": "[jet]",
+    "pos": "ad./conj.",
+    "meaning": "1. ad. (부정문) 아직  2. ad. (의문문) 이미, 벌써  3. conj. 그러나",
+    "tip": "① [[b]]옛[[/b]]날에 시작했는데 [[r]]아직도 ~않다[[/r]]\n② [[b]]옛[[/b]]날에 [[r]]이미[[/r]] 해놨어.",
+    "toeicExpr": [
+     "The package hasn't arrived yet. 그 소포는 아직 도착하지 않았다.",
+     "Have you finished the report yet? 보고서를 벌써 끝냈나요?",
+     "The device is small, yet powerful enough for daily use. 그 장치는 작지만 일상 사용에는 충분히 강력하다.",
+     "The meeting was long, yet enjoyable. 회의는 길었지만 즐거웠다.",
+     "be yet to do 아직 ~하지 않다",
+     "The program is yet to begin. 그 프로그램은 아직 시작되지 않았다.",
+     "The schedule is yet to be announced. 일정은 아직 발표되지 않았다."
+    ]
    },
    {
     "word": "warrant",
-    "meaning": "1. 필요로 하다  2. 보증하다",
-    "pos": "v."
+    "pron": "[wɔ́ːrənt]",
+    "pos": "v.",
+    "meaning": "v. 1. 필요로 하다  2. 보증하다",
+    "tip": "청소년이 휴대폰을 살 때는 [[b]]어른 two[[/b]](2)명이 [[r]]보증하는[[/r]] 것을 [[r]]필요로 하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "warranty",
+      "meaning": "보증, 품질 보증"
+     }
+    ],
+    "toeicExpr": [
+     "warrant immediate action 즉각적인 조치가 필요하다",
+     "warrant a review 재검토가 필요하다",
+     "warrant the quality of a product 제품의 품질을 보증하다",
+     "warrant that the goods are free from defects 해당 상품에 결함이 없음을 보증하다",
+     "warranty coverage 보증 범위",
+     "warranty period 보증 기간",
+     "under warranty 보증기간 중인"
+    ]
    },
    {
     "word": "bargain",
-    "meaning": "1. 싼 물건, 특가품, 좋은 거래  2. 흥정하다, 협상하다",
-    "pos": "n./v."
+    "pron": "[báːrgən]",
+    "pos": "n./v.",
+    "meaning": "1. n. 싼 물건, 특가품, 좋은 거래  2. v. 흥정하다, 협상하다",
+    "tip": "[[b]]바겐[[/b]]세일(bargain sale) [[r]]특가품[[/r]]으로 줄 테니 사라고 손님과 [[r]]흥정하다, 협상하다[[/r]]",
+    "toeicExpr": [
+     "bargain price 할인가",
+     "good bargain 좋은 거래, 싸게 산 물건",
+     "buy at a bargain 싸게 사다",
+     "It's a bargain! 정말 싸다!",
+     "bargain with a supplier 공급업체와 흥정하다",
+     "bargain over the price 가격을 놓고 협상하다"
+    ]
    },
    {
     "word": "aim",
-    "meaning": "겨누다, 목표 삼다, ~할 작정이다 / 목적",
-    "pos": "v./n."
+    "pron": "[eim]",
+    "pos": "v./n.",
+    "meaning": "v. 겨누다, 목표 삼다, ~할 작정이다  n. 목적",
+    "tip": "사과를 얹은 애를 [[b]]겨누다[[/b]], [[r]]목표[[/r]]는 [[b]]애임[[/b]].",
+    "toeicExpr": [
+     "primary aim 가장 중요한 목표",
+     "aim at efficiency 효율성을 목표로 하다",
+     "aim at young consumers 젊은 소비자를 겨냥하다",
+     "aim to reduce costs 비용을 줄일 계획이다"
+    ]
    },
    {
     "word": "drug",
-    "meaning": "약, 제약, 마약",
-    "pos": "n."
+    "pron": "[drʌg]",
+    "pos": "n.",
+    "meaning": "n. 약, 제약, 마약",
+    "tip": "감기에 잘 [[b]]들어[[/b]] 그 [[r]]약[[/r]]이?",
+    "toeicExpr": [
+     "prescription drug 처방약",
+     "drug store 약국",
+     "drug addiction 약물 중독"
+    ]
    },
    {
     "word": "hesitation",
-    "meaning": "망설임, 주저",
-    "pos": "n."
+    "pron": "[hèzitéiʃən]",
+    "pos": "n.",
+    "meaning": "n. 망설임, 주저",
+    "tip": "계약을 [[b]]해지[[/b]]하면 계약금을 [[b]]떼이션[[/b]](떼이셔), 해지해? 말아? [[r]]망설임, 주저[[/r]]",
+    "derivatives": [
+     {
+      "word": "hesitate",
+      "meaning": "주저하다"
+     },
+     {
+      "word": "hesitant",
+      "meaning": "주저하는"
+     }
+    ],
+    "toeicExpr": [
+     "without hesitation 주저 없이",
+     "hesitate to ask/contact 묻기를/연락하기를 주저하다",
+     "Don't hesitate to do 주저하지 말고 ~하세요",
+     "Please don't hesitate to contact us if you have any questions. 문의사항이 있으면 주저하지 말고 연락 주세요.",
+     "be hesitant to do ~하기를 주저하다",
+     "Many employees were hesitant to adopt the new system. 많은 직원들이 새 시스템을 도입하는 데 주저했다."
+    ],
+    "examVar": [
+     {
+      "en": "The applicant accepted the job offer without any hesitation.",
+      "ko": "그 지원자는 어떤 주저함도 없이 채용 제안을 받아들였다."
+     }
+    ]
    },
    {
     "word": "motivate",
-    "meaning": "동기를 부여하다",
-    "pos": "v."
+    "pron": "[móutəvèit]",
+    "pos": "v.",
+    "meaning": "v. 동기를 부여하다",
+    "tip": "[motive(동기, 모티브)의 동사형] [[r]]동기를 부여하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "motivation",
+      "meaning": "동기 부여"
+     }
+    ],
+    "toeicExpr": [
+     "motivate employees 직원들에게 동기를 부여하다",
+     "highly motivated 매우 의욕적인",
+     "be motivated by incentives 인센티브에 의해 동기부여되다",
+     "lack of motivation 동기 부여 부족"
+    ]
    },
    {
     "word": "bear",
-    "meaning": "1. 곰  2. 참다, 견디다  3. (책임·비용 등을) 떠맡다, 부담하다",
-    "pos": "n./v."
+    "pron": "[bɛər]",
+    "pos": "n./v.",
+    "meaning": "1. n. 곰  2. v. 참다, 견디다  3. v. (책임 · 비용 등을) 떠맡다, 부담하다",
+    "tip": "① [[b]]bear[[/b]](곰)이었던 옹녀가 쑥과 마늘을 먹으며 [[r]]참다, 견디다[[/r]]  ② [[b]]bear[[/b]](곰)이 나타나자 리더가 다들 피하게 하고 혼자 맞서며 [[r]]책임을 떠맡다[[/r]]",
+    "toeicExpr": [
+     "polar bear 북극곰",
+     "bear hardship/pain 고난을/고통을 견디다(참다)",
+     "bear the responsibility for the project 그 프로젝트에 대한 책임을 지다",
+     "bear legal responsibility 법적 책임을 지다",
+     "bear the cost/expense 비용을/경비를 부담하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. Some employees found it difficult to bear the constant noise during the renovation.",
+      "ko": "일부 직원들은 공사 기간 동안 계속되는 소음을 견디기 어려워했다."
+     },
+     {
+      "en": "2. The company will bear all costs associated with relocating employees to the new headquarters.",
+      "ko": "회사는 직원들을 새 본사로 이전시키는 데 관련된 모든 비용을 부담할 것이다."
+     }
+    ]
    },
    {
     "word": "simplify",
-    "meaning": "단순화하다",
-    "pos": "v."
+    "pron": "[símpləfài]",
+    "pos": "v.",
+    "meaning": "v. 단순화하다",
+    "tip": "[simple(단순한) + ify(동 · 어)] [[r]]단순화하다[[/r]]",
+    "toeicExpr": [
+     "simplify the procedure 절차를 간소화하다",
+     "simplify the system/process 시스템을/과정을 단순화하다"
+    ]
    },
    {
     "word": "partial",
-    "meaning": "1. 부분적인  2. 편파적인",
-    "pos": "adj."
+    "pron": "[pɑ́:rʃəl]",
+    "pos": "a.",
+    "meaning": "a. 1. 부분적인  2. 편파적인",
+    "tip": "한쪽 [[b]]part[[/b]](부분)에만 치우친, 즉 [[r]]부분적인, 편파적인[[/r]]",
+    "derivatives": [
+     {
+      "word": "impartial",
+      "meaning": "공평한"
+     },
+     {
+      "word": "partially",
+      "meaning": "부분적으로"
+     }
+    ],
+    "toeicExpr": [
+     "partial payment/refund 부분 지불/환불",
+     "impartial view/decision 공정한 관점/결정",
+     "partially agree 부분적으로 동의하다",
+     "partially true 부분적으로 사실인"
+    ]
    },
    {
     "word": "sequence",
+    "pron": "[síːkwəns]",
+    "pos": "n.",
     "meaning": "연속, 순서",
-    "pos": "n."
+    "tip": "식당에서 [[b]]식권[[/b]]을 쓰기 위해 줄을 [[b]]연속[[/b]]으로 서서 기다리는 [[r]]순서[[/r]]",
+    "toeicExpr": [
+     "in sequence 순서대로 (← in: 방식, 상태)",
+     "in the correct sequence 올바른 순서로",
+     "sequence of events 일련의 사건들",
+     "arrange in sequence 순서대로 배열하다"
+    ]
    },
    {
     "word": "costly",
+    "pron": "[kɔ́ːstli]",
+    "pos": "a.",
     "meaning": "값이 비싼, 희생이 큰",
-    "pos": "adj."
+    "tip": "[[b]]cost[[/b]](가격) + [[b]]ly[[/b]](형ㆍ어)] [[r]]값이 비싼, 희생이 큰[[/r]]",
+    "toeicExpr": [
+     "costly equipment 값비싼 장비  costly purchase 값비싼 구매",
+     "costly mistake 큰 손해를 초래하는 실수",
+     "turn out to be costly 손실이 큰 것으로 판명 나다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The delay resulted in a _______ mistake for the company.",
+      "opt": "(A) costly  (B) cost  (C) costing  (D) costed",
+      "ans": "(A)",
+      "ko": "그 지연은 회사에 큰 손실을 초래하는 실수로 이어졌다."
+     },
+     {
+      "en": "2. The recall was _______ to the manufacturer's reputation.\ncostly (O)  expensive (X)",
+      "ko": "그 리콜은 제조사의 평판에 큰 손실을 입혔다.",
+      "note": "expensive: 가격이 비싼"
+     }
+    ]
    },
    {
     "word": "breakthrough",
+    "pron": "[bréikθruː]",
+    "pos": "n.",
     "meaning": "돌파구",
-    "pos": "n."
+    "tip": "난관을 [[b]]break[[/b]](부수어) [[b]]through[[/b]](통과하게) 하는 것, 즉 [[r]]돌파구[[/r]]",
+    "toeicExpr": [
+     "major breakthrough 주요 돌파구",
+     "technological breakthrough 기술적 돌파구"
+    ]
    },
    {
     "word": "charity",
+    "pron": "[tʃǽriti, tʃǽrəti]",
+    "pos": "n.",
     "meaning": "자선, 자선단체",
-    "pos": "n."
+    "tip": "추위에 떨고 있는 거지에게 따끈한 [[b]]체리 tea[[/b]](차)를 끓여서 주는 [[r]]자선, 자선단체[[/r]]",
+    "derivatives": [
+     {
+      "word": "charitable",
+      "meaning": "자선(단체)의"
+     }
+    ],
+    "toeicExpr": [
+     "donate to charity 자선 단체에 기부하다",
+     "charity organization/foundation 자선 단체/재단",
+     "charitable event 자선 행사  charitable donation 자선 기부"
+    ]
    },
    {
     "word": "trial",
+    "pron": "[tráiəl]",
+    "pos": "n.",
     "meaning": "시도, 체험, 시험, 실험",
-    "pos": "n."
+    "tip": "[[b]]try[[/b]](시도하다)의 명사형",
+    "derivatives": [
+     {
+      "word": "try",
+      "meaning": "시도하다, 노력하다, 시험해 보다; 시도, 노력"
+     }
+    ],
+    "toeicExpr": [
+     "trial period 체험 기간  trial and error 시행착오",
+     "free trial 무료 체험  product trial 제품 시험 사용",
+     "try to meet the deadline 마감일을 맞추려 노력하다",
+     "try to reduce costs 비용을 줄이려 시도하다",
+     "try a new system 새 시스템을 시험해 보다",
+     "give it a try 한번 해보다  worth a try 해볼 가치가 있는"
+    ],
+    "examVar": [
+     {
+      "en": "try와 trial을 구분하는 문제가 출제되었다.\nThe new drug must undergo a clinical _______ before it can be approved for public use.  trial (O)  try (X)",
+      "ko": "그 신약은 대중 사용 승인 전에 임상 시험을 거쳐야 한다."
+     }
+    ]
    },
    {
     "word": "panic",
-    "meaning": "n. 공포, 공황 v. 공황상태에 빠지다, 당황하다",
-    "pos": "n./v."
+    "pron": "[pǽnik]",
+    "pos": "n.",
+    "meaning": "공포, 공황  v. 공황상태에 빠지다, 당황하다",
+    "tip": "\"사람을 저렇게 [[b]]패니?[[/b]]\" 하며 [[r]]공포[[/r]]에 질린 표로들",
+    "toeicExpr": [
+     "cause panic 공포를 야기하다",
+     "spread panic 공포를 확산시키다  public panic 대중의 공포",
+     "panic at the news 소식에 당황하다  panic over delays 지연에 당황하다"
+    ]
    },
    {
     "word": "broad",
+    "pron": "[brɔːd]",
+    "pos": "a.",
     "meaning": "폭넓은, 포괄적인, 폭이 넓은",
-    "pos": "adj."
+    "tip": "① [[b]]부[[/b]]유한 마을은 [[b]]road[[/b]](길)도 [[r]]폭이 넓은[[/r]]\n② [[b]]브로드[[/b]]웨이는 'broad(넓은) + way(길)'",
+    "derivatives": [
+     {
+      "word": "broaden",
+      "meaning": "넓히다, 확장하다"
+     }
+    ],
+    "toeicExpr": [
+     "broad experience/knowledge 폭넓은 경험/지식",
+     "broad range/area 넓은 범위/지역",
+     "broaden perspective 시야를 넓히다  broaden market 시장을 확대하다"
+    ],
+    "examVar": [
+     {
+      "en": "You should _______ your knowledge by traveling more.\nbroaden (O)  multiply (X)",
+      "ko": "당신은 더 많은 여행을 하여 지식을 넓혀야 한다.",
+      "note": "multiply는 숫자로 셀 수 있는 것을 증가시키다란 뜻으로 knowledge에는 어울리지 않는다."
+     }
+    ]
+   },
+   {
+    "word": "salmon",
+    "pron": "[sǽmən]",
+    "pos": "n.",
+    "meaning": "연어",
+    "tip": "[[b]]새[[/b]]가 [[b]]먼[[/b]] 곳에서 아래로 내려와 잡아채는 [[r]]연어[[/r]]",
+    "toeicExpr": [
+     "smoked salmon 훈제 연어"
+    ]
    }
   ]
  },
@@ -2311,118 +8274,559 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "opening",
+    "pron": "[óupəniŋ]",
+    "pos": "n.",
     "meaning": "1. 개시, 개장  2. 공석, 채용자리",
-    "pos": "n."
+    "tip": "① 행사나 가게의 문을 [[b]]open[[/b]](열다), 즉 [[r]]개시, 개장[[/r]]  ② 일자리가 [[b]]open[[/b]](열려 있는) 상태, 즉 [[r]]공석, 채용자리[[/r]]",
+    "derivatives": [
+     {
+      "word": "open",
+      "meaning": "개점하다, (계좌를) 개설하다"
+     }
+    ],
+    "toeicExpr": [
+     "grand opening (매장 등) 성대한 개점   opening remarks 개회사",
+     "opening ceremony 개막식",
+     "job opening 채용 공고 (← 일자리 공석 있음)   position opening 직위 공석",
+     "immediate opening 즉시 채용 공석   current opening 현재 공석",
+     "open an account 계좌를 개설하다   open a new branch 새 지점을 개점하다"
+    ],
+    "examVar": [
+     {
+      "note": "'공석, 채용자리'란 뜻으로 자주 출제되었다.",
+      "en": "There is an immediate opening for a sales representative at our Seoul branch.",
+      "ko": "우리 서울 지점에 영업 사원 채용 공석이 즉시 있습니다."
+     }
+    ]
    },
    {
     "word": "vacancy",
+    "pron": "[véikənsi]",
+    "pos": "n.",
     "meaning": "결원, 공석, 빈방",
-    "pos": "n."
+    "tip": "[[b]]베이컨[[/b]]에는 비타민 [[b]]C[[/b]]가 [[r]]비어있다(없다)[[/r]]",
+    "toeicExpr": [
+     "job vacancy 직무 공석   fill a vacancy 공석을 채우다",
+     "apply for a vacancy 공석에 지원하다   hotel vacancy 호텔의 빈방",
+     "vacancy rate 공실률"
+    ],
+    "examVar": [
+     {
+      "en": "The company plans to fill the vacancy by the end of the month.",
+      "ko": "회사는 이달 말까지 그 공석을 채울 계획이다."
+     }
+    ]
    },
    {
     "word": "complain",
+    "pron": "[kəmpléin]",
+    "pos": "v.",
     "meaning": "불평하다, 항의하다",
-    "pos": "v."
+    "tip": "작은 비행기를 타서 너무 좁다고 [[b]]큰 플레인[[/b]](plane: 비행기) 탈 걸! 하고 [[r]]불평하다, 항의하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "complaint",
+      "meaning": "불평, 불만"
+     }
+    ],
+    "toeicExpr": [
+     "complain about the noise/delay 소음/지연에 대해 불평하다",
+     "customer/product complaint 고객/제품 불만",
+     "make a complaint 불평을 하다"
+    ],
+    "examVar": [
+     {
+      "en": "The hotel received several ______ about the noise coming from the construction site.",
+      "opt": "(A) complain   (B) complaint   (C) complaints   (D) complaining",
+      "ans": "(C)",
+      "ko": "그 호텔은 공사 현장에서 발생한 소음에 대해 몇 건의 불만을 접수했다.",
+      "note": "complain과 complaint를 구분하는 문제가 자주 출제되었다. / several(몇 개의)이 있기 때문에 복수형이 와야 한다."
+     }
+    ]
    },
    {
     "word": "nevertheless",
+    "pron": "[nèvərðəlés]",
+    "pos": "ad.",
     "meaning": "그럼에도 불구하고",
-    "pos": "adv."
+    "tip": "내가 음식값을 [[b]]never 덜 냈수[[/b]](덜 내지 않았수). [[r]]그럼에도 불구하고[[/r]] 왜 나만 요만큼 줘?",
+    "derivatives": [
+     {
+      "word": "nonetheless",
+      "meaning": "= nevertheless"
+     }
+    ],
+    "toeicExpr": [
+     "challenging task; nevertheless, possible 도전적인 과제이지만 그럼에도 불구하고 가능하다",
+     "expensive; nevertheless, worth buying 비싸지만 그럼에도 불구하고 살 가치가 있다",
+     "difficult situation; nonetheless, hopeful 어려운 상황이지만 그럼에도 불구하고 희망적이다"
+    ],
+    "examVar": [
+     {
+      "en": "The project faced many unexpected difficulties; _______, the team managed to complete it on time.",
+      "opt": "(A) moreover (B) nevertheless (C) otherwise (D) therefore",
+      "ko": "그 프로젝트는 많은 예상치 못한 어려움에 직면했지만, 그럼에도 불구하고 팀은 제시간에 그것을 완수했다.",
+      "note": "moreover: 게다가, 더욱이 / otherwise: 그렇지 않으면 / therefore: 그러므로",
+      "ans": "(B)"
+     }
+    ]
    },
    {
     "word": "punctual",
+    "pron": "[pʌ́ŋktʃuəl]",
+    "pos": "a.",
     "meaning": "시간을 엄수하는",
-    "pos": "adj."
+    "tip": "늦어서 약속을 [[b]]펑크 낼까봐[[/b]] 차를 [[b]]추월[[/b]]해가며 [[r]]시간을 엄수하는[[/r]]",
+    "derivatives": [
+     {
+      "word": "punctually",
+      "meaning": "시간을 엄수하여"
+     }
+    ],
+    "toeicExpr": [
+     "be punctual 시간을 잘 지키다",
+     "punctual employee 시간을 잘 지키는 직원",
+     "punctual arrival 제시간 도착",
+     "leave/start punctually 제시간에 출발하다/시작하다"
+    ]
    },
    {
     "word": "contact",
+    "pron": "미[kɔ́ntækt] 영[kɔ́ntækt]",
+    "pos": "n.",
     "meaning": "접촉, 연락",
-    "pos": "n."
+    "tip": "[[b]]콘텍트[[/b]] 렌즈란 눈에 직접 [[r]]접촉[[/r]]하는 렌즈. 사람끼리 [[r]]접촉[[/r]]한다는 것은 서로 [[r]]연락[[/r]]하는 것",
+    "toeicExpr": [
+     "keep in contact with ~와 연락을 유지하다 (← ~와 연락 안에 있는 상태로 유지하다)",
+     "contact information 연락처",
+     "get in contact with = make contact with ~와 연락하다, 접촉하다",
+     "get in contact with the HR department 인사 부서와 연락하다",
+     "make contact with clients 고객과 연락하다"
+    ]
    },
    {
     "word": "store",
+    "pron": "[stɔːr]",
+    "pos": "1. n. / 2. n. v.",
     "meaning": "1. n. 가게  2. n. 저장  v. 저장하다, 보관하다",
-    "pos": "n./v."
+    "tip": "[[b]]store[[/b]](가게)에 물건을 잔뜩 쌓아 [[r]]저장하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "storage",
+      "meaning": "저장, 저장고"
+     }
+    ],
+    "toeicExpr": [
+     "convenience store 편의점  department store 백화점",
+     "store data/information 데이터를/정보를 저장하다",
+     "store items in a warehouse 창고에 물품을 보관하다",
+     "storage room 보관실, 창고  data storage 데이터 저장"
+    ],
+    "examVar": [
+     {
+      "en": "The new system allows users to securely store customer data on a remote server.",
+      "ko": "새 시스템은 사용자가 고객 데이터를 원격 서버에 안전하게 저장할 수 있도록 해준다."
+     }
+    ]
    },
    {
     "word": "conduct",
+    "pron": "v. [kəndʌ́kt]\nn. [kɔ́ndʌkt]",
+    "pos": "v. n.",
     "meaning": "v. ~을 하다, 행동하다, 진행하다  n. 행동",
-    "pos": "v./n."
+    "tip": "리더가 [[b]]큰 덕[[/b]]이 있는 [[r]]행동[[/r]]으로 앞에서 회의를 [[r]]진행하다[[/r]]",
+    "toeicExpr": [
+     "conduct a survey 조사하다  conduct an inspection 점검을 실시하다",
+     "conduct negotiations/a meeting/an interview 협상을/회의를/면접을 진행하다",
+     "inappropriate/acceptable conduct 부적절한/허용되는 행동",
+     "code of conduct 행동 강령"
+    ]
    },
    {
     "word": "detour",
+    "pron": "[díːtuər]",
+    "pos": "n. v.",
     "meaning": "n. 우회, 우회로  v. 우회하다",
-    "pos": "n./v."
+    "tip": "[[b]]뒤[[/b]]로 돌아서 [[b]]tour[[/b]](여행하다), 즉 [[r]]우회, 우회하다[[/r]]",
+    "toeicExpr": [
+     "take a detour 우회하다  detour route 우회로",
+     "detour around construction 공사를 피해 우회하다"
+    ]
    },
    {
     "word": "spare",
+    "pron": "[spɛər]",
+    "pos": "a./v.",
     "meaning": "1. a. 예비의, 여분의  2. v. (시간·돈 등을) 아끼다  3. v. 시간을 내다, 시간을 할애하다",
-    "pos": "adj./v."
+    "tip": "① 월급의 50% [[b]]수[[/b]](숫자)를 [[b]]빼어[[/b]] 저축에 할애하여, [[r]]예비의, 여분의[[/r]] 돈으로 [[r]]아끼다[[/r]]  ② [[b]]스페어[[/b]] 타이어는 [[r]]예비의, 여분의[[/r]] 타이어",
+    "toeicExpr": [
+     "spare copy/key/parts 예비 사본/열쇠/부품",
+     "spare no expense/effort 비용을/노력을 아끼지 않다",
+     "spare some time 시간을 좀 내다  spare a moment 잠깐 시간을 내다"
+    ],
+    "examVar": [
+     {
+      "en": "The manager asked if anyone could spare a moment to review the revised contract.",
+      "ko": "관리자는 누군가가 개정된 계약서를 검토할 시간을 잠시 내줄 수 있는지 물었다."
+     }
+    ]
    },
    {
     "word": "conserve",
-    "meaning": "1. 보존하다, 보호하다  2. 아끼다, 절약하다",
-    "pos": "v."
+    "pron": "[kənsə́:rv]",
+    "pos": "v.",
+    "meaning": "v. 1. 보존하다, 보호하다  2. 아끼다, 절약하다",
+    "tip": "그랜드캐니언과 같은 미국의 [[b]]큰 서부[[/b]]지역을 관광을 위해 [[r]]보존하다, 보호하다[[/r]], 개발하지 않고 [[r]]아끼다[[/r]]",
+    "derivatives": [
+     {
+      "word": "conservative",
+      "meaning": "조심스러운, 신중한, 보수적인"
+     },
+     {
+      "word": "conservation",
+      "meaning": "보존, 보호"
+     }
+    ],
+    "toeicExpr": [
+     "conserve resources 자원을 보존하다",
+     "conserve the environment 환경을 보호하다",
+     "conserve water/electricity 물을/전기를 절약하다",
+     "conservative estimate/approach 보수적인(신중한) 추정치/접근법",
+     "be conservative about spending/investment 지출에/투자에 신중하다",
+     "environmental conservation 환경 보호  conservation of energy 에너지 보존"
+    ],
+    "examVar": [
+     {
+      "en": "The finance team presented a conservative estimate of next quarter's revenue to avoid overstating potential profits.",
+      "ko": "재무팀은 잠재적 이익을 과대평가하지 않기 위해 다음 분기 매출에 대한 보수적인(신중한) 추정치를 제시했다."
+     }
+    ]
    },
    {
     "word": "participate",
-    "meaning": "참여하다, 참가하다",
-    "pos": "v."
+    "pron": "[pɑːrtísəpèit]",
+    "pos": "v.",
+    "meaning": "v. 참여하다, 참가하다",
+    "tip": "[[b]]파티[[/b]](에)[[b]]서[[/b]] 나를 [[b]]베이트[[/b]](뺐지만) 그래도 [[r]]참여하다, 참가하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "participation",
+      "meaning": "참여, 참가"
+     },
+     {
+      "word": "participant",
+      "meaning": "참가자 (← -ant: ~사람, ~것)"
+     }
+    ],
+    "toeicExpr": [
+     "participate in ~에 참가하다 (← in: ~ 안에)",
+     "participate in the event 행사에 참여하다",
+     "participate in a meeting 회의에 참여하다",
+     "program/survey/meeting participants 프로그램/설문/회의 참가자"
+    ],
+    "examVar": [
+     {
+      "note": "품사 구분 문제가 자주 출제되었다.",
+      "en": "All conference ______ must check in at the registration desk before 9 a.m.",
+      "opt": "(A) participates  (B) participating  (C) participant  (D) participants",
+      "ans": "(D)",
+      "ko": "모든 회의 참가자들은 오전 9시 전에 등록 데스크에서 체크인해야 한다."
+     },
+     {
+      "note": "participate는 자동사로 뒤에 전치사 in과 함께 쓰이고, attend는 타동사로 전치사 없이 뒤에 바로 목적어를 취하는 차이를 묻는 문제가 출제되었다.",
+      "en": "Employees are encouraged to ______ in the upcoming safety seminar.   participate (O)  attend (X)",
+      "ko": "직원들은 다가오는 안전 세미나에 참여하도록 권장된다."
+     },
+     {
+      "note": "토익에 자주 나오는 자동사로 착각하기 쉬운 타동사 (타동사이기 때문에 전치사 없이 뒤에 바로 목적어를 취하는 동사)\nreach(~에 도착하다)  enter(~에 들어가다)  attend(~에 참석하다)\ndiscuss(~에 대해 토론하다)  resemble(~을 닮다)  approach(~로 다가가다)\nmention(~에 대해 말하다)  become(~에 어울리다)  marry(~와 결혼하다)\nleave(~을 떠나다)\nI will reach Seoul tomorrow morning. (reach at: X)\nHe enters the room. (enter into: X)\n(attend at: X) (discuss about: X) (resemble with: X) (approach to: X)\n(mention about: X) (become to: X) (marry with: X) (leave from: X)\ncf. reach와는 달리 arrive는 자동사로 뒤에 전치사 in/at을 취해야 한다.\nI will arrive in Seoul tomorrow morning. (O)\n[암기법] \"전치사 운전수의 도움 없이 회의장에 도착하여(reach) 들어가(enter) 참석한(attend) 후 토론을 하다가(discuss) (자신과) 닮은(resemble) 이성에게 다가가(approach) 말을 건네다가(mention) 서로 잘 어울려서(become) 결혼하여(marry) 신혼여행을 떠나는(leave)\" 모습을 차례로 상상하며 반복하여 암기하자!"
+     }
+    ]
    },
    {
     "word": "takeover",
-    "meaning": "(회사의 지배·관리 등의) 인수",
-    "pos": "n."
+    "pron": "[teikóuvər]",
+    "pos": "n.",
+    "meaning": "n. (회사의 지배·관리 등의) 인수",
+    "tip": "다른 쪽으로부터 [[b]]넘겨(over) 받는(take)[[/b]] 것, 즉 [[r]]인수[[/r]]",
+    "toeicExpr": [
+     "company/corporate takeover 회사/기업 인수",
+     "hostile/friendly takeover 적대적/우호적 인수",
+     "department takeover 부서 업무 인수  takeover of responsibilities 책임 인수",
+     "temporary takeover 임시 인수"
+    ]
    },
    {
     "word": "appoint",
-    "meaning": "1. 지명하다, 임명하다  2. (시간·장소 등을) 정하다",
-    "pos": "v."
+    "pron": "[əpɔ́int]",
+    "pos": "v.",
+    "meaning": "v. 1. 지명하다, 임명하다  2. (시간·장소 등을) 정하다",
+    "tip": "① [[b]]a[[/b]](하나의) 사람을 손가락으로 [[b]]point[[/b]](가리키다), 즉 [[r]]지명하다, 임명하다[[/r]]  ② 달력의 [[b]]a[[/b]](하나의) 날짜를 손가락으로 [[b]]point[[/b]](가리키다), 즉 [[r]](시간·장소 등을) 정하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "appointment",
+      "meaning": "지정, 임명, 약속, 예약 (← 날짜를 point(가리켜) 예약)"
+     }
+    ],
+    "toeicExpr": [
+     "appoint a successor/manager/representative 후임자를/관리자를/대표를 임명하다",
+     "newly appointed 새로 임명된",
+     "executive appointment 임원 임명",
+     "appointment to the board 이사회 임명",
+     "appointment as manager 관리자로의 임명",
+     "make/cancel/confirm an appointment 약속을 잡다/취소하다/확인하다"
+    ],
+    "examVar": [
+     {
+      "en": "The HR department will appoint a time and location for the final interview and notify all candidates by email.",
+      "ko": "인사팀은 최종 면접의 시간과 장소를 지정하고 모든 지원자에게 이메일로 안내할 예정이다."
+     }
+    ]
    },
    {
     "word": "consider",
+    "pron": "[kənsídər]",
+    "pos": "v.",
     "meaning": "숙고하다, 고려하다",
-    "pos": "v."
+    "tip": "이 시는 시험에 나올 비중이 [[b]]큰 시[[/b]]니까 [[r]]더[[/r]] [[r]]숙고하다, 고려하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "consideration",
+      "meaning": "고찰, 고려"
+     }
+    ],
+    "toeicExpr": [
+     "consider carefully 신중히 고려하다",
+     "consider all options 모든 옵션을 고려하다",
+     "consider + 동명사 (to부정사는 X)",
+     "consider hiring additional staff 추가 인력을 채용하는 것을 고려하다",
+     "consider expanding the business 사업을 확장하는 것을 고려하다",
+     "under consideration 고려 중인",
+     "consider A (as) B A를 B로 간주하다 (*as를 써도 되고 쓰지 않아도 됨)",
+     "The committee considered Mr. Park (as) the most qualified candidate. 그 위원회는 박 씨를 가장 자격이 충분한 후보자로 여겼다.",
+     "consider + 사람 + for the position ~에게 직위를 주는 것을 고려하다",
+     "be considered for the position 그 직위에 대한 고려 대상이 되다",
+     "The company is considering Mr. Kim for the manager position. 회사는 김 씨를 매니저 직책의 후보로 고려 중이다.",
+     "take into consideration ~을 고려하다",
+     "Please take into consideration the time difference. 시차를 고려해 주십시오."
+    ],
+    "examVar": [
+     {
+      "en": "1. The proposals are still under consideration.",
+      "ko": "그 제안들은 아직도 고려 중이다."
+     },
+     {
+      "en": "2. Many experts ___ the new policy beneficial, given its positive impact on productivity.   consider (O)  regard (X)",
+      "ko": "많은 전문가들은 그 새로운 정책이 생산성에 긍정적인 영향을 미친다는 점을 고려할 때, 그 정책을 유익하다고 여긴다.",
+      "note": "consider는 as 없이 'consider A B' 형태가 가능하다. 반면 regard는 반드시 as beneficial과 같이 as가 들어가야 한다. regard A as B (A를 B로 여기다)"
+     },
+     {
+      "en": "3. The marketing team is considering ___ its advertising strategy.",
+      "opt": "(A) to change  (B) changing  (C) change  (D) changed",
+      "ko": "마케팅 팀은 광고 전략 변경을 고려하고 있다.",
+      "note": "consider 다음에 목적어로 to부정사는 오지 않고 동명사만 온다는 점을 묻는 문제가 자주 출제되었다. * 동명사만을 목적어로 취하는 동사 (앞서 deny에서 설명함) avoid, mind, deny, enjoy, stop, consider, suggest, finish  암기법) 아범이([[b]]avo mi[[/b]]) 부인에게 인스타([[b]]en sto[[/b]])그램에 큰 시([[b]]consi[[/b]]) 써제([[b]]sugge[[/b]])끼는 것을 \"[[r]]끝내라[[/r]]\"고 한다."
+     }
+    ]
    },
    {
     "word": "considerable",
+    "pron": "[kənsídərəbl]",
+    "pos": "a.",
     "meaning": "상당한, 많은",
-    "pos": "adj."
+    "tip": "[[b]]consider[[/b]]([[r]]숙고하다[[/r]]) + [[b]]able[[/b]](~할 만한)] 수량이나, 정도가 [[r]]숙고해볼 만한[[/r]], 즉 [[r]]상당한, 많은[[/r]]",
+    "derivatives": [
+     {
+      "word": "considerate",
+      "meaning": "사려 깊은, 분별력 있는"
+     },
+     {
+      "word": "considerably",
+      "meaning": "상당히, 꽤"
+     }
+    ],
+    "toeicExpr": [
+     "considerable amount/damage/effort/experience 상당한 양/피해/노력/경험",
+     "considerate manager 배려심 있는 관리자",
+     "considerate behavior 사려 깊은 행동",
+     "increase/change/improve considerably 상당히 증가하다/변하다/개선되다"
+    ],
+    "examVar": [
+     {
+      "en": "The company invested a ___ amount of money in developing eco-friendly products.",
+      "opt": "considerable (O)  considerate (X)",
+      "ko": "그 회사는 친환경 제품 개발에 상당한 금액을 투자했다.",
+      "note": "considerable과 considerate를 구분하는 문제가 출제되었다."
+     }
+    ]
    },
    {
     "word": "plumber",
+    "pron": "[plʌ́mər]",
+    "pos": "n.",
     "meaning": "배관공",
-    "pos": "n."
+    "tip": "[[r]]배관공[[/r]]이 렌치로 [[b]]풀러, 뭐[[/b]]를(뭔가를, 수도관이나 그런 것을)",
+    "derivatives": [
+     {
+      "word": "plumbing",
+      "meaning": "배관, 수도설비"
+     }
+    ],
+    "toeicExpr": [
+     "call a plumber 배관공을 부르다",
+     "plumbing service 배관 서비스"
+    ]
    },
    {
     "word": "cutback",
+    "pron": "[kʌ́tbæk]",
+    "pos": "n.",
     "meaning": "축소, 삭감",
-    "pos": "n."
+    "tip": "[[b]][cut(자르다) + back(뒤로)][[/b]] 뒷부분을 잘라 그만큼 [[r]]축소, 삭감[[/r]]",
+    "toeicExpr": [
+     "budget/staffing cutback 예산/인력 삭감",
+     "cutback on expenses 지출 삭감"
+    ]
    },
    {
     "word": "effective",
+    "pron": "[iféktiv]",
+    "pos": "a.",
     "meaning": "1. 효과적인, 효력 있는  2. 효력이 발생되는, (시간) ~부터 시행되는",
-    "pos": "adj."
+    "tip": "[[b]]이 얼굴 팩이 TV 광고[[/b]]로 매출이 많이 늘었다. 즉, TV 광고가 [[r]]효과적인, 효력 있는[[/r]]",
+    "derivatives": [
+     {
+      "word": "effect",
+      "meaning": "효과, 영향, 결과"
+     },
+     {
+      "word": "effectively",
+      "meaning": "효과적으로"
+     }
+    ],
+    "toeicExpr": [
+     "effective communication/strategy/method 효과적인 의사소통/전략/방법",
+     "effective immediately 즉시 시행되는 (← 즉시 효력이 있는)",
+     "effective (as of) + 날짜: ~부로 시행되는 (as of 없이도 가능하다)",
+     "* as of + 시간, 날짜: ~부로, ~기준으로",
+     "effective July 1 7월 1일부터 발효되는(시행되는)",
+     "The policy will be effective (as of) next Monday. 그 정책은 다음 주 월요일부터 시행됩니다.",
+     "cause and effect 원인과 결과  significant effect 중요한 영향",
+     "work/manage effectively 효과적으로 일하다/관리하다"
+    ],
+    "examVar": [
+     {
+      "note": "affect(동사: ~에 영향을 미치다)와 effect(명사)를 구분하는 문제가 자주 출제되었다.",
+      "en": "The new policy had a positive _______ on employee productivity.",
+      "opt": "effect (O)  affect (X)",
+      "ko": "새로운 정책은 직원 생산성에 긍정적인 영향을 주었다."
+     },
+     {
+      "en": "The new employee benefits plan will be effective July 1.",
+      "ko": "새로운 직원 복지 계획은 7월 1일부터 시행될 것입니다."
+     }
+    ]
    },
    {
     "word": "claim",
+    "pron": "[kleim]",
+    "pos": "v. (당연한 권리로서) 요구하다, 청구하다, 주장하다  n. 청구, 요구",
     "meaning": "v. (당연한 권리로서) 요구하다, 청구하다, 주장하다  n. 청구, 요구",
-    "pos": "v./n."
+    "tip": "내 주차구역에 다른 차가 연락처 없이 이름만 남겨두고 주차를 해두어 [[b]]클(크게) name(이름)[[/b]]을 부르면서 나의 주차 [[r]](권리를) 요구하다, 주장하다[[/r]]",
+    "toeicExpr": [
+     "file a claim 청구하다  insurance claim 보험 청구",
+     "claim damages 손해 배상을 청구하다  claim a refund 환불을 청구하다",
+     "claim that ~ ~을 주장하다",
+     "The company claims that its new software is the most secure on the market. 그 회사는 자사의 새로운 소프트웨어가 시장에서 가장 안전하다고 주장합니다.",
+     "(baggage) claim area 수하물 찾는 곳 (← 수하물 청구 장소)",
+     "claim check 수하물표"
+    ],
+    "examVar": [
+     {
+      "en": "Customers must file a claim within 30 days of purchase.",
+      "ko": "고객들은 구매 후 30일 이내에 청구해야 합니다."
+     },
+     {
+      "en": "Customers must submit receipts in order to claim a refund for defective products.",
+      "ko": "고객들은 불량 제품에 대한 환불을 청구하기 위해 영수증을 제출해야 한다."
+     }
+    ]
    },
    {
     "word": "deposit",
+    "pron": "미[dipázit] 영[dipázit]",
+    "pos": "v. (돈·물품 등을) 맡기다  n. 보증금, (은행) 예금",
     "meaning": "v. (돈·물품 등을) 맡기다  n. 보증금, (은행) 예금",
-    "pos": "v./n."
+    "tip": "① 달리기 시합 전에 [[b]]뒤[[/b]]에 있는 주머니에 두면 [[b]]빠짓[[/b]](빠질)까봐 잠시 친구에게 [[r]]맡기다[[/r]]  ② [[r]]맡겨두는[[/r]] 돈, 즉 [[r]]보증금[[/r]]. 그리고 은행에 돈을 [[r]]맡기는[[/r]] 것, 즉 [[r]]예금[[/r]]",
+    "toeicExpr": [
+     "deposit money 돈을 맡기다(예금하다)",
+     "security deposit 보증금 (← 미납, 파손 등에 대한 안전을 위해 맡겨두는 돈)",
+     "refundable deposit 환불 가능한 보증금",
+     "cash deposit 현금 예금  deposit account 예금 계좌",
+     "make a deposit 입금하다"
+    ],
+    "examVar": [
+     {
+      "en": "Guests are required to pay a refundable deposit when checking into the hotel.",
+      "ko": "호텔 체크인 시 고객은 환불 가능한 보증금을 지불해야 한다."
+     }
+    ]
    },
    {
     "word": "seating",
+    "pron": "[síːtiŋ]",
+    "pos": "n.",
     "meaning": "좌석 수, 좌석 배열",
-    "pos": "n."
+    "tip": "[[b]][seat(앉히다) + ing][[/b]] 앉히는 [[r]]좌석의 수나 배열[[/r]]",
+    "toeicExpr": [
+     "seating capacity/arrangement 좌석 수용력/배열",
+     "seating for 200 200석 규모  reserved seating 예약된 좌석",
+     "open seating 자유 좌석"
+    ],
+    "examVar": [
+     {
+      "en": "The stadium has a _______ capacity of 50000.",
+      "opt": "seating (O)  seat (X)",
+      "ko": "그 스타디움은 5만 명을 수용할 수 있다.",
+      "note": "seat은 한 개의 좌석을 뜻한다."
+     }
+    ]
    },
    {
     "word": "calm",
+    "pron": "[kɑːm]",
+    "pos": "a. 조용한, 평온한  v. 진정시키다",
     "meaning": "a. 조용한, 평온한  v. 진정시키다",
-    "pos": "adj./v."
+    "tip": "시골의 [[b]]캄캄한[[/b]] 밤이 [[r]]조용한, 평온한[[/r]]. 그리고 [[r]]평온하게 진정시키다[[/r]]",
+    "toeicExpr": [
+     "stay calm 침착함을 유지하다  calm voice 차분한 목소리",
+     "calm down 진정하다 (← 마음을 아래로(down) 가라앉혀 진정시키다)",
+     "Calm down and listen to me. 진정하고 내 말 좀 들어봐."
+    ]
+   },
+   {
+    "word": "constitute",
+    "pron": "미[kάnstətjùːt] 영[kɔ́nstitjùːt]",
+    "pos": "v.",
+    "meaning": "v. 1. 구성하다, 형성하다  2. ~에 해당하다, ~이 되다",
+    "tip": "큰 [[b]]스타[[/b]]들이 모여 별자리를 [[r]]구성하다, 형성하다[[/r]]",
+    "toeicExpr": [
+     "constitute a majority 다수를 구성하다",
+     "constitute a committee 위원회를 구성하다",
+     "constitute a board 이사회를 구성하다",
+     "constitute a large percentage 큰 비율을 차지하다(구성하다)",
+     "constitute a significant portion 상당 부분을 차지하다",
+     "constitute misconduct 위법 행위에 해당하다",
+     "constitute grounds for dismissal 해고 사유가 되다"
+    ],
+    "examVar": [
+     {
+      "en": "Temporary workers constitute nearly 30 percent of the total staff.",
+      "ko": "임시직 근로자들은 전체 직원의 거의 30%를 차지한다."
+     },
+     {
+      "en": "Failing to comply with the new safety guidelines may constitute a serious violation of company policy.",
+      "ko": "새로운 안전 지침을 준수하지 않는 것은 회사 규정의 중대한 위반에 해당될 수 있다."
+     }
+    ]
    }
   ]
  },
@@ -2432,123 +8836,516 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "lease",
-    "meaning": "v. 임차하다(빌리다), 임대하다(빌려주다) n. (집 등의) 임대차 계약",
-    "pos": "v./n."
+    "pron": "[liːs]",
+    "pos": "v./n.",
+    "meaning": "v. 임차하다(빌리다), 임대하다(빌려주다)  n. (집 등의) 임대차 계약",
+    "tip": "\"[[b]]니[[/b]]가 [[b]]쓰라[[/b]](써라).\" 하면서 자신의 땅 등을 [[r]]임대하다[[/r]], 상대방은 [[r]]임차하다[[/r]]",
+    "toeicExpr": [
+     "lease agreement/period 임대 계약/기간",
+     "short-term lease 단기 임대",
+     "lease an office space 사무공간을 임차하다",
+     "lease a building 건물을 임차하다",
+     "leased the building to a retailer 건물을 소매업체에 임대하다",
+     "lease out an office 사무실을 임대하다 (← 내 소유의 사무실을 밖으로 보내 빌려주다)",
+     "lease out a building 건물을 임대하다",
+     "lease out equipment 장비를 임대하다"
+    ],
+    "examVar": [
+     {
+      "note": "lease, lend, borrow, rent의 차이점을 묻는 문제가 자주 출제되었다.\n* lease: (부동산, 자동차 등) 장기간 임대하다, 임차하다 ('빌리다, 빌려주다' 둘 다 쓰임)\n* lend: (작은 물건, 돈 등을) 빌려주다\n* borrow: '빌리다'로 주어가 받는 쪽일 때 사용함\n* rent: 주로 단기 임차(집ㆍ방ㆍ차 등에 쓰이며, 자금(돈)과 결합하지 않음"
+     },
+     {
+      "en": "The company decided to ________ new office space instead of purchasing a building.",
+      "opt": "(A) lend  (B) lease  (C) borrow  (D) buy",
+      "ans": "(B)",
+      "ko": "그 회사는 건물을 구입하는 대신 새 사무실 공간을 임차하기로 결정했다."
+     },
+     {
+      "en": "The bank agreed to ________ the company additional funds for its expansion project.",
+      "opt": "(A) lease  (B) lend  (C) borrow  (D) rent",
+      "ans": "(B)",
+      "ko": "그 은행은 회사의 확장 프로젝트를 위해 추가 자금을 빌려주기로 동의했다."
+     }
+    ]
    },
    {
     "word": "apparent",
-    "meaning": "분명한, 명백한, 외관상의",
-    "pos": "adj."
+    "pron": "[əpǽrənt]",
+    "pos": "a.",
+    "meaning": "a. 분명한, 명백한, 외관상의",
+    "tip": "저 어른은 옆에 있는 아이와 너무 닮아서 [[b]]어! parent[[/b]](부모)임이 [[r]]외관상으로, 분명한, 명백한[[/r]]",
+    "derivatives": [
+     {
+      "word": "apparently",
+      "meaning": "명백히, 언뜻 보기에, 외관상으로는"
+     }
+    ],
+    "toeicExpr": [
+     "apparent reason 명백한 이유",
+     "apparent difference 분명한(외관상의) 차이",
+     "for no apparent reason 뚜렷한 이유 없이",
+     "It is apparent that ~ ~라는 것이 명백하다",
+     "apparently true 명백히 사실인",
+     "apparently successful 겉보기에는 성공적인"
+    ]
    },
    {
     "word": "accelerate",
-    "meaning": "가속하다, 가속화되다",
-    "pos": "v."
+    "pron": "[æksélərèit]",
+    "pos": "v.",
+    "meaning": "v. 가속하다, 가속화되다",
+    "tip": "자동차의 [[b]]악세레이터[[/b]](accelerator)를 밟아 [[r]]가속하다, 가속화되다[[/r]]",
+    "toeicExpr": [
+     "accelerate growth 성장을 가속화하다",
+     "accelerate development 개발을 촉진하다"
+    ]
    },
    {
     "word": "amount",
-    "meaning": "n. 양, 총계 v. 총계가 ~에 이르다",
-    "pos": "n./v."
+    "pron": "[əmáunt]",
+    "pos": "n./v.",
+    "meaning": "n. 양, 총계  v. 총계가 ~에 이르다",
+    "tip": "[[b]]어마[[/b]]어마한 [[r]]양, 총계[[/r]], [[r]]총계가 ~에 이르다[[/r]]",
+    "toeicExpr": [
+     "a large amount of 많은 양의  a small amount of 적은 양의  total amount 총액",
+     "amount to 총계가 ~에 이르다  The total cost amounts to $5,000. 총비용은 5,000달러에 달한다."
+    ],
+    "examVar": [
+     {
+      "en": "When combined with additional fees, the total cost will amount to more than $15,000 by the end of the year.",
+      "ko": "추가 수수료를 포함하면, 총비용은 연말까지 15,000달러를 초과하는 금액에 달하게 될 것이다."
+     }
+    ]
    },
    {
     "word": "injure",
-    "meaning": "손상시키다, 해를 주다",
-    "pos": "v."
+    "pron": "[índʒər]",
+    "pos": "v.",
+    "meaning": "v. 손상시키다, 해를 주다",
+    "tip": "깡패가 \"[[b]]인 줘[[/b]](이리 줘)\" 하며 돈을 빼앗으려고 주먹으로 [[r]]상처를 입히다[[/r]]",
+    "derivatives": [
+     {
+      "word": "injury",
+      "meaning": "상해, 손상"
+     }
+    ],
+    "toeicExpr": [
+     "be injured 부상을 입다",
+     "serious injury 중상  minor injury 경상"
+    ]
    },
    {
     "word": "host",
-    "meaning": "v. (연회 등을) 주최하다, 진행하다 n. 주최자, 진행자",
-    "pos": "v./n."
+    "pron": "[houst]",
+    "pos": "v./n.",
+    "meaning": "v. (연회 등을) 주최하다, 진행하다  n. 주최자, 진행자",
+    "tip": "홈쇼핑의 쇼핑 [[b]]host[[/b]]는 쇼를 [[r]]진행하는[[/r]] 프로그램 [[r]]주최자, 진행자[[/r]]",
+    "toeicExpr": [
+     "host a party/celebration 파티를/축하행사를 주최하다",
+     "host a TV program TV 프로그램을 진행하다",
+     "host country 개최국"
+    ],
+    "examVar": [
+     {
+      "en": "host, guest, participant의 의미를 구분하는 문제가 출제되었다.",
+      "opt": "Ms. Lee was the ______ of the seminar and introduced all the guest speakers.  (A) host  (B) guest  (C) visitor  (D) participant",
+      "ans": "(A)",
+      "ko": "이 씨는 그 세미나의 주최자였으며 모든 초청 연사를 소개했다."
+     }
+    ]
    },
    {
     "word": "fair",
-    "meaning": "① adj. 공평한, 공정한 ② n. 전시회, 박람회",
-    "pos": "adj./n."
+    "pron": "[fɛər]",
+    "pos": "a./n.",
+    "meaning": "1. a. 공평한, 공정한  2. n. 전시회, 박람회",
+    "tip": "① [[b]]페어[[/b]]플레이라란 [[r]]공평한, 공정한[[/r]] 플레이 ② 베이비 [[b]]페어[[/b]], 웨딩 [[b]]페어[[/b]]에서 페어란 [[r]]박람회[[/r]]",
+    "derivatives": [
+     {
+      "word": "fairly",
+      "meaning": "1. 공정하게  2. 상당히, 꽤 (fairly – very 발음 유사성으로 암기)"
+     },
+     {
+      "word": "unfair",
+      "meaning": "불공평한, 불공정한,"
+     }
+    ],
+    "toeicExpr": [
+     "fair decision/treatment/judgment 공정한 결정/대우/판단",
+     "fairly common/accurate/simple 꽤 흔한/정확한/쉬운  treat/play fairly 공정하게 대우하다/경기하다",
+     "unfair treatment 부당한 대우  unfair competition 불공정 경쟁",
+     "career/job/employment fair 취업박람회  trade/book/wellness fair 무역/도서/건강 박람회  international fair 국제 박람회"
+    ],
+    "examVar": [
+     {
+      "en": "fair과 fare(운임)를 구분하는 문제가 자주 출제되었다.",
+      "opt": "The committee made a ______ decision after reviewing all the evidence submitted by both parties.   fair (O)  fare (X)",
+      "ko": "위원회는 양측이 제출한 모든 증거를 검토한 후 공정한 결정을 내렸다."
+     }
+    ]
    },
    {
     "word": "settle",
-    "meaning": "① 정착하다 ② 해결하다, 정산하다",
-    "pos": "v."
+    "pron": "[sétl]",
+    "pos": "v.",
+    "meaning": "v. 1. 정착하다  2. 해결하다, 정산하다",
+    "tip": "피난민들이 [[b]]새로운 틀[[/b]]에 [[r]]정착하다[[/r]]. 대신 주거비를 [[r]]정산하다[[/r]]. 그래서 주거문제를 [[r]]해결하다[[/r]].",
+    "derivatives": [
+     {
+      "word": "settlement",
+      "meaning": "정착, 해결, 합의"
+     }
+    ],
+    "toeicExpr": [
+     "settle in Canada 캐나다에 정착하다",
+     "settle a dispute/matter 분쟁을/문제를 해결하다",
+     "settle the bill 계산을 마치다  settle outstanding charges/an invoice/a balance 미지급 요금을/송장을/잔액을 정산하다",
+     "reach a settlement 합의에 도달하다  negotiate a settlement 합의를 협상하다  finalize a settlement 합의를 최종 확정하다"
+    ],
+    "examVar": [
+     {
+      "en": "'정산하다'란 뜻으로도 쓰인다는 점이 자주 출제되었다.",
+      "opt": "The accounting team needs to settle all outstanding invoices before the end of the quarter.",
+      "ko": "회계팀은 분기 말까지 모든 미지급 청구서를 정산해야 한다."
+     }
+    ]
    },
    {
     "word": "tariff",
+    "pron": "[tǽrif]",
+    "pos": "n.",
     "meaning": "관세",
-    "pos": "n."
+    "tip": "[[b]]태리프 → 때리쁘(때리다)[[/b]] 미국이 중국에 보복 [[r]]관세[[/r]]를 [[b]]때리[[/b]]부리다",
+    "toeicExpr": [
+     "import/export/customs/trade tariff 수입/수출/세관/무역 관세",
+     "tariff barrier/policy 관세 장벽/정책"
+    ]
    },
    {
     "word": "guarantee",
-    "meaning": "n. 보증 v. 보증하다",
-    "pos": "n./v."
+    "pron": "[gæranti:]",
+    "pos": "n. v.",
+    "meaning": "보증  v. 보증하다",
+    "tip": "[[b]]계란[[/b]]을 안전하게 [[b]]티[[/b]]셔츠에 감싸서 절대 깨지지 않게 배달해 주겠다고 [[r]]보증, 보증하다[[/r]]",
+    "toeicExpr": [
+     "product/lifetime/one-year guarantee 제품/평생/1년 보증",
+     "guarantee quality/safety 품질/안전을 보증하다",
+     "A is no guarantee of B A가 B를 보증해 주지는 않는다",
+     "A high salary is no guarantee of job satisfaction. 높은 연봉이 직무 만족을 보장하지는 않는다."
+    ],
+    "examVar": [
+     {
+      "en": "Good customer reviews are no guarantee of product quality.",
+      "ko": "좋은 고객 리뷰가 제품의 품질을 보장하지는 않는다."
+     }
+    ]
    },
    {
     "word": "optimist",
+    "pron": "미[ɔ́ptimist] 영[ɔ́ptimist]",
+    "pos": "n.",
     "meaning": "낙관론자, 낙천주의자",
-    "pos": "n."
+    "tip": "시합 전에 상대편보다 우리 팀이 [[b]]앞선 팀[[/b]]일 것이라는 [[r]]낙관론자, 낙천주의자[[/r]]",
+    "derivatives": [
+     {
+      "word": "optimism",
+      "meaning": "낙천주의"
+     },
+     {
+      "word": "optimistic",
+      "meaning": "낙천적인, 낙관하는"
+     }
+    ],
+    "toeicExpr": [
+     "an optimist about the future 미래에 대해 낙관적인 사람",
+     "remain an optimist 낙관적인 태도를 유지하다",
+     "show optimism 낙관주의를 보이다",
+     "optimistic outlook/forecast/expectations 낙관적인 전망/예측/기대",
+     "be optimistic about sales projections 매출 전망에 대해 낙관적이다"
+    ]
    },
    {
     "word": "conflict",
-    "meaning": "v. 싸우다, 상충하다 n. 싸움, 상충, 충돌",
-    "pos": "v./n."
+    "pron": "v. [kənflíkt]\nn. [kάnflikt, kɔ́nflikt]",
+    "pos": "v. n.",
+    "meaning": "v. 싸우다, 상충하다  n. 싸움, 상충, 충돌",
+    "tip": "두 마리의 투견을 묶어 놓은 [[b]]끈[[/b]]이 [[b]]풀릭트[[/b]](풀렸다). 그러자마자 서로 [[r]]싸우다, 싸움[[/r]]",
+    "toeicExpr": [
+     "conflict of interest 이해 상충   schedule conflict 일정 충돌",
+     "resolve a conflict 갈등을 해결하다   avoid conflicts 충돌을 피하다",
+     "conflict with company policy 회사 규정과의 상충",
+     "conflict with regulations 규정과 상충되다"
+    ],
+    "examVar": [
+     {
+      "en": "The guest speaker requested a new time for the workshop due to a schedule conflict.",
+      "ko": "초청 연사가 일정이 겹쳐서 워크숍 시간을 새로 요청했다."
+     }
+    ]
    },
    {
     "word": "exception",
+    "pron": "[iksépʃən]",
+    "pos": "n.",
     "meaning": "예외",
-    "pos": "n."
+    "tip": "[[b]]except[[/b]](~을 제외하고)와 관련하여 암기",
+    "derivatives": [
+     {
+      "word": "exceptional",
+      "meaning": "매우 뛰어난, 예외적인 (← 평범한 다른 것들의 예외로 매우 뛰어난)"
+     }
+    ],
+    "toeicExpr": [
+     "with the exception of ~을 제외하고 (← ~의 예외를 가지고)",
+     "without exception 예외 없이",
+     "with very few exceptions 거의 예외 없이",
+     "exceptional ability/performance/quality 뛰어난 능력/성과/품질",
+     "exceptional circumstances/case 예외적인 상황/경우"
+    ],
+    "examVar": [
+     {
+      "en": "All departments, with the exception of the accounting division, will be relocated to the new building.",
+      "ko": "회계 부서를 제외하고 모든 부서는 새 건물로 이전될 것이다."
+     }
+    ]
    },
    {
     "word": "delight",
-    "meaning": "n. 기쁨, 즐거움 v. 기쁘게 하다, 즐겁게 하다",
-    "pos": "n./v."
+    "pron": "[diláit]",
+    "pos": "n. v.",
+    "meaning": "n. 기쁨, 즐거움  v. 기쁘게 하다, 즐겁게 하다",
+    "tip": "[[b]]딜[[/b]] 듯이 기뻐하며 [[b]]나이트[[/b]]클럽에서 춤추는 [[r]]기쁨, 즐거움[[/r]]",
+    "derivatives": [
+     {
+      "word": "delighted",
+      "meaning": "(사람이) 기쁜"
+     },
+     {
+      "word": "delightful",
+      "meaning": "(사물이) 기쁨을 주는, 즐거운"
+     }
+    ],
+    "toeicExpr": [
+     "be delighted to announce 발표하게 되어 기쁘다",
+     "be delighted to inform you 당신에게 알려드리게 되어 기쁘다",
+     "delightful experience/meal/stay 즐거운 경험/식사/숙박"
+    ],
+    "examVar": [
+     {
+      "note": "delighted와 delightful을 구분하는 문제가 자주 출제되었다.",
+      "en": "Guests praised the hotel for its ______ service and friendly staff.",
+      "opt": "delightful (O)  delighted (X)",
+      "ko": "투숙객들은 훌륭한 서비스와 친절한 직원들로 인해 그 호텔을 칭찬했다."
+     }
+    ]
    },
    {
     "word": "markedly",
+    "pron": "[mάːrkidli]",
+    "pos": "ad.",
     "meaning": "현저하게, 눈에 띄게",
-    "pos": "adv."
+    "tip": "책에 [[b]]mark[[/b]](표시)를 해서 [[r]]현저하게, 눈에 띄게[[/r]] 보이는",
+    "toeicExpr": [
+     "increase/decrease/improve markedly 현저하게 증가하다/감소하다/개선되다"
+    ],
+    "examVar": [
+     {
+      "en": "Customer satisfaction scores differed markedly between the two service centers.",
+      "ko": "두 서비스 센터 간 고객 만족도 점수는 뚜렷한 차이를 보였다."
+     }
+    ]
    },
    {
     "word": "cab",
+    "pron": "[kæb]",
+    "pos": "n.",
     "meaning": "택시",
-    "pos": "n."
+    "tip": "자가용 위에 [[b]]캡[[/b]](cap 모자)를 쓴 것처럼 TAXI라는 간판을 쓰고 다니는 [[r]]택시[[/r]]",
+    "toeicExpr": [
+     "take/call a cab 택시를 타다/부르다  cab fare 택시 요금"
+    ]
    },
    {
     "word": "range",
-    "meaning": "n. 범위, 영역 v. ~의 범위에 걸치다",
-    "pos": "n./v."
+    "pron": "[reindʒ]",
+    "pos": "n./v.",
+    "meaning": "n. 범위, 영역  v. ~의 범위에 걸치다",
+    "tip": "일기예보에서 알려주는 [[b]]rain[[/b]](비)이 오는 [[b]]地[[/b]](땅 지)의 [[r]]범위, 영역, ~의 범위에 걸치다[[/r]]",
+    "toeicExpr": [
+     "a wide range of products 다양한 제품군  price range 가격대",
+     "age range 연령대  out of range 범위 밖의",
+     "range from A to B A에서 B까지 이르다(다양하다)",
+     "The course fees range from $100 to $500. 수강료는 100달러에서 500달러까지 다양하다."
+    ],
+    "examVar": [
+     {
+      "en": "Delivery times range from two days to one week.",
+      "ko": "배송 기간은 2일에서 1주일까지이다."
+     }
+    ]
    },
    {
     "word": "lie",
-    "meaning": "① n. 거짓말 v. 거짓말하다 ② v. 누워 있다, 놓여 있다, 위치하다",
-    "pos": "n./v."
+    "pron": "[lai]",
+    "meaning": "1. n. 거짓말 v. 거짓말하다  2. v. 누워 있다, 놓여 있다, 위치하다",
+    "tip": "① 담배를 사기 위해 청소년이 [[b]]나이[[/b]]를 속이며 [[r]]거짓말, 거짓말하다[[/r]]\n② 할머니가 [[b]]나이[[/b]]가 들어 힘없이 [[r]]눕다, 누워 있다[[/r]]",
+    "toeicExpr": [
+     "거짓말하다 (lie-lied-lied) / 눕다, 놓여 있다 (lie-lay-lain)",
+     "lie about the issue 문제에 대해 거짓말하다",
+     "lie on the bed 침대에 누워 있다",
+     "lie in the center 중심에 놓여 있다(위치하다)"
+    ]
    },
    {
     "word": "lay",
+    "pron": "[lei]",
+    "pos": "v.",
     "meaning": "놓다, 두다, 쌓다, 설치하다",
-    "pos": "v."
+    "tip": "① 엑스[[b]]레이[[/b]]를 찍기 위해 환자를 촬영기 밑에 [[r]]놓다[[/r]]\n② 농구에서 [[b]]레이업[[/b]]슛이란 공을 골대 위로 [[r]]놓는[[/r]](lay up) 슛",
+    "derivatives": [
+     {
+      "word": "layer",
+      "meaning": "(쌓여 있는) 층, 막"
+     }
+    ],
+    "toeicExpr": [
+     "과거, 과거분사형 (lay-laid-laid)",
+     "lay the book on the table 책을 탁자 위에 놓다",
+     "lay bricks 벽돌을 쌓다  lay a carpet 카펫을 깔다",
+     "lay a cable 케이블을 설치하다",
+     "multiple layers 여러 겹의 층  protective layer 보호 층",
+     "outer layer 바깥층  inner layer 안쪽층  thin layer 얇은 층"
+    ],
+    "examVar": [
+     {
+      "note": "lie, lay의 뜻과 과거, 과거분사형을 구분하는 문제가 자주 출제되었다."
+     },
+     {
+      "en": "예1) Please ________ the documents on my desk before you leave.",
+      "ko": "떠나기 전에 문서들을 제 책상 위에 놓아 주세요.",
+      "note": "lay (O) lie (X)"
+     },
+     {
+      "en": "예2) She ________ her keys on the counter this morning.",
+      "opt": "(A) lay  (B) lies  (C) laid  (D) lied",
+      "ans": "(C)",
+      "ko": "그녀는 오늘 아침 카운터에 열쇠를 놓았다."
+     }
+    ]
    },
    {
     "word": "save",
-    "meaning": "① 안전하게 지키다, (사람·생명 등을) 구하다 ② 저축하다, 아끼다, 저장하다",
-    "pos": "v."
+    "pron": "[seiv]",
+    "pos": "v.",
+    "meaning": "1. 안전하게 지키다, (사람 · 생명 등을) 구하다\n2. 저축하다, 아끼다, 저장하다",
+    "tip": "[[b]]safe[[/b]](안전한)의 동사형: 사람, 돈을 [[r]]안전하게 하다[[/r]], 즉 [[r]]생명을 구하다, 저축하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "safety",
+      "meaning": "안전"
+     },
+     {
+      "word": "savings",
+      "meaning": "저축, 모아둔 돈"
+     }
+    ],
+    "toeicExpr": [
+     "save a life 생명을 구하다",
+     "save money/time/energy 돈을/시간을/에너지를 절약하다",
+     "save a file 파일을 저장하다  save documents 문서를 저장하다",
+     "safety regulations/standards 안전 규정/기준",
+     "savings account 저축 계좌  retirement savings 은퇴 자금"
+    ]
    },
    {
     "word": "demotion",
+    "pron": "[dimóuʃən]",
+    "pos": "n.",
     "meaning": "강등",
-    "pos": "n."
+    "tip": "\"이 사람을 저 [[b]]뒤[[/b]]에 있는 자리로 [[b]]모셔[[/b]]라.\" 하면서 과장 자리에서 대리 자리로 [[r]]강등[[/r]]",
+    "derivatives": [
+     {
+      "word": "demote",
+      "meaning": "강등시키다, 좌천시키다"
+     }
+    ],
+    "toeicExpr": [
+     "demotion to a lower position 더 낮은 직책으로의 강등",
+     "be demoted to assistant manager 부지점장으로 강등되다"
+    ]
    },
    {
     "word": "consult",
+    "pron": "[kənsʌ́lt]",
+    "pos": "v.",
     "meaning": "상담하다, (전문가에게) 의견을 묻다, (설명서 등을) 참고하다",
-    "pos": "v."
+    "tip": "[[b]]con[[/b]](함께) [[b]]설[[/b]](서있는) [[b]]two[[/b]](2) 사람이 서로 [[r]]상담하다, 의견을 묻다[[/r]]. 설명서와 [[r]]상담하는[[/r]] 것은 설명서를 [[r]]'참고하다'[[/r]]의 의미",
+    "derivatives": [
+     {
+      "word": "consultant",
+      "meaning": "상담자, 고문"
+     },
+     {
+      "word": "consultation",
+      "meaning": "상담, 자문"
+     }
+    ],
+    "toeicExpr": [
+     "consult a lawyer/doctor 변호사와/의사와 상담하다",
+     "consult an expert 전문가의 자문을 구하다",
+     "consult the manual/dictionary 설명서를/사전을 참고하다",
+     "financial consultant 재정 상담가",
+     "management consultant 경영 컨설턴트",
+     "provide consultation 자문을 제공하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. He was a management ________ to the company.",
+      "ko": "그는 그 회사의 고문이었다.",
+      "note": "consultant (O)  consultation (X)  consult (X)"
+     },
+     {
+      "en": "2. I think you should consult a doctor without delay.",
+      "ko": "당신은 지체 없이 의사를 만나 봐야 한다고 생각한다."
+     },
+     {
+      "en": "3. The woman is consulting a map.",
+      "ko": "여자가 지도를 보고 있다(참고하고 있다)."
+     }
+    ]
    },
    {
     "word": "attire",
-    "meaning": "n. 복장, 의복 v. 차려 입히다",
-    "pos": "n./v."
+    "pron": "[ətáiər]",
+    "pos": "n./v.",
+    "meaning": "n. 복장, 의복  v. 차려 입히다",
+    "tip": "[[b]]a[[/b]](하나의) [[b]]넥타이어[[/b]]. 넥타이도 [[r]]의복, 복장[[/r]]의 일부",
+    "toeicExpr": [
+     "business/casual/appropriate attire 비즈니스/캐주얼/알맞은 복장"
+    ]
    },
    {
     "word": "figure",
-    "meaning": "① n. 인물 ② n. 모습, 그림 ③ n. 숫자 v. 계산하다",
-    "pos": "n./v."
+    "pron": "[fíɡjər]",
+    "pos": "n./v.",
+    "meaning": "1. n. 인물  2. n. 모습, 그림  3. n. 숫자  v. 계산하다",
+    "tip": "심판이 [[b]]피겨[[/b]] 스케이팅의 점수를 매길 때 각 선수의 [[r]]인물[[/r]]과 연기 [[r]]모습[[/r]]을 [[r]]숫자[[/r]]로 [[r]]계산하다[[/r]]",
+    "toeicExpr": [
+     "public figure 공인, 유명 인사",
+     "the figure below 아래 도표  Figure 2 그림 2",
+     "sales/official/projected figures 판매/공식/예상 수치",
+     "figure out 알아내다, 이해하다, 해결하다 (← 완전히(out) 계산해 내다)",
+     "figure out the problem 문제를 해결하다(알아내다)",
+     "figure out the cause/details/solution 원인을/세부 사항을/해결책을 알아내다",
+     "figure out how to ~ 어떻게 ~할지 알아내다",
+     "figure out what to ~ 무엇을 ~할지 파악하다"
+    ],
+    "examVar": [
+     {
+      "en": "According to the latest sales figures, the company's new product line exceeded initial revenue expectations.",
+      "ko": "최신 판매 수치에 따르면, 회사의 신제품 라인은 초기 매출 기대치를 초과했다."
+     }
+    ]
    }
   ]
  },
@@ -2558,123 +9355,513 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "name",
-    "meaning": "임명하다, 지명하다",
-    "pos": "v."
+    "pron": "[neim]",
+    "pos": "v.",
+    "meaning": "v. 임명하다, 지명하다",
+    "tip": "[[b]]name[[/b]](이름)을 불러 [[r]]지명하다, 임명하다[[/r]]",
+    "toeicExpr": [
+     "name John as spokesperson John을 대변인으로 임명하다",
+     "be named as representative 대표로 임명되다"
+    ],
+    "examVar": [
+     {
+      "en": "The board named Mr. Kim as the new marketing director.",
+      "ko": "이사회는 김 씨를 신임 마케팅 이사로 임명했다."
+     }
+    ]
    },
    {
     "word": "industry",
-    "meaning": "① 산업 ② 근면",
-    "pos": "n."
+    "pron": "[índəstri]",
+    "pos": "n.",
+    "meaning": "n. 1. 산업  2. 근면",
+    "tip": "[[b]]인도's tree[[/b]](인도네시아의) [[b]]tree[[/b]](나무) [[r]]산업[[/r]]에 [[r]]근면[[/r]]하게 일하는 사람들",
+    "derivatives": [
+     {
+      "word": "industrious",
+      "meaning": "근면한"
+     },
+     {
+      "word": "industrial",
+      "meaning": "산업의 (→ \"인도's tree all: 인도는 나무 산업이 전부이다.\"로 industrious와 구분해서 암기)"
+     }
+    ],
+    "toeicExpr": [
+     "manufacturing industry 제조업  service/film industry 서비스/영화 산업",
+     "industious worker 근면한 직원",
+     "industrial waste 산업 폐기물"
+    ],
+    "examVar": [
+     {
+      "note": "industrial과 industrious의 의미를 구분하는 문제가 자주 출제되었다.",
+      "en": "The government plans to build a new ______ area to attract foreign investment.",
+      "opt": "industrial (O)  industrious (X)",
+      "ko": "정부는 외국 투자를 유치하기 위해 새로운 산업 지역을 건설할 계획이다."
+     }
+    ]
    },
    {
     "word": "plummet",
-    "meaning": "수직으로 떨어지다, 폭락하다",
-    "pos": "v."
+    "pron": "[plʌ́mit]",
+    "pos": "v.",
+    "meaning": "v. 수직으로 떨어지다, 폭락하다",
+    "tip": "낙하산을 [[b]]풀러 밑[[/b]]으로 [[r]]수직으로 떨어지다[[/r]]",
+    "toeicExpr": [
+     "plummet sharply 급격히 폭락하다  stock prices plummet 주가가 급락하다",
+     "demand plummets 수요가 급격히 떨어지다",
+     "profits plummet 이익이 급격히 떨어지다"
+    ],
+    "examVar": [
+     {
+      "en": "As travel restrictions were imposed, hotel occupancy rates plummeted sharply across the region.",
+      "ko": "여행 제한이 부과되자 해당 지역 전반에서 호텔 객실 점유율이 급격히 폭락했다."
+     }
+    ]
    },
    {
     "word": "ahead",
-    "meaning": "① 앞으로, 앞에 ② 미리",
-    "pos": "adv."
+    "pron": "[əhéd]",
+    "pos": "ad.",
+    "meaning": "ad. 1. 앞으로, 앞에  2. 미리",
+    "tip": "뱀이 [[b]]어! head[[/b]](머리)가 꼬리보다 [[r]]미리, 앞으로[[/r]] 간다.",
+    "toeicExpr": [
+     "go ahead 진행하다, 앞으로 나아가다  move ahead 앞으로 나아가다",
+     "ahead of schedule 일정보다 앞서  ahead of time 미리, 사전에",
+     "plan ahead 미리 계획하다"
+    ],
+    "examVar": [
+     {
+      "en": "The project was completed ahead of schedule.",
+      "ko": "그 프로젝트는 예정보다 빨리 완료되었다."
+     }
+    ]
    },
    {
     "word": "detriment",
-    "meaning": "손해, 해, 불이익",
-    "pos": "n."
+    "pron": "[détrimənt]",
+    "pos": "n.",
+    "meaning": "n. 손해, 해, 불이익",
+    "tip": "[[b]]대출이 많다[[/b]], 그래서 그 이자 때문에 [[r]]손해[[/r]]를 보다",
+    "derivatives": [
+     {
+      "word": "detrimental",
+      "meaning": "손해의, 해가 되는"
+     }
+    ],
+    "toeicExpr": [
+     "cause detriment to A A에 손해를 초래하다",
+     "financial detriment 재정적 손해",
+     "be to the detriment of A A에 해가 되다",
+     "be to the detriment of the company 회사에 해가 되다",
+     "be to the detriment of public safety 공공 안전에 해가 되다"
+    ],
+    "examVar": [
+     {
+      "en": "Excessive cost-cutting is to the detriment of product quality.",
+      "ko": "과도한 비용 절감은 제품 품질에 해가 된다."
+     }
+    ]
    },
    {
     "word": "furthermore",
-    "meaning": "뿐만 아니라, 더욱이",
-    "pos": "adv."
+    "pron": "[fə́ːrðərmɔ́ːr]",
+    "pos": "ad.",
+    "meaning": "ad. 뿐만 아니라, 더욱이",
+    "tip": "[[b]][further[[/b]](그 이상의) + [[b]]more[[/b]](더 많이)] 그 이상으로 더 많이, 즉 [[r]]뿐만 아니라, 더욱이[[/r]]",
+    "toeicExpr": [
+     "The company offers great benefits; furthermore, it values employees' opinions. 회사는 좋은 복지를 제공하며, 더욱이 직원의 의견을 존중한다."
+    ],
+    "examVar": [
+     {
+      "en": "The manager approved the proposal; ______, he offered additional funding for the project.",
+      "opt": "(A) meanwhile  (B) otherwise  (C) furthermore  (D) instead",
+      "ans": "(C)",
+      "ko": "매니저는 그 제안을 승인했다. 게다가, 프로젝트에 추가 자금도 제공했다.",
+      "note": "meanwhile: 그동안에 / otherwise: 그렇지 않으면 / instead: 그 대신에"
+     }
+    ]
    },
    {
     "word": "shortly",
-    "meaning": "곧, 이내",
-    "pos": "adv."
+    "pron": "[ʃɔ́ːrtli]",
+    "pos": "ad.",
+    "meaning": "ad. 곧, 이내",
+    "tip": "[[[b]]short[[/b]](짧은) + [[b]]ly[[/b]]] 시간적으로 [[r]]짧게, 즉 곧, 이내[[/r]]",
+    "toeicExpr": [
+     "shortly after/before ~후에 곧 / ~직전에",
+     "The meeting was canceled shortly before it was scheduled to begin. 회의는 시작 예정 직전에 취소되었다.",
+     "arrive/leave shortly 곧 도착하다/떠나다  will begin shortly 곧 시작될 것이다"
+    ],
+    "examVar": [
+     {
+      "en": "The manager will arrive shortly after the meeting begins.",
+      "ko": "그 관리자는 회의가 시작된 직후에 도착할 것이다."
+     }
+    ]
    },
    {
     "word": "especially",
-    "meaning": "특별히",
-    "pos": "adv."
+    "pron": "[ispéʃəli]",
+    "pos": "ad.",
+    "meaning": "ad. 특별히",
+    "tip": "[[[b]]e[[/b]](강조) + [[b]]special[[/b]](특별한) + [[b]]ly[[/b]](부사형 어미)] [[r]]특별히[[/r]]",
+    "toeicExpr": [
+     "especially important/useful/popular 특별히 중요한/유용한/인기 있는"
+    ]
    },
    {
     "word": "free",
-    "meaning": "1. 자유로운 2. ~가 없는, 무료의",
-    "pos": "adj."
+    "pron": "[friː]",
+    "pos": "a.",
+    "meaning": "a. 1. 자유로운  2. ~가 없는, 무료의",
+    "tip": "① 아무나 [[b]]free[[/b]](자유롭게) 입장할 수 있는 놀이공원은 입장료[[r]]가 없는, 즉 무료의[[/r]]  ② 카페인([[b]]caffeine[[/b]])이 [[r]]없는[[/r]] 것은 caffeine-[[b]]free[[/b]], 설탕([[b]]sugar[[/b]])이 [[r]]없는[[/r]] 것은 sugar-[[b]]free[[/b]]",
+    "toeicExpr": [
+     "free admission 무료 입장  free delivery service 무료 배송 서비스",
+     "tax-free 면세의  free sample 무료 샘플",
+     "feel free to ~ 마음껏 ~하다",
+     "Feel free to call me. 편하게 전화하세요.",
+     "for free 무료로",
+     "provide the service for free 서비스를 무료로 제공하다",
+     "offer the trial for free 체험판을 무료로 제공하다",
+     "free of ~이 없는, ~이 면제된",
+     "free of charge 무료로  free of errors 오류가 없는",
+     "free from (위험 등으로부터) 벗어난",
+     "free from danger 위험에서 벗어난  free from anxiety 불안에서 벗어난"
+    ],
+    "examVar": [
+     {
+      "en": "1. This service is free of charge.",
+      "ko": "이 서비스는 무료이다."
+     },
+     {
+      "en": "2. The new packaging is designed to be free from harmful chemicals.",
+      "ko": "새 포장은 유해 화학 물질로부터 벗어나도록 설계되었다."
+     }
+    ]
    },
    {
     "word": "mounting",
-    "meaning": "점점 증가하는, 커져 가는",
-    "pos": "adj."
+    "pron": "[máuntiŋ]",
+    "pos": "a.",
+    "meaning": "a. 점점 증가하는, 커져 가는",
+    "tip": "[[b]]mountain[[/b]](산)을 올라가고 있어 높이가 [[r]]점점 증가하는[[/r]]",
+    "derivatives": [
+     {
+      "word": "mount",
+      "meaning": "오르다, 증가하다"
+     }
+    ],
+    "toeicExpr": [
+     "mounting costs/expenses 증가하는 비용/지출",
+     "mounting pressure/concerns 커져 가는 압박/우려",
+     "mount rapidly 급격히 증가하다"
+    ],
+    "examVar": [
+     {
+      "en": "Due to mounting losses, the board decided to restructure the organization.",
+      "ko": "커져 가는 적자로 인해 이사회는 조직을 재편하기로 결정했다."
+     }
+    ]
    },
    {
     "word": "load",
-    "meaning": "1. 짐, 화물, 적재량 / (짐·데이터를) 싣다 2. (업무·책임의) 부담",
-    "pos": "n./v."
+    "pron": "[loud]",
+    "pos": "n./v.",
+    "meaning": "1. n. 짐, 화물, 적재량 v. (짐 · 데이터를) 싣다  2. n. (업무 · 책임의) 부담",
+    "tip": "① [[b]]road[[/b]](길)에 차를 세우고 [[r]]짐을 싣다[[/r]]. 그리고 사람에게 [[r]]짐[[/r]]이 지워진 것, 즉 [[r]]부담[[/r]]\n② [[b]]upload[[/b]]는 up(위로) 데이터와 같은 [[r]]짐을 싣는[[/r]] 것",
+    "toeicExpr": [
+     "load goods onto a truck 트럭에 화물을 싣다 (← onto: on(위에) + to(~쪽으로), 즉 ~위로)",
+     "load the cargo 화물을 적재하다",
+     "load data/files 데이터를/파일을 올리다(불러오다)",
+     "workload 업무량  financial load 재정적 부담"
+    ]
    },
    {
     "word": "attach",
-    "meaning": "붙이다, 첨부하다",
-    "pos": "v."
+    "pron": "[ətǽtʃ]",
+    "pos": "v.",
+    "meaning": "v. 붙이다, 첨부하다",
+    "tip": "\"[[r]]어![[/r]] 이거 네가 [[b]]땠지[[/b]]? 다시 붙여\" 즉, [[r]]붙이다[[/r]], [[r]]첨부하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "attachment",
+      "meaning": "부착, 첨부"
+     }
+    ],
+    "toeicExpr": [
+     "attach a file/document/photo 파일을/문서을/사진을 첨부하다",
+     "be attached to the door 문에 붙어 있다",
+     "attach the sign to the building 표지판을 건물에 부착하다",
+     "email attachment 이메일 첨부  include an attachment 첨부물을 포함하다"
+    ]
    },
    {
     "word": "personnel",
-    "meaning": "직원들, 인원 / 인사 관련한",
-    "pos": "n./adj."
+    "pron": "[pə̀ːrsənél]",
+    "pos": "n./a.",
+    "meaning": "n. 직원들, 인원 a. 인사 관련한",
+    "tip": "[[b]]person[[/b]](사람)을, 즉 [[r]]인원[[/r]]을 [[b]]낼[[/b]](내주는) 부서인 [[r]]인사과[[/r]]",
+    "toeicExpr": [
+     "personnel department 인사부  personnel manager 인사 담당자",
+     "qualified personnel 자격을 갖춘 인원  personnel training 직원 교육",
+     "company personnel 회사 직원들  office personnel 사무 직원",
+     "administrative personnel 행정 직원",
+     "authorized personnel 승인된(허가된) 직원"
+    ],
+    "examVar": [
+     {
+      "en": "personnel과 personal을 구분하는 문제가 자주 출제되었다.\nAccess to the secure area is restricted to authorized _______ only.",
+      "opt": "(A) personnel  (B) personal  (C) personality  (D) personally",
+      "ans": "(A)",
+      "ko": "보안 구역 출입은 승인된 직원에게만 제한된다.",
+      "note": "personal: 개인의 / personality: 성격"
+     }
+    ]
    },
    {
     "word": "invoice",
-    "meaning": "청구서, 계산서, 송장 / 청구서를 발행하다",
-    "pos": "n./v."
+    "pron": "[ínvɔis]",
+    "pos": "n./v.",
+    "meaning": "n. 청구서, 계산서, 송장(送狀) v. 청구서를 발행하다",
+    "tip": "가게 [[b]]in[[/b]](안에) 깡패 [[b]]boys[[/b]](청년들)이 들이닥쳐 [[r]]청구서[[/r]]를 보이며 빚을 갚으라고 독촉하다",
+    "toeicExpr": [
+     "issue/send an invoice 청구서를 발행하다/보내다",
+     "invoice amount 청구 금액",
+     "invoice a client 고객에게 청구서를 발행하다",
+     "invoice for goods 상품에 대해 청구서를 발행하다"
+    ]
    },
    {
     "word": "shipment",
-    "meaning": "선적 (건, 물품), 배송 (건, 물품), 발송 (건, 물품)",
-    "pos": "n."
+    "pron": "[ʃípmənt]",
+    "pos": "n.",
+    "meaning": "n. 선적 (건, 물품), 배송 (건, 물품), 발송 (건, 물품)",
+    "tip": "[ship(배) + ment] [[b]]ship[[/b]](배)에 물건을 [[r]]선적[[/r]]하여 [[r]]배송[[/r]]",
+    "derivatives": [
+     {
+      "word": "shipping",
+      "meaning": "배송, 발송"
+     }
+    ],
+    "toeicExpr": [
+     "shipment vs shipping",
+     "shipment = 한 번에 보내는 \"물량/건(패키지 · 화물)\"(단위) — 도착, 지연, 수량과 함께 쓰임",
+     "shipping = 그 물량을 보내는 \"배송/운송 과정 · 서비스 · 비용정책\"",
+     "track a shipment 배송을 추적하다  delayed shipment 지연된 배송",
+     "international shipment 국제 배송  priority shipment 우선 배송",
+     "return shipment 반송 배송  arrange shipment 선적을 준비하다",
+     "confirm shipment 선적을 확인하다",
+     "shipping cost 배송비  shipping fee 배송 요금",
+     "free shipping 무료 배송  shipping address 배송 주소"
+    ],
+    "examVar": [
+     {
+      "en": "shipment와 shipping을 구분하는 문제가 자주 출제되었다.\nDue to customs delays, the _______ of electronic components arrived three days later than scheduled.",
+      "opt": "shipment (O)  shipping (X)",
+      "ko": "통관 지연으로 인해 전자 부품의 발송 화물은 예정된 것보다 3일 늦게 도착했다.",
+      "note": "'발송된 화물물품 자체'이기 때문에 shipment가 답이다. shipping은 '운송 과정이나 배송 활동 전반'을 의미해 arrived의 주어로 부적절하다."
+     },
+     {
+      "en": "Please double-check the _______ address before submitting your order.",
+      "opt": "shipping (O)  shipment (X)",
+      "ko": "주문을 제출하기 전에 배송 주소를 다시 확인해 주세요."
+     }
+    ]
    },
    {
     "word": "site",
+    "pron": "[sait]",
+    "pos": "n.",
     "meaning": "장소, 현장, 부지",
-    "pos": "n."
+    "tip": "인터넷 [[b]]사이트[[/b]]란 온라인상에서 정보를 찾을 수 있는 [[r]]장소, 현장[[/r]]",
+    "toeicExpr": [
+     "construction site 건설 현장   work site 작업 현장",
+     "on-site 현장의, 현장에서   off-site 외부에서, 현장 밖에서",
+     "site inspection 현장 점검   tourist sites 관광지"
+    ]
    },
    {
     "word": "besides",
-    "meaning": "1. ~외에도, ~뿐만 아니라 2. 게다가",
-    "pos": "prep./adv."
+    "pron": "[bisáidz]",
+    "pos": "1. prep. 2. ad.",
+    "meaning": "1. prep. ~ 외에도, ~뿐만 아니라  2. ad. 게다가",
+    "tip": "왼쪽 [[b]]side[[/b]](측면) [[r]]외에도, 게다가[[/r]] 오른쪽 [[b]]side[[/b]]도 [[b]]be[[/b]](있다)",
+    "derivatives": [
+     {
+      "word": "beside",
+      "meaning": "~ 옆에, ~ 곁에"
+     }
+    ],
+    "toeicExpr": [
+     "besides는 beside 외에도, 게다가 's가 붙어 있다'로 beside와 구분하자.",
+     "besides the cost 비용 외에도",
+     "besides the problem 그 문제 외에도",
+     "besides, it's too expensive 게다가 그건 너무 비싸",
+     "beside the door 문 옆에   beside the table 테이블 옆에"
+    ],
+    "examVar": [
+     {
+      "en": "1. _______ the high price, the product is difficult to use.",
+      "opt": "Besides (O) Beside (X)",
+      "ko": "높은 가격 외에도, 그 제품은 사용하기 어렵다."
+     },
+     {
+      "en": "2. The job pays well. Besides, the working hours are flexible.",
+      "ko": "그 일은 급여도 좋아. 게다가 근무 시간도 유연해."
+     }
+    ]
    },
    {
     "word": "sort",
-    "meaning": "종류 / 종류별로 분류하다",
-    "pos": "n./v."
+    "pron": "[sɔːrt]",
+    "pos": "n. v.",
+    "meaning": "n. 종류  v. 종류별로 분류하다",
+    "tip": "소를 품종에 따라 [[b]]소 one[[/b]](1), [[b]]소 two[[/b]](2) 등과 같이 [[r]]종류, 종류별로 분류하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "sorting",
+      "meaning": "구분, 분류"
+     }
+    ],
+    "toeicExpr": [
+     "a wide sort of products 다양한 종류의 상품",
+     "this sort of issue 이런 종류의 문제",
+     "all sorts of requests 온갖 요청",
+     "sort by type 종류별로 분류하다   sort files 파일을 분류하다",
+     "sort alphabetically 알파벳순으로 정렬하다",
+     "sorting process/system 분류 과정/시스템",
+     "mail sorting 우편 분류"
+    ]
    },
    {
     "word": "frequent",
+    "pron": "[fríːkwənt]",
+    "pos": "a.",
     "meaning": "자주 일어나는, 빈번한, 단골의",
-    "pos": "adj."
+    "tip": "자르면 또 [[b]]풀이 컨[[/b]](크는) [[b]]투[[/b]], 즉 [[r]]자주 일어나는, 빈번한[[/r]]",
+    "derivatives": [
+     {
+      "word": "frequently",
+      "meaning": "빈번히, 자주"
+     },
+     {
+      "word": "frequency",
+      "meaning": "자주 일어남, 빈도"
+     }
+    ],
+    "toeicExpr": [
+     "frequent visits 잦은 방문   frequent cause 빈번한 원인",
+     "frequent customer 단골 고객",
+     "occur frequently 자주 발생하다   be used frequently 자주 사용되다",
+     "high/low frequency 높은/낮은 빈도"
+    ]
    },
    {
     "word": "major",
-    "meaning": "1. 주요한, 중요한 2. 전공 / 전공하다",
-    "pos": "adj./n./v."
+    "pron": "[méidʒər]",
+    "pos": "1. a. 2. n. v.",
+    "meaning": "1. a. 주요한, 중요한  2. n. 전공  v. 전공하다",
+    "tip": "① 미국 야구 [[b]]메이저[[/b]]리그는 마이너리그보다 더 [[r]]주요한, 중요한[[/r]] 리그   ② [[r]]주요한[[/r]] → 다른 과목보다 더 [[r]]주요한[[/r]] 과목, 즉 [[r]]전공, 전공하다[[/r]]",
+    "toeicExpr": [
+     "major issue/factor/reason/concern 주요 문제/요인/이유/우려 사항",
+     "major role 중요한 역할",
+     "major in Economics 경제학을 전공하다",
+     "Business Administration major 경영학 전공"
+    ]
    },
    {
     "word": "prior",
+    "pron": "[práiər]",
+    "pos": "a.",
     "meaning": "~보다 먼저의, ~보다 중요한, 우선하는, 사전의",
-    "pos": "adj."
+    "tip": "① \"귀한 계란 [[b]]후라이[[/b]]여? 그건 우리집에서 [[r]]가장 중요한, 우선하는[[/r]] 아빠에게 다른 가족[[r]]보다 먼저[[/r]] 줘야지.\"라고 했던 가부장적 조선시대   ② [[b]]pri[[/b]](pre: before) + [[b]]or[[/b]](비교형 어미)] [[r]]~보다 먼저의[[/r]]",
+    "derivatives": [
+     {
+      "word": "priority",
+      "meaning": "우선권, 우선해야 할 일"
+     },
+     {
+      "word": "prioritize",
+      "meaning": "우선순위를 매기다"
+     }
+    ],
+    "toeicExpr": [
+     "prior to + 명사/동명사: ~에 앞서",
+     "prior to the meeting/deadline 회의/마감일 전에",
+     "prior to signing the contract 계약서에 서명하기 전에",
+     "prior approval/arrangement/notice 사전 승인/합의/통보",
+     "top priority 최우선 과제   set priorities 우선순위를 정하다",
+     "give priority to safety 안전에 우선권을 두다",
+     "prioritize tasks/goals 업무/목표의 우선순위를 정하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. All applicants must submit the required documents prior to attending the orientation session.",
+      "ko": "모든 지원자는 오리엔테이션 세션에 참석하기에 앞서 필수 서류를 제출해야 한다."
+     },
+     {
+      "en": "2. Employees must obtain prior approval before making any purchases.",
+      "ko": "직원들은 구매를 하기 전에 사전 승인을 받아야 한다."
+     }
+    ]
    },
    {
     "word": "extra",
-    "meaning": "추가의, 여분의",
-    "pos": "adj."
+    "pron": "[ékstrə]",
+    "pos": "a.",
+    "meaning": "a. 추가의, 여분의",
+    "tip": "[[b]]엑스트라[[/b]] 배우는 주인공이 아니라 [[r]]여분의, 추가의[[/r]] 사람",
+    "toeicExpr": [
+     "extra charge/fee/cost/expense 추가 요금/수수료/비용/지출",
+     "extra time/work 추가 시간/업무"
+    ]
    },
    {
     "word": "dominant",
-    "meaning": "우세한, 지배적인",
-    "pos": "adj."
+    "pron": "미[dɑ́minənt] 영[dɔ́minənt]",
+    "pos": "a.",
+    "meaning": "a. 우세한, 지배적인",
+    "tip": "국민들이 대통령 후보로 [[b]]다 미는 투[[/b]]로 [[r]]우세한, 지배적인[[/r]]",
+    "derivatives": [
+     {
+      "word": "dominate",
+      "meaning": "지배하다, 우세하다"
+     },
+     {
+      "word": "predominant",
+      "meaning": "우세한, 두드러진"
+     }
+    ],
+    "toeicExpr": [
+     "dominant position/role 지배적인(우세한) 위치/역할",
+     "dominant market share 지배적인 시장 점유율",
+     "dominate the market 시장을 지배하다",
+     "dominate the competition 경쟁에서 우위를 차지하다",
+     "predominant influence 지배적인 영향"
+    ],
+    "examVar": [
+     {
+      "en": "The company maintains a dominant market share in the smartphone industry.",
+      "ko": "그 회사는 스마트폰 업계에서 지배적인 시장 점유율을 유지하고 있다."
+     }
+    ]
    },
    {
     "word": "agriculture",
-    "meaning": "농업, 농사",
-    "pos": "n."
+    "pron": "[ǽgrikʌltʃər]",
+    "pos": "n.",
+    "meaning": "n. 농업, 농사",
+    "tip": "[[b]]애가 그리[[/b]](그렇게) 벼를 [[b]]칼로 쳐[[/b]]서 추수하는 [[r]]농업, 농사[[/r]]",
+    "derivatives": [
+     {
+      "word": "agricultural",
+      "meaning": "농업의"
+     }
+    ],
+    "toeicExpr": [
+     "agriculture industry 농업 산업",
+     "agricultural products 농산물  agricultural development 농업 개발"
+    ]
    }
   ]
  },
@@ -2684,123 +9871,515 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "annual",
-    "meaning": "1년의, 해마다의",
-    "pos": "adj."
+    "pron": "[ǽnjuəl]",
+    "pos": "a.",
+    "meaning": "a. 1년의, 해마다의",
+    "tip": "쑥쑥 자라서 [[r]]해마다[[/r]] [[b]]애[[/b]]가 [[b]]new 얼[[/b]]굴로 변한다, 즉 [[r]]1년의, 해마다의[[/r]]",
+    "derivatives": [
+     {
+      "word": "annually",
+      "meaning": "매년, 1년에 한 번씩"
+     },
+     {
+      "word": "semiannual",
+      "meaning": "6개월마다의 (← semi는 half-(절반)를 의미함)"
+     }
+    ],
+    "toeicExpr": [
+     "annual leave 연차 휴가",
+     "annual event/report 연례 행사/보고서",
+     "annual growth rate 연간 성장률",
+     "be reviewed/updated/evaluated annually 매년 검토되다/업데이트되다/평가되다",
+     "semiannual maintenance 6개월마다의 정비"
+    ],
+    "examVar": [
+     {
+      "en": "The company will hold its annual general meeting next Friday.",
+      "ko": "회사는 다음 금요일에 연례 총회를 개최할 예정이다."
+     }
+    ]
    },
    {
     "word": "shutdown",
-    "meaning": "(공장·사업체 등의) 폐쇄, 일시 휴업, 폐점",
-    "pos": "n."
+    "pron": "[ʃʌ́tdaun]",
+    "pos": "n.",
+    "meaning": "n. (공장ㆍ사업체 등의) 폐쇄, 일시 휴업, 폐점",
+    "tip": "[[b]]shut[[/b]](닫다) + [[b]]down[[/b]](아래로)] [[r]]폐쇄[[/r]]",
+    "toeicExpr": [
+     "factory shutdown 공장 폐쇄  temporary shutdown 일시 휴업",
+     "complete shutdown 완전한 폐점  shutdown period 휴업 기간"
+    ]
    },
    {
     "word": "assume",
-    "meaning": "1. 추정하다, 생각하다 2. (책임·비용 등을) 떠맡다",
-    "pos": "v."
+    "pron": "[əsúːm]",
+    "pos": "v.",
+    "meaning": "v. 1. 추정하다, 생각하다  2. (책임ㆍ비용 등을) 떠맡다",
+    "tip": "① [[b]]어슴[[/b]]푸레하게 생각을 떠올려보다, 즉 [[r]]추정하다, 생각하다[[/r]]\n② 깡패가 나타나자 여친에게 \"[[b]]어! 슘[[/b]]어 있어!\" 하며 자기가 다 [[r]]떠맡다[[/r]]",
+    "toeicExpr": [
+     "assume that ~ ~라고 가정하다, 추정하다",
+     "We assume that sales will rise next month. 우리는 다음 달 매출이 증가할 것이라고 추정한다.",
+     "assuming (that) ~ ~이라고 가정하면, 만약 ~라면 (=if)",
+     "Assuming you're offered the job, will you accept it? 그 일을 제안받았다고 가정한다면 받아들이겠습니까?",
+     "assume responsibility 책임을 맡다",
+     "assume the cost 비용을 떠맡다(부담하다)",
+     "assume the risk 위험을 떠맡다(감수하다)"
+    ],
+    "examVar": [
+     {
+      "en": "1. The conference will be held outdoors, assuming that the weather improves by the weekend.",
+      "ko": "날씨가 주말까지 좋아진다면, 회의는 야외에서 열릴 것입니다."
+     },
+     {
+      "en": "2. The contractor agreed to assume full responsibility for any delays caused by material shortages.",
+      "ko": "그 계약자는 자재 부족으로 인한 지연에 대해 전적인 책임을 떠맡기로 동의했다."
+     }
+    ]
    },
    {
     "word": "negative",
-    "meaning": "1. 부정적인 2. 마이너스인",
-    "pos": "adj."
+    "pron": "[négətiv]",
+    "pos": "a.",
+    "meaning": "1. 부정적인  2. 마이너스인",
+    "tip": "[[b]]\"내가 TV[[/b]] 에 나와? 흥, 어림없지.\" 하며 자신은 못생겨서 TV 에 나올 수 없다고 [[r]]부정적인[[/r]]",
+    "toeicExpr": [
+     "negative attitude/effect/feedback 부정적인 태도/영향/피드백",
+     "negative balance 마이너스 잔액",
+     "negative growth 역성장",
+     "negative figure 마이너스 수치"
+    ]
    },
    {
     "word": "audit",
-    "meaning": "회계감사 / (회계)감사하다",
-    "pos": "n./v."
+    "pron": "[ɔ́ːdit]",
+    "pos": "n./v.",
+    "meaning": "n. 회계감사  v. (회계)감사하다",
+    "tip": "\"회계장부 [[b]]어딨어[[/b]]?\" 하며 [[r]]회계감사[[/r]] 나온 사람이 회계를 감사하다",
+    "toeicExpr": [
+     "financial/internal/annual audit 재무/내부/연례 회계감사",
+     "audit report 감사 보고서"
+    ]
    },
    {
     "word": "regular",
-    "meaning": "1. 정기적인, 규칙적인 2. 보통의, 일반적인 3. 단골의",
-    "pos": "adj."
+    "pron": "[régjulər]",
+    "pos": "a.",
+    "meaning": "1. 정기적인, 규칙적인  2. 보통의, 일반적인  3. 단골의",
+    "tip": "\"[[b]]네(개의) 귤 넣어[[/b]](주세요).\" 하고 매일 많지도 적지도 않은 [[r]]보통의[[/r]] 귤 4개씩 사가는 [[r]]정기적인, 단골[[/r]] 손님",
+    "derivatives": [
+     {
+      "word": "regularly",
+      "meaning": "정기적으로"
+     }
+    ],
+    "toeicExpr": [
+     "regular meeting 정기적인 회의  regular maintenance 정기 점검",
+     "on a regular basis 정기적으로  regular employee 정규직 직원",
+     "regular price 정상가  regular service 일반 서비스",
+     "regular procedure 통상 절차  regular rate 일반 요금",
+     "regular customer/visitor 단골 고객/방문객",
+     "regularly updated/scheduled 정기적으로 업데이트된/일정이 잡힌",
+     "check/meet regularly 정기적으로 확인하다/회의하다"
+    ],
+    "examVar": [
+     {
+      "en": "Employees are encouraged to update their project status on a regular basis.",
+      "ko": "직원들은 프로젝트 현황을 정기적으로 업데이트하도록 권장된다."
+     },
+     {
+      "en": "The café offers discounts to regular customers who visit frequently.",
+      "ko": "카페는 자주 방문하는 단골 고객에게 할인 혜택을 제공한다."
+     }
+    ]
    },
    {
     "word": "dramatically",
+    "pron": "[drəmǽtikli]",
+    "pos": "ad.",
     "meaning": "극적으로, 급격하게, 현저하게",
-    "pos": "adv."
+    "tip": "[[b]]drama[[/b]](극, 드라마)같이, 즉 [[r]]극적으로, 급격하게, 현저하게[[/r]]",
+    "derivatives": [
+     {
+      "word": "dramatic",
+      "meaning": "극적인, 멋진"
+     }
+    ],
+    "toeicExpr": [
+     "change/increase/drop dramatically 급격히 변하다/증가하다/감소하다",
+     "dramatic shift/effect/growth 극적인 변화/효과/성장"
+    ],
+    "examVar": [
+     {
+      "en": "The company's revenue has grown dramatically since the introduction of the new product line.",
+      "ko": "신제품 출시 이후 회사의 매출이 급격히 성장했다."
+     }
+    ]
    },
    {
     "word": "narrowly",
-    "meaning": "1. 가까스로, 간신히 2. 좁게, 근소하게",
-    "pos": "adv."
+    "pron": "[nǽrouli]",
+    "pos": "ad.",
+    "meaning": "1. 가까스로, 간신히  2. 좁게, 근소하게",
+    "tip": "[[b]][narrow[[/b]](좁은) + [[b]]ly[[/b]](부사형 어미)] ① [[r]]좁은[[/r]] 가능성으로, 즉 [[r]]가까스로, 간신히[[/r]] ② 차이를 [[r]]좁혀서 좁게, 근소하게[[/r]]",
+    "toeicExpr": [
+     "narrowly miss 아슬아슬하게 놓치다  narrowly avoid 간신히 피하다",
+     "narrowly defined 매우 좁게 정의된  narrowly focused 범위가 매우 제한된",
+     "narrowly differ 근소한 차이가 나다  narrowly exceed 약간 초과하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company narrowly avoided a severe financial loss thanks to a last-minute change in strategy.",
+      "ko": "회사는 전략의 막판 변경 덕분에 심각한 재정적 손실을 가까스로 피했다."
+     }
+    ]
    },
    {
     "word": "maintenance",
+    "pron": "[méintənəns]",
+    "pos": "n.",
     "meaning": "관리, 유지, 보수",
-    "pos": "n."
+    "tip": "비타민을 입에 [[b]]매일 떠 넣었수[[/b]]. 즉, 그렇게 건강을 [[r]]관리, 유지[[/r]]",
+    "toeicExpr": [
+     "maintenance work 보수 작업  maintenance fee/staff 관리비/관리인력",
+     "under maintenance 보수 중인  regular maintenance 정기 점검"
+    ],
+    "examVar": [
+     {
+      "en": "Residents are required to pay a monthly maintenance fee for elevator repairs, cleaning services, and facility upkeep.",
+      "ko": "거주자는 엘리베이터 수리, 청소 서비스, 시설 유지를 위해 매월 관리비를 납부해야 한다."
+     }
+    ]
    },
    {
     "word": "income",
-    "meaning": "수입, 소득",
-    "pos": "n."
+    "pron": "[ínkʌm]",
+    "pos": "n.",
+    "meaning": "n. 수입, 소득",
+    "tip": "내 주머니 [[b]]in[[/b]](안으로) [[b]]come[[/b]](들어오는) 돈, 즉 [[r]]수입, 소득[[/r]]",
+    "toeicExpr": [
+     "annual/total/monthly income 연간/총/월 수입",
+     "income tax 소득세",
+     "source of income 소득의 원천"
+    ]
    },
    {
     "word": "display",
-    "meaning": "전시하다 / 전시, 디스플레이",
-    "pos": "v./n."
+    "pron": "[displéi]",
+    "pos": "v./n.",
+    "meaning": "v. 전시하다  n. 전시, 디스플레이",
+    "tip": "\"[[b]]this[[/b]](이) 보따리를 [[b]]플래이[[/b]]\" 하고 시장에 보따리를 풀어 가져온 야채를 팔려고 [[r]]전시[[/r]], [[r]]전시하다[[/r]]",
+    "toeicExpr": [
+     "on display 전시 중인, 전시되어 있는 (on: 계속 ~중인)",
+     "display booth 전시 부스",
+     "display products 제품을 전시하다"
+    ]
    },
    {
     "word": "consistent",
-    "meaning": "일관성 있는, ~와 일치하는(with)",
-    "pos": "adj."
+    "pron": "[kənsístənt]",
+    "pos": "a.",
+    "meaning": "a. 일관성 있는, ~와 일치하는(with)",
+    "tip": "큰 [[b]]시스터[[/b]]와 작은 시스터가 서로 쌍둥이라 얼굴이 [[r]]일치하는[[/r]]",
+    "derivatives": [
+     {
+      "word": "consistency",
+      "meaning": "일관성, 언행 일치"
+     },
+     {
+      "word": "inconsistency",
+      "meaning": "불일치, 모순, 일관성 없음"
+     }
+    ],
+    "toeicExpr": [
+     "consistent performance/results/quality 일관된 성과/결과/품질",
+     "be consistent with market trends 시장 동향과 일치하다",
+     "maintain/ensure consistency 일관성을 유지하다/보장하다",
+     "consistency in design 디자인의 통일성",
+     "detect inconsistency 불일치를 발견하다",
+     "correct inconsistency 모순을 바로잡다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The revised schedule is consistent with the timeline discussed during the previous meeting.",
+      "ko": "수정된 일정은 이전 회의에서 논의된 일정표와 일치한다."
+     },
+     {
+      "en": "2. An analysis of seven years' work revealed errors and inconsistencies.",
+      "ko": "7년간 진행된 작업에 대한 분석의 결과 많은 오류와 모순이 있다고 밝혀졌다."
+     }
+    ]
    },
    {
     "word": "elaborate",
-    "meaning": "1. 공들인, 정교한, 상세한 2. 상세히 설명하다",
-    "pos": "adj./v."
+    "pron": "a. [ilǽbərət]\nv. [ilǽbərèit]",
+    "pos": "a./v.",
+    "meaning": "1. a. 공들인, 정교한, 상세한  2. v. 상세히 설명하다",
+    "tip": "일에 [[b]]labor[[/b]](노동)을 들여서 만들거나 설명하다, 즉 [[r]]공들인, 정교한, 상세히 설명하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "elaborately",
+      "meaning": "정교하게, 공들여"
+     }
+    ],
+    "toeicExpr": [
+     "elaborate design/system/process 정교한 디자인/시스템/과정",
+     "elaborate explanation 상세한 설명",
+     "elaborate on the plan/idea 계획을/아이디어를 자세히 설명하다 (on: 동작의 목적 대상)",
+     "elaborately decorated/designed/planned 정교하게 장식된/설계된/계획된"
+    ]
    },
    {
     "word": "contrast",
-    "meaning": "대조; 대조하다",
-    "pos": "n./v."
+    "pron": "n. [kɑ́:ntræst, kɔ́ntræst]\nv. [kəntrǽst, kəntrɑ́:st]",
+    "pos": "n./v.",
+    "meaning": "n. 대조  v. 대조하다",
+    "tip": "[[b]]권투[[/b]] 선수 소개 [[b]]last[[/b]](마지막)에 두 선수의 키, 몸무게, 승률 등을 [[r]]대조, 대조하다[[/r]]",
+    "toeicExpr": [
+     "in contrast (to/with) (~와) 대조적으로",
+     "In contrast to last year, profits have doubled. 작년과 대조적으로, 이익이 두 배로 늘었다.",
+     "by contrast 대조적으로, 그에 비해 (← by: '~에 의하여', 즉 대조에 의하여)",
+     "Sales increased by 15 percent this year. By contrast, profits declined slightly. 올해 매출은 15% 증가했다. 반면에 수익은 소폭 감소했다.",
+     "contrast A with B A를 B와 대조하다",
+     "The analyst contrasted the company's growth with that of its competitors. 그 분석가는 그 회사의 성장률을 경쟁사들의 성장률과 비교했다."
+    ],
+    "examVar": [
+     {
+      "en": "1. The productivity of the afternoon shift stands in sharp contrast to that of the morning.",
+      "ko": "오후 근무조의 생산성은 오전 근무조의 생산성과 뚜렷한 대조를 이룬다."
+     },
+     {
+      "en": "2. The study contrasts customer expectations with actual purchasing behavior.",
+      "ko": "그 연구는 고객의 기대치를 실제 구매 행동과 대조한다."
+     }
+    ]
    },
    {
     "word": "quarterly",
-    "meaning": "한 해 네 번의, 분기의",
-    "pos": "adj."
+    "pron": "[kwɔ́:rtərli]",
+    "pos": "a.",
+    "meaning": "a. 한 해 네 번의",
+    "tip": "[[b]]quarter[[/b]](4 분의 1) + ly] [[r]]4개[[/r]]를 나눈 것 중 [[r]]1개[[/r]], 즉 [[r]]1년에 4번[[/r]]",
+    "toeicExpr": [
+     "quarterly report/goal/performance 분기 보고서/목표/실적",
+     "quarterly earnings/meeting 분기별 이익/회의"
+    ]
    },
    {
     "word": "throughout",
-    "meaning": "① ~ 도처에, 온통 ② ~ 동안 쭉, 내내",
-    "pos": "prep."
+    "pron": "[θruːáut]",
+    "pos": "prep./ad.",
+    "meaning": "prep. 1. ~ 도처에, 온통  2. ~ 동안 쭉, 내내",
+    "tip": "태양의 빛이 우주를 [[b]]through[[/b]](통과하여) [[b]]out[[/b]](밖으로) [[r]]도처에[[/r]], 평생 [[r]]동안 쭉[[/r]] 퍼지다",
+    "toeicExpr": [
+     "throughout the country 전국적으로",
+     "throughout the building 건물 전체에",
+     "throughout the year 일년 내내",
+     "throughout the day 하루 종일"
+    ],
+    "examVar": [
+     {
+      "note": "throughout, through(~을 통해), thorough(철저한)를 구분하는 문제가 자주 출제되었다.",
+      "en": "The new policy will be implemented ________ all company departments starting next week.",
+      "opt": "(A) through  (B) thorough  (C) throughout  (D) thought",
+      "ans": "(C)",
+      "ko": "새 정책은 다음 주부터 회사 전 부서에 걸쳐 시행될 예정이다."
+     }
+    ]
    },
    {
     "word": "hold",
-    "meaning": "① 붙들다, 유지하다, 맡고 있다 ② (모임 등을) 개최하다, 열다",
-    "pos": "v."
+    "pron": "[hould]",
+    "pos": "v.",
+    "meaning": "v. 1. 붙들다, 유지하다, 맡고 있다  2. (모임 등을) 개최하다, 열다",
+    "tip": "방뿐만 아니라 [[b]]홀도[[/b]](큰 방도, 복도도) 꽉 차도록 파티를 [[r]]개최하다, 열다[[/r]]",
+    "toeicExpr": [
+     "hold a position 직책을 맡다  hold responsibility for ~에 대한 책임을 맡다",
+     "hold the line (전화) 끊지 않고 기다리다 (← 전화선을 붙들고 있다)",
+     "Please hold the line while I transfer your call to the manager. 전화를 매니저에게 연결하는 동안 끊지 말고 기다려 주세요.",
+     "hold a meeting/seminar 회의를/세미나를 열다"
+    ],
+    "examVar": [
+     {
+      "en": "The company will hold its annual conference in Singapore next March.",
+      "ko": "회사는 내년 3월 싱가포르에서 연례 회의를 개최할 예정이다."
+     }
+    ]
    },
    {
     "word": "following",
-    "meaning": "~ 후에; 다음의, 다음에 오는",
-    "pos": "prep./adj."
+    "pron": "[fálouiŋ]",
+    "pos": "prep./a.",
+    "meaning": "prep. ~ 후에  a. 다음의, 다음에 오는",
+    "tip": "[[b]]follow[[/b]](뒤따르다) + [[b]]ing[[/b]]] ~ 후에, [[r]]다음의, 다음에 오는[[/r]]",
+    "toeicExpr": [
+     "following the meeting/event 회의/행사 후에",
+     "the following day/week/month 다음 날/주/달",
+     "following questions 다음 질문들"
+    ],
+    "examVar": [
+     {
+      "en": "The software update was released on Friday, and user feedback was collected the following week.",
+      "ko": "소프트웨어 업데이트는 금요일에 배포되었고, 사용자 피드백은 그 다음 주에 수집되었다."
+     }
+    ]
    },
    {
     "word": "owe",
-    "meaning": "…에게 ~을 빚지고 있다, 신세를 지고 있다",
-    "pos": "v."
+    "pron": "[ou]",
+    "pos": "v.",
+    "meaning": "v. …에게 ~을 빚지고 있다, 신세를 지고 있다",
+    "tip": "\"[[b]]오우~[[/b]] 하나님 감사합니다.\" 즉, 하나님께 은혜를 [[r]]빚지고 있다, 신세를 지고 있다[[/r]]",
+    "toeicExpr": [
+     "owe A B A에게 B를 빚지다 (4형식)",
+     "The firm owes the bank a substantial amount of money. 그 회사는 은행에 상당한 금액의 돈을 빚지고 있다.",
+     "owe A to B A를 B에게 빚지다  A is owed to B A는 B 덕분이다",
+     "She owes her promotion to years of hard work. 그녀는 승진을 수년간의 노력 덕분이라고 여긴다.",
+     "owing to + 명사/명사구: ~ 덕분에, ~ 때문에 (← ~에 신세를 져서)",
+     "The flight was delayed owing to bad weather. 악천후 때문에 비행기가 지연되었다."
+    ],
+    "examVar": [
+     {
+      "en": "1. The company's recent success largely is owed to the dedication of its employees.",
+      "ko": "회사의 최근 성공은 주로 직원들의 헌신 덕분이다."
+     },
+     {
+      "en": "2. owing to는 전치사이므로 뒤에 '명사/명사구'가 온다. 반면 because는 접속사이므로 뒤에 '주어+동사'가 온다.\n예) The factory was shut down ________ a sudden power failure.",
+      "opt": "owing to (O)  because (X)",
+      "ko": "그 공장은 갑작스러운 정전 때문에 폐쇄되었다."
+     }
+    ]
    },
    {
     "word": "lift",
-    "meaning": "① 들어 올리다; 승강기 ② (차 등을) 태워주기 ③ (제재를) 해제하다",
-    "pos": "v./n."
+    "pron": "[lift]",
+    "pos": "v./n.",
+    "meaning": "1. v. 들어 올리다 n. 승강기  2. n. (차 등을) 태워주기  3. v. (제재를) 해제하다",
+    "tip": "① 스키장의 [[b]]리프트[[/b]]가 사람을 번쩍 [[r]]들어 올리다, 태워주기, 승강기[[/r]]\n② [[r]]들어 올리다[[/r]] → 차량통행을 막던 막대를 들어 올려 [[r]]차량통행 제재를 해제하다[[/r]]",
+    "toeicExpr": [
+     "lift a box 상자를 들어 올리다",
+     "take the lift 엘리베이터를 타다",
+     "give someone a lift ~을 태워주다",
+     "I will give you a lift to the station. 내가 역까지 태워줄게요.",
+     "lift a ban 금지를 해제하다",
+     "lift restrictions/sanctions 규제를 해제하다"
+    ],
+    "examVar": [
+     {
+      "en": "The government decided to lift the travel ban earlier than expected.",
+      "ko": "정부는 예상보다 일찍 여행 금지를 해제하기로 결정했다."
+     }
+    ]
    },
    {
     "word": "view",
-    "meaning": "바라봄, 경치, 견해; 바라보다, ~라고 생각하다",
-    "pos": "n./v."
+    "pron": "[vju:]",
+    "pos": "n./v.",
+    "meaning": "n. 바라봄, 경치, 견해 v. 바라보다, ~라고 생각하다",
+    "tip": "① 경치가 잘 [[b]]비유[[/b]](보여유), 즉 [[r]]바라봄, 경치, 바라보다[[/r]]\n② [[b]]view[[/b]](바라보는) 관점, 즉 [[r]]견해, ~라고 생각하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "viewpoint",
+      "meaning": "관점 (← view(바라보다) + point(점))"
+     }
+    ],
+    "toeicExpr": [
+     "ocean view 바다가 바라보이는 전망  scenic view 경치 좋은 전망",
+     "room with a view 전망 있는 객실  view the scenery 풍경을 바라보다",
+     "opposing views 반대되는 견해  express one's view ~의 견해를 밝히다",
+     "view A as B A를 B로 여기다  be viewed as A A로 간주되다"
+    ],
+    "examVar": [
+     {
+      "en": "Many analysts view the recent decline as a temporary slowdown.",
+      "ko": "많은 분석가들은 최근의 하락을 일시적인 둔화로 본다."
+     }
+    ]
    },
    {
     "word": "feedback",
-    "meaning": "반응, 응답",
-    "pos": "n."
+    "pron": "[fí:dbæk]",
+    "pos": "n.",
+    "meaning": "n. 반응, 응답",
+    "tip": "[[b]]feed[[/b]](먹이를 주다, 공급하다) + [[b]]back[[/b]](뒤로, 되돌아)] 공급한 것에 대해 [[b]]되돌아[[/b]]오는 것, 즉 [[r]]반응, 응답[[/r]]",
+    "toeicExpr": [
+     "receive/give feedback 피드백을 받다/제공하다",
+     "positive feedback 긍정적인 반응  customer feedback 고객 반응(의견)"
+    ],
+    "examVar": [
+     {
+      "en": "feedback은 불가산 명사로 복수 형태로 쓰지 않음을 묻는 문제가 자주 출제되었다.\n예) We're getting a lot of ________ from our customers.",
+      "opt": "feedback (O)  feedbacks (X)",
+      "ko": "고객들로부터 여러 가지의 반응이 들어오고 있습니다."
+     },
+     {
+      "note": "* 불가산 명사로 복수형을 쓰지 않는 단어들로 토익에 자주 출제되는 단어들 Top 10\ninformation 정보  equipment 장비류  feedback 피드백  furniture 가구류  advice 조언  research 연구  knowledge 지식  traffic 교통량  luggage 수하물(짐 전체)  machinery 기계류"
+     }
+    ]
    },
    {
     "word": "critical",
-    "meaning": "① 비판적인 ② 결정적인, 중요한, 중대한, 위기의",
-    "pos": "adj."
+    "pron": "[krítikəl]",
+    "pos": "a.",
+    "meaning": "1. 비판적인  2. 결정적인, 중요한, 중대한, 위기의",
+    "tip": "정치가에게 \"[[b]]그리 티끌[[/b]]이 많아?\" 하며 국민들이 [[r]]비판적인[[/r]], 그래서 그 정치가의 [[r]]중대한, 위기의 상황[[/r]]",
+    "derivatives": [
+     {
+      "word": "critic",
+      "meaning": "비평가, 비판하는 사람"
+     },
+     {
+      "word": "criticism",
+      "meaning": "비평, 비판"
+     },
+     {
+      "word": "criticize",
+      "meaning": "비평하다, 비판하다"
+     }
+    ],
+    "toeicExpr": [
+     "critical of the proposal 제안에 비판적인  critical response 비판적 반응",
+     "at a critical moment 중요한(위기의) 순간에  play a critical role in ~에서 중요한 역할을 하다  critical factor 결정적 요인",
+     "film/art/music critic 영화/예술/음악 비평가",
+     "receive criticism 비판을 받다",
+     "criticize publicly 공개적으로 비판하다"
+    ],
+    "examVar": [
+     {
+      "note": "품사와 의미를 구분하는 문제가 자주 출제되었다.",
+      "en": "Regular maintenance plays a ______ role in ensuring workplace safety.",
+      "opt": "(A) critic  (B) critical  (C) criticism  (D) critically",
+      "ko": "정기적인 유지보수는 작업장 안전을 보장하는 데 중요한 역할을 한다.",
+      "ans": "(B)"
+     }
+    ]
    },
    {
     "word": "consequence",
-    "meaning": "① 결과 ② 중요성",
-    "pos": "n."
+    "pron": "미[kάnsəkwèns] 영[kɔ́nsikwəns]",
+    "pos": "n.",
+    "meaning": "1. 결과  2. 중요성",
+    "tip": "\"흥부에게 뺏어온 [[b]]큰 박씨가 컨수?[[/b]]\" 놀부가 [[r]]중요한 결과[[/r]]를 기다리는 중",
+    "derivatives": [
+     {
+      "word": "consequently",
+      "meaning": "결과적으로, 따라서"
+     }
+    ],
+    "toeicExpr": [
+     "direct consequence 직접적인 결과",
+     "as a consequence 그 결과, 그로 인해 (← 결과로서)",
+     "of little consequence 거의 중요하지 않은 (← of + 추상명사 = 형용사)"
+    ],
+    "examVar": [
+     {
+      "en": "1. The company did not meet its quarterly sales target and consequently had to cut back on marketing expenses.",
+      "ko": "그 회사는 분기 매출 목표를 달성하지 못했고 결과적으로 마케팅 비용을 줄여야 했다."
+     },
+     {
+      "en": "2. Sales dropped significantly last quarter; as a consequence, several cost-cutting measures were introduced.",
+      "ko": "지난 분기 매출이 크게 감소했다. 그 결과, 여러 비용 절감 조치가 도입되었다."
+     }
+    ]
    }
   ]
  },
@@ -2810,123 +10389,455 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "lower",
-    "meaning": "(가격·양 등을) 낮추다; (가격 등이) 보다 싼, 낮은",
-    "pos": "v./adj."
+    "pron": "[lóuər]",
+    "pos": "v./a.",
+    "meaning": "v. (가격·양 등을) 낮추다  a. (가격 등이) 보다 싼, 낮은",
+    "tip": "[[b]]low[[/b]](낮은)의 파생어",
+    "toeicExpr": [
+     "lower the price/cost/rates 가격을/비용을/요금을 낮추다",
+     "lower income 저소득"
+    ],
+    "examVar": [
+     {
+      "note": "lower가 동사로 쓰인다는 점을 묻는 문제가 출제되었다.",
+      "en": "To attract more customers, the company decided to ______ its prices by 15 percent.  lower (O)  low (X)",
+      "ko": "더 많은 고객을 유치하기 위해 회사는 가격을 15% 인하하기로 결정했다.",
+      "ans": "low는 형용사"
+     }
+    ]
    },
    {
     "word": "division",
-    "meaning": "① ~부서, ~국 ② 분할, 분배",
-    "pos": "n."
+    "pron": "[divíʒən]",
+    "pos": "n.",
+    "meaning": "n. 1. ~부서, ~국  2. 분할, 분배",
+    "tip": "[[b]]divide[[/b]](분리하다)의 명사형으로 [[r]]분리된 조직[[/r]]이란 뜻에서 [[r]]~국, ~부서[[/r]] 등의 의미를 갖고 또 한 [[r]]분리하여[[/r]] 나누어주는 [[r]]분할, 분배[[/r]]란 의미가 있다.",
+    "toeicExpr": [
+     "sales/marketing/finance division 영업부/마케팅부/재무부",
+     "division of responsibility 책임 분담"
+    ],
+    "examVar": [
+     {
+      "en": "She was transferred to the marketing division to support the company's overseas expansion strategy.",
+      "ko": "그녀는 회사의 해외 확장 전략을 지원하기 위해 마케팅 부서로 이동되었다."
+     }
+    ]
    },
    {
     "word": "dividend",
-    "meaning": "(주식의) 배당금",
-    "pos": "n."
+    "pron": "[dívədènd]",
+    "pos": "n.",
+    "meaning": "n. (주식의) 배당금",
+    "tip": "[[b]]divide[[/b]](나누다) + [[b]]end[[/b]](끝)] 일이 [[b]]end[[/b]](끝나고) 나서 [[b]]divide[[/b]](나누어주는) 돈, 즉 [[r]]배당금[[/r]]",
+    "toeicExpr": [
+     "annual dividend 연간 배당금   cash/stock dividend 현금/주식 배당금"
+    ]
    },
    {
     "word": "gain",
-    "meaning": "① 얻다, 획득하다; 이익 ② 증가하다",
-    "pos": "v./n."
+    "pron": "[gein]",
+    "pos": "v./n.",
+    "meaning": "1. v. 얻다, 획득하다  n. 이익  2. v. 증가하다",
+    "tip": "개가 집 [[b]]in[[/b]](안으로) 들어와 개를 [[r]]얻다[[/r]]. 우리집 개의 숫자가 [[r]]증가하다[[/r]], 즉 [[r]]이익[[/r]]",
+    "toeicExpr": [
+     "gain experience/popularity/support 경험을/인기를/지지를 얻다",
+     "gain access to ~에 접근 권한을 얻다",
+     "gain weight 체중이 늘다   high/low gain 높은/낮은 이익",
+     "gain steadily/rapidly/significantly 꾸준히/빠르게/상당히 증가하다"
+    ]
    },
    {
     "word": "fare",
-    "meaning": "(교통) 요금",
-    "pos": "n."
+    "pron": "[fɛər]",
+    "pos": "n.",
+    "meaning": "n. (교통) 요금",
+    "tip": "택시 기사를 [[b]]패어[[/b]]! 바가지 [[r]]요금[[/r]] 때문에",
+    "toeicExpr": [
+     "bus/taxi/air/train fare 버스/택시/항공/기차 요금",
+     "one-way fare 편도 요금   round-trip fare 왕복 요금"
+    ],
+    "examVar": [
+     {
+      "note": "fare(요금)와 fair(공정한)의 철자·의미 혼동 문제가 자주 출제되었다.",
+      "en": "The city announced that the bus ______ will increase starting next month.   fare (O)  fair (X)",
+      "ko": "그 도시는 다음 달부터 버스 요금이 인상될 것이라고 발표했다."
+     }
+    ]
    },
    {
     "word": "respect",
-    "meaning": "① 존경하다 ② 면, 사항, 점",
-    "pos": "v./n."
+    "pron": "[rispékt]",
+    "pos": "v./n.",
+    "meaning": "1. v. 존경하다  2. n. 면, 사항, 점",
+    "tip": "나는 이러이러한 [[r]]면, 사항, 점[[/r]]에서 그 사람을 [[b]]respect[[/b]]([[r]]존경한다[[/r]]).",
+    "toeicExpr": [
+     "show/earn respect 존경을 표하다/받다",
+     "mutual respect 상호 존중",
+     "with respect to ~점에 관하여, ~에 관하여 (← ~쪽으로의 점을 가지고)",
+     "with respect to the matter/issue/delay 그 사안에/문제에/지연에 관하여",
+     "with respect to your request 귀하의 요청과 관련하여",
+     "in this respect 이런 점에 있어서 (← 이런 점 내에서 볼 때)",
+     "In this respect, the new policy has been very effective. 이런 점에서 보면, 새 정책은 매우 효과적이었다."
+    ],
+    "examVar": [
+     {
+      "en": "The committee will make a final decision with respect to the proposed budget after reviewing all submitted documents.",
+      "ko": "위원회는 제출된 모든 문서를 검토한 후, 제안된 예산안에 관하여 최종 결정을 내릴 것이다."
+     }
+    ]
    },
    {
     "word": "lot",
-    "meaning": "한 구획의 땅, 부지",
-    "pos": "n."
+    "pron": "[lɑt]",
+    "pos": "n.",
+    "meaning": "n. 한 구획의 땅, 부지",
+    "tip": "[[b]]랏[[/b]]: [[b]]낫[[/b]]으로 어떤 [[r]]구획의 땅[[/r]]에 난 풀을 모두 베야 한다.",
+    "toeicExpr": [
+     "parking lot 주차장",
+     "vacant/construction/commercial lot 빈/건설/상업용 부지"
+    ]
    },
    {
     "word": "nearby",
-    "meaning": "인근의; 근처에",
-    "pos": "adj./adv."
+    "pron": "[nìərbái]",
+    "pos": "a./ad.",
+    "meaning": "a. 인근의 ad. 근처에",
+    "tip": "[[b]]near[[/b]](가까운) + [[b]]by[[/b]](옆에) [[r]]인근의, 근처에[[/r]]",
+    "toeicExpr": [
+     "nearby restaurant 인근 식당  nearby hotel 근처 호텔",
+     "be located nearby 근처에 위치해 있다  live nearby 근처에 살다"
+    ],
+    "examVar": [
+     {
+      "en": "near(전치사)와 nearby(형용사/부사)를 구분하는 문제가 자주 출제되었다. Customers can park their vehicles in a _______ parking lot during business hours.",
+      "opt": "nearby (O)  near (X)",
+      "ko": "고객들은 영업 시간 동안 근처 주차장에 차량을 주차할 수 있다.",
+      "note": "near는 전치사이기 때문에 명사 앞에 형용사처럼 사용 불가"
+     }
+    ]
    },
    {
     "word": "quantity",
-    "meaning": "양, 수량",
-    "pos": "n."
+    "pron": "[kwántəti]",
+    "pos": "n.",
+    "meaning": "n. 양, 수량",
+    "tip": "상점의 옆 [[b]]칸[[/b]]을 [[b]]터[[/b]]서 [[b]]티[[/b]]셔츠 판매 [[r]]양, 수량[[/r]]을 늘리다",
+    "derivatives": [
+     {
+      "word": "quantify",
+      "meaning": "수치화하다"
+     }
+    ],
+    "toeicExpr": [
+     "a large/small/sufficient/limited quantity of + 명사: 큰/작은/충분한/제한된 양의 ~",
+     "many/much quantity (X) (← 같은 양의 개념으로 의미 중복이 생기기 때문에 many/much의 수식을 받지 못한다.)",
+     "in quantity 대량으로, 많이  The store sells fresh vegetables in quantity at a discount. 그 가게는 신선한 채소를 대량으로 할인 판매한다.",
+     "quantify the results 결과를 수치화하다  quantify losses 손실을 수치로 계산하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The factory produces _______ quantity of waste each day.",
+      "opt": "(A) many  (B) much  (C) a large  (D) a many",
+      "ans": "(C)",
+      "ko": "그 공장은 매일 많은 양의 폐기물을 생산한다."
+     },
+     {
+      "en": "2. The company ordered a large _______ of raw materials for next month's production.",
+      "opt": "quantity (O)  quantities (X)",
+      "ko": "회사는 다음 달 생산을 위해 많은 양의 원자재를 주문했다.",
+      "note": "a 다음에 복수형 명사는 올 수 없음. quantities가 답이 되려면 '~ ordered lage quantities of ~'와 같이 써야 함."
+     }
+    ]
    },
    {
     "word": "depreciate",
-    "meaning": "가치가 떨어지다, 감가상각하다",
-    "pos": "v."
+    "pron": "[diprí:ʃièit]",
+    "pos": "v.",
+    "meaning": "v. 가치가 떨어지다, 감가상각하다",
+    "tip": "화폐나 주식의 [[r]]가치가 떨어지자[[/r]] 휴지 조각이 되었다며 [[b]]뒤[[/b]]에 [[b]]뿌리시다[[/b]] [[b]]\"에잇!\"[[/b]]",
+    "derivatives": [
+     {
+      "word": "depreciation",
+      "meaning": "가치 하락, 감가상각"
+     }
+    ],
+    "toeicExpr": [
+     "depreciate in value 가치가 하락하다",
+     "annual depreciation 연간 감가상각",
+     "depreciation expense 감가상각비",
+     "currency depreciation 통화 가치 하락"
+    ]
    },
    {
     "word": "commercial",
-    "meaning": "상업의, 상업적인",
-    "pos": "adj."
+    "pron": "[kəmə́:rʃəl]",
+    "pos": "a.",
+    "meaning": "a. 상업의, 상업적인",
+    "tip": "새로 출시된 [[b]]car[[/b]](차) 앞에 손님들을 [[b]]모셔[[/b]](모셔). 그리고 홍보하며 파는 [[r]]상업의, 상업적인[[/r]] 행위",
+    "derivatives": [
+     {
+      "word": "commerce",
+      "meaning": "상업"
+     },
+     {
+      "word": "commercially",
+      "meaning": "상업적으로"
+     }
+    ],
+    "toeicExpr": [
+     "commercial building 상업용 건물  commercial area 상업 지구",
+     "commerce sector/activity/regulations 상업 부문/활동/규제",
+     "commercially available/viable/successful 상업적으로 이용 가능한/실행 가능한/성공한"
+    ]
    },
    {
     "word": "teller",
-    "meaning": "은행 창구직원",
-    "pos": "n."
+    "pron": "[télər]",
+    "pos": "n.",
+    "meaning": "n. 은행 창구직원",
+    "tip": "은행 손님의 요구나 질문에 [[b]]tell[[/b]](말해주는) [[b]]er[[/b]](사람)은 [[r]]은행 창구직원[[/r]]",
+    "toeicExpr": [
+     "bank teller 은행 창구 직원  teller window (은행) 창구",
+     "teller counter 은행 창구 카운터"
+    ]
    },
    {
     "word": "seldom",
-    "meaning": "드물게, 거의 ~ 않다",
-    "pos": "adv."
+    "pron": "[séldəm]",
+    "pos": "ad.",
+    "meaning": "ad. 드물게, 거의 ~ 않다",
+    "tip": "인심이 팍팍해진 요즘 상점 주인들은 물건을 [[b]]sell[[/b]](팔) 때 [[b]]덤[[/b]]을 [[r]]거의 주지 않는다[[/r]].",
+    "toeicExpr": [
+     "seldom used/seen 거의 사용되지 않는/볼 수 없는",
+     "seldom occur/happen 거의 발생하지 않는다"
+    ]
    },
    {
     "word": "embassy",
-    "meaning": "대사관",
-    "pos": "n."
+    "pron": "[émbəsi]",
+    "pos": "n.",
+    "meaning": "n. 대사관",
+    "tip": "옆집의 미국 이름인 [[b]]엠버[[/b]]라는 사람, 즉 [[b]]엠버씨[[/b]]는 미국 [[r]]대사관[[/r]]에서 근무한다는 느낌으로 암기",
+    "toeicExpr": [
+     "embassy staff 대사관 직원",
+     "Embassy of the Republic of Korea in the USA 주미국 대한민국 대사관"
+    ]
    },
    {
     "word": "portfolio",
+    "pron": "[pɔːrtfóuliòu]",
+    "pos": "n.",
     "meaning": "자산 구성, 제품 구성, 작품집",
-    "pos": "n."
+    "tip": "[[b]]뽀트 팔리오[[/b]] 내 [[r]]자산 구성, 작품집[[/r]] 중에 뽀트를 팔리오!",
+    "toeicExpr": [
+     "investment portfolio 투자 포트폴리오",
+     "diversify portfolio 자산 구성을 다양화하다",
+     "manage portfolio 자산을 관리하다",
+     "portfolio of services 서비스 전체 구성",
+     "product portfolio 제품군, 제품 구성",
+     "portfolio of designs 디자인 작품집"
+    ]
    },
    {
     "word": "configure",
+    "pron": "[kənfígjər]",
+    "pos": "v.",
     "meaning": "구성하다, 설정하다",
-    "pos": "v."
+    "tip": "큰 [[b]]피겨스케이팅[[/b]] 쇼단을 [[r]]구성하다[[/r]], 쇼에서 각자의 역할을 [[r]]설정하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "configuration",
+      "meaning": "구성, 설정"
+     },
+     {
+      "word": "reconfiguration",
+      "meaning": "재구성, 재설정"
+     }
+    ],
+    "toeicExpr": [
+     "configure a system 시스템을 설정하다",
+     "configure network 네트워크를 구성하다",
+     "system/software configuration 시스템/소프트웨어 구성(설정)",
+     "system reconfiguration 시스템 재구성",
+     "office reconfiguration 사무실 재배치",
+     "software reconfiguration 소프트웨어 재설정"
+    ]
    },
    {
     "word": "handout",
-    "meaning": "유인물; 나눠주다",
-    "pos": "n./v."
+    "pron": "[hǽndàut]",
+    "pos": "n./v.",
+    "meaning": "n. 유인물  v. 나눠주다",
+    "tip": "[[b]]hand[[/b]](손) + [[b]]out[[/b]](밖에)] [[b]]hand[[/b]](손)에 가진 것을 [[b]]out[[/b]](밖으로) 사람들에게 [[r]]나눠주는[[/r]] 것, 즉 [[r]]유인물[[/r]]",
+    "toeicExpr": [
+     "distribute/print handouts 유인물을 나눠주다/출력하다",
+     "presentation/lecture/conference handouts 발표/강의/회의 유인물(자료)",
+     "hand out materials 유인물(자료)을 나눠주다"
+    ]
    },
    {
     "word": "stagnate",
+    "pron": "[stǽgneit]",
+    "pos": "v.",
     "meaning": "흐르지 않다, 침체(정체)하다",
-    "pos": "v."
+    "tip": "움직이지 않고 [[b]]stay[[/b]](머무르는) 그네 있다, 즉 [[r]]정체하다[[/r]], [[r]]흐르지 않다[[/r]]",
+    "derivatives": [
+     {
+      "word": "stagnant",
+      "meaning": "정체된, 침체된"
+     },
+     {
+      "word": "stagnation",
+      "meaning": "침체, 정체"
+     }
+    ],
+    "toeicExpr": [
+     "sales stagnate 매출이 정체하다",
+     "business stagnates 사업이 침체하다",
+     "stagnant economy/market 침체된 경제/시장",
+     "stagnant growth 정체된 성장",
+     "remain stagnant 침체 상태로 머물다",
+     "economic/long-term stagnation 경기/장기 침체"
+    ]
    },
    {
     "word": "controversy",
+    "pron": "미 [kɑ́ntrəvə̀ːrsi] 영 [kɔ́ntrəvə̀ːrsi]",
+    "pos": "n.",
     "meaning": "논쟁, 논의",
-    "pos": "n."
+    "tip": "두 사람이 흥! 하고 얼굴을 서로 반대로 [[b]]큰(크게) 틀어 별 씹은[[/b]] 표정으로 [[r]]논쟁, 논의[[/r]]",
+    "derivatives": [
+     {
+      "word": "controversial",
+      "meaning": "논쟁의 여지가 있는"
+     }
+    ],
+    "toeicExpr": [
+     "spark/cause controversy 논란을 불러일으키다",
+     "controversial issue/decision 논란이 되는 문제/결정",
+     "remain controversial 여전히 논란이 많다 (← 논란이 많은 상태로 남아있다)"
+    ],
+    "examVar": [
+     {
+      "en": "Despite its benefits, the new law remains controversial.",
+      "ko": "그 혜택에도 불구하고 그 새 법은 여전히 논란이 많다."
+     }
+    ]
    },
    {
     "word": "valid",
+    "pron": "[vǽlid]",
+    "pos": "a.",
     "meaning": "유효한, 효과 있는, 타당한",
-    "pos": "adj."
+    "tip": "살을 빼는 데 있어서 [[b]]밸리(댄스)[[/b]]도 [[r]]효과가 있는[[/r]]",
+    "toeicExpr": [
+     "valid contract/license/passport 유효한 계약/면허/여권",
+     "valid until December 31 12월 31일까지 유효한",
+     "valid only on weekdays 평일에만 유효한",
+     "valid reason/explanation/argument 타당한 이유/설명/주장",
+     "This ticket is valid for 30 days. 이 표는 30일 동안 유효합니다."
+    ]
    },
    {
     "word": "redeem",
+    "pron": "[ridíːm]",
+    "pos": "v.",
     "meaning": "(상품권·쿠폰·포인트 등을) 교환하다, 현금화하다, 사용하다",
-    "pos": "v."
+    "tip": "선물 받은 [[r]]상품권을 사용[[/r]]하면서 기분 좋아 [[b]]리듬[[/b]]에 맞춰 춤을 추게 되다",
+    "derivatives": [
+     {
+      "word": "redeemable",
+      "meaning": "(쿠폰·상품권 등을) 사용할 수 있는, 교환 가능한"
+     },
+     {
+      "word": "redemption",
+      "meaning": "(쿠폰·상품권 등의) 사용"
+     }
+    ],
+    "toeicExpr": [
+     "redeem a coupon/voucher 쿠폰을/바우처를 사용하다",
+     "redeem points/miles 포인트를/마일리지를 사용하다",
+     "redeemable coupon/voucher/points 사용 가능한 쿠폰/상품권/포인트",
+     "redeemable until June 30 6월 30일까지 사용 가능한",
+     "redeemable within 30 days 30일 이내 사용 가능한",
+     "coupon redemption 쿠폰 교환",
+     "redemption center 교환소"
+    ],
+    "examVar": [
+     {
+      "en": "Customers can redeem reward points for discounts on future purchases through the company's mobile app.",
+      "ko": "고객들은 회사의 모바일 앱을 통해 적립 포인트를 사용하여 향후 구매 시 할인을 받을 수 있다."
+     }
+    ]
    },
    {
     "word": "feature",
-    "meaning": "1. 얼굴 모양 2. 특징, (특별한) 기능 / ~을 특징으로 삼다 3. (기사·행사 등에) ~을 특별히 포함하다, ~을 특집으로 다루다",
-    "pos": "n./v."
+    "pron": "[fíːtʃər]",
+    "pos": "n./v.",
+    "meaning": "1. n. 얼굴 모양  2. n. 특징, (특별한) 기능  v. ~을 특징으로 삼다  3. v. (기사·행사 등에)~을 특별히 포함하다, ~을 특집으로 다루다",
+    "tip": "이번 잡지에는 [[b]]삐쳐[[/b]]있는 [[r]]얼굴 모양[[/r]]이 [[r]]특징[[/r]]인 유명 연예인 기사를 [[r]]특별히 포함하다, 다루다[[/r]]",
+    "toeicExpr": [
+     "unique feature 독특한 특징  main feature 주요 특징",
+     "new/special/safety/advanced feature 새로운/특별한/안전/고급 기능",
+     "feature a product 제품을 특별히 포함하다",
+     "feature a product launch 신제품 출시를 특집으로 다루다",
+     "feature customer testimonials 고객 후기를 다루다(포함하다)",
+     "feature a special promotion 특별 프로모션을 포함하다",
+     "feature a speaker 연사를 특별히 포함하다(특별히 초청하다)"
+    ],
+    "examVar": [
+     {
+      "note": "feature의 여러 가지 뜻이 토익에 자주 출제되었다."
+     },
+     {
+      "en": "1. The magazine will feature an exclusive interview with the award-winning author in its next issue.",
+      "ko": "그 잡지는 다음 호에서 수상 경력이 있는 작가와의 독점 인터뷰를 특집으로 다룰 것이다."
+     },
+     {
+      "en": "2. The latest software update includes several new features to improve user experience.",
+      "ko": "최신 소프트웨어 업데이트에는 사용자 경험을 향상시키기 위한 여러 새로운 기능들이 포함되어 있다."
+     },
+     {
+      "en": "3. The new smartphone model features an improved camera and longer battery life.",
+      "ko": "새로운 스마트폰 모델은 향상된 카메라와 더 긴 배터리 수명을 포함하고 있다."
+     }
+    ]
    },
    {
     "word": "commend",
-    "meaning": "칭찬하다, 추천하다",
-    "pos": "v."
+    "pron": "[kəménd]",
+    "pos": "v.",
+    "meaning": "v. 칭찬하다, 추천하다",
+    "tip": "① 이 성형외과에서 자신의 [[b]]코[[/b]]를 예쁘게 [[b]]맨들[[/b]]어 주었다고 [[r]]칭찬하다[[/r]], 그리고 다른 친구에게 [[r]]추천하다[[/r]]  ② recommend(추천하다)와 상관하여 암기",
+    "derivatives": [
+     {
+      "word": "commendable",
+      "meaning": "칭찬할 만한"
+     },
+     {
+      "word": "commendation",
+      "meaning": "칭찬, 상장"
+     }
+    ],
+    "toeicExpr": [
+     "commend A for B A를 B에 대해 칭찬하다 (← for: ~에 대해)",
+     "commend employees for dedication 직원들을 헌신에 대해 칭찬하다",
+     "commend a team for performance 팀에 대한 성과를 칭찬하다",
+     "commendable effort/performance 칭찬할 만한 노력/실적",
+     "receive a commendation 표창을 받다",
+     "letter of commendation 표창장"
+    ]
    },
    {
     "word": "element",
-    "meaning": "요소, 성분",
-    "pos": "n."
+    "pron": "[éləmənt]",
+    "pos": "n.",
+    "meaning": "n. 요소, 성분",
+    "tip": "이 약의 구성 [[r]]요소, 성분[[/r]]이 [[b]]일[[/b]](1), [[b]]이[[/b]](2)... [[r]]많다[[/r]]",
+    "toeicExpr": [
+     "key element 핵심 요소  essential element 필수 요소",
+     "nutritional elements 영양 성분"
+    ]
    }
   ]
  },
@@ -2936,123 +10847,467 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "turnover",
-    "meaning": "1. 이직, 이직률 2. 매출액, 거래액",
-    "pos": "n."
+    "pron": "[təːrnóuvər]",
+    "pos": "n.",
+    "meaning": "n. 1. 이직, 이직률  2. 매출액, 거래액",
+    "tip": "① [[b]]over[[/b]](저 너머가) 회사로 [[b]]turn[[/b]](돌려서) 이직하는 비율, 즉 [[r]]이직률[[/r]]\n② 상품이 소비자에게 갔다가 [[b]]over[[/b]](저 너머로) [[b]]turn[[/b]](돌아서) 돈으로 돌아오는 [[r]]매출액[[/r]]",
+    "toeicExpr": [
+     "employee turnover 직원 이직률  high turnover rate 높은 이직률",
+     "annual turnover 연 매출액  turnover increased by 10% 10% 증가한 매출액"
+    ],
+    "examVar": [
+     {
+      "en": "1. The company reported an annual turnover of over $50 million, driven by strong overseas sales.",
+      "ko": "그 회사는 해외 매출 호조에 힘입어 연간 매출액이 5천만 달러를 넘었다고 보고했다."
+     },
+     {
+      "en": "2. Due to low wages, the restaurant has a high employee turnover rate.",
+      "ko": "낮은 임금 때문에 그 식당은 직원 이직률이 높다."
+     }
+    ]
    },
    {
     "word": "spot",
-    "meaning": "1. 장소, 지점 2. 얼룩, 반점 3. 발견하다",
-    "pos": "n./v."
+    "pron": "미 [spɑt]\n영 [spɔt]",
+    "pos": "n./v.",
+    "meaning": "1. n. 장소, 지점  2. n. 얼룩, 반점  3. v. 발견하다",
+    "tip": "[[b]]쑥밭[[/b]]의 [[r]]얼룩덜룩[[/r]]한 [[r]]장소[[/r]]를 [[r]]발견하다[[/r]]",
+    "toeicExpr": [
+     "tourist spot 관광 명소  beauty spot 경치 좋은 장소  hot spot 인기 장소  meeting spot 만남 장소  on the spot 즉시, 그 자리에서",
+     "rust spots 녹이 슨 얼룩들  remove a spot 얼룩을 제거하다",
+     "spot a mistake 실수를 발견하다  spot an opportunity 기회를 발견하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The manager approved the request ________ the spot after reviewing the documents.",
+      "opt": "on (O) at (X)",
+      "ko": "관리자는 서류를 검토한 후 즉시 그 자리에서 요청을 승인했다."
+     },
+     {
+      "en": "2. This café is a popular meeting spot for local business people.",
+      "ko": "이 카페는 지역 사업가들에게 인기 있는 만남 장소이다."
+     }
+    ]
    },
    {
     "word": "evolve",
-    "meaning": "발전하다, 진화하다",
-    "pos": "v."
+    "pron": "미 [iválv]\n영 [ivɔ́lv]",
+    "pos": "v.",
+    "meaning": "v. 발전하다, 진화하다",
+    "tip": "[[b]]2등[[/b]]을 [[b]]밟으[[/b]](밟어) 그리고 1등으로 [[r]]발전하다, 진화하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "evolution",
+      "meaning": "진화, 발전"
+     }
+    ],
+    "toeicExpr": [
+     "evolve into + 명사: ~로 발전하다 (← into: 결과)",
+     "evolve into a global company 글로벌 기업으로 발전하다",
+     "evolve into a major provider 주요 공급업체로 발전하다",
+     "the evolution of technology 기술의 발전"
+    ],
+    "examVar": [
+     {
+      "en": "The small startup quickly evolved ________ a global technology company within just five years.",
+      "opt": "into (O) to (X)",
+      "ko": "그 작은 스타트업은 단 5년 만에 빠르게 글로벌 기술 회사로 발전했다."
+     }
+    ]
    },
    {
     "word": "incur",
+    "pron": "[inkə́:r]",
+    "pos": "v.",
     "meaning": "(비용·위험 등을) 초래하다, 발생시키다",
-    "pos": "v."
+    "tip": "술과 담배는 암이 몸 [[b]]in[[/b]](안에서) 커지는 것을 [[r]]초래하다[[/r]], [[r]]발생시키다[[/r]]",
+    "toeicExpr": [
+     "incur a cost/loss 비용을/손실을 발생시키다",
+     "incur risk 위험을 초래하다"
+    ]
    },
    {
     "word": "race",
+    "pron": "[reis]",
+    "pos": "n.",
     "meaning": "인종, 경주",
-    "pos": "n."
+    "tip": "① [[b]]레이스[[/b]](경주)를 펼치는 카레이서(car [[b]]racer[[/b]])에서 레이스는 [[r]]경주[[/r]]  ② 올림픽에서 달리기 [[b]]레이스[[/b]](경주)를 하는 여러 [[r]]인종[[/r]]",
+    "derivatives": [
+     {
+      "word": "racism",
+      "meaning": "인종 차별"
+     },
+     {
+      "word": "racist",
+      "meaning": "인종차별주의자; 인종차별적인"
+     }
+    ],
+    "toeicExpr": [
+     "win/lose a race 경주에서 이기다/지다",
+     "race discrimination 인종 차별",
+     "racism issue 인종차별 문제",
+     "experience/eliminate racism 인종차별을 경험하다/없애다",
+     "racist behavior/remark/attitude 인종차별적인 행동/발언/태도"
+    ]
    },
    {
     "word": "contend",
-    "meaning": "1. 싸우다, 맞서다, 대처하다, 논쟁하다 2. 주장하다",
-    "pos": "v."
+    "pron": "[kənténd]",
+    "pos": "v.",
+    "meaning": "1. 싸우다, 맞서다, 대처하다, 논쟁하다  2. 주장하다",
+    "tip": "북한의 [[b]]큰[[/b]] 핵 [[b]]탄두[[/b]] 개발을 두고 북한과 미국이 [[r]]싸우다[[/r]], [[r]]논쟁하다[[/r]], [[r]]주장하다[[/r]]",
+    "toeicExpr": [
+     "contend with ~와 싸우다, ~에 대처하다 (← with: ~와, ~을 상대로)",
+     "contend with rising costs 상승하는 비용에 대처하다",
+     "contend with competition 경쟁에 맞서다",
+     "contend for ~을 두고 경쟁하다 (← for: ~을 위해, ~에 대해)",
+     "contend for market share 시장 점유율을 놓고 경쟁하다",
+     "contend for the top position 최고 자리를 두고 경쟁하다",
+     "contend that ~ ~라고 주장하다",
+     "contend that demand is declining 수요가 감소하고 있다고 주장하다"
+    ],
+    "examVar": [
+     {
+      "en": "Many small businesses must contend ________ increasing operating costs.",
+      "opt": "with (O)  for (X)",
+      "ko": "많은 중소기업은 증가하는 운영 비용에 대처해야 한다."
+     }
+    ]
    },
    {
     "word": "showroom",
+    "pron": "[ʃóuru:m]",
+    "pos": "n.",
     "meaning": "전시실, 상품 진열실",
-    "pos": "n."
+    "tip": "[[b]]show[[/b]](보여주다) + [[b]]room[[/b]](방)",
+    "toeicExpr": [
+     "showroom display 전시실 진열",
+     "visit the showroom 전시장을 방문하다",
+     "furniture/electronics showroom 가구/전자제품 전시장"
+    ]
    },
    {
     "word": "statement",
-    "meaning": "1. 내역서, 거래명세서 2. 성명, 말, 진술",
-    "pos": "n."
+    "pron": "[stéitmənt]",
+    "pos": "n.",
+    "meaning": "1. 내역서, 거래명세서  2. 성명, 말, 진술",
+    "tip": "왜 숙박비가 이렇게 많이 나왔는지 [[r]]말[[/r]]하고 [[r]]진술[[/r]]하라는 요구에 \"우리 호텔에 [[b]]stay[[/b]](머물다)한 날이 [[b]]too[[/b]](너무) [[r]]많다[[/r]]. 그래서 숙박비가 많이 나왔다.\"며 보여주는 [[r]]내역서, 거래명세서[[/r]]",
+    "derivatives": [
+     {
+      "word": "state",
+      "meaning": "말하다, 진술하다, (문서에) 명시하다"
+     }
+    ],
+    "toeicExpr": [
+     "bank statement 은행 거래명세서  financial statement 재무제표",
+     "income statement 손익계산서  monthly statement 월별 명세서",
+     "account statement 계좌 명세서",
+     "issue/release a statement 성명을 발표하다",
+     "official statement 공식 성명",
+     "state clearly 명확히 진술하다  as stated above 위에서 언급한 대로"
+    ],
+    "examVar": [
+     {
+      "en": "1. The company issued a statement regarding the recent data breach.",
+      "ko": "회사는 최근 데이터 침해(유출)와 관련해 공식 성명을 발표했다."
+     },
+     {
+      "en": "2. Please review the attached financial statement before the meeting.",
+      "ko": "회의 전에 첨부된 재무제표를 검토해 주세요."
+     }
+    ]
    },
    {
     "word": "present",
-    "meaning": "1. 선물 2. 현재의 3. 참석한 4. 제출하다, 발표하다, 주다",
-    "pos": "n./adj./v."
+    "pron": "n. a. [préznt] v. [prizént]",
+    "pos": "n. a. v.",
+    "meaning": "1. n. 선물  2. a. 현재의  n. 현재  3. a. 참석한  4. v. 제출하다, 발표하다, 주다",
+    "tip": "[[b]]present[[/b]](선물)을 누구에게 주는가? [[r]]현재의[[/r]], [[r]]참석한[[/r]] 사람 중에 설문지를 [[r]]제출하고[[/r]], [[r]]발표하는[[/r]] 사람에게 [[r]]주다[[/r]]",
+    "derivatives": [
+     {
+      "word": "presentation",
+      "meaning": "프레젠테이션, 상영, 발표"
+     },
+     {
+      "word": "presently",
+      "meaning": "1. 현재, 지금은 2. 이내, 곧"
+     },
+     {
+      "word": "presence",
+      "meaning": "참석, 존재"
+     }
+    ],
+    "toeicExpr": [
+     "wedding/birthday present 결혼/생일 선물",
+     "the present moment 현재 시점  present condition 현재 상태",
+     "for the present 당분간, 현재로서는 (← for: ~ 동안)",
+     "at present 현재, 지금",
+     "be present at ~에 참석하다, 출석하다",
+     "all members present 참석한 모든 구성원",
+     "present at the meeting 회의에 참석한",
+     "present a report/proposal 보고서를/제안을 제출하다(발표하다)",
+     "present a gift 선물을 주다  present an award 상을 수여하다",
+     "present A with B A에게 B를 주다(수여하다)",
+     "present the employee with an award 직원에게 상을 수여하다",
+     "present customers with options 고객에게 선택지를 제공하다",
+     "give/make a presenation 프레젠테이션을 하다(발표하다)",
+     "presently under review 현재 검토 중인",
+     "presently unavailable/employed 현재 이용 불가한/재직 중인",
+     "the presence of security staff 보안 요원의 존재",
+     "the presence of hazards 위험 요소의 존재",
+     "require one's presence ~의 참석을 요구하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The committee will present the winner with a special award at the ceremony.",
+      "ko": "위원회는 시상식에서 우승자에게 특별상을 수여할 예정이다."
+     },
+     {
+      "en": "2. The service is presently unavailable due to maintenance.",
+      "ko": "그 서비스는 유지보수로 인해 현재 이용 불가하다."
+     },
+     {
+      "en": "3. The supervisor requested the team leader's ________ during the inspection.",
+      "opt": "presence (O)  presentation (X)",
+      "ko": "감독자는 점검 동안 팀장의 참석을 요청했다."
+     }
+    ]
    },
    {
     "word": "scan",
-    "meaning": "1. 훑어보다, 대충 읽다 2. 스캔하다",
-    "pos": "v."
+    "pron": "[skæn]",
+    "pos": "v.",
+    "meaning": "v. 1. 훑어보다, 대충 읽다  2. 스캔하다",
+    "tip": "문서를 [[r]]스캔[[/r]]하는 것은 전자시스템이 문서를 [[r]]훑어보고[[/r]] 출력하는 것",
+    "toeicExpr": [
+     "scan a document 문서를 훑어보다",
+     "scan the email/report 이메일을/보고서를 훑어보다(대충 읽다)",
+     "scan a document/receipt 문서를/영수증을 스캔하다"
+    ]
    },
    {
     "word": "pardon",
-    "meaning": "1. 뭐라고요? (다시 말해달라는 뜻으로 쓰는 말) 2. 용서 / 용서하다",
-    "pos": "n./v."
+    "pron": "[páːrdn]",
+    "pos": "n./v.",
+    "meaning": "1. 뭐라고요? (다시 말해달라는 뜻으로 쓰는 말)  2. n. 용서  v. 용서하다",
+    "tip": "① 수업시간에 학생이 \"[[r]]뭐라고요?[[/r]]\"라며 다시 말해달라고 [[b]]팔을 든[[/b]]\n② 벌을 서느라 두 [[b]]팔을 든[[/b]] 학생을 그만 [[r]]용서, 용서하다[[/r]]",
+    "toeicExpr": [
+     "Pardon me, could you repeat that sentence? 실례합니다. 그 문장을 다시 말씀해 주실 수 있을까요?",
+     "Pardon the inconvenience caused by the delay. 지연으로 인해 발생한 불편을 용서해 주십시오."
+    ]
    },
    {
     "word": "trace",
-    "meaning": "자취, 흔적, 발자국 / 추적하다",
-    "pos": "n./v."
+    "pron": "[treis]",
+    "pos": "n./v.",
+    "meaning": "n. 자취, 흔적, 발자국  v. 추적하다",
+    "tip": "눈 속에 찍힌 발자국 [[b]]틀에 있수[[/b]]. 그의 [[r]]자취, 흔적[[/r]]을 [[r]]추적하다[[/r]]",
+    "toeicExpr": [
+     "trace shipment/package/order 배송을/소포를/주문내역을 추적하다",
+     "trace of damage 손상의 흔적  trace of usage 사용 흔적"
+    ],
+    "examVar": [
+     {
+      "en": "The shipping company was able to trace the missing package within two days.",
+      "ko": "그 운송 회사는 이틀 안에 분실된 소포를 추적할 수 있었다."
+     }
+    ]
    },
    {
     "word": "skyrocket",
-    "meaning": "(가격 등이) 치솟다, 급등하다",
-    "pos": "v."
+    "pron": "미[skairάkit] 영[skairɔ́kit]",
+    "pos": "v.",
+    "meaning": "v. (가격 등이) 치솟다, 급등하다",
+    "tip": "[[b]]sky[[/b]](하늘)로 [[b]]rocket[[/b]](로켓)이 [[r]]치솟듯[[/r]] (물가 등이) [[r]]급등하다[[/r]]",
+    "toeicExpr": [
+     "skyrocket in price 가격이 치솟다",
+     "profits/values skyrocket 이익이/가치가 급증하다"
+    ]
    },
    {
     "word": "existing",
-    "meaning": "현존하는, 기존의, 현행의",
-    "pos": "adj."
+    "pron": "[igzístiŋ]",
+    "pos": "a.",
+    "meaning": "a. 현존하는, 기존의, 현행의",
+    "tip": "[[b]]exist[[/b]](존재하다)의 형용사형",
+    "toeicExpr": [
+     "existing policy/contract/customers/system 기존 정책/계약/고객/시스템"
+    ],
+    "examVar": [
+     {
+      "en": "The new policy will apply to both new and ______ customers.",
+      "opt": "existing (O)  existed (X)",
+      "ko": "새 정책은 신규 고객과 기존 고객 모두에게 적용된다.",
+      "note": "existed는 단순히 exist의 과거형으로 '존재했다'"
+     }
+    ]
    },
    {
     "word": "momentarily",
-    "meaning": "1. 잠시 동안, 잠깐 2. 곧, 이내",
-    "pos": "adv."
+    "pron": "[mòumantérəli]",
+    "pos": "ad.",
+    "meaning": "ad. 1. 잠시 동안, 잠깐  2. 곧, 이내",
+    "tip": "[[b]]moment[[/b]](순간, 잠시) + [[b]]ary[[/b]](형용사형 어미) + [[b]]ly[[/b]](부사형 어미)",
+    "toeicExpr": [
+     "paused/delayed momentarily 잠시 멈춘/지연된",
+     "will begin/resume/arrive momentarily 곧 시작될/재개될/도착할 것이다"
+    ]
    },
    {
     "word": "lavish",
-    "meaning": "아끼지 않는, 후한 / 아낌없이 쓰다(주다)",
-    "pos": "adj./v."
+    "pron": "[lǽviʃ]",
+    "pos": "a./v.",
+    "meaning": "a. 아끼지 않는, 후한  v. 아낌없이 쓰다(주다)",
+    "tip": "\"오늘 저녁값은 [[b]]내 BC[[/b]] 카드로 긁자!\"라며 돈을 [[r]]아끼지 않는, 후한[[/r]]",
+    "toeicExpr": [
+     "lavish praise/hospitality 아낌없는 칭찬/환대",
+     "lavish A on B B에게 A를 아낌없이 쓰다(주다)",
+     "lavish praise on employees 직원들에게 아낌없는 칭찬을 하다 (← on: 목적 대상)",
+     "lavish money on advertising 광고에 돈을 아낌없이 쓰다",
+     "lavish attention on product quality 제품 품질에 큰 관심을 기울이다"
+    ]
    },
    {
     "word": "openly",
-    "meaning": "솔직하게, 터놓고, 공개적으로",
-    "pos": "adv."
+    "pron": "[óupənli]",
+    "pos": "ad.",
+    "meaning": "ad. 솔직하게, 터놓고, 공개적으로",
+    "tip": "[[b]]open[[/b]](열려진) + [[b]]ly[[/b]](부사형 어미)] 마음을 오픈하고 [[r]]솔직하게, 터놓고[[/r]], 그리고 다른 사람들에게 오픈하고, 즉 [[r]]공개적으로[[/r]]",
+    "toeicExpr": [
+     "speak openly 솔직하게 말하다",
+     "criticize openly 공개적으로 비판하다",
+     "openly discuss an issue 사안을 공개적으로 논의하다",
+     "openly share information 정보를 공개적으로 공유하다"
+    ]
    },
    {
     "word": "annex",
-    "meaning": "1. 부속 건물, 별관 2. 부속 문서, 부록, 별첨 / 첨부하다",
-    "pos": "n./v."
+    "pron": "n. [ǽneks] v. [ənéks]",
+    "pos": "n./v.",
+    "meaning": "1. n. 부속 건물, 별관  2. n. 부속 문서, 부록, 별첨  v. 첨부하다",
+    "tip": "[[b]]an[[/b]](to) + [[b]]next[[/b]](옆의)] ① 본 건물 옆에 붙어 있는 [[r]]부속 건물, 별관[[/r]]  ② 문서 옆쪽에 붙어 있는 [[r]]부록[[/r]]",
+    "toeicExpr": [
+     "annex building 별관 건물  hotel annex 호텔 별관",
+     "annex to the report 보고서의 부속 문서",
+     "attached annex 첨부된 부속 문서",
+     "annexed file/document 첨부 파일/문서  Annex A 부록 A",
+     "refer to the annex 부록을 참고하다"
+    ],
+    "examVar": [
+     {
+      "en": "Additional specifications can be found in the annex to the contract.",
+      "ko": "추가 사양은 계약서의 부록에서 확인할 수 있다."
+     }
+    ]
    },
    {
     "word": "accidentally",
-    "meaning": "우연히, 뜻하지 않게, 실수로",
-    "pos": "adv."
+    "pron": "[æksidéntəli]",
+    "pos": "ad.",
+    "meaning": "ad. 우연히, 뜻하지 않게, 실수로",
+    "tip": "[[b]]accident[[/b]](사고)가 [[r]]우연히, 뜻하지 않게[[/r]] 발생했다는 느낌으로 암기",
+    "toeicExpr": [
+     "accidentally sent the email 이메일을 실수로 보냈다",
+     "accidentally deleted a file 파일을 실수로 삭제했다",
+     "accidentally disclosed information 정보를 우연히 공개했다"
+    ]
    },
    {
     "word": "attentive",
-    "meaning": "주의 깊은, 경청하는, 세심한",
-    "pos": "adj."
+    "pron": "[əténtiv]",
+    "pos": "a.",
+    "meaning": "a. 주의 깊은, 경청하는, 세심한",
+    "tip": "[[b]]어! ten[[/b]](10)명의 사람이 [[b]]TV[[/b]] 앞에 몰려서 [[r]]주의 깊게, 경청하는[[/r]]",
+    "derivatives": [
+     {
+      "word": "attention",
+      "meaning": "주의, 주목, 경청"
+     }
+    ],
+    "toeicExpr": [
+     "be attentive to detail 세부 사항에 주의 깊다",
+     "be attentive to customers 고객에게 세심하다",
+     "attentive listener 경청하는 사람",
+     "draw/attract attention 관심을 끌다",
+     "pay attention to ~에 주의를 기울이다",
+     "pay attention to safety rules 안전 규칙에 주의를 기울이다"
+    ],
+    "examVar": [
+     {
+      "en": "Please pay attention to the revised schedule attached to this email.",
+      "ko": "이 이메일에 첨부된 수정된 일정에 주의해 주세요."
+     }
+    ]
    },
    {
     "word": "binding",
-    "meaning": "(법 등이) 구속력 있는, 의무적인, 묶는",
-    "pos": "adj."
+    "pron": "[báindiŋ]",
+    "pos": "a.",
+    "meaning": "a. (법 등이) 구속력 있는, 의무적인, 묶는",
+    "tip": "[[b]]bind[[/b]](묶다) + [[b]]ing[[/b]] 사람을 법이나 의무로 [[b]]binding[[/b]](묶는), 즉 [[r]]법적 구속력이 있는[[/r]]",
+    "toeicExpr": [
+     "legally binding 법적 구속력이 있는",
+     "binding obligation 의무적인 책임",
+     "binding agreement/contract/decision 구속력 있는 합의/계약/결정"
+    ],
+    "examVar": [
+     {
+      "en": "Once signed by both parties, the agreement becomes legally binding and must be followed by all departments.",
+      "ko": "양측이 서명하면 해당 계약은 법적 구속력을 가지게 되며 모든 부서에서 이를 준수해야 한다."
+     }
+    ]
    },
    {
     "word": "sole",
-    "meaning": "유일한, 단독의, 독점의",
-    "pos": "adj."
+    "pron": "[soul]",
+    "pos": "a.",
+    "meaning": "a. 유일한, 단독의, 독점의",
+    "tip": "[[b]]solo[[/b]](혼자의, 단독의), 즉 [[r]]유일한, 단독의[[/r]]",
+    "derivatives": [
+     {
+      "word": "solely",
+      "meaning": "단독으로, 오로지"
+     }
+    ],
+    "toeicExpr": [
+     "sole responsibility/owner 단독 책임/소유자",
+     "sole right 독점적 권리  sole distributor 독점 유통업체",
+     "decide solely 단독으로 결정하다",
+     "be solely responsible for ~에 전적으로 책임이 있다"
+    ]
    },
    {
     "word": "jeopardy",
-    "meaning": "위험",
-    "pos": "n."
+    "pron": "[dʒépərdi]",
+    "pos": "n.",
+    "meaning": "n. 위험",
+    "tip": "깡패에게 [[b]]잡혀[[/b]](잡혀) [[b]]뒤[[/b]]를. 그래서 [[r]]위험[[/r]]에 빠진",
+    "derivatives": [
+     {
+      "word": "jeopardize",
+      "meaning": "위태롭게 하다"
+     }
+    ],
+    "toeicExpr": [
+     "put/place A in jeopardy A를 위험에 빠뜨리다",
+     "put the contract in jeopardy 계약을 위태롭게 하다",
+     "place the company's reputation in jeopardy 회사의 명성을 위태롭게 하다",
+     "jeopardize a contract/relationship 계약을/관계를 위태롭게 하다"
+    ]
    },
    {
     "word": "publish",
+    "pron": "[pʌbliʃ]",
+    "pos": "v.",
     "meaning": "출판하다, 발표하다, 공지하다",
-    "pos": "v."
+    "tip": "정보를 [[b]]퍼[[/b]]서 사람들에게 [[b]]불리[[/b]]!(불다) 하며 책으로 [[r]]출판하다, 발표하다, 공지하다[[/r]]",
+    "toeicExpr": [
+     "publish a book 책을 출판하다  publish a report 보고서를 발표하다",
+     "publish results/research 결과를/연구를 발표하다",
+     "publish information 정보를 공개하다",
+     "publish a notice 공지를 게시하다",
+     "publish schedules 일정을 공지하다"
+    ]
    }
   ]
  },
@@ -3062,78 +11317,440 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "pending",
-    "meaning": "1. 미결 상태의, 보류 중인 2. (어떤 일이) 있을 때까지, ~을 조건으로 한",
-    "pos": "prep./adj."
+    "pron": "[péndiŋ]",
+    "pos": "1. prep./a. / 2. prep.",
+    "meaning": "1. prep./a. 미결 상태의, 보류 중인\n2. prep. (어떤 일이) 있을 때까지, ~을 조건으로 한",
+    "tip": "계약서에 [[b]]pen[[/b]](펜)으로 [[b]]딩[[/b]]! 하고 마침표를 찍을 [[r]]때까지[[/r]]는, [[r]]미결의, 보류 중의[[/r]] 상태로 남아 있는",
+    "toeicExpr": [
+     "be/remain pending + 명사: ~을 대기 중이다/~을 대기 중인 상태로 남아 있다",
+     "be pending approval 승인 대기 중이다  be pending review 검토 대기 중이다",
+     "remain pending payment 결제 대기 중인 상태로 남아있다",
+     "remain pending issue 미해결 문제로 남아 있다",
+     "a pending issue 미결 문제",
+     "Payment for the order remains pending. 해당 주문에 대한 결제는 미결 상태이다.",
+     "pending further notice 추가 통지가 있을 때까지",
+     "pending negotiations 협상 결과가 있을 때까지(협상을 조건으로)"
+    ],
+    "examVar": [
+     {
+      "en": "Your request is still pending approval from the finance department.",
+      "ko": "귀하의 요청은 아직 재무부서의 승인을 기다리고 있습니다."
+     },
+     {
+      "en": "The office will remain closed pending further notice.",
+      "ko": "추가 공지가 있을 때까지 사무실은 계속 폐쇄됩니다."
+     }
+    ]
    },
    {
     "word": "impending",
+    "pron": "[impéndiŋ]",
+    "pos": "a.",
     "meaning": "임박한, 곧 일어날, 다가오는",
-    "pos": "adj."
+    "tip": "회의실 [[b]]im[[/b]](안에서) [[b]]pen[[/b]](펜)으로 [[b]]딩[[/b]]! 하고 평화 협정서에 싸인하려는 순간이다. 즉, 평화가 [[r]]임박한, 곧 일어날, 다가오는[[/r]]",
+    "toeicExpr": [
+     "impending deadline 임박한 마감일  impending meeting 곧 있을 회의",
+     "impending changes 다가오는 변경 사항  impending merger 임박한 합병"
+    ],
+    "examVar": [
+     {
+      "en": "Due to the impending deadline for regulatory approval, the company accelerated its internal review process.",
+      "ko": "임박한 규제 승인 마감일 때문에 회사는 내부 검토 절차를 가속화했다."
+     }
+    ]
    },
    {
     "word": "used car",
     "meaning": "중고차",
-    "pos": "n."
+    "tip": "[[b]]used[[/b]](사용되어진, 중고의) + [[b]]car[[/b]](자동차)",
+    "toeicExpr": [
+     "used car dealer/market 중고차 판매상/시장"
+    ]
+   },
+   {
+    "word": "sharply",
+    "pron": "[ʃɑːrpli]",
+    "pos": "ad.",
+    "meaning": "급격히, 뚜렷이",
+    "tip": "[[b]]sharp[[/b]](날카로운) 칼날처럼 칼날 두께의 변화가 [[r]]급격하게, 뚜렷이[[/r]] 있는",
+    "derivatives": [
+     {
+      "word": "sharp",
+      "meaning": "날카로운, 급격한, 뚜렷한"
+     },
+     {
+      "word": "sharpen",
+      "meaning": "날카롭게 하다, 연마하다"
+     }
+    ],
+    "toeicExpr": [
+     "rise/increase/decline sharply 급격히 오르다/증가하다/감소하다",
+     "sharp increase/decline 급격한 증가/감소",
+     "sharp difference 뚜렷한 차이  sharp contrast 극명한 대조",
+     "sharp tone 날카로운 어조",
+     "sharpen skills 능력을 향상시키다"
+    ]
+   },
+   {
+    "word": "favorable",
+    "pron": "[féivərəbl]",
+    "pos": "a.",
+    "meaning": "호의적인, 찬성의, 유리한",
+    "tip": "[[b]]favor[[/b]](호의, 찬성) + [[b]]able[[/b]](~할 만한)] 반장 후보에 대해 [[r]]호의를 갖을 만하여[[/r]] 당선에 [[r]]찬성하는[[/r]], 그래서 그 후보가 [[r]]유리한[[/r]]",
+    "derivatives": [
+     {
+      "word": "favorite",
+      "meaning": "매우 좋아하는; 매우 좋아하는 것"
+     },
+     {
+      "word": "favorably",
+      "meaning": "유리하게, 호의적으로"
+     },
+     {
+      "word": "unfavorable",
+      "meaning": "상황이 나쁜, 불리한, 비호의적인"
+     }
+    ],
+    "toeicExpr": [
+     "favorable impression 호의적인 인상  favorable conditions 유리한 조건",
+     "favorable response 긍정적인 반응",
+     "personal favorite 개인적으로 좋아하는 것  favorite dish 가장 좋아하는 요리",
+     "respond favorably 호의적으로 반응하다  treat favorably 우대하다",
+     "unfavorable weather 나쁜 날씨",
+     "unfavorable decision/situation 불리한 결정/상황"
+    ],
+    "examVar": [
+     {
+      "note": "favorable과 favorite를 구분하는 문제가 출제되었다.",
+      "en": "The new smartphone has become a _______ among young consumers.",
+      "opt": "favorite (O)  favorable (X)",
+      "ko": "그 새 스마트폰은 젊은 소비자들 사이에서 인기 있는 제품이 되었다."
+     },
+     {
+      "en": "The proposal received a _______ response from the board, increasing the likelihood of final approval.",
+      "opt": "favorable (O)  favorite (X)",
+      "ko": "그 제안서는 이사회로부터 호의적인 반응을 받아 최종 승인 가능성이 높아졌다."
+     }
+    ]
+   },
+   {
+    "word": "cite",
+    "pron": "[sait]",
+    "pos": "v.",
+    "meaning": "인용하다, (이유·예를) 들다",
+    "tip": "인터넷의 어떤 [[b]]사이트[[/b]]의 글을 가져와 [[r]]인용하다, 예를 들다[[/r]]",
+    "toeicExpr": [
+     "cite example/reason 예를/이유를 들다",
+     "cite source/case 출처를/사례를 인용하다"
+    ]
    },
    {
     "word": "spokesperson",
+    "pron": "[spóukspə̀:rsn]",
+    "pos": "n.",
     "meaning": "대변인",
-    "pos": "n."
+    "tip": "대신 [[b]]spoke[[/b]](말해주는) [[b]]person[[/b]](사람), 즉 [[r]]대변인[[/r]]",
+    "toeicExpr": [
+     "company/government/official spokesperson 회사/정부/공식 대변인"
+    ]
    },
    {
     "word": "conditional",
+    "pron": "[kəndíʃənl]",
+    "pos": "a.",
     "meaning": "조건부의",
-    "pos": "adj."
+    "tip": "① 몸 [[b]]컨디션을[[/b]] 봐서 할게, 즉 [[r]]조건부의[[/r]]  ② [[b]]condition[[/b]](조건) + [[b]]al[[/b]](형용사형 어미)",
+    "toeicExpr": [
+     "conditional approval/offer/contract/agreement 조건부 승인/제안/계약/합의",
+     "be conditional on(upon) ~을 조건으로 하다, ~에 달려있다 (← on: 의존, 달려있음 ⓔ depend on, rely on...)",
+     "be conditional on management approval 경영진 승인을 조건으로 하다",
+     "be conditional on funding availability 자금 가용성을 조건으로 하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The company granted conditional approval, pending further review.",
+      "ko": "회사는 추가 검토를 전제로 조건부 승인을 내렸다."
+     },
+     {
+      "en": "2. The job offer is conditional upon successful completion of training.",
+      "ko": "그 채용 제안은 교육을 성공적으로 이수하는 것을 조건으로 한다."
+     }
+    ]
    },
    {
     "word": "slowdown",
+    "pron": "[slóudàun]",
+    "pos": "n.",
     "meaning": "경기 후퇴, 감속",
-    "pos": "n."
+    "tip": "경기가 [[b]]slow[[/b]](느린) 속도로 [[b]]down[[/b]](아래로) 향하는, 즉 [[r]]경기 후퇴, 감속[[/r]]",
+    "toeicExpr": [
+     "economic/business slowdown 경기/사업 둔화",
+     "slowdown in growth 성장 둔화"
+    ]
    },
    {
     "word": "percentage",
+    "pron": "[pərséntidʒ]",
+    "pos": "n.",
     "meaning": "백분율, 비율",
-    "pos": "n."
+    "tip": "[[b]]percent[[/b]](퍼센트) + [[b]]age[[/b]]",
+    "derivatives": [
+     {
+      "word": "percent",
+      "meaning": "퍼센트"
+     }
+    ],
+    "toeicExpr": [
+     "high/low percentage 높은/낮은 비율  percentage of employees 직원의 비율",
+     "calculate percentage 백분율을 계산하다",
+     "5 percent 5퍼센트 (percentage는 앞에 수사가 오지 못한다.)"
+    ],
+    "examVar": [
+     {
+      "note": "percentage와 percent를 구분하는 문제가 자주 출제되었다. * percentage는 숫자가 앞에 오지 않는다. 그리고 '숫자가 붙지 않는' 비율의 의미로는 percent를 쓰지 않는다.",
+      "en": "The city's population expanded by 12 _______.",
+      "opt": "percent (O)  percentage (X)",
+      "ko": "그 도시의 인구가 12퍼센트로 늘어났다."
+     },
+     {
+      "en": "Only a small _______ of applicants met the requirements.",
+      "opt": "percentage (O)  percent (X)",
+      "ko": "지원자 중 극히 일부만이 요건을 충족했다."
+     }
+    ]
+   },
+   {
+    "word": "amenity",
+    "pron": "[əménəti]",
+    "pos": "n.",
+    "meaning": "편의시설, 편의용품",
+    "tip": "[[b]]\"어, 매냐 티[[/b]](셔츠)에 이 앞치마를.\" 즉, 음식이 옷에 튀지 않게 준비한 앞치마와 같은 식당의 [[r]]편의용품, 편의시설[[/r]]",
+    "toeicExpr": [
+     "hotel/public amenities 호텔/공공 편의시설",
+     "provide amenities 편의시설을 제공하다  amenities for guests 고객용 편의시설"
+    ]
+   },
+   {
+    "word": "blueprint",
+    "pron": "[blúːprìnt]",
+    "pos": "n.",
+    "meaning": "청사진, 계획",
+    "tip": "앞으로 지을 건물 설계도를 [[b]]blue[[/b]](파란색) 종이에 [[b]]print[[/b]](인쇄)한 것, 즉 [[r]]청사진, 계획[[/r]]",
+    "toeicExpr": [
+     "business blueprint 사업 계획  project blueprint 프로젝트 청사진",
+     "design blueprint 설계도"
+    ]
+   },
+   {
+    "word": "afterward",
+    "pron": "미[ǽftərwərd] 영[áːftərwərd]",
+    "pos": "ad.",
+    "meaning": "그 후에, 이후에",
+    "tip": "[[b]]after[[/b]](~ 후에, 나중에) + [[b]]ward[[/b]](~쪽으로)",
+    "toeicExpr": [
+     "soon afterward 곧 그 후에  shortly afterward 곧바로 그 후에",
+     "not long afterward 오래 지나지 않아  immediately afterward 즉시 그 후에",
+     "and afterward 그리고 그 후에  meet/discuss afterward 나중에 만나다/논의하다"
+    ],
+    "examVar": [
+     {
+      "note": "1. afterward(부사)와 after(전치사, 접속사)를 구분하는 문제가 자주 출제되었다.",
+      "en": "The presentation concluded, and the team met ______ to discuss next steps.",
+      "opt": "afterward (O)  after (X)",
+      "ko": "발표가 끝났고, 팀은 그 후에 다음 단계를 논의하기 위해 모였다."
+     },
+     {
+      "en": "2. The system upgrade was completed overnight; afterward, normal operations resumed early the next morning.",
+      "ko": "시스템 업그레이드는 밤사이 완료되었고, 그 후에 정상 운영이 다음날 이른 아침에 재개되었다."
+     },
+     {
+      "en": "3. The CEO announced his retirement, and not long afterward, the board appointed a successor.",
+      "ko": "CEO가 사임을 발표했고, 그 후 곧이어 이사회가 후임자를 임명했다."
+     }
+    ]
    },
    {
     "word": "spacious",
+    "pron": "[spéiʃəs]",
+    "pos": "a.",
     "meaning": "널찍한",
-    "pos": "adj."
+    "tip": "[[[b]]space[[/b]](공간) + [[b]]cious[[/b]](형용사형 어미)] [[r]]공간[[/r]]이 [[r]]널찍한[[/r]]",
+    "toeicExpr": [
+     "spacious room/office/area 넓은 방/사무실/공간"
+    ]
    },
    {
     "word": "expressly",
+    "pron": "[iksprésli]",
+    "pos": "ad.",
     "meaning": "분명히, 명확히, 명시적으로",
-    "pos": "adv."
+    "tip": "[[r]]명확히, 분명히[[/r]] [[b]]express[[/b]](표현하다)",
+    "toeicExpr": [
+     "expressly state 분명히 말하다",
+     "expressly mentioned/declared/prohibited 분명히 언급된/선언된/금지된",
+     "unless expressly stated/provided (계약, 규정 등에) 분명히 명시되지 않는 한"
+    ],
+    "examVar": [
+     {
+      "en": "1. The use of company vehicles is expressly prohibited for personal purposes.",
+      "ko": "회사 차량의 개인적 사용은 명시적으로 금지되어 있다."
+     },
+     {
+      "en": "2. Unless expressly stated in the contract, refunds are not available.",
+      "ko": "계약에 명시적으로 규정되지 않는 한 환불은 제공되지 않는다."
+     }
+    ]
    },
    {
     "word": "appearance",
-    "meaning": "1. 외모, 외관 2. 등장, 나타남",
-    "pos": "n."
+    "pron": "[əpíərəns]",
+    "pos": "n.",
+    "meaning": "1. 외모, 외관  2. 등장, 나타남",
+    "tip": "[[b]]appear[[/b]](나타나다, ~처럼 보이다)의 명사형",
+    "toeicExpr": [
+     "improve appearance 외관을 개선하다",
+     "make an appearance 모습을 드러내다  public appearance 공식 석상에 등장",
+     "first appearance 첫 등장"
+    ]
    },
    {
     "word": "ratio",
+    "pron": "미[réiʃou] 영[réiʃiòu]",
+    "pos": "n.",
     "meaning": "비율",
-    "pos": "n."
+    "tip": "각자의 재산 [[r]]비율[[/r]]에 따라 세금을 [[r]]내시오[[/r]].",
+    "toeicExpr": [
+     "success/high ratio 성공/높은 비율",
+     "A to B ratio=ratio of A and B A대 B의 비율",
+     "* the ratio of A and B (X) / the ratio between A to B (X)",
+     "male-to-female ratio 남녀 비율  cost-to-profit ratio 비용 대비 수익 비율",
+     "ratio of employees to managers 직원 대 관리자 비율",
+     "ratio of output to input 산출 대비 투입 비율"
+    ],
+    "examVar": [
+     {
+      "en": "The company aims to improve the ______ of output to input.",
+      "opt": "(A) ratio  (B) percent  (C) amount  (D) quantity",
+      "ans": "(A)",
+      "ko": "회사는 산출 대비 투입의 비율을 개선하는 것을 목표로 한다."
+     }
+    ]
+   },
+   {
+    "word": "cupboard",
+    "pron": "[kʌ́bərd]",
+    "pos": "n.",
+    "meaning": "찬장, 수납장",
+    "tip": "[[b]]cup(컵)[[/b]] + [[b]]board(판자)[[/b]] 컵을 올려놓는 판자는 [[r]]찬장, 수납장[[/r]]",
+    "toeicExpr": [
+     "storage cupboard 수납장  built-in cupboard 붙박이장"
+    ]
+   },
+   {
+    "word": "desirable",
+    "pron": "[dizáiərəbl]",
+    "pos": "a.",
+    "meaning": "바람직한, 선호되는",
+    "tip": "[[b]]desire(바라다)[[/b]] + [[b]]able(~할만한)[[/b]] 사람들이 바랄만한, 즉 [[r]]바람직한, 선호되는[[/r]]",
+    "toeicExpr": [
+     "highly desirable 매우 바람직한",
+     "desirable outcome/feature 바람직한 결과/특징",
+     "desirable skills/qualities/candidate/location 선호되는(바람직한) 기술/자질/지원자/위치"
+    ]
+   },
+   {
+    "word": "documentary",
+    "pron": "미[dὰkjuméntəri] 영[dɔ̀kjuméntəri]",
+    "pos": "a. 문서의, 서류의  n. 기록 영화",
+    "meaning": "a. 문서의, 서류의  n. 기록 영화",
+    "tip": "[[b]]다큐멘터리 영화[[/b]]란 [[b]]문서로 이뤄진 자료[[/b]]에 기반한 [[r]]기록 영화[[/r]]",
+    "derivatives": [
+     {
+      "word": "document",
+      "meaning": "문서, 서류; 기록하다, 문서화하다"
+     },
+     {
+      "word": "documented",
+      "meaning": "문서화된, 증빙된"
+     },
+     {
+      "word": "documentation",
+      "meaning": "문서, 서류, 증빙자료"
+     }
+    ],
+    "toeicExpr": [
+     "documentary record 문서 기록  documentary proof 서류 증명",
+     "official/legal document 공식/법적 문서",
+     "submit/review/sign a document 문서를 제출하다/검토하다/서명하다",
+     "document procedures 절차를 문서화하다",
+     "document expenses 비용을 기록하다",
+     "documented expenses 증빙된 비용",
+     "documented procedures/evidence/records 문서화된 절차/증거/기록",
+     "required documentation 필요한 서류",
+     "supporting/necessary documentation 증빙/필수 서류"
+    ],
+    "examVar": [
+     {
+      "note": "document가 동사로도 쓰임을 묻는 문제가 출제되었다.",
+      "en": "We need to document transaction with the potential clients.",
+      "ko": "우리는 단골이 될 가능성이 있는 고객들과의 거래를 문서화할 필요가 있다."
+     },
+     {
+      "en": "Only properly documented expenses will be reimbursed.",
+      "ko": "적절히 증빙된 비용만 환급된다."
+     }
+    ]
    },
    {
     "word": "systematically",
+    "pron": "[sìstəmǽtikəli]",
+    "pos": "ad.",
     "meaning": "체계적으로, 질서정연하게",
-    "pos": "adv."
+    "tip": "[[b]]system(조직, 체계)[[/b]]의 파생어",
+    "toeicExpr": [
+     "work/analyze/approach systematically 체계적으로 일하다/분석하다/접근하다"
+    ]
    },
    {
     "word": "beneficiary",
-    "meaning": "수익자, 수혜자, (연금·보험 등의) 수취인",
-    "pos": "n."
+    "pron": "미[bènəfíʃieri] 영[bènəfíʃəri]",
+    "pos": "n.",
+    "meaning": "수익자, 수혜자, (연금ㆍ보험 등의) 수취인",
+    "tip": "① [[r]]수익자, 수혜자[[/r]]가 수익을 얻어 형편이 2배나 [[b]]피셔리[[/b]].  ② [[b]]bene(good)[[/b]] + [[b]]ficiary[[/b]] [[r]]좋은[[/r]] 것을 받는 사람, 즉 [[r]]수익자, 수혜자[[/r]]",
+    "toeicExpr": [
+     "insurance beneficiary 보험 수령인  pension beneficiary 연금 수령자",
+     "named beneficiary 지정 수익자"
+    ]
    },
    {
     "word": "benefactor",
+    "pron": "[bénəfæ̀ktər]",
+    "pos": "n.",
     "meaning": "(자선 단체 등의) 후원자, 선행을 베푸는 사람",
-    "pos": "n."
+    "tip": "[[b]]bene(good)[[/b]] + [[b]]fact(make)[[/b]] + [[b]]or[[/b]] [[b]]bene(좋은)[[/b]] 일을 [[b]]fact(만드는)[[/b]] [[b]]or(사람)[[/b]], 즉 [[r]]후원자[[/r]]",
+    "toeicExpr": [
+     "generous/anonymous benefactor 관대한/익명의 후원자",
+     "benefactor donation 후원자의 기부금"
+    ]
    },
    {
     "word": "automation",
+    "pron": "[ɔ̀ːtəméiʃən]",
+    "pos": "n.",
     "meaning": "자동화",
-    "pos": "n."
+    "tip": "[[b]]auto(self)[[/b]] + [[b]]mation[[/b]] 스스로 움직이게 하는 것, 즉 [[r]]자동화[[/r]]",
+    "derivatives": [
+     {
+      "word": "automate",
+      "meaning": "자동화하다"
+     }
+    ],
+    "toeicExpr": [
+     "office/process/industrial automation 사무/공정/산업 자동화",
+     "automation technology 자동화 기술",
+     "introduce automation 자동화를 도입하다",
+     "automate processes/tasks/production 업무 절차를/작업을/생산을 자동화하다"
+    ]
    }
   ]
  },
@@ -3143,88 +11760,477 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "advance",
-    "meaning": "1. 전진; 전진하다, 진전시키다, 앞당기다 2. 사전의 3. 선불금, 선지급금",
-    "pos": "n./v./adj."
+    "pron": "미[ædvǽns] 영[ədvάːns]",
+    "pos": "1. n. v. / 2. a. / 3. n.",
+    "meaning": "1. n. 전진  v. 전진하다, 진전시키다, 앞당기다  2. a. 사전의  3. n. 선불금, 선지급금",
+    "tip": "[[b]]어두운[[/b]] 곳에서 [[b]]뱀[[/b]]이 [[b]]스[[/b]]~윽 먹이를 향해 [[r]]전진, 전진하다[[/r]] → 일을 [[r]]전진시켜[[/r]] [[r]]진전시키다, 앞당기다[[/r]] → 앞으로 [[r]]전진한[[/r]] 시간에, 즉 [[r]]사전의[[/r]] → 앞으로 [[r]]전진한[[/r]] 시간에 주는 돈인 [[r]]선불금[[/r]]",
+    "derivatives": [
+     {
+      "word": "advanced",
+      "meaning": "1. 고급의, 진보된, 첨단의  2. (학습·단계가) 상급의"
+     }
+    ],
+    "toeicExpr": [
+     "advance the schedule 일정을 앞당기다",
+     "advance the meeting date 회의 날짜를 앞당기다",
+     "advance the project 프로젝트를 진척시키다",
+     "in advance 미리, 사전에   pay in advance 선불로 지불하다",
+     "advance booking 사전 예약   advance notice 사전 공지",
+     "advance registration 사전 등록   advance orders 선주문",
+     "advance payment 선불 결제",
+     "salary advance 급여 선지급금   cash advance 현금 선지급",
+     "advance on expenses 경비 선지급",
+     "advanced technology/machinery/equipment 첨단 기술/기계/장비",
+     "advanced training session 상급 훈련 과정",
+     "advanced level/course 상급 단계/과정"
+    ],
+    "examVar": [
+     {
+      "note": "advance의 다양한 뜻이 자주 출제되었다."
+     },
+     {
+      "en": "The company aims to advance its research efforts through increased funding.",
+      "ko": "회사는 자금 증액을 통해 연구 노력을 진전시키는 것을 목표로 한다."
+     },
+     {
+      "en": "The meeting has been advanced to an earlier date.",
+      "ko": "회의는 더 이른 날짜로 앞당겨졌다."
+     },
+     {
+      "en": "Please notify the administration office in advance of any changes to your attendance schedule.",
+      "ko": "출석 일정에 변경 사항이 있을 경우 행정실에 미리 알려 주시기 바랍니다."
+     },
+     {
+      "en": "Employees must give ___ notice before taking leave.",
+      "opt": "(A) advance  (B) advanced  (C) advancing  (D) advancement",
+      "ans": "(A)",
+      "ko": "직원은 휴가를 내기 전에 사전 통지를 해야 한다."
+     },
+     {
+      "en": "He requested a salary advance due to unexpected expenses.",
+      "ko": "그는 예상치 못한 지출로 인해 급여 선지급금을 요청했다."
+     },
+     {
+      "en": "Employees received ___ training on the new software.",
+      "opt": "(A) advance  (B) advanced  (C) advancing  (D) advancement",
+      "ans": "(B)",
+      "ko": "직원들은 새 소프트웨어에 대한 고급(상급의) 교육을 받았다."
+     }
+    ]
+   },
+   {
+    "word": "spectrum",
+    "pron": "[spéktrəm]",
+    "pos": "n.",
+    "meaning": "(빛의) 스펙트럼, 범위",
+    "tip": "무지개 빛깔의 [[b]]스펙트럼[[/b]]에서 빨주노초파남보의 각각의 [[r]]범위[[/r]]",
+    "toeicExpr": [
+     "a wide spectrum 광범위한 범위",
+     "a broad spectrum of services 다양한 서비스 범위",
+     "a full spectrum 전 영역  price spectrum 가격대 범위"
+    ],
+    "examVar": [
+     {
+      "en": "The company offers a broad spectrum of services to clients.",
+      "ko": "그 회사는 고객에게 다양한 범위의 서비스를 제공한다."
+     }
+    ]
+   },
+   {
+    "word": "whereby",
+    "pron": "[hwέərbai]",
+    "pos": "ad.",
+    "meaning": "(관계부사) 그에 따라서, 그것에 의하여",
+    "tip": "[[[b]]where[[/b]](어디) + [[b]]by[[/b]](~에 의해)] 그 [[r]]어디[[/r]]에서의 상황에 [[r]]의해[[/r]], 즉 [[r]]그것에 의하여[[/r]]",
+    "toeicExpr": [
+     "a system whereby employees can request vacation days online 직원들이 휴가를 온라인으로 신청할 수 있는 시스템",
+     "a method whereby damaged products are returned to the warehouse 파손된 제품을 창고로 반품하는 방법"
+    ],
+    "examVar": [
+     {
+      "en": "The company implemented a new approval system, whereby all purchase requests are automatically logged and reviewed.",
+      "ko": "회사는 새로운 승인 시스템을 도입했다. 그것에 의하여 모든 구매 요청이 자동으로 기록되고 검토된다."
+     }
+    ]
+   },
+   {
+    "word": "malfunction",
+    "pron": "[mælfʌ́ŋkʃən]",
+    "pos": "n./v.",
+    "meaning": "n. 고장, 오동작  v. 오동작하다",
+    "tip": "① [맬펑크션 → 매일 펑크셔] 이 차는 매일 [[b]]펑크[[/b]]가 난다, 즉 [[r]]고장[[/r]]\n② [[[b]]mal[[/b]](bad) + [[b]]function[[/b]](작동)] [[r]]고장, 오작동[[/r]]",
+    "toeicExpr": [
+     "equipment/software malfunction 장비/소프트웨어 고장",
+     "system malfunction 시스템 오작동"
+    ]
+   },
+   {
+    "word": "counter",
+    "pron": "[káuntər]",
+    "pos": "n./v.",
+    "meaning": "1. n. 계산대, 판매대  2. v. 대응하다",
+    "tip": "① 상대방의 공격에 [[b]]카운터[[/b]] 펀치로 [[r]]대응하다[[/r]]\n② [[b]]counter[[/b]](against: ~에 대항하여): [[r]]대응하다[[/r]]",
+    "toeicExpr": [
+     "counter rising costs 증가하는 비용에 대응하다",
+     "counter declining sales 감소하는 매출에 대응하다",
+     "counter customer complaints 고객 불만에 대응하다"
+    ],
+    "examVar": [
+     {
+      "en": "The spokesperson moved quickly to counter the criticism raised by consumer groups.",
+      "ko": "대변인은 소비자 단체가 제기한 비판에 대응하기 위해 신속히 움직였다."
+     }
+    ]
    },
    {
     "word": "deliver",
-    "meaning": "1. 배달하다, 전달하다 2. (연설·발표 등을) 하다",
-    "pos": "v."
+    "pron": "[dilívər]",
+    "pos": "v.",
+    "meaning": "1. 배달하다, 전달하다  2. (연설·발표 등을) 하다",
+    "tip": "생각을 말로 사람들에게 [[b]]deliver[[/b]](전달하다), 즉 [[r]](연설 등을) 하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "delivery",
+      "meaning": "배달"
+     }
+    ],
+    "toeicExpr": [
+     "deliver the order to the customer 주문한 물품을 고객에게 배달하다",
+     "deliver a speech 연설하다  deliver a presentation 발표하다",
+     "delivery date 배송일  delivery status/service 배송 상태/서비스"
+    ],
+    "examVar": [
+     {
+      "en": "The CEO will deliver a speech at the annual shareholders' meeting.",
+      "ko": "CEO는 연례 주주총회에서 연설을 할 예정이다."
+     }
+    ]
    },
    {
     "word": "on-site",
-    "meaning": "현장의; 현장에서",
-    "pos": "adj./adv."
+    "pron": "미 [á:nsáit] 영 [ɔ́nsáit]",
+    "pos": "a./ad.",
+    "meaning": "a. 현장의  ad. 현장에서",
+    "tip": "[[[b]]on[[/b]](~ 위에, ~에 딱 붙어 있는) + [[b]]site[[/b]](장소, 현장)] [[r]]현장의, 현장에서[[/r]]",
+    "derivatives": [
+     {
+      "word": "off-site",
+      "meaning": "외부에서, 현장 밖에서 (← off: ~에서 떨어져)"
+     }
+    ],
+    "toeicExpr": [
+     "on-site inspection/training/support/staff 현장 점검/교육/지원/직원",
+     "off-site meeting/training/event 외부 회의/교육/행사"
+    ]
    },
    {
     "word": "Please be advised that ~",
     "meaning": "~라는 점을 알려드립니다, 유의하시기 바랍니다",
-    "pos": "int."
+    "tip": "직역하면 '[[r]]~하는 것을 조언받으세요[[/r]]', 즉 [[r]]~라는 점을 알려드립니다[[/r]]",
+    "toeicExpr": [
+     "Please be advised that the meeting has been rescheduled. 회의가 일정 변경되었음을 안내드립니다."
+    ]
    },
    {
     "word": "post",
-    "meaning": "1. 게시하다, 공지하다 2. 배치하다, 파견하다; 직책 3. 우편으로 보내다",
-    "pos": "v./n."
+    "pron": "[poust]",
+    "pos": "v./n.",
+    "meaning": "1. v. 게시하다, 공지하다  2. v. 배치하다, 파견하다  n. 직책  3. v. 우편으로 보내다",
+    "tip": "① 블로그에 [[b]]posting[[/b]](포스팅)한다는 것은 글을 [[r]]게시하고 공지하는 것[[/r]]\n② [[b]]post[[/b]] office(우체국)에 우체국장 직책으로 [[r]]배치하다, 파견하다[[/r]]\n③ [[b]]post[[/b]] office(우체국)에서 [[r]]우편으로 보내다[[/r]]",
+    "derivatives": [
+     {
+      "word": "posting",
+      "meaning": "게시물, 공고, 배치, 파견"
+     }
+    ],
+    "toeicExpr": [
+     "post job openings 채용 공고를 게시하다",
+     "post a notice 공지사항을 게시하다",
+     "be posted at the front desk 안내 데스크에 게시되다",
+     "be posted at the main office 본사에 배치되다",
+     "be posted at the worksite 작업 현장에 배치되다",
+     "vacant post 공석인 직책  apply for a post 직책에 지원하다",
+     "job posting 채용 공고  online posting 온라인 게시물",
+     "overseas posting 해외 파견(발령)"
+    ],
+    "examVar": [
+     {
+      "en": "The company decided to post several experienced engineers to its overseas branch for six months.",
+      "ko": "회사는 여러 명의 숙련된 엔지니어를 6개월 동안 해외 지사에 파견하기로 결정했다."
+     }
+    ]
+   },
+   {
+    "word": "serial number",
+    "meaning": "일련번호, 제품 번호, 고유 식별 번호",
+    "tip": "[[b]]serial[[/b]](연속의) [[b]]number[[/b]](숫자)] 숫자가 연속으로 있는 [[r]]일련번호, 제품 번호[[/r]]",
+    "toeicExpr": [
+     "enter the serial number 일련번호를 입력하다",
+     "verify the serial number 일련번호를 확인하다"
+    ]
+   },
+   {
+    "word": "return",
+    "pron": "[ritɔ́:rn]",
+    "meaning": "1. v. 돌아오다  n. 왕복  2. v. 돌려주다, 반품하다, 환불하다  3. n. 수익, 수익률",
+    "tip": "① [[b]]re[[/b]](뒤로) [[b]]turn[[/b]](돌아서) 오다, 즉 [[r]]돌아오다, 왕복[[/r]]\n② [[b]]re[[/b]](다시) [[b]]turn[[/b]](돌려서) 주다, 즉 [[r]]돌려주다, 반품하다[[/r]]\n③ 노동이나 투자에 대한 대가로 [[b]]return[[/b]](돌아오다), 즉 [[r]]수익, 수익률[[/r]]",
+    "toeicExpr": [
+     "return to the office 사무실로 돌아오다",
+     "return ticket (=round-trip ticket) 왕복 티켓",
+     "return from vacation 휴가에서 돌아오다",
+     "return the item 물건을 반품하다",
+     "return the equipment 장비를 반납하다",
+     "high returns 높은 수익  annual return 연간 수익",
+     "investment return 투자 수익"
+    ],
+    "examVar": [
+     {
+      "en": "Investors are seeking a higher return on their long-term investments despite market volatility.",
+      "ko": "투자자들은 시장 변동성에도 불구하고 장기 투자에서 더 높은 수익을 추구하고 있다."
+     }
+    ]
+   },
+   {
+    "word": "venue",
+    "pron": "[vénjuː]",
+    "pos": "n.",
+    "meaning": "장소, 행사 장소",
+    "tip": "크루즈 [[b]]배[[/b]]를 타고 [[b]]new[[/b]](새로운) [[r]]장소[[/r]]나 [[r]]행사 장소[[/r]]로 주기적으로 이동하다",
+    "toeicExpr": [
+     "venue for the event 행사 장소  conference venue 회의 장소",
+     "wedding venue 결혼식 장소"
+    ]
    },
    {
     "word": "confidence",
-    "meaning": "1. 자신감, 신뢰 2. 비밀",
-    "pos": "n."
+    "pron": "미[kɑ́nfidəns] 영[kɔ́nfidəns]",
+    "pos": "n.",
+    "meaning": "1. 자신감, 신뢰  2. 비밀",
+    "tip": "큰 [[b]]피[[/b]] 같은 [[b]]돈[[/b]]을 [[b]]쓰[[/b]]고 있을 정도로 [[r]]자신감[[/r]]을 갖고 투자한 [[r]]비밀[[/r]] 주식",
+    "derivatives": [
+     {
+      "word": "confident",
+      "meaning": "신뢰하는, 자신 있는"
+     },
+     {
+      "word": "confidential",
+      "meaning": "비밀의"
+     }
+    ],
+    "toeicExpr": [
+     "confidence in ~에 대한 신뢰, 자신감 (← in: 신뢰의 대상 ⓐ trust in ~을 신뢰하다)",
+     "confidence in the company/product 회사에/제품에 대한 신뢰",
+     "lose/gain confidence 신뢰를 잃다/얻다  public confidence 대중의 신뢰",
+     "in confidence 비밀리에  in strict confidence 철저히 비밀로",
+     "confident manner 자신감 있는 태도",
+     "be confident in the product 제품의 품질에 자신이 있다",
+     "keep information confidential 정보를 비밀로 유지하다",
+     "confidential document 비밀 문서"
+    ],
+    "examVar": [
+     {
+      "en": "1. The recent improvements in service quality have increased customer confidence in the company.",
+      "ko": "최근 서비스 품질 향상은 회사에 대한 고객 신뢰를 높였다."
+     },
+     {
+      "en": "2. confident와 confidential을 구분하는 문제가 자주 출제되었다.",
+      "opt": "All customer records are treated as strictly ______ and must not be shared with third parties.   confidential (O)  confident (X)",
+      "ko": "모든 고객 기록은 엄격히 기밀로 취급되며 제3자와 공유되어서는 안 된다."
+     }
+    ]
    },
    {
     "word": "soft copy",
     "meaning": "전자 파일 형태의 문서",
-    "pos": "n."
+    "tip": "[[b]]소프트[[/b]]웨어를 사용한 [[b]]copy[[/b]](사본), 즉 [[r]]전자 파일 형태의 문서[[/r]]",
+    "derivatives": [
+     {
+      "word": "hard copy",
+      "meaning": "인쇄본, 출력물(종이로 된 문서)"
+     }
+    ],
+    "toeicExpr": [
+     "soft copy of the document 문서의 전자 파일",
+     "send a soft copy 전자 파일을 보내다",
+     "hard copy of the report 보고서 인쇄본",
+     "print a hard copy 인쇄본을 출력하다"
+    ]
    },
    {
     "word": "fill the order",
     "meaning": "주문을 처리하다(완성시키다)",
-    "pos": "v."
+    "tip": "주문([[b]]order[[/b]])한 만큼 상대방의 창고에 채워 넣어([[b]]fill[[/b]]) [[r]]주문을 처리하다[[/r]]",
+    "toeicExpr": [
+     "fill the order by Friday 금요일까지 주문을 처리하다",
+     "fill the order on time 제때 주문을 처리하다"
+    ],
+    "examVar": [
+     {
+      "en": "To ensure timely delivery, the supplier agreed to fill the order by Wednesday.",
+      "ko": "적시 배송을 보장하기 위해, 공급업체는 수요일까지 주문을 처리하기로 합의했습니다."
+     }
+    ]
    },
    {
     "word": "cordial",
+    "pron": "미[kɔ́ːrdʒəl] 영[kɔ́ːdiəl]",
+    "pos": "a.",
     "meaning": "정중한, 진심 어린",
-    "pos": "adj."
+    "tip": "어른에게 [[b]]코[[/b]]가 땅에 닿도록 하는 [[b]]절[[/b]]은 [[r]]정중한, 진심 어린 절[[/r]]",
+    "derivatives": [
+     {
+      "word": "cordially",
+      "meaning": "정중히, 진심으로"
+     }
+    ],
+    "toeicExpr": [
+     "cordial invitation 정중한 초대",
+     "cordial appreciation/cooperation/welcome 진심 어린 감사/협조/환대",
+     "cordially invite you to ~ 정중히 ~에 초대합니다",
+     "cordially request that ~ 정중하게 ~을 요청드립니다",
+     "cordially thank you for ~ ~에 대해 진심으로 감사드립니다"
+    ]
    },
    {
     "word": "up front",
+    "pos": "ad.",
     "meaning": "선불로",
-    "pos": "adv."
+    "tip": "날짜상으로 [[b]]up[[/b]](강조: 완전히) [[b]]front[[/b]](앞)에 지불하여, 즉 [[r]]선불로[[/r]]",
+    "toeicExpr": [
+     "pay up front 선불로 지불하다",
+     "require payment up front 선불 결제를 요구하다",
+     "charge a fee up front 요금을 선불로 청구하다"
+    ],
+    "examVar": [
+     {
+      "en": "Customers are required to pay the full amount up front before the service begins.",
+      "ko": "고객은 서비스가 시작되기 전에 전체 금액을 선불로 지불해야 한다."
+     }
+    ]
    },
    {
     "word": "drop off",
-    "meaning": "1. 감소하다, 줄어들다 2. ~을 내려주다 3. ~을 갖다주다, 맡기다, 반납하다",
-    "pos": "v."
+    "meaning": "1. 감소하다, 줄어들다  2. ~을 내려주다  3. ~을 갖다주다, 맡기다, 반납하다",
+    "tip": "[drop(떨어뜨리다) + off(떨어져)]\n① 숫자나 양을 아래로 [[b]]떨어뜨리다[[/b]], 즉 [[r]]감소하다, 줄어들다[[/r]]\n② 사람이나 물건을 [[b]]떨궈놓다[[/b]], 즉 [[r]]내려주다, 갖다주다, 맡기다, 반납하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "drop-off",
+      "meaning": "감소, 하차, 반납, 반납 장소"
+     }
+    ],
+    "toeicExpr": [
+     "Sales dropped off sharply in the second quarter. 2분기에 매출이 급감했다.",
+     "The number of visitors has dropped off recently. 최근 방문객 수가 감소했다.",
+     "drop someone off at the station 누군가를 역에 내려주다",
+     "drop off the package 소포를 맡기다",
+     "drop off the documents 서류를 갖다주다",
+     "drop off the rental car 렌터카를 반납하다",
+     "sharp drop-off in sales 매출의 급격한 감소",
+     "drop-off point for rental cars 렌터카 반납 지점",
+     "document drop-off box 서류 제출함"
+    ],
+    "examVar": [
+     {
+      "en": "Customer visits began to drop off after the holiday season.",
+      "ko": "휴가철 이후 고객 방문이 줄어들기 시작했다."
+     }
+    ]
    },
    {
     "word": "constructive",
+    "pron": "[kənstrʌ́ktiv]",
+    "pos": "a.",
     "meaning": "건설적인, 생산적인, 유익한",
-    "pos": "adj."
+    "tip": "[[[b]]construct[[/b]](생산하다, 건설하다) + [[b]]ive[[/b]](형·어)] [[r]]건설적인, 생산적인, 유익한[[/r]]",
+    "toeicExpr": [
+     "constructive feedback/criticism/comments 건설적인(유익한) 피드백/비판/의견"
+    ]
    },
    {
     "word": "outage",
+    "pron": "[áutidʒ]",
+    "pos": "n.",
     "meaning": "(전기·가스·통신 등의) 공급 중단, 정전, 서비스 중단",
-    "pos": "n."
+    "tip": "전선 [[b]]out[[/b]](밖으로) 불꽃이 [[b]]튀지[[/b]]. 그래서 [[r]]정전[[/r]]이 되고 전기 [[r]]서비스 중단[[/r]]이 생김",
+    "toeicExpr": [
+     "power outage 정전",
+     "network outage 네트워크 서비스 중단",
+     "service outage 서비스 중단",
+     "unexpected outage 예기치 않은 중단"
+    ],
+    "examVar": [
+     {
+      "en": "Due to a system failure, customers experienced a temporary network outage across several regions.",
+      "ko": "시스템 장애로 인해 여러 지역에서 일시적인 네트워크 서비스 중단이 발생했다."
+     }
+    ]
    },
    {
     "word": "net profit",
     "meaning": "순이익",
-    "pos": "n."
+    "tip": "[[b]]net[[/b]](그물)에서 비용은 다 걸러지고 남은 [[b]]profit[[/b]](이익), 즉 [[r]]순이익[[/r]]",
+    "toeicExpr": [
+     "decline in net profit 순이익 감소",
+     "net profit margin 순이익률",
+     "net profit for the year 연간 순이익"
+    ]
    },
    {
     "word": "track",
-    "meaning": "1. 트랙, 경주로, 길 2. 뒤쫓다, 추적하다; 추적",
-    "pos": "n./v."
+    "pron": "[træk]",
+    "meaning": "1. n. 트랙, 경주로, 길  2. v. 뒤쫓다, 추적하다  n. 추적",
+    "tip": "달리기 [[b]]트랙[[/b]]([[b]]경주로[[/b]])를 따라 앞서 달리는 선수들을 열심히 [[r]]뒤쫓다, 추적하다[[/r]]",
+    "toeicExpr": [
+     "running track 육상 트랙",
+     "be on track 계획대로 진행 중이다 (← 계획한 트랙 위에 있다)",
+     "be on track to meet the deadline 마감 기한을 맞출 전망이다",
+     "be on track to finish the project 프로젝트가 계획대로 진행 중이다",
+     "be on the right track 제대로 진행되고 있다",
+     "off track 계획에서 벗어난 (← 계획한 트랙에서 off(떨어지다, 벗어나다))",
+     "be/go/get/fall off track 계획에서 벗어나다",
+     "go completely off track 완전히 계획에서 벗어나다",
+     "career track 경력 경로(정해진 승진 단계)",
+     "track a shipment 배송을 추적하다",
+     "track an order 주문을 추적하다",
+     "keep track of ~을 계속 파악하다, 추적·관리하다",
+     "keep track of progress 진행 상황을 추적·관리하다",
+     "keep track of shipments 배송 현황을 추적하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The project is on track to meet the deadline next month.",
+      "ko": "그 프로젝트는 다음 달 마감일을 맞출 수 있는 상태다."
+     },
+     {
+      "en": "2. Customers can track their orders online.",
+      "ko": "고객은 온라인으로 주문을 추적할 수 있다."
+     }
+    ]
    },
    {
-    "word": "be supposed to",
+    "word": "be supposed to부정사",
     "meaning": "~하기로 되어 있다, ~해야 한다",
-    "pos": "v."
+    "tip": "[[b]]~할 것으로 be supposed[[/b]](생각된다, 추측된다), 즉 [[r]]~하기로 되어 있다, ~해야 한다[[/r]]",
+    "toeicExpr": [
+     "be supposed to submit the form 서류를 제출해야 한다",
+     "be supposed to start at noon 정오에 시작하기로 되어 있다"
+    ],
+    "examVar": [
+     {
+      "en": "We were supposed to meet yesterday, but the meeting was postponed.",
+      "ko": "우리는 어제 만나기로 되어 있었지만 회의가 연기되었다."
+     }
+    ]
    },
    {
     "word": "garlic",
+    "pron": "[gáːrlik]",
+    "pos": "n.",
     "meaning": "마늘",
-    "pos": "n."
+    "tip": "절구통에 넣고 [[b]]갈릭[[/b]](갈다) [[r]]마늘[[/r]]을.",
+    "toeicExpr": [
+     "garlic sauce 마늘 소스  roasted garlic 구운 마늘"
+    ]
    }
   ]
  },
@@ -3234,103 +12240,442 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "applaud",
+    "pron": "[əplɔ́ːd]",
+    "pos": "v.",
     "meaning": "박수갈채를 보내다, 칭찬하다, 높이 평가하다",
-    "pos": "v."
+    "tip": "마술사가 묶여있던 쇠사슬을 [[b]]어! 풀러도[[/b]] 관중들이 [[r]]박수갈채를 보내다[[/r]]",
+    "derivatives": [
+     {
+      "word": "applause",
+      "meaning": "박수갈채"
+     }
+    ],
+    "toeicExpr": [
+     "applaud the performance 공연에 박수를 보내다",
+     "applaud the speaker 연설자에게 박수치다",
+     "applaud the effort 노력을 칭찬하다",
+     "applaud the decision 그 결정을 높이 평가하다",
+     "be widely applauded 널리 호평받다",
+     "receive applause 박수를 받다",
+     "applause for the performance 공연에 대한 박수"
+    ],
+    "examVar": [
+     {
+      "note": "applaud는 타동사로 전치사 없이 바로 목적어를 취하는 점을 묻는 문제가 출제되었다.",
+      "en": "The audience stood and ______ the performer at the end of the concert.",
+      "opt": "(A) applauded  (B) applauded to  (C) applauding  (D) applause",
+      "ans": "(A)",
+      "ko": "관객들은 콘서트가 끝나자 일어서서 공연자에게 박수쳤다."
+     }
+    ]
    },
    {
     "word": "time off",
     "meaning": "휴가, 휴식 시간, 쉬는 기간",
-    "pos": "n."
+    "tip": "일하는 [[b]]time[[/b]](시간)을 [[b]]off[[/b]](중단하여) [[r]]휴가, 휴식 시간[[/r]]",
+    "toeicExpr": [
+     "take time off 휴가를 내다  request time off 휴가를 요청하다",
+     "approve time off 휴가를 승인하다",
+     "paid/unpaid time off 유급/무급 휴가"
+    ]
    },
    {
     "word": "itemize",
+    "pron": "[áitəmàiz]",
+    "pos": "v.",
     "meaning": "항목별로 정리하다, 목록으로 작성하다",
-    "pos": "v."
+    "tip": "[[b]]item[[/b]](항목, 품목) + [[b]]ize[[/b]](동·어) [[r]]항목별로 정리하다, 목록으로 작성하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "itemized",
+      "meaning": "항목별로 정리된"
+     }
+    ],
+    "toeicExpr": [
+     "itemize expenses/charges/purchases 비용을/청구 금액을/구매 내역을 항목별로 정리하다",
+     "itemized bill 항목별 청구서  itemized statement 항목별 명세서",
+     "itemized expenses 항목별 비용",
+     "itemized receipt 항목별 영수증"
+    ],
+    "examVar": [
+     {
+      "en": "Please itemize the charges clearly so that customers can review each fee.",
+      "ko": "고객들이 각각의 요금을 검토할 수 있도록 요금을 명확히 항목별로 나열해 주세요."
+     }
+    ]
    },
    {
     "word": "strive",
+    "pron": "[straiv]",
+    "pos": "v.",
     "meaning": "분투하다, 노력하다",
-    "pos": "v."
+    "tip": "투수가 [[b]]스트라이[[/b]] 존으로 공을 1000개 넘게 [[b]]부[[/b]]어대며(던지며) 훈련하다, 즉 [[r]]분투하다, 노력하다[[/r]]",
+    "toeicExpr": [
+     "strive to enhance quality 품질 향상을 위해 노력하다",
+     "strive to reduce costs 비용을 줄이기 위해 노력하다",
+     "strive for efficiency 효율성을 위해 노력하다 (← for: ~을 위하여)",
+     "strive for better performance 더 나은 성과를 위해 노력하다"
+    ],
+    "examVar": [
+     {
+      "en": "Employees are encouraged to strive for excellence in their work.",
+      "ko": "직원들은 업무에서 탁월함을 추구하도록 장려된다."
+     }
+    ]
    },
    {
     "word": "prototype",
+    "pron": "[próutətaip]",
+    "pos": "n.",
     "meaning": "시제품, 초기 모델, 원형",
-    "pos": "n."
+    "tip": "회사에서 저번 달에 새 제품을 풀더니 이번 달에도 [[b]]풀어 또[[/b]] 새로운 [[b]]type[[/b]](타입, 유형)의 [[r]]시제품, 초기 모델[[/r]]을",
+    "toeicExpr": [
+     "prototype model 시제품 모델",
+     "prototype design 원형 디자인",
+     "test a prototype 시제품을 테스트하다"
+    ]
    },
    {
     "word": "hands-on",
+    "pron": "미[hǽndzɑ́:n] 영[hǽndzɔ́n]",
+    "pos": "a.",
     "meaning": "직접 해보는, 실습 위주의",
-    "pos": "adj."
+    "tip": "[[b]]hands[[/b]](손을) 뱀 [[b]]on[[/b]](위에) 대고 만져보는, 즉 [[r]]직접 해보는[[/r]]",
+    "toeicExpr": [
+     "hands-on experience 실무 경험  hands-on training 실습 훈련"
+    ],
+    "examVar": [
+     {
+      "en": "The company will provide new employees with hands-on training to help them quickly adapt to real workplace tasks.",
+      "ko": "회사는 신입 직원들이 실제 업무에 빠르게 적응할 수 있도록 실무 중심의 교육을 제공할 것이다."
+     }
+    ]
    },
    {
     "word": "abandon",
+    "pron": "[əbǽndən]",
+    "pos": "v.",
     "meaning": "포기하다, 중단하다",
-    "pos": "v."
+    "tip": "책 속에 숨겨둔 비상금 중에 [[b]]어![[/b]] 아내가 [[b]]뺀 돈[[/b]]은 [[r]]포기하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "abandoned",
+      "meaning": "포기된, 중단된, 버려진"
+     },
+     {
+      "word": "abandonment",
+      "meaning": "포기, 중단"
+     }
+    ],
+    "toeicExpr": [
+     "abandon a project 프로젝트를 포기하다",
+     "abandon negotiations/duty 협상을/직무를 포기하다",
+     "abandon operations 운영을 중단하다",
+     "abandoned project 중단된 프로젝트  abandoned plan 포기된 계획",
+     "abandoned building/vehicle 버려진 건물/차량",
+     "abandonment of a project 프로젝트 포기(중단)",
+     "sudden/complete abandonment 갑작스러운/완전한 중단(포기)"
+    ]
    },
    {
     "word": "dimensions",
+    "pron": "[diménʃənz]",
+    "pos": "n.",
     "meaning": "크기, 치수, 규격",
-    "pos": "n."
+    "tip": "[[b]]뒤[[/b]]땅에 [[b]]맨션[[/b]]을 짓기 위해 땅의 [[r]]크기[[/r]]와 [[r]]치수[[/r]]를 재다",
+    "toeicExpr": [
+     "product dimensions 제품의 규격  standard dimensions 표준 규격",
+     "measure dimensions 치수를 재다"
+    ],
+    "examVar": [
+     {
+      "note": "'(여러 개의) 치수, 규격'을 뜻할 때는 복수형을 써야 함을 묻는 문제가 출제되었다. 가로, 세로, 높이 등 여러 치수들을 포함하기 때문이다.",
+      "en": "Before placing your order, please check the product's _______ carefully to ensure it fits your available space.",
+      "opt": "dimensions (O)  dimension (X)",
+      "ko": "주문 전에 사용 가능한 공간에 맞는지 확인하기 위해 제품의 규격을 꼼꼼히 확인해 주십시오."
+     }
+    ]
    },
    {
     "word": "align",
+    "pron": "[əláin]",
+    "pos": "v.",
     "meaning": "일렬 정돈하다, 일치시키다, 일치하다",
-    "pos": "v."
+    "tip": "가로수 나무들을 [[b]]a[[/b]](하나의) [[b]]line[[/b]](줄)로 [[r]]일렬 정돈하다[[/r]], 같은 모양으로 깍아 [[r]]일치시키다[[/r]]",
+    "derivatives": [
+     {
+      "word": "alignment",
+      "meaning": "일렬 정돈, 일치"
+     }
+    ],
+    "toeicExpr": [
+     "align with ~와 일치하다, 부합하다",
+     "align with company goals 회사 목표와 일치하다(부합하다)",
+     "align with industry standards 업계 기준에 부합하다",
+     "align A with B A를 B와 일치시키다, 맞추다",
+     "align company goals with market demands 회사 목표를 시장 수요에 맞추다",
+     "align schedules with project timelines 일정을 프로젝트 일정에 맞추다",
+     "proper alignment 올바른 정렬   text alignment 문서 정렬",
+     "work in alignment with company objectives 회사의 목표에 맞추어 협력하다",
+     "alignment of goals/interests 목표/이해관계의 일치"
+    ],
+    "examVar": [
+     {
+      "en": "1. The new safety guidelines must align with international standards before they can be implemented.",
+      "ko": "새로운 안전 지침은 시행되기 전에 국제 기준과 일치해야 한다."
+     },
+     {
+      "en": "2. The design team will align the product's features with customer feedback gathered during the pilot test.",
+      "ko": "디자인팀은 제품 기능을 시범 테스트 동안 수집된 고객 피드백에 맞출 예정이다."
+     }
+    ]
+   },
+   {
+    "word": "wound",
+    "pron": "[wuːnd]",
+    "pos": "n.",
+    "meaning": "상처, 상해",
+    "tip": "아이가 [[r]]상처[[/r]]를 입고 [[b]]운다[[/b]]",
+    "toeicExpr": [
+     "serious/minor wound 심한/가벼운 상처"
+    ]
+   },
+   {
+    "word": "lawsuit",
+    "pron": "[lɔ́ːsuːt]",
+    "pos": "n.",
+    "meaning": "소송, 고소",
+    "tip": "① [[b]]law[[/b]](법)으로 (축구의) [[b]]슛[[/b]]을 하듯 공격하는 것, 즉 [[r]]소송, 고소[[/r]]\n② [[b]]law[[/b]](법) + [[b]]suit[[/b]](소송, 고소)",
+    "toeicExpr": [
+     "file a lawsuit 소송을 제기하다  bring a lawsuit 소송을 제기하다"
+    ]
+   },
+   {
+    "word": "differ",
+    "pron": "[dífər]",
+    "pos": "v.",
+    "meaning": "다르다",
+    "tip": "[[b]]different[[/b]](다른)의 동사형",
+    "toeicExpr": [
+     "differ from ~와 다르다 (← from: 비교 대상으로부터)",
+     "differ from the original plan 원래 계획과 다르다",
+     "differ from previous estimates 이전 추정치와 다르다",
+     "differ in ~의 점에서 다르다 (← in: ~의 영역 내에서)",
+     "The two models differ in size and color. 두 모델은 크기와 색상 면에서 다르다."
+    ],
+    "examVar": [
+     {
+      "note": "differ from과 differ in을 구분하는 문제가 출제되었다.",
+      "en": "Although the two proposals appear similar, they differ ______ their implementation costs and timelines.",
+      "opt": "in (O)  from (X)",
+      "ko": "두 제안서는 겉보기에는 비슷해 보이지만, 실행 비용과 일정 면에서 차이가 있다."
+     }
+    ]
+   },
+   {
+    "word": "typical",
+    "pron": "[típikl]",
+    "pos": "a.",
+    "meaning": "전형적인, 대표하는, 평범한",
+    "tip": "[[b]]tea[[/b]](차)와 [[b]]피클[[/b]]은 피자와 함께 이탈리아를 [[r]]대표하는, 전형적인[[/r]] 음식. 그리고 이탈리아에서는 [[r]]평범한[[/r]] 음식",
+    "toeicExpr": [
+     "typical example 전형적인 예  typical pattern 전형적인 패턴",
+     "typical day 평범한 하루  typical customer 일반적인 고객"
+    ]
    },
    {
     "word": "revolution",
+    "pron": "[rèvəlúːʃən]",
+    "pos": "n.",
     "meaning": "혁명, 대변혁",
-    "pos": "n."
+    "tip": "부패한 정부를 [[b]]내 발로 시원[[/b]]하게 밟아서 일으킨 [[r]]혁명, 대변혁[[/r]]",
+    "toeicExpr": [
+     "industrial/technological/digital revolution 산업/기술/디지털 혁명",
+     "revolution in the market 시장의 대변혁"
+    ]
    },
    {
     "word": "harm",
-    "meaning": "손해, 해; 해를 끼치다",
-    "pos": "n./v."
+    "pron": "[hɑːrm]",
+    "pos": "n. / v.",
+    "meaning": "n. 손해, 해  v. 해를 끼치다",
+    "tip": "결혼하기 전 [[b]]함[[/b]] 값 때문에 본 [[r]]손해, 해[[/r]]",
+    "derivatives": [
+     {
+      "word": "harmful",
+      "meaning": "해로운"
+     }
+    ],
+    "toeicExpr": [
+     "cause harm 해를 끼치다  do ~ harm ~에 해를 끼치다",
+     "physical harm 신체적 피해",
+     "be harmful to children under 3 years 3세 미만의 어린이에게 해롭다"
+    ]
    },
    {
     "word": "brainstorm",
-    "meaning": "반짝이는 아이디어, 영감; 브레인스토밍을 하다",
-    "pos": "n./v."
+    "pron": "[bréinstɔ̀ːrm]",
+    "pos": "n. / v.",
+    "meaning": "n. 반짝이는 아이디어, 영감  v. 브레인스토밍을 하다",
+    "tip": "[[b]]brain[[/b]](뇌)에서 [[b]]storm[[/b]](폭풍)이 일듯이 생각나는 [[r]]반짝이는 아이디어[[/r]]",
+    "derivatives": [
+     {
+      "word": "brainstorming",
+      "meaning": "브레인스토밍(회의에서 각자 의견을 제출하여 최선책을 결정하는 일)"
+     }
+    ],
+    "toeicExpr": [
+     "brainstorm solutions/ideas 해결책을/아이디어를 생각해 내다",
+     "brainstorming session 아이디어 회의"
+    ],
+    "examVar": [
+     {
+      "en": "The marketing team will brainstorm ideas for the upcoming product launch.",
+      "ko": "마케팅 팀은 다가오는 제품 출시를 위해 아이디어를 브레인스토밍할 것이다."
+     }
+    ]
    },
    {
     "word": "byproduct",
+    "pron": "[báiprɑ̀dʌkt]",
+    "pos": "n.",
     "meaning": "부산물",
-    "pos": "n."
+    "tip": "[[b]]product[[/b]](생산물) [[b]]by[[/b]](옆에) 부가적으로 생긴 것, 즉 [[r]]부산물[[/r]]",
+    "toeicExpr": [
+     "industrial/waste byproduct 산업/폐기물 부산물"
+    ]
    },
    {
     "word": "premium",
-    "meaning": "①보험료 ②추가 요금, 할증금 ③최고급의",
-    "pos": "n./adj."
+    "pron": "[príːmiəm]",
+    "pos": "n./a.",
+    "meaning": "1. n. 보험료  2. n. 추가 요금, 할증금  3. a. 최고급의",
+    "tip": "[프리미엄] ① [[b]]프리미엄[[/b]](웃돈, [[r]]할증금, 추가 요금[[/r]])을 줘야 구할 수 있을 정도로 [[r]]고급의[[/r]] ② [[b]]프리미어[[/b]] 리그에 가면 선수에게는 월급과 함께 [[r]]추가 요금, 최고급[[/r]]의 차량 및 보험료까지 내준다고 암기",
+    "toeicExpr": [
+     "insurance premium 보험료",
+     "pay a premium 보험료를(추가 요금을) 지불하다",
+     "monthly premium 월 보험료  premium payment 보험료 납부",
+     "charge a premium 추가 요금을 부과하다",
+     "pay a premium for faster service 빠른 서비스를 위해 추가 요금을 내다",
+     "premium quality/service/brand 최고급 품질/서비스/브랜드"
+    ],
+    "examVar": [
+     {
+      "en": "Employees are required to pay a monthly premium for health insurance coverage.",
+      "ko": "직원들은 건강 보험 보장을 위해 매달 보험료를 납부해야 한다."
+     },
+     {
+      "en": "Customers must pay a premium for same-day delivery services.",
+      "ko": "고객은 당일 배송 서비스를 위해 추가 요금을 지불해야 한다."
+     }
+    ]
    },
    {
     "word": "cashier",
-    "meaning": "계산원, 금전출납원",
-    "pos": "n."
+    "pron": "[kæʃíər]",
+    "pos": "n.",
+    "meaning": "n. 계산원, 금전출납원",
+    "tip": "[[b]]cash[[/b]](현금) + [[b]]er[[/b]](~사람)] 현금을 다루는 사람, 즉 [[r]]계산원[[/r]]",
+    "toeicExpr": [
+     "supermarket cashier 슈퍼마켓 계산원  cashier counter 계산대",
+     "bank cashier 은행 출납원"
+    ]
    },
    {
     "word": "cuisine",
-    "meaning": "요리, 요리법",
-    "pos": "n."
+    "pron": "[kwizíːn]",
+    "pos": "n.",
+    "meaning": "n. 요리, 요리법",
+    "tip": "[[r]]요리[[/r]]하다 \"앗! 뜨거워\" 하며 [[b]]귀[[/b]]를 [[b]]쥔[[/b]]",
+    "toeicExpr": [
+     "traditional cuisine 전통 요리",
+     "try local cuisine 현지 음식을 맛보다",
+     "Korean/Italian cuisine 한국/이탈리아 요리"
+    ]
    },
    {
     "word": "recipe",
-    "meaning": "조리법, 요리법",
-    "pos": "n."
+    "pron": "[résəpi]",
+    "pos": "n.",
+    "meaning": "n. 조리법, 요리법",
+    "tip": "\"조리할 때 [[b]]냈어[[/b]], 생선의 [[b]]피[[/b]]를. 그다음 깨끗하게 씻고…\" 등과 같은 [[r]]조리법, 요리법[[/r]]",
+    "toeicExpr": [
+     "follow a recipe 요리법을 따르다",
+     "simple recipe 간단한 조리법"
+    ]
    },
    {
     "word": "clearance",
-    "meaning": "①승인, 허가 ②통관 ③재고 정리, (재고) 할인 판매",
-    "pos": "n."
+    "pron": "[klíərəns]",
+    "pos": "n.",
+    "meaning": "1. n. 승인, 허가  2. n. 통관  3. n. 재고 정리, (재고) 할인 판매",
+    "tip": "① [[b]]clear[[/b]](방해물을 제거하다) → 절차, 규제 등을 [[b]]clear[[/b]](제거하고) [[r]]승인, 허가, 통관[[/r]] ② 창고를 [[b]]깨끗한(clear)[[/b]] 상태로 치워 남은 [[r]]재고 정리[[/r]]",
+    "derivatives": [
+     {
+      "word": "clear",
+      "meaning": "통과시키다"
+     }
+    ],
+    "toeicExpr": [
+     "security clearance 보안 승인  final clearance 최종 승인",
+     "receive/obtain clearance 허가를 받다  grant clearance 승인을 부여하다",
+     "customs clearance 통관  delay in customs clearance 통관 지연",
+     "obtain customs clearance 통관 승인을 받다",
+     "clearance documents 통관 서류",
+     "clearance sale 재고 정리 세일  clearance items 재고 정리 상품",
+     "clearance rack (재고) 할인 판매 진열대",
+     "offer items on clearance 정리 세일로 판매하다 (← 재고 할인 판매로 물품을 제공하다)",
+     "seasonal clearance 시즌 정리 세일",
+     "clear + 목적어 + through customs ~을 통관시키다 (← 세관을 통과해 ~을 통관시키다)",
+     "clear imports/exports/goods through customs 수입품을/수출품을/물품을 통관시키다"
+    ],
+    "examVar": [
+     {
+      "en": "Employees must obtain security clearance before accessing confidential files.",
+      "ko": "직원들은 기밀 파일에 접근하기 전에 보안 승인을 받아야 한다."
+     },
+     {
+      "en": "The shipment was delayed due to customs clearance.",
+      "ko": "그 화물은 통관 문제로 인해 지연되었다."
+     },
+     {
+      "en": "All winter coats are available during the clearance sale.",
+      "ko": "모든 겨울 코트는 재고 정리 세일 동안 구매할 수 있다."
+     },
+     {
+      "en": "The shipment was cleared through customs before it was delivered to the warehouse.",
+      "ko": "그 화물은 창고로 배송되기 전에 통관되었다."
+     }
+    ]
    },
    {
     "word": "boil",
-    "meaning": "끓이다",
-    "pos": "v."
+    "pron": "[bɔil]",
+    "pos": "v.",
+    "meaning": "v. 끓이다",
+    "tip": "[[b]]보일[[/b]]러(boiler)는 물을 끓여서 방을 따뜻하게 하는 것으로 '[[b]]boil[[/b]]([[r]]끓이다[[/r]]) + er(~것)'",
+    "toeicExpr": [
+     "boil water 물을 끓이다  boil an egg 달걀을 삶다"
+    ]
    },
    {
     "word": "subsidiary",
-    "meaning": "자회사; 보조의, 부수적인",
-    "pos": "n./adj."
+    "pron": "미[səbsídièri] 영[səbsídiəri]",
+    "pos": "n./a.",
+    "meaning": "n. 자회사  a. 보조의, 부수적인",
+    "tip": "\"모회사인 본사 [[b]]뒤에(리)[[/b]] 따라다니며 [[b]]삽시[[/b]]다.\"라고 말하는 ([[r]]보조의, 부수적인[[/r]]) [[r]]자회사[[/r]]",
+    "toeicExpr": [
+     "overseas/local subsidiary 해외/현지 자회사",
+     "establish/operate a subsidiary 자회사를 설립하다/운영하다",
+     "subsidiary role/function 부수적인 역할/기능",
+     "subsidiary office 부속 사무소, 지사"
+    ],
+    "examVar": [
+     {
+      "en": "The corporation plans to establish a new subsidiary to handle its operations in Europe.",
+      "ko": "그 기업은 유럽에서의 사업을 담당하기 위해 새로운 자회사를 설립할 계획이다."
+     }
+    ]
    }
   ]
  },
@@ -3340,113 +12685,519 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "interest",
-    "meaning": "①흥미, 관심사; ~에 흥미를 갖게 하다 ②이익, 이자, 이해관계",
-    "pos": "n./v."
+    "pron": "[íntərəst, íntərèst]",
+    "pos": "n./v.",
+    "meaning": "1. n. 흥미, 관심사  v. ~에 흥미를 갖게 하다  2. n. 이익, 이자, 이해관계",
+    "tip": "저축에 [[b]]interest[[/b]](흥미)를 갖게 하는 것은 [[r]]이자, 이익[[/r]]",
+    "derivatives": [
+     {
+      "word": "interested",
+      "meaning": "관심 있는 (사람 주어, -ed: ~를 받는)"
+     },
+     {
+      "word": "interesting",
+      "meaning": "흥미로운, 흥미를 주는 (사물 주어, -ing: ~을 주는)"
+     }
+    ],
+    "toeicExpr": [
+     "main interest 주된 관심사  mutual interest 상호 관심사",
+     "show/express interest in ~에 관심을 보이다/표현하다 (← in: 영역, 범위 안에)",
+     "have an interest in ~에 관심이 있다",
+     "local interest groups 지역 이익 단체들  financial interest 재정적 이익",
+     "interest rate 이자율  pay/charge/earn interest 이자를 지급하다/부과하다/얻다",
+     "interest-free 무이자의  interest-free loan 무이자 대출",
+     "in the interest of ~의 이익을 위해, ~을 위하여",
+     "in the interest of efficiency/safety/fairness 효율성을/안전을/공정성을 위해",
+     "interested parties 이해관계자",
+     "interested buyers/applicants 관심 있는 구매자들/지원자들",
+     "be interested in ~에 관심이 있다",
+     "be interested in the position 해당 직무에 관심이 있다",
+     "be interested in applying/purchasing 지원하는 것에/구매에 관심이 있다",
+     "interesting proposal/opportunity 흥미로운 제안/기회"
+    ],
+    "examVar": [
+     {
+      "en": "1. Several investors have shown interest in the company's new technology.",
+      "ko": "여러 투자자들이 그 회사의 신기술에 관심을 보였다."
+     },
+     {
+      "note": "2. interesting과 interested를 구분하는 문제가 자주 출제되었다.",
+      "en": "The seminar was so _______ that many employees stayed after it ended to ask questions.",
+      "ans": "interesting (O)  interested (X)",
+      "ko": "그 세미나는 매우 흥미로워서, 많은 직원들이 끝난 후에도 질문을 하기 위해 남아 있었다."
+     }
+    ]
    },
    {
     "word": "curtail",
-    "meaning": "줄이다, 축소하다",
-    "pos": "v."
+    "pron": "[kɑːrtéil]",
+    "pos": "v.",
+    "meaning": "v. 줄이다, 축소하다",
+    "tip": "뱀의 [[b]]tail[[/b]](꼬리) 부분을 [[b]]cut[[/b]](잘라) 길이를 [[r]]줄이다, 축소하다[[/r]]",
+    "toeicExpr": [
+     "curtail expenses/spending/production 비용을/지출을/생산량을 줄이다",
+     "curtail business hours 영업시간을 줄이다"
+    ]
    },
    {
     "word": "exhaust",
-    "meaning": "①다 써버리다, 고갈시키다 ②지치게 하다",
-    "pos": "v."
+    "pron": "[igzɔ́ːst]",
+    "pos": "v.",
+    "meaning": "1. v. 다 써버리다, 고갈시키다  2. v. 지치게 하다",
+    "tip": "\"(내가) 이그! 젔수 투!\" 하며 달리기 시합에서 체력을 [[r]]다 써버리고, 지쳐서 포기하다[[/r]]",
+    "toeicExpr": [
+     "exhaust all resources 모든 자원을 고갈시키다",
+     "exhaust the budget 예산을 소진하다",
+     "exhaust funds 자금을 소진하다",
+     "feel exhausted 몹시 지치다",
+     "be exhausted after work 업무 후 녹초가 되다"
+    ]
    },
    {
     "word": "exhaustive",
-    "meaning": "철저한, 총망라하는",
-    "pos": "adj."
+    "pron": "[igzɔ́:stiv]",
+    "pos": "a.",
+    "meaning": "a. 철저한, 총망라하는",
+    "tip": "대한민국팀이 \"[[b]]이그 졌수![[/b]]\" TV에서 왜 졌는지 [[r]]철저한, 총망라하는[[/r]] 분석을 해줌",
+    "toeicExpr": [
+     "exhaustive research/analysis 철저한 조사/분석",
+     "exhaustive list 포괄적인 목록"
+    ],
+    "examVar": [
+     {
+      "note": "exhausted와 exhaustive를 구분하는 문제가 자주 출제되었다.",
+      "en": "The research team conducted an _______ review of the company's financial records before the audit.",
+      "opt": "exhaustive (O)  exhausted (X)",
+      "ko": "연구팀은 감사 전에 회사의 재무 기록에 대한 철저한 검토를 수행했다."
+     }
+    ]
    },
    {
     "word": "ambitious",
-    "meaning": "야망을 품은, 야심찬",
-    "pos": "adj."
+    "pron": "[æmbíʃəs]",
+    "pos": "a.",
+    "meaning": "a. 야망을 품은, 야심찬",
+    "tip": "이 명박(MB)은 어려서부터 대통령이 되려는 [[r]]야망을 품은[[/r]] [[b]]MB(명박)이셨수[[/b]]",
+    "derivatives": [
+     {
+      "word": "ambition",
+      "meaning": "야망"
+     }
+    ],
+    "toeicExpr": [
+     "ambitious project/goal/plan 야심 찬 프로젝트/목표/계획",
+     "career/political/great ambition 직업적/정치적/큰  야망"
+    ]
    },
    {
     "word": "face",
-    "meaning": "①얼굴, 정면 ②~에 직면하다",
-    "pos": "n./v."
+    "pron": "[feis]",
+    "pos": "n./v.",
+    "meaning": "1. n. 얼굴, 정면  2. v. ~에 직면하다",
+    "tip": "위험한 상황을 향해 [[b]]face[[/b]](얼굴)을 맞대다, 즉 위험에 [[r]]직면하다[[/r]]",
+    "toeicExpr": [
+     "face-to-face meeting 대면 회의",
+     "face a challenge 도전에 직면하다  face difficulties 어려움에 직면하다",
+     "be faced with ~에 직면하다 (← ~와(with) 직면하다)",
+     "be faced with rising costs 비용 상승에 직면하다",
+     "be faced with unexpected issues 예상치 못한 문제에 직면하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company is faced with serious financial difficulties due to the recent economic downturn.",
+      "ko": "그 회사는 최근 경기 침체로 인해 심각한 재정적 어려움에 직면해 있다."
+     }
+    ]
    },
    {
     "word": "ideal",
-    "meaning": "이상적인; 이상",
-    "pos": "adj./n."
+    "pron": "[aidí:əl]",
+    "pos": "a./n.",
+    "meaning": "a. 이상적인  n. 이상",
+    "tip": "가장 [[r]]이상적인[[/r]] [[b]]아이디얼[[/b]](아이디어를) 생각해 냈어!",
+    "derivatives": [
+     {
+      "word": "ideally",
+      "meaning": "이상적으로"
+     }
+    ],
+    "toeicExpr": [
+     "ideal person for the job 그 일에 딱 맞는 사람",
+     "ideal conditions 이상적 조건",
+     "achieve the ideal 이상을 실현하다",
+     "far from ideal 이상과 거리가 먼",
+     "ideally suited 이상적으로 적합한(최적합한)"
+    ]
    },
    {
     "word": "solution",
-    "meaning": "해결, 해결책, 해답",
-    "pos": "n."
+    "pron": "[səlú:ʃən]",
+    "pos": "n.",
+    "meaning": "n. 해결, 해결책, 해답",
+    "tip": "비린내를 없애기 위해 [[b]]솔[[/b]]잎을 [[b]]누션[[/b]](넣으션). 그것이 [[r]]해결책[[/r]]",
+    "derivatives": [
+     {
+      "word": "solve",
+      "meaning": "풀다, 해결하다"
+     }
+    ],
+    "toeicExpr": [
+     "possible/practical/strategic solution 가능한/실질적인/전략적 해결책",
+     "economical solutions 경제적인(저렴한) 해결책",
+     "solution to ~에 대한 해결책 (to: ~쪽으로, ~을 향한  * for를 쓰지 않음에 주의)",
+     "solution to rising costs 비용 증가에 대한 해결책",
+     "long-term solution to traffic congestion 교통체증의 장기적 해결책",
+     "solve a problem 문제를 해결하다",
+     "be solved easily 쉽게 해결된다"
+    ],
+    "examVar": [
+     {
+      "en": "The IT department proposed a solution _______ frequent system failures.",
+      "opt": "to (O)  for (X)",
+      "ko": "IT 부서는 잦은 시스템 오류에 대한 해결책을 제안했다."
+     }
+    ]
    },
    {
     "word": "sanction",
-    "meaning": "①제재 ②허가, 승인; 허가하다",
-    "pos": "n./v."
+    "pron": "[sǽŋkʃən]",
+    "pos": "n./v.",
+    "meaning": "1. n. 제재  2. n. 허가, 승인  v. 허가하다",
+    "tip": "우리 바다에서 [[b]]생선[[/b]]을 잡는 것을 해양경찰이 중국 어선은 [[r]]제재[[/r]], 우리 어선은 [[r]]허가[[/r]]",
+    "toeicExpr": [
+     "economic sanction 경제 제재",
+     "impose/lift a sanction 제재를 가하다/해제하다",
+     "official sanction 공식 승인",
+     "government sanction 정부 인가",
+     "sanction a plan/project 계획을/프로젝트를 승인하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. Economic sanctions were imposed after the country violated international trade regulations.",
+      "ko": "그 국가는 국제 무역 규정을 위반한 후 경제 제재를 받았다."
+     },
+     {
+      "en": "2. The board decided to sanction the use of company funds for the new project.",
+      "ko": "이사회는 신규 프로젝트를 위한 회사 자금 사용을 공식 승인하기로 결정했다."
+     }
+    ]
    },
    {
     "word": "essential",
-    "meaning": "필수의, 본질적인",
-    "pos": "adj."
+    "pron": "[isénʃəl]",
+    "pos": "a.",
+    "meaning": "a. 필수의, 본질적인",
+    "tip": "육식동물은 먹잇감을 잡아먹기 위해 [[b]]이가 쎈[[/b]] 것이 [[r]]필수의, 본질적인[[/r]]",
+    "derivatives": [
+     {
+      "word": "essentials",
+      "meaning": "필수품"
+     },
+     {
+      "word": "essence",
+      "meaning": "본질, 핵심"
+     }
+    ],
+    "toeicExpr": [
+     "essential information/requirement/item/skills 필수 정보/요건/품목/기술",
+     "daily essentials 일상 필수품  basic essentials 기본 생필품",
+     "travel essentials 여행 필수품(세면도구, 여권 등)",
+     "in essence 본질적으로 (← 본질 안에서 보면)",
+     "understand the essence of ~의 본질을 이해하다",
+     "focus on the essence 핵심에 집중하다",
+     "the essence of the issue 문제의 핵심"
+    ]
    },
    {
     "word": "faculty",
-    "meaning": "①능력, 재능 ②교수진, 강사진",
-    "pos": "n."
+    "pron": "[fǽklti]",
+    "pos": "n.",
+    "meaning": "n. 1. 능력, 재능  2. 교수진, 강사진",
+    "tip": "[[b]]페가 큰 티[[/b]]가 나서 폐활량이 좋아 오래 달릴 수 있는 [[r]]능력[[/r]]을 가진 체육과 달리기 전문 [[r]]교수진[[/r]]",
+    "toeicExpr": [
+     "the faculty of speech 언어 능력  the faculty of imagination 상상력",
+     "university faculty 대학 교수진  faculty members 교수진",
+     "faculty staff 교직원"
+    ]
    },
    {
     "word": "mitigate",
-    "meaning": "누그러뜨리다, 완화시키다",
-    "pos": "v."
+    "pron": "[mítigèit]",
+    "pos": "v.",
+    "meaning": "v. 누그러뜨리다, 완화시키다",
+    "tip": "[미티게이트 → 미친개 있다!] 으르렁거리는 [[b]]미친개[[/b]]가 앞에 [[b]]있다![[/b]] 그래서 “워~ 워~” 하며 성질을 [[r]]누그러뜨리다[[/r]]",
+    "toeicExpr": [
+     "mitigate the risk 위험을 완화하다",
+     "mitigate damage/loss 피해를/손실을 줄이다"
+    ]
    },
    {
     "word": "payroll",
-    "meaning": "급여 명부, 급여 총액, 인건비",
-    "pos": "n."
+    "pron": "[péiroul]",
+    "pos": "n.",
+    "meaning": "n. 급여 명부, 급여 총액, 인건비",
+    "tip": "[[b]]pay[[/b]](봉급을) 지급해야 할 인원을 써서 말아놓은 [[b]]roll[[/b]](두루마리), 즉 [[r]]급여 명부, 급여 총액[[/r]]",
+    "toeicExpr": [
+     "payroll system/manager 급여 시스템/담당자",
+     "payroll expenses 급여 비용  payroll costs 인건비",
+     "reduce payroll 인건비를 줄이다, 급여 지출을 줄이다",
+     "meet payroll 급여를 지급하다 (← meet은 ‘충족시키다’란 의미)",
+     "be on the payroll 직원으로 등록되어 있는"
+    ],
+    "examVar": [
+     {
+      "en": "1. To reduce operating expenses, the company decided to cut its total payroll by freezing new hires.",
+      "ko": "운영 비용을 줄이기 위해 회사는 신규 채용을 동결하여 전체 인건비를 줄이기로 결정했다."
+     },
+     {
+      "en": "2. Cash reserves were insufficient to meet payroll during the slow season.",
+      "ko": "비수기 동안에는 급여를 지급하기에 현금 보유액이 충분하지 않았다."
+     }
+    ]
    },
    {
     "word": "stem",
-    "meaning": "1. 유래하다, 생기다(~ from) 2. 막다, 억제하다",
-    "pos": "v."
+    "pron": "[stem]",
+    "pos": "v.",
+    "meaning": "v. 1. 유래하다, 생기다(~ from)  2. 막다, 억제하다",
+    "tip": "하루에 3번 사랑을 나누자고 하는 당신의 [[b]]스테[[/b]]미나가 어디서 [[r]]생기는 거야?[[/r]] 산삼이라도 먹어? 좀 [[r]]억제 좀 해![[/r]]",
+    "toeicExpr": [
+     "stem from ~에서 생기다, 유래하다 (← from: ~로부터)",
+     "stem from a lack of training 교육 부족에서 기인하다",
+     "stem from miscommunication 의사소통 오류에서 비롯되다",
+     "stem losses 손실을 막다  stem the decline 하락을 저지하다",
+     "stem rising costs 증가하는 비용을 억제하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The recent delays in product shipments stem from a shortage of warehouse staff.",
+      "ko": "최근 제품 배송 지연은 창고 직원 부족에서 비롯된다."
+     },
+     {
+      "en": "2. Additional staff were hired to stem the flow of customer complaints.",
+      "ko": "끊임없는 고객 불만을 억제하기 위해 추가 인력이 채용되었다."
+     }
+    ]
    },
    {
     "word": "showcase",
-    "meaning": "n. 진열장, 공개행사, 전시회 v. 전시하다, 공개하다",
-    "pos": "n./v."
+    "pron": "[ʃóukèis]",
+    "pos": "n./v.",
+    "meaning": "n. 진열장, 공개행사, 전시회  v. 전시하다, 공개하다",
+    "tip": "상품이나 신제품 등을 [[b]]show[[/b]](보여주는) 유리 [[b]]case[[/b]](상자), 즉 [[r]]진열장, 전시하다, 공개하다[[/r]]",
+    "toeicExpr": [
+     "product showcase 제품 전시(회)",
+     "showcase event 홍보 행사, 전시회",
+     "showcase a new model 신제품을 선보이다",
+     "showcase a project 프로젝트를 공개하다"
+    ]
    },
    {
     "word": "adhere",
+    "pron": "[ədhíər, æbhíər]",
+    "pos": "v.",
     "meaning": "들러붙다, 고수하다, 준수하다",
-    "pos": "v."
+    "tip": "파리가 [[b]]어디[[/b]] 앉을까 생각하다가 \"[[b]]here[[/b]](여기)!!\" 하고 [[r]]들러붙다[[/r]] → ~에 들러붙어 그것만 따르다, 즉 [[r]]고수하다, 준수하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "adherence",
+      "meaning": "(규칙 · 원칙 등에 대한) 준수, 고수"
+     }
+    ],
+    "toeicExpr": [
+     "adhere to the wall 벽에 들러붙다",
+     "adhere to + 명사: ~을 고수하다, 준수하다 (← ~쪽으로(to) 들러붙다)",
+     "adhere to rules/regulations/policies/guidelines 규칙을/규정을/방침을/지침을 준수하다",
+     "adhere to principles/traditions 원칙을/전통을 고수하다",
+     "adherence to + 명사: ~에 대한 준수, 고수",
+     "adherence to regulations/procedures/deadlines 규정/절차/마감일 준수",
+     "adherence to company policy 회사 정책 준수",
+     "adherence to safety standards 안전 기준 준수"
+    ],
+    "examVar": [
+     {
+      "note": "adhere/adherence 뒤에 to를 넣거나, to 앞에 adhere/adherence를 넣는 문제가 자주 출제되었다.",
+      "en": "All employees are expected to adhere to the updated security guidelines at all times.",
+      "ko": "모든 직원들은 항상 업데이트된 보안 지침을 준수해야 한다."
+     }
+    ]
    },
    {
     "word": "politely",
+    "pron": "[pəláitli]",
+    "pos": "ad.",
     "meaning": "공손히",
-    "pos": "adv."
+    "tip": "너보다 2살 더 많아서, 폴은 [[b]]나이[[/b]]가 [[b]]틀리[[/b]]니 폴에게 [[r]]공손히, 예의 바르게[[/r]] 인사해야 한다.",
+    "derivatives": [
+     {
+      "word": "polite",
+      "meaning": "공손한, 예의 바른"
+     },
+     {
+      "word": "politeness",
+      "meaning": "공손함"
+     }
+    ],
+    "toeicExpr": [
+     "speak/ask/refuse politely 정중하게 말하다/요청하다/거절하다",
+     "polite request 공손한 요청   polite behavior 예의 바른 행동",
+     "show politeness 예의를 보이다   act with politeness 예의 있게 행동하다"
+    ]
    },
    {
     "word": "status",
-    "meaning": "1. 지위, 자격 2. 상태, 상황",
-    "pos": "n."
+    "pron": "[stéitəs]",
+    "pos": "n.",
+    "meaning": "1. 지위, 자격   2. 상태, 상황",
+    "tip": "나이가 들어 부장 자리에 [[b]]stay[[/b]](머무는) 것이 [[b]]텃수[[/b]], 즉 지금은 부장 [[r]]지위[[/r]]를 잃은 [[r]]상태, 상황[[/r]]",
+    "toeicExpr": [
+     "social/legal/equal status 사회적/법적/동등한 지위",
+     "membership/resident status 회원/거주 자격",
+     "employment status 고용 상태   shipping status 배송 현황",
+     "current/order/project status 현재/주문/프로젝트 (진행) 상태",
+     "status update 진행 상황 보고",
+     "pending status＝on-hold status 보류 상태"
+    ],
+    "examVar": [
+     {
+      "en": "Management decided to maintain the status quo until the results of the market analysis are released.",
+      "ko": "경영진은 시장 분석 결과가 발표될 때까지 현상 유지를 결정했다."
+     }
+    ]
    },
    {
     "word": "draft",
-    "meaning": "n. 초안 v. 초안을 잡다",
-    "pos": "n./v."
+    "pron": "미 [dræft] 영 [drɔːft]",
+    "pos": "n. / v.",
+    "meaning": "n. 초안  v. 초안을 잡다",
+    "tip": "영화감독이 들판의 전투 장면을 찍기 위해 [[b]]들에부터[[/b]] 나가 시나리오 [[r]]초안을 잡다[[/r]]",
+    "toeicExpr": [
+     "the first draft 초안  rough draft 대략적인 초안",
+     "submit a draft 초안을 제출하다",
+     "revise the draft 초안을 수정하다",
+     "draft a proposal/contract 제안서/계약서 초안을 잡다"
+    ]
    },
    {
     "word": "refrain",
+    "pron": "[rifréin]",
+    "pos": "v.",
     "meaning": "그만두다, 삼가다",
-    "pos": "v."
+    "tip": "[[b]]if[[/b]](만약) [[b]]rain[[/b]](비)가 오면 경기를 [[r]]그만두다, 삼가다[[/r]]",
+    "toeicExpr": [
+     "refrain from + 동명사: ~을 삼가다",
+     "refrain from smoking 흡연을 삼가다",
+     "refrain from using mobile phones 휴대전화 사용을 삼가다"
+    ],
+    "examVar": [
+     {
+      "en": "During the event, attendees are asked to refrain from ＿＿＿ inside the main hall.",
+      "opt": "photographing (O)  photograph (X)",
+      "ko": "행사 중 참석자들은 본관 내부에서 사진 촬영을 삼가 달라는 요청을 받았다.",
+      "note": "'사진 찍는 행위가 들어가야 하기 때문에 단순히 '사진'을 뜻하는 photograph는 들어갈 수 없다."
+     }
+    ]
    },
    {
     "word": "nominate",
+    "pron": "미 [nάmineit] 영 [nɔ́mineit]",
+    "pos": "v.",
     "meaning": "(후보자로) 지명하다, 임명하다",
-    "pos": "v."
+    "tip": "반장 후보자로 [[b]]남이[[/b]] 내 이름을 [[b]]네이트[[/b]], 즉 [[r]]지명하다, 임명하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "nomination",
+      "meaning": "지명, 임명"
+     },
+     {
+      "word": "nominee",
+      "meaning": "지명(임명)된 사람 (← -ee: ~당하는 사람)"
+     }
+    ],
+    "toeicExpr": [
+     "nominate a candidate/representative 후보자를/대표를 지명하다",
+     "nominate A for B A를 B의 후보로 지명하다 (← for: ~을 위해, ~에 대해)",
+     "nominate an employee for promotion 직원을 승진 후보로 지명하다",
+     "be nominated for B B에 대한 후보로 지명되다",
+     "be nominated for an award 상 후보로 지명되다",
+     "nominate A as B A를 B로 지명하다 (← as: ~로서)",
+     "nominate her as chairperson 그녀를 의장으로 지명하다",
+     "nominate him as project leader 그를 프로젝트 책임자로 지명하다",
+     "receive a nomination 지명을 받다",
+     "official nomination 공식 지명",
+     "award nominee 상 후보자"
+    ],
+    "examVar": [
+     {
+      "en": "The committee decided to nominate Ms. Park ＿＿＿ the position of marketing director.",
+      "opt": "for (O)  as (X)",
+      "ko": "위원회는 박 씨를 마케팅 이사 직위의 후보로 지명하기로 결정했다."
+     },
+     {
+      "en": "* The committee decided to nominate Ms. Park ＿＿＿ marketing director.",
+      "opt": "as (O)  for (X)",
+      "ko": "위원회는 박 씨를 마케팅 이사로 지명하기로 결정했다."
+     }
+    ]
+   },
+   {
+    "word": "innovation",
+    "pron": "[ìnəvéiʃən]",
+    "pos": "n.",
+    "meaning": "n. 혁신",
+    "tip": "거북선은 배 [[b]]in[[/b]](안에서) [[b]]노[[/b]]를 젓는 [[b]]베이션[[/b]](배다), 즉 [[r]]혁신[[/r]]",
+    "derivatives": [
+     {
+      "word": "innovate",
+      "meaning": "혁신하다, 쇄신하다"
+     },
+     {
+      "word": "innovative",
+      "meaning": "혁신적인"
+     }
+    ],
+    "toeicExpr": [
+     "technological/product/process innovation 기술/제품/공정 혁신",
+     "innovation in customer service 고객 서비스 혁신",
+     "innovation in manufacturing 제조 혁신 (← in: 영역, 범위, 분야 안에서)",
+     "drive/promote/encourage innovation 혁신을 주도하다/장려하다/촉진하다",
+     "innovate to stay competitive 경쟁력을 유지하기 위해 혁신하다",
+     "innovate in technology 기술 분야에서 혁신하다",
+     "innovative products/ideas 혁신적인 제품/아이디어",
+     "be innovative in design 디자인 분야에서 혁신적이다"
+    ]
+   },
+   {
+    "word": "renovation",
+    "pron": "[rènəvéiʃən]",
+    "pos": "n.",
+    "meaning": "n. 수리, 보수공사",
+    "tip": "[[b]]re[[/b]](다시) [[b]]노[[/b]]를 수리하여 놓은 [[b]]베이션[[/b]]. 즉, [[r]]수리, 보수공사[[/r]]",
+    "derivatives": [
+     {
+      "word": "renovate",
+      "meaning": "~을 수리하다, 보수하다"
+     }
+    ],
+    "toeicExpr": [
+     "office renovation 사무실 보수공사",
+     "complete renovation 전면 개보수",
+     "renovate a building 건물을 개보수하다"
+    ]
    },
    {
     "word": "monitor",
-    "meaning": "1. (n.) 모니터 2. (v.) 감시하다, 관찰하다",
-    "pos": "n./v."
+    "pron": "미[mɑ́nitər] 영[mɔ́nitər]",
+    "pos": "n./v.",
+    "meaning": "1. n. 모니터  2. v. 감시하다, 관찰하다",
+    "tip": "CCTV의 [[b]]모니터[[/b]]를 보면서 [[r]]감시하다, 관찰하다[[/r]]",
+    "toeicExpr": [
+     "computer/TV monitor 컴퓨터/TV 모니터",
+     "monitor progress 진행 상황을 모니터링하다",
+     "closely monitor operations 운영을 면밀히 관찰하다",
+     "monitor the situation 상황을 주시하다",
+     "monitor safety conditions 안전 상태를 감시하다"
+    ]
    }
   ]
  },
@@ -3456,128 +13207,560 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "cash",
-    "meaning": "n. 현금 v. 현금으로 바꾸다 adj. 현금으로 지불하는",
-    "pos": "n./v./adj."
+    "pron": "[kæʃ]",
+    "pos": "n./v./a.",
+    "meaning": "n. 현금  v. 현금으로 바꾸다  a. 현금으로 지불하는",
+    "tip": "[[b]]cash[[/b]]는 현금이란 명사 이외에도 동사나 형용사로도 쓰인다는 것을 염두에 두자.",
+    "toeicExpr": [
+     "cash payment/flow/transaction 현금 지불/흐름/거래",
+     "pay in cash 현금으로 지불하다 (← in: ~방법으로, ~형태로)",
+     "pay by credit card 신용카드로 지불하다 (← by: 수단, 방법: ~을 이용해서)",
+     "cash a check 수표를 현금화하다  cash assets 자산을 현금화하다"
+    ],
+    "examVar": [
+     {
+      "note": "cash가 동사로 사용되는 것을 묻는 문제가 자주 출제되었다.",
+      "en": "The check will be cashed at the bank within two business days.",
+      "ko": "그 수표는 영업일 기준 이틀 내에 은행에서 현금화될 것이다."
+     },
+     {
+      "en": "Temporary booths accept payment only in cash.",
+      "ko": "임시 부스에서는 현금으로만 결제를 받는다."
+     },
+     {
+      "en": "Customers may pay in cash or by credit card at the self-service kiosk.",
+      "ko": "고객은 무인 키오스크에서 현금 또는 신용카드로 결제할 수 있다."
+     }
+    ]
    },
    {
     "word": "tenure",
-    "meaning": "재직 기간, 근속 기간",
-    "pos": "n."
+    "pron": "[ténjər]",
+    "pos": "n.",
+    "meaning": "n. 재직 기간, 근속 기간",
+    "tip": "[[b]]ten year[[/b]](10년의) [[r]]재직 기간[[/r]]",
+    "toeicExpr": [
+     "during his tenure 그의 재임 중에   length of tenure 근속 기간",
+     "tenure at the company 회사에서의 근속 기간",
+     "tenure as CEO CEO로서의 재임 기간"
+    ]
    },
    {
     "word": "appraise",
-    "meaning": "평가하다, 감정하다",
-    "pos": "v."
+    "pron": "[əpréiz]",
+    "pos": "v.",
+    "meaning": "v. 평가하다, 감정하다",
+    "tip": "[[b]]ap(to)[[/b]] + [[b]]praise(칭찬하다)[[/b]] ~에게 [[r]]칭찬하거나[[/r]] 비평하면서 [[r]]평가하다, 감정하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "appraisal",
+      "meaning": "평가, 감정"
+     },
+     {
+      "word": "appraiser",
+      "meaning": "평가자, 감정인"
+     }
+    ],
+    "toeicExpr": [
+     "appraise the value of property 자산의 가치를 평가하다",
+     "appraise performance 성과를 평가하다",
+     "appraise an employee 직원을 평가하다",
+     "performance/annual/job/market appraisal 작업/연간/업무/시장 평가",
+     "certified appraiser 공인 감정인",
+     "professional appraiser 전문 평가자"
+    ],
+    "examVar": [
+     {
+      "en": "Performance appraisals are carried out twice a year.",
+      "ko": "작업 평가는 일 년에 두 번 수행된다."
+     }
+    ]
    },
    {
     "word": "affix",
-    "meaning": "1. 붙이다, 첨부하다 2. (서명을) 하다",
-    "pos": "v."
+    "pron": "[əfíks]",
+    "pos": "v.",
+    "meaning": "v. 1. 붙이다, 첨부하다  2. (서명을) 하다",
+    "tip": "① [[b]]af(to)[[/b]] + [[b]]fix(고정시키다)[[/b]] ~쪽으로 [[r]]고정시키다[[/r]], 즉 [[r]]붙이다, 첨부하다[[/r]]\n② 문서의 마지막에 서명을 [[b]]affix(붙이다)[[/b]]란 뜻으로 [[r]](서명을) 하다[[/r]]",
+    "toeicExpr": [
+     "affix(attach) A to B A를 B에 붙이다 (← to: ~쪽으로; 행동의 방향)",
+     "affix a label to the package 라벨을 소포에 붙이다",
+     "affix a notice to the wall 공지문을 벽에 붙이다",
+     "affix a document 문서를 첨부하다",
+     "affix one's name 이름을 서명하다",
+     "affix a signature to A A에 서명을 하다 (← to: ~쪽으로; 행동의 방향)",
+     "affix a signature to the agreement 계약서에 서명하다",
+     "affix a signature to a document 문서에 서명하다"
+    ],
+    "examVar": [
+     {
+      "en": "Please affix the postage stamp to the upper-right corner of the envelope before mailing it.",
+      "ko": "우편으로 발송하기 전에 봉투의 오른쪽 상단에 우표를 부착해 주십시오."
+     },
+     {
+      "en": "Please affix your signature ________ the application form and submit it by Friday.",
+      "opt": "(A) at  (B) on  (C) to  (D) for",
+      "ans": "(C)",
+      "ko": "신청서에 서명한 후 금요일까지 제출해 주십시오."
+     }
+    ]
    },
    {
     "word": "in spite of",
     "meaning": "~에도 불구하고",
-    "pos": "prep."
+    "tip": "잉! 스파이 [[b]]two[[/b]](2)명을 [[r]]없[[/r]]었음에도 [[r]]불구하고[[/r]] 잘 도망가네.",
+    "toeicExpr": [
+     "in spite of difficulties 어려움에도 불구하고",
+     "in spite of the weather 날씨에도 불구하고"
+    ],
+    "examVar": [
+     {
+      "note": "in spite of 전치사구를 묻는 문제가 자주 출제되었다.",
+      "en": "The outdoor concert continued in spite of the heavy rain, thanks to the organizers' quick preparations.",
+      "ko": "주최 측의 빠른 준비 덕분에, 야외 콘서트는 폭우에도 불구하고 계속 진행되었다."
+     }
+    ]
    },
    {
     "word": "protocol",
-    "meaning": "협약, 규약, 절차",
-    "pos": "n."
+    "pron": "[próutəkɔ̀ːl]",
+    "pos": "n.",
+    "meaning": "n. 협약, 규약, 절차",
+    "tip": "구단과의 협약과 절차를 자주 위반하는 [[b]]프로[[/b]]선수에게 [[b]]또 call[[/b]](전화)를 해서 [[r]]협약, 규약, 절차[[/r]]를 지키라고 말하다",
+    "toeicExpr": [
+     "follow protocol 절차를 따르다",
+     "emergency protocol 비상 대응 절차",
+     "international/trade protocol 국제/무역 협약",
+     "sign a protocol 협약을 체결하다   security protocol 보안 규정"
+    ]
    },
    {
     "word": "degree",
-    "meaning": "1. 등급, 정도 2. 학위 3. (각도·온도의 단위인) 도",
-    "pos": "n."
+    "pron": "[digri:]",
+    "pos": "n.",
+    "meaning": "n. 1. 등급, 정도  2. 학위  3. (각도 · 온도의 단위인) 도",
+    "tip": "① 그림을 [[b]]D[[/b]] 학점 [[r]]정도[[/r]]로 [[b]]그리[[/b]](다), 즉 [[b]]D[[/b]] [[r]]등급, 정도[[/r]]의 그림  ② 학력의 [[r]]등급, 정도[[/r]] → [[r]]학위[[/r]]",
+    "toeicExpr": [
+     "to a degree 어느 정도  to some degree 어느 정도까지는  a high degree of accuracy 높은 정확도",
+     "bachelor's/master's/doctor's degree 학사/석사/박사 학위"
+    ],
+    "examVar": [
+     {
+      "en": "The new marketing strategy has been effective, to some degree, in attracting younger customers.",
+      "ko": "새 마케팅 전략은 젊은 고객을 끌어들이는 데 어느 정도는 효과가 있었다."
+     }
+    ]
    },
    {
     "word": "imminent",
-    "meaning": "임박한",
-    "pos": "adj."
+    "pron": "[íminənt]",
+    "pos": "a.",
+    "meaning": "a. 임박한",
+    "tip": "악당이 \"[[b]]이미 넌 트[[/b]](틀렸어).\" 하며 낭떠러지에 매달린 주인공의 손을 밟으려고 하는 죽음이 [[r]]임박한[[/r]] 상황",
+    "derivatives": [
+     {
+      "word": "imminently",
+      "meaning": "곧, 금방"
+     }
+    ],
+    "toeicExpr": [
+     "imminent deadline/danger/war 임박한 마감일/위험/전쟁",
+     "be implemented/announced imminently 곧 시행되다/발표되다  occur/arrive imminently 곧 일어나다/도착하다"
+    ],
+    "examVar": [
+     {
+      "note": "imminent와 immediate(즉각적인, 즉시의)를 구분하는 문제가 출제되었다.",
+      "en": "예1) Due to the storm warning, residents were evacuated because of the ______ danger.",
+      "opt": "imminent (O)  immediate (X)",
+      "ko": "폭풍 경보로 인해 임박한 위험 때문에 주민들이 대피했다."
+     },
+     {
+      "en": "예2) The system failure requires ______ action to prevent data loss.",
+      "opt": "immediate (O)  imminent (X)",
+      "ko": "시스템 오류는 데이터 손실을 막기 위해 즉각적인 조치가 필요하다."
+     }
+    ]
    },
    {
     "word": "accuse",
-    "meaning": "고발하다, 비난하다",
-    "pos": "v."
+    "pron": "[əkjú:z]",
+    "pos": "v.",
+    "meaning": "v. 고발하다, 비난하다",
+    "tip": "정치인이 비자금으로 1억을 [[b]]키우즈[[/b]](모으고) 있다고 [[r]]고발하다, 비난하다[[/r]]",
+    "toeicExpr": [
+     "accuse A of B A를 B에 대해 고발하다, 비난하다 (← of: ~에 관하여)",
+     "accuse an employee of misconduct 직원을 잘못된 행동에 대해 비난하다",
+     "accuse the company of fraud 회사를 사기 혐의로 고발하다",
+     "be accused of ~에 관해 고발당하다, 비난받다",
+     "be accused of negligence 과실 혐의로 고발되다",
+     "be accused of violating regulations 규정 위반 혐의로 고발되다"
+    ],
+    "examVar": [
+     {
+      "note": "accuse, charge, blame을 구분하는 문제가 출제되었다.\n* accuse A of B: A를 B 혐의로 고발하다/비난하다\n* charge A with B: A를 B 혐의로 기소하다\n* blame A for B: A를 B에게 대해 ~에 대해 책임 지우다",
+      "en": "예) The committee ______ the manager of misusing company funds.",
+      "opt": "(A) accused  (B) charged  (C) blamed  (D) informed",
+      "ans": "(A)",
+      "ko": "위원회는 그 관리자가 회사 자금을 유용했다고 고발했다."
+     }
+    ]
    },
    {
     "word": "ban",
-    "meaning": "n. 금지 v. 금지하다",
-    "pos": "n./v."
+    "pron": "[bæn]",
+    "pos": "n./v.",
+    "meaning": "n. 금지  v. 금지하다",
+    "tip": "정부가 영화의 외설적인 장면을 [[b]]뺀[[/b]], 즉 [[r]]금지, 금지하다[[/r]]",
+    "toeicExpr": [
+     "impose a ban on ~에 대한 금지를 부과하다 (← on: 행위의 목적 대상)",
+     "impose a ban on smoking/imports 흡연/수입 금지 조치를 부과하다",
+     "impose a ban on using personal devices 개인 기기 사용을 금지하다",
+     "be banned from ~을 금지당하다 (← ~하는 것으로부터(from) 금지를 당하다)",
+     "be banned from entering the building 건물 출입이 금지되다",
+     "be banned from using company equipment 회사 장비 사용이 금지되다",
+     "lift a ban 금지를 해제하다  enforce a ban 금지를 시행하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The city council voted to impose a ban on the sale of single-use plastic bags starting next month.",
+      "ko": "시의회는 다음 달부터 일회용 비닐봉지 판매에 대한 금지를 시행하기로 표결했다."
+     },
+     {
+      "en": "2. Employees are banned ______ accessing confidential files without authorization.",
+      "opt": "from (O)  on (X)",
+      "ko": "직원들은 허가 없이 기밀 파일에 접근하는 것이 금지되어 있다."
+     }
+    ]
    },
    {
     "word": "initial",
-    "meaning": "1. (adj.) 처음의, 최초의 2. (n.) 머리글자",
-    "pos": "adj./n."
+    "pron": "[iníʃəl]",
+    "pos": "a./n.",
+    "meaning": "1. a. 처음의, 최초의  2. n. 머리글자",
+    "tip": "Kyung Sun Sik의 [[b]]이니셜[[/b]]은 KSS, 즉 [[r]]처음의[[/r]] 글자를 모은 [[r]]머리글자[[/r]]",
+    "derivatives": [
+     {
+      "word": "initially",
+      "meaning": "처음에, 초기에"
+     },
+     {
+      "word": "initiate",
+      "meaning": "시작하다, 착수하다"
+     },
+     {
+      "word": "initiative",
+      "meaning": "(새로운) 계획, 추진과제, 주도권"
+     }
+    ],
+    "toeicExpr": [
+     "initial stage/plan/reaction/cost 초기 단계/계획/반응/비용",
+     "sign with initials 머리글자로 서명하다  company initials 회사 약칭",
+     "initially planned 처음에 계획된  initially expected 당초 예상된",
+     "initiate a project/discussion 프로젝트를/토론을 시작하다",
+     "initiate changes/negotiations 변화를/협상을 개시하다",
+     "initiative to improve efficiency 효율성을 개선하기 위한 새로운 계획",
+     "launch an initiative 새로운 계획을 시작하다",
+     "cost-reduction initiative 비용 절감 계획",
+     "new business initiative 신규 사업 추진과제",
+     "take the initiative 주도권을 잡다"
+    ]
    },
    {
     "word": "auction",
-    "meaning": "n. 경매 v. 경매하다",
-    "pos": "n./v."
+    "pron": "[ɔ́:kʃən]",
+    "pos": "n. 경매  v. 경매하다",
+    "meaning": "n. 경매  v. 경매하다",
+    "tip": "1억 베팅할 분 없나요? 하나, 둘, 셋! 낙찰! 옥구슬과 같은 [[b]]옥[[/b]]을 두고 숫자를 [[b]]서[[/b]](세어) [[r]]경매[[/r]], [[r]]경매하다[[/r]]",
+    "toeicExpr": [
+     "hold an auction 경매를 열다  be sold at auction 경매로 팔리다",
+     "highest/lowest bidder at auction 경매 최고/최저 입찰자",
+     "put A up for auction A를 경매에 부치다 (← 경매를 위해(for) A를 집어 위로(up) 올려놓아 보여주다)",
+     "put the property up for auction 부동산을 경매에 내놓다",
+     "be put up for auction next month 다음 달 경매에 부쳐지다"
+    ],
+    "examVar": [
+     {
+      "en": "The museum decided to put a rare painting up for auction next month.",
+      "ko": "박물관은 희귀한 그림을 다음 달 경매에 내놓기로 결정했다."
+     }
+    ]
    },
    {
     "word": "coordinate",
-    "meaning": "조화시키다, 조정하다, 협력하다",
-    "pos": "v."
+    "pron": "[kouɔ́:rdinèit]",
+    "pos": "v. 조화시키다, 조정하다, 협력하다",
+    "meaning": "v. 조화시키다, 조정하다, 협력하다",
+    "tip": "[[b]]코디네이터[[/b]]가 의상을 [[r]]조화시키다, 조정하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "coordination",
+      "meaning": "조화, 조정, 협력"
+     }
+    ],
+    "toeicExpr": [
+     "coordinate schedules/a project 일정을/프로젝트를 조정하다",
+     "coordinate colors/outfits 색상/옷을 조화시키다",
+     "coordinate with ~와 협력하다, ~와 조율하다",
+     "coordinate with other departments 다른 부서와 협력하다",
+     "coordinate with clients 고객과 일정을 맞추다",
+     "close coordination 긴밀한 협력",
+     "coordination with other teams 다른 팀과의 협력"
+    ],
+    "examVar": [
+     {
+      "en": "The event planning team must coordinate with multiple departments to ensure that all preparations are completed on time.",
+      "ko": "행사 기획팀은 모든 준비가 제시간에 완료되도록 여러 부서와 조율해야 한다."
+     }
+    ]
    },
    {
     "word": "phase",
-    "meaning": "n. 시기, 단계, 국면 v. 단계적으로 시행하다",
-    "pos": "n./v."
+    "pron": "[feiz]",
+    "pos": "n. 시기, 단계, 국면  v. 단계적으로 시행하다",
+    "meaning": "n. 시기, 단계, 국면  v. 단계적으로 시행하다",
+    "tip": "한 달간 일했으니 [[b]]페이[[/b]](봉급) [[r]]주세요[[/r]]~. 즉, 페이를 줄 [[r]]시기, 단계, 국면[[/r]]",
+    "toeicExpr": [
+     "first phase 1단계  final phase 마지막 단계",
+     "in the early phase 초기 단계에서  development phase 개발 단계",
+     "phase in 단계적으로 도입하다 (← 단계별로 안으로(in) 들여 도입하다)",
+     "phase out 단계적으로 폐지하다 (← 단계별로 밖으로(out) 빼 폐지하다)",
+     "phase in a new policy 새 정책을 단계적으로 도입하다",
+     "phase in the system upgrade 시스템 업그레이드를 점진적으로 도입하다",
+     "phase out an old system 기존 시스템을 단계적으로 폐지하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The first phase of construction is scheduled to be completed by July.",
+      "ko": "건설의 1단계는 7월까지 완료될 예정이다."
+     },
+     {
+      "en": "2. The company plans to phase in the new payroll system over the next six months.",
+      "ko": "회사는 향후 6개월에 걸쳐 새로운 급여 시스템을 단계적으로 도입할 계획이다."
+     }
+    ]
    },
    {
     "word": "proficient",
-    "meaning": "숙달된, 능숙한",
-    "pos": "adj."
+    "pron": "[prəfíʃənt]",
+    "pos": "a. 숙달된, 능숙한",
+    "meaning": "a. 숙달된, 능숙한",
+    "tip": "흙떡의 달인이 순식간에 반죽을 [[b]]풀어 피션트[[/b]](피셨다), 즉 [[r]]숙달된, 능숙한[[/r]]",
+    "derivatives": [
+     {
+      "word": "proficiency",
+      "meaning": "숙달, 숙숙"
+     }
+    ],
+    "toeicExpr": [
+     "proficient user 숙련 사용자  language-proficient 언어에 능통한",
+     "proficient in ~에 능숙한 (← in: 영역, 범위 내에서)",
+     "be proficient in English 영어에 능숙하다",
+     "be proficient in using software 소프트웨어 사용에 능숙하다",
+     "proficiency test 능력 시험  English oral proficiency 영어 구두 표현 능숙도"
+    ],
+    "examVar": [
+     {
+      "en": "The new analyst is highly proficient in creating financial models and interpreting data.",
+      "ko": "새로 채용된 분석가는 재무 모델을 만들고 데이터를 해석하는 데 매우 능숙하다."
+     }
+    ]
    },
    {
     "word": "upset",
-    "meaning": "1. 화가 난, 속상한; 화나게 하다; 속상함 2. 뒤엎다, (계획·상황을) 망치다",
-    "pos": "adj./v./n."
-   },
-   {
-    "word": "upset",
-    "meaning": "뒤엎다, 망치다; 화가 난, 속상한",
-    "pos": "v./adj."
+    "pron": "a. v. [ʌpsét]  n. [ʌpset]",
+    "pos": "a. v. / n.",
+    "meaning": "1. a. 화가 난, 속상한  v. 화나게 하다  n. 속상함\n2. v. 뒤엎다, (계획·상황을) 망치다",
+    "tip": "[[b]]up[[/b]](위로) 내 부하였던 [[b]]셋[[/b]]을 승진시켜 직급을 [[r]]뒤엎다[[/r]], 그래서 [[r]]화가 난, 속상한[[/r]]",
+    "toeicExpr": [
+     "be upset about the shipping delay 배송 지연에 대해 화가 나다",
+     "upset the schedule/plan 일정을/계획을 망치다",
+     "upset the production plan 생산 계획을 망치다",
+     "upset the balance 균형을 깨뜨리다"
+    ],
+    "examVar": [
+     {
+      "en": "The sudden change in venue completely upset the event's preparation schedule.",
+      "ko": "장소 변경이 갑작스럽게 이루어지면서 행사 준비 일정을 완전히 망쳐 놓았다."
+     }
+    ]
    },
    {
     "word": "prohibit",
+    "pron": "[prouhíbit]",
+    "pos": "v.",
     "meaning": "금지하다, 막다",
-    "pos": "v."
+    "tip": "[[b]]프로[[/b]]선수들은 [[b]]흰 빛[[/b]]의 백색가루인 마약을 하면 바로 퇴출시킬 정도로 [[r]]금지하다, 막다[[/r]]",
+    "derivatives": [
+     {
+      "word": "prohibition",
+      "meaning": "금지, 방해"
+     }
+    ],
+    "toeicExpr": [
+     "prohibit A from -ing A가 ~하지 못하도록 금지하다 (← from: ~하는 것으로부터)",
+     "prohibit staff from using personal devices 직원의 개인 기기 사용을 금지하다",
+     "prohibit visitors from taking photographs 방문객의 사진 촬영을 금지하다",
+     "prohibit entry/access/use 출입을/접근을/사용을 금지하다",
+     "legal prohibition 법적 금지  prohibition on sales 판매 금지"
+    ],
+    "examVar": [
+     {
+      "en": "Visitors are prohibited from entering the restricted area without authorization.",
+      "ko": "방문객은 허가 없이 제한 구역에 출입할 수 없다."
+     }
+    ]
    },
    {
     "word": "booth",
+    "pron": "미[bu:θ] 영[bu:ð]",
+    "pos": "n.",
     "meaning": "(칸막이를 한) 작은 공간, 부스",
-    "pos": "n."
+    "tip": "신문을 신문사별로 몇 [[b]]부수[[/b]]씩 앞에 꽂아놓고 파는 [[r]]매점, 부스[[/r]]",
+    "toeicExpr": [
+     "exhibition/information booth 전시/안내 부스",
+     "ticket booth 매표소  set up a booth 부스를 설치하다"
+    ]
    },
    {
     "word": "succeed",
-    "meaning": "①성공하다 ②뒤를 잇다, 계승하다",
-    "pos": "v."
+    "pron": "[səksí:d]",
+    "pos": "v.",
+    "meaning": "1. 성공하다  2. 뒤를 잇다, 계승하다",
+    "tip": "'삼성 이병철 → 이건희 → 이재용'과 같이 [[b]]succeed[[/b]](성공한) 기업가의 자손들이 [[r]]뒤를 잇다, 계승하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "success",
+      "meaning": "성공"
+     },
+     {
+      "word": "successful",
+      "meaning": "성공적인"
+     },
+     {
+      "word": "succession",
+      "meaning": "계승, 연속"
+     },
+     {
+      "word": "successive",
+      "meaning": "잇따른, 계속되는"
+     }
+    ],
+    "toeicExpr": [
+     "a succession of events 연속된 사건들",
+     "in succession 연속으로 (← in: ~상태로, ~방식으로)",
+     "for two years in succession 2년 연속으로",
+     "occur in succession 연속해서 발생하다",
+     "fail in succession 연속으로 실패하다",
+     "succession planning 승계 계획",
+     "for three successive years 3년 연속 동안",
+     "successive quarters 연속된 분기"
+    ],
+    "examVar": [
+     {
+      "note": "successful과 successive를 구분하는 문제가 출제되었다.",
+      "en": "The company has recorded profits for five ______ years.",
+      "opt": "(A) successful  (B) successive  (C) succession  (D) successfully",
+      "ko": "그 회사는 5년 연속으로 이익을 기록해 왔다."
+     }
+    ]
    },
    {
     "word": "execute",
+    "pron": "[éksikjù:t]",
+    "pos": "v.",
     "meaning": "(직무 등을) 실행하다, (계약·합의를) 이행하다",
-    "pos": "v."
+    "tip": "사장님이 [[b]]액![[/b]] [[b]]시컷트[[/b]](시켰다). 그래서 그 일을 [[r]]실행하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "executive",
+      "meaning": "1. 경영의, 간부의  2. 실행의, 집행의"
+     },
+     {
+      "word": "execution",
+      "meaning": "실행, 수행"
+     }
+    ],
+    "toeicExpr": [
+     "execute a plan/strategy/project/task 계획을/전략을/프로젝트를/업무를 실행하다",
+     "execute a contract/an agreement 계약을/합의를 이행하다",
+     "chief executive officer 최고경영자(CEO)",
+     "executive board 이사회, 경영위원회  the executive chef 총주방장",
+     "execution of a plan 계획의 실행  flawless execution 완벽한 실행",
+     "execution phase 실행 단계"
+    ],
+    "examVar": [
+     {
+      "en": "The agreement will be executed once both parties sign the document.",
+      "ko": "양측이 문서에 서명하면 그 계약은 이행될 것이다."
+     }
+    ]
    },
    {
     "word": "signify",
+    "pron": "[sígnifài]",
+    "pos": "v.",
     "meaning": "의미하다, 뜻하다",
-    "pos": "v."
+    "tip": "\"[[b]]식으니 파이[[/b]]\"는 무엇을 [[r]]의미할까[[/r]]? [[b]]식으니[[/b]]까 파이를 빨리 먹으라는 것을 [[r]]뜻하다[[/r]]",
+    "toeicExpr": [
+     "signify acceptance/consent 수락을/동의를 뜻하다"
+    ],
+    "examVar": [
+     {
+      "en": "A red warning light usually signifies a system error.",
+      "ko": "빨간 경고등은 보통 시스템 오류를 의미한다."
+     }
+    ]
    },
    {
     "word": "bulletin",
+    "pron": "[búlətin]",
+    "pos": "n.",
     "meaning": "게시, 공고, 게시물",
-    "pos": "n."
+    "tip": "야간자율학습 하라고 [[b]]불러도 튄[[/b]] 학생들 명단을 교무실 게시판에 [[r]]게시, 공고[[/r]]",
+    "toeicExpr": [
+     "company bulletin 회사 게시물  bulletin board 게시판",
+     "internal/safety bulletin 내부/안전 공지",
+     "post/issue a bulletin 공지를 게시하다/발표하다",
+     "bulletin announcement 공지 안내"
+    ]
    },
    {
     "word": "announce",
+    "pron": "[ənáuns]",
+    "pos": "v.",
     "meaning": "발표하다, 알리다, 공지하다",
-    "pos": "v."
+    "tip": "[[b]]아나운서[[/b]](announcer)가 뉴스를 [[r]]발표하다, 알리다[[/r]]",
+    "derivatives": [
+     {
+      "word": "announcement",
+      "meaning": "발표, 공지"
+     }
+    ],
+    "toeicExpr": [
+     "announce a plan/decision 계획을/결정을 발표하다",
+     "announce a schedule 일정을 공지하다",
+     "make an announcement 발표하다",
+     "official announcement 공식 발표"
+    ]
    },
    {
     "word": "demonstrate",
+    "pron": "[démənstrèit]",
+    "pos": "v.",
     "meaning": "시범을 보이다, 시연하다, 입증하다",
-    "pos": "v."
+    "tip": "홈쇼핑 방송에서 퍼머 약을 머리에 [[b]]대면 straight[[/b]](똑바로) 바로 펴진다는 것을 [[r]]시범을 보이다, 입증하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "demonstration",
+      "meaning": "시범, 입증"
+     }
+    ],
+    "toeicExpr": [
+     "demonstrate how to use 사용법을 시범 보이다",
+     "demonstrate a product 제품을 시연하다",
+     "demonstrate ability/competence/effectiveness 능력을/역량을/효과를 입증하다",
+     "product/software demonstration 제품/소프트웨어 시연"
+    ]
    }
   ]
  },
@@ -3587,98 +13770,12735 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "gear",
-    "meaning": "①기어, 장치, 장비 ②조정하다",
-    "pos": "n./v."
+    "pron": "[giər]",
+    "pos": "1. n. 2. v.",
+    "meaning": "1. n. 기어, 장치, 장비  2. v. 조정하다",
+    "tip": "자동차 [[b]]기어[[/b]]는 속도를 [[r]]조정하는 장치, 장비[[/r]]",
+    "toeicExpr": [
+     "safety/protective/production gear 안전/보호/생산 장비",
+     "gear up for ~을 준비하다 (← 출발을 위해(for) 기어를 위로(up) 올려 부릉부릉 소리를 내며 출발을 준비하다)",
+     "gear up for expansion 확장을 준비하다",
+     "gear up for a launch 출시를 준비하다",
+     "be geared toward ~에 맞춰져 있다, ~쪽으로 조정되어 있다",
+     "be geared toward efficiency 효율성에 맞춰져 있다",
+     "be geared toward improving productivity 생산성 향상에 맞춰져 있다",
+     "be geared toward young professionals 젊은 직장인에 맞춰져 있다"
+    ],
+    "examVar": [
+     {
+      "en": "1. Employees must wear proper safety gear while working at the construction site.",
+      "ko": "직원들은 건설 현장에서 근무할 때 적절한 안전 장비를 착용해야 한다."
+     },
+     {
+      "en": "2. The new training program is geared toward improving productivity.",
+      "ko": "새로운 교육 프로그램은 생산성 향상을 목표로 한다."
+     },
+     {
+      "en": "3. Employees are gearing up for the annual audit next month.",
+      "ko": "직원들은 다음 달 연례 감사를 준비하고 있다."
+     }
+    ]
    },
    {
     "word": "academy",
+    "pron": "[əkǽdəmi]",
+    "pos": "n.",
     "meaning": "교육기관, 연수원",
-    "pos": "n."
+    "tip": "MBC 방송 [[b]]아카데미[[/b]]에서 아카데미는 [[r]]교육기관[[/r]]",
+    "derivatives": [
+     {
+      "word": "academic",
+      "meaning": "학문의, 교육기관의"
+     }
+    ],
+    "toeicExpr": [
+     "training academy 연수원  language academy 어학원",
+     "company/business/technical/professional academy 사내/경영/기술/전문 교육기관",
+     "academic qualification 학력, 학문적 자격",
+     "academic achievement/performance 학업 성취/성과"
+    ]
    },
    {
     "word": "acquaint",
+    "pron": "[əkwéint]",
+    "pos": "v.",
     "meaning": "알리다, 숙지시키다",
-    "pos": "v."
+    "tip": "\"[[b]]어쿠![[/b]] 저 여자는 두목 [[r]]애인[[/r]]이야.\" 건들면 안 된다고 [[r]]알리다, 숙지시키다[[/r]]",
+    "derivatives": [
+     {
+      "word": "acquaintance",
+      "meaning": "아는 사이"
+     }
+    ],
+    "toeicExpr": [
+     "acquaint A with B A에게 B를 숙지시키다, 알리다 (with: ~을 가지고→ 정보 등을 갖게 하다)",
+     "acquaint staff with safety regulations 직원들에게 안전 규정을 숙지시키다",
+     "acquaint new hires with workplace rules 신입사원들에게 근무 규칙을 알게 하다",
+     "be acquainted with ~에 정통하다, ~을 알고 있다",
+     "be well acquainted with the system 시스템을 잘 알고 있다",
+     "be acquainted with emergency protocols 비상 대응 절차를 알고 있다",
+     "a business acquaintance 업무상 아는 사람  an old acquaintance 오랜 지인"
+    ],
+    "examVar": [
+     {
+      "en": "The orientation program is designed to acquaint new employees with the company's policies and workflow procedures.",
+      "ko": "오리엔테이션 프로그램은 신입 직원들에게 회사의 정책과 업무 절차를 숙지시키도록 설계되었다."
+     }
+    ]
    },
    {
     "word": "hostile",
+    "pron": "미[hástl] 영[hóstail]",
+    "pos": "a.",
     "meaning": "적대적인, 불리한, 혹독한",
-    "pos": "adj."
+    "tip": "[[b]]하수[[/b]]구를 옆집으로 [[b]]틀[[/b]]어 더러운 물을 보낼 정도로 옆집에 [[r]]적대적인[[/r]]",
+    "derivatives": [
+     {
+      "word": "hostility",
+      "meaning": "적대감"
+     }
+    ],
+    "toeicExpr": [
+     "hostile attitude/environment 적대적인 태도/환경",
+     "hostile conditions 적대적인(불리한) 조건",
+     "hostile climate 적대적인(혹독한) 환경",
+     "show hostility 적대감을 보이다",
+     "hostility toward the new management 새 경영진에 대한 적대감"
+    ]
    },
    {
     "word": "article",
-    "meaning": "①물품 ②(신문·잡지 등의) 기사",
-    "pos": "n."
+    "pron": "[ɑ́ːrtikl]",
+    "pos": "n.",
+    "meaning": "1. 물품  2. (신문 · 잡지 등의) 기사",
+    "tip": "초소형 반도체 발명과 같은 [[b]]아(주) 티끌[[/b]]만한 [[r]]물품[[/r]]에 대한 신문 [[r]]기사[[/r]]",
+    "toeicExpr": [
+     "household articles 가정 용품  an article of clothing 의류 한 벌",
+     "articles for sale 판매 상품  imported articles 수입품",
+     "newspaper/magazine/feature article 신문/잡지/특집 기사"
+    ]
    },
    {
     "word": "furnish",
-    "meaning": "①제공하다, 주다 ②(필수품·가구 등을) 비치하다",
-    "pos": "v."
+    "pron": "[fə́ːrniʃ]",
+    "pos": "v.",
+    "meaning": "1. 제공하다, 주다  2. (필수품 · 가구 등을) 비치하다",
+    "tip": "① 급식소에서 국물 [[b]]퍼니[[/b]](퍼서) 급식사인 [[b]]she[[/b]](그녀가) 사람들에게 [[r]]제공하다, 주다[[/r]]  ② [[b]]furniture[[/b]](가구) 등을 [[r]]비치하다[[/r]]",
+    "toeicExpr": [
+     "furnish information/details 정보를/세부사항을 제공하다",
+     "furnish A with B A에게 B를 제공하다, A에 B를 비치하다, 갖추다 (with: ~을 가지고 → ~을 갖게 하다)",
+     "furnish employees with information 직원들에게 정보를 제공하다",
+     "furnish clients with detailed reports 고객에게 상세 보고서를 제공하다",
+     "furnish the office with furniture 사무실에 가구를 비치하다",
+     "furnish the hotel with new beds 호텔에 새 침대를 비치하다",
+     "be furnished with basic amenities 기본 편의시설이 비치되어 있다",
+     "be furnished with the latest technology 최신 기술이 갖춰져 있다",
+     "furnish a room 방에 가구를 비치하다  fully furnished 완비된(가구가 갖춰진)",
+     "well-furnished room/office 가구가 잘 갖춰진 방/사무실"
+    ],
+    "examVar": [
+     {
+      "en": "1. The company will furnish employees with safety equipment.",
+      "ko": "회사는 직원들에게 안전 장비를 제공할 것이다."
+     },
+     {
+      "en": "2. The hotel rooms are furnished with basic amenities.",
+      "ko": "호텔 객실에는 기본 편의시설이 갖춰져 있다."
+     }
+    ]
    },
    {
     "word": "counsel",
-    "meaning": "상담하다, 조언하다; 상담, 조언",
-    "pos": "v./n."
+    "pron": "[káunsəl]",
+    "pos": "v.",
+    "meaning": "v. 상담하다, 조언하다  n. 상담, 조언",
+    "tip": "흰 [[b]]까운[[/b]]을 입은 의사가 환자에게 [[r]]설[[/r]]명하며 [[r]]상담하다, 조언하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "counselor",
+      "meaning": "의논상대, 카운슬러"
+     },
+     {
+      "word": "counseling",
+      "meaning": "개인 상담"
+     }
+    ],
+    "toeicExpr": [
+     "seek legal counsel 법률 상담을 구하다  counsel a client 의뢰인에게 조언하다",
+     "professional counsel 전문가 조언",
+     "career counselor 진로 상담가  legal counselor 법률 고문",
+     "career counseling 진로 상담  legal counseling 법률 상담"
+    ]
    },
    {
     "word": "respective",
+    "pron": "[rispéktiv]",
+    "pos": "a.",
     "meaning": "제각각의, 각자의",
-    "pos": "adj."
+    "tip": "[[b]]respect[[/b]](존경하는) 사람을 묻는 [[b]]TV[[/b]] 프로그램에서 방청객의 대답은 엄마, 아빠, 대통령.. 모두 [[r]]제각각의, 각자의[[/r]]",
+    "derivatives": [
+     {
+      "word": "respectful",
+      "meaning": "공손한"
+     },
+     {
+      "word": "respectable",
+      "meaning": "존경할 만한 (← -able: ~할 만한, ~할 수 있는)"
+     },
+     {
+      "word": "respected",
+      "meaning": "존경받는 (← -ed: ~을 당하는, 받는)"
+     }
+    ],
+    "toeicExpr": [
+     "respective roles/responsibilities/positions 각자의 역할/책임/직위"
+    ],
+    "examVar": [
+     {
+      "en": "The project leaders submitted reports summarizing their findings in their ________ sections of the document.",
+      "opt": "(A) respectful  (B) respectable  (C) respective  (D) respected",
+      "ans": "(C)",
+      "ko": "프로젝트 리더들은 문서의 각자 해당하는 부분에 그들의 결과를 요약한 보고서를 제출했다.",
+      "note": "respective / respectful / respectable을 구분하는 문제가 자주 출제되었다."
+     }
+    ]
    },
    {
     "word": "tenant",
+    "pron": "[ténənt]",
+    "pos": "n.",
     "meaning": "세입자, 임차인",
-    "pos": "n."
+    "tip": "[[b]]ten[[/b]](10)마리의 [[b]]ant[[/b]](개미)는 우리 집 벽 속에 세 들어 사는 [[r]]세입자, 임차인[[/r]]",
+    "toeicExpr": [
+     "commercial tenant 상가 임차인  residential tenant 주거용 세입자",
+     "tenant agreement 임대차 계약서  long-term tenant 장기 세입자"
+    ]
    },
    {
     "word": "raw",
+    "pron": "[rɔː]",
+    "pos": "a.",
     "meaning": "가공하지 않은, 날것의",
-    "pos": "adj."
+    "tip": "원유와 같이 상품 가치가 [[b]]low[[/b]](낮은) 단계의, 즉 [[r]]가공하지 않은, 날것의[[/r]]",
+    "toeicExpr": [
+     "raw material 원자재  raw ingredients 원재료"
+    ]
    },
    {
     "word": "thereby",
+    "pron": "[ðɛ́ərbài]",
+    "pos": "ad.",
     "meaning": "그것에 의하여, 그것 때문에",
-    "pos": "adv."
+    "tip": "[[b]]there[[/b]](그곳에서) 일어난 일 [[b]]by[[/b]](~에 의해), 즉 [[r]]그것에 의하여, 그것 때문에[[/r]]",
+    "toeicExpr": [
+     "thereby + -ing: 그로 인해 ~하다 (-ing는 분사구문의 현재분사이다.)",
+     "reduce costs, thereby increasing profits 비용을 줄여 그 결과 수익을 늘리다",
+     "improve efficiency, thereby enhancing productivity 효율을 개선해 생산성을 높이다"
+    ],
+    "examVar": [
+     {
+      "en": "접속부사 thereby의 의미를 묻는 문제가 자주 출제되었다.",
+      "note": "The company upgraded its internal network system, thereby improving data security and processing speed.",
+      "ko": "회사는 내부 네트워크 시스템을 업그레이드했으며, 그렇게 함으로써 데이터 보안과 처리 속도를 향상시켰다."
+     }
+    ]
    },
    {
     "word": "fund",
-    "meaning": "자금; 자금을 대다, 투자하다",
-    "pos": "n./v."
+    "pron": "[fʌnd]",
+    "pos": "n. v.",
+    "meaning": "n. 자금  v. 자금을 대다, 투자하다",
+    "tip": "증권사의 [[b]]펀드[[/b]] 매니저가 고객의 [[r]]자금[[/r]]을 대신 [[r]]투자하다[[/r]]",
+    "toeicExpr": [
+     "operating/investment/research/emergency fund 운영/투자/연구/비상 자금",
+     "allocate funds 자금을 배정하다  raise funds 자금을 모금하다",
+     "fund the event 행사에 자금을 대다"
+    ]
    },
    {
     "word": "appliance",
+    "pron": "[əpláiəns]",
+    "pos": "n.",
     "meaning": "가전제품, 전기 기구",
-    "pos": "n."
+    "tip": "\"[[b]]어, fly[[/b]](비행할) 때는 [[r]]안 써[[/r]]\" 즉, 항공 통신 안전을 위해 비행기 안에서는 안 쓰는 휴대폰, 컴퓨터 [[r]]전기 기구, 가전제품[[/r]] 비행기 모드로 해놔야 해.",
+    "toeicExpr": [
+     "household appliance 가전 제품  kitchen appliance 주방용품",
+     "electrical appliances 전기 제품  office appliances 사무용 기기"
+    ],
+    "examVar": [
+     {
+      "en": "The store is offering a major discount on all household appliances this weekend.",
+      "ko": "그 매장은 이번 주말에 모든 가정용 전자제품에 큰 할인을 제공하고 있다."
+     }
+    ]
    },
    {
     "word": "pill",
+    "pron": "[pil]",
+    "pos": "n.",
     "meaning": "알약",
-    "pos": "n."
+    "tip": "혈액순환제와 같이 [[b]]필[[/b]](피를) 잘 돌게 해주는 [[r]]알약[[/r]]",
+    "toeicExpr": [
+     "take a pill 약을 먹다  take vitamine pills 비타민 알약을 섭취하다"
+    ]
    },
    {
     "word": "waive",
-    "meaning": "①(권리·요금·규칙 등을) 포기하다 ②면제하다",
-    "pos": "v."
+    "pron": "[weiv]",
+    "pos": "v.",
+    "meaning": "1. (권리 · 요금 · 규칙 등을) 포기하다  2. 면제하다",
+    "tip": "거친 [[b]]wave[[/b]](파도) 때문에 출항을 [[r]]포기하다[[/r]], 선원들에게 오늘 조업을 [[r]]면제하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "waiver",
+      "meaning": "포기, 면제"
+     }
+    ],
+    "toeicExpr": [
+     "waive a fee/charge/requirement 수수료를/요금을/요건을 면제하다",
+     "waive a right 권리를 포기하다",
+     "waive a claim 청구권을 포기하다",
+     "waive one's right to compensation 보상받을 권리를 포기하다",
+     "fee/tuition waiver 수수료/등록금 면제",
+     "liability waiver 책임 포기서 (면책 동의서)"
+    ],
+    "examVar": [
+     {
+      "en": "Late fees will be _______ if payment is made within three days.",
+      "opt": "waived (O)  wave (X)",
+      "ko": "3일 이내에 지불하면 연체료가 면제된다."
+     }
+    ]
    },
    {
     "word": "insolvent",
+    "pron": "미 [insάlvənt] 영 [insɔ́lvənt]",
+    "pos": "a.",
     "meaning": "지급불능의, 파산의",
-    "pos": "adj."
+    "tip": "곳간 [[b]]in[[/b]](안에) [[b]]쌀[[/b]]이 다 [[b]]burnt[[/b]](타버려) [[r]]파산한[[/r]]",
+    "toeicExpr": [
+     "financially insolvent 재정적으로 파산한  insolvent company 파산 기업"
+    ]
    },
    {
     "word": "rid",
+    "pron": "[rid]",
+    "pos": "v.",
     "meaning": "제거하다, 없애다",
-    "pos": "v."
+    "tip": "밀림에서 길잡이가 무리를 [[b]]리드[[/b]]하며 길을 내기 위해 풀들을 칼로 [[r]]제거하다, 없애다[[/r]]",
+    "toeicExpr": [
+     "get rid of ~을 제거하다 (← of: 제거, 박탈)",
+     "get rid of outdated equipment 오래된 장비를 처분하다",
+     "get rid of unnecessary costs 불필요한 비용을 없애다",
+     "rid A of B A에서 B를 제거하다",
+     "rid the system of errors 시스템에서 오류를 제거하다",
+     "rid employees of extra workload 직원들의 추가 업무를 없애다"
+    ],
+    "examVar": [
+     {
+      "en": "The new policy aims to rid the company of unnecessary expenses.",
+      "ko": "새 정책은 회사에서 불필요한 비용을 제거하는 것을 목표로 한다.",
+      "note": "* 토익에 자주 나오는 〈제거ㆍ박탈 동사 A of B〉\nrid A of B (A에서 B를 제거하다)\nrelieve A of B (A에게서 B를 덜어주다)\ncure A of B (A를 B에서 치료하다)\nclear A of B (A에서 B를 치우다, 제거하다)\ndeprive A of B (A에게서 B를 박탈하다)\nrob A of B (A에게서 B를 훔치다)\nempty A of B (A에서 B를 비우다)"
+     }
+    ]
    },
    {
     "word": "belt",
-    "meaning": "①혁대 ②지대, 지역",
-    "pos": "n."
+    "pron": "[belt]",
+    "pos": "n.",
+    "meaning": "1. 혁대  2. 지대, 지역",
+    "tip": "그린벨트 = green(녹새) + [[b]]belt[[/b]]([[r]]지대, 지역[[/r]])",
+    "toeicExpr": [
+     "leather belt 가죽 벨트  seat belt 안전벨트",
+     "green belt 녹지대, 개발 제한 구역",
+     "industrial/agricultural/manufacturing belt 공업/농업/제조업 지대"
+    ]
    },
    {
     "word": "premises",
+    "pron": "[prémisiz]",
+    "pos": "n.",
     "meaning": "(한 사업체가 사용하는) 부지, 구내",
-    "pos": "n."
+    "tip": "[[b]]풀[[/b]](밭)에 [[b]]미쓰[[/b]]들이 커피를 마실 수 있는 회사 [[r]]구내[[/r]] 휴식을 위한 [[r]]부지[[/r]]",
+    "toeicExpr": [
+     "'구내'란 건물, 마당, 주차장, 출입구 등을 전부 포함해 항상 복수형으로 쓰이고 복수 취급한다.",
+     "on the premises 구내에서  company premises 회사 구내",
+     "office premises 사무실 구내",
+     "no smoking on the premises 건물 내 금연",
+     "food is not allowed on the premises 건물 내 음식 반입 금지"
+    ],
+    "examVar": [
+     {
+      "en": "Visitors must sign in before entering the company _______.",
+      "opt": "premises (O)  premise (X)",
+      "ko": "방문객은 회사 구내에 들어가기 전에 반드시 출입 등록을 해야 한다."
+     }
+    ]
+   },
+   {
+    "word": "template",
+    "pron": "[témplət, témpleit]",
+    "pos": "n.",
+    "meaning": "형판, 틀, 서식, 양식",
+    "tip": "[[b]]ten[[/b]](10)개의 [[b]]plate[[/b]](접시)를 찍어내는 [[r]]형판, 틀[[/r]] → 글을 쓸 때의 [[r]]틀[[/r]]은 [[r]]서식, 양식[[/r]]",
+    "toeicExpr": [
+     "design template 디자인 형판",
+     "document/e-mail/contract/invoice template 문서/이메일/계약서/송장 서식(양식)"
+    ]
+   },
+   {
+    "word": "laboratory",
+    "pron": "[lǽbərətɔ̀ːri]",
+    "pos": "n.",
+    "meaning": "실험실, 연구소",
+    "tip": "탈모약을 개발할 마음에 \"[[b]]내가 돈을 벌어[[/b]] 머리[[b]]털[[/b]]이 나게 하는 [[r]]실험실, 연구소[[/r]]를 차려야지.\"",
+    "toeicExpr": [
+     "research laboratory 연구실  testing laboratory 시험ㆍ검사 실험실",
+     "laboratory equipment 실험 장비  laboratory test 실험실 검사"
+    ]
+   },
+   {
+    "word": "delicate",
+    "pron": "[délikət]",
+    "pos": "a.",
+    "meaning": "섬세한, 파손되기 쉬운, 민감한  2. 정교한, 정밀한",
+    "tip": "두부에 칼을 [[b]]댈리[[/b]] 그랬더니 선에 따라 [[r]]정교하고, 정밀하게[[/r]] cut(잘려질) 정도로 [[r]]섬세한, 파손되기 쉬운[[/r]] 두부",
+    "toeicExpr": [
+     "delicate items 파손되기 쉬운 물품  delicate materials 섬세한 재료",
+     "delicate products 파손 위험 상품  delicate surface 손상되기 쉬운 표면",
+     "delicate matter/situation/issue 민감한 문제/상황/사안",
+     "delicate equipment 정밀 장비  delicate instruments 정교한 기기",
+     "delicate design/artwork 정교한 디자인/예술 작품"
+    ],
+    "examVar": [
+     {
+      "en": "The package contains delicate equipment and should be handled carefully.",
+      "ko": "그 포장물에는 섬세한(파손되기 쉬운) 장비가 들어 있으므로 조심히 취급해야 한다."
+     }
+    ]
+   },
+   {
+    "word": "trim",
+    "pron": "[trim]",
+    "pos": "v.",
+    "meaning": "1. 다듬다, 손질하다  2. 줄이다, 삭감하다",
+    "tip": "삐져나온 머리를 가위로 [[b]]추림[[/b]](추리다), 즉 [[r]]다듬다, 손질하다[[/r]], 머리 길이를 [[r]]줄이다[[/r]]",
+    "toeicExpr": [
+     "trim one's hair 머리를 다듬다",
+     "trim costs/expenses 비용을/지출을 줄이다",
+     "trim the budget 예산을 삭감하다"
+    ],
+    "examVar": [
+     {
+      "en": "To remain competitive, the company decided to trim operating costs.",
+      "ko": "경쟁력을 유지하기 위해, 그 회사는 운영 비용을 줄이기로 결정했다."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "day": 28,
+  "title": "",
+  "words": [
+   {
+    "word": "highlight",
+    "pron": "[háilàit]",
+    "pos": "n./v.",
+    "meaning": "n. 가장 중요한 부분  v. 강조하다",
+    "tip": "[[b]]high[[/b]](높은) [[b]]light[[/b]](빛)이 나는 형광펜으로 [[r]]가장 중요한 부분[[/r]]을 [[r]]강조하다[[/r]]",
+    "toeicExpr": [
+     "trip highlights 여행의 하이라이트",
+     "highlight of the presentation 발표의 가장 중요한 부분",
+     "highlight a point 요점을 강조하다  highlight the need 필요성을 강조하다"
+    ]
+   },
+   {
+    "word": "elevate",
+    "pron": "[élivèit]",
+    "pos": "v.",
+    "meaning": "v. 올리다, 높이다",
+    "tip": "[[b]]엘리베이터[[/b]]가 사람들을 높은 곳으로 [[r]]올리다, 높이다[[/r]]",
+    "toeicExpr": [
+     "elevate brand awareness 브랜드 인지도를 높이다",
+     "elevate customer satisfaction 고객 만족도를 향상시키다",
+     "elevate standards 기준을 높이다  elevate one's status 지위를 높이다",
+     "elevate performance 성능을 향상하다"
+    ]
+   },
+   {
+    "word": "orient",
+    "pron": "[ɔ́ːriènt]",
+    "pos": "v.",
+    "meaning": "v. 1. ~방향을 맞추다, 지향하게 하다  2. 안내하다, 익숙하게 하다",
+    "tip": "길 잃은 사람들을 [[b]]오리온[[/b]] 별자리 to(쪽으로) [[r]]향하게 하다, 안내하다, 지향하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "orientation",
+      "meaning": "1. (새로운 환경에 적응을 위한) 예비 교육  2. 방향성, 지향"
+     },
+     {
+      "word": "-oriented",
+      "meaning": "~지향적인, ~중심의"
+     }
+    ],
+    "toeicExpr": [
+     "be oriented toward A A에 맞춰져 있다",
+     "be oriented toward customers 고객 중심으로 맞춰져 있다",
+     "be oriented toward growth 성장 지향적이다",
+     "orient A to B A를 B에 맞추다, A를 B에 익숙하게 하다",
+     "orient new staff to workplace procedures 신입 직원을 업무 절차에 익숙하게 하다",
+     "orient a team to shared goals 팀의 방향을 공동 목표에 맞추다",
+     "orient a strategy to market demand 전략을 시장 수요에 맞추다",
+     "be oriented to operational standards 운영 기준에 익숙해지다",
+     "be oriented to company culture 회사 문화에 익숙해지다",
+     "new employee orientation 신입사원 오리엔테이션(예비 교육)",
+     "job orientation 직무 오리엔테이션(예비 교육)",
+     "customer orientation 고객 지향성  market orientation 시장 지향",
+     "orientation toward innovation 혁신 지향",
+     "customer-oriented 고객 지향적인  service-oriented 서비스 중심의",
+     "result-oriented 결과 중심의  profit-oriented 이윤 중심의",
+     "quality-oriented 품질 중심의"
+    ],
+    "examVar": [
+     {
+      "en": "1. The company's mission is oriented toward improving customer satisfaction.",
+      "ko": "회사의 사명은 고객 만족도 향상에 맞춰져 있다."
+     },
+     {
+      "en": "2. The supervisor oriented the team to the revised project goals.",
+      "ko": "감독자는 팀의 방향을 수정된 프로젝트 목표에 맞췄다."
+     }
+    ]
+   },
+   {
+    "word": "morale",
+    "pron": "미 [mərǽl] 영 [mɔrάːl]",
+    "pos": "n.",
+    "meaning": "n. 사기, 의욕",
+    "tip": "사막에서 \"저 [[b]]모랠[[/b]](모래를) 넘으면 오아시스야\"라는 말에 생겨나는 [[r]]사기, 의욕[[/r]]",
+    "toeicExpr": [
+     "boost morale 사기를 북돋우다  high/low morale 높은/낮은 사기",
+     "team morale 팀 사기  employee morale 직원들의 사기"
+    ]
+   },
+   {
+    "word": "accumulate",
+    "pron": "[əkjúːmjulèit]",
+    "pos": "v.",
+    "meaning": "v. 축적하다, 모으다, 누적시키다",
+    "tip": "[[b]]억[[/b]] 원으로 [[b]]키움[[/b]]을(키운 것을) 하기 위해 돈을 [[r]]축적하다, 모으다[[/r]]",
+    "derivatives": [
+     {
+      "word": "accumulation",
+      "meaning": "축적, 누적"
+     }
+    ],
+    "toeicExpr": [
+     "accumulate profits/experience/data 이익을/경험을/데이터를 축적하다",
+     "accumulate inventory/debt 재고를/부채를 누적시키다",
+     "accumulation of debt/interest/inventory 부채/이자/재고 누적",
+     "accumulation of data/assets 데이터/자산 축적"
+    ]
+   },
+   {
+    "word": "endorse",
+    "pron": "[indɔ́ːrs]",
+    "pos": "v.",
+    "meaning": "v. (어음 등에) 배서하다, (계획 등을) 승인하다",
+    "tip": "수표 en(안에), 즉 [[b]]돈[[/b]]에 이름을 [[b]]쓰다[[/b]], 즉 [[r]]배서하다[[/r]]. 그래서 타인에 대한 수표 양도를 [[r]]승인하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "endorsement",
+      "meaning": "배서, 승인"
+     }
+    ],
+    "toeicExpr": [
+     "endorse a check 수표에 배서하다",
+     "endorse a plan/proposal 계획을/제안을 승인하다",
+     "official endorsement 공식 승인  endorsement from board 이사회 승인"
+    ],
+    "examVar": [
+     {
+      "en": "The board voted to endorse the proposed merger plan.",
+      "ko": "이사회는 제안된 합병 계획을 승인하기로 투표했다."
+     }
+    ]
+   },
+   {
+    "word": "banquet",
+    "pron": "[bǽŋkwit]",
+    "pos": "n.",
+    "meaning": "연회, 만찬",
+    "tip": "손에 샴페인 잔을 들고 [[b]]방끗[[/b]]방끗 웃으며 돌아다니는 [[r]]연회, 만찬[[/r]]",
+    "toeicExpr": [
+     "wedding banquet 결혼 연회  banquet hall/room 연회장",
+     "host a banquet 연회를 주최하다"
+    ]
+   },
+   {
+    "word": "booklet",
+    "pron": "[búklit]",
+    "pos": "n.",
+    "meaning": "소책자, 설명서, 안내서",
+    "tip": "[[[b]]book[[/b]](책) + [[b]]let[[/b]]('작은 것'을 뜻하는 접미어)] [[b]]let[[/b]](작은) [[b]]book[[/b]](책자), 즉 [[r]]소책자[[/r]]",
+    "toeicExpr": [
+     "instruction booklet 사용 설명서  travel/information booklet 여행/정보 책자",
+     "product booklet 제품 안내서"
+    ]
+   },
+   {
+    "word": "versatile",
+    "pron": "미[və́:rsətl] 영[və́:rsətàil]",
+    "pos": "a.",
+    "meaning": "다재다능한, 여러 용도로 활용 가능한",
+    "tip": "여러 가지 일을 맡겼는데 [[b]]벌써 다 일[[/b]]을 끝냈다, 즉 [[r]]다재다능한, 여러 용도로 활용 가능한[[/r]]",
+    "toeicExpr": [
+     "versatile employee 다재다능한 직원  versatile skill 다방면의 능력",
+     "versatile product 다용도 제품  versatile tool 다목적 도구"
+    ],
+    "examVar": [
+     {
+      "en": "1. The company is looking for a versatile employee who can handle multiple tasks.",
+      "ko": "그 회사는 여러 업무를 처리할 수 있는 다재다능한 직원을 찾고 있다."
+     },
+     {
+      "en": "2. This software is highly versatile and can be used across various departments.",
+      "ko": "이 소프트웨어는 여러 용도로 활용 가능하여 여러 부서에서 사용할 수 있다."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "day": 29,
+  "title": "",
+  "words": [
+   {
+    "word": "afford",
+    "pron": "[əfɔ́:rd]",
+    "pos": "v.",
+    "meaning": "1. ~할 여유가 있다, 감당할 수 있다  2. 제공하다",
+    "tip": "★① [[b]]a[[/b]](하나의) [[b]]포드[[/b]] 자동차 정도는 [[r]]살 여유가 있다[[/r]]\n② [[b]]a[[/b]](하나의) [[b]]포드[[/b]] 자동차를 직원에게 [[r]]제공하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "affordable",
+      "meaning": "(비용 등이) 감당할 수 있는, 적당한"
+     },
+     {
+      "word": "affordability",
+      "meaning": "감당 가능성, 구매·지불 능력"
+     }
+    ],
+    "toeicExpr": [
+     "can afford + to부정사: ~할 여유가 있다, ~할 형편이다",
+     "can afford to pay the cost 비용을 지불할 여유가 있다",
+     "can afford to invest 투자할 여유가 있다",
+     "can afford to hire more staff 인력을 더 고용할 여유가 있다",
+     "cannot afford + to부정사: ~할 여유가 없다, ~을 감당할 수 없다",
+     "cannot afford to delay 지연을 감당할 수 없다",
+     "cannot afford to lose customers 고객을 잃을 여유가 없다",
+     "cannot afford to make mistakes 실수할 여유가 없다",
+     "afford the opportunity 기회를 제공하다",
+     "afford a view of ~한 경치를 제공하다",
+     "affordable housing 가격을 감당할 수 있는 주택",
+     "at an affordable price 적당한(감당할 수 있는) 가격으로",
+     "housing affordability 주택 구매 가능성",
+     "product affordability 제품의 가격 감당 가능성"
+    ],
+    "examVar": [
+     {
+      "en": "The new housing project aims to provide affordable apartments for low-income families.",
+      "ko": "새 주택 프로젝트는 저소득 가정을 위해 감당할 수 있는 아파트를 제공하는 것을 목표로 한다."
+     }
+    ]
+   },
+   {
+    "word": "proofreading",
+    "pron": "[prú:frì:diŋ]",
+    "pos": "n.",
+    "meaning": "교정",
+    "tip": "[[[b]]proof[[/b]](증명, 검토) + [[b]]reading[[/b]]] 검토하기 위해 읽는 것, 즉 [[r]]교정[[/r]]",
+    "derivatives": [
+     {
+      "word": "proofread",
+      "meaning": "교정보다"
+     }
+    ],
+    "toeicExpr": [
+     "proofreading service/task 교정 서비스/업무",
+     "proofread a document/report 문서를/보고서를 교정하다"
+    ]
+   },
+   {
+    "word": "tablet",
+    "pron": "[tǽblit]",
+    "pos": "n.",
+    "meaning": "1. 알약  2. 태블릿(기기)",
+    "tip": "★① 어린이는 반 알을 먹으라고 해서 반을 [[b]]떼어[[/b]]서 [[r]]분리한 알약[[/r]]\n② 아이패드와 같은 [[b]]테블릿[[/b]] pc는 [[r]]현판, 액자[[/r]] 모양",
+    "toeicExpr": [
+     "take a tablet 알약을 먹다  swallow a tablet 알약을 삼키다",
+     "tablet dosage 정제(알약) 복용량",
+     "tablet computer 태블릿 컴퓨터",
+     "use a tablet for work 업무용으로 태블릿을 사용하다"
+    ]
+   },
+   {
+    "word": "merchandise",
+    "pron": "[mə́:rtʃəndàis, mə́:rtʃəndàiz]",
+    "pos": "n.",
+    "meaning": "상품, 제품",
+    "tip": "손님, [[b]]뭘[[/b]] 찾으세요? [[b]]천[[/b]] 가지 [[r]]상품, 제품[[/r]]이 [[r]]다 있수[[/r]].",
+    "derivatives": [
+     {
+      "word": "merchandising",
+      "meaning": "상품 판매/진열/기획 활동"
+     },
+     {
+      "word": "merchandiser",
+      "meaning": "상품 기획자, 상품 담당자"
+     }
+    ],
+    "toeicExpr": [
+     "sell/display merchandise 상품을 판매하다/진열하다",
+     "store/retail/brand/discounted merchandise 매장/소매/브랜드/할인 상품",
+     "visual merchandising 비주얼 상품 진열 (사고 싶은 마음이 생기도록 상품을 배치, 연출하는 판매 전략)",
+     "effective merchandising 효과적인 상품 판매 전략",
+     "merchandising strategy 상품 판매 전략",
+     "store merchandising 매장 상품 운영",
+     "visual merchandiser 비주얼 상품 진열 담당자",
+     "fashion merchandiser 패션 상품 기획자",
+     "brand merchandiser 브랜드 상품 담당자"
+    ],
+    "examVar": [
+     {
+      "en": "Effective ________ can significantly increase in-store sales.",
+      "opt": "merchandising (O)  merchandise (X)",
+      "ko": "효과적인 상품 판매·진열 전략은 매장 내 매출을 크게 증가시킬 수 있다."
+     }
+    ]
+   },
+   {
+    "word": "meal",
+    "pron": "[mi:l]",
+    "pos": "n.",
+    "meaning": "식사",
+    "tip": "[[b]]밀[[/b]]가루로 만든 [[r]]식사[[/r]]",
+    "toeicExpr": [
+     "have a meal 식사를 하다  prepare a meal 식사를 준비하다",
+     "complimentary meal 무료 제공 식사",
+     "meal service 기내/호텔 식사 서비스  meal options 식사 선택 사항",
+     "include/exclude meals 식사가 포함되다/제외되다"
+    ]
+   },
+   {
+    "word": "lucrative",
+    "pron": "[lú:krətiv]",
+    "pos": "a.",
+    "meaning": "수지맞는, 수익성이 좋은",
+    "tip": "누구든지 관심을 [[b]]끌어[[/b]]당기는 TV 광고로 [[r]]수지맞는, 수익성이 좋은[[/r]]",
+    "toeicExpr": [
+     "lucrative business/deal/investment 수익성 높은 사업/거래/투자",
+     "lucrative opportunity 수지맞는 기회"
+    ],
+    "examVar": [
+     {
+      "en": "The company entered into a highly lucrative contract with an overseas distributor.",
+      "ko": "그 회사는 해외 유통업체와 매우 수익성 높은 계약을 체결했다."
+     }
+    ]
+   },
+   {
+    "word": "layout",
+    "pron": "[léiaut]",
+    "pos": "n.",
+    "meaning": "배치도, 배치",
+    "tip": "내용물이나 구조를 [[b]]out[[/b]](밖으로) 펼쳐 [[b]]lay[[/b]](놓아) 드러낸 형태, 즉 [[r]]배치도, 배치[[/r]]",
+    "toeicExpr": [
+     "office/store/floor/seating layout 사무실/매장/층/좌석 배치",
+     "page/website layout 페이지/웹사이트 배치도(구성)"
+    ]
+   },
+   {
+    "word": "inflation",
+    "pron": "[infléiʃən]",
+    "pos": "n.",
+    "meaning": "통화 팽창, 물가 폭등, 부풀림",
+    "tip": "[[b]]인플레이션[[/b]]이란 [[r]]통화 팽창, 물가 폭등[[/r]]과 같이 물가나 통화의 [[r]]부풀림[[/r]]",
+    "derivatives": [
+     {
+      "word": "inflate",
+      "meaning": "불어 넣다, 부풀리다, 가격을 올리다"
+     }
+    ],
+    "toeicExpr": [
+     "high inflation 높은 인플레이션  inflation rate 물가 상승률",
+     "inflation pressure 물가 상승 압력",
+     "inflate prices 가격을 올리다",
+     "inflate costs/figures 비용을/수치를 부풀리다",
+     "inflated rates 인상된 요금"
+    ]
+   },
+   {
+    "word": "clarify",
+    "pron": "[klǽrəfài]",
+    "pos": "v.",
+    "meaning": "명확히 하다, 분명히 설명하다, 해명하다",
+    "tip": "의사를 [[b]]clear[[/b]](깨끗한) 상태로 보이게 하다, 즉 [[r]]명확히 하다, 분명히 설명하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "clarification",
+      "meaning": "명확화, 해명, 설명"
+     }
+    ],
+    "toeicExpr": [
+     "clarify statement/issue/meaning 진술을/문제를/의미을 명확히 하다",
+     "ask for clarification 설명(해명)을 요청하다",
+     "provide clarification 설명(해명)을 제공하다",
+     "give clarification 해명(설명)을 하다"
+    ],
+    "examVar": [
+     {
+      "en": "The manager called a meeting to clarify recent changes to the schedule.",
+      "ko": "관리자는 일정의 최근 변경 사항을 명확히 하기 위해 회의를 소집했다."
+     }
+    ]
+   },
+   {
+    "word": "component",
+    "pron": "[kəmpóunənt]",
+    "pos": "n.",
+    "meaning": "n. 구성요소, 성분, 부품",
+    "tip": "★ [[b]]compose[[/b]](구성하다) + [[b]]ent[[/b]](~것)] [[r]]구성요소, 성분[[/r]]",
+    "toeicExpr": [
+     "key component 핵심 구성요소  electronic component 전자 부품",
+     "replace a component 부품을 교체하다  component failure 부품 고장"
+    ]
+   },
+   {
+    "word": "fire",
+    "pron": "[fáiər]",
+    "pos": "n./v.",
+    "meaning": "1. n. 불, 화재  2. v. 해고하다",
+    "tip": "★ 직무, 권한을 [[b]]fire[[/b]]([[b]]불[[/b]])을 태워 없애다, 즉 [[r]]해고하다[[/r]]",
+    "toeicExpr": [
+     "fire safety 화재 안전  fire alarm 화재 경보기  fire drill 화재 대피 훈련",
+     "be fired 해고되다  fire an employee 직원을 해고하다"
+    ]
+   },
+   {
+    "word": "fulfill",
+    "pron": "[fulfíl]",
+    "pos": "v.",
+    "meaning": "v. (의무·조건·요구를) 이행하다, 충족하다",
+    "tip": "★ 콩쥐가 깨진 독 안에 물을 [[b]]full[[/b]](가득하게) [[b]]fill[[/b]](채워) 일을 [[r]]이행하다, 충족하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "fulfillment",
+      "meaning": "이행, 충족"
+     }
+    ],
+    "toeicExpr": [
+     "fulfill a requirement/contract 요구 조건을/계약을 이행하다",
+     "fulfill a condition 조건을 충족하다  fulfill expectations 기대를 충족하다",
+     "contract/order fulfillment 계약/주문 이행",
+     "fulfillment of obligations 의무 이행  fulfillment process 이행 절차"
+    ]
+   },
+   {
+    "word": "stringent",
+    "pron": "[stríndʒənt]",
+    "pos": "a.",
+    "meaning": "a. 엄격한, 엄중한",
+    "tip": "★ \"[[b]]string[[/b]](끈)을 [[r]]전투[[/r]] 포로를 묶어 도망가지 못하게 해!\" 소리치는 [[r]]엄격한[[/r]] 장군",
+    "derivatives": [
+     {
+      "word": "stringently",
+      "meaning": "엄격히, 엄중하게"
+     }
+    ],
+    "toeicExpr": [
+     "stringent regulation/standard/policy 엄격한 규정/기준/정책",
+     "under stringent conditions 엄격한 조건하에서",
+     "stringently controlled/enforced/monitored 엄격히 통제된/시행된/감시된",
+     "apply rules stringently 규칙을 엄격히 적용하다"
+    ]
+   },
+   {
+    "word": "emphasize",
+    "pron": "[émfəsàiz]",
+    "pos": "v.",
+    "meaning": "v. 강조하다",
+    "tip": "★ 강사가 엠프를 [[b]]사이즈[[/b]]가 큰 것을 놓아 소리를 키워 [[r]]강조하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "emphasis",
+      "meaning": "강조"
+     },
+     {
+      "word": "emphatic",
+      "meaning": "강조하는, 단호한"
+     }
+    ],
+    "toeicExpr": [
+     "emphasize the importance of A A의 중요성을 강조하다",
+     "emphasize the need for A A의 필요성을 강조하다",
+     "emphasize safety/quality 안전을/품질을 강조하다",
+     "place an emphasis on ~을 강조하다, ~에 중점을 두다 (← on: 행위의 대상)",
+     "place an emphasis on safety/quality/efficiency 안전을/품질을/효율성을 강조하다",
+     "emphatic statement 강조된 발언",
+     "emphatic rejection 단호한 거절  emphatic denial 강한 부인"
+    ],
+    "examVar": [
+     {
+      "en": "The teacher placed special emphasis on the importance of punctuality.",
+      "ko": "교사는 시간 엄수의 중요성에 특별한 중점을 두었다."
+     }
+    ]
+   },
+   {
+    "word": "out of order",
+    "meaning": "고장 난",
+    "tip": "★ [[[b]]out of[[/b]](~ 밖의) + [[b]]order[[/b]](질서)] (기계의 작동) [[r]]질서 밖으로[[/r]] 벗어난, 즉 [[r]]고장 난[[/r]]",
+    "toeicExpr": [
+     "The elevator/printer is out of order. 엘리베이터가/프린터가 고장 났다."
+    ]
+   },
+   {
+    "word": "apparel",
+    "pron": "[əpǽrəl]",
+    "pos": "n.",
+    "meaning": "n. 의상, 의복",
+    "tip": "★ [[b]]오페라[[/b]]를 보면 배우들이 입고 나오는 화려한 [[r]]의상, 의복[[/r]]",
+    "toeicExpr": [
+     "sports/casual apparel 스포츠/캐주얼 의류",
+     "apparel industry/brand 의류 산업/브랜드"
+    ]
+   },
+   {
+    "word": "withdraw",
+    "pron": "[wiðdrɔ́ː, wiθdrɔ́ː]",
+    "pos": "v.",
+    "meaning": "v. 1. 물러나다, 철수하다, 철회하다, 탈퇴하다  2. (돈을) 인출하다",
+    "tip": "★ 은행 부도 소식에 사람들이 은행으로 [[b]]with[[/b]](함께) [[b]]들어[[/b]]가 돈을 몽땅 [[r]]인출하다[[/r]], 그런 후 거래를 철회하고, [[r]]물러나다, 철수하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "withdrawal",
+      "meaning": "물러남, 취소, 철수, (예금) 인출"
+     }
+    ],
+    "toeicExpr": [
+     "withdraw a statement/an offer 발언을/제안을 철회하다",
+     "withdraw from A A에서 물러나다, 철회하다, 탈퇴하다",
+     "withdraw from the market 시장에서 철수하다",
+     "withdraw from a contract 계약에서 철회하다 (← 계약으로부터 물러나다)",
+     "withdraw from the agreement 합의에서 탈퇴하다",
+     "withdraw cash 현금을 인출하다",
+     "withdrawal of support 지원 철회",
+     "make a withdrawal 인출하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. Customers may withdraw cash at any branch during business hours.",
+      "ko": "고객은 영업시간 동안 어느 지점에서든 현금을 인출할 수 있다."
+     },
+     {
+      "en": "2. The applicant decided to withdraw from the position before the interview.",
+      "ko": "그 지원자는 면접 전에 해당 직위 지원을 철회하기로 결정했다."
+     }
+    ]
+   },
+   {
+    "word": "defect",
+    "pron": "[díːfekt, difékt]",
+    "pos": "n.",
+    "meaning": "결점, 결함, 하자",
+    "tip": "사려는 중고차 [[b]]뒤[[/b]]에 [[b]]팩![[/b]] 하고 찌그러져 있는 [[r]]결점, 결함[[/r]]",
+    "derivatives": [
+     {
+      "word": "defective",
+      "meaning": "결함 있는"
+     }
+    ],
+    "toeicExpr": [
+     "manufacturing/design/mechanical defect 제조/설계/기계적 결함",
+     "defective product 결함 있는 제품  return a defective item 불량품을 반품하다"
+    ]
+   },
+   {
+    "word": "firm",
+    "pron": "[fəːrm]",
+    "pos": "1. n. / 2. a. / 3. a.",
+    "meaning": "1. n. 회사, 사무소  2. a. 확실한, 확고한  3. a. 굳은, 단단한",
+    "tip": "① 법률 [[r]]회사[[/r]]를 로펌(law firm)이라고 함.\n② 머리를 펌(파마)으로 변경하기로 마음이 [[r]]확고한, 확실한, 굳은, 단단한[[/r]]",
+    "derivatives": [
+     {
+      "word": "firmly",
+      "meaning": "확고히, 단단히"
+     }
+    ],
+    "toeicExpr": [
+     "law/architectural/global/accounting firm 법률/건축/글로벌/회계 회사",
+     "firm decision/stance/support/belief 확고한 결정/입장/지지/신념",
+     "take a firm position 확고한 입장을 취하다",
+     "remain firm 확고함을 유지하다",
+     "firm ground/foundation/materials 단단한 지면/기반/재질",
+     "firmly believe 확고히 믿다  firmly refuse 단호히 거절하다",
+     "state firmly that ~ ~라고 단호히 말하다",
+     "believe firmly that ~ ~라고 확고히 믿다"
+    ]
+   },
+   {
+    "word": "logistics",
+    "pron": "[lədʒístiks]",
+    "pos": "n.",
+    "meaning": "1. 물류  2. 운영 계획, 실행 관리",
+    "tip": "배송 트럭에 오늘 [[b]]넣지 sticks[[/b]](막대기들)을. 그리고 내일 공사 현장에 배달해주지. 즉, [[r]]물류 운영 계획[[/r]]",
+    "toeicExpr": [
+     "logistics operations/costs/management/provider 물류 운영/비용/관리/공급 업체",
+     "handle logistics 물류를 담당하다  streamline logistics 물류를 간소화하다",
+     "event/conference/meeting logistics 행사/회의/회의 운영"
+    ],
+    "examVar": [
+     {
+      "en": "The company outsourced its logistics to reduce shipping delays.",
+      "ko": "그 회사는 배송 지연을 줄이기 위해 물류를 외주화했다."
+     }
+    ]
+   },
+   {
+    "word": "venture",
+    "pron": "[véntʃər]",
+    "pos": "n. / v.",
+    "meaning": "n. 모험적 사업  v. 모험적으로 시도하다",
+    "tip": "[[b]]벤처[[/b]] 기업이란 금전상의 위험을 무릅쓰고 하는 [[r]]모험적 사업[[/r]]",
+    "toeicExpr": [
+     "business venture 신규 사업  new venture 신사업",
+     "joint venture 합작 투자, 합작 회사  launch a venture 사업을 시작하다",
+     "venture capital 벤처 자본",
+     "venture into ~에 뛰어들다, 진출하다 (← into: ~안으로)",
+     "venture into a new market 신규 시장에 진출하다",
+     "venture into overseas markets 해외 시장에 진출하다"
+    ]
+   },
+   {
+    "word": "warehouse",
+    "pron": "[wɛ́ərhàus]",
+    "pos": "n.",
+    "meaning": "창고",
+    "tip": "[[b]]ware[[/b]](제품)을 보관하는 [[b]]house[[/b]](집), 즉 [[r]]창고[[/r]]",
+    "toeicExpr": [
+     "storage warehouse 보관 창고  warehouse facility 창고 시설"
+    ]
+   },
+   {
+    "word": "latest",
+    "pron": "[léitist]",
+    "pos": "a.",
+    "meaning": "최근의, 최신의",
+    "tip": "late의 최상급 형태로 [[b]]latest[[/b]](가장 늦게) 출시되는 제품이 [[r]]최근의, 최신의 제품[[/r]]",
+    "derivatives": [
+     {
+      "word": "lately",
+      "meaning": "요즘, 최근에"
+     }
+    ],
+    "toeicExpr": [
+     "the latest information/update/report/model 최신 정보/업데이트/보고서/모델",
+     "have been busy lately 최근에 바쁘다",
+     "have not heard from him lately 최근에 그에게서 소식을 못 들었다",
+     "have changed lately 최근에 변했다"
+    ],
+    "examVar": [
+     {
+      "en": "The company ______ launched a new product line and sales have risen dramatically.",
+      "opt": "(A) lately  (B) recently  (C) currently  (D) always",
+      "ans": "(B)",
+      "ko": "그 회사는 최근에 신제품을 출시해서 매출이 극적으로 올랐다.",
+      "note": "lately, recently, currently(현재, 지금) 각각의 부사와 어울리는 시제를 묻는 문제가 출제되었다. * lately: 현재완료 시제와 주로 쓰임. 과거시제는 쓰지 않음 * recently: 현재완료와 과거시제 모두 쓰임 * currently: (현재, 지금) 현재진행 시제와 현재시제로 주로 쓰임. 과거시제는 쓰지 않음. 과거시제를 사용했으므로 recently가 정답이다."
+     }
+    ]
+   },
+   {
+    "word": "loan",
+    "pron": "[loun]",
+    "pos": "v. / n.",
+    "meaning": "v. 빌려주다  n. 대출, 대여금",
+    "tip": "① 은행이 [[b]]논[[/b]]을 저당 잡고 [[r]]대여금[[/r]]을 [[r]]빌려주다[[/r]]\n② 웰컴[[b]]론[[/b]], 바로바로[[b]]론[[/b]], 스탁[[b]]론[[/b]] 등에서 '론'은 [[r]]빌려주다, 대출, 대여금[[/r]]",
+    "toeicExpr": [
+     "apply for a loan 대출을 신청하다  take out a loan 대출을 받다",
+     "repay a loan 대출을 갚다  outstanding loan 미상환 대출",
+     "business loan 사업자 대출  loan funds temporarily 자금을 일시 대여하다",
+     "loan a vehicle to an employee 직원에게 차량을 빌려주다"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 30,
+  "title": "",
+  "words": [
+   {
+    "word": "head",
+    "pron": "[hed]",
+    "pos": "n./v.",
+    "meaning": "1. n. 책임자, 수장  2. v. 이끌다, 향하다",
+    "tip": "① 우리 신체에서 [[b]]head[[/b]](머리)가 [[r]]책임자, 수장[[/r]]  ② 뱀의 꼬리는 [[b]]head[[/b]](머리)가 [[r]]이끌다[[/r]], [[b]]head[[/b]](머리)가 어떤 방향을 [[r]]향하다[[/r]]",
+    "toeicExpr": [
+     "head of the department 부서장  head of sales 영업 부서장",
+     "head of marketing 마케팅 책임자  head office 본사",
+     "head manager 총괄 관리자  head engineer 수석 엔지니어",
+     "head the committee 위원회를 이끌다  head a project 프로젝트를 주도하다",
+     "head to + 구체적 장소(desk/office/room): ~로 가다",
+     "* \"~로 가세요\" \"~로 가야 한다\"와 같이 구체적 장소로 안내/지시/규정이 오면 to가 정답",
+     "Please head to the reception desk upon arrival. 도착하시면 접수대로 가 주세요. (안내)",
+     "After the briefing, employees should head to their assigned work areas. 브리핑 후 직원들은 배정된 근무 구역으로 가야 한다. (지시, 규정)",
+     "head for + 목적지: (목적지)로 향하다, 출발하다 (도착 지점보다는 목적지의 의미)",
+     "* 문장에 as soon as, immediately, quickly, before it closes 같은 \"서두르다\"의 의미를 갖는 표현이 있으면 for가 정답",
+     "Employees headed for the exit as soon as the fire alarm sounded. 화재 경보가 울리자 직원들은 즉시 출구로 향했다.",
+     "Let's head for the station before the last train departs. 막차가 출발하기 전에 역으로 향하자.",
+     "head toward + \"방향/방면/추세/추상적 방향\": ~을 향하다 (향하는 과정)",
+     "* (도착지가 아니라 방향성 강조) 보통 뒤에 north/south/the downtown area/the city center/the coast 등과 같은 \"~방향\"을 나타내는 말이 오거나 \"expansion/decline\"과 같이 추상적 방향을 나타내는 말이 온다.",
+     "head toward the exit 출구 쪽 방향으로 가다",
+     "head toward downtown 도심으로 향하다"
+    ],
+    "examVar": [
+     {
+      "note": "'head + to/for/toward' 구분 문제가 자주 출제되었다."
+     },
+     {
+      "en": "Please head to the reception desk to receive your visitor badge.",
+      "ko": "방문자 배지를 받기 위해 접수대로 가 주세요. (안내, 지시 문장은 to)"
+     },
+     {
+      "en": "The delivery truck is headed toward the downtown area.",
+      "ko": "배송 트럭은 도심 쪽으로 향하고 있다. (방향성을 강조하면 toward)"
+     },
+     {
+      "en": "As soon as the meeting ended, the manager headed for the airport.",
+      "ko": "회의가 끝나자마자 관리자는 공항으로 향했다. (서두르는 표현에는 for)"
+     },
+     {
+      "en": "Without corrective action, sales figures may be headed toward a sharp decline.",
+      "ko": "시정 조치가 없으면 매출 수치가 급격한 하락으로 향할 수 있다. (추상적 방향은 toward)"
+     }
+    ]
+   },
+   {
+    "word": "sufficient",
+    "pron": "[səfíʃənt]",
+    "pos": "a.",
+    "meaning": "충분한",
+    "tip": "\"내 담배 [[b]]써[[/b]], 마음대로 [[b]]피션트(피셔)[[/b]]\" 할 정도로 담배가 [[r]]충분한[[/r]]",
+    "derivatives": [
+     {
+      "word": "sufficiently",
+      "meaning": "충분히"
+     }
+    ],
+    "toeicExpr": [
+     "sufficient funds/time 충분한 자금/시간",
+     "sufficiently prepared 충분히 준비된  sufficiently trained 충분히 훈련된"
+    ]
+   },
+   {
+    "word": "allowance",
+    "pron": "[əláuəns]",
+    "pos": "n.",
+    "meaning": "1. 수당, 지급액  2. 허용량, 허용 범위",
+    "tip": "① \"[[r]]수당[[/r]] 받았으면서 [[b]]얼라[[/b]](어), 돈 [[b]]안 써[[/b]]? 한턱 내!\"\n② [[b]]allow[[/b]](허락하다)의 명사형] [[r]]허용량, 허용 범위[[/r]]",
+    "toeicExpr": [
+     "travel/housing/transportation allowance 출장/주거/교통비 수당",
+     "meal allowance 식대  overtime allowance 초과 근무 수당",
+     "make allowance for A A를 고려하다, 감안하다 (← A를 위해((for) 허용 범위를 만들어 놓다)",
+     "make allowance for bad weather 악천후를 감안하다",
+     "make allowance for unexpected expenses 예상치 못한 비용을 고려하다",
+     "time allowance 허용 시간  error allowance 오차 허용 범위",
+     "budget allowance 예산 여유  baggage allowance 수하물 허용량"
+    ],
+    "examVar": [
+     {
+      "en": "1. Employees will receive a travel allowance for business trips.",
+      "ko": "직원들은 출장 시 출장 수당을 받게 된다."
+     },
+     {
+      "en": "2. Each passenger is permitted a baggage allowance of up to 20 kilograms on international flights.",
+      "ko": "각 승객은 국제선 항공편에서 최대 20킬로그램까지의 수하물 허용량이 허용된다."
+     },
+     {
+      "en": "3. Please make allowance for delays caused by severe weather.",
+      "ko": "악천후로 인한 지연을 감안해 주시기 바랍니다."
+     }
+    ]
+   },
+   {
+    "word": "calculate",
+    "pron": "[kǽlkjulèit]",
+    "pos": "v.",
+    "meaning": "계산하다",
+    "tip": "[[b]]캘[[/b]](캐서) 먹은 [[b]]귤[[/b]]의 껍질을 [[b]]네이트[[/b]](내다), 즉 귤껍질을 세면서 얼마인지 값을 [[r]]계산하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "calculation",
+      "meaning": "계산"
+     },
+     {
+      "word": "calculator",
+      "meaning": "계산기"
+     }
+    ],
+    "toeicExpr": [
+     "calculate the cost/total 비용을/총액을 계산하다",
+     "calculate expenses/figures 지출을/수치를 계산하다",
+     "cost calculation 비용 산출  accurate calculation 정확한 계산",
+     "error in calculation 계산 오류  perform a calculation 계산을 수행하다"
+    ]
+   },
+   {
+    "word": "adjacent",
+    "pron": "[ədʒéisnt]",
+    "pos": "a.",
+    "meaning": "인접한, 근처의",
+    "tip": "\"여기가 [[b]]어디제이[[/b]](어디지)?\" 하며 [[r]]인접한, 근처의[[/r]] 건물들을 둘러보다",
+    "toeicExpr": [
+     "adjacent building 인접 건물  adjacent room 이웃 방",
+     "adjacent to A A에 인접한 (← to: ~쪽으로)",
+     "adjacent to the conference room 회의실 바로 옆에 있는",
+     "adjacent to the subway station 지하철역 바로 옆에 있는",
+     "entrance located adjacent to the lobby 로비 옆에 위치한 출입구",
+     "an office adjacent to the elevator 엘리베이터 옆에 위치한 사무실"
+    ],
+    "examVar": [
+     {
+      "en": "The conference room is located adjacent to the main lobby for easy access by visitors.",
+      "ko": "회의실은 방문객들이 쉽게 접근할 수 있도록 메인 로비에 인접해 위치해 있다."
+     }
+    ]
+   },
+   {
+    "word": "proximity",
+    "pron": "미[prɑksíməti] 영[prɔksíməti]",
+    "pos": "n.",
+    "meaning": "근접성, 가까움, 인접함",
+    "tip": "① [[b]]부락[[/b]](마을) [[b]]시[[/b]]의 [[b]]머리[[/b]]맡에 있다, 즉 [[r]]근접함, 가까움[[/r]]\n② [proximity – approximate(근접한, 대략의)] 비슷한 철자와 의미의 단어로 암기",
+    "toeicExpr": [
+     "proximity to A A와의 근접성",
+     "proximity to downtown 도심과의 근접성",
+     "proximity to public transportation 대중교통 접근성",
+     "in close proximity to the airport 공항에 아주 가까이"
+    ]
+   },
+   {
+    "word": "permanent",
+    "pron": "[pə́ːrmənənt]",
+    "pos": "a.",
+    "meaning": "영구적인, 지속적인",
+    "tip": "아주머니들의 [[b]]퍼머는[[/b]] [[r]]영구적[[/r]]이다. 원래 퍼머는 permanent wave에서 온 말.",
+    "derivatives": [
+     {
+      "word": "permanently",
+      "meaning": "영구적으로"
+     }
+    ],
+    "toeicExpr": [
+     "permanent position/job 정규직  permanent employee 정규직 직원",
+     "permanent staff 상근 직원  permanent contract 정규 계약",
+     "permanent offering 상시 제공되는 서비스/상품, 영구적인 혜택",
+     "hire on a permanent basis 정규직으로 채용하다",
+     "convert to a permanent position 정규직으로 전환하다",
+     "permanently closed/damaged 영구적으로 폐쇄된/손상된"
+    ],
+    "examVar": [
+     {
+      "en": "After completing the probation period, the employee was offered a permanent position.",
+      "ko": "수습 기간을 마친 후, 그 직원은 정규직 자리를 제안받았다."
+     }
+    ]
+   },
+   {
+    "word": "query",
+    "pron": "[kwíəri]",
+    "pos": "n./v.",
+    "meaning": "n. 문의, 의문  v. 문의하다, 의문을 제기하다",
+    "tip": "어떤 것에 [[r]]의문[[/r]]이 들어 [[b]]캐리[[/b]](캐다), 즉 [[r]]의문을 제기하다[[/r]]",
+    "toeicExpr": [
+     "customer query 고객 문의",
+     "handle queries 문의를 처리하다",
+     "respond to a query 문의에 답변하다",
+     "for any queries 어떠한 문의 사항이 있다면"
+    ]
+   },
+   {
+    "word": "therefore",
+    "pron": "[ðɛ́ərfɔ̀ːr]",
+    "pos": "ad.",
+    "meaning": "ad. 그런 까닭에, 따라서",
+    "tip": "[[b]]there[[/b]](거기에, 상황에) + [[b]]fore[[/b]](before) 전에 상황 때문에, 즉 [[r]]그런 까닭에, 따라서[[/r]]",
+    "examVar": [
+     {
+      "en": "The shipment was delayed due to bad weather; ______, customers were notified of the new delivery date.",
+      "opt": "(A) however  (B) therefore  (C) meanwhile  (D) otherwise",
+      "ans": "(B)",
+      "ko": "악천후로 인해 배송이 지연되었으며, 그 결과 고객들에게 새로운 배송 날짜가 안내되었다."
+     }
+    ]
+   },
+   {
+    "word": "vital",
+    "pron": "[váitəl]",
+    "pos": "a.",
+    "meaning": "a. 필수적인, 중요한",
+    "tip": "[[b]]바위[[/b]]에도 [[b]]털[[/b]] 같은 이끼는 물고기 먹이로써 [[r]]필수적인, 중요한[[/r]]",
+    "toeicExpr": [
+     "vital to success 성공에 필수적인",
+     "vital for growth 성장에 필수적인",
+     "vital to the company 회사에 매우 중요한",
+     "vital information/role/factor/step 중요한(필수적인) 정보/역할/요소/단계"
+    ]
+   },
+   {
+    "word": "consecutive",
+    "pron": "[kənsékjutiv]",
+    "pos": "a.",
+    "meaning": "a. 연속적인, 잇따른",
+    "tip": "철새와 같은 [[b]]큰 새[[/b]]들이 줄을 맞춰 [[r]]연속적으로, 잇따라[[/r]] 날아가는",
+    "toeicExpr": [
+     "consecutive years/days/numbers 연속된 해/날/수",
+     "for five consecutive weeks 5주 연속으로"
+    ],
+    "examVar": [
+     {
+      "en": "The employee received an attendance award after working for three consecutive days without absence.",
+      "ko": "그 직원은 결근 없이 3일 연속 근무한 후 근태 상을 받았다."
+     }
+    ]
+   },
+   {
+    "word": "parcel",
+    "pron": "[pάːrsl]",
+    "pos": "n.",
+    "meaning": "n. 소포, 꾸러미",
+    "tip": "재배한 [[b]]파를 쓸[[/b]]어서 도시에 사는 자식들 수에 맞게 [[r]]꾸러미[[/r]]로 나누어 [[r]]소포[[/r]]로 보내다",
+    "toeicExpr": [
+     "deliver/send/receive a parcel 소포를 배달하다/보내다/받다",
+     "parcel delivery/packaging 소포 배달/포장"
+    ]
+   },
+   {
+    "word": "delegate",
+    "pron": "n. [déligət]  v. [déligèit]",
+    "pos": "n./v.",
+    "meaning": "n. 대표, 대리인  v. 위임하다",
+    "tip": "회사를 [[b]]대리[[/b]]하여 [[b]]gate[[/b]](문) 앞에서 손님을 맞는 회사의 [[r]]대표, 대리인[[/r]] 그리고 대리에게 그 역할을 [[r]]위임하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "delegation",
+      "meaning": "대표단, 위임"
+     }
+    ],
+    "toeicExpr": [
+     "a company delegate 회사 대표",
+     "delegates from ~로부터 온 대표들",
+     "delegate authority/responsibility/tasks 권한을/책임을/업무를 ~에게 위임하다",
+     "business/government delegation 사업/정부 대표단",
+     "delegation of responsibility/tasks/authority 책임/업무/권한 위임"
+    ],
+    "examVar": [
+     {
+      "en": "1. The manager decided to delegate routine tasks to junior staff.",
+      "ko": "관리자는 일상 업무를 신입 직원들에게 위임하기로 결정했다."
+     },
+     {
+      "en": "2. Effective delegation of tasks can improve over all team productivity.",
+      "ko": "효과적인 업무 위임은 전체 팀의 생산성을 향상시킬 수 있다."
+     }
+    ]
+   },
+   {
+    "word": "brochure",
+    "pron": "[brouʃúər]",
+    "pos": "n.",
+    "meaning": "n. 팜플렛, (안내ㆍ광고용) 책자",
+    "tip": "행사 안내를 위한 [[r]]책자(팜플렛)[[/r]]를 주면서 \"[[b]]보러 오셔[[/b]]!\"",
+    "toeicExpr": [
+     "travel/product brochure 여행/제품 안내 책자"
+    ]
+   },
+   {
+    "word": "cutting-edge",
+    "pron": "[kʌ́tiŋ-edʒ]",
+    "pos": "a.",
+    "meaning": "a. 최첨단의",
+    "tip": "① [[b]]cutting[[/b]](자르는) 칼의 [[b]]edge[[/b]](끝) 부분이 가장 앞에서 자르는 선두적인 역할을 하는 부분이기 때문에 [[r]]최첨단[[/r]]의 뜻이 되었다. ② [[b]]cutting[[/b]](자르는) 칼 [[b]]edge[[/b]](끝)에 다이아몬드를 넣어 어떤 것도 자를 수 있는 [[r]]최첨단의 칼[[/r]]",
+    "toeicExpr": [
+     "cutting-edge technology/research/development 최첨단 기술/연구/개발"
+    ],
+    "examVar": [
+     {
+      "en": "The laboratory uses cutting-edge equipment to improve accuracy.",
+      "ko": "그 실험실은 정확도를 높이기 위해 최첨단 장비를 사용한다."
+     }
+    ]
+   },
+   {
+    "word": "patent",
+    "pron": "[pǽtənt]",
+    "pos": "a./n.",
+    "meaning": "a. 특허의  n. 특허권",
+    "tip": "어떤 상품의 패턴 [[b]]one(1)[[/b]]이 인기를 끌자 모방 방지를 위해 [[b]]패턴 two(2)[[/b]]로 [[r]]특허권[[/r]]을 얻다",
+    "toeicExpr": [
+     "apply for a patent 특허를 출원하다  obtain a patent 특허를 따다",
+     "hold a patent 특허를 가지고 있다"
+    ]
+   },
+   {
+    "word": "bulk",
+    "pron": "[bʌlk]",
+    "pos": "n.",
+    "meaning": "n. 대량, 대부분",
+    "tip": "벌집에 [[b]]벌[[/b]]들이 [[b]]크[[/b]]게([[r]]대량[[/r]]으로) [[r]]대부분[[/r]] 모여 있는",
+    "derivatives": [
+     {
+      "word": "bulky",
+      "meaning": "덩치가 큰, 부피가 큰"
+     }
+    ],
+    "toeicExpr": [
+     "in bulk 대량으로  buy/sell/order in bulk 대량으로 구매하다/팔다/주문하다",
+     "the bulk of ~의 대부분  the bulk of the sales/employees 매출/직원의 대부분"
+    ],
+    "examVar": [
+     {
+      "note": "bulk는 불가산 명사로 복수형을 쓰지 않는다는 문제가 토익에 출제되었다.",
+      "en": "The store offers a discount for customers who buy items in ______.",
+      "opt": "bulk (O)  bulks (X)",
+      "ko": "그 가게는 대량으로 물건을 구매하는 고객에게 할인을 제공합니다."
+     }
+    ]
+   },
+   {
+    "word": "pension",
+    "pron": "[pénʃən]",
+    "pos": "n.",
+    "meaning": "n. 연금",
+    "tip": "퇴직후 [[r]]연금[[/r]]으로 시골 [[b]]펜션[[/b]]에서 살다",
+    "toeicExpr": [
+     "retirement pension 퇴직 연금  pension plan/fund 연금 제도/기금"
+    ]
+   },
+   {
+    "word": "secure",
+    "pron": "[sikjúər]",
+    "pos": "a./v.",
+    "meaning": "1. a. 안전한  2. v. 얻다, 획득하다",
+    "tip": "[[b]]씨[[/b]]를 [[b]]키워[[/b]]서 열매를 [[r]]얻다, 획득하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "security",
+      "meaning": "안전, 보증"
+     }
+    ],
+    "toeicExpr": [
+     "secure job/position 안정적인 직업/직위  financially secure 재정적으로 안정된",
+     "secure a job/position/contract 일자리를/직위를/계약을 얻다",
+     "secure funding/investment 자금을/투자를 확보하다",
+     "security guard 보안 요원, 경비원  security measures 보안 조치, 안전 대책",
+     "security deposit 보증금, 담보금"
+    ],
+    "examVar": [
+     {
+      "en": "The sales team managed to secure a long-term contract with one of the largest distributors in the region.",
+      "ko": "영업팀은 지역에서 가장 큰 유통업체 중 한 곳과의 장기 계약을 확보하는 데 성공했다."
+     }
+    ]
+   },
+   {
+    "word": "project",
+    "pron": "n. [prάdʒekt, prɔ́dʒekt] v. [prədʒékt]",
+    "pos": "n./v.",
+    "meaning": "1. n. 프로젝트, 계획  2. v. 예상하다, 전망하다",
+    "tip": "[[b]]프로젝트[[/b]](계획) 성공시 대박을 [[r]]예상하다, 전망하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "projection",
+      "meaning": "전망, 예상치"
+     },
+     {
+      "word": "projected",
+      "meaning": "예상된"
+     }
+    ],
+    "toeicExpr": [
+     "launch/complete a project 프로젝트를 시작하다/완료하다",
+     "project figures/sales/growth 수치를/매출을/성장을 예상하다",
+     "be projected to+부정사: ~할 것으로 예상되다",
+     "be projected to increase/decrease/grow 증가할/감소할/성장할 것으로 예상되다",
+     "sales/revenue/growth/market projection 매출/수익/성장/시장 전망",
+     "projected sales/revenue/cost 예상 매출/수익/비용"
+    ],
+    "examVar": [
+     {
+      "en": "The financial report projects that the company's revenue will grow by nearly 12 percent next year.",
+      "ko": "재무 보고서는 회사의 내년 매출이 약 12% 증가할 것으로 예상하고 있다."
+     }
+    ]
+   },
+   {
+    "word": "merge",
+    "pron": "[məːrdʒ]",
+    "pos": "v.",
+    "meaning": "v. 합병하다, 합치다",
+    "tip": "협력 회사가 서로 왕래하기에 너무 [[b]]멀지[[/b]]. 그래서 [[r]]합병하다, 합치다[[/r]]",
+    "derivatives": [
+     {
+      "word": "merger",
+      "meaning": "합병"
+     }
+    ],
+    "toeicExpr": [
+     "merge with another company 다른 회사와 합병하다",
+     "merge two companies 두 회사를 합병하다",
+     "merge departments 부서를 통합하다",
+     "complete/approve a merger 합병을 완료하다/승인하다",
+     "corporate merger 기업 합병"
+    ]
+   },
+   {
+    "word": "complimentary",
+    "pron": "미[kάmpləméntəri] 영[kɔ́mpləméntəri]",
+    "pos": "a.",
+    "meaning": "a. 1. 칭찬하는  2. 무료의",
+    "tip": "[[b]]컴[[/b]]을(컴퓨터를) [[b]]풀러[[/b]] 가난한 [[b]]men[[/b]](사람들)에게 [[b]]떨이[[/b]]로([[r]]무료의[[/r]] 가격으로) 나눠준 컴퓨터 기업 사장을 사람들이 [[r]]칭찬하는[[/r]]",
+    "derivatives": [
+     {
+      "word": "compliment",
+      "meaning": "칭찬, 찬사; 칭찬하다"
+     }
+    ],
+    "toeicExpr": [
+     "complimentary remark 칭찬하는 말",
+     "be complimented on their performance 그들의 성과에 대해 칭찬받다",
+     "compliment A on B A를 B에 대해 칭찬하다 (on: 행동의 대상 앞에 와서 '~을, ~에 대해')",
+     "compliment an employee on performance 성과에 대해 직원을 칭찬하다",
+     "compliment a team on its work 팀의 업무를 칭찬하다",
+     "complimentary breakfast/drinks/tickets/gift 무료 조식/음료/티켓/사은품",
+     "complimentary shuttle service 무료 셔틀 서비스"
+    ],
+    "examVar": [
+     {
+      "note": "complimentary와 complementary(보완적인)를 비교하는 문제가 자주 출제되었다.",
+      "en": "All guests will receive a ______ breakfast during their stay at the hotel.",
+      "opt": "complimentary (O)  complementary (X)",
+      "ko": "모든 호텔 투숙객은 숙박 기간 동안 무료 조식을 제공받습니다."
+     }
+    ]
+   },
+   {
+    "word": "fiscal",
+    "pron": "[fískəl]",
+    "pos": "a.",
+    "meaning": "a. 재정적인, 회계의",
+    "tip": "[[b]]피서[[/b]] 가려고 [[b]]칼[[/b]]을 들고 강도짓 하는 것은 결국 돈 문제, 즉 [[r]]재정적인[[/r]] 이유",
+    "toeicExpr": [
+     "fiscal year 회계연도  fiscal policy/report 재정 정책/보고서",
+     "fiscal deficit/surplus 재정 적자/흑자"
+    ]
+   },
+   {
+    "word": "numerous",
+    "pron": "[nú:mərəs]",
+    "pos": "a.",
+    "meaning": "a. 수많은, 무수한",
+    "tip": "[[b]]numer[[/b]](=number) + [[b]]ous[[/b]](형·어)] 숫자가 많은, 즉 [[r]]수많은, 무수한[[/r]]",
+    "derivatives": [
+     {
+      "word": "numerical",
+      "meaning": "수의, 숫자로 나타낸"
+     }
+    ],
+    "toeicExpr": [
+     "numerous opportunities/attempts/cases/studies 수많은 기회/시도/사례/연구",
+     "in numerous ways 다양한 방식으로  numerous times 여러 번",
+     "numerical order 숫자 순서  numerical analysis/result 수치 분석/결과"
+    ],
+    "examVar": [
+     {
+      "note": "numerous와 numerical을 구분하는 문제가 출제되었다.",
+      "en": "The company received ______ inquiries after launching the new service last week.",
+      "opt": "numerous (O)  numerical (X)",
+      "ko": "회사는 지난주 새로운 서비스를 출시한 후 수많은 문의를 받았다."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "day": 31,
+  "title": "",
+  "words": [
+   {
+    "word": "niche",
+    "pron": "[nitʃ]",
+    "pos": "n./a.",
+    "meaning": "1. n. 꼭 맞는 자리(일)  2. n. (시장의) 틈새  a. 특정 계층·분야를 겨냥한",
+    "tip": "빨리 [[b]]니[[/b]]가 [[b]]취[[/b]]해야 할 네게 [[r]]꼭 맞는 자리(일), (시장의) 틈새[[/r]]",
+    "toeicExpr": [
+     "find one's niche 자신의 적성에 맞는 일자리를 찾다",
+     "niche role/position 딱 맞는 역할/자리",
+     "niche market 틈새 시장",
+     "find a niche 틈새를 찾다",
+     "target a niche 특정 시장을 공략하다",
+     "profitable niche 수익성 있는 틈새 시장",
+     "niche services 특화 서비스",
+     "niche products 특정 고객층을 겨냥한 제품"
+    ],
+    "examVar": [
+     {
+      "en": "The company focuses on a niche market by offering customized products for a specific group of customers.",
+      "ko": "그 회사는 특정 고객층을 위한 맞춤형 제품을 제공함으로써 틈새 시장에 집중하고 있다."
+     }
+    ]
+   },
+   {
+    "word": "cater",
+    "pron": "[kéitər]",
+    "pos": "v.",
+    "meaning": "v. 음식을 공급하다",
+    "tip": "[[b]]케익[[/b]]을 [[b]]떠[[/b]]서 여러 사람에게 [[r]]음식으로 공급하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "catering",
+      "meaning": "출장 연회 서비스, 음식 공급 서비스"
+     }
+    ],
+    "toeicExpr": [
+     "cater for corporate events 기업 행사를 위한 음식을 제공하다",
+     "cater for weddings 결혼식에 케이터링 서비스를 제공하다",
+     "catering service 출장 연회 서비스",
+     "catering company 출장 음식 제공 업체",
+     "provide catering 음식 서비스를 제공하다"
+    ]
+   },
+   {
+    "word": "eligible",
+    "pron": "[élidʒəbl]",
+    "pos": "a.",
+    "meaning": "a. 적격의, 자격이 있는, 요건을 충족한",
+    "tip": "[[b]]엘리[[/b]]라는 사람이 옷을 [[b]]접을[[/b]] 즉, 엘리가 옷을 접는 일을 잘하여 [[r]]적격의, 자격이 있는[[/r]]",
+    "toeicExpr": [
+     "eligible employee/applicant 자격을 갖춘 직원/지원자",
+     "be eligible for + 명사 ~에 자격이 있다, ~할 대상이다 (for: ~에 대해, ~을 위해)",
+     "be eligible for benefits/promotion 혜택을 받을/승진할 자격이 있다",
+     "be eligible for a discount/refund 할인/환불 대상이다",
+     "be eligible for reimbursement 비용 환급 대상이다"
+    ],
+    "examVar": [
+     {
+      "note": "\"be eligible for\" 표현에서 eligible뿐만 아니라 전치사 for를 묻는 문제가 자주 출제되었다.",
+      "en": "Only registered members are eligible for the special discount.",
+      "ko": "등록된 회원만이 특별 할인을 받을 자격이 있습니다."
+     },
+     {
+      "en": "Only full-time employees are eligible for the annual performance bonus.",
+      "ko": "정규직 직원만이 연간 성과 보너스를 받을 자격이 있다."
+     }
+    ]
+   },
+   {
+    "word": "freight",
+    "pron": "[freit]",
+    "pos": "n./v.",
+    "meaning": "n. 화물, 화물 운송  v. 운송하다",
+    "tip": "삽으로 [[b]]푸래이[[/b]](퍼라)! [[b]]two[[/b]](두 번). 석탄 [[r]]화물[[/r]]을 트럭에 삽으로 퍼서 싣고 [[r]]운송하다[[/r]]",
+    "toeicExpr": [
+     "air/sea freight 항공/해상 운송",
+     "freight charge(fee) 화물 운송료",
+     "freight shipment 화물 선적",
+     "freight goods/cargo 물품을/화물을 운송하다"
+    ]
+   },
+   {
+    "word": "feasible",
+    "pron": "[fíːzəbl]",
+    "pos": "a.",
+    "meaning": "a. 실현 가능한",
+    "tip": "삼성 폴더블 폰이 출시되어 화면을 [[b]]피[[/b]](펴고) [[b]]접[[/b]]을 수 있는 것이 [[r]]실현 가능한[[/r]]",
+    "derivatives": [
+     {
+      "word": "feasibility",
+      "meaning": "실행할 수 있음, 실행 가능성"
+     }
+    ],
+    "toeicExpr": [
+     "feasible plan/idea/solution/option 실현 가능한 계획/아이디어/해결책/선택지",
+     "technically/economically feasible 기술적으로/경제적으로 실현 가능한",
+     "evaluate feasibility 실행 가능성을 평가하다"
+    ],
+    "examVar": [
+     {
+      "en": "Due to budget constraints, the proposal is no longer feasible.",
+      "ko": "예산 제약으로 인해 그 제안은 더 이상 실행 가능하지 않다."
+     }
+    ]
+   },
+   {
+    "word": "streamline",
+    "pron": "[stríːmlàin]",
+    "pos": "v.",
+    "meaning": "v. 간소화하다, 능률화하다",
+    "tip": "여러 줄기의 [[b]]stream[[/b]](개울)을 한 [[b]]line[[/b]](줄)로 합쳐 [[r]]간소화하다[[/r]]",
+    "toeicExpr": [
+     "streamline a process/system 절차를/시스템을 간소화하다"
+    ]
+   },
+   {
+    "word": "specific",
+    "pron": "[spəsífik]",
+    "pos": "a.",
+    "meaning": "a. 구체적인, 특정한",
+    "tip": "숲에서 [[b]]픽[[/b]] 눈에 띄는 호랑이의 [[r]]구체적인, 특정한[[/r]] 줄무늬",
+    "derivatives": [
+     {
+      "word": "specifically",
+      "meaning": "구체적으로, 특별히"
+     },
+     {
+      "word": "specify",
+      "meaning": "구체적으로 명시하다, 지정하다"
+     }
+    ],
+    "toeicExpr": [
+     "specific requirements/details/instructions 구체적 요건/세부사항/지시사항",
+     "specific condition/purpose/location 특정 조건/목적/장소",
+     "explain specifically 구체적으로 설명하다",
+     "designed specifically for ~을 위해 특별히 설계된",
+     "specify the details/requirements/a date 세부사항을/요건을/날짜를 명시하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The manager asked for a specific date when the project would be completed.",
+      "ko": "관리자는 프로젝트 완료에 대한 특정 날짜를 요구했다."
+     },
+     {
+      "en": "2. Please specify the preferred delivery date on the order form.",
+      "ko": "주문서에 선호 배송 날짜를 명시해 주십시오."
+     }
+    ]
+   },
+   {
+    "word": "specification",
+    "pron": "[spèsəfikéiʃən]",
+    "pos": "n.",
+    "meaning": "n. (자세한) 설명서, 사양",
+    "tip": "[[b]]specific[[/b]](구체적인) 사용법이나 규격을 [[b]]케이션[[/b]](캐다), 즉 자세한 [[r]]설명서, 사양[[/r]]",
+    "toeicExpr": [
+     "product/technical/detailed specifications 제품/기술/상세 명세서(사양)",
+     "design specifications 설계 사양  job specifications 직무 사양(요구 사항)"
+    ],
+    "examVar": [
+     {
+      "en": "The equipment must meet the technical ________ outlined in the contract.",
+      "opt": "specifications (O)  specification (X)",
+      "ko": "그 장비는 계약서에 명시된 기술 사양을 충족해야 한다.",
+      "note": "'사양, 세부 설명서'는 여러 가지 항목이기 때문에 항상 복수형을 쓴다는 점을 묻는 문제가 자주 출제되었다."
+     }
+    ]
+   },
+   {
+    "word": "abide by",
+    "pron": "[əbáid bai]",
+    "meaning": "(법률·합의) 등을 따르다",
+    "tip": "[[b]]어버이도 by[[/b]](옆에서) 어린 자식의 손을 잡고 횡단보도로 건너며 [[r]]법률을 따르다[[/r]]",
+    "toeicExpr": [
+     "abide by the rules/contract 규칙을/계약을 준수하다",
+     "abide by safety guidelines 안전 지침을 준수하다"
+    ],
+    "examVar": [
+     {
+      "en": "Vendors are required to abide by the terms of the contract.",
+      "ko": "공급업체는 계약 조건을 준수해야 합니다."
+     }
+    ]
+   },
+   {
+    "word": "installment",
+    "pron": "[instɔ́:lmənt]",
+    "pos": "n.",
+    "meaning": "할부, 할부금",
+    "tip": "건물을 [[b]]인수[[/b]]하고 세입자에게 [[b]]탈 month[[/b]](달)마다의 [[r]]할부금[[/r]]",
+    "toeicExpr": [
+     "installment plan 할부 계획",
+     "monthly/weekly installment 월별/주별 할부금",
+     "pay in monthly installments 매달 할부로 지불하다"
+    ]
+   },
+   {
+    "word": "patron",
+    "pron": "[péitrən]",
+    "pos": "n.",
+    "meaning": "후원자, 고객",
+    "tip": "어떤 단체나 상점에 돈을 [[b]]pay[[/b]](지불하기) 위해 [[b]]들어온[[/b]] [[r]]후원자, 고객[[/r]]",
+    "toeicExpr": [
+     "a patron of the museum/charity 박물관의/자선단체의 후원자",
+     "regular patrons 단골 고객  loyal patrons 충성 고객",
+     "valued patrons 소중한 고객"
+    ]
+   },
+   {
+    "word": "roll out",
+    "pos": "v.",
+    "meaning": "출시하다, 본격적으로 시행하다, 도입하다",
+    "tip": "[[b]]roll[[/b]](굴리다, 말린 것을 펼치다) + [[b]]out[[/b]](밖으로)] ① 말린 것을 [[b]]밖으로 펼쳐 보이게 하다[[/b]], 즉 준비해 둔 것을 펼쳐 [[r]]출시하다, 시행하다[[/r]] ② 말린 카페트를 [[b]]밖으로 펼쳐[[/b]] 손님을 맞이하듯 어떠한 것을 [[r]]도입하다[[/r]]",
+    "toeicExpr": [
+     "roll out a new product 신제품을 출시하다",
+     "roll out a policy/plan 정책을/계획을 시행하다",
+     "roll out a service/system/program 서비스를/시스템을/프로그램을 도입하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company plans to roll out a new mobile application nationwide next month.",
+      "ko": "그 회사는 다음 달 전국적으로 새로운 모바일 애플리케이션을 출시할 계획이다."
+     }
+    ]
+   },
+   {
+    "word": "testimonial",
+    "pron": "[tèstəmóuniəl]",
+    "pos": "n.",
+    "meaning": "후기, 이용자 평가",
+    "tip": "상품을 [[b]]test[[/b]](테스트) 해보고 [[b]]뭐니?[[/b]](어떻니?) 얼마나 점수를 줄까? 하고 평가하는 [[r]]후기, 이용자 평가[[/r]]",
+    "toeicExpr": [
+     "testimonial from a satisfied customer 만족한 고객의 후기",
+     "customer testimonials 고객 후기들",
+     "use testimonials for marketing 마케팅에 후기를 활용하다"
+    ]
+   },
+   {
+    "word": "carry out",
+    "pos": "v.",
+    "meaning": "실행하다",
+    "tip": "[[b]]carry[[/b]](나르다) + [[b]]out[[/b]](밖으로)] 쓰레기를 집 [[b]]밖으로 날라[[/b]] 미뤄왔던 쓰레기 처리를 [[r]]실행하다[[/r]]",
+    "toeicExpr": [
+     "carry out a task/a plan/an inspection 업무를/계획을/점검을 실행하다"
+    ]
+   },
+   {
+    "word": "void",
+    "pron": "[vɔid]",
+    "pos": "a./v./n.",
+    "meaning": "1. a. (계약·결정 등이) 무효의 v. 무효로 하다  2. n. 빈 공간, 공백",
+    "tip": "교실에 결석한 [[b]]boy[[/b]](소년) [[b]]두[[/b]] 명의 자리가 비어 있는, 즉 [[r]]빈 공간, 공백[[/r]] 그래서 만장일치로 하지 않은 오늘 회의는 [[r]]무효, 무효로 하다[[/r]]",
+    "toeicExpr": [
+     "null and void 무효인, 효력이 없는 (null: 무효의)",
+     "void contract/agreement 무효 계약/협약",
+     "leave a void 공백을 남기다"
+    ]
+   },
+   {
+    "word": "seamless",
+    "pron": "[sí:mlis]",
+    "pos": "a.",
+    "meaning": "이음매(봉합선)가 없는, (끊김 없이) 아주 매끄러운",
+    "tip": "옷에 박아 놓은 재봉선과 같은 [[b]]심[[/b]](중심)이 [[b]]less[[/b]](없어) [[r]]이음매가 없는, 아주 매끄러운[[/r]]",
+    "toeicExpr": [
+     "seamless transition 매끄러운 전환  seamless service 끊김 없는 서비스",
+     "seamless workflow 자연스럽게 이어지는 작업 흐름"
+    ],
+    "examVar": [
+     {
+      "en": "The software update allows for a seamless transition between systems.",
+      "ko": "해당 소프트웨어 업데이트는 시스템 간의 매끄러운 전환을 가능하게 한다."
+     }
+    ]
+   },
+   {
+    "word": "realtor",
+    "pron": "[rí:əltər]",
+    "pos": "n.",
+    "meaning": "부동산 중개인, 공인중개사",
+    "tip": "[[b]]real[[/b]](진짜의) [[b]]터[[/b]](땅)을 다루는 사람, 즉 [[r]]부동산 중개인, 공인중개사[[/r]]",
+    "toeicExpr": [
+     "licensed realtor 공인된 부동산 중개인  realtor's office 부동산 중개 사무소"
+    ]
+   },
+   {
+    "word": "culinary",
+    "pron": "미[kʌ́linèri, kjú:linèri] 영[kʌ́linəri, kjú:linəri]",
+    "pos": "a.",
+    "meaning": "요리의, 조리의",
+    "tip": "\"야채를 썰게 [[b]]칼 (이리 내려[[/b]](이리 내놓으리)\"라고 하는 [[r]]요리의, 조리하는[[/r]] 모습",
+    "toeicExpr": [
+     "culinary skills/school/training/instructor 요리 기술/학교/교육/강사"
+    ]
+   },
+   {
+    "word": "validate",
+    "pron": "[vǽlidèit]",
+    "pos": "v.",
+    "meaning": "v. 1. 입증하다, 검증하다, 확인하다  2. 유효 처리하다, 인정하다, 승인하다",
+    "tip": "① 칼로 [[b]]벨리[[/b]]! [[b]]데이트[[/b]]하다가 그것을 형사가 cctv로 [[r]]입증하다[[/r]], [[r]]확인하다[[/r]], 그래서 피의자가 [[r]]인정하다[[/r]]\n② [[b]]valid[[/b]](유효한) + [[b]]ate[[/b]](동·어)] 유효하게 하다, 즉 [[r]]유효 처리하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "validation",
+      "meaning": "유효성 확인, 검증"
+     },
+     {
+      "word": "validity",
+      "meaning": "유효성, 타당성"
+     }
+    ],
+    "toeicExpr": [
+     "validate information/data 정보를/데이터를 검증하다",
+     "validate results 결과를 확인하다(검증하다)  validate claims 주장을 검증하다",
+     "validate data/a ticket/an ID 데이터를/승차권을/신분증을 유효 처리하다",
+     "require/complete/undergo validation 검증(유효성 확인)을 필요로 하다/완료하다/거치다",
+     "validity of a contract 계약의 유효성  validity of the results 결과의 타당성",
+     "validity period 유효 기간"
+    ],
+    "examVar": [
+     {
+      "en": "1. Please validate your parking ticket before exiting the garage.",
+      "ko": "주차장을 나가기 전에 주차권을 확인 처리해 주세요.(도장을 받거나 하는 행위)"
+     },
+     {
+      "en": "2. Additional checks are required to ensure the ______ of the data.",
+      "opt": "validity (O)  validation (X)",
+      "ko": "데이터의 타당성을 보장하기 위해 추가 검사가 필요하다."
+     },
+     {
+      "en": "3. The auditor reviewed the documents to validate the accuracy of the figures.",
+      "ko": "감사인은 수치의 정확성을 검증하기 위해 문서를 검토했다."
+     }
+    ]
+   },
+   {
+    "word": "obtain",
+    "pron": "[əbtéin]",
+    "pos": "v.",
+    "meaning": "v. 얻다, 획득하다",
+    "tip": "[[b]]어부[[/b]]가 고기 [[b]]떼[[/b]]를 그물 [[b]]in[[/b]](안으로) [[r]]얻다, 획득하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "obtainable",
+      "meaning": "얻을 수 있는"
+     }
+    ],
+    "toeicExpr": [
+     "obtain permission/information/approval 허가를/정보를/승인을 얻다",
+     "easily obtainable 쉽게 얻을 수 있는",
+     "obtainable resources/information 확보 가능한 자원/정보"
+    ]
+   },
+   {
+    "word": "vicinity",
+    "pron": "[visínəti]",
+    "pos": "n.",
+    "meaning": "n. (~의) 근처, 인근",
+    "tip": "'A______ D E F'와 같은 문제에서 A와 D [[r]]근처[[/r]]에는 [[b]]B C 넣되[[/b]].",
+    "toeicExpr": [
+     "in the vicinity of the airport 공항 근처에",
+     "in close vicinity to the conference center 컨퍼런스 센터와 매우 가까운 곳에",
+     "construction in the vicinity 주변 공사",
+     "no parking in the vicinity 주변 주차 금지"
+    ]
+   },
+   {
+    "word": "mandate",
+    "pron": "[mǽndeit]",
+    "pos": "n./v.",
+    "meaning": "n. 지시, (지시)권한, 명령, 의무  v. 명령하다, 의무화하다",
+    "tip": "조선시대 때는 부모님이 딸에게 어떤 [[b]]man[[/b]](남자)와 [[b]]데이트[[/b]]를 하라고 [[r]]지시, 명령[[/r]]할 [[r]]권한[[/r]]을 갖고 있었고 자식은 따를 [[r]]의무[[/r]]를 가졌다.",
+    "derivatives": [
+     {
+      "word": "mandatory",
+      "meaning": "의무적인"
+     }
+    ],
+    "toeicExpr": [
+     "government/company/safety mandate 정부/회사/안전 지침",
+     "legal/compliance mandate 법적/준수 의무",
+     "mandate requirement 의무 요건  under a mandate 지시에 따라",
+     "issue a mandate 지침을 발표하다",
+     "mandate procedures 절차를 의무화하다",
+     "mandatory training/attendance/requirement 의무 교육/참석/요건"
+    ],
+    "examVar": [
+     {
+      "en": "1. The committee has a clear mandate to investigate the issue.",
+      "ko": "그 위원회는 그 문제를 조사할 명확한 권한을 부여받았다."
+     },
+     {
+      "en": "2. Attendance at the safety briefing is mandatory for all employees.",
+      "ko": "안전 브리핑 참석은 모든 직원에게 의무 사항이다."
+     }
+    ]
+   },
+   {
+    "word": "courier",
+    "pron": "[kúriər, kə́:riər]",
+    "pos": "a./n.",
+    "meaning": "a. 택배의  n. 택배 기사",
+    "tip": "짐을 [[b]]꾸려[[/b]] 배달하는, 즉 [[r]]택배의, 택배 기사[[/r]]",
+    "toeicExpr": [
+     "courier service/company/delivery/pickup 택배 서비스/회사/배송/수거"
+    ]
+   },
+   {
+    "word": "recipient",
+    "pron": "[risípiənt]",
+    "pos": "n.",
+    "meaning": "n. 받는 사람, 수령인, 수혜자",
+    "tip": "[[[b]]receive[[/b]](받다) + [[b]]ent[[/b]](~하는 사람)] [[r]]받는 사람, 수령인[[/r]]",
+    "toeicExpr": [
+     "mail/message recipient 우편물/메시지 수신인",
+     "designated recipient 지정 수령인  payment recipient 지급 대상자",
+     "award recipient 수상자  grant recipient 보조금 수혜자"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 32,
+  "title": "",
+  "words": [
+   {
+    "word": "tailored",
+    "pron": "[téilərd]",
+    "pos": "a.",
+    "meaning": "잘 맞도록 만든, 맞춤의",
+    "tip": "[[b]]tailor[[/b]](재단사; 맞추어 만들다) + ed] [[r]]잘 맞도록 만든, 맞춤의[[/r]]",
+    "toeicExpr": [
+     "tailored service/program/solution 맞춤형 서비스/프로그램/해결책",
+     "be tailored to + 명사: ~에 맞게 제작되다, 조정되다",
+     "be tailored to one's needs 개인의 필요에 맞게 조정되다",
+     "be tailored to customers 고객에 맞게 제작되다"
+    ],
+    "examVar": [
+     {
+      "en": "The company offers ________ solutions for small businesses.",
+      "opt": "(A) tailoring  (B) tailored  (C) tailor  (D) tailors",
+      "ko": "그 회사는 소규모 기업을 위한 맞춤형 해결책을 제공한다.",
+      "ans": "(B)"
+     }
+    ]
+   },
+   {
+    "word": "workload",
+    "pron": "[wə́:rkloud]",
+    "pos": "n.",
+    "meaning": "업무량, 작업량",
+    "tip": "[[b]]work[[/b]](일, 작업) + [[b]]load[[/b]](짐을 싣다)] 실려진 일의 양, 즉 [[r]]업무량, 작업량[[/r]]",
+    "toeicExpr": [
+     "heavy/light workload 과중한/적은 업무량",
+     "reduce workload 업무량을 줄이다",
+     "share the workload 업무를 분담하다"
+    ]
+   },
+   {
+    "word": "accountant",
+    "pron": "[əkáuntənt]",
+    "pos": "n.",
+    "meaning": "회계사, 경리",
+    "tip": "돈을 하나 [[b]]a[[/b]](하나) [[b]]count[[/b]](세는) [[b]]ant[[/b]](~사람), 즉 [[r]]회계사, 경리[[/r]]",
+    "toeicExpr": [
+     "certified public accountant (CPA) 공인회계사",
+     "corporate/tax accountant 기업/세무 회계사"
+    ],
+    "examVar": [
+     {
+      "en": "The company hired an experienced ________ to manage its finances.",
+      "opt": "(A) account  (B) accounting  (C) accountant  (D) accountability",
+      "ko": "그 회사는 재정을 관리하기 위해 경력 있는 회계사를 고용했다.",
+      "ans": "(C)"
+     }
+    ]
+   },
+   {
+    "word": "questionnaire",
+    "pron": "[kwèstʃənɛ́ər]",
+    "pos": "n.",
+    "meaning": "질문서, 설문지",
+    "tip": "[[b]]question[[/b]](질문)이 담겨있는 [[r]]질문서, 설문지[[/r]]를 적어서 [[r]]내어[[/r]]",
+    "toeicExpr": [
+     "complete/conduct/submit a questionnaire 설문지를 작성하다/실시하다/제출하다",
+     "respond to a questionnaire 설문에 응답하다",
+     "customer satisfaction questionnaire 고객 만족도 설문지"
+    ]
+   },
+   {
+    "word": "remainder",
+    "pron": "[riméindər]",
+    "pos": "n.",
+    "meaning": "나머지, 남은 기간",
+    "tip": "[[b]]remain[[/b]](남다, 남겨지다) + [[b]]er[[/b]](~것)] [[r]]나머지[[/r]]",
+    "toeicExpr": [
+     "the remainder of the day 하루의 나머지 시간",
+     "the remainder of the payment 남은 금액, 잔금",
+     "pay the remainder 잔금을 지불하다",
+     "for the remainder of + 기간: ~의 남은 기간 동안 (for: ~ 동안)",
+     "for the remainder of the day/week/month 하루의/이번 주/이번 달 나머지 시간 동안"
+    ],
+    "examVar": [
+     {
+      "en": "The customer must pay the remainder of the balance before the goods are shipped.",
+      "ko": "고객은 물품이 발송되기 전에 잔금의 나머지를 지불해야 한다."
+     },
+     {
+      "en": "The construction project will continue for the remainder of the year.",
+      "ko": "공사 프로젝트는 올해 남은 기간 동안 계속될 것이다."
+     }
+    ]
+   },
+   {
+    "word": "ongoing",
+    "pron": "[ɑngóuiŋ]",
+    "pos": "a.",
+    "meaning": "계속 진행 중인",
+    "tip": "[[b]]on[[/b]](계속) [[b]]going[[/b]](가고 있는), 즉 [[r]]계속 진행 중인[[/r]]",
+    "toeicExpr": [
+     "ongoing project/task/investigation 진행 중인 프로젝트/업무/조사"
+    ]
+   },
+   {
+    "word": "liable",
+    "pron": "[láiəbl]",
+    "pos": "a.",
+    "meaning": "1. ~하기 쉬운, ~할 것 같은  2. 책임져야 할",
+    "tip": "주유소에서 담배 피우면 [[b]]나요, 불[[/b]](불나요!) 즉, 불나[[r]]기 쉬운[[/r]], 불날 [[r]]것 같은[[/r]], 불나면 [[r]]책임져야 할[[/r]]",
+    "toeicExpr": [
+     "be liable to failure/damage 실패할/손상될 가능성이 있다",
+     "be liable for ~에 대한 책임이 있다, 책임을 지다 (for: ~에 대해)",
+     "be liable for damages/losses/compensation 손해에/손실에/보상에 대해 책임이 있다",
+     "be held liable for ~에 대해 책임을 지게 되다",
+     "be held liable for penalties/fines/repairs 벌금/과태료/수리에 대해 책임을 지게 되다"
+    ],
+    "examVar": [
+     {
+      "en": "The company will be held liable for any damages caused by the defective equipment.",
+      "ko": "그 회사는 결함 있는 장비로 인해 발생한 모든 손해에 대해 책임을 지게 된다."
+     }
+    ]
+   },
+   {
+    "word": "liability",
+    "pron": "[làiəbíləti]",
+    "pos": "n.",
+    "meaning": "1. 책임  2. (개인ㆍ회사의) 부채",
+    "tip": "① [[b]]liable[[/b]](책임이 있는)의 명사형으로 [[r]]책임[[/r]], 그리고 금전적 책임이란 뜻에서 [[r]]부채[[/r]] ② [[b]]liar[[/b]](거짓말쟁이)가 회삿돈을 [[b]]빌려 튀[[/b]]었는데 그 못 받는 [[r]]부채[[/r]]는 사장인 내 [[r]]책임[[/r]]",
+    "toeicExpr": [
+     "legal/product/personal/corporate liability 법적/제조물/개인적/기업 책임",
+     "assume liability for ~에 대한 책임을 지다",
+     "long-term/outstanding liabilities 장기/미지급 부채",
+     "total liabilities 총부채   liabilities and assets 부채와 자산",
+     "current liabilities 유동 부채(1년 이내에 상환해야 하는 채무)"
+    ],
+    "examVar": [
+     {
+      "en": "The supplier refused to accept liability for the damages.",
+      "ko": "공급업체는 손해에 대한 책임을 인정하기를 거부했다."
+     },
+     {
+      "en": "All outstanding liabilities must be settled before the merger.",
+      "ko": "합병 전에 모든 미지급 채무가 상환되어야 한다."
+     }
+    ]
+   },
+   {
+    "word": "penalty",
+    "pron": "[pénəlti]",
+    "pos": "n.",
+    "meaning": "벌칙, 벌금, 위약금",
+    "tip": "축구에서 [[b]]페널티[[/b]] 킥(penalty kick)은 반칙에 대한 [[r]]벌칙[[/r]], 그리고 벌칙으로 내야 하는 [[r]]벌금, 위약금[[/r]]",
+    "toeicExpr": [
+     "pay a penalty 벌금을 내다   impose a penalty 벌금을 부과하다",
+     "penalty fee 벌금, 위약금   late-payment penalty 연체 벌금"
+    ]
+   },
+   {
+    "word": "alliance",
+    "pron": "[əláiəns]",
+    "pos": "n.",
+    "meaning": "동맹, 제휴, 연합",
+    "tip": "[[b]]all[[/b]](모든) [[b]]lions[[/b]](사자들)이 옆 마을 사자들의 침입을 막기 위해 서로 [[r]]동맹, 연합[[/r]]",
+    "derivatives": [
+     {
+      "word": "ally",
+      "meaning": "동맹국, 협력자; 동맹하다, 제휴하다"
+     }
+    ],
+    "toeicExpr": [
+     "strategic alliance 전략적 동맹   business alliance 사업 제휴",
+     "form an alliance 동맹(제휴)를 맺다",
+     "in alliance with ~와 제휴하여 (in: ~상태로, ~방식으로)",
+     "in alliance with a partner 파트너와 제휴하여",
+     "in alliance with another company 다른 회사와 제휴하여",
+     "close ally 긴밀한 동맹   trusted ally 신뢰할 수 있는 동맹/파트너",
+     "business ally 사업 파트너",
+     "ally with ~와 제휴하다, 동맹하다",
+     "be allied with ~와 제휴되어 있다",
+     "ally with local firms 현지 기업과 제휴하다",
+     "be allied with a government agency 정부 기관과 제휴되어 있다"
+    ]
+   },
+   {
+    "word": "sustain",
+    "pron": "[səstéin]",
+    "pos": "v.",
+    "meaning": "v. 1. 떠받치다, 유지하다, 지속하다  2. (부상·손해 등을) 입다",
+    "tip": "① [[b]]서서[[/b]] 무등을 [[b]]태인[[/b]](태워진) 사람을 밑에서 계속 [[r]]떠받치다, 유지하다, 지속하다[[/r]]\n② [[b]]서서[[/b]] 불에 [[b]]태인[[/b]](태워진), 즉 화상과 같은 [[r]]부상을 입다[[/r]]",
+    "derivatives": [
+     {
+      "word": "sustainability",
+      "meaning": "지속 가능성"
+     },
+     {
+      "word": "sustainable",
+      "meaning": "지속 가능한"
+     },
+     {
+      "word": "unsustainable",
+      "meaning": "지속 불가능한"
+     }
+    ],
+    "toeicExpr": [
+     "sustain growth/operations 성장을/운영을 지속하다",
+     "sustain performance 성과를 유지하다",
+     "sustain losses 손실을 입다",
+     "sustain damage 손상을 입다",
+     "environmental/economic sustainability 환경적/경제적 지속 가능성",
+     "sustainable development/growth 지속 가능한 개발/성장",
+     "unsustainable growth/development 지속 불가능한 성장/개발"
+    ],
+    "examVar": [
+     {
+      "en": "1. The company sustained significant losses during the economic downturn.",
+      "ko": "그 회사는 경기 침체 동안 상당한 손실을 입었다."
+     },
+     {
+      "en": "2. The company is focused on sustainable growth rather than short-term gains.",
+      "ko": "그 회사는 단기적 이익보다는 지속 가능한 성장에 집중하고 있다."
+     }
+    ]
+   },
+   {
+    "word": "modify",
+    "pron": "미[mádəfài, mɔ́difài] 영[mɔ́dəfài]",
+    "pos": "v.",
+    "meaning": "v. 수정하다, 변경하다",
+    "tip": "[[b]]마더[[/b]](엄마)가 오늘 간식을 치킨에서 (애플)[[b]]파이[[/b]]로 [[r]]수정하다, 변경하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "modification",
+      "meaning": "수정, 변경"
+     }
+    ],
+    "toeicExpr": [
+     "modify a plan/contract/policy 계획을/계약을/정책을 수정하다",
+     "modify the schedule/design 일정을/설계를 수정하다(변경하다)",
+     "make a modification 수정을 하다",
+     "minor/major/contract modification 사소한/주요한/계약 수정"
+    ]
+   },
+   {
+    "word": "anticipate",
+    "pron": "[æntísəpèit]",
+    "pos": "v.",
+    "meaning": "v. 기대하다, 예상하다",
+    "tip": "연예인이 봉사활동을 하면서 [[b]]anti서[[/b]](안티에서) [[b]]페이트[[/b]](빼주길) [[r]]기대하다, 예상하다[[/r]]",
+    "toeicExpr": [
+     "anticipate + 명사/동명사 (O)  * to부정사 (X)",
+     "anticipate seeing an increase in sales  * anticipate to see (X) 매출 증가를 예상하다",
+     "anticipate experiencing delays 지연을 겪을 것을 예상하다",
+     "anticipate changes/growth 변화를/성장을 예상하다",
+     "be anticipated to부정사: ~할 것으로 예상되다 (← 5형식 수동태 형태)",
+     "be anticipated to increase/decline/resume 증가할/감소할/재개될 것으로 예상되다",
+     "as anticipated 예상한 대로",
+     "As anticipated, the merger resulted in significant cost savings. 예상한 대로, 합병은 상당한 비용 절감을 가져왔습니다."
+    ],
+    "examVar": [
+     {
+      "en": "Due to the severe weather forecast, the airline is anticipating canceling several flights later this evening.",
+      "ko": "악천후 예보로 인해 항공사는 오늘 저녁 늦게 여러 항공편을 취소하게 될 것으로 예상하고 있다."
+     }
+    ]
+   },
+   {
+    "word": "section",
+    "pron": "[sékʃən]",
+    "pos": "n.",
+    "meaning": "n. (나누어진) 한 부분, (신문의) 면",
+    "tip": "수박이 [[b]]셋[[/b]]으로 [[b]]션[[/b]](시원)하게 나누어진 [[r]]한 부분[[/r]]",
+    "derivatives": [
+     {
+      "word": "sector",
+      "meaning": "부문, 분야"
+     }
+    ],
+    "toeicExpr": [
+     "a section of the report 보고서의 한 부분",
+     "fill out each section of the form 신청서의 각 항목을 작성하다",
+     "the financial section of a newspaper 신문의 경제면",
+     "public/financial sector 공공/금융 부문",
+     "growing sector 성장하는 부문"
+    ]
+   },
+   {
+    "word": "asset",
+    "pron": "[æset]",
+    "pos": "n.",
+    "meaning": "n. 재산, 자산",
+    "tip": "① 옛말에 자식이 재산이란 말이 있듯이 [[b]]애 셋[[/b]]이 [[r]]재산[[/r]]\n② 증권 회사인 '미래 [[b]]애셋[[/b]]'은 미래의 [[r]]재산[[/r]]이란 뜻",
+    "toeicExpr": [
+     "valuable asset 귀중한 자산",
+     "asset management 자산 관리"
+    ]
+   },
+   {
+    "word": "inquire",
+    "pron": "[inkwáiər]",
+    "pos": "v.",
+    "meaning": "v. 1. 묻다, 질문하다  2. 조사하다",
+    "tip": "\"[[b]]잉카[[/b]]요? 잉카문명이 뭐예요?\"라고 [[r]]묻다, 질문하다[[/r]], 또는 인터넷에서 [[r]]조사하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "inquiry",
+      "meaning": "문의, 질문"
+     }
+    ],
+    "toeicExpr": [
+     "inquire about ~에 관하여 문의하다",
+     "inquire about availability/pricing 이용 가능 여부에/가격에 관하여 문의하다",
+     "inquire at the desk 데스크에서 문의하다",
+     "customer inquiry 고객 문의",
+     "product inquiry 제품 문의",
+     "make an inquiry 문의하다",
+     "inquire into ~을 조사하다 (into: 안으로 들어가 깊이)",
+     "inquire into the matter/cause 사안을/원인을 조사하다",
+     "inquire into complaints 불만 사항을 조사하다"
+    ],
+    "examVar": [
+     {
+      "note": "inquire about / inquire into 구분 문제가 자주 출제되었다."
+     },
+     {
+      "en": "예1) Please inquire about room availability at the reception desk.",
+      "ko": "프런트 데스크에서 객실 이용 가능 여부를 문의해 주십시오."
+     },
+     {
+      "en": "예2) The committee will inquire into the cause of the system failure.",
+      "ko": "위원회는 시스템 장애의 원인을 조사할 것이다."
+     }
+    ]
+   },
+   {
+    "word": "specialize",
+    "pron": "[spéʃəlàiz]",
+    "pos": "v.",
+    "meaning": "전문으로 하다, 전공하다",
+    "tip": "[[b]]special[[/b]](특별한) + [[b]]ize[[/b]](동·어) 자신만의 특별한 것으로 만들다, 즉 [[r]]전문으로 하다, 전공하다[[/r]]",
+    "toeicExpr": [
+     "specialize in ~을 전공하다/전문으로 하다 (in: 분야, 영역)",
+     "specialize in research 연구를 전문으로 하다",
+     "specialize in law 법학을 전공하다",
+     "be specialized in ~에 특화되어 있다",
+     "be specialized in software development 소프트웨어 개발에 특화되어 있다",
+     "be specialized in logistics management 물류 관리에 특화되어 있다"
+    ],
+    "examVar": [
+     {
+      "en": "The new division will specialize in developing environmentally friendly packaging materials.",
+      "ko": "새로운 부서는 친환경 포장재 개발을 전문으로 하게 될 것이다."
+     }
+    ]
+   },
+   {
+    "word": "monetary",
+    "pron": "미 [mΛnitèri] 영 [mΛnitari]",
+    "pos": "a.",
+    "meaning": "화폐의, 금전상의",
+    "tip": "[[b]]money[[/b]](돈)과 관련된, 즉 [[r]]화폐의, 금전상의[[/r]]",
+    "toeicExpr": [
+     "monetary policy 통화 정책  monetary compensation 금전적 보상",
+     "monetary support 재정 지원"
+    ]
+   },
+   {
+    "word": "label",
+    "pron": "[léibəl]",
+    "pos": "n./v.",
+    "meaning": "n. 상표, 라벨 v. 꼬리표를 달다, 라벨을 붙이다",
+    "tip": "① [[r]]내의[[/r]]를 [[b]]벨[[/b]]려 확인하는 [[r]]상표, 라벨[[/r]]\n② 철자 상으로 읽으면 [[r]]라벨[[/r]], 즉 [[r]]상표, 라벨[[/r]]",
+    "toeicExpr": [
+     "product/brand label 제품/브랜드 라벨  attach a label 라벨을 붙이다",
+     "label a package 소포에 라벨을 붙이다  label an item 물품에 라벨을 붙이다"
+    ]
+   },
+   {
+    "word": "margin",
+    "pron": "[máːrdʒin]",
+    "pos": "n.",
+    "meaning": "n. 1. 이윤, 이익률  2. 허용 범위, 허용 여유  3. 차이  4. 여백",
+    "tip": "[[b]]마진[[/b]]([[r]]이윤[[/r]])이란 판매가에서 원가를 뺀 [[r]]차이[[/r]]로 손해를 보지 않고 팔 수 있는 [[r]]허용 여유[[/r]] 돈 그리고 종이에서 [[r]]여유[[/r]]로 남겨진 [[r]]여백[[/r]]",
+    "toeicExpr": [
+     "profit margin 이윤  gross margin 총이익",
+     "operating margin 영업 이익률  net margin 순이익률",
+     "margin of error 허용 오차 범위  safety margin 안전 여유",
+     "within the margin 허용 범위 내에  exceed the margin 허용 범위를 넘다",
+     "by a wide margin 큰 차이로  reduce the margin 격차를 줄이다",
+     "by a margin of + 숫자: ~의 차이로",
+     "by a margin of three votes 3표 차이로",
+     "by a margin of 10 percent 10% 차이로",
+     "win by a narrow margin 근소한 차이로 이기다"
+    ],
+    "examVar": [
+     {
+      "en": "The results are within the acceptable margin of error.",
+      "ko": "그 결과는 허용 가능한 오차 범위 내에 있다."
+     }
+    ]
+   },
+   {
+    "word": "headquarters",
+    "pron": "[hedkwóːrtərs]",
+    "pos": "n.",
+    "meaning": "n. 본부, 본사",
+    "tip": "[[b]]head[[/b]](머리, 상부) + [[b]]quarter[[/b]](1/4) 상부의 사람들이 지사를 각각 4분의 1씩 나누어 관리하고 있는 [[r]]본부, 본사[[/r]]",
+    "toeicExpr": [
+     "company headquarters 회사 본사  move headquarters 본사를 이전하다",
+     "headquarters staff 본사 직원"
+    ]
+   },
+   {
+    "word": "paycheck",
+    "pron": "[péitʃek]",
+    "pos": "n.",
+    "meaning": "n. 급료(지불 수표)",
+    "tip": "[[b]]pay[[/b]](급료) + [[b]]check[[/b]](수표)] [[r]]급료(지불 수표)[[/r]]",
+    "toeicExpr": [
+     "receive a paycheck 급여를 받다  monthly paycheck 월급"
+    ]
+   },
+   {
+    "word": "goods",
+    "pron": "[gudz]",
+    "pos": "n.",
+    "meaning": "물건, 물품",
+    "tip": "손님, [[b]]good[[/b]](좋은) [[r]]물건, 물품[[/r]] 있어요! 들어와 보세요~",
+    "toeicExpr": [
+     "imported goods 수입품  finished goods 완제품  electrical goods 전기 제품  consumer goods 소비재  durable goods 내구재"
+    ],
+    "examVar": [
+     {
+      "note": "goods가 항상 복수 취급되는 가산명사라는 점을 묻는 문제가 출제되었다.",
+      "en": "Some of the imported ______ were damaged during transportation.",
+      "opt": "goods (O)  good (X)",
+      "ko": "수입된 일부 상품은 운송 중 손상되었다."
+     }
+    ]
+   },
+   {
+    "word": "web",
+    "pron": "[web]",
+    "pos": "n.",
+    "meaning": "(복잡하게 연결된) ~망",
+    "tip": "인터넷 [[b]]웹(web)[[/b]]이란 [[r]]거미줄[[/r]]처럼 복잡하게 연결된 [[r]]통신망[[/r]]",
+    "toeicExpr": [
+     "web page 웹페이지  web of streets 도로망  wireless web 무선 통신망"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 33,
+  "title": "",
+  "words": [
+   {
+    "word": "accommodate",
+    "pron": "[əkάmədèit]",
+    "pos": "v.",
+    "meaning": "1. (살거나 지낼) 공간을 제공하다, 수용하다, 받아들이다  2. 맞춰주다, 조정하다",
+    "tip": "\"너희 집에서 살아도 돼?\"라고 묻자 \"[[b]]어[[/b]]! 그래, 우리 집에서 머리도 [[b]]깎어[[/b]], 그리고 애인이랑 [[b]]데이트[[/b]]도 해\"라며 [[r]]지낼 공간을 제공하다[[/r]], 자기 집에 [[r]]수용하다, 맞춰주다[[/r]]",
+    "derivatives": [
+     {
+      "word": "accommodation",
+      "meaning": "거처, 숙박시설"
+     }
+    ],
+    "toeicExpr": [
+     "accommodate up to + 숫자: 최대 ~명을 수용하다 (up to: ~까지)  accommodate up to 500 guests 투숙객 500명까지 수용하다",
+     "accommodate a request/need/schedule 요청을/필요를/일정을 맞춰주다",
+     "hotel accommodation(s) 호텔 숙박시설  provide accommodation 숙소를 제공하다"
+    ],
+    "examVar": [
+     {
+      "en": "The hotel can accommodate up to 300 guests.",
+      "ko": "그 호텔은 최대 300명의 손님을 수용할 수 있다."
+     },
+     {
+      "en": "The HR department will try to accommodate employees' scheduling requests whenever possible.",
+      "ko": "인사부는 가능할 때마다 직원들의 일정 요청을 최대한 맞춰줄 것이다."
+     }
+    ]
+   },
+   {
+    "word": "entrepreneur",
+    "pron": "[ὰːntrəprəné:r]",
+    "pos": "n.",
+    "meaning": "사업가, 기업가",
+    "tip": "\"하수구가 [[b]]안 뚫어[[/b]]질 때 [[b]]풀어 넣어[[/b]]!\"라고 광고에 나와 말하는 뚫어뻥 [[r]]사업가, 기업가[[/r]]",
+    "toeicExpr": [
+     "successful entrepreneur 성공한 사업가  young entrepreneur 젊은 창업가  local entrepreneur 지역 사업가  tech entrepreneur 기술 분야 창업가"
+    ]
+   },
+   {
+    "word": "upcoming",
+    "pron": "[ʌpkámiŋ]",
+    "pos": "a.",
+    "meaning": "다가오는, 앞으로 곧 생길",
+    "tip": "내가 있는 산꼭대기 [[b]]up[[/b]](위로) [[b]]coming[[/b]](오고 있는) 늑대, 즉 [[r]]다가오는[[/r]], 위험이 [[r]]앞으로 곧 생길[[/r]]",
+    "toeicExpr": [
+     "upcoming event/meeting/conference 다가오는 행사/회의/학회"
+    ],
+    "examVar": [
+     {
+      "en": "Tickets are selling well for the group's upcoming concert tour.",
+      "ko": "그 그룹의 다가오는 콘서트 투어 티켓이 잘 팔리고 있다."
+     }
+    ]
+   },
+   {
+    "word": "state-of-the-art",
+    "pron": "[stéitəvðiάːrt]",
+    "pos": "a.",
+    "meaning": "최신식의, 최첨단의",
+    "tip": "① [[b]]art[[/b]]는 기술을 뜻하고, 현재까지 발달한 [[b]]기술[[/b]]의 [[b]]상태[[/b]]란 의미로 [[r]]최신식의, 최첨단의[[/r]]\n② [[b]]art[[/b]](예술)의 [[b]]state[[/b]](상태), 즉 예술의 경지에 오를 정도로 [[r]]최신식의, 최첨단의[[/r]] 기술",
+    "toeicExpr": [
+     "state-of-the-art technology 최첨단 기술  state-of-the-art equipment 최신 장비"
+    ]
+   },
+   {
+    "word": "quote",
+    "pron": "[kwout]",
+    "pos": "n./v.",
+    "meaning": "1. n. 견적  v. 견적을 내다, 가격을 제시하다  2. v. 인용하다, 예로 들다",
+    "tip": "연예인이 입고 나온 [[b]]코트[[/b]]를 [[r]]예로 들면서[[/r]], 똑같이 제작하는 데 얼마나 드는지 양복점 주인에게 [[r]]견적, 견적을 내다[[/r]]",
+    "derivatives": [
+     {
+      "word": "quotation",
+      "meaning": "견적서, 인용"
+     }
+    ],
+    "toeicExpr": [
+     "get/request a quote 견적을 받다/요청하다",
+     "give/provide/offer a quote 견적을 제시하다  price quote 가격 견적",
+     "quote from a newspaper/book/article 신문에서/책에서/기사에서 인용하다",
+     "send/request/receive a quotation 견적서를 보내다/요청하다/받다",
+     "formal/written/detailed/price quotation 공식/서면/상세/가격 견적서",
+     "quotation from a report 보고서에서의 인용"
+    ],
+    "examVar": [
+     {
+      "en": "The contractor provided a detailed quote for the repair work.",
+      "ko": "그 시공업자는 수리 작업에 대한 상세한 견적을 제공했다."
+     },
+     {
+      "en": "quote(견적)와 quotation(견적서)을 구분하는 문제가 출제되었다.",
+      "opt": "A formal _______ will be emailed after reviewing your request. → quotation (O)  quote (X)",
+      "ko": "요청 내용을 검토한 후 공식 견적서가 이메일로 발송될 것입니다."
+     }
+    ]
+   },
+   {
+    "word": "capital",
+    "pron": "[kǽpitl]",
+    "pos": "n./a.",
+    "meaning": "1. n. 자본  a. 자본의  2. a. 중요한, 주요한",
+    "tip": "현대[[b]]캐피털[[/b]], 롯데[[b]]캐피털[[/b]]은 [[r]]자본[[/r]]을 빌려주는 회사. 그리고 [[r]]자본[[/r]]은 회사에서 정말 [[r]]중요한, 주요한[[/r]] 요소",
+    "toeicExpr": [
+     "raise/secure capital 자본(자금)을 조달하다/확보하다",
+     "capital investment/expenditure/market 자본 투자/지출/시장",
+     "capital issue 중요한 사안"
+    ]
+   },
+   {
+    "word": "per",
+    "pron": "[pəːr]",
+    "pos": "prep.",
+    "meaning": "prep. 1. ~당, ~마다  2. ~에 따라, ~에 의거하여",
+    "tip": "한 사람[[r]]당[[/r]] 일 한 양에 [[r]]따라[[/r]] 쌀을 [[b]]퍼[[/b]] 주다, 즉 [[r]]~당, ~마다[[/r]]",
+    "toeicExpr": [
+     "per person 1인당  per hour/day/week 시간/일/주 당  per unit 단위당",
+     "per the contract 계약에 따라  per company policy 회사 방침에 따라",
+     "per your request 귀하의 요청에 따라",
+     "as per ~에 따라  as per policy 방침에 따라  as per agreement 합의에 따라"
+    ],
+    "examVar": [
+     {
+      "en": "_______ company policy, refunds are not available.",
+      "opt": "(A) Per  (B) By  (C) With  (D) For",
+      "ans": "(A)",
+      "ko": "회사 방침에 따라 환불은 불가능하다.",
+      "note": "by는 수단, 방법에 쓰이기 때문에 적절치 못하다."
+     },
+     {
+      "en": "The parking fee is charged per hour.",
+      "ko": "주차 요금은 시간당 부과된다."
+     },
+     {
+      "en": "As per the agreement, payment will be processed within 30 days.",
+      "ko": "계약에 따라 대금은 30일 이내에 처리될 것이다."
+     }
+    ]
+   },
+   {
+    "word": "voucher",
+    "pron": "[váutʃər]",
+    "pos": "n.",
+    "meaning": "n. 상품권, 이용권, 쿠폰",
+    "tip": "[[r]]상품권[[/r]]을 받은 아내의 얼굴을 [[b]]봐! 웃죠?[[/b]] 내가 좋아할 거라 했잖아.",
+    "toeicExpr": [
+     "gift/discount/meal voucher 상품권/할인권/식권",
+     "redeem a voucher 바우처를 사용하다"
+    ]
+   },
+   {
+    "word": "stationary",
+    "pron": "미[stéiʃənèri] 영[stéiʃənəri]",
+    "pos": "a.",
+    "meaning": "a. 움직이지 않는, 고정시켜 놓은",
+    "tip": "달리던 기차를 [[b]]station[[/b]](역)에 [[b]]넣어리[[/b]], 그래서 [[r]]움직이지 않는, 고정시켜 놓은[[/r]]",
+    "toeicExpr": [
+     "remain stationary 정지해 있다",
+     "stand stationary 가만히 서 있다"
+    ]
+   },
+   {
+    "word": "stationery",
+    "pron": "미[stéiʃənèri] 영[stéiʃənəri]",
+    "pos": "n.",
+    "meaning": "n. 문구류, 사무용품",
+    "tip": "문구점 앞에 있는 [[b]]station[[/b]](역)에서 [[b]]내리[[/b]](내리다), [[r]]문구류[[/r]]를 사기 위해.",
+    "toeicExpr": [
+     "stationery supplies 문구류, 사무용품  stationery store 문구점"
+    ],
+    "examVar": [
+     {
+      "en": "stationary vs stationery 철자 혼동 문제로 종종 출제되었다.",
+      "opt": "Please remain _______ while the safety inspection is being conducted. → stationary (O)  stationery (X)",
+      "ko": "안전 점검이 진행되는 동안 그대로 정지해 계십시오."
+     }
+    ]
+   },
+   {
+    "word": "serve",
+    "pron": "[sə:rv]",
+    "pos": "v.",
+    "meaning": "v. 1. 제공하다, 서비스하다  2. 역할을 하다, 도움이 되다  3. 근무하다, 복무하다",
+    "tip": "[[b]]써빙[[/b]]하는 [[r]]역할[[/r]]을 하며 식당에서 [[r]]근무[[/r]]하면서 손님에게 [[r]]서비스[[/r]]하며 음식을 [[r]]제공[[/r]]하며, [[r]]도움이 되다[[/r]]",
+    "toeicExpr": [
+     "serve food/meals/drinks 음식을/식사를/음료를 제공하다",
+     "serve customers/guests 고객을/손님을 응대하다(서비스하다)",
+     "serve to부정사: ~하는 데 도움이 되다",
+     "serve to improve efficiency 효율성을 높이는 데 도움이 되다",
+     "serve to strengthen relationships 관계를 강화하는 데 도움이 되다",
+     "serve as ~로서 역할을 하다 (as: ~로서)",
+     "serve as a guide/reminder/reference 안내/상기시키는/참고 자료 역할을 하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The new safety guidelines will serve to reduce the number of workplace accidents.",
+      "ko": "새로운 안전 지침은 직장 내 사고 수를 줄이는 데 도움이 될 것이다."
+     },
+     {
+      "en": "2. Ms. Han will serve as the acting manager until a permanent replacement is appointed.",
+      "ko": "한 씨는 정규 후임자가 임명될 때까지 대리 매니저로 근무할 것이다."
+     }
+    ]
+   },
+   {
+    "word": "tentative",
+    "pron": "[téntətiv]",
+    "pos": "a.",
+    "meaning": "a. 임시의, 잠정적인",
+    "tip": "난민들을 위해 준비한 [[r]]임시의[[/r]] [[b]]텐트[[/b]]와 [[b]]TV[[/b]]",
+    "derivatives": [
+     {
+      "word": "tentatively",
+      "meaning": "임시로, 잠정적으로"
+     }
+    ],
+    "toeicExpr": [
+     "tentative schedule/date/agreement/plan 임시의(잠정적인) 일정/날짜/합의/계획",
+     "tentatively scheduled/approved/planned 잠정적으로 일정이 잡힌/승인된/계획된"
+    ]
+   },
+   {
+    "word": "bid",
+    "pron": "[bid]",
+    "pos": "n./v.",
+    "meaning": "n. 입찰가  v. 입찰하다",
+    "tip": "[[b]]비등[[/b]] 비등하게 써 낸 [[r]]입찰가[[/r]]",
+    "derivatives": [
+     {
+      "word": "bidder",
+      "meaning": "입찰자, 응찰자"
+     },
+     {
+      "word": "bidding",
+      "meaning": "입찰 과정, 입찰 절차, 가격 제시"
+     }
+    ],
+    "toeicExpr": [
+     "place/make a bid 입찰하다  submit a bid 입찰서를 제출하다",
+     "winning bid 낙찰  bid for a contract 계약에 입찰하다 (for: ~을 위해)",
+     "successful bidder 낙찰자",
+     "bidding process 입찰 절차  open bidding 공개 입찰",
+     "bidding price 입찰가  bidding war 입찰 경쟁"
+    ],
+    "examVar": [
+     {
+      "en": "The company submitted its lowest ______ to win the project.",
+      "opt": "(A) bid  (B) bidding  (C) bidder  (D) bidded",
+      "ans": "(A)",
+      "ko": "그 회사는 프로젝트를 따내기 위해 최저 입찰가를 제출했다."
+     }
+    ]
+   },
+   {
+    "word": "boost",
+    "pron": "[bu:st]",
+    "pos": "v./n.",
+    "meaning": "v. 증가시키다, 북돋우다  n. 상승, 부양책",
+    "tip": "엄청난 뉴스를 발표하여 신문 판매 [[r]]부수[[/r]]를 [[b]]two[[/b]](2)배로 [[r]]증가시키다, 북돋우다[[/r]]",
+    "toeicExpr": [
+     "boost sales/profits/productivity 매출을/수익을/생산성을 늘리다",
+     "boost confidence 자신감을 북돋우다",
+     "give a boost to the economy 경제에 활력을 불어넣다"
+    ]
+   },
+   {
+    "word": "via",
+    "pron": "[váiə, ví:ə]",
+    "pos": "prep.",
+    "meaning": "prep. ~을 경유하여, ~을 통하여, ~을 이용해",
+    "tip": "[[b]]바이어[[/b]](buyer)가 직항이 없는 쿠바 나라를 미국을 [[r]]경유하여[[/r]] 가다, 미국을 [[r]]통하여(이용하여)[[/r]] 쿠바로 가다",
+    "toeicExpr": [
+     "via Hong Kong 홍콩을 경유하여",
+     "via e-mail/telephone/courier 이메일을/전화를/택배를 통해"
+    ],
+    "examVar": [
+     {
+      "en": "1. The delegation traveled to Paris via London.",
+      "ko": "대표단은 런던을 경유해 파리로 이동했다."
+     },
+     {
+      "en": "2. Please submit your application via e-mail by Friday.",
+      "ko": "금요일까지 이메일로 신청서를 제출해 주세요."
+     }
+    ]
+   },
+   {
+    "word": "hybrid",
+    "pron": "[háibrid]",
+    "pos": "n.",
+    "meaning": "n. 혼성체, 복합, 혼합",
+    "tip": "[[b]]하이브리드[[/b]]카(hybrid car)란 석유 연료와 전기 모두 쓸 수 있는 [[r]]복합, 혼합, 혼성체[[/r]]",
+    "toeicExpr": [
+     "hybrid work 하이브리드 근무 (출근과 재택의 혼합 근무)",
+     "hybrid model 복합 모델  hybrid car 하이브리드 자동차 (전기+휘발유)"
+    ]
+   },
+   {
+    "word": "progress",
+    "pron": "n. [prágres, próugres] v. [prəgrés]",
+    "pos": "n./v.",
+    "meaning": "n. 진전, 진행  v. 진전하다, 진행하다",
+    "tip": "남들이 이제 나의 골프 실력은 [[b]]프로[[/b]] 선수 같다고 [[b]]그랬수[[/b]], 즉, 아마추어에서 프로로의 [[r]]진전, 진행, 진전하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "progressive",
+      "meaning": "진보적인, 꾸준히 진행하는"
+     },
+     {
+      "word": "progressively",
+      "meaning": "점진적으로, 계속해서"
+     }
+    ],
+    "toeicExpr": [
+     "make/show progress 진전을 이루다/보이다",
+     "in progress 진행 중인 (in: 상태)",
+     "progressive company/policy/idea 진보적인 회사/정책/아이디어",
+     "rise/fall progressively 점차 상승하다/하락하다",
+     "progressively better/worse 점점 더 나아지는/나빠지는"
+    ],
+    "examVar": [
+     {
+      "en": "progress는 추상명사로 불가산 명사임을 묻는 문제가 출제되었다.",
+      "opt": "The team has made significant ______ on the project. → progress (O) / progresses (X)",
+      "ko": "그 팀은 해당 프로젝트에서 상당한 진전을 이루었다."
+     }
+    ]
+   },
+   {
+    "word": "verify",
+    "pron": "[vérifài]",
+    "pos": "v.",
+    "meaning": "v. 진실을 입증하다, 확인하다",
+    "tip": "칼로 [[b]]베리[[/b]]! [[b]]파이[[/b]]를. 그렇게 파이 속에서 파리가 나왔다는 [[r]]진실을 입증하다, 확인하다[[/r]]",
+    "toeicExpr": [
+     "verify information/data/identity/account 정보를/데이터를/신원을/계정을 확인하다",
+     "verify accuracy/authenticity 정확성을/진위를 검증하다"
+    ]
+   },
+   {
+    "word": "vendor",
+    "pron": "[véndər]",
+    "pos": "n.",
+    "meaning": "n. 판매인, 판매 회사, 공급업체",
+    "tip": "차량의 한 종류인 [[b]]밴[[/b]]을 [[b]]더[[/b]] 팔아보려고 하는 [[r]]판매인, 판매 회사[[/r]]",
+    "toeicExpr": [
+     "approved vendor 승인된 공급업체  preferred vendor 우선 거래 공급업체",
+     "vendor selection/contract 공급업체 선정/계약"
+    ]
+   },
+   {
+    "word": "stock",
+    "pron": "미[stak] 영[stɔk]",
+    "pos": "n.",
+    "meaning": "n. 1. 주식  2. 비축, 재고",
+    "tip": "(코)[[b]]스탁[[/b]]과 같은 [[r]]주식[[/r]]으로 재산을 [[r]]비축[[/r]], 비축한 [[r]]재고[[/r]]",
+    "derivatives": [
+     {
+      "word": "restock",
+      "meaning": "재입고하다, 재고를 다시 채우다"
+     }
+    ],
+    "toeicExpr": [
+     "buy/sell/own stock 주식을 사다/팔다/소유하다",
+     "stock price 주가  stock market 주식 시장",
+     "stockholder(= shareholder) 주주",
+     "in stock 재고가 있는  out of stock 품절된",
+     "stock inventory/level/shortage 재고 목록/수준/부족",
+     "restock items 상품을 재입고하다",
+     "restock shelves 진열대를 다시 채우다"
+    ],
+    "examVar": [
+     {
+      "en": "The item is currently out of stock and will be restocked next week.",
+      "ko": "그 상품은 현재 품절 상태이며 다음 주에 재입고될 예정이다."
+     }
+    ]
+   },
+   {
+    "word": "compulsory",
+    "pron": "[kəmpʌ́lsəri]",
+    "pos": "a.",
+    "meaning": "a. 강제적인, 의무적인",
+    "tip": "지하철에서 험상궂은 인상으로 껌 좀 사달라는 [[b]]껌 팔[[/b]](파는) [[b]]소리[[/b]]는 [[r]]강제적인[[/r]] 판매 행위",
+    "toeicExpr": [
+     "compulsory training/attendance/course 의무 교육/참석/과목"
+    ]
+   },
+   {
+    "word": "stipulate",
+    "pron": "[stípjulèit]",
+    "pos": "v.",
+    "meaning": "v. (계약서에) 명시하다, 규정하다",
+    "tip": "회사 규정을 벽에 [[b]]스티[[/b]]커처럼 붙도록 [[b]]풀[[/b]]을 발라 '[[b]]에잇![[/b]]' 하고 탁 붙여 [[r]]명시하다, 규정하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "stipulation",
+      "meaning": "(계약 · 규정의) 조항, 조건"
+     }
+    ],
+    "toeicExpr": [
+     "stipulate that 주어 + (should) + 동사원형: ~해야 한다고 명시하다, 규정하다 (should: ~해야 한다)",
+     "stipulate that payment be made in advance 지불이 선불로 이루어져야 한다고 명시하다",
+     "stipulate that employees wear identification badges 직원들이 신분증 배지를 착용해야 한다고 규정하다",
+     "stipulate in the contract 계약서에 명시하다",
+     "stipulate terms 조건을 규정하다",
+     "stipulate requirements 요건을 명시하다",
+     "contract stipulation 계약 조항",
+     "under the stipulation 조항에 따라",
+     "follow the stipulation 조항을 따르다"
+    ],
+    "examVar": [
+     {
+      "en": "The lease stipulates that the tenant ___ written notice prior to termination.",
+      "opt": "(A) provides  (B) provided  (C) provide  (D) providing",
+      "ans": "(C)",
+      "ko": "임대 계약은 해지 전에 세입자가 서면 통지를 제공해야 한다고 규정한다."
+     }
+    ]
+   },
+   {
+    "word": "alleviate",
+    "pron": "[əlí:vièit]",
+    "pos": "v.",
+    "meaning": "v. 완화시키다",
+    "tip": "마법사가 \"[[b]]올리[[/b]](오너라)! [[b]]비가 에잇![[/b]]\" 하자 비가 와서 가뭄을 [[r]]완화시키다[[/r]]",
+    "derivatives": [
+     {
+      "word": "alleviation",
+      "meaning": "완화, 경감"
+     }
+    ],
+    "toeicExpr": [
+     "alleviate traffic congestion 교통 혼잡을 완화하다",
+     "alleviate environmental problems 환경 문제를 완화하다",
+     "alleviate financial pressure 재정적 부담을 줄이다",
+     "alleviate delays 지연을 완화하다  alleviate workload 업무 부담을 덜다",
+     "alleviation of customer complaints 고객 불만 완화"
+    ]
+   },
+   {
+    "word": "discrepancy",
+    "pron": "[diskrépənsi]",
+    "pos": "n.",
+    "meaning": "불일치, 차이",
+    "tip": "자신과 의견이 [[r]]불일치[[/r]]한다고 \"[[b]]this[[/b]](이게) 자꾸 [[b]]그래봐, 씨![[/b]] 흥!\" 하며 돌아서다",
+    "toeicExpr": [
+     "a discrepancy in the records 기록상의 불일치",
+     "a discrepancy between figures 수치 간 차이",
+     "accounting/inventory discrepancy 회계/재고 불일치"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 34,
+  "title": "",
+  "words": [
+   {
+    "word": "customize",
+    "pron": "[kʌ́stəmàiz]",
+    "pos": "v.",
+    "meaning": "사용자의 요구에 맞추다, 주문제작하다",
+    "tip": "[[b]]customer[[/b]](고객) + [[b]]ize[[/b]](동·어)] 고객에게 맞추다, [[r]]주문제작하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "customized",
+      "meaning": "개개인의 요구에 맞춘"
+     }
+    ],
+    "toeicExpr": [
+     "customize a product 제품을 맞춤 제작하다",
+     "customize a service 서비스를 고객에 맞추다",
+     "customize software 소프트웨어를 맞춤 설정하다",
+     "customized solution/order 맞춤형 해결책/주문"
+    ],
+    "examVar": [
+     {
+      "en": "The system was customized to meet the company's needs.",
+      "ko": "그 시스템은 회사의 요구를 충족하도록 맞춤화되었다."
+     }
+    ]
+   },
+   {
+    "word": "thrive",
+    "pron": "[θraiv]",
+    "pos": "v.",
+    "meaning": "번영하다",
+    "tip": "\"[[b]]쓰라이!(써라!)[[/b]] [[r]]부(富)[[/r]]\" 하고 돈을 뿌릴 정도로 [[r]]번영하다[[/r]]",
+    "toeicExpr": [
+     "thrive in a competitive market 경쟁적인 시장에서 번영하다",
+     "thrive on innovation 혁신을 바탕으로 성장하다",
+     "thrive despite challenges 어려움에도 불구하고 번영하다"
+    ]
+   },
+   {
+    "word": "fill out/fill in/complete the form",
+    "meaning": "(문서 등을) 기입하다",
+    "tip": "① [[[b]]fill[[/b]](채우다) + [[b]]out[[/b]](완전히)/[[b]]in[[/b]](안에) + [[b]]the form[[/b]](양식)] 완전히 양식의 빈 공간 안을 채우다, 즉 [[r]]기입하다[[/r]]\n② [[[b]]complete[[/b]](완성하다) + [[b]]the form[[/b]](양식)] 양식을 완성하다, 즉 [[r]]기입하다[[/r]]",
+    "toeicExpr": [
+     "fill out the form completely 양식을 빠짐없이 작성하다",
+     "fill in the form online 온라인으로 양식을 작성하다",
+     "complete the form as instructed 안내된 대로 양식을 작성하다",
+     "fill in the application 지원서(신청서)를 작성하다",
+     "complete the registration form 등록 양식을 완성하다"
+    ],
+    "examVar": [
+     {
+      "en": "Please fill in the application and return it by Friday.",
+      "ko": "지원서를 작성하여 금요일까지 제출해 주십시오."
+     }
+    ]
+   },
+   {
+    "word": "sophisticated",
+    "pron": "[səfístəkèitid]",
+    "pos": "a.",
+    "meaning": "a. 1. 세련된, 교양 있는  2. 정교한, 고도화된",
+    "tip": "오줌이란 말 대신 \"[[b]]소피[[/b]]보고 오겠습니다.\"라고 [[r]]세련된, 교양 있는[[/r]] 말을 쓸 정도로 언어 선택에 있어 [[r]]정교한, 고도화된[[/r]]",
+    "toeicExpr": [
+     "sophisticated design/taste 세련된 디자인/취향",
+     "sophisticated technology/equipment 정교한 기술/장비",
+     "highly sophisticated computer systems 매우 고도화된 컴퓨터 시스템"
+    ]
+   },
+   {
+    "word": "contestant",
+    "pron": "[kəntéstənt]",
+    "pos": "n.",
+    "meaning": "n. 경쟁자, 참가자",
+    "tip": "[[b]]contest[[/b]](경쟁하다) + [[b]]ant[[/b]](~사람, ~것)] [[r]]경쟁자, 참가자[[/r]]",
+    "toeicExpr": [
+     "eligible contestants 자격을 갖춘 참가자들",
+     "all registered contestants 등록된 모든 참가자들"
+    ]
+   },
+   {
+    "word": "hospitality",
+    "pron": "미[hὰspitǽləti] 영[hɔ̀spitǽləti]",
+    "pos": "n.",
+    "meaning": "n. 환대, 접객",
+    "tip": "같은 병원들이 몰려 있어 경쟁이 심한 [[b]]hospital[[/b]](병원)에서 손님들을 [[r]]환대[[/r]]하며 [[r]]접객[[/r]]",
+    "toeicExpr": [
+     "hospitality services 접객 서비스",
+     "hospitality industry 접객 산업(호텔 · 관광업)",
+     "warm/sincere/generous hospitality 따뜻한/진심 어린/후한 환대(대접)",
+     "hospitality extended to ~에게 베풀어진 환대, 은혜 (동사 extend와 어울려 사용된다. 여기서 extend는 '손을 뻗치다'란 의미로 '~에게 손이 뻗쳐진 환대'란 의미)"
+    ],
+    "examVar": [
+     {
+      "en": "The CEO expressed appreciation for the hospitality extended to visiting executives.",
+      "ko": "CEO는 방문 임원들에게 베풀어진 환대에 대해 감사를 표했다."
+     }
+    ]
+   },
+   {
+    "word": "alongside",
+    "pron": "[əlɔ́ːŋsáid]",
+    "pos": "prep./ad.",
+    "meaning": "prep./ad. ~와 함께, ~ 옆에, ~와 나란히",
+    "tip": "[[b]]along[[/b]](함께) + [[b]]side[[/b]](옆)] [[r]]~와 함께, ~ 옆에, ~와 나란히[[/r]]",
+    "toeicExpr": [
+     "work alongside 함께 일하다  stand alongside 나란히 서다",
+     "alongside competitors 경쟁사와 나란히"
+    ]
+   },
+   {
+    "word": "file",
+    "pron": "[fail]",
+    "pos": "n./v.",
+    "meaning": "1. n. 서류, 문서, 파일, 컴퓨터 파일\n2. v. (서류를 정식으로) 제출하다, 접수하다, 제기하다",
+    "tip": "[[r]]문서[[/r]] [[r]]파일[[/r]]을 첨부하여 [[r]]제출하다, 접수하다[[/r]]",
+    "toeicExpr": [
+     "personnel file 인사 기록 문서  client file 고객 파일",
+     "confidential file 기밀 문서",
+     "attach/open/save/transfer a file 파일을 첨부하다/열다/저장하다/전송하다",
+     "file a complaint 불만을 접수하다(제기하다)",
+     "file a claim (보험 · 환급 · 보상 등을) 공식적으로 청구하다",
+     "file an application 지원서를 제출하다(접수하다)  file a report 보고서를 제출하다"
+    ],
+    "examVar": [
+     {
+      "en": "Customers must file a claim within 30 days of purchase.",
+      "ko": "고객은 구매 후 30일 이내에 청구서를 제출해야 한다."
+     }
+    ]
+   },
+   {
+    "word": "footwear",
+    "pron": "[fútwὲər]",
+    "pos": "n.",
+    "meaning": "n. (신발 · 양말 등과 같이) 신는 것",
+    "tip": "[[b]]foot[[/b]](발) + [[b]]wear[[/b]](의류)] 발에 [[r]]신는 것[[/r]]",
+    "toeicExpr": [
+     "sports/outdoor/safety footwear 스포츠용/야외용/안전용 신발류"
+    ]
+   },
+   {
+    "word": "up-to-date",
+    "pron": "[ʌ́ptuːdéit]",
+    "pos": "a.",
+    "meaning": "a. 최신의",
+    "tip": "현재 날짜([[b]]date[[/b]]) 쪽을 향한([[b]]to[[/b]]) 가장 위에([[b]]up[[/b]]) 있는, 즉 [[r]]최신의[[/r]]",
+    "toeicExpr": [
+     "up-to-date information/data/equipment/technology 최신 정보/자료/장비/기술",
+     "keep A up to date A를 최신 상태로 유지하다 (→ up-to-date (X): 하이픈은 명사를 수식할 때만 사용)",
+     "keep records up to date 기록을 최신으로 유지하다",
+     "keep information up to date 정보를 최신 상태로 유지하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company maintains _______ financial records for auditing purposes.",
+      "opt": "up-to-date (O)  up to date (X)",
+      "ko": "회사는 감사를 위해 최신 재무 기록을 유지한다.",
+      "note": "명사를 수식할 때는 하이픈을 사용하고 보어 자리나 부사로 사용될 때는 하이픈을 사용하지 않는다. long-term strategy / The plan is long term. 장기간의 전략 / 그 계획은 장기적이다. cost-effective solution / The solution is cost effective. 비용 효율적인 해결책 / 그 해결책은 비용 효율적이다."
+     }
+    ]
+   },
+   {
+    "word": "stopover",
+    "pron": "미[stɑpóuvər] 영[stɔ́póuvər]",
+    "pos": "n.",
+    "meaning": "n. 중간 기착, 잠깐 들르는 곳",
+    "tip": "[[b]]stop[[/b]](멈추다) + [[b]]over[[/b]](걸쳐서) 가는 중에 걸쳐서 [[r]]잠깐 들르는 곳[[/r]]",
+    "toeicExpr": [
+     "make a stopover 잠시 머물다   overnight stopover 1박 기착",
+     "include a stopover 기착을 포함하다"
+    ]
+   },
+   {
+    "word": "terminate",
+    "pron": "[tə́:rmənèit]",
+    "pos": "v.",
+    "meaning": "v. 종료하다, 끝내다, 중단하다",
+    "tip": "[[b]]termin[[/b]](end: '끝'을 의미하는 어근 ◎ bus terminal: 버스 종점) + [[b]]ate[[/b]] [[r]]종료하다, 끝내다, 중단하다[[/r]]",
+    "toeicExpr": [
+     "terminate a contract/service 계약을/서비스를 종료하다",
+     "terminate automatically 자동 종료되다"
+    ]
+   },
+   {
+    "word": "averse",
+    "pron": "[əvə́:rs]",
+    "pos": "a.",
+    "meaning": "a. 싫어하는, 반대하는",
+    "tip": "학생들이 [[b]]어! 벌스[[/b]]는(벌서는) 것을 [[r]]싫어하는, 반대하는[[/r]]",
+    "toeicExpr": [
+     "be averse to + 명사/동명사: ~을 꺼리다 (to: ~쪽으로)",
+     "be averse to change 변화를 꺼리다",
+     "be averse to taking risks 위험 감수하는 것을 싫어하다",
+     "be averse to working overtime 초과근무를 꺼리다"
+    ],
+    "examVar": [
+     {
+      "en": "1. averse와 adverse를 구분하는 문제가 자주 출제되었다.",
+      "opt": "The executive was ______ to making drastic changes without sufficient data to support the decision. → averse(O) adverse(X)",
+      "ko": "그 임원은 결정을 뒷받침할 충분한 데이터 없이 급격한 변화를 추진하는 것을 꺼렸다."
+     },
+     {
+      "en": "2. Many investors are averse to high-risk financial products.",
+      "ko": "많은 투자자들은 고위험 금융 상품을 꺼린다."
+     }
+    ]
+   },
+   {
+    "word": "point out",
+    "meaning": "~을 지적하다, 짚어주다",
+    "tip": "[[b]]point[[/b]](가리키다) + [[b]]out[[/b]](밖으로)] 가리키어 밖으로 드러나게 하다, 즉 [[r]]~을 지적하다, 짚어주다[[/r]]",
+    "toeicExpr": [
+     "point out a problem 문제를 지적하다",
+     "point out an error 오류를 지적하다",
+     "point out a mistake 실수를 짚어 주다",
+     "point out the fact that ~ ~라는 사실을 지적하다"
+    ],
+    "examVar": [
+     {
+      "en": "point out과 point at을 구분하는 문제가 자주 출제되었다.\n* point out은 '(문제 · 오류 · 사실)을 지적하다'라는 의미\n* point at은 '(손 · 도구로) 가리키다'란 의미로 물리적 방향 · 대상을 가리키는 것을 뜻한다\nDuring the meeting, the supervisor pointed ______ several errors in the financial report.",
+      "opt": "(A) at   (B) to   (C) out   (D) toward",
+      "ans": "(C)",
+      "ko": "회의 중에 상사는 재무 보고서에 있는 여러 오류를 지적했다."
+     }
+    ]
+   },
+   {
+    "word": "breakdown",
+    "pron": "[bréikdaun]",
+    "pos": "n.",
+    "meaning": "n. 1. 고장, 작동 중단  2. 세부 내역, 분석표",
+    "tip": "① 컴퓨터가 [[b]]break[[/b]](깨져서) [[b]]down[[/b]](아래로) 떨어져 [[r]]고장, 작동 중단[[/r]]\n② 하나로 뭉친 것을 [[b]]break[[/b]](깨서) [[b]]down[[/b]](아래로) 나눠 놓은 결과, 즉 [[r]]세부 내역, 분석표[[/r]]",
+    "toeicExpr": [
+     "machine/equipment/system breakdown 기계/장비/시스템 고장",
+     "cost/expense/budget breakdown 비용/지출/예산 내역(분석표)"
+    ],
+    "examVar": [
+     {
+      "en": "1. Production was delayed due to an unexpected equipment breakdown.",
+      "ko": "예상치 못한 장비 고장으로 인해 생산이 지연되었다."
+     },
+     {
+      "en": "2. Please provide a detailed breakdown of the project expenses.",
+      "ko": "프로젝트 비용의 상세 내역을 제공해 주십시오."
+     }
+    ]
+   },
+   {
+    "word": "succinct",
+    "pron": "[səksíŋkt]",
+    "pos": "a.",
+    "meaning": "a. 간결한, 명료한",
+    "tip": "[[b]]쑥! 씽크[[/b]]대에서 물이 빠지고 거르는 통에 남은 건더기가 [[r]]간결한, 명료한[[/r]]",
+    "toeicExpr": [
+     "succinct  explanation/summary/report 간결한 설명/요약/보고서"
+    ],
+    "examVar": [
+     {
+      "en": "During the presentation, the speaker kept his answers succinct so that the meeting could finish on time.",
+      "ko": "발표 동안 그 연사는 회의가 제시간에 끝날 수 있도록 답변을 간결하게 유지했다."
+     }
+    ]
+   },
+   {
+    "word": "assortment",
+    "pron": "[əsɔ́:rtmənt]",
+    "pos": "n.",
+    "meaning": "n. 구색, 구비",
+    "tip": "\"이 그릇 가게에 [[b]]어, 솥도 많다.[[/b]]\" 즉, 여러 [[r]]구색[[/r]]을 다 갖춘",
+    "derivatives": [
+     {
+      "word": "assorted",
+      "meaning": "다양한"
+     }
+    ],
+    "toeicExpr": [
+     "a wide assortment of products 다양한 제품 구색",
+     "an extensive assortment 폭넓은 구성",
+     "a large assortment of items 많은 종류의 상품",
+     "assorted colors/products/flavors 다양한 색상/제품/맛"
+    ]
+   },
+   {
+    "word": "company",
+    "pron": "[kʌ́mpəni]",
+    "pos": "n.",
+    "meaning": "1. 회사  2. 일행, 동료  3. 함께 있음",
+    "tip": "[[b]]company[[/b]](회사)에서 함께 일하는 [[r]]동료[[/r]]들과 매일 [[r]]함께 있음[[/r]]",
+    "toeicExpr": [
+     "a global/trading/construction company 글로벌/무역/건설 회사",
+     "in the company of A A와 함께, A를 동반하여 (in: ~상태로)",
+     "keep company with A A와 어울리다, 함께 시간을 보내다",
+     "enjoy someone's company ~와 함께 있는 것을 즐기다"
+    ],
+    "examVar": [
+     {
+      "en": "He rarely dines alone and usually keeps company with coworkers.",
+      "ko": "그는 혼자 식사하는 일이 거의 없고 보통 동료들과 함께 시간을 보낸다."
+     }
+    ]
+   },
+   {
+    "word": "marine",
+    "pron": "[mərí:n]",
+    "pos": "a. 바다의, 해양의  n. 해병대",
+    "meaning": "a. 바다의, 해양의  n. 해병대",
+    "tip": "스노쿨링을 하느라 다들 [[b]]머린[[/b]] 물속에 박고 있는 [[r]]바다의, 해양의[[/r]] 풍경",
+    "toeicExpr": [
+     "marine life 해양 생물  marine products 해산물, 수산물",
+     "marine transportation 해상 운송  marine insurance 해상 보험"
+    ]
+   },
+   {
+    "word": "entertain",
+    "pron": "[èntərtéin]",
+    "pos": "v.",
+    "meaning": "v. 즐겁게 해 주다, 대접하다, 접대하다",
+    "tip": "놀이동산으로 [[b]]enter[[/b]](들어가) 아이를 회전목마에 [[b]]태인[[/b]](태워진), 즉 [[r]]즐겁게 해 주다[[/r]], 아이를 [[r]]대접하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "entertainer",
+      "meaning": "연예인"
+     },
+     {
+      "word": "entertainment",
+      "meaning": "오락, 접대"
+     },
+     {
+      "word": "entertaining",
+      "meaning": "재미있는, 즐겁게 해 주는, 접대하는"
+     }
+    ],
+    "toeicExpr": [
+     "entertain guests/clients 손님을/고객을 접대하다(즐겁게 해 주다)",
+     "expenses related to entertaining guests 손님 접대 관련 비용",
+     "entertainment facilities 오락 시설  business entertainment 업무 접대",
+     "client entertainment 고객 접대  entertainment expenses 접대비",
+     "entertaining movie/performance 재미있는 영화/공연"
+    ],
+    "examVar": [
+     {
+      "en": "Expenses related to entertaining clients must be approved in advance.",
+      "ko": "고객을 접대하는 것과 관련된 비용은 사전에 승인되어야 한다."
+     }
+    ]
+   },
+   {
+    "word": "dine",
+    "pron": "[dain]",
+    "pos": "v.",
+    "meaning": "v. 식사하다",
+    "tip": "① 밖에서 일하던 일꾼들에게 \"[[b]]다 in[[/b]](안으로) 들어와 식사하세요~\" 즉, [[r]]식사하다[[/r]]  ② [[b]]dinner[[/b]](저녁식사)의 파생어",
+    "toeicExpr": [
+     "dine out 외식하다",
+     "dine at a restaurant 식당에서 식사하다"
+    ]
+   },
+   {
+    "word": "cellular",
+    "pron": "[séljulər]",
+    "pos": "a.",
+    "meaning": "a. 무선전화의, 휴대전화의 (= cell)",
+    "tip": "번호를 [[b]]셀[[/b]](세계) [[b]]눌러[[/b]] 전화를 거는 [[r]]무선전화의[[/r]]",
+    "toeicExpr": [
+     "cellular phone 이동전화  cellular service 이동통신 서비스",
+     "cellular network 이동통신망",
+     "cell phone 휴대전화  cell phone number 휴대전화 번호"
+    ]
+   },
+   {
+    "word": "conscious",
+    "pron": "미[kɑ́nʃəs] 영[kɔ́nʃəs]",
+    "pos": "a.",
+    "meaning": "a. 의식이 있는, 의식하고 있는, 인식하고 있는",
+    "tip": "의식이 없던 환자가 [[b]]큰 숨을 쉬었수[[/b]], 즉 [[r]]의식이 있는, 의식하고 있는[[/r]]",
+    "derivatives": [
+     {
+      "word": "consciously",
+      "meaning": "의식하여, 의도적으로"
+     }
+    ],
+    "toeicExpr": [
+     "be conscious of ~을 의식하다, 인식하다",
+     "be conscious of costs/safety/deadlines 비용을/안전을/마감일을 의식하다(인식하다)",
+     "health-conscious 건강을 의식하는  style-conscious 유행을 의식하는",
+     "consciously avoid conflicts with clients 고객과의 갈등을 의도적으로 피하다",
+     "consciously decide to reduce operating costs 운영 비용을 줄이기로 의도적으로 결정하다"
+    ],
+    "examVar": [
+     {
+      "en": "Employees should be conscious of company policies at all times.",
+      "ko": "직원들은 항상 회사 규정을 인식하고 있어야 한다."
+     }
+    ]
+   },
+   {
+    "word": "conscience",
+    "pron": "미[kɑ́nʃəns] 영[kɔ́nʃəns]",
+    "pos": "n.",
+    "meaning": "n. 양심",
+    "tip": "출발 [[b]]칸을[[/b]](출발선을) 밟고 출발했다고 솔직히 밝히는 육상 [[b]]선수[[/b]]의 [[r]]양심[[/r]]",
+    "derivatives": [
+     {
+      "word": "conscientious",
+      "meaning": "양심적인, 성실한"
+     }
+    ],
+    "toeicExpr": [
+     "act with conscience 양심적으로 행동하다",
+     "conscientious employee/attitude 성실한 직원/태도",
+     "conscientious worker 양심적인(성실한) 근로자"
+    ],
+    "examVar": [
+     {
+      "note": "conscientious와 conscious를 구분하는 문제가 자주 출제되었다.",
+      "en": "The manager praised the intern for being a highly _______ worker who always paid attention to detail.",
+      "opt": "conscientious (O)  conscious (X)",
+      "ko": "매니저는 세부 사항에 항상 주의를 기울이는 매우 성실한 인턴을 칭찬했다."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "day": 35,
+  "title": "",
+  "words": [
+   {
+    "word": "breach",
+    "pron": "[bri:tʃ]",
+    "pos": "n./v.",
+    "meaning": "n. (합의·약속 등의) 위반, 침해 v. 위반하다",
+    "tip": "합의나 약속과 [[b]]불일치[[/b]]하다, 즉 합의를 [[r]]위반[[/r]], [[r]]위반하다[[/r]]",
+    "toeicExpr": [
+     "breach of contract/duty/trust 계약/의무/신뢰 위반",
+     "data breach 정보 유출",
+     "breach regulations/an agreement 규정을/합의를 위반하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company was fined for a breach of environmental regulations.",
+      "ko": "그 회사는 환경 규정 위반으로 벌금을 부과받았다."
+     }
+    ]
+   },
+   {
+    "word": "sweeping",
+    "pron": "[swí:piŋ]",
+    "pos": "a.",
+    "meaning": "a. 광범위한, 전면적인, 압도적인",
+    "tip": "[[b]]수위[[/b]] 아저씨가 [[b]]핑그[[/b]]르 돌면서 순찰하는 범위가 동서남북 [[r]]광범위한, 전면적인[[/r]]",
+    "toeicExpr": [
+     "sweeping changes/reforms/measures 전면적인 변화/개혁/조치",
+     "sweeping impact 광범위한 영향  sweeping victory 압도적 승리"
+    ]
+   },
+   {
+    "word": "organic",
+    "pron": "[ɔ:rgǽnik]",
+    "pos": "a.",
+    "meaning": "a. 유기농의, 화학비료를 쓰지 않은",
+    "tip": "화학비료 대신 [[b]]올갱이[[/b]](다슬기)를 논에 키워 해충을 잡아먹게 하는 [[r]]유기농의, 화학비료를 쓰지 않은[[/r]]",
+    "toeicExpr": [
+     "organic food/vegetable 유기농 식품/채소",
+     "organic farming 유기농 농업"
+    ]
+   },
+   {
+    "word": "burden",
+    "pron": "[bə́:rdn]",
+    "pos": "n./v.",
+    "meaning": "n. 무거운 짐, 부담 v. ~에게 부담을 지우다",
+    "tip": "항아리에 물을 [[b]]뷔[[/b]]서 [[b]]든[[/b]](들고 있는) [[r]]무거운 짐, 부담[[/r]]",
+    "derivatives": [
+     {
+      "word": "burdensome",
+      "meaning": "부담되는, 번거로운"
+     }
+    ],
+    "toeicExpr": [
+     "financial/cost/tax burden 재정적/비용/세금 부담",
+     "burden A with B A에게 B라는 부담을 지우다 (with: ~을 갖게 하는)",
+     "be burdened with A A라는 부담을 지고 있다",
+     "burden customers with fees 고객에게 수수료 부담을 지우다",
+     "be burdened with costs/responsibility/debt 비용/책임/부채 부담을 지고 있다",
+     "burdensome taxes/procedures/requirements 부담되는 세금/절차/요구 사항"
+    ],
+    "examVar": [
+     {
+      "en": "The team was burdened with tight deadlines.",
+      "ko": "그 팀은 촉박한 마감 기한 부담을 떠안고 있었다."
+     }
+    ]
+   },
+   {
+    "word": "grateful",
+    "pron": "[gréitfəl]",
+    "pos": "a.",
+    "meaning": "a. 감사하는, 고마워하는",
+    "tip": "★ [[b]]great[[/b]](훌륭한) 장난감으로 [[b]]full[[/b]](가득한) 생일 선물에 [[r]]감사하는[[/r]]",
+    "derivatives": [
+     {
+      "word": "gratitude",
+      "meaning": "감사"
+     }
+    ],
+    "toeicExpr": [
+     "feel grateful 감사하게 여기다",
+     "deeply grateful 깊이 감사하는",
+     "express/show gratitude ~에게 감사를 표하다",
+     "heartfelt gratitude 진심 어린 감사"
+    ]
+   },
+   {
+    "word": "gratify",
+    "pron": "[grǽtəfài]",
+    "pos": "v.",
+    "meaning": "v. 만족시키다, 기쁘게 하다",
+    "tip": "★ \"[[b]]그래! 또 파이[[/b]] 만들어줄게\" 하고 아이들을 [[r]]만족시키다, 기쁘게 하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "gratified",
+      "meaning": "만족한, 기쁜"
+     }
+    ],
+    "toeicExpr": [
+     "gratify customers 고객을 만족시키다",
+     "gratify clients' expectations 고객의 기대를 충족시키다",
+     "be gratified to announce A A를 발표하게 되어 기쁘다",
+     "be gratified to inform you that ~ ~을 알려드리게 되어 기쁘다",
+     "be gratified to learn that ~ ~이라는 사실을 알게 되어 기쁘다",
+     "be gratified with the progress of the project 프로젝트의 진전에 만족하다"
+    ]
+   },
+   {
+    "word": "second-hand",
+    "pron": "[sékəndhæ̀nd]",
+    "pos": "a./ad.",
+    "meaning": "1. a. 중고의 ad. 중고로  2. a. 간접적인",
+    "tip": "★ ① 첫 번째 사람을 거쳐 다른 사람이 [[b]]second[[/b]](두 번째) [[b]]hand[[/b]](손)에 얻어진, 즉 [[r]]중고의[[/r]]\n② [[b]]second[[/b]](두 번째) [[b]]hand[[/b]](손)을 거쳐 가는, 즉 [[r]]간접적인[[/r]]",
+    "derivatives": [
+     {
+      "word": "first-hand",
+      "meaning": "직접적인; 직접적으로"
+     }
+    ],
+    "toeicExpr": [
+     "second-hand car/clothes 중고차/중고 옷 (명사 수식에는 하이픈 사용)",
+     "buy/sell second hand 중고로 사다/팔다 (보어나, 부사로 쓰일 경우 하이픈 미사용)",
+     "second-hand information 간접 정보  second-hand report 전해 들은 보고",
+     "first-hand experience 직접 경험  first-hand information 직접 얻은 정보",
+     "learn/observe first hand 직접 배우다/관찰하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company specializes in selling _______ office furniture.",
+      "opt": "second-hand (O)  second hand (X)",
+      "ko": "그 회사는 중고 사무용 가구 판매를 전문으로 한다."
+     }
+    ]
+   },
+   {
+    "word": "fatal",
+    "pron": "[féitl]",
+    "pos": "a.",
+    "meaning": "a. 치명적인",
+    "tip": "★ 사람을 [[b]]패, 이틀[[/b]] 동안이나, 즉 [[r]]치명적인[[/r]]",
+    "toeicExpr": [
+     "fatal error/flaw/mistake 치명적인 오류/결함/실수",
+     "prove fatal 치명적임이 드러나다"
+    ]
+   },
+   {
+    "word": "reason",
+    "pron": "[ríːzn]",
+    "pos": "n./v.",
+    "meaning": "1. n. 이유  2. v. 추론하다",
+    "tip": "★ '친구가 화가 난 [[b]]reason[[/b]](이유)는 아마도…' 하고 [[r]]추론하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "reasoning",
+      "meaning": "추론"
+     }
+    ],
+    "toeicExpr": [
+     "reason that ~ ~라고 추론하다",
+     "reason from evidence 증거로부터 추론하다",
+     "reason logically 논리적으로 추론하다",
+     "logical/faulty reasoning 논리적/잘못된 추론"
+    ]
+   },
+   {
+    "word": "grievance",
+    "pron": "[gríːvəns]",
+    "pos": "n.",
+    "meaning": "n. 불평, 불만, 고충",
+    "tip": "★ \"우린 세 명인데 [[b]]그리로[[/b]](그쪽으로) [[b]]반[[/b]]이나 주면 어떡해! [[b]]쌔[[/b]]\" 하며 [[r]]불평, 불만[[/r]]",
+    "toeicExpr": [
+     "file/handle a grievance 불만을 제기하다/처리하다",
+     "employee grievance 직원 불만  grievance procedure 고충 처리 절차"
+    ],
+    "examVar": [
+     {
+      "en": "Employees are encouraged to file a grievance through the company's internal reporting system if workplace issues are not resolved.",
+      "ko": "직장 내 문제가 해결되지 않을 경우, 직원들은 회사의 내부 신고 시스템을 통해 고충을 공식적으로 제기할 것이 권장된다."
+     }
+    ]
+   },
+   {
+    "word": "must-see",
+    "pron": "[mʌ́stsìː]",
+    "pos": "n.",
+    "meaning": "n. (경치나 연예 등) 꼭 봐야 하는 것",
+    "tip": "★ [[b]]must[[/b]](~해야 하다) + [[b]]see[[/b]](보다)",
+    "toeicExpr": [
+     "must-see attraction 꼭 가봐야 할 관광 명소",
+     "must-see movie 꼭 봐야 할 영화"
+    ]
+   },
+   {
+    "word": "customary",
+    "pron": "미[kΛstəmèri] 영[kΛstəmari]",
+    "pos": "a.",
+    "meaning": "관례적인",
+    "tip": "[[b]]custom[[/b]](관습, 관례) + [[b]]ary[[/b]](형용사형 어미)",
+    "toeicExpr": [
+     "customary practice/greeting/way 관례적인 관행/인사/방식",
+     "follow the customary rules 관례적인 규칙을 따르다"
+    ]
+   },
+   {
+    "word": "increment",
+    "pron": "[ínkrəmənt]",
+    "pos": "n.",
+    "meaning": "증가, 증가분, 인상",
+    "tip": "[[b]]incre[[/b]](→ increase: 증가하다) [[r]]많다[[/r]]] 임금이 [[b]]increase[[/b]](증가하여) [[r]]많다[[/r]], 즉 [[r]]임금 인상, 증가[[/r]]",
+    "toeicExpr": [
+     "salary increment 급여 인상   annual increment 연간 증가분",
+     "profit increment 이윤 증가",
+     "a yearly increment in pay/rent 급여의/임대료의 연간 인상분"
+    ],
+    "examVar": [
+     {
+      "en": "The new contract calls for a 10 percent ______ in salary for each employee for the next two years.   increment (O)  improvement (X)",
+      "ko": "새 계약에 의하면 각각의 종업원들은 다음 2년 동안 10%의 봉급 인상을 받도록 되어 있다.",
+      "note": "increment는 월급, 생산량 등과 같은 양적인 증가를 뜻하고, improve는 품질 등을 향상시키거나 개선한다는 의미이다."
+     }
+    ]
+   },
+   {
+    "word": "suspicious",
+    "pron": "[səspíʃəs]",
+    "pos": "a.",
+    "meaning": "의심스러운",
+    "tip": "\"범인이 이곳에서 답배를 [[b]]서서 피셨수?[[/b]]\" 하며 범죄 현장의 담배꽁초가 [[r]]의심스러운[[/r]]",
+    "derivatives": [
+     {
+      "word": "suspect",
+      "meaning": "의심하다"
+     }
+    ],
+    "toeicExpr": [
+     "look suspicious 수상해 보이다",
+     "suspicious behavior 의심스러운 행동",
+     "suspect a problem 문제를 의심하다",
+     "suspect fraud 사기를 의심하다"
+    ]
+   },
+   {
+    "word": "deliberately",
+    "pron": "[dilíbərətli]",
+    "pos": "ad.",
+    "meaning": "1. 신중히  2. 고의로",
+    "tip": "주인이 배달원에게 \"[[b]]deliver[[/b]](배달)을 [[b]]너가 틀리[[/b]]게 했어. [[r]]신중히[[/r]] 배달해!\" 알고 보니 주문자가 장난하려고 [[r]]고의로[[/r]] 주소를 잘못 준 것임",
+    "derivatives": [
+     {
+      "word": "deliberate",
+      "meaning": "1. 신중한  2. 고의의, 계획적인"
+     }
+    ],
+    "toeicExpr": [
+     "speak/act/decide deliberately 신중하게 말하다/행동하다/결정하다",
+     "deliberately delay 고의로 지연시키다",
+     "deliberate decision/approach 신중한 결정/접근법",
+     "deliberate damage/violation 고의적인 손상/위반"
+    ],
+    "examVar": [
+     {
+      "en": "1. The manager deliberately delayed the announcement to avoid confusion.",
+      "ko": "그 관리자는 혼란을 피하기 위해 발표를 의도적으로 지연시켰다."
+     },
+     {
+      "en": "2. The board made a deliberate decision after reviewing all relevant data.",
+      "ko": "이사회는 모든 관련 데이터를 검토한 후 신중한 결정을 내렸다."
+     }
+    ]
+   },
+   {
+    "word": "continental breakfast",
+    "meaning": "토스트 몇 조각과 커피, 주스 정도로 간편하게 먹는 아침식사",
+    "tip": "[[b]]continental[[/b]](유럽 대륙의) [[b]]breakfast[[/b]](아침식사), 즉 유럽에서 먹는 아침식사 형태를 말함",
+    "toeicExpr": [
+     "serve a continental breakfast 유럽식 가벼운 조식을 제공하다",
+     "offer a complimentary continental breakfast 무료 유럽식 조식을 제공하다",
+     "continental breakfast is included 유럽식 조식이 포함되어 있다"
+    ]
+   },
+   {
+    "word": "scrutinize",
+    "pron": "[skrú:tinàiz]",
+    "pos": "v.",
+    "meaning": "면밀히 조사하다",
+    "tip": "구두쇠 영감 [[b]]스쿠르지[[/b]]가 구두쇠 [[b]]티[[/b]]가 [[b]]나게[[/b]] 10원 하나 손해 볼까 봐 회계장부를 [[r]]면밀히 조사하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "scrutiny",
+      "meaning": "정밀 조사"
+     }
+    ],
+    "toeicExpr": [
+     "scrutinize document/detail 문서를/세부사항을 면밀히 조사하다",
+     "close scrutiny 면밀한 조사"
+    ],
+    "examVar": [
+     {
+      "en": "He scrutinized minutely all the documents relating to the trial.",
+      "ko": "그는 그 재판에 관련된 모든 서류를 세밀히 조사했다."
+     }
+    ]
+   },
+   {
+    "word": "attain",
+    "pron": "[ətéin]",
+    "pos": "v.",
+    "meaning": "달성하다, 성취하다",
+    "tip": "[[b]]어[[/b]] 드디어 야생마에 사람이 [[b]]태인[[/b]](태워진), 즉 야생마 길들이기를 [[r]]달성하다, 성취하다[[/r]]",
+    "toeicExpr": [
+     "attain a goal 목표를 달성하다",
+     "attain success 성공을 이루다",
+     "attain proficiency 숙달에 이르다"
+    ]
+   },
+   {
+    "word": "surveillance",
+    "pron": "[sərvéiləns]",
+    "pos": "n.",
+    "meaning": "감시, 감독",
+    "tip": "회사원들을 [[b]]survey[[/b]](조사하다, 살피다) 하면서 [[r]]감시, 감독[[/r]]",
+    "toeicExpr": [
+     "under surveillance 감시하에 있는",
+     "conduct surveillance 감시를 수행하다",
+     "video/security surveillance 영상/보안 감시",
+     "24-hour surveillance 24시간 감시"
+    ]
+   },
+   {
+    "word": "plain",
+    "pron": "[plein]",
+    "pos": "a.",
+    "meaning": "1. 평범한, 쉬운  2. 명백한",
+    "tip": "이 문제는 내가 [[b]]플래잉~[[/b]] [[r]]평범한, 쉬운[[/r]], 답이 [[r]]명백한[[/r]] 문제니까.",
+    "toeicExpr": [
+     "plain language 알기 쉬운 말",
+     "make it plain(= clear) that ~ ~임을 분명히 하다",
+     "plain fact/truth/reason 명백한 사실/진실/이유"
+    ],
+    "examVar": [
+     {
+      "en": "The manager made it plain that late submissions would not be accepted.",
+      "ko": "관리자는 지각 제출이 받아들여지지 않을 것임을 분명히 했다."
+     }
+    ]
+   },
+   {
+    "word": "personality",
+    "pron": "[pə̀:rsənǽləti]",
+    "pos": "n.",
+    "meaning": "개성, 성격",
+    "tip": "[[b]]person[[/b]](사람)마다 [[b]]낼리[[/b]](내다) 자신만의 성격 [[b]]티를[[/b]], 즉 [[r]]개성, 성격[[/r]]",
+    "derivatives": [
+     {
+      "word": "personalize",
+      "meaning": "개인에게 맞추다"
+     },
+     {
+      "word": "personalized",
+      "meaning": "개인 맞춤형의, 맞춤화된"
+     }
+    ],
+    "toeicExpr": [
+     "outgoing/charming personality 외향적인/매력적인 성격",
+     "personalize a service/product 서비스를/제품을 개인 맞춤화하다",
+     "personalized service/e-mails/training 개인 맞춤형 서비스/이메일/교육"
+    ]
+   },
+   {
+    "word": "gratuity",
+    "pron": "[grətjú:əti]",
+    "pos": "n.",
+    "meaning": "팁, 봉사료",
+    "tip": "손님이 하는 모든 말에 \"[[b]]그렇추[[/b]](그렇죠)\" 하며 아부하여 [[r]]얻지[[/r]], [[r]]팁[[/r]]을.",
+    "toeicExpr": [
+     "gratuity fee 봉사료, 감사금  gratuity included 봉사료 포함",
+     "a 15% gratuity 15% 봉사료"
+    ],
+    "examVar": [
+     {
+      "en": "A 15 percent gratuity will be automatically added to all dinner bills.",
+      "ko": "모든 저녁 식사 계산서에는 15%의 봉사료가 자동으로 부과됩니다."
+     }
+    ]
+   },
+   {
+    "word": "flaw",
+    "pron": "[flɔ:]",
+    "pos": "n.",
+    "meaning": "흠, (갈라진) 금, 결함",
+    "tip": "[[b]]풀로[[/b]] 붙여야 하는 갈라진 [[r]]흠, 금, 결함[[/r]]",
+    "toeicExpr": [
+     "design/manufacturing/structural/technical flaw 설계/제조/구조적/기술적 결함"
+    ]
+   },
+   {
+    "word": "last",
+    "pron": "미[læst] 영[lɑ:st]",
+    "pos": "a./v.",
+    "meaning": "1. a. 마지막의  2. a. 지난  3. v. 지속되다, 계속되다",
+    "tip": "[[b]]last[[/b]](마지막)까지 [[r]]계속되다, 지속되다[[/r]]",
+    "derivatives": [
+     {
+      "word": "at last",
+      "meaning": "마침내, 드디어"
+     }
+    ],
+    "toeicExpr": [
+     "last chance 마지막 기회",
+     "last year 작년  last month 지난달  last week 지난주",
+     "last for + 기간: ~ 동안 지속되다 (for: ~ 동안)",
+     "last for two hours 두 시간 동안 지속되다  last for several days 며칠간 계속되다",
+     "last until + 시점: ~까지 지속되다",
+     "last until noon 정오까지 지속되다  last until Friday 금요일까지 지속되다",
+     "last until the end of the month 이달 말까지 지속되다"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 36,
+  "title": "",
+  "words": [
+   {
+    "word": "mass",
+    "pron": "[mæs]",
+    "pos": "n./a.",
+    "meaning": "1. n. 많은 양 a. 대량의  2. n. 일반 대중 a. 대중적인",
+    "tip": "① 죄수의 발목에 [[b]]맸수[[/b]], 쇠로 만든 [[r]]많은 양[[/r]]의 쇳덩어리들.  ② 인구 중에 [[b]]mass[[/b]]([[r]]많은 양[[/r]])을 차지하는 [[r]]일반 대중[[/r]]",
+    "derivatives": [
+     {
+      "word": "massive",
+      "meaning": "거대한, 막대한"
+     }
+    ],
+    "toeicExpr": [
+     "mass production/distribution/consumption 대량 생산/유통/소비",
+     "mass market/advertising/transit 대중 시장/광고/교통",
+     "massive investment 대규모 투자",
+     "massive project 대형 프로젝트",
+     "massive loss 막대한 손실"
+    ],
+    "examVar": [
+     {
+      "en": "The company plans to begin _______ production next year.",
+      "opt": "mass (O) massive (X)",
+      "ko": "그 회사는 내년에 대량 생산을 시작할 계획이다.",
+      "note": "mass production은 고정 표현. massive도 '대량의'라는 뜻이 있지만 production과는 잘 쓰이지 않고 보통은 '거대한, 육중한'의 뜻으로 사용된다."
+     }
+    ]
+   },
+   {
+    "word": "adjourn",
+    "pron": "[ədʒə́ːrn]",
+    "pos": "v.",
+    "meaning": "v. (재판·회담 등을) 휴회하다, 중단하다",
+    "tip": "[[b]]오전[[/b]] 회의를 점심시간 때문에 [[r]]휴회하다, 중단하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "adjournment",
+      "meaning": "휴회, 중단"
+     }
+    ],
+    "toeicExpr": [
+     "adjourn a meeting 회의를 휴회하다",
+     "adjourn for lunch 점심시간을 위해 휴회하다",
+     "temporary adjournment 일시적 휴회",
+     "meeting adjournment 회의 휴회"
+    ]
+   },
+   {
+    "word": "extraordinary",
+    "pron": "미[ikstrɔ́ːrdənèri] 영[ikstrɔ́ːdnəri]",
+    "pos": "a.",
+    "meaning": "a. 보통이 아닌, 보기 드문",
+    "tip": "[[b]]extra[[/b]](outside) + [[b]]ordinary[[/b]](보통의)] [[r]]보통이 아닌, 보기 드문[[/r]]",
+    "toeicExpr": [
+     "extraordinary talent 비범한 재능",
+     "extraordinary performance/achievement 뛰어난 성과/성취"
+    ]
+   },
+   {
+    "word": "merchant",
+    "pron": "[mə́ːrtʃənt]",
+    "pos": "n./a.",
+    "meaning": "n. 상인, 가맹점 a. 상인의, 상업의",
+    "tip": "옷감 천 중에서 [[b]]뭘[[/b]] 찾는 손님에게 [[b]]천 two[[/b]](2)개를 보여주는 [[r]]상인[[/r]]",
+    "toeicExpr": [
+     "wholesale merchant 도매상  retail merchant 소매상",
+     "local merchant 지역 상인  online merchant 온라인 판매업자",
+     "merchant account 가맹점 계좌  merchant services 가맹점 결제 관련 서비스",
+     "merchant discount rate 가맹점 할인 수수료"
+    ],
+    "examVar": [
+     {
+      "en": "The online _______ is responsible for shipping the products to customers.",
+      "opt": "merchant (O) merchandise (X)",
+      "ko": "그 온라인 판매업자는 고객에게 상품을 배송할 책임이 있다.",
+      "note": "merchant와 merchandise(상품)의 의미·품사 혼동 문제가 자주 출제되었다."
+     }
+    ]
+   },
+   {
+    "word": "cut down",
+    "pos": "v.",
+    "meaning": "줄이다, 삭감하다",
+    "tip": "[[b]]cut[[/b]](잘라서) 개수를 [[b]]down[[/b]](아래로) 내리다, 즉 [[r]]줄이다, 삭감하다[[/r]]",
+    "toeicExpr": [
+     "cut down production time 생산 시간을 줄이다",
+     "cut down delivery costs 배송 비용을 줄이다",
+     "cut down on ~을 줄이다 (on: 행동의(줄이는) 대상)",
+     "cut down on expenses 비용을 줄이다",
+     "cut down on energy use 에너지 사용을 줄이다"
+    ]
+   },
+   {
+    "word": "detach",
+    "pron": "[ditǽtʃ]",
+    "pos": "v.",
+    "meaning": "v. 떼어내다, 분리되다",
+    "tip": "[[b]]뒤[[/b]]를 [[b]]땠지[[/b]](떼어냈지), 즉 [[r]]떼어내다[[/r]]",
+    "toeicExpr": [
+     "detach A from B A를 B에서 분리하다 (from: ~로부터)",
+     "detach the coupon from the brochure 쿠폰을 브로셔에서 떼어내다",
+     "detach the label from the package 라벨을 포장에서 제거하다",
+     "detach from the wall 벽에서 떨어지다  detach easily 쉽게 떨어지다"
+    ]
+   },
+   {
+    "word": "observe",
+    "pron": "[əbzə́ːrv]",
+    "pos": "v.",
+    "meaning": "v. 1. 관찰하다  2. (규칙 등을) 준수하다",
+    "tip": "[[b]]어부[[/b]]가 고기를 [[b]]잡[[/b]]으려고 낚시찌의 움직임을 [[r]]관찰하다[[/r]], 북한 영해를 침범하지 않고 규칙을 [[r]]준수하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "observation",
+      "meaning": "관찰"
+     },
+     {
+      "word": "observance",
+      "meaning": "준수"
+     },
+     {
+      "word": "observant",
+      "meaning": "관찰력 있는, 세심한"
+     }
+    ],
+    "toeicExpr": [
+     "observe a process 과정을 관찰하다",
+     "be observed closely 면밀히 관찰되다",
+     "observe the rules 규칙을 준수하다",
+     "observe safety regulations 안전 수칙을 준수하다",
+     "in observance of 1. ~을 기념하여 (←~의 준수 상태에서)  2. ~을 준수하여",
+     "in observance of National Day 국경일을 기념하여",
+     "in observance of company policy 회사 정책을 준수하여",
+     "highly observant 매우 주의 깊은",
+     "an observant employee 관찰력이 뛰어난 직원"
+    ],
+    "examVar": [
+     {
+      "en": "The office will remain closed in _______ of the national holiday.",
+      "opt": "observance (O) observation (X)",
+      "ko": "해당 사무실은 국경일을 기념하여 휴무할 예정입니다.",
+      "note": "observation과 observance의 의미를 구분하는 문제가 출제되었다."
+     }
+    ]
+   },
+   {
+    "word": "avenue",
+    "pron": "[ǽvənjù:]",
+    "pos": "n.",
+    "meaning": "(도시의) 거리, 도로",
+    "tip": "[[r]](도시의) 거리[[/r]]에서 껌을 팔며 어린 [[b]]애[[/b]]가 돈을 [[b]]버뉴[[/b]]?",
+    "toeicExpr": [
+     "tree-lined avenue 가로수 길",
+     "avenue of approach 접근로",
+     "shopping avenue 쇼핑 거리"
+    ]
+   },
+   {
+    "word": "occur",
+    "pron": "[əká:r]",
+    "pos": "v.",
+    "meaning": "1. 발생하다  2. 머리에 떠오르다",
+    "tip": "[[b]]어! car[[/b]](차) 사고가 [[r]]발생하다[[/r]], 나를 치고 도망간 [[b]]어! car[[/b]](차) 번호판이 [[r]]머리에 떠오르다[[/r]]",
+    "derivatives": [
+     {
+      "word": "occurrence",
+      "meaning": "발생, (발생한) 사건"
+     }
+    ],
+    "toeicExpr": [
+     "occur frequently/unexpectedly 자주/뜻밖에 발생하다",
+     "occur at the same time 동시에 발생하다",
+     "error/delay/accident occurs 오류가/지연이/사고가 발생하다",
+     "it occurred to me that ~ ~라는 생각이 떠올랐다",
+     "unexpected occurrence 예상치 못한 사건",
+     "common/rare occurrence 흔한/드문 사건"
+    ],
+    "examVar": [
+     {
+      "note": "occur는 자동사로, 수동태로 쓰지 않음을 묻는 문제가 자주 출제되었다.",
+      "en": "Several technical issues have ______ since the system upgrade.",
+      "opt": "(A) been occurred  (B) occurred  (C) occurring  (D) to occur",
+      "ko": "시스템 업그레이드 이후 여러 기술적 문제가 발생했다.",
+      "ans": "(B)"
+     }
+    ]
+   },
+   {
+    "word": "compose",
+    "pron": "[kəmpóuz]",
+    "pos": "v.",
+    "meaning": "1. 구성하다  2. 작성하다",
+    "tip": "① [[b]]컴[[/b]]퓨터 배경 화면을 자신의 여러 [[b]]포즈[[/b]]를 취한 사진으로 [[r]]구성하다[[/r]]  ② 노트에 글을 [[b]]compose[[/b]](구성하여) [[r]]작성하다[[/r]]",
+    "toeicExpr": [
+     "compose the team 팀을 구성하다",
+     "compose a committee 위원회를 꾸리다",
+     "be composed of ~로 구성되다",
+     "Our team is composed of experienced professionals. 우리 팀은 경험 많은 전문가들로 구성되어 있다.",
+     "compose a letter/speech 편지를/연설문을 작성하다",
+     "compose an email 이메일을 작성하다"
+    ],
+    "examVar": [
+     {
+      "en": "The committee is composed of experts from various academic fields.",
+      "ko": "그 위원회는 여러 학문 분야의 전문가들로 구성되어 있다."
+     }
+    ]
+   },
+   {
+    "word": "chief",
+    "pron": "[tʃi:f]",
+    "meaning": "1. a. 주요한, 가장 중요한  2. n. 우두머리, 최고 책임자",
+    "tip": "반도체 [[b]]칩[[/b]]은 우리나라 [[r]]주요한, 가장 중요한[[/r]] 수출품으로 우리나라가 세계에서 [[r]]우두머리[[/r]]",
+    "derivatives": [
+     {
+      "word": "chiefly",
+      "meaning": "주로, 대개"
+     }
+    ],
+    "toeicExpr": [
+     "chief concern/objective 주요 관심사/목표",
+     "chief priority 최우선 과제",
+     "chief engineer 수석 엔지니어",
+     "chief executive officer (CEO) 최고경영자",
+     "chief financial officer (CFO) 최고재무책임자"
+    ]
+   },
+   {
+    "word": "oblige",
+    "pron": "[əbláidʒ]",
+    "pos": "v.",
+    "meaning": "의무를 지우다, 억지로 시키다",
+    "tip": "\"너는 이제 동생을 [[b]]업을 나이지?[[/b]]\" 하며 엄마가 동생을 업고 돌보라며 [[r]]의무를 지우다, 억지로 시키다[[/r]]",
+    "derivatives": [
+     {
+      "word": "obligation",
+      "meaning": "의무"
+     }
+    ],
+    "toeicExpr": [
+     "oblige A to부정사: A에게 ~하도록 의무를 지우다 (5형식)",
+     "oblige tenants to pay 임차인에게 지불 의무를 지우다",
+     "obligate firms to disclose information 기업에 정보 공개 의무를 지우다",
+     "be obliged to부정사: ~할 의무가 있다, ~해야만 한다",
+     "be obliged to comply 준수할 의무가 있다",
+     "be obliged to notify customers 고객에게 통보해야 한다",
+     "legally/socially obliged 법적으로/사회적으로 의무가 있는",
+     "legal obligation 법적 의무",
+     "obligation to pay 지불할 의무"
+    ],
+    "examVar": [
+     {
+      "en": "The new regulation obliges companies ______ customer data securely.",
+      "opt": "(A) stored  (B) storing  (C) to store  (D) storage",
+      "ko": "새 규정은 기업들이 고객 데이터를 안전하게 보관하도록 의무화한다.",
+      "ans": "(C)"
+     }
+    ]
+   },
+   {
+    "word": "match",
+    "pron": "[mætʃ]",
+    "pos": "v./n.",
+    "meaning": "1. v. 어울리다, 일치하다, 부합하다  2. n. 경기",
+    "tip": "타이틀 [[b]]매치[[/b]]([[r]]경기[[/r]])에서 서로 체중과 실력이 [[r]]어울리고, 일치하는[[/r]] 짝끼리 매칭시켜서 경기를 한다.",
+    "toeicExpr": [
+     "match the requirements/description 요구 사항과/설명과 일치하다(부합하다)",
+     "match the color/design/style 색상이/디자인이/스타일이 어울리다",
+     "match the criteria 기준에 부합하다",
+     "match customer expectations 고객 기대에 부합하다",
+     "match industry standards 업계 기준에 부합하다"
+    ],
+    "examVar": [
+     {
+      "en": "Applicants must possess the necessary skills to match the requirements listed in the job description.",
+      "ko": "지원자들은 직무 설명에 명시된 요구 사항에 부합하는 필요한 기술을 갖추어야 한다."
+     }
+    ]
+   },
+   {
+    "word": "gallery",
+    "pron": "[gǽləri]",
+    "pos": "n.",
+    "meaning": "n. 미술관, 전시장",
+    "tip": "[[r]]미술관[[/r]]에 [[b]]갤[[/b]](개를) [[b]]넣어리[[/b]], 고가의 미술품을 지키기 위해.",
+    "toeicExpr": [
+     "art gallery 미술관   national gallery 국립 미술관",
+     "photo gallery 사진 전시관   gallery space 전시 공간"
+    ]
+   },
+   {
+    "word": "gradual",
+    "pron": "[grǽdʒuəl]",
+    "pos": "a.",
+    "meaning": "a. 점진적인, 서서히 일어나는",
+    "tip": "동전 하나하나를 [[b]]그래[[/b]], 그렇게 하나씩 [[b]]주을[[/b]](줍다). 티끌 모아 태산이란 말처럼 점진적으로 쌓이는 동전, 즉 [[r]]점진적인, 서서히 일어나는[[/r]]",
+    "derivatives": [
+     {
+      "word": "gradually",
+      "meaning": "점진적으로, 점차적으로"
+     }
+    ],
+    "toeicExpr": [
+     "gradual change/improvement 점진적 변화/향상",
+     "gradual increase/decline 점진적 증가/감소",
+     "increase gradually 점차 증가하다",
+     "improve gradually 점차 개선되다"
+    ]
+   },
+   {
+    "word": "phenomenal",
+    "pron": "미[fináminəl] 영[finɔ́minəl]",
+    "pos": "a.",
+    "meaning": "a. 놀랄만한, 엄청난",
+    "tip": "[[b]]피[[/b]]가 [[b]]남이[[/b]](다른 사람이) [[b]]날[[/b]] [[r]]놀랄만한, 현상[[/r]](phenomenon)",
+    "derivatives": [
+     {
+      "word": "phenomenon",
+      "meaning": "(놀랄만한) 현상 (pl. phenomena)"
+     }
+    ],
+    "toeicExpr": [
+     "phenomenal growth/popularity 엄청난 성장/인기",
+     "unusual phenomenon 이례적인 현상"
+    ],
+    "examVar": [
+     {
+      "note": "단수형 phenomenon과 복수형 phenomena를 비교하여 묻는 문제가 출제되었다.",
+      "en": "The rapid shift to remote work has become a global _______.",
+      "opt": "phenomenon (O)  phenomena (X)",
+      "ko": "재택근무로의 급격한 전환은 세계적인 현상이 되었다.",
+      "ans": "앞에 부정관사 a가 있기 때문에 단수 형태가 들어가야 한다."
+     }
+    ]
+   },
+   {
+    "word": "moderately",
+    "pron": "미[mάdəratli] 영[mɔ́dəratli]",
+    "pos": "ad.",
+    "meaning": "ad. 적당히, 알맞게",
+    "tip": "내가 끓이면 짜거나 싱거운데, 역시 [[b]]mother라[[/b]](엄마라서) [[b]]틀리[[/b]]셔, 간을 [[r]]적당히, 알맞게[[/r]] 끓이셔.",
+    "derivatives": [
+     {
+      "word": "moderate",
+      "meaning": "적당한, 보통의; 완화하다, 조절하다"
+     },
+     {
+      "word": "moderation",
+      "meaning": "적당, 완화"
+     }
+    ],
+    "toeicExpr": [
+     "moderately successful 어느 정도 성공적인",
+     "moderately priced 적당히 가격이 매겨진",
+     "moderate climate 온화한 기후",
+     "moderate amount 적당한 양   moderate price 적정 가격",
+     "moderate costs 비용을 조절하다   moderate risk 위험을 완화하다",
+     "in moderation 적당히   moderation measures 완화 조치"
+    ]
+   },
+   {
+    "word": "routine",
+    "pron": "[ru:tí:n]",
+    "pos": "a./n.",
+    "meaning": "a. 일상적인, 정기적인  n. 일상",
+    "tip": "야간자율학습 시간에 [[b]]누[[/b]]가 PC방으로 [[b]]튄[[/b]] 것은 [[r]]일상적인, 틀에 박힌 일상[[/r]]",
+    "toeicExpr": [
+     "routine work 일상 업무   routine check-up 정기 검진",
+     "daily routine 일상, 하루 일과"
+    ]
+   },
+   {
+    "word": "accountable",
+    "pron": "[əkáuntəbl]",
+    "pos": "a.",
+    "meaning": "a. 책임이 있는",
+    "tip": "불장난하다가 [[b]]어! 카운터[[/b]]에 [[b]]불[[/b]] 낸 것에 대해 [[r]]책임이 있는[[/r]] 종업원",
+    "toeicExpr": [
+     "be accountable for ~에 대해 책임이 있다 (for: ~에 대해)",
+     "be accountable for results/expenses/performance 결과에/비용에/성과에 대해 책임이 있다",
+     "be accountable to B B(사람·기관)에게 (보고·설명) 책임이 있다, 책임을 지다 (to: ~에게)",
+     "be accountable to senior management 고위 경영진에게 보고 책임이 있다",
+     "be accountable to the board 이사회에 보고 책임을 지다"
+    ],
+    "examVar": [
+     {
+      "note": "1. be accountable for(~에 대해 책임이 있다) 구문을 묻는 문제가 자주 출제되었다.",
+      "en": "All team leaders are accountable for submitting their weekly reports on time.",
+      "ko": "모든 팀장들은 주간 보고서를 제때 제출하는 것에 대해 책임이 있다."
+     },
+     {
+      "en": "2. The manager is accountable to the board for quarterly results.",
+      "ko": "그 관리자는 분기 실적에 대해 이사회에 보고 책임이 있다."
+     }
+    ]
+   },
+   {
+    "word": "strict",
+    "pron": "[strikt]",
+    "pos": "a.",
+    "meaning": "a. 엄격한",
+    "tip": "[[b]]street[[/b]](거리)에 쓰레기를 못 버리게 하는 [[r]]엄격한[[/r]] 경찰",
+    "derivatives": [
+     {
+      "word": "strictly",
+      "meaning": "엄격히"
+     }
+    ],
+    "toeicExpr": [
+     "strict rules/regulations/control 엄격한 규칙/규정/관리",
+     "strictly prohibited/forbidden/limited 엄격히 금지된/금지된/제한된"
+    ]
+   },
+   {
+    "word": "mutual",
+    "pron": "[mjúːtʃuəl]",
+    "pos": "a.",
+    "meaning": "a. 서로의, 공동의",
+    "tip": "[[r]]서로의[[/r]] 얼굴을 마주 보고 [[b]]뮤직[[/b]]에 맞춰 춤을 [[b]]추얼[[/b]].",
+    "toeicExpr": [
+     "mutual agreement/benefit/respect/trust 상호 합의/이익/존중/신뢰"
+    ]
+   },
+   {
+    "word": "reside",
+    "pron": "[rizáid]",
+    "pos": "v.",
+    "meaning": "v. 살다, 거주하다",
+    "tip": "[[b]]니[[/b]]가 [[b]]자이[[/b]] 아파트에 드러누워 [[r]]살다, 거주하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "resident",
+      "meaning": "거주자, 주민 (← -ent: ~사람)"
+     },
+     {
+      "word": "residence",
+      "meaning": "거주, 거주지"
+     },
+     {
+      "word": "residential",
+      "meaning": "주거의"
+     }
+    ],
+    "toeicExpr": [
+     "reside abroad/temporarily 해외에/일시적으로 거주하다",
+     "local resident 지역 주민  permanent resident 영주권자, 상주 주민",
+     "place of residence 거주지  residence permit 거주 허가증",
+     "residential district 주택 지구  residential complex 주거 단지"
+    ],
+    "examVar": [
+     {
+      "note": "resident와 residence를 구분하는 문제가 출제되었다.",
+      "en": "The company will provide temporary ___ for employees who are relocating to the new headquarters.",
+      "opt": "residence (O)  resident (X)",
+      "ko": "회사는 새 본사로 이전하는 직원들에게 임시 거주지를 제공할 예정이다."
+     }
+    ]
+   },
+   {
+    "word": "approximate",
+    "pron": "v. [əprάːksimeit]\na. [əprάːksimit]",
+    "pos": "v./a.",
+    "meaning": "v. ~에 근접하다  a. (위치ㆍ수량이) ~에 가까운, 대략적인",
+    "tip": "물에 빠진 사람이 어프~ [[b]]어프~[[/b]] 하며 수영하여 낚시꾼이 내민 [[b]]낚시[[/b]]대 [[b]]밑[[/b]]까지 거의 [[r]]근접하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "approximately",
+      "meaning": "대략, 거의"
+     },
+     {
+      "word": "approximation",
+      "meaning": "근사치, 추정치"
+     }
+    ],
+    "toeicExpr": [
+     "approximate cost/value/time/figure 대략적인 비용/가치/시간/수치",
+     "approximately 10 percent 대략 10퍼센트",
+     "approximately 5 years 약 5년",
+     "approximation of the cost 비용의 추정치"
+    ]
+   },
+   {
+    "word": "portion",
+    "pron": "[pɔ́ːrʃən]",
+    "pos": "n.",
+    "meaning": "n. 일부, 부분",
+    "tip": "① 각각의 일꾼에게 쌀의 [[r]]일부분[[/r]]씩을 [[b]]퍼션(퍼셔)[[/b]].\n② [[[b]]port[[/b]](part를 뜻하는 어근) + [[b]]ion[[/b]](명ㆍ어)] [[r]]일부, 부분[[/r]]",
+    "toeicExpr": [
+     "a portion of ~의 일부, ~의 일부분",
+     "a portion of the report 보고서의 일부",
+     "a large portion of sales 매출의 큰 부분",
+     "a small portion of customers 일부 고객"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 37,
+  "title": "",
+  "words": [
+   {
+    "word": "lodge",
+    "pron": "미[lɑdʒ] 영[lɒdʒ]",
+    "pos": "n./v.",
+    "meaning": "1. n. 숙소  v. 묵다, 투숙하다  2. v. (불만 등을) 제기하다, 제출하다",
+    "tip": "천장이 왜 이리 [[b]]낮지?[[/b]] 너무 작은 [[r]]오두막, 숙소[[/r]]에 대해 불만을 [[r]]제기하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "lodging",
+      "meaning": "숙박, 숙소"
+     }
+    ],
+    "toeicExpr": [
+     "lodge at a hotel 호텔에 묵다  lodge near the venue 행사장 근처에 묵다",
+     "lodge a complaint 불만을 제기하다",
+     "lodge a claim (보험·보상 등의) 청구를 제기하다",
+     "lodge an application 신청서를 제출하다",
+     "lodging expenses 숙박비  provide lodging 숙소를 제공하다",
+     "arrange lodging 숙소를 마련하다  temporary lodging 임시 숙소"
+    ],
+    "examVar": [
+     {
+      "en": "Customers who experience persistent issues with the product may lodge a formal complaint through the company's website.",
+      "ko": "제품에 지속적인 문제가 있는 고객은 회사 웹사이트를 통해 공식적인 불만을 제기할 수 있다."
+     }
+    ]
+   },
+   {
+    "word": "clarity",
+    "pron": "[klǽrəti]",
+    "pos": "n.",
+    "meaning": "n. 명료, 명확",
+    "tip": "① 광고판이 멀리서도 보이게 [[b]]클[[/b]](큰) [[b]]letter[[/b]](글자)로 [[b]]튀[[/b]]는, 즉 [[r]]명료, 명확[[/r]]\n② clar는 [[b]]clear[[/b]](맑은, 분명한)를 뜻하는 어근",
+    "toeicExpr": [
+     "clarity of expression 표현의 명료성  lack of clarity 명확성 부족",
+     "clarity of instructions 지침의 명확성  clarity of the report 보고서의 명확성"
+    ]
+   },
+   {
+    "word": "bin",
+    "pron": "[bin]",
+    "pos": "n.",
+    "meaning": "n. 쓰레기통, 통, (짐 등을 위한) 칸",
+    "tip": "[[b]]빈[[/b]](비어 있는) [[r]]통[[/r]]",
+    "toeicExpr": [
+     "trash bin 쓰레기통  recycling bin 재활용 쓰레기통",
+     "storage bin 보관함, 저장 통  bin location 보관 칸 위치",
+     "bin number 칸 번호"
+    ]
+   },
+   {
+    "word": "proportion",
+    "pron": "[prəpɔ́ːrʃən]",
+    "pos": "n.",
+    "meaning": "n. 비율, 비중",
+    "tip": "하인들에게 일을 몇 [[b]]프로[[/b]] 했는가의 [[r]]비율[[/r]]에 맞게 그 몫으로 쌀을 [[b]]퍼선[[/b]](퍼주셔)",
+    "toeicExpr": [
+     "high proportion 높은 비율  proportion of sales 매출 비율",
+     "in proportion to ~에 비례하여 (in(~상태로), to(~쪽으로): ~쪽으로 비례하는 상태로)",
+     "increase in proportion to sales 매출에 비례해 증가하다",
+     "Wages rise in proportion to experience. 임금이 경력에 비례하다."
+    ],
+    "examVar": [
+     {
+      "en": "Employee bonuses are adjusted in proportion ______ individual performance.",
+      "opt": "(A) with  (B) of  (C) to  (D) for",
+      "ans": "(C)",
+      "ko": "직원 보너스는 개인 성과를 기준으로 비례하여 조정된다."
+     }
+    ]
+   },
+   {
+    "word": "accomplish",
+    "pron": "미[əkámpliʃ] 영[əkɔ́mpliʃ]",
+    "pos": "v.",
+    "meaning": "v. 완수하다, 성취하다",
+    "tip": "숙제를 [[b]]어! 컴[[/b]](퓨터)로 [[b]]풀리, she[[/b]](그녀가). 즉, 숙제를 [[r]]완수하다, 성취하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "accomplishment",
+      "meaning": "성취, 업적"
+     },
+     {
+      "word": "accomplished",
+      "meaning": "완성된, 숙달된, 뛰어난"
+     }
+    ],
+    "toeicExpr": [
+     "accomplish a goal/task 목표를/과제를 완수하다",
+     "accomplish objectives 목적을 이루다",
+     "major accomplishment 큰 성취  notable accomplishment 주목할 만한 성과",
+     "highly accomplished 매우 숙달된",
+     "an accomplished professional 유능한 전문가"
+    ]
+   },
+   {
+    "word": "eliminate",
+    "pron": "[ilímineìt]",
+    "pos": "v.",
+    "meaning": "v. 제거하다, 없애다",
+    "tip": "지우개 찌꺼기를 책상 밖 [[b]]일리[[/b]](이리로) [[b]]미내[[/b]](밀다). 그렇게 [[r]]제거하다, 없애다[[/r]]",
+    "derivatives": [
+     {
+      "word": "elimination",
+      "meaning": "제거"
+     }
+    ],
+    "toeicExpr": [
+     "eliminate errors/risks 오류를/위험을 제거하다",
+     "eliminate unnecessary steps 불필요한 단계를 제거하다",
+     "elimination process 제거 과정  elimination of defects 결함 제거",
+     "elimination of risks 위험 제거"
+    ]
+   },
+   {
+    "word": "authentic",
+    "pron": "[ɔːθéntik]",
+    "pos": "a.",
+    "meaning": "a. 진짜의, 진품인",
+    "tip": "망치로 쳐도 깨지지 않는 [[b]]오! 쎈 티[[/b]]가 나는 [[r]]진짜의, 진품인[[/r]] 다이아몬드",
+    "derivatives": [
+     {
+      "word": "authenticate",
+      "meaning": "진짜임을 입증하다"
+     },
+     {
+      "word": "authentication",
+      "meaning": "입증, 인증"
+     },
+     {
+      "word": "authenticity",
+      "meaning": "진짜임"
+     }
+    ],
+    "toeicExpr": [
+     "authentic product 진품, 정품  authentic signature 진짜 서명",
+     "authentic document 진본 문서",
+     "authenticate a document/signature 문서가/서명이 진본임을 입증하다",
+     "authenticate a user 사용자를 인증하다",
+     "authentication process 인증 절차  user authentication 사용자 인증",
+     "verify the authenticity of a document/signature 문서의/서명의 진위를 확인하다"
+    ],
+    "examVar": [
+     {
+      "en": "The museum hired experts to verify the ______ of several recently donated artifacts.",
+      "opt": "authenticity (O)  authentication (X)",
+      "ko": "박물관은 최근 기증된 몇몇 유물의 진품 여부를 확인하기 위해 전문가들을 고용했다.",
+      "note": "authentication과 authenticity를 구분하는 문제가 출제되었다."
+     }
+    ]
+   },
+   {
+    "word": "excel",
+    "pron": "[iksél]",
+    "pos": "v.",
+    "meaning": "능가하다, 뛰어나다",
+    "tip": "[[b]]excellent[[/b]](아주 훌륭한)의 동사형 [[r]]능가하다, 뛰어나다[[/r]]",
+    "derivatives": [
+     {
+      "word": "excellence",
+      "meaning": "우수성, 탁월함"
+     },
+     {
+      "word": "excellent",
+      "meaning": "훌륭한, 우수한"
+     },
+     {
+      "word": "excellently",
+      "meaning": "훌륭하게, 탁월하게"
+     }
+    ],
+    "toeicExpr": [
+     "excel in leadership/communication 리더십에서/의사소통에서 탁월하다",
+     "excels at solving complex problems 복잡한 문제를 해결하는 데 뛰어나다",
+     "show excellent performance 뛰어난 성과를 보이다",
+     "provide excellent service 우수한 서비스를 제공하다",
+     "perform excellently 훌륭히 수행하다"
+    ]
+   },
+   {
+    "word": "dispose",
+    "pron": "[dispóuz]",
+    "pos": "v.",
+    "meaning": "처리하다, 없애다",
+    "tip": "[[b]]dis[[/b]](멀리) [[r]]포주[[/r]]를 내쫓아서 성매매 업소들을 [[r]]처리하다, 없애다[[/r]]",
+    "derivatives": [
+     {
+      "word": "disposal",
+      "meaning": "처리, 처분, 폐기"
+     }
+    ],
+    "toeicExpr": [
+     "dispose of ~을 처리하다, 처분하다 (of: 제거, 박탈)",
+     "be disposed of 처리되다, 처분되다",
+     "dispose of waste 폐기물을 처리하다",
+     "properly dispose of chemicals 화학물질을 적절히 폐기하다",
+     "be disposed of safely 안전하게 처리되다",
+     "be disposed of in accordance with regulations 규정에 따라 폐기되다",
+     "waste disposal 폐기물 처리   (waste) disposal site 쓰레기 처리장",
+     "at one's disposal 마음대로 이용할 수 있는 (← ~의 처분에 따르는)"
+    ],
+    "examVar": [
+     {
+      "en": "1. Chemicals must be ______ in designated facilities to prevent environmental damage.",
+      "opt": "(A) disposed   (B) disposed of   (C) disposing   (D) disposal",
+      "ans": "(B)",
+      "ko": "환경 피해를 방지하기 위해 화학물질은 지정된 시설에서 처리되어야 한다."
+     },
+     {
+      "en": "2. All necessary resources are at our disposal to ensure the project's success.",
+      "ko": "프로젝트의 성공을 보장하기 위해 필요한 모든 자원을 우리 마음대로 사용할 수 있다."
+     }
+    ]
+   },
+   {
+    "word": "disposable",
+    "pron": "[dispóuzabl]",
+    "pos": "a.",
+    "meaning": "일회용의",
+    "tip": "① [[[b]]dispose[[/b]](처분하다) + [[b]]able[[/b]](~할 수 있는)] 한 번 쓰고 처분할 수 있는, 즉 [[r]]일회용의[[/r]] ② [[r]]일회용의[[/r]] 휴지지만 다시 사용하려고 [[b]]this[[/b]](이것)을 [[b]]four[[/b]](4)번 [[r]]접을[[/r]]",
+    "toeicExpr": [
+     "disposable cup/glove/mask 일회용 컵/장갑/마스크",
+     "disposable items 일회용품"
+    ]
+   },
+   {
+    "word": "meanwhile",
+    "pron": "[mí:nwàil]",
+    "pos": "ad.",
+    "meaning": "그러는 동안에",
+    "tip": "앞서 [[b]]mean[[/b]](의미한) [[b]]while[[/b]](동안에), 즉 [[r]]그러는 동안에[[/r]]",
+    "toeicExpr": [
+     "The new office building is still under construction. Meanwhile, employees are working at a temporary site. 새 사무실 건물은 아직 공사 중이다. 그러는 동안에, 직원들은 임시 사무실에서 근무하고 있다."
+    ],
+    "examVar": [
+     {
+      "note": "접속부사 meanwhile의 의미와 적절한 위치를 묻는 문제가 자주 출제되었다.",
+      "en": "Construction on the main entrance will continue for another week; meanwhile, visitors are asked to use the side door.",
+      "ko": "정문 공사는 앞으로 일주일 더 계속될 예정이다. 그동안 방문객들은 측문을 이용해 달라고 요청된다."
+     }
+    ]
+   },
+   {
+    "word": "meantime",
+    "pron": "[mí:ntàim]",
+    "pos": "ad. n.",
+    "meaning": "ad. 그동안에, 그 사이에  n. 그동안, 그 사이의 기간",
+    "tip": "앞서 [[b]]mean[[/b]](의미한) [[b]]time[[/b]](시간)에, 즉 [[r]]그동안, 그 사이에[[/r]]",
+    "toeicExpr": [
+     "in the meantime 그동안에, 그 사이에",
+     "The manager is on a business trip and will return Friday. In the meantime, direct all inquiries to Ms. Kim. 매니저는 출장 중이며 금요일에 돌아올 예정입니다. 그동안 모든 문의는 김 씨에게 해주십시오."
+    ]
+   },
+   {
+    "word": "gross",
+    "pron": "[grous]",
+    "pos": "ad. a.",
+    "meaning": "ad. 모두 합해  a. 총-",
+    "tip": "모두 합해 사과가 몇 개인지 묻는 문제에 [[r]]모두 합해[[/r]] [[b]]9로[[/b]] 쓴다.",
+    "toeicExpr": [
+     "gross income/profit/revenue 총 수입/이익/매출"
+    ]
+   },
+   {
+    "word": "whereas",
+    "pron": "미[hwεəræz] 영[wεəræz]",
+    "pos": "conj.",
+    "meaning": "그에 반하여, 반면에",
+    "tip": "[[b]]where[[/b]](~에서) + [[b]]as[[/b]](~할 때)] [[b]]where[[/b]]는 장소를 나타낸다, 그에 반하여, 반면에 [[b]]as[[/b]]는 시간을 나타낸다.",
+    "toeicExpr": [
+     "Some departments reported an increase in revenue, whereas others experienced a decline. 일부 부서는 매출 증가를 보고한 반면, 다른 부서는 감소를 겪었다."
+    ],
+    "examVar": [
+     {
+      "note": "접속사 whereas의 의미를 묻는 문제가 자주 출제되었다.",
+      "en": "The previous manager preferred detailed written reports, ___ the new manager encourages brief weekly updates.",
+      "opt": "(A) therefore (B) moreover (C) otherwise (D) whereas",
+      "ans": "(D)",
+      "ko": "이전 관리자는 자세한 서면 보고서를 선호한 반면, 새로운 관리자는 간단한 주간 업데이트를 장려한다."
+     }
+    ]
+   },
+   {
+    "word": "jam",
+    "pron": "[dʒæm]",
+    "pos": "v./n.",
+    "meaning": "v. (막혀서) 꼼짝 못하게 하다  n. 막힘, 교통 체증",
+    "tip": "날파리가 [[b]]잼[[/b]]에 붙어서 [[r]]꼼짝 못하다[[/r]].",
+    "toeicExpr": [
+     "jam the printer 프린터가 걸리다  paper jam (프린터의) 용지 걸림",
+     "traffic jam 교통 체증  get stuck in a traffic jam 교통 체증에 갇히다"
+    ]
+   },
+   {
+    "word": "bypass",
+    "pron": "미[báipæs] 영[báipɑːs]",
+    "pos": "n./v.",
+    "meaning": "n. 우회로  v. 우회하다",
+    "tip": "[[b]]by[[/b]](옆으로) [[b]]pass[[/b]](통과하여) [[r]]우회하다[[/r]]",
+    "toeicExpr": [
+     "take a bypass 우회로를 이용하다  traffic bypass 교통 우회로",
+     "bypass road 우회 도로"
+    ]
+   },
+   {
+    "word": "pose",
+    "pron": "[pouz]",
+    "pos": "v.",
+    "meaning": "v. 1. (질문ㆍ문제 등을) 제기하다  2. (문제ㆍ위험 등을) 초래하다, 야기하다",
+    "tip": "모델이 [[b]]포즈[[/b]](자세)를 취하자 사진작가가 그 자세는 나쁘다며 [[r]]문제를 제기하다[[/r]]. 그것으로 서로 다툼을 [[r]]초래하다[[/r]]",
+    "toeicExpr": [
+     "pose a question 질문을 제기하다  pose an issue 쟁점을 제기하다",
+     "pose concerns about A A에 대한 우려를 제기하다",
+     "pose a risk/threat/problem 위험을/위협을/문제를 초래하다",
+     "pose potential hazards 잠재적 위험을 초래하다",
+     "pose operational issues 운영상 문제를 초래하다"
+    ],
+    "examVar": [
+     {
+      "en": "The new policy may pose significant challenges for small businesses.",
+      "ko": "그 새로운 정책은 소규모 사업자들에게 상당한 어려움을 초래할 수 있다."
+     }
+    ]
+   },
+   {
+    "word": "suspend",
+    "pron": "[səspénd]",
+    "pos": "v.",
+    "meaning": "v. 중지시키다, 중단하다",
+    "tip": "[[b]]sus[[/b]](sub: 아래에) [[b]]펜[[/b]]을 내려 [[b]]두고[[/b]] 잠시 필기 중지! 즉, 학생들의 노트필기를 [[r]]중지시키다, 중단하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "suspension",
+      "meaning": "중지, 중단"
+     }
+    ],
+    "toeicExpr": [
+     "suspend service/production 서비스를/생산을 중단하다",
+     "suspend operations/trading 운영을/거래를 일시 중단하다",
+     "temporary suspension 일시 중단",
+     "suspension of membership 회원 자격 정지"
+    ]
+   },
+   {
+    "word": "assess",
+    "pron": "[əsés]",
+    "pos": "v.",
+    "meaning": "v. (가격ㆍ재산 등을) 평가하다, 가늠하다",
+    "tip": "세금 징수원이 집안의 고급 사치품들을 [[b]]a[[/b]](하나) [[b]]a[[/b]](하나) [[b]]셌수[[/b]]. 즉, [[r]](가격ㆍ재산 등을) 평가하다, 가늠하다[[/r]]",
+    "toeicExpr": [
+     "assess the value of ~의 가치를 평가하다",
+     "assess the situation/risk/impact/performance 상황을/위험을/영향을/성과를 평가하다"
+    ]
+   },
+   {
+    "word": "landmark",
+    "pron": "[lǽndmɑːrk]",
+    "pos": "n.",
+    "meaning": "n. 1. 주요 지형지물, 랜드마크, 명소  2. 획기적인 사건, 전환점",
+    "tip": "어떤 [[b]]land[[/b]](땅, 지역)를 상징하는 [[b]]mark[[/b]](표시)로 가장 눈에 띄거나 유명한 [[r]]주요 지형지물[[/r]] 그리고 [[b]]land[[/b]](땅)에 [[b]]mark[[/b]](표시)를 남길만하다는 의미에서 [[r]]획기적인 사건[[/r]]",
+    "toeicExpr": [
+     "historical/local landmark 역사적/지역 명소",
+     "landmark decision/event/achievement 획기적인 판결/사건/성취"
+    ],
+    "examVar": [
+     {
+      "en": "The agreement represents a landmark achievement in the company's global expansion efforts.",
+      "ko": "그 합의는 회사의 글로벌 확장 노력에 있어 획기적인 성과를 의미한다."
+     }
+    ]
+   },
+   {
+    "word": "milestone",
+    "pron": "[máilstoun]",
+    "pos": "n.",
+    "meaning": "n. 이정표, (역사·인생 등의) 중요한 단계(사건)",
+    "tip": "[[b]]stone[[/b]](돌)에 몇 [[b]]마일[[/b]](mile)인가를 새긴 [[r]]이정표[[/r]]와 같이 인생에서 기억될 [[r]]중요한 단계[[/r]]",
+    "toeicExpr": [
+     "reach a milestone 중요한 단계에 도달하다",
+     "achieve a milestone 이정표를 달성하다",
+     "major milestone 중대한 단계",
+     "project milestone 프로젝트 주요 단계"
+    ]
+   },
+   {
+    "word": "mortgage",
+    "pron": "[mɔ́ːrɡidʒ]",
+    "pos": "n.",
+    "meaning": "n. 저당, 담보 대출",
+    "tip": "\"이게 내 [[b]]모기지[[/b]]? 내 목숨(목숨을) [[r]]저당[[/r]]잡고 돈 좀 꿔 줘!\"",
+    "toeicExpr": [
+     "get a mortgage 담보 대출을 받다  mortgage loan 담보 대출",
+     "pay off a mortgage 담보 대출금을 모두 갚다"
+    ]
+   },
+   {
+    "word": "subsequently",
+    "pron": "[sʌ́bsikwəntli]",
+    "pos": "ad.",
+    "meaning": "ad. 그 뒤에, 나중에",
+    "tip": "[[b]]섭시[[/b]] 40도일 것이란 일기예보가 [[r]]그 뒤에, 나중에[[/r]] 보니 [[r]]큰(크게) 틀려[[/r]].",
+    "derivatives": [
+     {
+      "word": "subsequent",
+      "meaning": "다음의, 뒤따르는"
+     }
+    ],
+    "toeicExpr": [
+     "subsequently + 동사: 그 후에 ~하다",
+     "The employee was promoted and subsequently transferred to the head office. 그 직원은 승진한 뒤 본사로 발령되었다.",
+     "subsequent event/action/step 다음 회의/조치/단계"
+    ],
+    "examVar": [
+     {
+      "en": "The proposal was reviewed by the board and subsequently approved during the afternoon session.",
+      "ko": "그 제안서는 이사회에서 검토되었고, 그 후 오후 회의에서 승인되었다."
+     }
+    ]
+   },
+   {
+    "word": "deputy",
+    "pron": "[dépjuti]",
+    "pos": "a./n.",
+    "meaning": "a. (최고 계급 다음 가는 직급인) 부- n. 대리인",
+    "tip": "[[b]]대표[[/b]] 2번째인 [[r]]부대표[[/r]], 즉 대표의 [[r]]대리인[[/r]]",
+    "toeicExpr": [
+     "deputy director 부이사  deputy manager 부매니저",
+     "deputy head 부서장",
+     "assign a deputy 대리인을 임명하다"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 38,
+  "title": "",
+  "words": [
+   {
+    "word": "collateral",
+    "pron": "미[kəlǽtərəl] 영[kɔlǽtərəl]",
+    "pos": "n./a.",
+    "meaning": "1. n. 담보물, 담보  2. a. 부수적인, 2차적인",
+    "tip": "① 빚을 갚지 않자 담보로 잡힌 [[b]]걸레[[/b]]까지도 [[b]]털어[[/b]]가는 빚쟁이 ② 방 닦은 [[b]]걸레[[/b]]를 [[b]]터럴[[/b]](털다). 그랬더니 먼지가 떨어져 빗자루로 또 쓸어야 하는 [[r]]부수적인, 2차적인[[/r]] 일거리가 또 생긴다.",
+    "toeicExpr": [
+     "use property as collateral 재산을 담보로 하다",
+     "collateral requirement 담보 조건  collateral loan 담보 대출",
+     "provide collateral 담보를 제공하다",
+     "collateral damage/benefit 부수적 피해/이익"
+    ],
+    "examVar": [
+     {
+      "en": "He used his car as collateral for the personal loan.",
+      "ko": "그는 개인 대출의 담보로 차를 제공했다."
+     }
+    ]
+   },
+   {
+    "word": "entry",
+    "pron": "[éntri]",
+    "pos": "n.",
+    "meaning": "n. 1. 입장  2. 기입, 기록, 항목  3. 참가, 응모, 참가작, 출품작",
+    "tip": "① 대회장으로 [[b]]enter[[/b]](들어가다), 즉 [[r]]입장, 참가, 참가작[[/r]] ② 컴퓨터 작업으로 [[b]]엔터[[/b]]키를 쳐서 [[r]]항목에 기록[[/r]]",
+    "derivatives": [
+     {
+      "word": "entrant",
+      "meaning": "참가자, 응모자 (← -ant: ~사람)"
+     },
+     {
+      "word": "entrance",
+      "meaning": "입구"
+     }
+    ],
+    "toeicExpr": [
+     "entry point 출입 지점, 진입로  gain entry 출입 허가를 받다",
+     "deny entry 출입을 거부하다",
+     "entry requirements 입국/입장 요건",
+     "entry fee 입장료, 참가비  free entry 무료 입장",
+     "make an entry 기입하다  data entry 데이터 입력",
+     "accounting entry 회계 기입 항목  incorrect entry 잘못된 기입",
+     "contest entry 대회 응모작  submit an entry 응모하다",
+     "entry deadline 응모 마감일",
+     "contest entrant 대회 참가자  eligible entrant 자격을 갖춘 참가자",
+     "new entrant 신규 참가자",
+     "main entrance 정문  rear entrance 후문",
+     "employee entrance 직원 전용 출입구"
+    ],
+    "examVar": [
+     {
+      "en": "1. Employees are required to make an accurate ______ of all transactions.",
+      "opt": "(A) entrance  (B) entry  (C) entrant  (D) entering",
+      "ans": "(B)",
+      "ko": "직원들은 모든 거래를 정확히 기록해야 한다."
+     },
+     {
+      "en": "2. Each ______ must submit the application form by Friday.",
+      "opt": "(A) entry  (B) entrance  (C) entrant  (D) entering",
+      "ans": "(C)",
+      "ko": "각 참가자는 금요일까지 신청서를 제출해야 한다."
+     }
+    ]
+   },
+   {
+    "word": "categorize",
+    "pron": "[kǽtəgəràiz]",
+    "pos": "v.",
+    "meaning": "v. 분류하다",
+    "tip": "[[b]]category[[/b]](종류, 부류) + [[b]]ize[[/b]](동·어) 카테고리별로 [[r]]분류하다[[/r]]",
+    "toeicExpr": [
+     "categorize data/files/information 데이터를/파일을/정보를 분류하다",
+     "categorize by type/size/color 종류/크기/색상별로 분류하다 (by: 방법, 수단, 기준)"
+    ]
+   },
+   {
+    "word": "turn down",
+    "meaning": "1. 거절하다  2. (볼륨ㆍ온도 등을) 줄이다",
+    "tip": "① 엄지를 [[b]]아래로(down)[[/b]] [[b]]돌리다(turn)[[/b]], 즉 [[r]]거절하다[[/r]]\n② 스위치를 [[b]]돌려서(turn)[[/b]] 소리를(온도를) [[b]]아래로(down)[[/b]] 하다, 즉 [[r]](볼륨ㆍ온도 등을) 줄이다[[/r]]",
+    "toeicExpr": [
+     "turn down an offer/application 제안을/신청을 거절하다",
+     "turn down a request 요청을 거절하다",
+     "turn down the volume 소리를 줄이다",
+     "turn down the heat 온도를 낮추다"
+    ],
+    "examVar": [
+     {
+      "en": "The applicant was disappointed to learn that her request had been turned down due to budget constraints.",
+      "ko": "지원자는 예산 제약으로 인해 자신의 요청이 거절되었다는 사실을 알고 실망했다."
+     }
+    ]
+   },
+   {
+    "word": "turn out",
+    "meaning": "드러나다, 판명되다",
+    "tip": "[[b]]turn[[/b]](돌리다) + [[b]]out[[/b]](밖으로) (숨겨졌던 것을) [[b]]밖으로 돌려[[/b]] 보여지게 하다, 즉 [[r]]드러나다, 판명되다[[/r]]",
+    "toeicExpr": [
+     "turn out positive/negative 긍정적인/부정적인 결과로 나타나다",
+     "turn out better than expected 예상보다 더 좋게 나오다",
+     "turn out to be ~ ~한 것으로 드러나다, 밝혀지다",
+     "turn out to be true/false 사실로/거짓으로 드러나다",
+     "turn out to be successful 성공적인 것으로 판명되다",
+     "The rumor turned out to be true. 그 소문은 사실로 드러났다.",
+     "it turned out that ~ ~라는 것이 밝혀지다",
+     "It turned out that the initial estimate was inaccurate.",
+     "초기 추정치가 부정확했다는 것이 밝혀졌다."
+    ],
+    "examVar": [
+     {
+      "en": "The project turned out more costly than initially expected.",
+      "ko": "그 프로젝트는 처음 예상보다 비용이 더 많이 드는 것으로 밝혀졌다."
+     }
+    ]
+   },
+   {
+    "word": "forthcoming",
+    "pron": "[fɔ́ːrθkʌ́miŋ]",
+    "pos": "a.",
+    "meaning": "a. 다가오는, 곧 있을",
+    "tip": "[[b]]forth[[/b]](앞으로) [[b]]coming[[/b]](오고 있는), 즉 [[r]]다가오는, 곧 있을[[/r]]",
+    "toeicExpr": [
+     "forthcoming event 다가오는 행사  forthcoming meeting 곧 있을 회의",
+     "forthcoming release 출시 예정"
+    ]
+   },
+   {
+    "word": "periodic",
+    "pron": "미[pìəriɑ́dik] 영[pìəriɔ́dik]",
+    "pos": "a.",
+    "meaning": "a. 정기적인, 주기적인",
+    "tip": "프로농구나 하키에서의 1[[b]]피리어드[[/b]](period)와 같은 [[r]]정기적인, 주기적인[[/r]] 기간",
+    "derivatives": [
+     {
+      "word": "periodically",
+      "meaning": "정기적으로, 주기적으로"
+     },
+     {
+      "word": "period",
+      "meaning": "기간, 주기"
+     }
+    ],
+    "toeicExpr": [
+     "periodic inspection/maintenance/report 정기 점검/보수/보고",
+     "check periodically 주기적으로 점검하다",
+     "update the system periodically 시스템을 정기적으로 업데이트하다",
+     "for a limited period 제한된 기간 동안",
+     "for an extended period 장기간 동안",
+     "grace period 유예 기간 (연상: 벌칙을 받지 않고 우아함(grace)을 유지시켜주는 기간)",
+     "a 10-day grace period 10일의 유예 기간",
+     "during the grace period 유예 기간 동안에"
+    ]
+   },
+   {
+    "word": "come up with",
+    "meaning": "~을 생각해 내다",
+    "tip": "[[b]]come[[/b]](오다) + [[b]]up[[/b]](위로) + [[b]]with[[/b]](~을 가지고)] 생각을 [[b]]위로[[/b]](머리로) 가지고 오다, 즉 [[r]]~을 생각해 내다[[/r]]",
+    "toeicExpr": [
+     "come up with an idea/a solution 아이디어를/해결책을 생각해 내다"
+    ],
+    "examVar": [
+     {
+      "en": "The team managed to come up with a creative solution to the issue.",
+      "ko": "그 팀은 그 문제에 대한 창의적인 해결책을 생각해 냈다."
+     }
+    ]
+   },
+   {
+    "word": "priceless",
+    "pron": "[práislis]",
+    "pos": "a.",
+    "meaning": "값을 매길 수 없는, 매우 귀중한",
+    "tip": "[[b]]price[[/b]](가격) + [[b]]less[[/b]](~이 없는) [[r]]가격으로 매길 수 없을 정도의[[/r]]",
+    "toeicExpr": [
+     "priceless experience/asset/value/opportunity 매우 귀중한 경험/자산/가치/기회"
+    ]
+   },
+   {
+    "word": "clinic",
+    "pron": "[klínik]",
+    "pos": "n.",
+    "meaning": "1. 병원, 진료소  2. 강습",
+    "tip": "병균으로 감염된 몸을 [[b]]clean[[/b]](깨끗이 하는) [[r]]병원, 진료소[[/r]]",
+    "toeicExpr": [
+     "eye clinic 안과 병원  dental clinic 치과 병원",
+     "free clinic 무료 진료소",
+     "Tennis clinic 테니스 강습",
+     "Business writing clinic 비즈니스 작문 클리닉"
+    ]
+   },
+   {
+    "word": "distinguish",
+    "pron": "[distíŋgwiʃ]",
+    "pos": "v.",
+    "meaning": "구별하다, 식별하다",
+    "tip": "123층의 롯데타워같이 [[b]]This[[/b]](이것만) 높이 [[b]]팅기쉬[[/b]](팅겨져) 나와 다른 건물과 쉽게 [[r]]구별하다, 식별하다[[/r]]",
+    "toeicExpr": [
+     "distinguish A from B A와 B를 구별하다 (from: ~로부터)",
+     "distinguish fact from opinion 사실과 의견을 구별하다",
+     "distinguish originals from copies 원본과 복사본을 구별하다",
+     "distinguish oneself 두각을 나타내다 (← 자기 자신을 구별되게 하다)"
+    ],
+    "examVar": [
+     {
+      "en": "The new scanning device can easily distinguish counterfeit banknotes from genuine ones.",
+      "ko": "새로운 스캔 장치는 위조 지폐를 진짜 지폐와 쉽게 구별할 수 있다."
+     }
+    ]
+   },
+   {
+    "word": "distinction",
+    "pron": "[distíŋkʃən]",
+    "pos": "n.",
+    "meaning": "구별, 차이",
+    "tip": "123층의 롯데타워같이 [[b]]This[[/b]](이것만) [[b]]팅[[/b]]! 하고 [[b]]크셔[[/b]], 즉 다른 작은 건물들과의 [[r]]구별, 차이[[/r]]",
+    "derivatives": [
+     {
+      "word": "distinct",
+      "meaning": "뚜렷한, 독특한"
+     },
+     {
+      "word": "distinctive",
+      "meaning": "독특한"
+     }
+    ],
+    "toeicExpr": [
+     "distinction between A and B A와 B의 구별",
+     "clear distinction 명확한 구별(차이)",
+     "subtle distinction 미묘한 차이",
+     "distinctive style/character 독특한 스타일/성격"
+    ]
+   },
+   {
+    "word": "leak",
+    "pron": "[li:k]",
+    "pos": "v./n.",
+    "meaning": "v. (기체ㆍ비밀 등이) 새다, 유출하다, 누설되다  n. 누출",
+    "tip": "\"[[b]]이크[[/b]]! 방귀가 새어 나왔네.\" 즉, [[r]]누출, 새다[[/r]]",
+    "toeicExpr": [
+     "water/gas leak 물/가스 누출",
+     "information leak 정보 유출",
+     "leak information 정보를 유출하다"
+    ]
+   },
+   {
+    "word": "aid",
+    "pron": "[eid]",
+    "pos": "n./v.",
+    "meaning": "v. 도움  v. 돕다",
+    "tip": "[[b]]에이즈[[/b]]에 걸린 사람들을 적십자사에서 [[r]]돕다, 도움[[/r]]",
+    "toeicExpr": [
+     "provide aid 도움을 제공하다",
+     "financial/medical aid 재정/의료 지원",
+     "first-aid 응급처치  aid recovery 회복을 돕다"
+    ]
+   },
+   {
+    "word": "physician",
+    "pron": "[fizíʃən]",
+    "pos": "n.",
+    "meaning": "의사, 내과 의사",
+    "tip": "멍든 [[b]]피[[/b]]를 [[b]]찍[[/b]] 짜서 [[b]]시원[[/b]]하게 치료해 주는 [[r]]의사, 내과 의사[[/r]]",
+    "toeicExpr": [
+     "attending physician 담당 의사",
+     "consult a physician 의사에게 진료받다"
+    ],
+    "examVar": [
+     {
+      "en": "physician, physics(물리학), physicist(물리학자)를 구분하는 문제가 자주 출제되었다.",
+      "opt": "Consult with your ___ about your health. → physician (O)  physics (X)  physicist (X)",
+      "ko": "담당 의사와 네 건강에 대해 상담해 봐라."
+     }
+    ]
+   },
+   {
+    "word": "welfare",
+    "pron": "[wélfεər]",
+    "pos": "n./a.",
+    "meaning": "n. 복지  a. 복지의",
+    "tip": "나라에서 [[b]]well[[/b]](잘) 케어해 주는 [[r]]복지, 복지의[[/r]]",
+    "toeicExpr": [
+     "employee/public welfare 직원/공공 복지",
+     "welfare program/benefits 복지 프로그램/혜택"
+    ]
+   },
+   {
+    "word": "fasten",
+    "pron": "미[fǽsn] 영[fáːsn]",
+    "pos": "v.",
+    "meaning": "묶다, 채우다, 고정시키다",
+    "tip": "남의 물건을 [[b]]뺏는[[/b]] 사람을 포승줄로 [[r]]묶다[[/r]], [[r]](수갑을) 채우다[[/r]]",
+    "toeicExpr": [
+     "fasten a seatbelt 안전벨트를 매다  fasten a button 단추를 채우다",
+     "fasten securely 단단히 고정하다 (securely: 안전하게 → 단단히)"
+    ]
+   },
+   {
+    "word": "stand for",
+    "pos": "v.",
+    "meaning": "1. 의미하다, 상징하다  2. 대표하다",
+    "tip": "[[b]]stand[[/b]](서 있다) + [[b]]for[[/b]](~을 위해)] 자유의 여신상은 자유를 상징하기 위해 서 있다, 즉 자유를 [[r]]상징하다[[/r]], 자유를 [[r]]대표하다[[/r]]",
+    "toeicExpr": [
+     "stand for quality/innovation 품질을/혁신을 의미하다",
+     "stand for the company/organization 회사를/조직을 대표하다"
+    ],
+    "examVar": [
+     {
+      "en": "The letters \"HR\" stand for Human Resources.",
+      "ko": "'HR'이라는 글자는 인사부를 의미한다."
+     }
+    ]
+   },
+   {
+    "word": "log",
+    "pron": "[lɔ(ː)g]",
+    "pos": "n./v.",
+    "meaning": "n. 기록, 일지 v. 기록하다",
+    "tip": "[[b]]로그[[/b]]인한 시간 등을 [[r]]기록[[/r]], [[r]]기록하다[[/r]]",
+    "toeicExpr": [
+     "keep a log 일지를 작성하다  log in/out 로그인/로그아웃",
+     "log hours/activities/transactions 근무 시간을/활동을/거래를 기록하다",
+     "activity/error/access log 활동/오류/접근 기록",
+     "be logged automatically 자동으로 기록되다"
+    ]
+   },
+   {
+    "word": "row",
+    "pron": "[rou]",
+    "pos": "n.",
+    "meaning": "열, 줄",
+    "tip": "키가 [[b]]low[[/b]](낮은) 사람부터 차례로 선 [[r]]열[[/r]], [[r]]줄[[/r]]",
+    "toeicExpr": [
+     "front row 앞줄  back row 뒷줄  row of seats 좌석 줄",
+     "in a row 연속으로, 줄지어  sit in a row 한 줄로 앉다"
+    ]
+   },
+   {
+    "word": "familiar",
+    "pron": "[fəmíljər]",
+    "pos": "a.",
+    "meaning": "친근한, 잘 알고 있는",
+    "tip": "우리는 [[r]]친근한[[/r]], 서로 잘 [[r]]알고 있는[[/r]] [[b]]family[[/b]]여(가족이여).",
+    "derivatives": [
+     {
+      "word": "familiarity",
+      "meaning": "친근함, 익숙함"
+     }
+    ],
+    "toeicExpr": [
+     "be familiar with ~을 잘 알다, ~에 익숙하다",
+     "be familiar with the system/procedure 그 시스템에/절차에 익숙하다",
+     "be familiar to ~에게 익숙하다",
+     "be familiar to customers 고객들에게 익숙하다",
+     "look/sound familiar 익숙하게 보이다/들리다",
+     "familiar environment 익숙한 환경",
+     "familiarity with the staff 직원들과의 친숙함"
+    ],
+    "examVar": [
+     {
+      "en": "1. The new employees are not yet familiar with the company's internal procedures.",
+      "ko": "신입 직원들은 회사의 내부 절차에 아직 익숙하지 않다."
+     },
+     {
+      "en": "2. The spokesperson's voice was immediately familiar to most listeners.",
+      "ko": "그 대변인의 목소리는 대부분의 청취자들에게 즉시 익숙하게 느껴졌다."
+     }
+    ]
+   },
+   {
+    "word": "utensil",
+    "pron": "[juːténsəl]",
+    "pos": "n.",
+    "meaning": "(주방 · 가정용) 기구, 도구",
+    "tip": "[[b]]U[[/b]]자 모양의 그릇 [[b]]ten[[/b]](10)개와 [[b]]실[[/b]], 바늘과 같은 [[r]]가정용 기구, 도구[[/r]]",
+    "toeicExpr": [
+     "cooking utensil 요리 기구  household utensils 가정용 기구"
+    ]
+   },
+   {
+    "word": "instantaneous",
+    "pron": "[ìnstəntéiniəs]",
+    "pos": "a.",
+    "meaning": "순간적인, 즉석의",
+    "tip": "[[b]]인스턴트[[/b]] 식품은 [[r]]즉석의[[/r]], [[r]]순간적인[[/r]] 시간에 요리할 수 있는 식품",
+    "derivatives": [
+     {
+      "word": "instantaneously",
+      "meaning": "즉시, 순간적으로"
+     },
+     {
+      "word": "instant",
+      "meaning": "즉각적인, 인스턴트식품의; 순간"
+     }
+    ],
+    "toeicExpr": [
+     "instantaneous response/effect 즉각적 반응/효과",
+     "instantaneously react/change 순간적으로 반응하다/변화하다",
+     "data is instantaneously processed 데이터가 즉시 처리된다",
+     "for an instant 잠시 동안  instant noodles/soup 즉석 라면/수프"
+    ]
+   },
+   {
+    "word": "appeal",
+    "pron": "[əpíːl]",
+    "pos": "v./n.",
+    "meaning": "1. v. 애원하다, 호소하다  2. v. 마음을 끌다 n. 매력  3. n. 항소 v. 항소하다",
+    "tip": "① 엄마에게 [[b]]업힐[[/b]] 것을 [[r]]애원하다[[/r]], [[r]]호소하다[[/r]], 업어달라고 애교를 부려 [[r]]마음을 끌다[[/r]]  ② 법에 한 번 더 [[r]]호소하다[[/r]], 즉 [[r]]항소, 항소하다[[/r]]",
+    "toeicExpr": [
+     "appeal to + 사람: ~에게 어필하다, ~에게 매력적이다",
+     "appeal to customers 고객의 관심을 끌다",
+     "appeal to emotions 감정에 호소하다",
+     "appeal to young audiences 젊은 층에게 매력적이다",
+     "appeal the decision 판결에 항소하다",
+     "file an appeal 항소하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The new advertisement is designed to ______ younger customers.",
+      "opt": "(A) appeal at  (B) appeal to  (C) appealing  (D) appealed",
+      "ans": "(B)",
+      "ko": "새 광고는 젊은 고객들에게 매력적으로 다가가도록 설계되었다."
+     },
+     {
+      "en": "2. The company decided to ______ the court's decision.",
+      "opt": "(A) appeal  (B) appeal to  (C) appeal for  (D) appeal with",
+      "ans": "(A)",
+      "ko": "회사는 법원의 결정에 항소하기로 결정했다.",
+      "note": "appeal the decision과 같이 appeal이 '항소하다'란 뜻으로 쓰일 때는 전치사 없이 바로 목적어를 취한다."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "day": 39,
+  "title": "",
+  "words": [
+   {
+    "word": "strike",
+    "pron": "[straik]",
+    "pos": "v./n.",
+    "meaning": "1. v. 치다, 때리다  2. n. 파업  3. v. (합의·계약을) 체결하다",
+    "tip": "① 공장 기계를 [[b]]strike[[/b]](때려) 부수면서 하는 [[r]]파업[[/r]]  ② 계약자를 [[b]]strike[[/b]](때려) 계약을 [[r]]체결하다[[/r]]",
+    "toeicExpr": [
+     "strike the area 그 지역을 덮치다",
+     "go on strike 파업에 들어가다  be on strike 파업 중이다 (on: 계속)",
+     "go on strike over wages/benefits 임금/복지 문제로 파업하다 (over: 쟁점, 원인)",
+     "strike a deal/an agreement 합의를/계약을 체결하다"
+    ],
+    "examVar": [
+     {
+      "en": "The two companies managed to strike an agreement after weeks of talks.",
+      "ko": "두 회사는 수주간의 협상 끝에 계약을 체결하는 데 성공했다."
+     },
+     {
+      "en": "Employees decided to go on strike over wage reductions.",
+      "ko": "직원들은 임금 삭감을 이유로 파업에 들어가기로 결정했다."
+     }
+    ]
+   },
+   {
+    "word": "oral",
+    "pron": "[ɔ́ːrəl]",
+    "pos": "a.",
+    "meaning": "a. 구두의, 입의",
+    "tip": "[[b]]oral[[/b]]-B 칫솔로 닦는 [[r]]입[[/r]] 내부. 입으로 한 말의, 즉 [[r]]구두의[[/r]]",
+    "toeicExpr": [
+     "oral agreement/presentation/instructions 구두 계약/발표/지시"
+    ]
+   },
+   {
+    "word": "trivial",
+    "pron": "[tríviəl]",
+    "pos": "a.",
+    "meaning": "a. 쓸데없는, 하찮은, 사소한",
+    "tip": "열매도 못 맺는 [[b]]tree[[/b]](나무)를 [[b]]비얼[[/b]](베어!), 즉 [[r]]쓸데없는, 하찮은[[/r]] 나무",
+    "toeicExpr": [
+     "trivial matter/issue/mistake 사소한 문제/사안/실수"
+    ]
+   },
+   {
+    "word": "statistics",
+    "pron": "[stətístiks]",
+    "pos": "n.",
+    "meaning": "n. 통계, 통계 수치",
+    "tip": "소유재산 막대그래프 [[r]]통계[[/r]]에서 가수 [[b]]스타[[/b]]들이 일반인에 비해 [[b]]튀수[[/b]](튀었수) [[b]]틱(스)[[/b]] 하고.",
+    "derivatives": [
+     {
+      "word": "statistic",
+      "meaning": "통계 수치 하나, 개별 통계값"
+     }
+    ],
+    "toeicExpr": [
+     "statistics는 복수형 어미가 붙은 것으로 여러 수치들로 이루어져 항상 복수 취급한다.",
+     "sales statistics 판매 통계  unemployment statistics 실업 통계",
+     "official statistics 공식 통계  analyze statistics 통계를 분석하다",
+     "a key statistic 핵심 통계 수치  a single statistic 단일 통계 수치"
+    ],
+    "examVar": [
+     {
+      "en": "The sales statistics ______ published in the annual report.",
+      "opt": "(A) is  (B) was  (C) are  (D) has",
+      "ans": "(C)",
+      "ko": "판매 통계는 연례 보고서에 게재되었다."
+     }
+    ]
+   },
+   {
+    "word": "crisis",
+    "pron": "[kráisis]",
+    "pos": "n.",
+    "meaning": "n. 위기 (pl. criese)",
+    "tip": "염산이 눈에 들어가 [[b]]cry[[/b]](울며) 눈을 [[b]]씻수[[/b]]. 실명 [[r]]위기[[/r]]",
+    "toeicExpr": [
+     "economic crisis 경제 위기  financial crisis 금융 위기"
+    ]
+   },
+   {
+    "word": "luxury",
+    "pron": "[lʌ́kʃəri]",
+    "pos": "n.",
+    "meaning": "n. 호화로움, 사치, 고급",
+    "tip": "우리가 [[b]]럭셔리[[/b]]하다고 할 때 쓰는 표현",
+    "derivatives": [
+     {
+      "word": "luxurious",
+      "meaning": "호화로운, 고급스러운, 사치스러운"
+     }
+    ],
+    "toeicExpr": [
+     "live in luxury 호화롭게 살다  luxury good 사치품",
+     "luxurious hotel/interior/car 고급 호텔/인테리어/자동차",
+     "luxurious accommodations 호화로운 숙박시설"
+    ]
+   },
+   {
+    "word": "accrue",
+    "pron": "[əkrúː]",
+    "pos": "v.",
+    "meaning": "v. (이익 등이) 생기다, 누적되다, 이자 등이 붙다",
+    "tip": "산에 심었던 10그루의 묘목들이 번식하여 [[b]]억 그루[[/b]]로 숫자가 [[r]]누적되어, 이익이 생기다[[/r]]",
+    "toeicExpr": [
+     "accrue to A A에게 귀속되다, 생기다  The profits will accrue to shareholders. 그 이익은 주주들에게 돌아갈 것이다.",
+     "interest/benefit accrues 이자가/혜택이 발생하다  costs/profits accrue 비용이/이익이 누적되다"
+    ]
+   },
+   {
+    "word": "thereafter",
+    "pron": "[ðɛərǽftər]",
+    "pos": "ad.",
+    "meaning": "ad. 그 후, 그 이래",
+    "tip": "[[[b]]there[[/b]](거기에, 그 점에서) + [[b]]after[[/b]](뒤에)] 그 시점 이후에, 즉 [[r]]그 후, 그 이래[[/r]]",
+    "toeicExpr": [
+     "shortly thereafter 곧 그 후에  soon thereafter 곧 그 후에  and thereafter 그리고 그 이후로"
+    ],
+    "examVar": [
+     {
+      "en": "The agreement was finalized, and production began thereafter.",
+      "ko": "그 계약은 최종 확정되었고, 그 이후로 생산이 시작되었다."
+     }
+    ]
+   },
+   {
+    "word": "solid",
+    "pron": "미[sálid] 영[sɔ́lid]",
+    "pos": "a.",
+    "meaning": "a. 1. 고체의, 단단한  2. 확실한, 견고한, 탄탄한",
+    "tip": "① 같은 부피의 고체와 액체가 천칭에 있을 때 [[b]]단단한 고체[[/b]] 쪽으로 [[r]]쏠리다[[/r]]  ② [[b]]단단하다[[/b]]는 것은 흔들림 없이 [[r]]확실하고, 탄탄하다[[/r]]는 말",
+    "toeicExpr": [
+     "solid foundation 탄탄한 기반  solid performance 견고한 성과  solid growth 안정적인(견고한) 성장"
+    ],
+    "examVar": [
+     {
+      "en": "The company showed solid growth in the last quarter despite the challenging market conditions.",
+      "ko": "어려운 시장 상황에도 불구하고 회사는 지난 분기에 안정적인(견고한) 성장을 보였다."
+     }
+    ]
+   },
+   {
+    "word": "startup",
+    "pron": "[stáːrtʌp]",
+    "pos": "n.",
+    "meaning": "n. 신생 벤처기업",
+    "tip": "[[b]]start[[/b]](시작)하여 [[b]]up[[/b]](위로) 올라가려는 [[r]]신생 벤처기업[[/r]]",
+    "toeicExpr": [
+     "startup company 신생 벤처기업  launch a startup 스타트업을 창업하다  invest in a startup 신생 기업에 투자하다"
+    ]
+   },
+   {
+    "word": "drastic",
+    "pron": "[drǽstik]",
+    "pos": "a.",
+    "meaning": "a. 과감한, 급격한",
+    "tip": "[[b]]드레스[[/b]]를 [[b]]틱[[/b]] 하고 찢어버리고 청바지와 티셔츠 패션으로 [[r]]과감한, 급격한[[/r]] 변신",
+    "derivatives": [
+     {
+      "word": "drastically",
+      "meaning": "철저하게, 과감하게"
+     }
+    ],
+    "toeicExpr": [
+     "drastic measures/actions 과감한 조치  drastic changes/reduction 급격한 변화/감소",
+     "change/increase drastically 급격하게 변하다/증가하다"
+    ]
+   },
+   {
+    "word": "architecture",
+    "pron": "[áːrkitèktʃər]",
+    "pos": "n.",
+    "meaning": "n. 1. 건축, 건축 양식  2. (시스템·조직의) 구조",
+    "tip": "① 목공들이 북과 같은 [[b]]악기[[/b]]를 치듯 망치를 [[b]]택! 처[[/b]]서 못을 박는 [[r]]건축, 건축물[[/r]]  ② [[r]]건축물[[/r]]의 [[r]]구조[[/r]]",
+    "derivatives": [
+     {
+      "word": "architectural",
+      "meaning": "건축의, 건축술의"
+     },
+     {
+      "word": "architect",
+      "meaning": "건축가, 설계자"
+     }
+    ],
+    "toeicExpr": [
+     "modern/classical/unique architecture 현대/고전/독창적 건축",
+     "system/software/network architecture 시스템/소프트웨어/네트워크 구조",
+     "architectural firm 건축 회사",
+     "software architect 소프트웨어 설계자  the architect of a plan 계획의 입안자"
+    ],
+    "examVar": [
+     {
+      "en": "The company plans to upgrade its IT ___ to improve system performance.",
+      "opt": "architecture (O)  architect (X)",
+      "ko": "그 회사는 시스템 성능을 개선하기 위해 IT 구조를 업그레이드할 계획이다."
+     }
+    ]
+   },
+   {
+    "word": "defer",
+    "pron": "[difə́:r]",
+    "pos": "v.",
+    "meaning": "늦추다, 연기하다",
+    "tip": "흙을 \"[[b]]뒤[[/b]]에(나중에) [[b]]퍼[[/b]]\" 하며 흙 퍼담는 일을 [[r]]늦추다, 연기하다[[/r]]",
+    "toeicExpr": [
+     "defer payment 지불을 연기하다  defer a decision 결정을 미루다",
+     "defer until further notice 추후 통보 시까지 연기하다"
+    ]
+   },
+   {
+    "word": "atmosphere",
+    "pron": "[ǽtməsfìər]",
+    "pos": "n.",
+    "meaning": "분위기, 환경",
+    "tip": "[애트머스피어 → 코스모스 피어] [[b]]코스모스[[/b]]가 가득 [[b]]피어[[/b]] 있는 가을의 [[r]]분위기, 환경[[/r]]",
+    "toeicExpr": [
+     "friendly/tense/lively atmosphere 친근한/긴장된/활기찬 분위기",
+     "create an atmosphere of trust 신뢰의 분위기를 조성하다",
+     "atmosphere conducive to productivity 생산성에 도움이 되는 환경(분위기)"
+    ]
+   },
+   {
+    "word": "describe",
+    "pron": "[diskráib]",
+    "pos": "v.",
+    "meaning": "묘사하다, 서술하다",
+    "tip": "팔을 한껏 벌려 \"어제 공연은 [[b]]this[[/b]](이렇게) [[b]]크[[/b]](큰) [[b]]라이브[[/b]] 공연이었어\"라고 [[r]]묘사하다, 서술하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "description",
+      "meaning": "설명, 묘사"
+     }
+    ],
+    "toeicExpr": [
+     "describe in detail 자세히 설명하다  describe briefly 간단히 설명하다",
+     "job description 직무 설명(직무 내용)  product description 제품 설명"
+    ],
+    "examVar": [
+     {
+      "en": "The job posting includes a detailed description of the required duties.",
+      "ko": "그 채용 공고에는 요구되는 업무에 대한 상세한 설명이 포함되어 있다."
+     }
+    ]
+   },
+   {
+    "word": "preserve",
+    "pron": "[prizə́:rv]",
+    "pos": "v.",
+    "meaning": "보존하다, 유지하다",
+    "tip": "수학 [[b]]풀이[[/b]]집 중요한 페이지를 [[b]]접어[[/b]] 찾아보기 쉽게 [[r]]보존하다, 유지하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "preservation",
+      "meaning": "보존, 유지"
+     }
+    ],
+    "toeicExpr": [
+     "preserve quality 품질을 유지하다  preserve resources 자원을 보존하다",
+     "preserve the environment 환경을 보존하다",
+     "preserve freshness 신선도를 유지하다",
+     "environmental preservation 환경 보존  preservation of data 데이터 보존"
+    ]
+   },
+   {
+    "word": "greet",
+    "pron": "[gri:t]",
+    "pos": "v.",
+    "meaning": "인사하다, 환영하다",
+    "tip": "그동안 [[b]]그리[[/b]]워했던 [[b]]two[[/b]](2) 사람이 만나서 [[r]]인사하다, 환영하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "greeting",
+      "meaning": "인사(말)"
+     }
+    ],
+    "toeicExpr": [
+     "politely greet 정중히 인사하다  greet the guests 손님을 맞이하다",
+     "welcome greeting 환영 인사  greeting message 인사 메시지"
+    ]
+   },
+   {
+    "word": "attribute",
+    "pron": "v. [ətríbju:t]\nn. [ǽtrəbjù:t]",
+    "pos": "v./n.",
+    "meaning": "1. v. ~탓으로 돌리다  2. n. 특성, 속성",
+    "tip": "① \"[[b]]어쭈리[[/b]] 붙었어? 서울대를? 순전히 운이 좋았구나.\" 하며 운 [[r]]탓으로 돌리다[[/r]] ② 애는 [[b]]주로[[/b]] 엄마에게 [[b]]붙[[/b]](달라붙다). 그게 애들의 [[r]]특성[[/r]]",
+    "toeicExpr": [
+     "attribute A to B A를 B의 결과로 돌리다/탓으로 돌리다",
+     "attribute failure to lack of preparation 실패를 준비 부족 탓으로 돌리다",
+     "attribute high sales to advertising 높은 매출을 광고 덕분으로 돌리다",
+     "attribute of a product 제품의 특성  key attribute 핵심 속성",
+     "personal attributes 개인적 특성"
+    ],
+    "examVar": [
+     {
+      "en": "Many analysts attribute the company's rapid growth to its strong online marketing strategy.",
+      "ko": "많은 분석가들은 회사의 빠른 성장을 강력한 온라인 마케팅 전략 덕분이라고 본다."
+     }
+    ]
+   },
+   {
+    "word": "detect",
+    "pron": "[ditékt]",
+    "pos": "v.",
+    "meaning": "발견하다, 탐지하다",
+    "tip": "[[b]]뒤[[/b]]에서 [[b]]택[[/b]]! 하고 뒤통수를 때리다, 즉 형사가 뒷모습만 보고도 범인을 [[r]]발견하다, 탐지하다[[/r]]",
+    "toeicExpr": [
+     "detect a problem 문제를 발견하다  detect changes 변화를 감지하다",
+     "detect errors/defects 오류를 발견하다"
+    ]
+   },
+   {
+    "word": "urban",
+    "pron": "[ə́:rbən]",
+    "pos": "a.",
+    "meaning": "도시의",
+    "tip": "비싼 주거환경 때문에 돈 [[b]]얼[[/b]]마를 [[b]]번[[/b]] 사람들만 모이는 [[r]]도시의[[/r]]",
+    "toeicExpr": [
+     "urban area/development 도시 지역/개발",
+     "urban lifestyle/population 도시 생활/인구"
+    ]
+   },
+   {
+    "word": "accompany",
+    "pron": "[əkʌ́mpəni]",
+    "pos": "v.",
+    "meaning": "1. ~을 동행하다, 동반하다  2. (일·현상 등이) 동반되다",
+    "tip": "[[b]]어![[/b]] 친구와 [[b]]company[[/b]](회사)가 같은 방향이라 [[r]]동행하다[[/r]], [[r]]동반하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "accompanying",
+      "meaning": "수반하는, 첨부한, 동봉한"
+     }
+    ],
+    "toeicExpr": [
+     "accompany a client/colleague 고객과/동료와 동행하다",
+     "be accompanied by ~이 동반되다, 수반되다 (by: ~에 의해)",
+     "be accompanied by changes 변화가 동반되다",
+     "be accompanied by documents 서류가 함께 제출되다",
+     "accompanying document 첨부 문서",
+     "accompanying materials 첨부 자료"
+    ],
+    "examVar": [
+     {
+      "en": "The revised contract must be accompanied by a signed approval form before it can be processed.",
+      "ko": "개정된 계약서는 처리되기 전에 서명된 승인서가 수반되어야 한다."
+     }
+    ]
+   },
+   {
+    "word": "garage",
+    "pron": "[gərɑ́:dʒ]",
+    "pos": "n.",
+    "meaning": "(자동차) 차고, 정비소",
+    "tip": "① 차 100대는 들어갈 정도로 [[b]]거[[/b]] 참 [[b]]large[[/b]]한 만수루의 [[r]]차고[[/r]]\n② 기름때 묻은 [[b]]꼬라지[[/b]]가 [[r]]자동차 정비소[[/r]]에서 일해서 그런 거야.",
+    "toeicExpr": [
+     "parking garage 주차장(주차 건물)  underground garage 지하 주차장",
+     "public garage 공영 주차장",
+     "auto garage 자동차 정비소  garage service 차량 정비 서비스"
+    ]
+   },
+   {
+    "word": "trigger",
+    "pron": "[trígər]",
+    "meaning": "1. n. 방아쇠  2. v. 촉발시키다, 유발하다",
+    "tip": "[[b]]tree[[/b]](나무)에 고무줄을 [[b]]걸어[[/b]] [[r]]방아쇠[[/r]]를 당겨 이웃과 전쟁을 [[r]]촉발시키다[[/r]], [[r]]유발하다[[/r]]",
+    "toeicExpr": [
+     "pull the trigger 방아쇠를 당기다",
+     "trigger a change 변화를 일으키다  trigger a reaction 반응을 유발하다"
+    ]
+   },
+   {
+    "word": "exhibit",
+    "pron": "[igzíbit]",
+    "pos": "v.",
+    "meaning": "v. 전시하다, 보이다  n. 전시, 전시품",
+    "tip": "민속촌에 조선시대의 [[b]]이 그지[[/b]](거지) 인형을 [[b]]빛[[/b]]으로 비춰 [[r]]전시하다[[/r]], [[r]]보이다[[/r]]",
+    "derivatives": [
+     {
+      "word": "exhibition",
+      "meaning": "전시회, 박람회"
+     }
+    ],
+    "toeicExpr": [
+     "exhibit products 제품을 전시하다  exhibit hall 전시장",
+     "museum exhibit 박물관 전시품  art exhibit 미술 전시품",
+     "art/trade exhibition 미술/무역 전시회",
+     "hold an exhibition 전시회를 열다"
+    ],
+    "examVar": [
+     {
+      "en": "The company will participate in an international art ________ in Paris next month.",
+      "opt": "exhibition (O)  exhibit (X)",
+      "ko": "그 회사는 다음 달 파리에서 열리는 국제 미술 전시회에 참가할 것이다.",
+      "note": "exhibit(전시, 전시품)와 exhibition(전시회, 박람회)의 차이점을 묻는 문제가 출제되었다."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "day": 40,
+  "title": "",
+  "words": [
+   {
+    "word": "deficient",
+    "pron": "[difíʃənt]",
+    "pos": "a.",
+    "meaning": "a. 부족한, 불충분한",
+    "tip": "담배가 [[r]]부족한, 불충분한[[/r]]. 그래서 꽁초 [[b]]뒷[[/b]]부분까지 [[b]]피션트[[/b]](피셔).",
+    "derivatives": [
+     {
+      "word": "deficit",
+      "meaning": "부족(액), 적자"
+     }
+    ],
+    "toeicExpr": [
+     "deficient in A A가 부족한 (in: 영역, 범위 → ~영역에 있어 부족한)",
+     "deficient in funding 자금이 부족한",
+     "deficient in personnel 인력이 부족한",
+     "deficient performance/resources 부족한 성과/자원",
+     "deficit in A A에서의 부족(액)",
+     "deficit in funding 자금 부족액",
+     "deficit in housing supply 주택 공급 부족",
+     "budget/trade/operating deficit 예산/무역/운영 적자"
+    ],
+    "examVar": [
+     {
+      "en": "The company was found to be deficient in trained personnel.",
+      "ko": "그 회사는 숙련된 인력이 부족한 것으로 밝혀졌다."
+     }
+    ]
+   },
+   {
+    "word": "workmate",
+    "pron": "[wɔ́ːrkmèit]",
+    "pos": "n.",
+    "meaning": "n. 직장 동료",
+    "tip": "[[b]]classmate[[/b]]는 class(학급)에서의 [[r]]친구[[/r]], [[b]]workmate[[/b]]는 work(일, 직장)에서의 [[r]]직장 동료[[/r]]",
+    "toeicExpr": [
+     "former/close workmate 예전/가까운 직장 동료"
+    ]
+   },
+   {
+    "word": "alert",
+    "pron": "[ǝlǝ́ːrt]",
+    "pos": "a./n./v.",
+    "meaning": "a. 방심 않는, 경계하는 n. 경보, 주의보 v. (위험 등을) 알리다, 경고하다",
+    "tip": "초소병이 적이 보이자마자 [[b]]얼럿[[/b]](얼른) 경보를 울릴 정도로 [[r]]방심 않는, 경계하는[[/r]]",
+    "toeicExpr": [
+     "stay alert 경계하다  alert staff 경계 태세의 직원",
+     "weather alert 기상 경보",
+     "alert all residents 모든 주민들에게 알리다"
+    ]
+   },
+   {
+    "word": "joint",
+    "pron": "[dʒɔint]",
+    "pos": "a.",
+    "meaning": "a. 공동의",
+    "tip": "같은 [[b]]조[[/b]](A조, B조...) [[b]]into[[/b]](안으로) 들어가서 조원들과 [[r]]공동의[[/r]] 과제를 하는",
+    "toeicExpr": [
+     "joint project/research 공동 프로젝트/연구  joint venture 합작 투자",
+     "joint ownership 공유권"
+    ],
+    "examVar": [
+     {
+      "en": "The two companies announced a joint project to develop eco-friendly packaging materials.",
+      "ko": "두 회사는 친환경 포장재를 개발하기 위한 공동 프로젝트를 발표했다."
+     }
+    ]
+   },
+   {
+    "word": "rule out",
+    "meaning": "배제하다, 제외하다",
+    "tip": "[[b]]rule[[/b]](규칙) + [[b]]out[[/b]](밖으로)] 규칙에서 밖으로 빼다, 즉 [[r]]배제하다[[/r]]",
+    "toeicExpr": [
+     "rule out the possibility 가능성을 배제하다",
+     "rule out the option 선택지를 제외하다",
+     "rule out mechanical failure 기계 결함 가능성을 배제하다"
+    ]
+   },
+   {
+    "word": "drag",
+    "pron": "[dræg]",
+    "pos": "v.",
+    "meaning": "v. 끌다, 끌고 가다, 질질 끌다",
+    "tip": "사냥한 멧돼지의 [[b]]두 leg[[/b]](다리)를 잡고 질질 [[r]]끌고 가다[[/r]]",
+    "toeicExpr": [
+     "drag heavy equipment 무거운 장비를 끌다",
+     "drag negotiations 협상을 질질 끌다",
+     "drag the approval process 승인 절차를 지연시키다"
+    ]
+   },
+   {
+    "word": "wrap",
+    "pron": "[ræp]",
+    "pos": "v./n.",
+    "meaning": "v. 싸다, 포장하다 n. 싸개",
+    "tip": "배달 음식을 투명 비닐 [[b]]랩[[/b]]으로 [[r]]싸다, 포장하다[[/r]]",
+    "toeicExpr": [
+     "wrap a gift 선물을 포장하다",
+     "wrap A in B A를 B로 싸다 (in: ~ 안에)",
+     "wrap the package in plastic 소포를 비닐로 포장하다",
+     "wrap the gift in paper 선물을 종이로 포장하다",
+     "wrap up 마무리 짓다 (← 완전히(up) 포장하여(wrap) 마무리 짓다: 포장 단계는 마무리 단계)",
+     "wrap up the meeting/project/negotiations 회의를/프로젝트를/협상을 마무리하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. All fragile items should be wrapped _______ protective material.",
+      "opt": "(A) of  (B) to  (C) with  (D) in",
+      "ans": "(C)",
+      "ko": "모든 깨지기 쉬운 물품은 보호 재료로 포장되어야 한다."
+     },
+     {
+      "en": "2. The project must be wrapped up by the end of the month.",
+      "ko": "그 프로젝트는 이달 말까지 마무리되어야 한다."
+     }
+    ]
+   },
+   {
+    "word": "virtually",
+    "pron": "[vǝ́ːrtʃuəli]",
+    "pos": "ad.",
+    "meaning": "ad. 1. 실제로, 사실상, 거의  2. (컴퓨터를 이용한) 가상으로",
+    "tip": "여친에게 옷을 벗어주면서 자신은 안 춥다고 해놓고 [[b]]but[[/b]](그러나) [[r]]실제로[[/r]]는 [[r]]추월리[[/r]].",
+    "derivatives": [
+     {
+      "word": "virtual",
+      "meaning": "실질적인, (컴퓨터를 이용한) 가상의"
+     }
+    ],
+    "toeicExpr": [
+     "virtually impossible 사실상 불가능한",
+     "virtually no difference 사실상 차이가 없는",
+     "virtual meeting 화상 회의, 온라인 회의  virtual reality 가상 현실",
+     "virtual training 온라인 교육"
+    ]
+   },
+   {
+    "word": "scope",
+    "pron": "[skoup]",
+    "pos": "n.",
+    "meaning": "n. 범위, 여지, 기회",
+    "tip": "인류는 telescope, microscope와 같은 [[b]]scope[[/b]](보는 기기)를 통해 멀리, 또는 작은 [[r]]범위[[/r]]를 볼 수 있는 [[r]]여지, 기회[[/r]]가 생겼다.",
+    "toeicExpr": [
+     "within/beyond the scope of ~의 범위 내에서/~의 범위를 벗어나서",
+     "limit/expand the scope 범위를 제한하다/확장하다",
+     "the scope of one's position 직무 범위",
+     "scope for ~할 여지/가능성 (for: ~을 위한, ~에 대한)",
+     "scope for improvement/change 개선/변화의 여지(기회)"
+    ],
+    "examVar": [
+     {
+      "en": "1. The manager stated that the new responsibility is outside the scope of Mr. Han's position.",
+      "ko": "그 관리자는 새로운 업무가 한 씨의 직무 범위 밖에 있다고 말했다."
+     },
+     {
+      "en": "2. The manager stated that there is still plenty of scope for further improvement.",
+      "ko": "관리자는 여전히 추가 개선의 여지가 많이 남아 있다고 말했다."
+     }
+    ]
+   },
+   {
+    "word": "passage",
+    "pron": "[pǽsidʒ]",
+    "pos": "n.",
+    "meaning": "n. 1. 구절  2. 통행, 통과, 통로",
+    "tip": "① 책의 한 [[b]]페이지[[/b]]에 있는 한 [[r]]구절[[/r]]\n② [[b]]pass[[/b]](통과하다) + [[b]]age[[/b]](명·어) [[r]]통행, 통과, 통로[[/r]]",
+    "toeicExpr": [
+     "reading passage 지문, 독해 글",
+     "narrow passage 좁은 통로  safe passage 안전 통행",
+     "allow passage 통과를 허락하다"
+    ]
+   },
+   {
+    "word": "cabin",
+    "pron": "[kǽbin]",
+    "pos": "n.",
+    "meaning": "n. 오두막집, (배나 항공기의) 선실",
+    "tip": "땅을 [[b]]캐[[/b]]서 [[b]]빈[[/b]] 공간을 만들고 지붕을 씌워 만든 [[r]]오두막집[[/r]]",
+    "toeicExpr": [
+     "cabin crew (= cabin attendant) 객실 승무원",
+     "first-class cabin 일등석 객실  airplane cabin 항공기 객실"
+    ]
+   },
+   {
+    "word": "stand",
+    "pron": "[stænd]",
+    "pos": "v./n.",
+    "meaning": "1. v. 서 있다, 일어서다  2. v. 견디다, 참다  3. n. 승강장",
+    "tip": "교장 선생님의 지겨운 연설을 학생들이 운동장에 [[b]]stand[[/b]](서서) [[r]]견디다, 참다[[/r]]",
+    "toeicExpr": [
+     "stand still 가만히 서 있다  stand in line 줄 서서 서 있다",
+     "stand the heat/noise 더위를/소음을 참다",
+     "cannot stand inefficiency 비효율을 참지 못하다",
+     "bus/taxi stand 버스/택시 승강장"
+    ],
+    "examVar": [
+     {
+      "en": "The company stated that it would not stand any form of harassment in the workplace.",
+      "ko": "그 회사는 직장에서 어떤 형태의 괴롭힘도 용납하지 않겠다고 밝혔다."
+     }
+    ]
+   },
+   {
+    "word": "illustrate",
+    "pron": "[íləstrèit]",
+    "pos": "v.",
+    "meaning": "v. 설명하다, 예시를 들어 보여주다, 삽화 등을 넣다",
+    "tip": "일러주며 [[b]]straight[[/b]](직접) [[r]]설명하다, 예시를 들어 보여주다[[/r]]",
+    "derivatives": [
+     {
+      "word": "illustration",
+      "meaning": "설명, 예시"
+     },
+     {
+      "word": "illustrated",
+      "meaning": "삽화가 들어간"
+     }
+    ],
+    "toeicExpr": [
+     "illustrate a point 요점을 설명하다",
+     "illustrate with a chart/graph 차트로/그래프로 설명하다",
+     "clear illustration 명확한 설명  practical illustration 실질적인 예시",
+     "illustrated guide/manual/magazine 삽화가 들어간 안내서/매뉴얼/잡지"
+    ]
+   },
+   {
+    "word": "explanation",
+    "pron": "[èksplənéiʃən]",
+    "pos": "n.",
+    "meaning": "n. 설명",
+    "tip": "① [[b]]explain[[/b]]의 명사형\n② 수학 선생님이 \"요렇게 [[b]]엑스[[/b]](x) [[b]]풀어내서[[/b]]\" 하고 푸는 방법을 [[r]]설명[[/r]]",
+    "derivatives": [
+     {
+      "word": "explain",
+      "meaning": "설명하다"
+     }
+    ],
+    "toeicExpr": [
+     "give an explanation 설명하다  require an explanation 설명을 요구하다",
+     "clear/adequate explanation 명확한/충분한 설명"
+    ]
+   },
+   {
+    "word": "conjunction",
+    "pron": "[kəndʒʌ́ŋkʃən]",
+    "pos": "n.",
+    "meaning": "n. 결합, 연합, 연결",
+    "tip": "큰 [[b]]정[[/b]]을 [[b]]선[[/b]]하게(시원하게) 두 나무 연결부위에 박아서 두 나무를 [[r]]결합, 연결[[/r]]",
+    "toeicExpr": [
+     "in conjunction with ~와 공동으로, ~와 함께 (in: ~한 상태로)",
+     "in conjunction with local partners 지역 파트너들과 함께",
+     "in conjunction with foreign investors 해외 투자자들과 함께",
+     "conjunction between companies 회사 간의 협력",
+     "conjunction of ideas/efforts/factors 아이디어의/노력의/요인의 결합"
+    ],
+    "examVar": [
+     {
+      "en": "The training program is offered in conjunction with an online course.",
+      "ko": "그 교육 프로그램은 온라인 강좌와 병행하여 제공된다."
+     }
+    ]
+   },
+   {
+    "word": "territory",
+    "pron": "미[térɔ̀:ri] 영[térətəri]",
+    "pos": "n.",
+    "meaning": "n. 지역, 영역",
+    "tip": "이곳은 [[b]]테러[[/b]]가 자주 일어나는 [[b]]터리[[/b]](땅이리), 즉 테러가 일어나는 [[r]]지역, 영역[[/r]]",
+    "toeicExpr": [
+     "sales territory 영업 구역, 판매 구역",
+     "expand into new territories 새로운 영역으로 확장하다"
+    ]
+   },
+   {
+    "word": "territory",
+    "pron": "미[téritɔ̀:ri] 영[térətəri]",
+    "pos": "n.",
+    "meaning": "지역, 영역",
+    "tip": "이곳은 [[b]]테러[[/b]]가 자주 일어나는 [[b]]터리[[/b]](땅이리), 즉 테러가 일어나는 [[r]]지역, 영역[[/r]]",
+    "toeicExpr": [
+     "sales territory 영업 구역, 판매 구역",
+     "expand into new territories 새로운 영역으로 확장하다"
+    ]
+   },
+   {
+    "word": "flood",
+    "pron": "[flʌd]",
+    "pos": "n./v.",
+    "meaning": "n. 홍수, 쇄도 v. 넘치다, 쇄도하다",
+    "tip": "수문을 모두 [[b]]풀러두[[/b]] 댐이 넘치다, 즉 [[r]]홍수[[/r]], 물이 [[r]]넘치다[[/r]], [[r]]쇄도하다[[/r]]",
+    "toeicExpr": [
+     "flood damage/warning 홍수 피해/경보  flood the area 지역을 범람시키다",
+     "a flood of orders 주문 폭주  flood of inquiries/complaints 문의/불만 쇄도",
+     "be flooded with ~이 쇄도하다 (with: ~를 가지고 채움, 가득함)",
+     "be flooded with inquiries/applications/complaints 문의가/지원서가/불만이 쇄도하다"
+    ],
+    "examVar": [
+     {
+      "en": "After the product launch, the customer service team was flooded with inquiries.",
+      "ko": "제품 출시 후 고객 서비스팀에는 문의가 쇄도했다."
+     }
+    ]
+   },
+   {
+    "word": "diagram",
+    "pron": "[dáiəgræm]",
+    "pos": "n.",
+    "meaning": "도표, 도형",
+    "tip": "[[b]]다이아[[/b]]의 크기에 따라 몇 [[b]]그램[[/b]]인지 나타낸 [[r]]도표, 도형[[/r]]",
+    "toeicExpr": [
+     "flow diagram 흐름도  organizational diagram 조직도",
+     "detailed diagram 상세 도표  refer to the diagram 도표를 참고하다"
+    ]
+   },
+   {
+    "word": "textile",
+    "pron": "[tékstail]",
+    "pos": "n.",
+    "meaning": "직물, 섬유",
+    "tip": "[[b]]택![[/b]] 하고 털면 바로 원래 [[b]]스타일[[/b]]로 되돌아오는 구김 방지 [[r]]직물, 섬유[[/r]]",
+    "toeicExpr": [
+     "textile industry 섬유 산업  textile factory 섬유 공장",
+     "textile production 섬유 생산"
+    ]
+   },
+   {
+    "word": "shrink",
+    "pron": "[ʃriŋk]",
+    "pos": "v.",
+    "meaning": "v. 1. 움츠러들다, 오그라들다  2. 줄어들다, 감소하다  3. (규모·양이) 줄어들다, 줄이다 (shrink-shrunk(shrank)-shrunken(shrunk))",
+    "tip": "[[b]]시린[[/b]] 손을 무릎 사이에 넣고 추워서 \"[[b]]크으~[[/b]]\" 하며 몸이 잔뜩 [[r]]움츠러들다, 오그라들다[[/r]]",
+    "toeicExpr": [
+     "shrink after washing 세탁 후 줄어들다  fabric shrinks 천이 수축하다",
+     "shrink in size 크기가 줄어들다 (in: 영역, 범위)",
+     "shrink in demand 수요가 감소하다  the market shrank 시장이 축소되었다"
+    ],
+    "examVar": [
+     {
+      "en": "Due to rising costs, the company's profit margin has shrunk.",
+      "ko": "비용 상승으로 인해 그 회사의 이익률은 줄어들었다."
+     }
+    ]
+   },
+   {
+    "word": "broadcast",
+    "pron": "미[brɔ́:dkæst] 영[brɔ́:dkɑ̀:st]",
+    "pos": "v./n.",
+    "meaning": "v. 방송하다, 송출하다 n. 방송",
+    "tip": "전국 [[b]]broad[[/b]](넓은) 지역으로 방송전파를 [[b]]cast[[/b]](던지다), 즉 [[r]]방송하다[[/r]]",
+    "toeicExpr": [
+     "broadcast a program 프로그램을 방송하다  broadcast live 생중계하다",
+     "broadcast an announcement 공지사항을 송출하다",
+     "live broadcast 생방송  television broadcast TV 방송"
+    ]
+   },
+   {
+    "word": "lessen",
+    "pron": "[lésn]",
+    "pos": "v.",
+    "meaning": "줄이다, 감소시키다",
+    "tip": "[[[b]]less[[/b]](더 적은) + [[b]]en[[/b]](동사를 만들어주는 어미)] 더 적어지게 하다, 즉 [[r]]줄이다, 줄다[[/r]]",
+    "toeicExpr": [
+     "lessen costs/expenses/production 비용을/지출을/생산을 줄이다",
+     "lessen the risk/burden 위험을/부담을 줄이다"
+    ]
+   },
+   {
+    "word": "weigh",
+    "pron": "[wei]",
+    "pos": "v.",
+    "meaning": "v. 1. 무게가 나가다, 무게를 재다  2. 저울질하다, 신중히 따지다  3. (영향·부담으로) 작용하다",
+    "tip": "① [[b]]weight[[/b]](무게)의 동사형으로 [[r]]무게를 재다, 저울질하다[[/r]]\n② [[b]]무게[[/b]]가 느껴지다란 의미에서 [[r]](영향·부담으로) 작용하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "weight",
+      "meaning": "무게"
+     }
+    ],
+    "toeicExpr": [
+     "The package weighs nearly 20 kilograms. 그 소포는 거의 20킬로그램이다.",
+     "weigh a package 소포의 무게를 재다  weigh luggage 짐의 무게를 재다",
+     "weigh options 선택지를 저울질하다(신중히 따지다)",
+     "weigh the pros and cons 장단점을 저울질하다(신중히 따지다)",
+     "weigh A against B A를 B와 비교하여 고려하다 (against: ~에 맞서, ~에 맞대어)",
+     "weigh the benefits against the costs 이익을 비용과 비교해 따져 보다",
+     "weigh customer demand against production capacity 고객 수요를 생산 능력과 비교해 따져 보다",
+     "weigh on A A에게 부담·영향으로 작용하다 (on: 부담, 혜택 등을 부여하는 대상 앞에)",
+     "weigh on the decision 결정에 영향을 미치다",
+     "weigh heavily on the company 회사에 중대한 부담으로 작용하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. Before finalizing the contract, the company must carefully weigh the risks involved.",
+      "ko": "계약을 최종 확정하기 전에 회사는 관련된 위험 요소들을 신중히 고려해야 한다."
+     },
+     {
+      "en": "2. The board will weigh the benefits against the costs before approving the expansion plan.",
+      "ko": "이사회는 확장 계획을 승인하기 전에 이익을 비용과 비교하여 검토할 것이다."
+     },
+     {
+      "en": "3. All luggage will be weighed at the check-in counter before boarding.",
+      "ko": "모든 수하물은 탑승 전에 체크인 카운터에서 무게가 측정될 것이다."
+     }
+    ]
+   },
+   {
+    "word": "nationwide",
+    "pron": "[néiʃənwàid]",
+    "pos": "a./ad.",
+    "meaning": "a. 전국적인 ad. 전국적으로",
+    "tip": "[[[b]]nation[[/b]](나라) + [[b]]wide[[/b]](넓은)] 나라 넓이만큼의, 즉 [[r]]전국적인[[/r]]",
+    "toeicExpr": [
+     "nationwide campaign 전국적 캠페인",
+     "nationwide delivery/service 전국 배송/서비스",
+     "expand nationwide 전국적으로 확장하다"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 41,
+  "title": "",
+  "words": [
+   {
+    "word": "confer",
+    "pron": "[kənfə́ːr]",
+    "pos": "v.",
+    "meaning": "v. 1. 수여하다, (권리·지위·혜택을) 부여하다  2. 협의하다",
+    "tip": "어린이 미술대회 1등 상으로 아이스크림 [[b]]콘[[/b]]을 [[b]]퍼[[/b]]주는 게 어떨지 [[r]]협의하다[[/r]]. 결국 콘을 퍼서 [[r]]수여하다[[/r]].",
+    "derivatives": [
+     {
+      "word": "conference",
+      "meaning": "회의, 협의"
+     }
+    ],
+    "toeicExpr": [
+     "confer A on B A를 B에게 부여하다, 수여하다 (← on: 부여하여 그 사람 위에(on) 얹혀놓는 의미)",
+     "confer authority on the committee 위원회에 권한을 부여하다",
+     "confer an award on the winner 수상자에게 상을 수여하다",
+     "confer with the legal team about the contract 계약에 관해 법무팀과 협의하다"
+    ],
+    "examVar": [
+     {
+      "en": "The revised charter confers decision-making power ______ the board.",
+      "opt": "(A) to  (B) on  (C) with  (D) for",
+      "ans": "(B)",
+      "ko": "개정된 정관은 이사회에 의사결정 권한을 부여한다.",
+      "note": "confer A on B에서 on은 윗사람이나 기관이 아랫사람이나 기관 위에(on) 내려놓는 의미가 있다. 즉, on은 권한·의무·혜택·부담 등이 부여·부과되는 대상 앞에 쓰이는 경우가 있다. 그와 유사하게 쓰인 경우는 다음과 같다. * bestow A on B: A를 B에게 수여하다, 베풀다 * impose A on B: A를 B에게 부과하다 * place A on B: A를 B에게 지우다, 부과하다"
+     }
+    ]
+   },
+   {
+    "word": "sound",
+    "pron": "[saund]",
+    "pos": "n./v./a.",
+    "meaning": "1. n. 소리  v. ~처럼 들리다  2. a. 건전한, 타당한",
+    "tip": "① 클래식 [[b]]sound[[/b]](소리)를 듣는 [[r]]건전한[[/r]] 취미\n② 그 [[b]]sound[[/b]](소리)는 [[r]]타당한[[/r]] 소리처럼 들린다.",
+    "toeicExpr": [
+     "sound interesting/reasonable 흥미롭게/타당하게 들리다",
+     "sound financial condition 건전한 재정 상태",
+     "sound decision/judgment 타당한 결정/판단"
+    ]
+   },
+   {
+    "word": "foster",
+    "pron": "[fɔ́ːstər]",
+    "pos": "v.",
+    "meaning": "v. 조성하다, 촉진하다, 증진시키다",
+    "tip": "불조심 [[b]]포스터[[/b]]를 벽에 붙여 불조심 분위기를 [[r]]조성하다, 증진시키다[[/r]]",
+    "toeicExpr": [
+     "foster a positive environment 긍정적인 환경을 조성하다",
+     "foster growth/innovation 성장을/혁신을 촉진하다(증진시키다)",
+     "foster teamwork 팀워크를 증진시키다"
+    ],
+    "examVar": [
+     {
+      "en": "The new training program is designed to foster teamwork and cooperation among employees.",
+      "ko": "그 새로운 교육 프로그램은 직원들 간의 팀워크와 협력을 촉진하도록 설계되었다."
+     }
+    ]
+   },
+   {
+    "word": "promising",
+    "pron": "미[prámisiŋ] 영[prɔ́misiŋ]",
+    "pos": "a.",
+    "meaning": "유망한, 좋을 것 같은",
+    "tip": "미래의 번영을 [[b]]promise[[/b]](약속)한 듯한, 즉 [[r]]유망한, 좋을 것 같은[[/r]]",
+    "toeicExpr": [
+     "promising candidate/employee/market 유망한 후보자/직원/시장"
+    ]
+   },
+   {
+    "word": "casual",
+    "pron": "[kǽʒuəl]",
+    "pos": "a.",
+    "meaning": "1. 평상복의, 평상시의  2. 대충의, 신경 쓰지 않는",
+    "tip": "평상복인 캐주얼복은 [[r]]평상시의, 신경 쓰지 않는[[/r]] 옷",
+    "toeicExpr": [
+     "casual wear/attire 캐주얼 복장  casual dress code 평상복 복장 규정",
+     "casual atmosphere 편안한 분위기"
+    ]
+   },
+   {
+    "word": "worthwhile",
+    "pron": "미[wə́ːrθhwail] 영[wə́ːθwail]",
+    "pos": "a.",
+    "meaning": "가치 있는",
+    "tip": "[[b]]worth[[/b]](가치)가 있는, 즉 [[r]]가치 있는[[/r]]",
+    "derivatives": [
+     {
+      "word": "worthy",
+      "meaning": "~할 자격이 있는, ~의 가치가 있는"
+     },
+     {
+      "word": "worth",
+      "meaning": "~의 가치가 있는"
+     }
+    ],
+    "toeicExpr": [
+     "It is worthwhile + to부정사: ~할 가치가 있다",
+     "It is worthwhile to review the contract carefully. 계약서를 꼼꼼히 검토하는 것은 가치가 있다.",
+     "worthwhile investment/experience 가치 있는 투자/경험",
+     "worthy는 보통 be worthy of의 형태로만 쓰인다.",
+     "be worthy of + 명사/동명사: ~할 자격이 있다, ~할 만한 가치가 있다",
+     "be worthy of consideration/attention 고려해볼/주목할 만한 가치가 있다",
+     "worth는 단독으로 사용하지 않고 항상 뒤에 명사/동명사가 온다.",
+     "be worth + 명사/동명사: ~의 가치가 있다, ~할 만한 가치가 있다",
+     "be worth the cost/effort 그만한 비용의/노력의 가치가 있다",
+     "be worth $1 million 백만 달러의 가치가 있다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The additional training was considered _______ despite the high cost.",
+      "opt": "(A) worth  (B) worthy  (C) worthwhile  (D) value",
+      "ans": "(C)",
+      "ko": "그 추가 교육은 높은 비용에도 불구하고 할 만한 가치가 있는 것으로 여겨졌다.",
+      "note": "worth는 단독으로 쓰지 못하고 뒤에 명사/동명사가 와야 한다. worthy는 'be worthy of + 명사/동명사' 형태로만 쓰인다."
+     },
+     {
+      "en": "2. The proposal is _______ of further discussion by the executive board.",
+      "opt": "(A) worth  (B) worthwhile  (C) worthy  (D) valued",
+      "ans": "(C)",
+      "ko": "그 제안은 경영진의 추가 논의를 받을 자격이 있다.",
+      "note": "worth, worthwhile은 뒤에 of를 취하지 않는다."
+     }
+    ]
+   },
+   {
+    "word": "concise",
+    "pron": "[kənsáis]",
+    "pos": "a.",
+    "meaning": "간결한, 명료한",
+    "tip": "옥상 간판에 상표명이 [[b]]큰 사이즈[[/b]]로 써 있어서 [[r]]간결한, 명료한[[/r]]",
+    "toeicExpr": [
+     "concise summary/explanation/report 간결한 요약/설명/보고서"
+    ]
+   },
+   {
+    "word": "sizable",
+    "pron": "[sáizəbl]",
+    "pos": "a.",
+    "meaning": "상당한 크기의, 상당한",
+    "tip": "가방에 들어가기에 [[b]]size[[/b]](크기)가 너무 커서 받을 [[b]]접을[[/b]], 즉 [[r]]상당한 크기의, 상당한[[/r]]",
+    "toeicExpr": [
+     "sizable profit/investment/difference 상당한 이익/투자/차이",
+     "sizable market 규모가 큰 시장"
+    ]
+   },
+   {
+    "word": "transition",
+    "pron": "[trænzíʃən]",
+    "pos": "n./v.",
+    "meaning": "n. 변천, 변화, 과도기  v. 전환되다",
+    "tip": "지금은 [[b]]train[[/b]](기차)의 시대는 [[b]]지선[[/b]](지고 있어). 그리고 비행기가 뜨고 있어. 즉, [[r]]변천, 변화, 과도기[[/r]]",
+    "toeicExpr": [
+     "transition to digital systems 디지털 시스템으로의 전환 (to: ~쪽으로)",
+     "transition to renewable energy 재생에너지로의 전환",
+     "transition period/phase/stage 전환 기간/단계/단계"
+    ],
+    "examVar": [
+     {
+      "en": "The company is planning a transition to a cloud-based system.",
+      "ko": "그 회사는 클라우드 기반 시스템으로의 전환을 계획하고 있다."
+     }
+    ]
+   },
+   {
+    "word": "absolute",
+    "pron": "[ǽbsəlùːt]",
+    "pos": "a.",
+    "meaning": "완전한, 절대적인",
+    "tip": "다른 선수들보다 월등하게 [[b]]앞설[[/b]](루트), 즉 [[r]]완전한, 절대적인[[/r]] 1등",
+    "derivatives": [
+     {
+      "word": "absolutely",
+      "meaning": "완전히, 전적으로"
+     }
+    ],
+    "toeicExpr": [
+     "absolute confidentiality 완전한 기밀 유지  absolute accuracy 완벽한 정확성",
+     "absolutely necessary 절대적으로 필요한  absolutely certain 완전히 확신하는"
+    ]
+   },
+   {
+    "word": "complicate",
+    "pron": "미[kámpləkèit] 영[kɔ́mpləkèit]",
+    "pos": "v.",
+    "meaning": "복잡하게 만들다",
+    "tip": "수학 문제를 엄청 [[r]]복잡하게 만든다[[/r]]. 그래서 사람은 못 풀고 [[b]]컴[[/b]]으로(컴퓨터로) [[b]]풀러[[/b]](풀어) [[b]]캐이트[[/b]](케다).",
+    "derivatives": [
+     {
+      "word": "complicated",
+      "meaning": "복잡한"
+     }
+    ],
+    "toeicExpr": [
+     "complicate the process/situation 과정을/상황을 복잡하게 만들다",
+     "complicated process/issue 복잡한 절차/문제"
+    ]
+   },
+   {
+    "word": "practicable",
+    "pron": "[prǽktikəbl]",
+    "pos": "a.",
+    "meaning": "실행 가능한",
+    "tip": "[[b]]practice[[/b]](실행하다) + [[b]]able[[/b]](~할 수 있는)] [[r]]실행할 수 있는[[/r]]",
+    "derivatives": [
+     {
+      "word": "practice",
+      "meaning": "실행, 연습; 실행하다, 연습하다"
+     },
+     {
+      "word": "practical",
+      "meaning": "실제의, 실용적인"
+     }
+    ],
+    "toeicExpr": [
+     "practicable solution/method 실행 가능한 해결책/방법",
+     "put into practice 실행하다 (← 직역하면 '실행 안으로 넣다')",
+     "practical knowledge 실용적인 지식  practical skills 실무 기술"
+    ],
+    "examVar": [
+     {
+      "en": "Although the proposal sounded interesting, it was not _______ due to budget and staffing limitations.",
+      "opt": "practicable (O)  practical (X)",
+      "ko": "그 제안은 흥미롭게 들렸지만, 예산과 인력 제한 때문에 실행 가능하지 않았다.",
+      "note": "practicable과 practical을 구분하는 문제가 출제되었다."
+     }
+    ]
+   },
+   {
+    "word": "solar",
+    "pron": "[sóulər]",
+    "pos": "a.",
+    "meaning": "태양의, 태양열을 이용한",
+    "tip": "태양 탐사선 로켓을 [[r]]태양의[[/r]] 방향으로 [[b]]쏠라[[/b]](쏘아라!)",
+    "derivatives": [
+     {
+      "word": "solar-powered",
+      "meaning": "태양광으로 작동하는"
+     }
+    ],
+    "toeicExpr": [
+     "solar panel/power/farm 태양광 패널/전력/발전소",
+     "solar-powered lights 태양광 조명"
+    ]
+   },
+   {
+    "word": "probable",
+    "pron": "미[prábəbl] 영[prɔ́bəbl]",
+    "pos": "a.",
+    "meaning": "있음 직한, 가능성 있는",
+    "tip": "[[b]]푸라[[/b]](푸어라) 아빠의 [[b]]밥을[[/b]], 즉 아빠가 지금쯤 퇴근하고 집에 도착할 [[r]]가능성 있는, 있음 직한[[/r]]",
+    "derivatives": [
+     {
+      "word": "probably",
+      "meaning": "아마도"
+     }
+    ],
+    "toeicExpr": [
+     "probable reason/outcome 개연성 있는 이유/결과",
+     "highly probable 가능성이 높은",
+     "will probably increase/arrive 아마 증가할/도착할 것이다"
+    ],
+    "examVar": [
+     {
+      "en": "It is highly probable that the company will expand its operations overseas next year.",
+      "ko": "그 회사가 내년에 해외로 사업을 확장할 가능성이 매우 높다."
+     }
+    ]
+   },
+   {
+    "word": "safeguard",
+    "pron": "[séifgɑːrd]",
+    "pos": "v./n.",
+    "meaning": "v. 보호하다  n. 보호조치, 안전장치",
+    "tip": "[[b]]safe[[/b]](안전)을 [[b]]guard[[/b]](지키는) [[r]]보호조치, 안전장치[[/r]]",
+    "toeicExpr": [
+     "safeguard information/employees 정보를/직원을 보호하다",
+     "implement safeguards 보호조치를 시행하다",
+     "legal safeguards 법적 보호장치"
+    ]
+   },
+   {
+    "word": "genuine",
+    "pron": "[dʒénjuin]",
+    "pos": "a.",
+    "meaning": "진짜의, 진실한",
+    "tip": "재 [[b]]누인[[/b]](누이는) [[r]]진짜로, 진실한[[/r]]",
+    "toeicExpr": [
+     "genuine product 정품",
+     "genuine support/concern 진정한 지지/우려"
+    ]
+   },
+   {
+    "word": "block",
+    "pron": "미[blak] 영[blɔk]",
+    "pos": "n./v.",
+    "meaning": "1. n. 사각형 덩어리  2. n. (도로로 나뉘는) 블록, 구역  3. n. 방해물  v. 막다, 방해하다",
+    "tip": "① 레고의 [[b]]블록[[/b]]은 [[r]]사각형 덩어리[[/r]]\n② 배구에서 [[b]]블로킹(blocking)[[/b]]으로 상대 공격을 [[r]]막다, 방해하다[[/r]]",
+    "toeicExpr": [
+     "a block of ice 얼음 덩어리",
+     "office block 사무실 건물",
+     "city block 도시의 한 구역",
+     "apartment block 아파트 단지",
+     "several blocks away 몇 블록 떨어진 곳에",
+     "block access/traffic/entry 접근을/교통을/출입을 차단하다",
+     "block the entrance 출입구를 막다"
+    ],
+    "examVar": [
+     {
+      "en": "The road will be blocked during the parade.",
+      "ko": "퍼레이드 동안 그 도로는 차단될 것이다."
+     }
+    ]
+   },
+   {
+    "word": "straightforward",
+    "pron": "[streitfɔ́:rwərd]",
+    "pos": "a.",
+    "meaning": "1. 간단한, 쉬운  2. 솔직한, 숨김없는",
+    "tip": "① [[b]]straight[[/b]](똑바로) [[b]]forward[[/b]](앞으로)만 가면 되는 [[r]]간단한, 쉬운 길[[/r]]\n② [[b]]straight[[/b]](똑바로) [[b]]forward[[/b]](앞으로) 정도로만 가는 [[r]]솔직한 사람[[/r]]",
+    "toeicExpr": [
+     "straightforward task/process 간단한 업무/절차",
+     "straightforward explanation 쉬운 설명",
+     "straightforward answer 솔직한 대답"
+    ]
+   },
+   {
+    "word": "eco-friendly",
+    "pron": "[ékoufréndli]",
+    "pos": "a.",
+    "meaning": "친환경적인",
+    "tip": "① [[b]]에 코[[/b]]에 맑은 공기가 [[b]]friendly[[/b]](친근한)하게 [[r]]친환경적인[[/r]] 숲속 마을에 사는\n② [[b]]eco[[/b]]('환경, 생태'를 뜻하는 접두어) + [[b]]friendly[[/b]](친근한, 우호적인)] [[r]]친환경적인[[/r]]",
+    "toeicExpr": [
+     "eco-friendly products/brand/policy 친환경 제품/브랜드/정책"
+    ]
+   },
+   {
+    "word": "even",
+    "sup": "1",
+    "pron": "[íːvn]",
+    "pos": "ad.",
+    "meaning": "1. 심지어 ~조차도  2. (비교급을 강조하여) 더욱, 훨씬",
+    "tip": "① [[r]]이분조차도 그렇다.[[/r]]\n② [[r]]이분이 훨씬 더 크다.[[/r]]",
+    "toeicExpr": [
+     "Even the manager supported the decision. 매니저조차도 그 결정을 지지했다.",
+     "She didn't even call to apologize. 그녀는 사과 전화조차도 하지 않았다.",
+     "even if 비록 ~일지라도  even though 비록 ~이지만",
+     "even more/less 훨씬 더/덜  even better 훨씬 더 낫다"
+    ],
+    "examVar": [
+     {
+      "en": "1. This year's sales are even higher than last year's.",
+      "ko": "올해 매출은 작년보다 훨씬 더 높다."
+     },
+     {
+      "en": "2. The project will proceed even if additional funding is not approved.",
+      "ko": "추가 자금이 승인되지 않더라도 프로젝트는 진행될 것이다."
+     },
+     {
+      "note": "* 시험에 잘 나오는 비교급 강조 단어\n비교급 앞에 even, much, a lot, far 등을 쓰면 \"훨씬\"의 의미가 된다. 이해해서 암기하자.\neven(심지어) + 비교급: 심지어 더 ~하다 = 훨씬 더 ~하다\nmuch(많이) + 비교급: 많이 더 ~하다 = 훨씬 더 ~하다\na lot(많이) + 비교급: 많이 더 ~하다 = 훨씬 더 ~하다\nfar(멀리) + 비교급: 더 ~한 정도가 멀리 미치다 = 훨씬 더 ~하다",
+      "en": "This flower is even prettier than that.",
+      "ko": "이 꽃은 저것보다 훨씬 더 예쁘다."
+     },
+     {
+      "en": "He is much older than I am.",
+      "ko": "그는 나보다 훨씬 더 나이가 많다."
+     },
+     {
+      "en": "His picture is far better than mine.",
+      "ko": "그의 사진은 나의 것보다 훨씬 더 좋다."
+     }
+    ]
+   },
+   {
+    "word": "even",
+    "sup": "2",
+    "pron": "[íːvn]",
+    "pos": "a.",
+    "meaning": "1. 짝수의  2. 고른, 평평한, 균등한",
+    "tip": "① [[b]]2 분[[/b]](두 분)은 [[r]]짝수의[[/r]]\n② 이가 [[b]]이븐[[/b]], 즉 이빨이 [[r]]고른, 평평한, 균등한[[/r]]",
+    "derivatives": [
+     {
+      "word": "evenly",
+      "meaning": "고르게, 균등하게"
+     }
+    ],
+    "toeicExpr": [
+     "even number 짝수  even pages/floor 짝수 쪽/층",
+     "even surface/ground 평평한 표면/땅  even distribution 균등한 분배",
+     "distribute evenly 고르게 분배하다  evenly spaced 고르게 간격이 띄워진"
+    ],
+    "examVar": [
+     {
+      "en": "The workload was evenly distributed among team members.",
+      "ko": "업무량은 팀원들 사이에 고르게 분배되었다."
+     }
+    ]
+   },
+   {
+    "word": "bundle",
+    "pron": "[bʌ́ndl]",
+    "pos": "n./v.",
+    "meaning": "n. 묶음, 다발  v. 묶어서 판매하다",
+    "tip": "[[b]]번들[[/b]]거리는 포장지로 포장한 꽃 한 [[r]]묶음, 다발[[/r]]",
+    "toeicExpr": [
+     "a bundle of ~ ~ 한 묶음(다발)  a bundle of documents 서류 묶음",
+     "bundle software packages 소프트웨어를 묶어 판매하다"
+    ]
+   },
+   {
+    "word": "abundant",
+    "pron": "[əbʌ́ndənt]",
+    "pos": "a.",
+    "meaning": "풍부한",
+    "tip": "[[b]]어, 번 돈 투[[/b]]성일 정도로 돈이 [[r]]풍부한[[/r]]",
+    "toeicExpr": [
+     "abundant resources/supply/opportunities 풍부한 자원/공급/기회"
+    ]
+   },
+   {
+    "word": "utmost",
+    "pron": "[ʌ́tmòust]",
+    "pos": "a./n.",
+    "meaning": "a. 최대의, 최고의  n. 최대한도",
+    "tip": "[[b]]엇! most[[/b]](최고네)! 즉, [[r]]최대의, 최고의[[/r]]",
+    "toeicExpr": [
+     "utmost importance/effort 최대의 중요성/노력",
+     "do one's utmost (=do one's best) 최선을 다하다"
+    ],
+    "examVar": [
+     {
+      "en": "The management will do its utmost to ensure the safety of all employees during construction.",
+      "ko": "경영진은 공사 중 모든 직원의 안전을 보장하기 위해 최선을 다할 것입니다."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "day": 42,
+  "title": "",
+  "words": [
+   {
+    "word": "negligent",
+    "pron": "[néɡlidʒənt]",
+    "pos": "a.",
+    "meaning": "a. 태만한, 부주의한, 과실이 있는",
+    "tip": "적이 쳐들어와도 [[r]]태만한, 부주의한[[/r]] 젊은 병사들을 보고 노인들이 \"[[b]]내가 갈리l 전투[[/b]]에\" 하고 나서다.",
+    "derivatives": [
+     {
+      "word": "negligible",
+      "meaning": "무시해도 좋은, 하찮은 (← -ible = ~할 만한, 즉 부주의해도 될 만한)"
+     },
+     {
+      "word": "neglect",
+      "meaning": "소홀히 하다, 방치하다; 태만, 방치"
+     }
+    ],
+    "toeicExpr": [
+     "negligent behavior 부주의한 행동",
+     "negligent in duties 업무에 태만한",
+     "negligent party 과실이 있는 당사자",
+     "negligible cost 무시해도 될 정도의 비용",
+     "negligible impact 하찮은 영향",
+     "neglect one's duty 의무를 소홀히 하다",
+     "neglect of duty 직무 태만",
+     "neglect of safety 안전 소홀"
+    ],
+    "examVar": [
+     {
+      "en": "The cost difference is negligible and does not affect the final price.",
+      "ko": "비용 차이는 미미하여 최종 가격에 영향을 주지 않는다."
+     }
+    ]
+   },
+   {
+    "word": "channel",
+    "pron": "[tʃǽnl]",
+    "pos": "n.",
+    "meaning": "n. 1. (방송) 채널  2. (전달·소통·판매 등의) 경로",
+    "tip": "KBS [[b]]채널[[/b]]을 [[r]]경로[[/r]]로 해서 소식을 전파하다.",
+    "toeicExpr": [
+     "news channel 뉴스 채널",
+     "communication/sales channel 의사소통/판매 경로",
+     "distribution channel 유통 경로"
+    ]
+   },
+   {
+    "word": "obvious",
+    "pron": "미[ɑ́bviəs] 영[ɔ́bviəs]",
+    "pos": "a.",
+    "meaning": "a. 명백한, 분명한",
+    "tip": "교실에서 내 [[b]]앞자리가 비었수[[/b]]. 어제 일진들에게 맞아서 결석한 게 [[r]]명백한, 분명한[[/r]]",
+    "derivatives": [
+     {
+      "word": "obviously",
+      "meaning": "명백하게"
+     }
+    ],
+    "toeicExpr": [
+     "obvious reason/mistake/solution 명백한(분명한) 이유/실수/해결책",
+     "It is obvious that ~ ~은 분명하다",
+     "It is obvious that sales have increased. 판매가 증가했다는 것은 분명하다.",
+     "obviously different/true 명백히 다른/사실인"
+    ]
+   },
+   {
+    "word": "obey",
+    "pron": "미[oubéi] 영[əbéi]",
+    "pos": "v.",
+    "meaning": "v. 복종하다, 따르다",
+    "tip": "칼을 든 강도에게 [[b]]오우! 베이[[/b]]는 게 무서워 [[r]]복종하다, 따르다[[/r]]",
+    "toeicExpr": [
+     "obey the rules 규칙을 따르다"
+    ]
+   },
+   {
+    "word": "disaster",
+    "pron": "미[dizǽstər] 영[dizɑ́ːstər]",
+    "pos": "n.",
+    "meaning": "n. 재앙, 재난",
+    "tip": "[[b]]디[[/b]]게 [[b]]재수[[/b]] 없는 [[b]]터[[/b]]라 이사 오는 집마다 발생하는 [[r]]재앙, 재난[[/r]]",
+    "toeicExpr": [
+     "natural disaster 자연재해",
+     "disaster recovery plan 재난 복구 계획"
+    ]
+   },
+   {
+    "word": "quit",
+    "pron": "[kwit]",
+    "pos": "v.",
+    "meaning": "v. 그만두다, 중지하다",
+    "tip": "회사 때려치운다며 문을 발로 [[b]]kick[[/b]](차버리고) 나와 직장을 [[r]]그만두다[[/r]], 일을 [[r]]중지하다[[/r]]",
+    "toeicExpr": [
+     "quit + 명사/동명사: ~을 그만두다, 중지하다",
+     "quit a job 직장을 그만두다",
+     "quit smoking 담배를 끊다"
+    ],
+    "examVar": [
+     {
+      "en": "Mr. Han decided to quit ______ late to improve his work-life balance.",
+      "opt": "(A) work  (B) to work  (C) working  (D) workable",
+      "ans": "(C)",
+      "ko": "한 씨는 일과 삶의 균형을 개선하기 위해 늦게까지 일하는 것을 그만두기로 결정했다.",
+      "note": "quit의 뒤에 동명사(-ing)가 오는 패턴을 물어보는 문제가 자주 출제되었다."
+     }
+    ]
+   },
+   {
+    "word": "border",
+    "pron": "[bɔ́ːrdər]",
+    "pos": "n./v.",
+    "meaning": "n. 국경, 경계  v. 경계를 이루다",
+    "tip": "몇 [[b]]보 더[[/b]] 가면 다른 나라인 [[r]]국경, 경계[[/r]]",
+    "toeicExpr": [
+     "border area 국경 지역"
+    ]
+   },
+   {
+    "word": "mature",
+    "pron": "[mətjúər]",
+    "pos": "a./v.",
+    "meaning": "1. a. 성숙한, 성숙 단계의  v. 성숙하다  2. v. (채권·대출 등이) 만기되다",
+    "tip": "① 아이들은 춥다고 하지만 \"[[b]]뭐가 추워?[[/b]]\" 하며 산전수전 다 겪어 와서 잘 견디는 [[r]]성숙한[[/r]] 어른  ② 채권, 대출이 [[r]]성숙했[[/r]]다는 것은 [[r]]만기가 되었다[[/r]]는 것",
+    "derivatives": [
+     {
+      "word": "maturity",
+      "meaning": "성숙, 만기"
+     }
+    ],
+    "toeicExpr": [
+     "mature market/industry 성숙한 시장/산업",
+     "the technology has matured 기술이 성숙 단계에 이르렀다",
+     "bond/loan matures 채권이/대출이 만기되다",
+     "at maturity 만기 시에",
+     "maturity date 만기일"
+    ],
+    "examVar": [
+     {
+      "en": "The company plans to repay the bond when it matures next year.",
+      "ko": "회사는 채권이 내년에 만기되면 상환할 계획이다."
+     }
+    ]
+   },
+   {
+    "word": "neutral",
+    "pron": "[njúːtrəl]",
+    "pos": "a.",
+    "meaning": "중립적인, 중간의, 중성의",
+    "tip": "TV 채널을 갖고 엄마 아빠가 싸울 때 나는 [[b]]누가[[/b]] 어떤 채널을 틀어도 상관없는, 즉 [[r]]중립적인, 중간의[[/r]]",
+    "toeicExpr": [
+     "remain neutral 중립인 상태로 있다  neutral position 중립적인 입장"
+    ]
+   },
+   {
+    "word": "discipline",
+    "pron": "[dísəplin]",
+    "pos": "n.",
+    "meaning": "규율",
+    "tip": "숙제를 안 해오면 학교가 끝난 [[b]]뒤[[/b]]에 남아 숙제를 [[b]]써[[/b]] [[r]]풀린[[/r]](풀리는) 학교의 [[r]]규율[[/r]]",
+    "toeicExpr": [
+     "strict discipline 엄격한 규율  workplace discipline 직장 내 규율"
+    ]
+   },
+   {
+    "word": "constrain",
+    "pron": "[kənstréin]",
+    "pos": "v.",
+    "meaning": "1. 제한하다, 제약하다, 억제하다  2. 강요하다, 어쩔 수 없이 ~하게 하다",
+    "tip": "독일군들이 학살장으로 가는 [[b]]큰 수의 train[[/b]](기차)에 유태인들을 강제로 태우다, 즉 [[r]]강요하다[[/r]], 그런 다음 못 빠져나가게 [[r]]제한하다, 억제하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "constraint",
+      "meaning": "제약, 제한"
+     }
+    ],
+    "toeicExpr": [
+     "be constrained by budget 예산에 의해 제약을 받다",
+     "constrain growth 성장을 억제하다  constrained choice 제한된 선택",
+     "be constrained to accept A A를 받아들일 수밖에 없다",
+     "be constrained to reduce costs 비용을 줄일 수밖에 없다",
+     "constrained decision 어쩔 수 없는 결정",
+     "budget/time constraints 예산/시간 제약",
+     "financial/technical constraints 재정적/기술적 제약"
+    ],
+    "examVar": [
+     {
+      "en": "Due to budget constraints, the company decided to postpone the new product launch.",
+      "ko": "예산 제약 때문에 회사는 신제품 출시를 연기하기로 결정했다."
+     }
+    ]
+   },
+   {
+    "word": "nervous",
+    "pron": "[nə́ːrvəs]",
+    "pos": "a.",
+    "meaning": "불안해하는, 신경과민의",
+    "tip": "불안하여 잠을 못 자 [[b]]너[[/b]] 얼굴이 [[b]]뻤수[[/b]](부었수), 즉 [[r]]불안해하는, 신경과민의[[/r]]",
+    "toeicExpr": [
+     "be nervous before a presentation 발표 전에 긴장하다",
+     "be nervous about an interview 면접을 앞두고 긴장하다"
+    ]
+   },
+   {
+    "word": "journey",
+    "pron": "[dʒə́ːrni]",
+    "pos": "n.",
+    "meaning": "여행, 여정  v. 여행하다",
+    "tip": "[[b]]\"노를 저어! 니가![[/b]]\" 하며 배를 타고 [[r]]여행, 여행하다[[/r]]",
+    "toeicExpr": [
+     "begin a journey 여행을 시작하다  journey by train 기차 여행"
+    ]
+   },
+   {
+    "word": "ordinary",
+    "pron": "미[ɔ́ːrdənèri] 영[ɔ́ːrdənəri]",
+    "pos": "a.",
+    "meaning": "보통의, 평범한",
+    "tip": "입학원서를 [[b]]어디 넣으리?[[/b]] 이런 [[r]]보통의, 평범한[[/r]] 점수를 가지고.",
+    "toeicExpr": [
+     "ordinary day/employee 평범한 하루/직원  ordinary customer 일반 고객"
+    ]
+   },
+   {
+    "word": "merely",
+    "pron": "[míərli]",
+    "pos": "ad.",
+    "meaning": "단지, 그저",
+    "tip": "우리 부장님이 아무 이유 없이 [[r]]단지, 그저[[/r]] [[b]]미울리[[/b]](밉다).",
+    "derivatives": [
+     {
+      "word": "mere",
+      "meaning": "단지 ~만의, 겨우 ~의"
+     }
+    ],
+    "toeicExpr": [
+     "be merely a matter of time 단지 시간문제일 뿐이다",
+     "be merely a suggestion/an opinion 단순한 제안이다/의견이다",
+     "not merely A but also B (=not only A but also B) A뿐만 아니라 B도 역시",
+     "The project was not merely successful but also profitable. 그 프로젝트는 단지 성공적일 뿐만 아니라 수익성도 있었다.",
+     "The policy affects not only employees but also customers. 그 정책은 직원들뿐만 아니라 고객들에게도 영향을 미친다."
+    ]
+   },
+   {
+    "word": "escalate",
+    "pron": "[éskəlèit]",
+    "pos": "v.",
+    "meaning": "1. 오르다, 증가하다, 증가시키다, 확대시키다  2. (상급자ㆍ상위 부서로) 이관하다, 보고하다",
+    "tip": "① [[b]]에스컬레이터[[/b]]를 타고 [[r]]오르다, 증가하다[[/r]]  ② 상급부서가 있는 높은 곳으로 [[b]]에스컬레이터[[/b]]에 서류를 태워 보내다, 즉 [[r]]이관하다, 보고하다[[/r]]",
+    "toeicExpr": [
+     "escalate costs 비용을 증가시키다  escalate prices 가격을 올리다",
+     "escalate problem 문제를 확대시키다",
+     "escalate issue to manager 사안을 관리자에게 이관하다",
+     "escalate complaint to supervisor 불만을 상급자에게 넘기다"
+    ],
+    "examVar": [
+     {
+      "en": "1. Production costs have escalated sharply this year.",
+      "ko": "생산 비용은 올해 급격히 증가했다."
+     },
+     {
+      "en": "2. The dispute may escalate if no agreement is reached.",
+      "ko": "합의에 도달치 못하면 분쟁이 심화될 수 있다(확대될 수 있다)."
+     },
+     {
+      "en": "3. Unresolved issues should be escalated to senior management.",
+      "ko": "해결되지 않은 사안들은 고위 경영진에게 이관되어야 한다."
+     }
+    ]
+   },
+   {
+    "word": "pile",
+    "pron": "[pail]",
+    "pos": "v./n.",
+    "meaning": "v. 쌓다, 쌓이다  n. 쌓아올린 더미",
+    "tip": "서류 [[b]]파일[[/b]]을 책상 위에 [[r]]쌓다, 쌓아올린 더미[[/r]]",
+    "toeicExpr": [
+     "a pile of documents/boxes 서류/박스 더미",
+     "pile boxes in a corner 상자를 구석에 쌓다",
+     "pile documents on a desk 서류를 책상 위에 쌓다",
+     "pile up (양이) 쌓이다, 누적되다",
+     "complaints pile up 불만이 쌓이다",
+     "costs pile up 비용이 누적되다"
+    ]
+   },
+   {
+    "word": "symptom",
+    "pron": "[símptəm]",
+    "pos": "n.",
+    "meaning": "n. 증상, 징후",
+    "tip": "결혼식으로 무리해서 [[b]]신부[[/b]]가 열나고 오들오들 [[b]]떰[[/b]](떨다), 즉 몸살감기의 [[r]]증상, 징후[[/r]]",
+    "toeicExpr": [
+     "symptom of a disease/illness 병의 증상"
+    ]
+   },
+   {
+    "word": "string",
+    "pron": "[striŋ]",
+    "pos": "n.",
+    "meaning": "n. 1. 끈, 줄  2. 일련, 연속",
+    "tip": "① [[b]]스프링[[/b]]처럼 꼬여서 늘어져 있는 [[r]]끈, 줄[[/r]]\n② [[r]]일련, 연속[[/r]]으로 뱅글뱅글 이어진 [[b]]스프링[[/b]]",
+    "toeicExpr": [
+     "string used for tying 묶는 데 쓰이는 끈",
+     "a string of 일련의",
+     "a string of successes/failures/questions 잇따른 성공/실패/질문"
+    ]
+   },
+   {
+    "word": "scratch",
+    "pron": "[skrætʃ]",
+    "pos": "v./n.",
+    "meaning": "1. v. 긁다  n. 긁힌 자국  2. v. 지우다, 제외하다",
+    "tip": "① \"네가 내 차를 못으로 [[b]]쓱[[/b]] [[b]]그랬지[[/b]]?\" 즉, [[r]]긁다, 긁힌 자국[[/r]]\n② 지우개로 [[b]]긁어[[/b]]서 [[r]]지우다, 제외하다[[/r]]",
+    "toeicExpr": [
+     "minor scratch 작은 흠집",
+     "scratch a name from a list 명단에서 이름을 지우다",
+     "scratch an item 항목을 삭제하다",
+     "from scratch 처음부터 (← 땅에 출발선을 긋는 것이 달리기의 시작, 즉 긁는 것부터의 의미에서 처음부터)",
+     "start from scratch 처음부터 시작하다"
+    ],
+    "examVar": [
+     {
+      "en": "1. Please scratch Mr. Lee's name from the attendee list.",
+      "ko": "참석자 명단에서 이 씨의 이름을 지워 주십시오."
+     },
+     {
+      "en": "2. Since the files were lost, the team had to start the project from scratch.",
+      "ko": "파일이 분실되어 팀은 프로젝트를 처음부터 시작해야 했다."
+     }
+    ]
+   },
+   {
+    "word": "somehow",
+    "pron": "[sʌ́mhàu]",
+    "pos": "ad.",
+    "meaning": "ad. 어떻게든지 해서",
+    "tip": "[[[b]]some[[/b]](어떤) + [[b]]how[[/b]](방법)] 어떤 방법을 써서라도, 즉 [[r]]어떻게든지 해서[[/r]]",
+    "toeicExpr": [
+     "somehow complete a task 어떻게든 업무를 완료하다",
+     "somehow resolve the issue 어떻게든 문제를 해결하다"
+    ]
+   },
+   {
+    "word": "somewhat",
+    "pron": "미[sʌ́mhwət] 영[sʌ́mhwɔ̀t]",
+    "pos": "ad.",
+    "meaning": "ad. 어느 정도, 다소",
+    "tip": "[[[b]]some[[/b]](약간의) + [[b]]what[[/b]](무엇)] 약간의 무엇이 있는 정도, 즉 [[r]]어느 정도, 다소[[/r]]",
+    "toeicExpr": [
+     "somewhat difficult/complicated/expensive 다소 어려운/복잡한/비싼"
+    ]
+   },
+   {
+    "word": "nowadays",
+    "pron": "[náuədèiz]",
+    "pos": "ad.",
+    "meaning": "ad. 오늘날, 요즘",
+    "tip": "[[[b]]now[[/b]](현재) [[b]]a days[[/b]](날들)] [[r]]오늘날[[/r]]에는",
+    "toeicExpr": [
+     "Nowadays, many companies allow remote work. 요즘 많은 회사들이 재택근무를 허용한다."
+    ]
+   },
+   {
+    "word": "slip",
+    "pron": "[slip]",
+    "pos": "v./n.",
+    "meaning": "1. v. 미끄러지다  n. 미끄러짐  2. n. 종이쪽지, 전표",
+    "tip": "목욕탕에서 [[b]]슬리퍼[[/b]]를 신고 [[r]]미끄러지다[[/r]]. 그래서 'slip(미끄러짐) 조심'이란 [[r]]종이쪽지[[/r]]를 붙여 놓는다.",
+    "derivatives": [
+     {
+      "word": "slippery",
+      "meaning": "미끄러운"
+     }
+    ],
+    "toeicExpr": [
+     "slip and fall 미끄러져 넘어지다",
+     "slip on the floor 바닥에서 미끄러지다",
+     "delivery/deposit/withdrawal slip 배송/입금/출금 전표",
+     "slippery road/floor 미끄러운 도로/바닥"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 43,
+  "title": "",
+  "words": [
+   {
+    "word": "grab",
+    "pron": "[græb]",
+    "pos": "v.",
+    "meaning": "붙들다, 잡다",
+    "tip": "그 [[b]]wrap[[/b]](랩)이 배달 음식이 흐르지 않게 꽉 [[r]]붙들다, 잡다[[/r]]",
+    "toeicExpr": [
+     "grab attention 관심을 끌다 (← 다른 사람들의 관심을 잡다)",
+     "grab the opportunity 기회를 잡다"
+    ],
+    "examVar": [
+     {
+      "en": "The new advertisement is designed to grab the attention of younger consumers.",
+      "ko": "새 광고는 젊은 소비자들의 관심을 끌도록 설계되었다."
+     }
+    ]
+   },
+   {
+    "word": "grasp",
+    "pron": "미[græsp] 영[grɑːsp]",
+    "pos": "v.",
+    "meaning": "이해하다, 파악하다",
+    "tip": "[[b]]그래![[/b]] 습득했어, 그 원리를! 즉, [[r]]이해하다, 파악하다[[/r]]",
+    "toeicExpr": [
+     "grasp the concept/meaning 개념을/의미를 이해하다"
+    ],
+    "examVar": [
+     {
+      "en": "Some new employees find it difficult to grasp the company's complex reporting system during their first few weeks.",
+      "ko": "일부 신입 직원들은 첫 몇 주 동안 회사의 복잡한 보고 시스템을 이해하기 어려워한다."
+     }
+    ]
+   },
+   {
+    "word": "root",
+    "pron": "[ruːt]",
+    "pos": "n.",
+    "meaning": "뿌리, 근원",
+    "tip": "수학에서 루트 16은 4이듯 [[b]]루트[[/b]]는 제곱에 대한 [[r]]뿌리, 근원[[/r]]",
+    "toeicExpr": [
+     "plant root 식물 뿌리  root cause 근본 원인",
+     "identify the root of the problem 문제의 근원을 파악하다"
+    ]
+   },
+   {
+    "word": "toxic",
+    "pron": "미[táksik] 영[tɔ́ksik]",
+    "pos": "a.",
+    "meaning": "유독한, 유독성의",
+    "tip": "냄새가 [[b]]톡[[/b]] 쏘고 [[b]]시큼[[/b]]하여 [[r]]유독한, 유독성의[[/r]]",
+    "toeicExpr": [
+     "toxic chemicals/gas/fumes 유독 화학물질/가스/연기"
+    ]
+   },
+   {
+    "word": "slice",
+    "pron": "[slais]",
+    "pos": "v. / n.",
+    "meaning": "v. 얇게 썰다 n. 얇게 썬 조각",
+    "tip": "① (칼로) [[b]]슬라이[[/b]] 쓰이! 즉, [[r]]얇게 썰다[[/r]]\n② 슬라이스 [[b]]치즈[[/b]](slice cheese)란 치즈의 [[r]]얇게 썬 조각[[/r]]",
+    "toeicExpr": [
+     "slice into pieces 조각으로 썰다",
+     "a slice of bread/cake 빵/케이크 한 조각"
+    ]
+   },
+   {
+    "word": "vaccinate",
+    "pron": "[væksənèit]",
+    "pos": "v.",
+    "meaning": "예방접종을 하다",
+    "tip": "[[b]]vaccine[[/b]](예방 백신) + [[b]]ate[[/b]](동사형 어미)",
+    "toeicExpr": [
+     "vaccinate employees 직원들에게 접종하다",
+     "vaccinate against COVID-19 코로나19 백신을 맞히다"
+    ]
+   },
+   {
+    "word": "cast",
+    "pron": "미[kæst] 영[kɑːst]",
+    "pos": "v.",
+    "meaning": "v. 1. 던지다, 내던지다  2. (역을) 배정하다, 캐스팅하다",
+    "tip": "화학 [[b]]깨스[[/b]] 폭탄이 [[b]]투![[/b]] 하고 폭발하도록 [[r]]던지다[[/r]]",
+    "toeicExpr": [
+     "cast the net 그물을 던지다",
+     "cast doubt on ~에 의혹을 제기하다 (← ~을 대상으로(on) 의혹을 던지다)",
+     "cast a vote 투표하다",
+     "cast an actor 배우를 캐스팅하다"
+    ],
+    "examVar": [
+     {
+      "en": "The auditor's findings may cast doubt on the accuracy of the company's annual report.",
+      "ko": "감사관의 조사 결과는 회사 연례 보고서의 정확성에 대해 의문을 제기할 수 있다."
+     }
+    ]
+   },
+   {
+    "word": "apron",
+    "pron": "[éiprən]",
+    "pos": "n.",
+    "meaning": "앞치마",
+    "tip": "설거지하다가 힘들어서 [[b]]에잇![[/b]] 하며 [[b]]풀런[[/b]](풀어버린) [[r]]앞치마[[/r]]",
+    "toeicExpr": [
+     "wear an apron 앞치마를 착용하다"
+    ]
+   },
+   {
+    "word": "province",
+    "pron": "미[próvins] 영[próvins]",
+    "pos": "n.",
+    "meaning": "n. 지역, 지방",
+    "tip": "프랑스의 [[b]]프로방스[[/b]] [[r]]지역, 지방[[/r]]",
+    "toeicExpr": [
+     "northern province 북부 지방  coastal province 해안 지방"
+    ]
+   },
+   {
+    "word": "overpass",
+    "pron": "미[óuvərpæs] 영[óuvərpɑːs]",
+    "pos": "n.",
+    "meaning": "n. 육교, 고가도로",
+    "tip": "[[b]][over(위로) + pass(통과하다)][[/b]] [[r]]육교, 고가도로[[/r]]",
+    "toeicExpr": [
+     "highway overpass 고속도로 고가도로",
+     "cross the overpass 육교를 건너다"
+    ]
+   },
+   {
+    "word": "carpenter",
+    "pron": "[káːrpəntər]",
+    "pos": "n.",
+    "meaning": "n. 목수, 목공",
+    "tip": "[[b]]카페[[/b]]로 쓸 [[b]]터[[/b]]에 기초공사를 하고 있는 [[r]]목수[[/r]]",
+    "toeicExpr": [
+     "construction carpenter 건설 목수  carpenter tools 목공 도구"
+    ]
+   },
+   {
+    "word": "render",
+    "pron": "[réndər]",
+    "pos": "v.",
+    "meaning": "v. 1. …을 ~하게 하다  2. 주다, 제공하다",
+    "tip": "심부름센터에 돈을 [[b]]낸다[[/b]]([[r]]주다, 제공하다[[/r]]). 그리고 [[r]]~하게 하다[[/r]]",
+    "toeicExpr": [
+     "render A + 형용사/상태: A를 ~한 상태로 만들다",
+     "render service unavailable 서비스를 이용할 수 없게 만들다",
+     "render system inoperable 시스템을 작동 불능 상태로 만들다",
+     "render service/assistance/support 서비스를/도움을/지원을 제공하다"
+    ],
+    "examVar": [
+     {
+      "en": "The severe budget cuts will render several ongoing projects impossible to complete this year.",
+      "ko": "심각한 예산 삭감은 여러 진행 중인 프로젝트를 올해 완료하기 불가능한 상태로 만들 것이다."
+     }
+    ]
+   },
+   {
+    "word": "cultivate",
+    "pron": "[kʌ́ltivèit]",
+    "pos": "v.",
+    "meaning": "v. 경작하다, 기르다, 함양하다",
+    "tip": "차밭을 [[r]]경작하다, 기르다[[/r]]. 그런 후 [[b]]칼[[/b]]로 [[b]]tea[[/b]](차) 잎을 [[b]]베이트[[/b]](베다).",
+    "toeicExpr": [
+     "cultivate land 땅을 경작하다",
+     "cultivate skills/talent 기술을/재능을 함양하다",
+     "cultivate relationships 관계를 구축하다"
+    ]
+   },
+   {
+    "word": "aptitude",
+    "pron": "미[æptitùːd] 영[æptitjùːd]",
+    "pos": "n.",
+    "meaning": "n. 적성, 소질",
+    "tip": "음악이 나오자 [[b]]애가 튀[[/b]]어나와 춤을 [[b]]추다[[/b]], 즉 춤에 대한 [[r]]적성, 소질[[/r]]",
+    "toeicExpr": [
+     "aptitude test 적성 검사",
+     "aptitude for leadership 리더십에 대한 소질"
+    ]
+   },
+   {
+    "word": "maritime",
+    "pron": "[mǽritàim]",
+    "pos": "a.",
+    "meaning": "a. 바다의, 해양의",
+    "tip": "[[b]]merry[[/b]](즐거운) [[b]]time[[/b]](시간)을 보내는 [[r]]바다의, 해양의[[/r]] 휴양지",
+    "toeicExpr": [
+     "maritime transportation 해상 운송  maritime industry 해운업, 해양 산업",
+     "maritime logistics 해상 물류  maritime transport system 해상 운송 시스템"
+    ]
+   },
+   {
+    "word": "intelligent",
+    "pron": "[intélidʒənt]",
+    "pos": "a.",
+    "meaning": "a. 지능이 높은, 똑똑한, (시스템 등이) 지능형인",
+    "tip": "회사 [[b]]인텔[[/b]]에서 만든 컴퓨터는 계산도 빨리 하는 [[r]]지능이 높은, 똑똑한[[/r]] 컴퓨터",
+    "derivatives": [
+     {
+      "word": "intellectual",
+      "meaning": "지식과 관련된, 지식의"
+     }
+    ],
+    "toeicExpr": [
+     "intelligent choice 현명한 선택  intelligent system 지능형 시스템",
+     "intellectual property 지적 재산  intellectual ability 지적 능력"
+    ],
+    "examVar": [
+     {
+      "en": "The company has implemented new policies to protect its _______ property rights.",
+      "opt": "intellectual (O)  intelligent (X)",
+      "ko": "회사는 지적 재산권을 보호하기 위한 새로운 정책을 시행했다."
+     }
+    ]
+   },
+   {
+    "word": "imperative",
+    "pron": "[impérətiv]",
+    "pos": "a.",
+    "meaning": "a. 필수적인, 반드시 해야 하는",
+    "tip": "죽을 수도 있으니 환자의 몸 [[b]]im[[/b]](안에) [[b]]페로 튜브[[/b]]를 꽂아 응급처치를 [[r]]반드시 해야 하는[[/r]]",
+    "toeicExpr": [
+     "It is imperative that ~ 반드시 ~해야 한다",
+     "It is imperative that the report be submitted by Friday. 보고서는 금요일까지 제출되어야 한다.",
+     "be imperative for all employees 모든 직원에게 필수적이다",
+     "be imperative to reduce costs 비용을 줄이는 데 반드시 필요하다"
+    ]
+   },
+   {
+    "word": "heartfelt",
+    "pron": "[hάːrtfelt]",
+    "pos": "a.",
+    "meaning": "진심에서 우러난",
+    "tip": "[[b]]heart[[/b]](마음) + [[b]]felt[[/b]](느껴진) [[r]]진심에서 우러난[[/r]]",
+    "toeicExpr": [
+     "heartfelt thanks/gratitude/apology 진심 어린 감사/감사/사과"
+    ]
+   },
+   {
+    "word": "energetic",
+    "pron": "[ènərdʒétik]",
+    "pos": "a.",
+    "meaning": "에너지가 넘치는, 활기찬, 적극적인",
+    "tip": "[[b]]energy[[/b]](에너지) + [[b]]tic[[/b]](형·어) [[r]]에너지가 넘치는, 활기찬[[/r]]",
+    "toeicExpr": [
+     "energetic employee/team 활기찬 직원/팀",
+     "energetic marketing campaign 적극적인 마케팅 캠페인",
+     "energetic participation 적극적인 참여"
+    ]
+   },
+   {
+    "word": "pertinent",
+    "pron": "[pə́ːrtinənt]",
+    "pos": "a.",
+    "meaning": "1. 관계있는  2. 적절한",
+    "tip": "[[b]]파티는[[/b]] 한 달에 [[b]]two[[/b]](2)번만 [[r]]관계있는[[/r]] 사람들과 하는 것이 [[r]]적절한[[/r]]",
+    "derivatives": [
+     {
+      "word": "pertain",
+      "meaning": "관련되다"
+     }
+    ],
+    "toeicExpr": [
+     "pertinent information/issue 관련된 정보/쟁점",
+     "pertinent response 적절한 대응",
+     "be pertinent to ~와 관련이 있다 (to: ~쪽으로)",
+     "His comment was not pertinent to the topic under discussion. 그의 발언은 논의 중인 주제와는 관련이 없었다.",
+     "pertain to ~와 관련되다",
+     "These laws pertain to consumer protection and product safety. 이 법들은 소비자 보호와 제품 안전과 관련이 있다."
+    ],
+    "examVar": [
+     {
+      "en": "These guidelines apply only to policies that directly pertain to employee safety procedures.",
+      "ko": "이 지침은 직원 안전 절차와 직접적으로 관련되는 정책에만 적용된다."
+     }
+    ]
+   },
+   {
+    "word": "receptacle",
+    "pron": "[riséptəkl]",
+    "pos": "n.",
+    "meaning": "용기, 그릇",
+    "tip": "이제 1살이 지나 [[b]]2세[[/b]]가 되었으니 더 [[b]]큰[[/b]](큰) [[r]]그릇[[/r]]으로 바꾸다.",
+    "toeicExpr": [
+     "waste receptacle 쓰레기통  recycling receptacle 재활용 용기",
+     "drop keys in the receptacle 열쇠를 반납함에 넣다"
+    ],
+    "examVar": [
+     {
+      "en": "The facility has a large receptacle near the entrance for collecting recyclable materials.",
+      "ko": "그 시설은 입구 근처에 재활용품을 모으기 위한 큰 용기를 두고 있다."
+     }
+    ]
+   },
+   {
+    "word": "trait",
+    "pron": "[treit]",
+    "pos": "n.",
+    "meaning": "특성, 특징",
+    "tip": "[[b]]틀[[/b]]에 박혀 [[b]]이트[[/b]](있는) [[r]]특성, 특징[[/r]]",
+    "toeicExpr": [
+     "common/unique trait 공통적/고유한 특징",
+     "leadership traits 리더십 자질(특성)"
+    ]
+   },
+   {
+    "word": "endure",
+    "pron": "[indjúər]",
+    "pos": "v.",
+    "meaning": "견디다, 참다",
+    "tip": "여러 고문을 겪은 다음 \"이번엔 [[b]]인두여[[/b]]? 해볼 테면 해봐!\" 하고 [[r]]견디다, 참다[[/r]]",
+    "toeicExpr": [
+     "endure hardship/pain 고난을/고통을 견디다"
+    ]
+   },
+   {
+    "word": "logic",
+    "pron": "미 [lάdʒik] 영 [lɔ́dʒik]",
+    "pos": "n.",
+    "meaning": "논리, 논리학",
+    "tip": "논쟁할 때 흥분한 목소리가 아닌 [[b]]나직[[/b]]한 목소리로 [[r]]논리[[/r]]적으로 말하다.",
+    "derivatives": [
+     {
+      "word": "logical",
+      "meaning": "논리적인"
+     }
+    ],
+    "toeicExpr": [
+     "faulty logic 잘못된 논리  business logic 비즈니스 논리, 업무 논리",
+     "logical conclusion 논리적인 결론  logical explanation 논리적인 설명"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 44,
+  "title": "",
+  "words": [
+   {
+    "word": "anxious",
+    "pron": "[æŋkʃəs]",
+    "pos": "a.",
+    "meaning": "1. 걱정하는  2. 열망하는",
+    "tip": "\"공부해야 하는데 1시간이나 [[b]]앵! 쉬었수ㅠㅠ[[/b]]\" 서울대 가야 하는데 잠시 쉬었다고 [[r]]걱정하는[[/r]], 서울대를 그토록 [[r]]열망하는[[/r]]",
+    "toeicExpr": [
+     "be anxious about ~에 대해 걱정하다",
+     "be anxious about a performance review 인사 평가를 걱정하다",
+     "be anxious for + 명사: ~을 간절히 바라다",
+     "be anxious for the opportunity 그 기회를 간절히 원하다",
+     "be anxious + to부정사: ~을 간절히 바라다",
+     "be anxious to receive feedback 피드백을 빨리 받고 싶어하다"
+    ],
+    "examVar": [
+     {
+      "en": "She is anxious ______ missing the deadline due to unexpected delays.",
+      "opt": "about (O)  for (X)  to (X)",
+      "ko": "그녀는 예상치 못한 지연 때문에 마감일을 놓칠까 봐 걱정하고 있다."
+     }
+    ]
+   },
+   {
+    "word": "sanitary",
+    "pron": "미[sǽnitèri] 영[sǽnitəri]",
+    "pos": "a.",
+    "meaning": "위생적인, 위생의",
+    "tip": "\"[[b]]새니?[[/b]] 머리털이?\" 즉, 머리카락이 절대 들어가지 않도록 하는 [[r]]위생적인[[/r]] 주방 모자",
+    "toeicExpr": [
+     "sanitary condition/inspection 위생 상태/검사"
+    ]
+   },
+   {
+    "word": "perceive",
+    "pron": "[pərsíːv]",
+    "pos": "v.",
+    "meaning": "감지하다, 인지하다",
+    "tip": "개가 내 [[b]]팔[[/b]]을 [[b]]씹[[/b]]으면 '아얏!' 하며 아픔을 [[r]]감지하다[[/r]], [[r]]인지하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "perception",
+      "meaning": "감지, 인지"
+     }
+    ],
+    "toeicExpr": [
+     "perceive a difference 차이를 인식하다",
+     "public perception 대중의 인식  consumer perception 소비자 인식"
+    ]
+   },
+   {
+    "word": "tuning",
+    "pron": "[tjúːniŋ]",
+    "pos": "n.",
+    "meaning": "조율, 조정",
+    "tip": "자동차나 악기 등을 [[b]]튜닝[[/b]]한다는 말은 자신의 기호에 맞게 [[r]]조율[[/r]]하거나, [[r]]조정[[/r]]하는 것",
+    "derivatives": [
+     {
+      "word": "tune",
+      "meaning": "조율하다, 조정하다"
+     },
+     {
+      "word": "fine-tune",
+      "meaning": "(시스템·계획·설정 등을) 미세 조정하다, 세부 조정하다"
+     }
+    ],
+    "toeicExpr": [
+     "system tuning 시스템 조정",
+     "tune a machine 기계를 조정하다  tune a system 시스템을 조정하다",
+     "fine-tune a system 시스템을 미세 조정하다",
+     "fine-tune a plan 계획을 세부 조정하다"
+    ]
+   },
+   {
+    "word": "stance",
+    "pron": "[stæns]",
+    "pos": "n.",
+    "meaning": "자세, 태도, 입장",
+    "tip": "각자 [[b]]stand[[/b]](서 있는) [[r]]자세, 태도, 입장[[/r]]",
+    "toeicExpr": [
+     "firm/neutral stance 확고한/중립적인 입장",
+     "stable stance 안정된 자세"
+    ],
+    "examVar": [
+     {
+      "en": "Despite criticism, the organization maintained a firm stance on data privacy.",
+      "ko": "비판에도 불구하고 그 단체는 데이터 프라이버시 규정에 대한 확고한 입장을 유지했다."
+     }
+    ]
+   },
+   {
+    "word": "decisive",
+    "pron": "[disáisiv]",
+    "pos": "a.",
+    "meaning": "결정적인, 결단력 있는",
+    "tip": "[[b]]decide[[/b]](결정하다) + [[b]]ive[[/b]](형·어)] [[r]]결정적인, 결단력 있는[[/r]]",
+    "toeicExpr": [
+     "decisive factor/role/influence 결정적 요인/역할/영향",
+     "decisive leader/decision 결단력 있는 지도자/결정"
+    ]
+   },
+   {
+    "word": "array",
+    "pron": "[əréi]",
+    "pos": "n.",
+    "meaning": "집합체, 일련의 것들",
+    "tip": "어뢰 일(1) [[b]]어뢰 이[[/b]](2)... 군함 위에 놓여 있는 어뢰 [[r]]일련의 집합체[[/r]]",
+    "toeicExpr": [
+     "a wide array of + 복수명사: 다양한 ~의 모음",
+     "an array of products/services/options 다양한 제품들/서비스들/선택지"
+    ]
+   },
+   {
+    "word": "deteriorate",
+    "pron": "[ditíəriərèit]",
+    "pos": "v.",
+    "meaning": "악화되다, 나빠지다",
+    "tip": "주가가 [[b]]뒤[[/b]]로 [[b]]튀[[/b]]어서 주식 [[b]]rate[[/b]](등급)이 떨어져 경제가 [[r]]악화되다, 나빠지다[[/r]]",
+    "toeicExpr": [
+     "deteriorate rapidly/gradually 급격히/점차 악화되다",
+     "The situation deteriorated. 상황이 악화되었다.",
+     "Economic conditions deteriorate. 경기 상황이 나빠지다."
+    ]
+   },
+   {
+    "word": "quota",
+    "pron": "[kwóutə]",
+    "pos": "n.",
+    "meaning": "할당량, (허용되는) 한도",
+    "tip": "전체의 [[b]]quarter[[/b]](1/4)이 내게 주어진 [[r]]할당량, (허용되는) 한도[[/r]]",
+    "toeicExpr": [
+     "meet/reach/exceed a quota 할당량을 채우다/달성하다/초과하다",
+     "quota system 할당 제도  import/export quota 수입/수출 할당",
+     "production/emission quota 생산/배출 한도"
+    ],
+    "examVar": [
+     {
+      "en": "All sales representatives are expected to meet their monthly sales quotas to receive a bonus.",
+      "ko": "모든 영업 사원들은 보너스를 받기 위해 월간 판매 할당량(목표치)을 달성해야 한다."
+     }
+    ]
+   },
+   {
+    "word": "chemical",
+    "pron": "[kémikəl]",
+    "pos": "a./n.",
+    "meaning": "1. a. 화학의, 화학적인  2. n. 화학물질",
+    "tip": "[[b]]롯데케미칼[[/b]], [[b]]SK케미칼[[/b]] 회사들은 화학 회사, 즉 [[r]]화학의, 화학적인[[/r]]",
+    "derivatives": [
+     {
+      "word": "chemistry",
+      "meaning": "화학"
+     }
+    ],
+    "toeicExpr": [
+     "chemical reaction 화학 반응  chemical plant 화학 공장",
+     "toxic chemicals 유독 화학물질",
+     "chemistry laboratory/experiment 화학 실험실/실험"
+    ],
+    "examVar": [
+     {
+      "note": "chemical이 명사인 '화학제품'이란 뜻으로 쓰이는 것을 묻는 문제가 자주 출제되었다.",
+      "en": "This ______ has a detrimental effect on the environment.",
+      "opt": "chemical (O)  chemistry (X)",
+      "ko": "이 화학제품은 환경에 해로운 영향을 끼친다."
+     }
+    ]
+   },
+   {
+    "word": "civil",
+    "pron": "[sívəl]",
+    "pos": "a.",
+    "meaning": "시민의, 민간의",
+    "tip": "[[b]]시[[/b]]에 있는 땅을 [[b]]빌[[/b]]려 쓰고 있는 사람, 즉 [[r]]시민의[[/r]]",
+    "toeicExpr": [
+     "civil engineering 토목공학  civil servant 공무원",
+     "civil service exam 공무원 시험  civil organization 민간단체"
+    ]
+   },
+   {
+    "word": "county",
+    "pron": "[káunti]",
+    "pos": "n.",
+    "meaning": "(행정 구역상) 주, 군",
+    "tip": "[[b]]county → country[[/b]] 한 [[b]]country[[/b]](시골)이 속해 있는 [[r]]주, 군[[/r]]",
+    "toeicExpr": [
+     "county office 군청  county tax 지방세"
+    ]
+   },
+   {
+    "word": "peer",
+    "pron": "[piər]",
+    "pos": "n.",
+    "meaning": "동료",
+    "tip": "정원에 [[b]]피어[[/b]] 있는 꽃들은 모두 같은 시기에 심어진 [[r]]동료[[/r]] 꽃",
+    "toeicExpr": [
+     "peer evaluation/review 동료 평가/심사  peer support 동료의 지원"
+    ]
+   },
+   {
+    "word": "vulnerable",
+    "pron": "[vʌ́lnərəbl]",
+    "pos": "a.",
+    "meaning": "상처받기 쉬운, 피해를 입기 쉬운",
+    "tip": "잡은 [[b]]벌[[/b]]을 [[b]]넣어라 불[[/b]]에! 그러면 벌이 [[r]]상처받기 쉬운, 피해를 입기 쉬운[[/r]]",
+    "toeicExpr": [
+     "be vulnerable to ~에 취약하다, 영향을 받기 쉽다 (to: ~쪽으로)",
+     "be vulnerable to cyberattacks 사이버 공격에 취약하다",
+     "be vulnerable to security breaches 보안 침해에 취약하다",
+     "vulnerable group/area 취약한 집단/지역",
+     "financially/environmentally vulnerable 재정적으로/환경적으로 취약한"
+    ],
+    "examVar": [
+     {
+      "en": "Older computer systems are particularly vulnerable to security breaches.",
+      "ko": "오래된 컴퓨터 시스템은 보안 침해에 특히 취약하다."
+     }
+    ]
+   },
+   {
+    "word": "standpoint",
+    "pron": "[stǽndpɔint]",
+    "pos": "n.",
+    "meaning": "관점, 견해",
+    "tip": "상황을 바라보는 [[b]]stand[[/b]](서 있는) [[b]]point[[/b]](지점), 즉 [[r]]관점, 견해[[/r]]",
+    "toeicExpr": [
+     "from a financial standpoint 재정적 관점에서",
+     "from a customer's standpoint 고객의 입장에서"
+    ]
+   },
+   {
+    "word": "fusion",
+    "pron": "[fjúːʒən]",
+    "pos": "n.",
+    "meaning": "융합, 결합, 퓨전 (음악, 음식)",
+    "tip": "[[b]]퓨전[[/b]] 요리, [[b]]퓨전[[/b]] 음악에서 [[b]]퓨전[[/b]]이란 동양과 서양 등 여러 것들의 [[r]]융합, 결합[[/r]]",
+    "derivatives": [
+     {
+      "word": "fuse",
+      "meaning": "융합하다; (전기) 퓨즈"
+     }
+    ],
+    "toeicExpr": [
+     "technology fusion 기술 융합",
+     "a fusion of technology and design 기술과 디자인의 융합",
+     "fuse traditional and modern elements 전통과 현대 요소를 결합하다",
+     "fuse systems 시스템을 통합하다"
+    ]
+   },
+   {
+    "word": "apparatus",
+    "pron": "미[æpərætəs] 영[æpəréitəs]",
+    "pos": "n.",
+    "meaning": "기구, 장치",
+    "tip": "인형 뽑는 [[r]]기구, 장치[[/r]]에서 애가 인형을 [[b]]퍼래이[[/b]](퍼내다가) [[b]]텄수[[/b]].",
+    "toeicExpr": [
+     "scientific/medical apparatus 실험/의료 기구"
+    ]
+   },
+   {
+    "word": "break out",
+    "meaning": "(전쟁 · 화재 등이) 발발하다",
+    "tip": "잠재되었던 것이 [[b]]깨져서[[/b]](break) [[b]]밖으로[[/b]](out) 나오다, 즉 [[r]]발발하다[[/r]]",
+    "toeicExpr": [
+     "fire/disease/strike broke out 화재가/질병이/파업이 발생했다"
+    ]
+   },
+   {
+    "word": "monopoly",
+    "pron": "미[mənápəli] 영[mənɔ́pəli]",
+    "pos": "n.",
+    "meaning": "독점",
+    "tip": "[[b]]mono[[/b]](혼자)만 [[b]]팔리[[/b]], 즉 [[r]]독점[[/r]]\n(레일이 하나인 monorail과 같이 mono는 one을 뜻하는 접두어)",
+    "toeicExpr": [
+     "hold a monopoly in the market 시장을 독점하다",
+     "monopoly rights 독점권  market monopoly 시장 독점"
+    ],
+    "examVar": [
+     {
+      "en": "We have a monopoly on flight to Madrid.",
+      "ko": "우리는 마드리드행 항공편에 대한 독점권을 갖고 있다."
+     }
+    ]
+   },
+   {
+    "word": "bias",
+    "pron": "[báiəs]",
+    "pos": "n./v.",
+    "meaning": "n. 편견, 치우침 v. 치우치게 하다",
+    "tip": "두 떡볶이 가게 중에 [[b]]buyers[[/b]](사는 사람들)이 원조 떡볶이 집에만 [[r]]치우침[[/r]], 그 집만 맛있을 것이란 [[r]]편견[[/r]]",
+    "derivatives": [
+     {
+      "word": "biased",
+      "meaning": "치우친, 편견이 있는"
+     }
+    ],
+    "toeicExpr": [
+     "eliminate/reduce bias 편견을 없애다/줄이다",
+     "bias toward domestic products 자국 제품에 대한 치우침(편향)",
+     "bias against older workers 고령 근로자에 대한 차별",
+     "biased results/opinion 편향된 결과/의견"
+    ]
+   },
+   {
+    "word": "dense",
+    "pron": "[dens]",
+    "pos": "a.",
+    "meaning": "밀집한, 빽빽한",
+    "tip": "[덴스 → 댄스] 주말에 [[b]]댄스[[/b]]장이 사람들로 [[r]]밀집한, 빽빽한[[/r]]",
+    "derivatives": [
+     {
+      "word": "density",
+      "meaning": "밀도, 농도"
+     }
+    ],
+    "toeicExpr": [
+     "dense population 밀집한 인구  dense forest 빽빽한 숲",
+     "population density 인구 밀도  high/low density 고밀도/저밀도"
+    ]
+   },
+   {
+    "word": "mindful",
+    "pron": "[máindfəl]",
+    "pos": "a.",
+    "meaning": "~을 염두에 두는, 유의하는",
+    "tip": "[[b]]mind[[/b]](마음)에 [[b]]full[[/b]](가득) 담아두는, 즉 [[r]]~을 염두에 두는, 유의하는[[/r]]",
+    "toeicExpr": [
+     "be mindful of ~을 유의하다, 염두에 두다 (of: ~에 관하여)",
+     "be mindful of deadlines 마감일을 유의하다",
+     "be mindful of potential risks 잠재적 위험을 유의하다"
+    ]
+   },
+   {
+    "word": "seemingly",
+    "pron": "[síːmiŋli]",
+    "pos": "ad.",
+    "meaning": "외견상으로, 겉보기에는",
+    "tip": "[[b]]seem[[/b]](~처럼 보이다) + [[b]]ing[[/b]](형·어) + [[b]]ly[[/b]](부·어)] [[r]]외견상으로, 겉보기에는[[/r]]",
+    "toeicExpr": [
+     "seemingly impossible 겉보기에 불가능한",
+     "seemingly unrelated issues 겉보기에는 관련 없어 보이는 문제들"
+    ]
+   },
+   {
+    "word": "alike",
+    "pron": "[əláik]",
+    "pos": "a./ad.",
+    "meaning": "a. 비슷한  ad. 똑같이",
+    "tip": "[[b]]a[[/b]](형 · 접) + [[b]]like[[/b]](~ 같은)",
+    "toeicExpr": [
+     "alike는 명사를 직접 수식하지 못하고, 서술적으로만 사용된다.",
+     "two products are alike 두 제품이 비슷하다",
+     "the designs are alike 디자인이 비슷하다"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 45,
+  "title": "",
+  "words": [
+   {
+    "word": "contingent",
+    "pron": "[kəntíndʒənt]",
+    "pos": "a.",
+    "meaning": "a. 1. ~에 달려있는  2. 조건부의",
+    "tip": "[[b]]큰 팀[[/b]]의 군인들을 [[b]]전투[[/b]]에 보냈는데, 승패는 그들에 [[r]]달려있는[[/r]], 즉 그들의 승패 여부에 따르는 [[r]]조건부의[[/r]]",
+    "toeicExpr": [
+     "contingent on ~에 달려있는, ~을 조건으로 하는 (on: 의존, 기반 ⓔ depend on)",
+     "contingent on circumstances 상황에 따라 달라지는",
+     "contingent approval 조건부 승인  contingent offer 조건부 제안"
+    ],
+    "examVar": [
+     {
+      "en": "Final approval of the project is contingent on securing sufficient funding from external investors.",
+      "ko": "해당 프로젝트의 최종 승인은 외부 투자자들로부터 충분한 자금을 확보하는 것을 조건으로 한다."
+     }
+    ]
+   },
+   {
+    "word": "persist",
+    "pron": "[pərsíst]",
+    "pos": "v.",
+    "meaning": "v. 고집하다, 지속하다",
+    "tip": "안 씻겠다는 아들에게 \"[[b]]팔[[/b]]이라도 [[b]]씻으[[/b]](씻어!) 하고 침을 [[b]]퉤[[/b]] 뱉으며 엄마가 [[r]]고집하다[[/r]], 씻으라는 말을 [[r]]지속하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "persistent",
+      "meaning": "고집하는, 지속적인, 끈질긴"
+     }
+    ],
+    "toeicExpr": [
+     "persist in ~을 고집하다",
+     "persist in one's opinion 자기 의견을 고집하다",
+     "persistent problem/issue 지속되는 문제  persistent effort 끈질긴 노력"
+    ],
+    "examVar": [
+     {
+      "en": "The technician warned that the malfunction would continue to worsen if the user persisted in ignoring the error messages.",
+      "ko": "기술자는 사용자가 오류 메시지를 무시하는 행동을 계속하면 오작동이 더욱 악화될 것이라고 경고했다."
+     }
+    ]
+   },
+   {
+    "word": "burst",
+    "pron": "[bəːrst]",
+    "pos": "v./n.",
+    "meaning": "v. 폭발하다, 터지다  n. 폭발, 급증",
+    "tip": "테러범이 설치한 폭탄에 [[b]]버스[[/b]]가 [[b]]투~[[/b]] 하고 갑자기 [[r]]폭발하다[[/r]], [[r]]터지다[[/r]]",
+    "toeicExpr": [
+     "a balloon burst 풍선이 터지다",
+     "burst of sales 매출 급증",
+     "burst of growth 성장 급증"
+    ]
+   },
+   {
+    "word": "theory",
+    "pron": "[θíːəri]",
+    "pos": "n.",
+    "meaning": "n. 이론",
+    "tip": "아인슈타인의 상대성 [[r]]이론[[/r]]은 많은 과학 영역에 [[b]]쓰여리[[/b]](쓰인다).",
+    "toeicExpr": [
+     "scientific theory 과학 이론",
+     "widely accepted theory 널리 받아들여진 이론"
+    ]
+   },
+   {
+    "word": "scheme",
+    "pron": "[skiːm]",
+    "pos": "n.",
+    "meaning": "n. 계획, 제도, 프로그램",
+    "tip": "회사 금요일 [[r]]계획[[/r]]은 [[b]]스키임[[/b]](스키 타러 가는 것임). 그것이 우리 회사의 복지 [[r]]제도[[/r]]",
+    "toeicExpr": [
+     "development/construction/expansion scheme 개발/건설/확장 계획",
+     "pension/incentive/bonus scheme 연금/인센티브/보너스 제도",
+     "recycling/training scheme 재활용/교육 프로그램",
+     "Employees will benefit from the company's new bonus scheme. 직원들은 회사의 새로운 보너스 제도의 혜택을 받을 것이다."
+    ]
+   },
+   {
+    "word": "annoy",
+    "pron": "[ənɔ́i]",
+    "pos": "v.",
+    "meaning": "v. 짜증나게 하다",
+    "tip": "싫다는 데도 계속 붙들며 \"[[b]]어, 놓이소[[/b]]!\" 즉, 스토커처럼 따라다니며 [[r]]짜증나게 하다[[/r]]",
+    "toeicExpr": [
+     "be annoyed with the noise 소음에 짜증이 나다"
+    ]
+   },
+   {
+    "word": "brilliant",
+    "pron": "[bríljənt]",
+    "pos": "a.",
+    "meaning": "a. 빛나는, 눈부신, 훌륭한",
+    "tip": "성화의 [[b]]불이 1년(트)[[/b]] 동안 [[r]]빛나는, 눈부신[[/r]]",
+    "toeicExpr": [
+     "brilliant idea 기가 막힌 아이디어  brilliant performance 눈부신 공연",
+     "brilliant career 뛰어난 경력"
+    ]
+   },
+   {
+    "word": "apt",
+    "pron": "[æpt]",
+    "pos": "a.",
+    "meaning": "a. ~하는 경향이 있는, ~하기 쉬운",
+    "tip": "요즘은 혼자 있을 때 스마트폰 [[b]]앱[[/b]]을 [[r]]하는 경향이 있는, ~하기 쉬운[[/r]]",
+    "toeicExpr": [
+     "be apt to do ~하는 경향이 있다",
+     "be apt to forget 잘 잊어버리기 쉽다",
+     "be apt to change 변하기 쉽다"
+    ]
+   },
+   {
+    "word": "precious",
+    "pron": "[préʃəs]",
+    "pos": "a.",
+    "meaning": "a. 귀중한, 값비싼",
+    "tip": "풀밭에 눕지 마! [[b]]풀[[/b]]에 [[b]]셔스[[/b]]가 닿아서 물들면 안 돼, 즉 [[r]]귀중한, 값비싼[[/r]] 셔스",
+    "toeicExpr": [
+     "precious time 소중한 시간  precious metals 귀금속"
+    ]
+   },
+   {
+    "word": "deprive",
+    "pron": "[dipráiv]",
+    "pos": "v.",
+    "meaning": "v. 빼앗다, 박탈하다",
+    "tip": "은행강도가 \"[[b]]뒤[[/b]] 금고의 돈을 [[b]]푸라이[[/b]]!(퍼라!) 그리고 자루에 [[b]]부[[/b]]!(부어!)\" 하며 돈을 [[r]]빼앗다, 박탈하다[[/r]]",
+    "toeicExpr": [
+     "deprive A of B A에게서 B를 빼앗다",
+     "deprive employees of benefits 직원들에게서 복지를 박탈하다",
+     "deprive someone of the opportunity (~에게서) 기회를 빼앗다",
+     "be deprived of ~을 박탈당하다",
+     "be deprived of basic rights 기본 권리를 박탈당하다",
+     "be deprived of access to information 정보 접근권을 박탈당하다"
+    ],
+    "examVar": [
+     {
+      "en": "The new policy may deprive part-time employees of certain benefits.",
+      "ko": "그 새로운 정책은 파트타임 직원들에게서 일부 혜택을 빼앗을 수 있다."
+     }
+    ]
+   },
+   {
+    "word": "beneath",
+    "pron": "[biníːθ]",
+    "pos": "prep.",
+    "meaning": "prep. ~ 아래에, ~ 밑에",
+    "tip": "습기 차단을 위해 텐트 [[r]]아래에[[/r]] [[b]]비닐[[/b]]을 [[r]]쓰[[/r]]다.",
+    "toeicExpr": [
+     "beneath the table 테이블 아래에"
+    ]
+   },
+   {
+    "word": "clue",
+    "pron": "[kluː]",
+    "pos": "n.",
+    "meaning": "n. 실마리, 단서",
+    "tip": "복잡하게 얽힌 것을 [[b]]끌루[[/b]]게(풀게) 해주는 [[r]]실마리, 단서[[/r]]",
+    "toeicExpr": [
+     "a clue to the problem 문제의 단서",
+     "a clue about the cause 원인에 대한 단서",
+     "search for clues 단서를 찾다",
+     "important clue 중요한 단서"
+    ]
+   },
+   {
+    "word": "sake",
+    "pron": "[seik]",
+    "pos": "n.",
+    "meaning": "n. 이익, 목적",
+    "tip": "피켓시위대들이 [[b]]say[[/b]](말하다) [[b]]크[[/b]]게, 그것은 자신들의 [[r]]이익, 목적[[/r]]을 위함",
+    "toeicExpr": [
+     "for the sake of ~을 위하여, ~을 위해서 (←~의 목적, 이익을 위해)",
+     "for the sake of efficiency/clarity/convenience 효율성을/명확성을/편의를 위해",
+     "for one's sake ~을 위하여",
+     "for her sake 그녀를 위해서  for their sake 그들을 위해서",
+     "for the company's sake 회사를 위해서"
+    ]
+   },
+   {
+    "word": "embarrass",
+    "pron": "[imbǽrəs]",
+    "pos": "v.",
+    "meaning": "v. 당황하게 하다",
+    "tip": "음식을 쏟아 상대방 옷을 [[b]]잉! 배렸수[[/b]](버렸수), 즉 [[r]]당황하게 하다[[/r]]",
+    "toeicExpr": [
+     "feel embarrassed 당황함을 느끼다",
+     "be embarrassed by A A 때문에 당황하다"
+    ]
+   },
+   {
+    "word": "nationality",
+    "pron": "[næ̀ʃənǽləti]",
+    "pos": "n.",
+    "meaning": "n. 국적",
+    "tip": "국기가 그려져 그 사람의 [[r]]국적[[/r]]인 [[b]]nation[[/b]](나라)을 [[b]]앨러[[/b]](알려)주는 [[b]]티[[/b]]셔츠",
+    "derivatives": [
+     {
+      "word": "national",
+      "meaning": "국가의"
+     }
+    ],
+    "toeicExpr": [
+     "foreign nationality 외국 국적",
+     "national holiday 국경일  national park/museum 국립 공원/박물관"
+    ],
+    "examVar": [
+     {
+      "en": "Applicants must indicate their _______ on the registration form.",
+      "opt": "(A) nation  (B) national  (C) nationality  (D) nationally",
+      "ans": "(C)",
+      "ko": "지원자는 등록 양식에 자신의 국적을 기입해야 한다."
+     }
+    ]
+   },
+   {
+    "word": "affair",
+    "pron": "[əfέər]",
+    "pos": "n.",
+    "meaning": "n. 일, 문제, 업무",
+    "tip": "\"당신의 [[b]]業[[/b]](일 [[b]]업[[/b]])이나 [[r]]해요[[/r]]!\" 즉, 당신의 [[r]]일, 문제, 업무[[/r]]나 해결해요!",
+    "toeicExpr": [
+     "current affairs 시사, 현안  business affairs 사업 업무",
+     "financial affairs 재정 문제  public affairs 홍보, 대외 업무"
+    ]
+   },
+   {
+    "word": "fame",
+    "pron": "[feim]",
+    "pos": "n.",
+    "meaning": "n. 명성",
+    "tip": "[[b]]famous[[/b]](유명한)의 명사형] [[r]]명성[[/r]]",
+    "derivatives": [
+     {
+      "word": "famous",
+      "meaning": "유명한"
+     }
+    ],
+    "toeicExpr": [
+     "achieve fame 명성을 이루다  world fame 세계적인 명성"
+    ]
+   },
+   {
+    "word": "livelihood",
+    "pron": "[láivlihùd]",
+    "pos": "n.",
+    "meaning": "n. 살림, 생계",
+    "tip": "[[b]]live[[/b]](살다) + [[b]]li[[/b]] + [[b]]hood[[/b]](~상태)] 살아가는 것, 즉 [[r]]살림, 생계[[/r]]",
+    "toeicExpr": [
+     "make a livelihood 생계를 유지하다"
+    ]
+   },
+   {
+    "word": "edge",
+    "pron": "[edʒ]",
+    "pos": "n.",
+    "meaning": "n. 1. 모서리, 가장자리  2. 우위, 유리함",
+    "tip": "① [[r]]애[[/r]]가 [[b]]찌[[/b]]이다(찧다), [[r]]모서리[[/r]]에.\n② 묵찌빠 게임에서 [[r]]애[[/r]]가 [[b]]찌[[/b]]를 내는 것이 [[r]]유리[[/r]]하고 [[r]]우위[[/r]]에 있다.",
+    "toeicExpr": [
+     "edge of the table 탁자 모서리  sharp edge 날카로운 모서리",
+     "have an edge over ~보다 우위에 있다 (over: ~보다 더)",
+     "have an edge over other firms 다른 회사들보다 앞서 있다",
+     "have an edge over previous models 이전 모델보다 더 낫다",
+     "competitive edge 경쟁 우위"
+    ],
+    "examVar": [
+     {
+      "en": "1. Lower production costs give the company a competitive edge.",
+      "ko": "더 낮은 생산 비용은 그 회사에 경쟁 우위를 준다."
+     },
+     {
+      "en": "2. The firm has an edge over its main rivals in customer service.",
+      "ko": "그 회사는 고객 서비스 면에서 주요 경쟁사들보다 우위에 있다."
+     }
+    ]
+   },
+   {
+    "word": "hub",
+    "pron": "[hʌb]",
+    "pos": "n.",
+    "meaning": "n. 중심, 중심지",
+    "tip": "차력사가 '[[b]]헙![[/b]]' 하고 몸의 [[r]]중심[[/r]]인 배에 힘을 모으다",
+    "toeicExpr": [
+     "transportation/business/financial hub 교통/비즈니스/금융 중심지",
+     "major hub for + 명사: ~의 주요 중심지 (for: ~을 위한)",
+     "major hub for logistics/business/finance 물류/비즈니스/금융 주요 중심지"
+    ]
+   },
+   {
+    "word": "default",
+    "pron": "[difɔ́ːlt]",
+    "pos": "n./v.",
+    "meaning": "1. n. (채무·약속 등의) 불이행  v. (의무를) 이행하지 않다, (빚을) 갚지 않다\n2. n. 기본값, 초기 설정",
+    "tip": "[[b]]뒤[[/b]]로 [[b]]팔[[/b]] [[b]]two[[/b]](두) 쪽을 보내 뒷짐만 지고 시킨 일을 [[r]]불이행, 이행하지 않다[[/r]]",
+    "toeicExpr": [
+     "financial default 채무 불이행  loan default 대출 불이행",
+     "default on a loan 대출을 갚지 않다 (on: ~을 대상으로)",
+     "default on obligations 의무를 불이행하다",
+     "by default 기본적으로, 자동적으로  default setting 기본 설정값",
+     "default option 기본 선택 사항  restore to default 기본값으로 복원하다"
+    ]
+   },
+   {
+    "word": "span",
+    "pron": "[spæn]",
+    "pos": "n./v.",
+    "meaning": "n. 지속 기간  v. (시간이) 걸리다",
+    "tip": "우리나라에서 [[b]]스페인[[/b]]까지 가는 [[r]]지속 시간(기간), 시간이 걸리다[[/r]]",
+    "toeicExpr": [
+     "life span 수명  time span 기간",
+     "over a span of five years 5년의 기간에 걸쳐 (over: ~에 걸쳐, ~ 동안)",
+     "span several years 수년에 걸치다  span a decade 10년에 걸치다",
+     "span from Monday to Friday 월요일부터 금요일까지 이어지다"
+    ],
+    "examVar": [
+     {
+      "en": "1. The training program spans six months.",
+      "ko": "그 교육 프로그램은 6개월 동안 지속된다."
+     },
+     {
+      "en": "2. The research was conducted over a span of five years.",
+      "ko": "그 연구는 5년에 걸쳐 수행되었다."
+     }
+    ]
+   },
+   {
+    "word": "conceal",
+    "pron": "[kənsíːl]",
+    "pos": "v.",
+    "meaning": "v. 숨기다, 감추다",
+    "tip": "누에고치는 몸 안에 [[b]]큰 실[[/b]]을 [[r]]숨기고 있다[[/r]].",
+    "toeicExpr": [
+     "conceal identity/information/fact 신원을/정보를/사실을 숨기다"
+    ]
+   },
+   {
+    "word": "triple",
+    "pron": "[trípl]",
+    "pos": "n./v./a.",
+    "meaning": "n. 3배  v. 3배로 하다  a. 3중의",
+    "tip": "[[b]]tri[[/b]](three를 뜻하는 접두어 ◎ triangle 삼각형) + [[b]]ple[[/b]](겹, 배) [[r]]세 배[겹]로 하다[[/r]]",
+    "toeicExpr": [
+     "triple the amount 금액을 세 배로 늘리다",
+     "Profits have tripled. 수익이 세 배로 늘었다.  a triple increase 3배 증가"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 46,
+  "title": "",
+  "words": [
+   {
+    "word": "isolate",
+    "pron": "[áisəlèit]",
+    "pos": "v.",
+    "meaning": "v. 고립시키다, 격리시키다, 분리하다",
+    "tip": "[[b]]아이 소[[/b]]가 어미 소를 [[b]]late[[/b]](늦게) 따라가자 사자들이 잡아먹으려고 아이 소를 어미 소로부터 [[r]]분리하다[[/r]], [[r]]고립시키다[[/r]], [[r]]격리시키다[[/r]]",
+    "toeicExpr": [
+     "isolate infected patients 감염된 환자를 격리하다",
+     "isolated area 고립된 지역  isolate problem 문제를 분리해 다루다"
+    ],
+    "examVar": [
+     {
+      "en": "The village is located in an isolated area with limited access to roads.",
+      "ko": "그 마을은 도로 접근이 제한된 고립된 지역에 위치해 있다."
+     }
+    ]
+   },
+   {
+    "word": "affirmative",
+    "pron": "[əfə́:rmətiv]",
+    "pos": "a./n.",
+    "meaning": "a. 긍정적인, 동의하는  n. 긍정, 동의",
+    "tip": "미용사가 하는 \"[[b]]어[[/b]], [[b]]퍼머[[/b]]하면 어떨까요? [[b]]TV[[/b]]에 요즘 많이 하고 나오는 스타일로요.\"라는 말에 손님이 [[r]]긍정적인, 동의하는[[/r]]",
+    "toeicExpr": [
+     "affirmative answer/response/decision 긍정적인 대답/응답/결정"
+    ]
+   },
+   {
+    "word": "skip",
+    "pron": "[skip]",
+    "pos": "v.",
+    "meaning": "v. (회의·수업·식사 등을) 건너뛰다, 생략하다",
+    "tip": "[[b]]스키[[/b]]로 장애물을 [[r]]건너뛰다[[/r]]",
+    "toeicExpr": [
+     "skip step 단계를 건너뛰다  skip procedure 절차를 생략하다"
+    ]
+   },
+   {
+    "word": "end",
+    "pron": "[end]",
+    "pos": "n./v.",
+    "meaning": "1. n. 끝  v. 끝나다, 끝내다  2. n. 목표, 목적",
+    "tip": "지금 하고자 하는 일의 [[b]]끝[[/b]](end), 즉 [[r]]목표[[/r]]",
+    "derivatives": [
+     {
+      "word": "endless",
+      "meaning": "끝없는"
+     }
+    ],
+    "toeicExpr": [
+     "come to an end 끝나다  in the end 결국 (← 끝에서는)",
+     "to that end 그 목적을 위해",
+     "endless effort 끝없는 노력  endless possibilities 무한한 가능성"
+    ]
+   },
+   {
+    "word": "rational",
+    "pron": "[rǽʃənl]",
+    "pos": "a.",
+    "meaning": "a. 합리적인, 이성적인",
+    "tip": "흥분을 가라앉히고 숨을 크게 [[b]]내쉬어[[/b]] 늘 [[r]]합리적인, 이성적인[[/r]] 행동을 하는",
+    "toeicExpr": [
+     "rational decision/behavior/thinking 합리적인 결정/행동/사고"
+    ]
+   },
+   {
+    "word": "offset",
+    "pron": "[ɔ́:fsèt]",
+    "pos": "v.",
+    "meaning": "v. (증가·손실·비용 등을) 상쇄하다, 벌충하다",
+    "tip": "[[b]]없어[[/b]]서 [[r]]상쇄하다[[/r]], 그리고 [[b]]없앤[[/b]] 만큼 다른 것으로 [[r]]벌충하다[[/r]]",
+    "toeicExpr": [
+     "offset a loss/cost/risk 손실을/비용을/위험을 상쇄하다",
+     "offset the impact/effect/damage 영향을/효과를/피해를 상쇄하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company raised its fees to offset the increase in operating costs.",
+      "ko": "그 회사는 운영 비용 증가를 상쇄하기 위해 요금을 인상했다."
+     }
+    ]
+   },
+   {
+    "word": "souvenir",
+    "pron": "[sù:vəníər]",
+    "pos": "n.",
+    "meaning": "n. 기념품",
+    "tip": "관광지에서 \"[[b]]수건이여![[/b]]\" 하며 파는 [[r]]기념품[[/r]]",
+    "toeicExpr": [
+     "buy a souvenir 기념품을 사다  souvenir shop 기념품 가게"
+    ]
+   },
+   {
+    "word": "diagnose",
+    "pron": "미 [dáiagnòus] 영 [dáiagnòuz]",
+    "pos": "v.",
+    "meaning": "v. (질병·문제의 원인을) 진단하다",
+    "tip": "그 사람 [[b]]die어[[/b]]?(죽었어?) [[b]]그 nose[[/b]](코)로 숨을 쉬는지 [[r]]진단하다[[/r]]",
+    "toeicExpr": [
+     "diagnose a problem 문제를 진단하다",
+     "diagnose symptoms 증상을 진단하다"
+    ]
+   },
+   {
+    "word": "coincide",
+    "pron": "[kòuinsáid]",
+    "pos": "v.",
+    "meaning": "v. 일치하다, 동시에 일어나다",
+    "tip": "[[b]]coin[[/b]](동전)의 앞 [[b]]side[[/b]](면)과 뒷 [[b]]side[[/b]](면)은 액수가 [[r]]일치하다[[/r]], 앞면에 생기는 일은 뒷면도 생겨 [[r]]동시에 일어나다[[/r]]",
+    "derivatives": [
+     {
+      "word": "coincidence",
+      "meaning": "(우연의) 일치, 동시에 일어남"
+     }
+    ],
+    "toeicExpr": [
+     "coincide with ~와 동시에 일어나다, 겹치다",
+     "coincide with the report/data 보고서와/데이터와 일치하다",
+     "coincide with the meeting 회의와 겹치다",
+     "What a coincidence! 정말 우연이네!"
+    ],
+    "examVar": [
+     {
+      "en": "1. The product launch date will coincide with the company's 20th anniversary celebration.",
+      "ko": "제품 출시일은 회사의 20주년 기념행사와 겹칠 예정이다."
+     },
+     {
+      "en": "2. LC에서 \"What a coincidence!\"(정말 우연이네!)의 표현이 출제되었다.\n예〉 A: \"I just ran into Ms. Park at the airport today.\"\n     B: \"What a coincidence!\"",
+      "ko": "A: \"오늘 공항에서 박 씨를 우연히 마주쳤어.\"  B: \"정말 우연이네!\""
+     }
+    ]
+   },
+   {
+    "word": "pause",
+    "pron": "[pɔːz]",
+    "pos": "v./n.",
+    "meaning": "v. 잠시 멈추다  n. 잠시 멈춤",
+    "tip": "사진을 찍기 위해 [[b]]포즈[[/b]]를 잡으며 [[r]]잠시 멈추다[[/r]]",
+    "toeicExpr": [
+     "pause briefly 잠시 멈추다",
+     "pause for a moment 잠깐 멈추다",
+     "pause for a while 잠시 동안 멈추다",
+     "pause the video 영상을 일시 정지하다",
+     "pause production 생산을 일시 중단하다"
+    ]
+   },
+   {
+    "word": "panel",
+    "pron": "[pǽnl]",
+    "pos": "n.",
+    "meaning": "n. 1. (목재·유리·금속으로 된 사각형) 판  2. 패널, (방송) 토론자단",
+    "tip": "철자대로 읽으면 [[b]]판넬[[/b]], 즉 건축 등에 쓰는 (목재·유리·금속으로 된 사각형) [[r]]판[[/r]]",
+    "toeicExpr": [
+     "control panel 제어판",
+     "solar/display panel 태양광/디스플레이 패널",
+     "panel discussion 패널 토론",
+     "inteview panel 면접위원단",
+     "a panel of experts/judges 전문가단/심사위원단"
+    ]
+   },
+   {
+    "word": "solicit",
+    "pron": "[səlísit]",
+    "pos": "v.",
+    "meaning": "v. 간청하다, 요청하다",
+    "tip": "강도가 \"조용히 안 하면 총을 [[b]]쏠리[[/b]](쏠 거야) [[b]]쉿[[/b]]!\" 하자 살려달라고 [[r]]간청하다, 요청하다[[/r]]",
+    "toeicExpr": [
+     "solicit a donation/response 기부를/응답을 요청하다",
+     "solicit an opinion 의견을 요청하다"
+    ]
+   },
+   {
+    "word": "tender",
+    "pron": "[téndər]",
+    "pos": "n./v.",
+    "meaning": "1. n. 입찰  v. 입찰하다  2. v. 제출하다",
+    "tip": "1억짜리 [[b]]ten[[/b]](10장) [[b]]더[[/b]] 높여서 [[r]]입찰[[/r]], [[r]]입찰하다[[/r]], 입찰서를 [[r]]제출하다[[/r]]",
+    "toeicExpr": [
+     "submit a tender 입찰서를 제출하다",
+     "call for a tender 입찰 공고를 내다  tender process 입찰 절차",
+     "tender a resignation/proposal 사직서를/제안을 제출하다"
+    ]
+   },
+   {
+    "word": "loosen",
+    "pron": "[lúːsn]",
+    "pos": "v.",
+    "meaning": "v. 느슨하게 하다, 완화하다",
+    "tip": "[[b]]느슨[[/b]]하게 하다, 즉 [[r]]느슨하게 하다, 완화하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "loose",
+      "meaning": "느슨한, 풀린"
+     }
+    ],
+    "toeicExpr": [
+     "loosen restrictions 규제를 완화하다",
+     "loosen safety standards 안전 기준을 완화하다"
+    ],
+    "examVar": [
+     {
+      "en": "loosen, loose, lose(잃다)의 품사와 의미를 구분하는 문제가 출제되었다.",
+      "ex": "One of the screws on the chair has come ______, so it needs to be tightened.",
+      "opt": "(A) lose  (B) loose  (C) loosen  (D) losing",
+      "ko": "의자에 있는 나사 하나가 풀려서 조여야 한다.",
+      "note": "loosen에서 en(동사를 만들어주는 접미어)으로 구별하자.",
+      "ans": "(B)"
+     }
+    ]
+   },
+   {
+    "word": "shortcoming",
+    "pron": "[ʃɔ́ːrtkλ̀miŋ]",
+    "pos": "n.",
+    "meaning": "n. 단점, 결함",
+    "tip": "30센티짜리 자를 주문했는데 5센티 [[b]]short[[/b]](짧은) 자가 [[b]]coming[[/b]](온), 즉 [[r]]단점, 결함[[/r]]",
+    "toeicExpr": [
+     "identify shortcomings 결함을 찾아내다",
+     "overcome shortcomings 결점을 극복하다",
+     "technical shortcomings 기술적 결함"
+    ]
+   },
+   {
+    "word": "feed",
+    "pron": "[fiːd]",
+    "pos": "v.",
+    "meaning": "v. 먹이를 주다, 공급하다 (feed-fed-fed)",
+    "tip": "[[b]]food[[/b]](음식)을 주다, 즉 [[r]]먹이를 주다, 공급하다[[/r]]",
+    "toeicExpr": [
+     "feed A to B A를 B에 공급하다",
+     "feed data to a computer 컴퓨터에 데이터를 입력하다",
+     "feed paper to a printer 프린터에 종이를 넣다"
+    ]
+   },
+   {
+    "word": "hike",
+    "pron": "[haik]",
+    "pos": "n.",
+    "meaning": "n. 1. 하이킹, (장거리) 도보여행  2. (가격 등의) 대폭 인상",
+    "tip": "[[b]]하이[[/b]](high 높게) [[r]]크게[[/r]] 가격 등을 [[r]]대폭 인상[[/r]]",
+    "toeicExpr": [
+     "price/tax hike 가격/세금 인상",
+     "interest rate hike 금리 인상"
+    ]
+   },
+   {
+    "word": "theme",
+    "pron": "[θiːm]",
+    "pos": "n.",
+    "meaning": "주제, 제목",
+    "tip": "글의 (중)[[b]]심[[/b]]이 되는 생각, 즉 [[r]]주제, 제목[[/r]]",
+    "toeicExpr": [
+     "central/main theme 중심/주요 주제",
+     "theme park 테마파크"
+    ]
+   },
+   {
+    "word": "deem",
+    "pron": "[diːm]",
+    "pos": "v.",
+    "meaning": "~으로 생각하다, 간주하다",
+    "tip": "오리 그림과 '__UCK'이란 글자를 보고 '첫 글자는 아마도 [[b]]D임[[/b]]'이라고 [[b]]D[[/b]]로 [[r]]생각하다, 간주하다[[/r]]",
+    "toeicExpr": [
+     "deem A B A를 B라고 여기다",
+     "deem it necessary/appropriate/important 그것을 필요하다고/적절하다고/중요하다고 여기다",
+     "The committee deemed the proposal appropriate for implementation. 위원회는 그 제안을 시행하기에 적절하다고 판단했다.",
+     "be deemed (to be) + 형용사/명사: ~로 간주되다",
+     "The product was deemed (to be) unsafe by the safety inspectors. 그 제품은 안전 검사관들에 의해 안전하지 않다고 간주되었다."
+    ],
+    "examVar": [
+     {
+      "en": "'deem A B(A를 B라고 여기다)'와 'regard A as B(A를 B라고 여기다)'의 구분 문제가 출제되었다.",
+      "opt": "The review panel ______ the revised proposal appropriate for immediate implementation. → deemed (O) / regarded (X)",
+      "ko": "검토 위원회는 수정된 제안서를 즉시 시행하기에 적절하다고 여겼다.",
+      "note": "regarded는 뒤에 as가 필요하여 문맥상 불완전하다."
+     }
+    ]
+   },
+   {
+    "word": "artificial",
+    "pron": "[ɑ̀ːrtəfíʃəl]",
+    "pos": "a.",
+    "meaning": "인공의, 가짜의",
+    "tip": "영화에서 사람들의 피는 [[b]]art[[/b]](미술)에서 쓰는 [[b]]피셔[[/b]], 즉 빨간 물감으로 만든 [[r]]인공의, 가짜의[[/r]] 피",
+    "toeicExpr": [
+     "artificial intelligence 인공지능",
+     "artificial flavor 인공 향료",
+     "artificial flowers 조화"
+    ]
+   },
+   {
+    "word": "ware",
+    "pron": "[wɛər]",
+    "pos": "n.",
+    "meaning": "제품, 상품",
+    "tip": "하드[[b]]웨어[[/b]](hardware), 소프트[[b]]웨어[[/b]](software)에서 [[b]]ware[[/b]]는 [[r]]제품, 상품[[/r]]",
+    "toeicExpr": [
+     "software 소프트웨어",
+     "hardware 하드웨어",
+     "kitchenware 주방 용품",
+     "glassware 유리 제품",
+     "tableware 식탁 용품"
+    ]
+   },
+   {
+    "word": "crosswalk",
+    "pron": "[krɔ́ːswɔ̀ːk]",
+    "pos": "n.",
+    "meaning": "횡단보도",
+    "tip": "도로를 [[b]]cross[[/b]](가로질러) [[b]]walk[[/b]](걷는) 길, 즉 [[r]]횡단보도[[/r]]",
+    "toeicExpr": [
+     "cross at the crosswalk 횡단보도로 건너다"
+    ]
+   },
+   {
+    "word": "pervade",
+    "pron": "[pərvéid]",
+    "pos": "v.",
+    "meaning": "온통 퍼지다, 만연하다",
+    "tip": "칼에 [[b]]팔[[/b]]이 [[b]]베이다[[/b]], 그래서 피가 옷에 [[r]]온통 퍼지다[[/r]]",
+    "derivatives": [
+     {
+      "word": "pervasive",
+      "meaning": "퍼지는, 만연하는"
+     }
+    ],
+    "toeicExpr": [
+     "pervade society 사회 전반에 퍼지다",
+     "pervade the room 방 안에 가득 퍼지다",
+     "pervasive influence 널리 미치는 영향",
+     "pervasive problem 만연한 문제"
+    ],
+    "examVar": [
+     {
+      "en": "A sense of urgency pervaded the entire organization following the announcement of the merger.",
+      "ko": "합병 발표 이후 긴박감이 조직 전체에 퍼졌다."
+     }
+    ]
+   },
+   {
+    "word": "tidy",
+    "pron": "[táidi]",
+    "pos": "a.",
+    "meaning": "단정한, 깔끔한",
+    "tip": "양복을 입은 후 [[b]]타이[[/b]](넥타이)로 [[b]]뒤[[/b]]에 마무리하여 [[r]]단정한, 깔끔한[[/r]]",
+    "toeicExpr": [
+     "keep tidy 깔끔하게 유지하다",
+     "tidy desk 깔끔한 책상",
+     "tidy appearance 단정한 외모"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 47,
+  "title": "",
+  "words": [
+   {
+    "word": "shield",
+    "pron": "[ʃiːld]",
+    "pos": "n./v.",
+    "meaning": "n. 방패  v. 방패로 막다, 보호하다",
+    "tip": "스파이더맨이 쳐놓은 거미줄 [[b]]실두[[/b]](실도) 로켓을 막아주는 [[r]]방패[[/r]]",
+    "toeicExpr": [
+     "shield from harm 피해로부터 보호하다",
+     "shield A from B A를 B로부터 보호하다",
+     "shield residents from noise 주민을 소음으로부터 보호하다",
+     "shield products from damage 제품을 손상으로부터 보호하다"
+    ],
+    "examVar": [
+     {
+      "en": "The updated safety protocol is designed to shield employees from potential chemical exposure in the laboratory.",
+      "ko": "개정된 안전 규정은 연구실에서 발생할 수 있는 화학물질 노출로부터 직원들을 보호하도록 설계되었다."
+     }
+    ]
+   },
+   {
+    "word": "ceiling",
+    "pron": "[síːliŋ]",
+    "pos": "n.",
+    "meaning": "n. 천장",
+    "tip": "[[r]]천장[[/r]] 보고 누워서 [[b]]쉴리[[/b]](잉).",
+    "toeicExpr": [
+     "high ceiling 높은 천장  ceiling fan/light 천장 선풍기/조명"
+    ]
+   },
+   {
+    "word": "drill",
+    "pron": "[dril]",
+    "pos": "n./v.",
+    "meaning": "1. n. 송곳  v. 드릴로 구멍을 뚫다  2. n. 훈련, 연습  v. 훈련하다",
+    "tip": "공업고등학교에서 실습 시간에 [[b]]드릴[[/b]]로 구멍을 뚫는 [[r]]훈련, 훈련하다[[/r]]",
+    "toeicExpr": [
+     "drill a hole 구멍을 뚫다  power drill 전동 드릴",
+     "fire drill 화재 대피 훈련  emergency drill 비상 훈련"
+    ]
+   },
+   {
+    "word": "illegal",
+    "pron": "[illíːgəl]",
+    "pos": "a.",
+    "meaning": "a. 불법적인",
+    "tip": "\"나는 [[b]]일리[[/b]](이리로) [[b]]갈[[/b]] 거야.\" 하며 도로를 건너는 [[r]]불법적인[[/r]] 무단횡단",
+    "derivatives": [
+     {
+      "word": "legal",
+      "meaning": "합법적인, 법에 관련된"
+     },
+     {
+      "word": "illegally",
+      "meaning": "불법적으로"
+     }
+    ],
+    "toeicExpr": [
+     "illegal activity/transaction/parking 불법 활동/거래/주차",
+     "legal rights/document 법적 권리/문서  legal obligation 법률상의 의무",
+     "trade/operate illegally 불법적으로 거래하다/운영하다"
+    ]
+   },
+   {
+    "word": "shelter",
+    "pron": "[ʃéltər]",
+    "pos": "n.",
+    "meaning": "n. 1. 피난처, 보호시설  2. (버스) 정류장",
+    "tip": "① 여기가 재난을 피해 [[b]]쉴[[/b]](쉬는) 터야, 즉 [[r]]피난처, 보호시설[[/r]] ② 버스를 기다리며 비바람을 피하는 [[r]]피난처[[/r]] 역할을 하는 지붕 있는 [[r]]버스 정류장[[/r]]",
+    "toeicExpr": [
+     "emergency shelter 긴급 대피소  temporary shelter 임시 거처  homeless shelter 노숙자 보호소",
+     "bus shelter 버스 정류장"
+    ]
+   },
+   {
+    "word": "norm",
+    "pron": "[nɔːrm]",
+    "pos": "n.",
+    "meaning": "n. 기준, 표준",
+    "tip": "① 경찰이 잡으려는 [[b]]놈[[/b]]은 [[r]]표준[[/r]] 키와 몸무게를 가졌어. ② normal(보통의)은 norm(기준, 표준)에 부합한다는 의미",
+    "toeicExpr": [
+     "industry norm 업계 표준  safety/quality norm 안전/품질 기준",
+     "establish/follow a norm 기준을 설정하다/따르다"
+    ],
+    "examVar": [
+     {
+      "note": "norm과 normal을 구분하는 문제가 출제되었다.",
+      "en": "Following international ______ is essential when developing safety guidelines for the new product.",
+      "opt": "norm (O)  normal (X)",
+      "ko": "새로운 제품의 안전 지침을 개발할 때 국제 규범을 따르는 것은 필수적이다."
+     }
+    ]
+   },
+   {
+    "word": "fraud",
+    "pron": "[frɔːd]",
+    "pos": "n.",
+    "meaning": "n. 사기, 사기 행위",
+    "tip": "수갑을 풀고 탈출하는 마술은 사실은 미리 수갑을 [[b]]풀어 두고서[[/b]] 푸는 척만 하는 [[r]]사기, 사기 행위[[/r]]",
+    "toeicExpr": [
+     "commit fraud 사기를 저지르다  insurance fraud 보험 사기",
+     "fraud investigation/prevention 사기 수사/방지"
+    ]
+   },
+   {
+    "word": "landfill",
+    "pron": "[lǽndfil]",
+    "pos": "n.",
+    "meaning": "n. (쓰레기) 매립지",
+    "tip": "[[b]]land[[/b]](땅)을 (쓰레기로) [[b]]fill[[/b]](채운) 곳, 즉 [[r]](쓰레기) 매립지[[/r]]",
+    "toeicExpr": [
+     "landfill site 쓰레기 매립지"
+    ]
+   },
+   {
+    "word": "wipe",
+    "pron": "[waip]",
+    "pos": "v.",
+    "meaning": "v. 닦다, 씻다",
+    "tip": "① [[b]]와이프[[/b]]를 위해 남편이 방을 [[r]]닦다, 씻다[[/r]] ② 차의 [[b]]와이퍼[[/b]](wiper)가 앞 유리를 [[r]]닦다, 씻다[[/r]]",
+    "toeicExpr": [
+     "wipe the table/floor 테이블을/바닥을 닦다",
+     "wipe off = wipe out (완전히) 닦아내다 (* off, out, up은 강조의 부사로 자주 쓰인다.) wipe off the desk/floor 책상을/바닥을 닦아내다"
+    ]
+   },
+   {
+    "word": "sweep",
+    "pron": "[swi:p]",
+    "pos": "v.",
+    "meaning": "v. 쓸다, 휩쓸다",
+    "tip": "[[b]]수위[[/b]] 아저씨가 [[b]]잎사귀[[/b]]를 [[r]]쓸다, 휩쓸다[[/r]]",
+    "toeicExpr": [
+     "sweep the floor 바닥을 쓸다",
+     "sweep leaves 낙엽을 쓸다",
+     "sweep across the market 시장을 휩쓸다",
+     "New technology is sweeping the industry at a rapid pace. 새로운 기술이 빠른 속도로 업계를 휩쓸고 있다."
+    ]
+   },
+   {
+    "word": "likewise",
+    "pron": "[láikwàiz]",
+    "pos": "ad.",
+    "meaning": "ad. 마찬가지로",
+    "tip": "[[b]]like[[/b]](~같이) + [[b]]wise[[/b]](~방법)] 같은 방법으로, 즉 [[r]]마찬가지로[[/r]]",
+    "toeicExpr": [
+     "respond likewise 같은 방식으로 대응하다",
+     "be treated/affected likewise 마찬가지로 대우받다/영향받다"
+    ],
+    "examVar": [
+     {
+      "en": "The new policy has significantly improved employee satisfaction; likewise, customer feedback has also become more positive.",
+      "ko": "새로운 정책은 직원 만족도를 크게 높였다. 마찬가지로 고객 피드백도 더 긍정적으로 바뀌었다."
+     }
+    ]
+   },
+   {
+    "word": "bend",
+    "pron": "[bend]",
+    "pos": "v.",
+    "meaning": "v. 구부리다",
+    "tip": "팔 운동을 하려고 벽에 걸린 스포츠용 (고무) [[b]]밴드[[/b]]를 잡고 팔을 [[r]]구부리다[[/r]]",
+    "toeicExpr": [
+     "bend forward 몸을 앞으로 굽히다  bend one's knees 무릎을 굽히다"
+    ]
+   },
+   {
+    "word": "freezing",
+    "pron": "[frí:ziŋ]",
+    "meaning": "1. a. 몹시 추운  n. 냉동  2. n. (임금·물가 등의) 동결",
+    "tip": "[[b]]풀이 찡![[/b]] 하고 얼어버릴 정도로 [[r]]몹시 추운[[/r]]. 그리고 임금, 물가 등을 얼어붙어 움직이지 않게 [[r]]동결[[/r]]",
+    "derivatives": [
+     {
+      "word": "freeze",
+      "meaning": "얼다, 얼리다, (임금·가격 등을) 동결하다; 동결"
+     }
+    ],
+    "toeicExpr": [
+     "freezing temperature 영하의 기온  below freezing 영하로",
+     "freezing weather 살을 에는 추위",
+     "freeze prices 물가를 동결하다  wage freeze 임금 동결",
+     "freeze an account (은행) 계좌를 동결하다"
+    ]
+   },
+   {
+    "word": "moisture",
+    "pron": "[mɔ́istʃər]",
+    "pos": "n.",
+    "meaning": "n. 습기, 수분",
+    "tip": "① 한증막에 수증기가 [[b]]모이[[/b]]다, 그래서 [[r]]습차[[/r]](습기가 차다), 즉 [[r]]습기, 수분[[/r]] ② [[b]]모이스처[[/b]] 스킨로션은 얼굴에 [[r]]수분[[/r]]을 공급하는 스킨로션이다.",
+    "toeicExpr": [
+     "exposure to moisture 습기에 노출됨",
+     "protect from moisture 습기로부터 보호하다",
+     "damage caused by moisture 습기로 인한 손상"
+    ]
+   },
+   {
+    "word": "surgery",
+    "pron": "[sə́:rdʒəri]",
+    "pos": "n.",
+    "meaning": "n. 수술",
+    "tip": "피부를 [[b]]썰[[/b]] 매쓰 [[b]]주어리!(줘)[[/b]] [[r]]수술[[/r]] 장면",
+    "toeicExpr": [
+     "undergo surgery 수술을 받다  cosmetic surgery 성형 수술"
+    ]
+   },
+   {
+    "word": "handful",
+    "pron": "[hǽndfùl]",
+    "pos": "n.",
+    "meaning": "n. (한) 줌, 소량, 소수",
+    "tip": "[[b]]hand[[/b]](손) + [[b]]ful[[/b]](형·어)] 손의 [[r]]한 줌, 소량[[/r]]",
+    "toeicExpr": [
+     "a handful of employees 소수의 직원들",
+     "a handful of companies 소수의 기업들"
+    ],
+    "examVar": [
+     {
+      "en": "Only a handful of applicants were selected for the second round of interviews.",
+      "ko": "소수의 지원자만 2차 인터뷰에 선발되었다."
+     }
+    ]
+   },
+   {
+    "word": "victim",
+    "pron": "[víktim]",
+    "pos": "n.",
+    "meaning": "n. 희생자, 피해자",
+    "tip": "예선전에서 브라질 축구팀과 같은 [[b]]big team[[/b]](큰 팀)을 만난 [[r]]희생자, 피해자[[/r]]",
+    "toeicExpr": [
+     "crime/accident/flood victim 범죄/사고/홍수 피해자"
+    ]
+   },
+   {
+    "word": "sink",
+    "pron": "[siŋk]",
+    "pos": "v./n.",
+    "meaning": "1. v. 가라앉다, (가격ㆍ수치 등이) 하락하다 (sink-sank-sunk)  2. n. 싱크대",
+    "tip": "[[b]]싱크[[/b]]대의 물이 구멍으로 [[r]]가라앉다, 하락하다[[/r]]",
+    "toeicExpr": [
+     "sink into the water 물에 가라앉다",
+     "sales/profits sink 매출이/수익이 하락하다",
+     "kitchen sink 부엌 싱크대"
+    ]
+   },
+   {
+    "word": "rear",
+    "pron": "[riər]",
+    "pos": "n./a.",
+    "meaning": "n. 뒤  a. 후방의",
+    "tip": "① 엄마 등 [[b]]뒤[[/b]]에 아기를 [[r]]누어[[/r]](눕혀)\n② [[b]]리어[[/b]]카는 자전거 [[b]]rear[[/b]]([[b]]뒤에[[/b]]) 끌고 가는 [[b]]car[[/b]](차)에서 유래한 콩글리쉬",
+    "toeicExpr": [
+     "rear door/entrance 뒤쪽의 문/출입구  rear seat 뒷좌석"
+    ]
+   },
+   {
+    "word": "float",
+    "pron": "[flout]",
+    "pos": "v.",
+    "meaning": "v. 1. (물위나 공중에) 뜨다, 띄우다  2. (가격ㆍ수치 등이) 변동되다  3. (아이디어를) 제안하다",
+    "tip": "① [[b]]flow[[/b]](흐르는) 물 위에 [[r]]뜨다[[/r]], 즉 [[r]]뜨다, 띄우다[[/r]]\n② 종이배를 물에 [[b]]띄웠더니[[/b]] 물결에 따라 [[r]]변동되다[[/r]]\n③ 아이디어를 [[b]]float[[/b]]([[b]]띄워서[[/b]]) 상대방에게 보내다, 즉 [[r]]제안하다[[/r]]",
+    "toeicExpr": [
+     "float in the air 공중에 떠 있다  floating object 떠 있는 물체",
+     "floating price 변동 가격  floating interest rate 변동 금리",
+     "float a proposal 제안을 내놓다  float an idea 아이디어를 제시하다"
+    ]
+   },
+   {
+    "word": "strain",
+    "pron": "[strein]",
+    "pos": "n.",
+    "meaning": "n. 긴장, 큰 부담",
+    "tip": "[[b]]스트레[[/b]]스로 땀이 [[b]]rain[[/b]](비) 오듯 흐르는 [[r]]긴장, 큰 부담[[/r]]",
+    "toeicExpr": [
+     "financial strain 재정적 부담",
+     "put a strain on ~에 부담을 주다",
+     "put a strain on a budget 예산에 부담을 주다",
+     "put a strain on staff 직원들에게 부담을 주다"
+    ],
+    "examVar": [
+     {
+      "en": "The rising cost of raw materials has put a heavy strain on the company's manufacturing budget.",
+      "ko": "원자재 비용의 상승은 회사의 제조 예산에 큰 부담을 주었다."
+     }
+    ]
+   },
+   {
+    "word": "side effect",
+    "pos": "n.",
+    "meaning": "부작용",
+    "tip": "[[b]]side[[/b]](옆으로) 새어 나온 [[b]]effect[[/b]](효과), 즉 [[r]]부작용[[/r]]",
+    "toeicExpr": [
+     "cause/reduce side effect 부작용을 일으키다/줄이다",
+     "possible/serious/minor side effect 발생 가능한/심각한/가벼운 부작용"
+    ]
+   },
+   {
+    "word": "shave",
+    "pron": "[ʃeiv]",
+    "pos": "v.",
+    "meaning": "v. 면도하다, 깎다, 줄이다",
+    "tip": "전기면도기로 [[b]]쉐~[[/b]] 하며 [[b]]입을[[/b]] 모으고 [[r]]면도하다[[/r]]",
+    "toeicExpr": [
+     "shave one's beard 수염을 면도하다",
+     "shave costs 비용을 줄이다",
+     "shave expenses 지출을 삭감하다"
+    ]
+   },
+   {
+    "word": "puzzle",
+    "pron": "[pʌzl]",
+    "pos": "n./v.",
+    "meaning": "1. n. 수수께끼  2. n. 당황  v. 당황하게 하다",
+    "tip": "스핑크스가 어려운 [[b]]퍼즐[[/b]]([[r]]수수께끼[[/r]])를 내어 [[r]]당황, 당황하게 하다[[/r]]",
+    "toeicExpr": [
+     "puzzling question 당황스럽게 만드는 질문",
+     "be puzzled by the sudden change 갑작스러운 변화로 당혹해 하다"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 48,
+  "title": "",
+  "words": [
+   {
+    "word": "viable",
+    "pron": "[váiəbl]",
+    "pos": "a.",
+    "meaning": "a. 실행 가능한, 성공 가능한, 수익성이 있는",
+    "tip": "나무를 비벼 불을 피우면서 \"여기 [[b]]봐요! 불[[/b]] 피웠어요.\" 즉, 나무를 비벼서 불피우는 것이 [[r]]실행 가능한[[/r]]",
+    "toeicExpr": [
+     "viable plan/proposal/project 실행(성공) 가능한 계획/제안/프로젝트",
+     "viable investment 수익성이 있는(성공 가능한) 투자"
+    ],
+    "examVar": [
+     {
+      "en": "The company is searching for a viable strategy to enter foreign markets.",
+      "ko": "그 회사는 해외 시장에 진출하기 위한 실행 가능한(성공 가능한) 전략을 찾고 있다."
+     }
+    ]
+   },
+   {
+    "word": "arrow",
+    "pron": "[ǽrou]",
+    "pos": "n.",
+    "meaning": "n. 화살, 화살표",
+    "tip": "윌리엄텔이 [[b]]애로[[/b]] (아이로) 향하여 쏜 [[r]]화살[[/r]]",
+    "toeicExpr": [
+     "follow the arrow 화살표를 따라가다  arrow sign 화살표 표시"
+    ]
+   },
+   {
+    "word": "dot",
+    "pron": "미[dɑt] 영[dɔt]",
+    "pos": "n./v.",
+    "meaning": "n. 점  v. 점을 찍다",
+    "tip": "[[b]]닷 컴(.com)[[/b]]의 [[b]]닷[[/b]]은 [[r]]점, 점을 찍다[[/r]]",
+    "toeicExpr": [
+     "a dot on the map 지도의 점  dotted line 점선"
+    ]
+   },
+   {
+    "word": "look forward to + 명사/동명사",
+    "meaning": "~을 학수고대하다 (to: 전치사로 쓰여 '~쪽을 향해')",
+    "tip": "기대하는 사람이나 목적을 [[b]]향해(to) 앞으로(forward)[[/b]] 목을 빼고 [[b]]보면서(look)[[/b]] 기다리고 있다, 즉 [[r]]~을 학수고대하다[[/r]]",
+    "toeicExpr": [
+     "look forward to seeing you 만나 뵙기를 기대하다",
+     "look forward to hearing from you 답신을 기다리다"
+    ],
+    "examVar": [
+     {
+      "en": "We are looking forward to ________ you at the annual conference.",
+      "opt": "(A) see (B) seeing (C) seen (D) to see",
+      "ko": "우리는 연례 회의에서 당신을 뵙기를 기대합니다.",
+      "ans": "(B)"
+     }
+    ]
+   },
+   {
+    "word": "edible",
+    "pron": "[édəbl]",
+    "pos": "a.",
+    "meaning": "a. 먹을 수 있는, 식용의",
+    "tip": "\"이 곤충도 [[r]]먹을 수 있는[[/r]] 것이니 [[b]]얘도 불[[/b]]에 넣어 굽자!\"",
+    "toeicExpr": [
+     "edible plants/materials 식용 식물/재료"
+    ]
+   },
+   {
+    "word": "rationale",
+    "pron": "미[ræʃənǽl] 영[ræʃənά:l]",
+    "pos": "n.",
+    "meaning": "n. 이유, 근거",
+    "tip": "사장이 \"지각한 사유서([[r]]이유, 근거[[/r]])를 [[b]]내셔[[/b]]!\"라고 말하자 빨리 적어서 [[b]]낼[[/b]]",
+    "toeicExpr": [
+     "the rationale for the decision/change 그 결정의/변화의 근거",
+     "explain the rationale 근거를 설명하다"
+    ],
+    "examVar": [
+     {
+      "en": "rationale과 rational(합리적인, 이성적인)을 구분하는 문제가 자주 출제되었다.",
+      "opt": "The board requested a clear ________ for the proposed budget increase before giving final approval. → rationale (O) rational (X)",
+      "ko": "이사회는 최종 승인을 내리기 전에 제안된 예산 증가에 대한 명확한 근거를 요구했다."
+     }
+    ]
+   },
+   {
+    "word": "semester",
+    "pron": "[siméstər]",
+    "pos": "n.",
+    "meaning": "n. 한 학기",
+    "tip": "에이 [[b]]씨![[/b]] 영어 [[b]]master[[/b]](마스터하다) 할 거야! 이번 [[r]]학기[[/r]]에는!",
+    "toeicExpr": [
+     "fall/spring semester 가을/봄 학기  upcoming semester 다음 학기"
+    ]
+   },
+   {
+    "word": "proceeds",
+    "pron": "[próusi:dz]",
+    "pos": "n.",
+    "meaning": "n. 수익금, 매출금",
+    "tip": "[[b]]프로 박씨[[/b]]에게 [[b]]주(주다)[[/b]], 그가 대회에서 우승하여 받은 [[r]]수익금[[/r]]을.",
+    "toeicExpr": [
+     "proceeds from the sale 판매로 발생한 수익",
+     "the proceeds of the event 행사 수익금"
+    ],
+    "examVar": [
+     {
+      "en": "All proceeds from the charity event will be donated to local hospitals.",
+      "ko": "자선 행사에서 나온 모든 수익금은 지역 병원에 기부될 것입니다."
+     }
+    ]
+   },
+   {
+    "word": "inaugurate",
+    "pron": "[inɔ́:gjurèit]",
+    "pos": "v.",
+    "meaning": "v. 취임시키다, 개시하다, 출범시키다",
+    "tip": "[[b]]인호[[/b]]를 [[b]]구[[/b]](9) [[b]]rate[[/b]](등급), 즉 9급 공무원으로 [[r]]취임시키다[[/r]], [[r]]취임한[[/r]]다는 것은 어떤 일을 [[r]]개시하거나 출범하는 것[[/r]]",
+    "derivatives": [
+     {
+      "word": "inaugural",
+      "meaning": "취임의, 개시의"
+     }
+    ],
+    "toeicExpr": [
+     "inaugurate a new branch 새로운 지점을 개점하다",
+     "inaugurate a policy 정책을 시행하다",
+     "inaugurate a service 서비스를 시작하다",
+     "inaugural address 취임 연설  inaugural meeting 창립총회"
+    ]
+   },
+   {
+    "word": "ethics",
+    "pron": "[éθiks]",
+    "pos": "n.",
+    "meaning": "n. 윤리, 도덕",
+    "tip": "[[b]]애[[/b]]들이 지켜야 할 [[b]]six[[/b]](6)개의 [[r]]윤리, 도덕[[/r]]",
+    "derivatives": [
+     {
+      "word": "ethical",
+      "meaning": "윤리적인, 도덕상의"
+     }
+    ],
+    "toeicExpr": [
+     "business/professional ethics 기업/직업 윤리",
+     "ethics committee 윤리 위원회",
+     "code of ethics 윤리 강령"
+    ]
+   },
+   {
+    "word": "principle",
+    "pron": "[prínsipl]",
+    "pos": "n.",
+    "meaning": "n. 원리, 원칙, 주의",
+    "tip": "\"[[b]]콩 심은 데 콩 나고 팥 심은 데 팥 난다[[/b]].\" 즉, [[b]]뿌린 씨의 풀[[/b]]이 난다는 [[r]]원리, 원칙, 주의[[/r]]",
+    "toeicExpr": [
+     "basic principle 기본 원칙, 기본 원리",
+     "safety principles 안전 원칙",
+     "business principle 경영 원칙"
+    ]
+   },
+   {
+    "word": "divert",
+    "pron": "[daivə́:rt, divə́:rt]",
+    "pos": "v.",
+    "meaning": "v. (방향·용도 등을) 바꾸게 하다, 전용하다",
+    "tip": "피 냄새가 상어를 피 흘리는 [[b]]다이버 to[[/b]](쪽으로) [[r]]방향을 바꾸게 하다[[/r]]",
+    "toeicExpr": [
+     "divert traffic 교통을 우회시키다",
+     "divert funds to a new project 자금을 새 프로젝트로 전용하다",
+     "divert a shipment to a warehouse 배송을 창고로 변경하다"
+    ],
+    "examVar": [
+     {
+      "en": "The finance department decided to divert part of the marketing budget to support the new product launch.",
+      "ko": "재무 부서는 신제품 출시를 지원하기 위해 마케팅 예산의 일부를 다른 용도로 전용하기로 결정했다."
+     }
+    ]
+   },
+   {
+    "word": "anonymous",
+    "pron": "미[ənɑ́niməs] 영[ənɔ́niməs]",
+    "pos": "a.",
+    "meaning": "a. 익명의",
+    "tip": "기부자 서명할 때, 부끄러워서 자기 이름인 [[b]]오난희[[/b]]라고 못 쓰고 [[r]]익명의[[/r]] 이름으로 쓰다",
+    "derivatives": [
+     {
+      "word": "anonymously",
+      "meaning": "익명으로"
+     }
+    ],
+    "toeicExpr": [
+     "anonymous survey 익명 설문",
+     "submit something anonymously 익명으로 ~을 제출하다"
+    ]
+   },
+   {
+    "word": "novel",
+    "pron": "미[nɑ́vl] 영[nɔ́vl]",
+    "pos": "n./a.",
+    "meaning": "1. n. 소설  2. a. 진기한, 참신한",
+    "tip": "① [[b]]나불[[/b]]대며 읽는 [[r]]소설[[/r]]\n② SF [[b]]소설(novel)[[/b]]에 나오는 [[r]]진기한, 참신한[[/r]] 이야기",
+    "toeicExpr": [
+     "bestselling novel 베스트셀러 소설",
+     "novel approach/idea 참신한 접근법/아이디어"
+    ]
+   },
+   {
+    "word": "infrastructure",
+    "pron": "[ínfrəstrʌ̀ktʃər]",
+    "pos": "n.",
+    "meaning": "n. 사회 기반 시설(인프라)",
+    "tip": "[[b]]infra[[/b]](under) + [[b]]structure[[/b]](구조)] 하부구조, 즉 [[r]]사회 기반 시설(인프라)[[/r]]",
+    "toeicExpr": [
+     "build/improve infrastructure 인프라를 구축하다/개선하다",
+     "infrastructure development/investment 인프라 개발/투자"
+    ]
+   },
+   {
+    "word": "advocate",
+    "pron": "[ǽdvəkèit]",
+    "pos": "v.",
+    "meaning": "v. 옹호하다, 지지하다, 주장하다",
+    "tip": "엄마 아빠가 싸워 아빠는 방에 있고 엄마는 부엌에 있는데 [[b]]애두 뷔케[[/b]](부엌에) 엄마랑 같이 [[r]]있다[[/r]], 즉 엄마를 [[r]]옹호하다, 지지하다[[/r]]",
+    "toeicExpr": [
+     "advocate reform 개혁을 옹호하다",
+     "advocate policy 정책을 옹호하다",
+     "advocate new strategy 새로운 전략을 주장하다",
+     "advocate flexible schedule 유연 근무제를 주장하다"
+    ]
+   },
+   {
+    "word": "integrity",
+    "pron": "[intégrəti]",
+    "pos": "n.",
+    "meaning": "n. 진실성, 청렴",
+    "tip": "[[b]]잉태[[/b]]된 아이가 [[b]]그렇지[[/b]], 즉 거짓 없이 [[r]]진실함[[/r]]",
+    "toeicExpr": [
+     "professional/business integrity 직업적/기업의 윤리(청렴)",
+     "integrity and honesty 진실성과 정직함"
+    ],
+    "examVar": [
+     {
+      "en": "The company emphasizes employee integrity in all business dealings.",
+      "ko": "그 회사는 모든 사업 거래에서 직원의 정직성을 강조한다."
+     }
+    ]
+   },
+   {
+    "word": "rural",
+    "pron": "미[rúrəl] 영[rúərəl]",
+    "pos": "a.",
+    "meaning": "a. 시골의",
+    "tip": "벼가 익어서 [[b]]누럴[[/b]](누런) [[r]]시골의[[/r]] 풍경",
+    "toeicExpr": [
+     "rural area/community/development 농촌 지역/공동체/개발"
+    ]
+   },
+   {
+    "word": "dispatch",
+    "pron": "[dispǽtʃ]",
+    "pos": "v./n.",
+    "meaning": "1. v. 급파하다  2. v. 발송하다  n. 발송  3. v. 빨리 해치우다",
+    "tip": "[[b]]this[[/b]](이) 택배를 [[b]]빼서 치[[/b]]우다, 즉 배달원을 [[r]]급파하다[[/r]], 택배를 [[r]]발송하다[[/r]], [[r]]빨리 해치우다[[/r]]",
+    "toeicExpr": [
+     "dispatch a technician to the client's office 고객사의 사무실로 기술자를 급파하다",
+     "dispatch goods 상품을 발송하다  dispatch an order 주문품을 발송하다  goods dispatch 물품 발송  dispatch department 발송 부서",
+     "dispatch a task/request 일을/요청을 신속히 처리하다"
+    ]
+   },
+   {
+    "word": "awful",
+    "pron": "[ɔ́ːfəl]",
+    "pos": "a.",
+    "meaning": "a. 엄청난, 끔찍한, 형편없는",
+    "tip": "농약을 써도, 낫으로 잘라도 무성하게 자꾸 자라는 [[b]]오! 풀![[/b]] 즉, [[r]]엄청난, 끔찍한[[/r]] 풀",
+    "derivatives": [
+     {
+      "word": "awfully",
+      "meaning": "엄청나게, 매우, 끔찍하게"
+     }
+    ],
+    "toeicExpr": [
+     "awful mistake/experience/smell 끔찍한 실수/경험/냄새",
+     "awfully difficult/expensive 엄청나게 어려운/비싼"
+    ]
+   },
+   {
+    "word": "exert",
+    "pron": "[igzə́ːrt]",
+    "pos": "v.",
+    "meaning": "v. 노력하다, (노력ㆍ영향력을) 가하다, 발휘하다",
+    "tip": "올림픽 금메달을 위해 모래 가마니를 등에 [[b]]이구[[/b]] 산꼭대기 [[b]]절[[/b]]을 [[b]]two[[/b]](2)번이나 오르내릴 정도로 [[r]]노력하다[[/r]], 의지력을 [[r]]발휘하다[[/r]]",
+    "toeicExpr": [
+     "exert effort 노력을 기울이다",
+     "exert pressure on ~에 압력을 가하다"
+    ]
+   },
+   {
+    "word": "subordinate",
+    "pron": "[səbɔ́ːrdinət]",
+    "pos": "a./n.",
+    "meaning": "1. a. 종속된, 하위의  2. n. 부하 직원, 하급자",
+    "tip": "\"그 사람을 부하로 [[b]]써보지.[[/b]]\" 하고 조직에 [[b]]넣다[[/b]], 즉 조직에 [[r]]종속된[[/r]], [[r]]부하[[/r]]로 써보다",
+    "toeicExpr": [
+     "subordinate to ~에 종속된, ~보다 하위에 있는  subordinate to the head office 본사에 종속된  subordinate to the board of directors 이사회에 종속된",
+     "subordinate position/role 하위 직책/역할",
+     "supervise subordinates 부하 직원들을 관리하다"
+    ],
+    "examVar": [
+     {
+      "en": "In the new organizational structure, the regional offices are subordinate to the central headquarters.",
+      "ko": "새로운 조직 구조에서 지역 사무소는 중앙 본부에 종속된다."
+     }
+    ]
+   },
+   {
+    "word": "lengthen",
+    "pron": "[léŋkθən]",
+    "pos": "v.",
+    "meaning": "v. 길어지다, 늘리다, 연장하다",
+    "tip": "[[b]]length[[/b]](길이) + [[b]]en[[/b]](동ㆍ어)] 길이를 [[r]]길게 하다[[/r]]",
+    "toeicExpr": [
+     "lengthen working hours 근무 시간을 늘리다  lengthen business hours 영업 시간을 늘리다"
+    ]
+   },
+   {
+    "word": "ambiguous",
+    "pron": "[æmbígjuəs]",
+    "pos": "a.",
+    "meaning": "a. 모호한, 분명하지 않은",
+    "tip": "누가 이겼는지 [[r]]모호한, 분명하지 않은[[/r]], 그래서 내 생각에, [[b]]I am 비겼수.[[/b]]",
+    "toeicExpr": [
+     "ambiguous answer/statement 모호한 답변/발언"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 49,
+  "title": "",
+  "words": [
+   {
+    "word": "neat",
+    "pron": "[ni:t]",
+    "pos": "a.",
+    "meaning": "a. 산뜻한, 깔끔한",
+    "tip": "★ [[b]]니트[[/b]]를 입어 [[r]]산뜻한, 깔끔한[[/r]]",
+    "derivatives": [
+     {
+      "word": "neatly",
+      "meaning": "깔끔하게, 정돈되게, 단정하게"
+     }
+    ],
+    "toeicExpr": [
+     "neat handwriting/appearance 단정한 글씨/외모",
+     "arrange/write neatly 깔끔하게 정리하다/쓰다"
+    ]
+   },
+   {
+    "word": "soak",
+    "pron": "[souk]",
+    "pos": "v.",
+    "meaning": "v. 담그다, 흠뻑 젖다",
+    "tip": "★ 물속에 [[b]]쏘옥[[/b]] [[r]]담그다, 흠뻑 젖다[[/r]]",
+    "toeicExpr": [
+     "soak in water 물에 담그다   soak the clothes 옷을 담그다",
+     "be soaked with rain 비에 흠뻑 젖다"
+    ]
+   },
+   {
+    "word": "aggregate",
+    "pron": "n. a. [ǽgrigət] v. [ǽgragèit]",
+    "pos": "n. a. v.",
+    "meaning": "n. 합계  a. 총-  v. 종합하다, 합계를 내다",
+    "tip": "★ 달걀 가게에서 [[b]]egg로[[/b]](달걀로) [[b]]gate[[/b]](문) 앞에 쌓아놓은 달걀의 [[r]]총, 합계, 종합하다[[/r]]",
+    "toeicExpr": [
+     "in aggregate 전체적으로, 모두 합쳐   In aggregate, the company's profits grew by 12% this year. 전체적으로 볼 때, 회사의 수익은 올해 12% 증가했다.",
+     "aggregate amount/value 총액/총가치",
+     "aggregate figures/information 수치를/정보를 종합하다"
+    ],
+    "examVar": [
+     {
+      "en": "aggregate와 aggravate(악화시키다)를 구분하는 문제가 출제되었다.",
+      "note": "예) The unexpected software glitches only served to ______ the delays in the product launch.   aggravate (O)  aggregate (X)",
+      "ko": "예기치 못한 소프트웨어 오류는 제품 출시 지연을 더욱 악화시키는 역할을 했다."
+     }
+    ]
+   },
+   {
+    "word": "flourish",
+    "pron": "[flə́:riʃ]",
+    "pos": "v.",
+    "meaning": "v. (동물 · 사업 등이) 잘 자라다, 번창하다",
+    "tip": "★ 닭장에서 닭을 [[b]]풀러리! she[[/b]](그녀가). 그렇게 방목했더니 닭이 [[r]]잘 자라다[[/r]], 농장이 [[r]]번창하다[[/r]]",
+    "toeicExpr": [
+     "flourish in warm climate 따뜻한 기후에서 잘 자라다",
+     "flourish economically 경제적으로 번창하다",
+     "flourish in the market 시장에서 번창하다"
+    ]
+   },
+   {
+    "word": "fragile",
+    "pron": "미 [frǽdʒɪl] 영 [frǽdʒail]",
+    "pos": "a.",
+    "meaning": "a. 부서지기 쉬운, 깨지기 쉬운",
+    "tip": "★ [[b]]뿌러질[[/b]] 가능성이 있는, 즉 [[r]]부서지기 쉬운, 깨지기 쉬운[[/r]]",
+    "toeicExpr": [
+     "fragile goods/package 파손되기 쉬운 상품/소포"
+    ]
+   },
+   {
+    "word": "procure",
+    "pron": "미 [proukjúər] 영 [prəkjúər]",
+    "pos": "v.",
+    "meaning": "v. 얻다, 획득하다",
+    "tip": "★ 제자를 [[b]]프로[[/b]]선수로 [[b]]키워[[/b]] 챔피언 벨트를 [[r]]얻다, 획득하다[[/r]]",
+    "toeicExpr": [
+     "procure permission/approval 허가를/승인을 얻다",
+     "procure funds/resources 자금을/자원을 확보하다"
+    ]
+   },
+   {
+    "word": "stake",
+    "pron": "[steik]",
+    "pos": "n.",
+    "meaning": "n. 지분, 이해관계",
+    "tip": "★ [[b]]스테이크(steak)[[/b]] 하나를 시켜서 셋이서 먹기로 했으니 각각 스테이크의 3분의 1에 해당하는 [[r]]지분, 이해관계[[/r]]를 갖고 있다.",
+    "toeicExpr": [
+     "have a stake in the company 회사에 지분이(이해관계가) 있다",
+     "hold a 30% stake 30%의 지분을 보유하다",
+     "financial stake 재정적 이해관계   majority stake 과반 지분"
+    ]
+   },
+   {
+    "word": "at stake",
+    "meaning": "위험에 처한, (목숨 · 성패가) 달려 있는",
+    "tip": "★ [[b]]at(앳!)[[/b]] 소가 도살되어 [[b]]스테이크[[/b]]가 될 [[r]]위험에 처한, 목숨이 달려 있는[[/r]]",
+    "toeicExpr": [
+     "company reputation is at stake 회사의 명성이 위태롭다",
+     "with so much at stake 많은 것이 걸려 있어서",
+     "company's success is at stake 회사의 성공이 걸려 있다"
+    ],
+    "examVar": [
+     {
+      "en": "With the company's reputation at stake, the management team is working hard to resolve the issue quickly.",
+      "ko": "회사의 평판이 위태로운 상황이기 때문에 경영진은 문제를 신속히 해결하기 위해 노력하고 있다."
+     }
+    ]
+   },
+   {
+    "word": "rigorous",
+    "pron": "[rígərəs]",
+    "pos": "a.",
+    "meaning": "a. 엄격한, 철저한",
+    "tip": "★ 귀가 시간이 늦었다고 아버지가 \"[[b]]니 문 걸었수![[/b]]\" 할 정도로 [[r]]엄격한[[/r]]",
+    "toeicExpr": [
+     "rigorous standard 엄격한 기준",
+     "rigorous inspection/testing 철저한 검사/시험"
+    ]
+   },
+   {
+    "word": "entail",
+    "pron": "[intéil]",
+    "pos": "v.",
+    "meaning": "수반하다, 초래하다",
+    "tip": "[[b]]잉![[/b]] 뱀이 지나갈 때 [[b]]tail[[/b]](꼬리)를 [[r]]수반하다[[/r]]",
+    "toeicExpr": [
+     "entail risks/responsibilities/costs 위험을/책임을/비용을 수반하다",
+     "entail major changes 큰 변화를 수반하다(초래하다)",
+     "entail further delays 추가 지연을 수반하다(초래하다)"
+    ]
+   },
+   {
+    "word": "dismantle",
+    "pron": "[dismǽntl]",
+    "pos": "v.",
+    "meaning": "해체하다, 철거하다",
+    "tip": "[[b]]this[[/b]](이) 맨 틀(뼈대인 철근)만 남기고 건물을 [[r]]해체하다, 철거하다[[/r]]",
+    "toeicExpr": [
+     "dismantle a machine/device 기계를/장치를 분해하다",
+     "dismantle a building/structure 건물을/구조물을 철거하다"
+    ]
+   },
+   {
+    "word": "legitimate",
+    "pron": "[lidʒítəmət]",
+    "pos": "a.",
+    "meaning": "합법적인, 정당한",
+    "tip": "[[b]]니[[/b]]가 하는 [[b]]짓[[/b]]도 법에 [[r]]맞다[[/r]], 즉 [[r]]합법적인, 정당한[[/r]]",
+    "toeicExpr": [
+     "legitimate business 합법적인 사업  legitimate right 합법적 권리",
+     "legitimate claim 정당한 요구  legitimate reason 합당한 사유"
+    ]
+   },
+   {
+    "word": "dispense",
+    "pron": "[dispéns]",
+    "pos": "v.",
+    "meaning": "1. 나누어 주다, 제공하다  2. (~ with) ~ 없이 지내다, 면제하다, 생략하다",
+    "tip": "① “[[b]]this[[/b]](이) 펜 쓰세요.” 하고 답안지 마킹용 펜을 [[r]]나누어 주다, 제공하다[[/r]]\n② “[[b]]this[[/b]](이) 펜 쓰세요.” 하고 자신은 펜 [[r]]없이 지내다[[/r]]",
+    "toeicExpr": [
+     "dispense supplies/drinks/information 물품을/음료를/정보를 제공하다",
+     "dispense with ~ 없이 지내다, ~을 면제하다, 생략하다 (with: ~을 가지고 있는)",
+     "dispense with assistants 보조 인력 없이 일하다",
+     "dispense with fees/requirement 수수료를/요구 사항을 면제하다",
+     "dispense with formalities/ceremony 형식절차를/의례를 생략하다"
+    ],
+    "examVar": [
+     {
+      "en": "Due to the tight schedule, the team decided to dispense with the introductory session and move directly to the main discussion.",
+      "ko": "빡빡한 일정 때문에 팀은 도입 세션을 생략하고 바로 본론 논의로 넘어가기로 했다."
+     }
+    ]
+   },
+   {
+    "word": "be bound for",
+    "meaning": "~로 향하다, ~행이다",
+    "tip": "[[b]]be bound[[/b]](bind의 과거분사형: 묶여 있는) + [[b]]for[[/b]](~을 향해, ~을 목적지로)] [[r]]~을 향하도록 묶여 있다[[/r]](거기로 향할 수밖에 없다), 즉 [[r]]~로 향하다, ~행이다[[/r]]",
+    "toeicExpr": [
+     "be bound for New York 뉴욕으로 향하다 (for: ~을 향하여)",
+     "a flight bound for Gimpo 김포행 비행기"
+    ],
+    "examVar": [
+     {
+      "en": "The flight bound for Los Angeles has been delayed due to weather conditions.",
+      "ko": "로스앤젤레스로 향하는 항공편은 기상 조건으로 인해 지연되었다."
+     }
+    ]
+   },
+   {
+    "word": "exemplary",
+    "pron": "[igzémpləri]",
+    "pos": "a.",
+    "meaning": "모범적인, 본보기의",
+    "tip": "성실함의 [[b]]example[[/b]](예, 본보기)가 [[b]]너리[[/b]](너다), 즉 [[r]]모범적인, 본보기의[[/r]]",
+    "toeicExpr": [
+     "exemplary performance/conduct 모범적인 성과/행동",
+     "exemplary employee 모범 사원  exemplary leadership 본보기 리더십"
+    ]
+   },
+   {
+    "word": "charter",
+    "pron": "[tʃáːrtər]",
+    "pos": "n./v.",
+    "meaning": "n. (버스ㆍ비행기 등의) 전세  v. 전세 내다",
+    "tip": "단체의 사람들이 [[b]]차[[/b]]로 [[b]]떠나기[[/b]] 위해 빌린 [[r]]전세[[/r]] 버스",
+    "toeicExpr": [
+     "charter a flight/bus 비행기를/버스를 전세 내다",
+     "charter flight 전세기  charter bus 전세 버스"
+    ]
+   },
+   {
+    "word": "treasurer",
+    "pron": "[tréʒərər]",
+    "pos": "n.",
+    "meaning": "회계원, 재무 담당자",
+    "tip": "돈이나 [[b]]treasure[[/b]](보물)과 같이 돈이 되는 물건을 다루는 [[b]]er[[/b]](사람), 즉 [[r]]회계원[[/r]]",
+    "toeicExpr": [
+     "company treasurer 회사 회계 담당자  treasurer office 회계 부서"
+    ]
+   },
+   {
+    "word": "unanimous",
+    "pron": "[juːnǽniməs]",
+    "pos": "a.",
+    "meaning": "만장일치의",
+    "tip": "[[b]]유난히[[/b]](유난스럽게) 너만 반대하면 [[b]]못써![[/b]] 다 찬성해야 해! 즉, [[r]]만장일치의[[/r]]",
+    "derivatives": [
+     {
+      "word": "unanimously",
+      "meaning": "만장일치로"
+     }
+    ],
+    "toeicExpr": [
+     "unanimous decision/approval 만장일치의 결정/승인",
+     "agree/vote unanimously 만장일치로 합의하다/투표하다"
+    ],
+    "examVar": [
+     {
+      "en": "There was a unanimous agreement among the managers to extend the deadline.",
+      "ko": "관리자들 사이에서 마감 기한을 연장하자는 데 의견이 만장일치로 일치했다."
+     }
+    ]
+   },
+   {
+    "word": "navigation",
+    "pron": "[nævigéiʃən]",
+    "pos": "n.",
+    "meaning": "(배·항공기의) 항해, 운항, 탐색",
+    "tip": "자동차 [[b]]네비게이션[[/b]]에 따라 [[r]]항해, 운항[[/r]]",
+    "derivatives": [
+     {
+      "word": "navigate",
+      "meaning": "길을 찾다, 탐색하다"
+     }
+    ],
+    "toeicExpr": [
+     "navigation system 내비게이션 시스템   website navigation 웹사이트 탐색",
+     "navigate a website 웹사이트를 탐색하다"
+    ]
+   },
+   {
+    "word": "cease",
+    "pron": "[siːs]",
+    "pos": "v.",
+    "meaning": "중지하다, 중단되다",
+    "tip": "청소를 [[r]]중지하다[[/r]], 그리고 손을 [[b]]씻수[[/b]].",
+    "toeicExpr": [
+     "cease operations/production 운영을/생산을 중단하다"
+    ]
+   },
+   {
+    "word": "tolerate",
+    "pron": "미[tɔ́lərèit] 영[tɔ́lərèit]",
+    "pos": "v.",
+    "meaning": "참다, 견디다",
+    "tip": "수업 시간에 배가 [[b]]탈나[[/b]]서 화장실 가고 싶지만 [[b]]에잇![[/b]] 하고 [[r]]참다, 견디다[[/r]]",
+    "derivatives": [
+     {
+      "word": "tolerable",
+      "meaning": "참을 수 있는"
+     },
+     {
+      "word": "intolerable",
+      "meaning": "참을 수 없는"
+     }
+    ],
+    "toeicExpr": [
+     "tolerate noise 소음을 참다   cannot tolerate 참을 수 없다",
+     "tolerable noise level 참을 만한 소음 수준",
+     "tolerable risk 감수할 만한 위험",
+     "intolerable delay/conditions 참을 수 없는 지연/환경"
+    ]
+   },
+   {
+    "word": "reluctance",
+    "pron": "[rilʌ́ktəns]",
+    "pos": "n.",
+    "meaning": "싫음, 꺼림",
+    "tip": "차 사는 데 [[b]]일억[[/b]]의 [[r]]돈[[/r]]을 [[b]]쓰[[/b]]자는 남편의 제안이 [[r]]싫음, 꺼림[[/r]]",
+    "derivatives": [
+     {
+      "word": "reluctant",
+      "meaning": "싫어하는, 마음이 내키지 않는"
+     }
+    ],
+    "toeicExpr": [
+     "show reluctance 꺼리는 태도를 보이다",
+     "reluctance to accept 수용하기를 꺼림",
+     "be reluctant to do ~할 마음이 내키지 않다",
+     "be reluctant to participate 참여하기를 꺼리다",
+     "The company is reluctant to invest in risky projects. 그 회사는 위험한 프로젝트에 투자하기를 꺼려한다."
+    ]
+   },
+   {
+    "word": "brisk",
+    "pron": "[brisk]",
+    "pos": "a.",
+    "meaning": "활발한, 활기찬, 호황의",
+    "tip": "불이 붙듯 [[b]]SK[[/b]]하이닉스 반도체가 잘 팔려 [[r]]호황의, 활기찬[[/r]]",
+    "toeicExpr": [
+     "brisk sales/business 활발한(호황의) 매출/사업",
+     "brisk market 활기찬(호황의) 시장"
+    ],
+    "examVar": [
+     {
+      "en": "The company reported brisk sales during the holiday season, exceeding all initial forecasts.",
+      "ko": "그 회사는 연휴 시즌 동안 호황을 누리는 매출을 기록하며 모든 초기 예측을 초과했다."
+     }
+    ]
+   },
+   {
+    "word": "garment",
+    "pron": "[gɑ́ːrmənt]",
+    "pos": "n.",
+    "meaning": "의복, 옷",
+    "tip": "[[b]]가면[[/b]](가면도) 착용하는 [[r]]의복, 옷[[/r]]",
+    "toeicExpr": [
+     "garment factory/industry 의류 공장/산업",
+     "protective garment 보호복",
+     "outer garment 겉옷"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 50,
+  "title": "",
+  "words": [
+   {
+    "word": "affirm",
+    "pron": "[əfə́:rm]",
+    "pos": "v.",
+    "meaning": "v. 재확인하다, 확언하다",
+    "tip": "① \"진짜 펌 할 거야?\"라는 말에 끄덕이며 \"[[b]]어! 펌[[/b]] 할 거야.\"라고 [[r]]재확인하다, 확언하다[[/r]]  ② [[[b]]af[[/b]](to) + [[b]]firm[[/b]](확고한)] ~쪽으로 확고하게 말하다, 즉 [[r]]재확인하다, 확언하다[[/r]]",
+    "toeicExpr": [
+     "affirm support 지지를 확인하다  affirm a decision 결정을 재확인하다",
+     "affirm an agreement 합의를 확정하다"
+    ],
+    "examVar": [
+     {
+      "en": "The spokesperson affirmed that the company's policy would not change.",
+      "ko": "대변인은 회사의 정책이 바뀌지 않을 것임을 확인했다."
+     }
+    ]
+   },
+   {
+    "word": "domain",
+    "pron": "미[douméin] 영[dəméin]",
+    "pos": "n.",
+    "meaning": "n. 영역, 범위, (인터넷) 도메인",
+    "tip": "충청도, 경상도처럼 [[r]]도로[[/r]] [[b]]매인[[/b]](매여 있는) [[r]]영역, 범위[[/r]]",
+    "toeicExpr": [
+     "professional/legal domain 전문/법률 분야",
+     "private/public domain 사적/공공 영역",
+     "domain name 도메인 이름   internet domain 인터넷 도메인"
+    ]
+   },
+   {
+    "word": "bar",
+    "pron": "[bɑːr]",
+    "pos": "v./n.",
+    "meaning": "1. v. 막다, 금지하다  n. 제한  2. n. 막대기, 막대",
+    "tip": "① 청소년이 술집 [[b]]빠[[/b]]에 들어가는 것을 [[r]]막다, 금지하다[[/r]]  ② 바: 초코바, 핫바에서 '[[b]]바[[/b]]'는 [[r]]막대기[[/r]]",
+    "toeicExpr": [
+     "bar entry/access 진입을/접근을 막다",
+     "bar A from B A를 B로부터 막다, 금지하다",
+     "bar customer from service 고객의 서비스 이용을 금지하다",
+     "bar user from access 사용자의 접근을 차단하다",
+     "bar chart 막대 그래프   gold bar 금괴"
+    ]
+   },
+   {
+    "word": "restrain",
+    "pron": "[ristréin]",
+    "pos": "v.",
+    "meaning": "v. 제지하다, 억누르다",
+    "tip": "[[b]]re(s)[[/b]](뒤로) [[b]]train[[/b]](기차)를 잡아당겨 기차가 가는 것을 [[r]]제지하다, 억누르다[[/r]]",
+    "toeicExpr": [
+     "restrain A from -ing A로 하여금 ~하지 못하게 하다, 억제하다",
+     "restrain investors from making hasty decisions 투자자들이 성급한 결정을 내리는 것을 막다",
+     "restrain spending 지출을 억제하다",
+     "restrain growth/inflation 성장을/물가 상승을 억누르다"
+    ],
+    "examVar": [
+     {
+      "en": "Security personnel managed to restrain the protester from entering the restricted area.",
+      "ko": "보안 요원들은 시위자가 제한 구역에 들어가는 것을 막을 수 있었다."
+     }
+    ]
+   },
+   {
+    "word": "microwave",
+    "pron": "[máikrouweiv]",
+    "pos": "n.",
+    "meaning": "n. 전자레인지",
+    "tip": "[[b]]micro[[/b]](작은) [[b]]wave[[/b]](파장)을 이용하여 음식을 데우는 [[r]]전자레인지[[/r]]",
+    "toeicExpr": [
+     "microwave oven 전자레인지",
+     "heat in the microwave 전자레인지에 데우다"
+    ]
+   },
+   {
+    "word": "proponent",
+    "pron": "[prəpóunənt]",
+    "pos": "n.",
+    "meaning": "n. 제안자, 지지자",
+    "tip": "[[b]]propose[[/b]](제안하다) + [[b]]ent[[/b]](~사람), 즉 [[r]]제안자, 지지자[[/r]]",
+    "toeicExpr": [
+     "proponent of a new policy 새 정책의 제안자",
+     "proponent of the idea 아이디어 제안자"
+    ]
+   },
+   {
+    "word": "vest",
+    "pron": "[vest]",
+    "pos": "v.",
+    "meaning": "v. (재산·권리 등을) 부여하다",
+    "tip": "형제 중에서 가장 뛰어난 [[b]]베스트(best)[[/b]] 아들에게 재산을 [[r]]부여하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "vested",
+      "meaning": "부여된, 기득권의"
+     }
+    ],
+    "toeicExpr": [
+     "vest power/ownership 권한을/소유권을 부여하다",
+     "vest A in B B에게 A를 부여하다",
+     "be vested in A A에게 (권한·책임이) 부여되다",
+     "vest authority in a committee 위원회에 권한을 부여하다",
+     "authority is vested in the board 권한이 이사회에 있다"
+    ],
+    "examVar": [
+     {
+      "en": "Under the new policy, final approval authority is vested in the executive committee.",
+      "ko": "새로운 정책에 따라 최종 승인 권한은 경영위원회에 귀속된다(부여된다)."
+     }
+    ]
+   },
+   {
+    "word": "bunch",
+    "pron": "[bʌntʃ]",
+    "pos": "n.",
+    "meaning": "n. 다발, 송이, 많음",
+    "tip": "[[b]]변치[[/b]] 않는 사랑을 의미하는 한 [[r]]다발[[/r]]의 꽃. 한 다발이나 될 정도로 [[r]]많음[[/r]]",
+    "toeicExpr": [
+     "a bunch of flowers 꽃 한 다발  a bunch of bananas 바나나 한 다발",
+     "a bunch of people/complaints 많은 사람들/불만"
+    ]
+   },
+   {
+    "word": "tiny",
+    "pron": "[táini]",
+    "pos": "a.",
+    "meaning": "작은, 조그마한",
+    "tip": "나비넥타이를 보고 \"이렇게 [[r]]작은, 조그마한[[/r]] 것도 [[b]]타이니?[[/b]]\"",
+    "toeicExpr": [
+     "tiny house 작은 집  tiny amount 소량"
+    ]
+   },
+   {
+    "word": "audience",
+    "pron": "[ɔ́ːdiəns]",
+    "pos": "n.",
+    "meaning": "청중, 관중, (특정 대상) 고객층",
+    "tip": "자기 좌석을 찾으며 \"[[b]]어디 앉수?[[/b]]\" 물어보는 [[r]]청중, 관중[[/r]]",
+    "toeicExpr": [
+     "target audience 목표 고객층  large audience 많은 관중"
+    ],
+    "examVar": [
+     {
+      "en": "The new commercial was designed to appeal especially to our target audience of young professionals.",
+      "ko": "새 광고는 특히 젊은 직장인이라는 우리의 목표 대상층에게 어필하도록 제작되었다."
+     }
+    ]
+   },
+   {
+    "word": "seasoned",
+    "pron": "[síːznd]",
+    "pos": "a.",
+    "meaning": "숙련된, 경험 많은",
+    "tip": "[[b]]season[[/b]](계절) + ed(형·어)] 계절이 지나며 기술을 계속 익혀 [[r]]숙련된, 경험 많은[[/r]]",
+    "toeicExpr": [
+     "seasoned professional 숙련된 전문가  seasoned manager 경험 많은 관리자"
+    ]
+   },
+   {
+    "word": "farewell",
+    "pron": "[fɛərwél]",
+    "pos": "n.",
+    "meaning": "작별, 작별인사",
+    "tip": "악당을 [[b]]패어[[/b]] 죽이고 하늘나라로 [[b]]well[[/b]](잘) 가라고 하는 [[r]]작별, 작별인사[[/r]]",
+    "toeicExpr": [
+     "farewell party 송별회  farewell speech 고별사"
+    ]
+   },
+   {
+    "word": "pitch",
+    "pron": "[pitʃ]",
+    "pos": "v.",
+    "meaning": "1. 던지다  2. (아이디어 · 상품을) 제안하다, 홍보하다",
+    "tip": "① [[b]]pitch[[/b]]er(투수)가 공을 [[r]]던지다[[/r]]\n② 사람들에게 모델하우스 전단지를 [[b]]pitch[[/b]](던져서) [[r]]홍보하다[[/r]], 직접 와볼 것을 [[r]]제안하다[[/r]]",
+    "toeicExpr": [
+     "pitch a ball 공을 던지다",
+     "pitch a product 상품을 홍보하다  pitch services 서비스를 홍보하다",
+     "pitch an idea 아이디어를 제안하다  pitch to investors 투자자들에게 제안하다"
+    ],
+    "examVar": [
+     {
+      "en": "The marketing team was asked to pitch the new product idea to potential investors at tomorrow's meeting.",
+      "ko": "마케팅 팀은 내일 회의에서 잠재 투자자들에게 새로운 제품 아이디어를 제안하라는 요청을 받았다."
+     }
+    ]
+   },
+   {
+    "word": "spill",
+    "pron": "[spil]",
+    "pos": "v.",
+    "meaning": "흘리다, 쏟다 (spill–spilled(spilt)–spilt)",
+    "tip": "코에서 [[b]]쉭! 필[[/b]](피를) [[r]]흘리다, 쏟다[[/r]]",
+    "toeicExpr": [
+     "spill water/coffee 물을/커피를 쏟다  oil/chemical spill 기름/화학물질 유출"
+    ]
+   },
+   {
+    "word": "theft",
+    "pron": "[θeft]",
+    "pos": "n.",
+    "meaning": "도둑질, 절도",
+    "tip": "도둑에게 [[b]]셋[[/b]]이 [[b]]붙으[[/b]](붙들어) 잡다, 즉 들통난 [[r]]도둑질[[/r]]",
+    "derivatives": [
+     {
+      "word": "thief",
+      "meaning": "도둑"
+     }
+    ],
+    "toeicExpr": [
+     "identity theft 신분 도용  car theft 자동차 절도",
+     "prevent theft 도난을 방지하다  theft incident/prevention 도난 사건/예방",
+     "catch thief 도둑을 잡다"
+    ]
+   },
+   {
+    "word": "forbid",
+    "pron": "[fərbíd]",
+    "pos": "v.",
+    "meaning": "못하게 하다, 금지하다 (forbid–forbade–forbidden)",
+    "tip": "퍼붓는 [[b]]비두[[/b]](비도) 어선의 출항을 [[r]]못하게 하다, 금지하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "forbidden",
+      "meaning": "금지된"
+     }
+    ],
+    "toeicExpr": [
+     "forbid A from -ing A가 ~하지 못하게 하다",
+     "forbid employees from using social media during work hours 직원들이 근무 시간에 SNS를 사용하는 것을 금지하다"
+    ],
+    "examVar": [
+     {
+      "en": "Security regulations strictly forbid anyone to take photos inside the research lab.",
+      "ko": "보안 규정은 누구든 연구실 안에서 사진을 찍는 것을 엄격히 금한다."
+     }
+    ]
+   },
+   {
+    "word": "frank",
+    "pron": "[fræŋk]",
+    "pos": "a.",
+    "meaning": "a. 솔직한",
+    "tip": "대학교 기말시험 성적을 [[b]]F rank[[/b]](F등급) 받았다고 부모님께 고백할 정도로 [[r]]솔직한[[/r]]",
+    "derivatives": [
+     {
+      "word": "frankly",
+      "meaning": "솔직하게"
+     }
+    ],
+    "toeicExpr": [
+     "frank opinion/response 솔직한 의견/대답",
+     "speak frankly 솔직히 말하다"
+    ]
+   },
+   {
+    "word": "halt",
+    "pron": "[hɔːlt]",
+    "pos": "n./v.",
+    "meaning": "n. 멈춤, 중단 v. 멈추다",
+    "tip": "경찰이 오자 두 사람이 [[r]]혈투[[/r]]를 [[r]]멈춤, 멈추다[[/r]]",
+    "toeicExpr": [
+     "halt production/operations/construction 생산을/운영을/공사를 중단하다",
+     "temporary/sudden halt 일시적/갑작스러운 중단"
+    ]
+   },
+   {
+    "word": "elementary",
+    "pron": "[èliméntəri]",
+    "pos": "a.",
+    "meaning": "a. 기초의, 초보의, 초등학교의",
+    "tip": "숫자 [[b]]일[[/b]](1), [[b]]이[[/b]](2)를 가르치는 [[b]]mentor[[/b]](스승)이리. 즉, [[r]]기초의, 초보의[[/r]] 학습을 가르치는 [[r]]초등학교의[[/r]] 선생님이리.",
+    "toeicExpr": [
+     "elementary school 초등학교",
+     "elementary level 기초 수준"
+    ]
+   },
+   {
+    "word": "trail",
+    "pron": "[treil]",
+    "pos": "n./v.",
+    "meaning": "1. n. 흔적, 자취 v. 따라가다, 추적하다, 뒤처지다  2. n. 오솔길, 산길",
+    "tip": "[[b]]트레일러[[/b]](trailer)가 지나간 [[r]]오솔길, 산길[[/r]]을 따라 난 바퀴자국, 즉 [[r]]흔적, 자취[[/r]]를 [[r]]따라가다[[/r]]",
+    "toeicExpr": [
+     "leave a trail 흔적을 남기다   paper trail 문서 기록",
+     "trail the competitor closely 경쟁자를 바짝 따라가다",
+     "trail behind the leader 선두에 뒤처지다 (← 선두를 뒤에서 따라가다)",
+     "trail behind a competitor 경쟁사에 뒤처지다",
+     "hiking trail 등산로   nature trail 자연 탐방로"
+    ]
+   },
+   {
+    "word": "collapse",
+    "pron": "[kəlǽps]",
+    "pos": "v./n.",
+    "meaning": "v. 무너지다, 쓰러지다 n. 붕괴",
+    "tip": "태풍에 텐트가 [[b]]걸레[[/b]]처럼 [[r]]쓰러지다[[/r]], 즉 [[r]]무너지다, 쓰러지다, 붕괴[[/r]]",
+    "toeicExpr": [
+     "collapse completely 완전히 붕괴하다",
+     "building/system collapse 건물/시스템 붕괴"
+    ]
+   },
+   {
+    "word": "candid",
+    "pron": "[kǽndid]",
+    "pos": "a.",
+    "meaning": "a. 솔직한",
+    "tip": "나는 말을 [[b]]can[[/b]](할 수 있다) 유리잔을 깬 것은 내가 [[b]]did[[/b]](했다고), 즉 [[r]]솔직한[[/r]]",
+    "toeicExpr": [
+     "candid opinion/response 솔직한 의견/대답"
+    ]
+   },
+   {
+    "word": "desperate",
+    "pron": "[déspərit]",
+    "pos": "a.",
+    "meaning": "a. 필사적인, 절박한",
+    "tip": "내 작은 구멍가게 앞에 [[b]]大[[/b]](큰) [[b]]수퍼[[/b]]가 들어와 [[b]]잇트[[/b]](있다). 손님들 뺏길 것 같아 할인판매를 하는 등 [[r]]필사적인, 절박한[[/r]]",
+    "derivatives": [
+     {
+      "word": "desperately",
+      "meaning": "필사적으로, 간절히"
+     }
+    ],
+    "toeicExpr": [
+     "desperate for help 도움이 절실한",
+     "desperate situation 절박한 상황",
+     "desperately need/hope 간절히 필요로 하다/바라다"
+    ]
+   },
+   {
+    "word": "off-limits",
+    "pron": "[ɔ́ːflímits]",
+    "pos": "a.",
+    "meaning": "a. 출입 금지된, 사용 금지된",
+    "tip": "[[b]]limit[[/b]](경계, 제한구역)에서 [[b]]off[[/b]](떨어져) 있어야 되는, 즉 [[r]]출입 금지된, 사용 금지된[[/r]]",
+    "toeicExpr": [
+     "off-limits to visitors/employees 방문객에게/직원들에게 출입 금지된",
+     "remain off-limits during renovations 보수 공사 동안 출입 금지 상태로 남다"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 51,
+  "title": "",
+  "words": [
+   {
+    "word": "insure",
+    "pron": "[inʃúər]",
+    "pos": "v.",
+    "meaning": "v. 1. 보험에 들다  2. (보험·금전적 보상 등을) 보장하다",
+    "tip": "마음 [[b]]in[[/b]](속에) 미래 보장 대한 [[b]]sure[[/b]](확신하는) 마음이 들도록 [[r]]보험에 들다[[/r]], 그 보험이 미래를 [[r]]보장하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "insurance",
+      "meaning": "보험, 보험료"
+     }
+    ],
+    "toeicExpr": [
+     "insure property/life 재산을/생명을 보험에 가입시키다",
+     "insure A against B A를 B에 대비해 보험에 들다",
+     "You should insure your car against theft and damage. 당신의 자동차를 도난과 손상에 대비해 보험에 들어야 합니다.",
+     "insure safe delivery 안전한 배송을 보장하다",
+     "insure against loss 손실에 대비해 보장하다",
+     "life/health/travel insurance 생명/건강/여행자 보험",
+     "insurance coverage 보험 보장(범위)",
+     "insurance policy 보험 증권, 보험 계약",
+     "insurance premium 보험료"
+    ],
+    "examVar": [
+     {
+      "en": "'insure A against B(A를 B에 대비해 보험에 들다)' 구문을 물으며 ensure(보장하다)와 구분하는 문제가 자주 출제되었다. The company decided to _______ all of its delivery vehicles against potential damage during the rainy season.",
+      "ans": "insure (O)  ensure (X)",
+      "ko": "회사는 우기 동안 발생할 수 있는 피해에 대비해 모든 배송 차량에 보험을 들기로 결정했다."
+     }
+    ]
+   },
+   {
+    "word": "indoors",
+    "pron": "[indɔ́:rz]",
+    "pos": "ad.",
+    "meaning": "ad. 실내에서, 실내로",
+    "tip": "[[b]]in[[/b]](안에서) + [[b]]doors[[/b]](문) [[r]]실내에서, 실내로[[/r]]",
+    "derivatives": [
+     {
+      "word": "outdoors",
+      "meaning": "야외에서"
+     }
+    ],
+    "toeicExpr": [
+     "work indoors 실내에서 일하다",
+     "spend time outdoors 야외에서 시간을 보내다   go outdoors 밖으로 나가다"
+    ]
+   },
+   {
+    "word": "inspire",
+    "pron": "[inspáiər]",
+    "pos": "v.",
+    "meaning": "v. 영감을 불어넣다, 고무시키다",
+    "tip": "머리 [[b]]in(s)[[/b]](안에) 영감의 [[b]]fire[[/b]](불)길이 타오르게 하다, 즉 [[r]]영감을 불어넣다[[/r]]",
+    "derivatives": [
+     {
+      "word": "inspiration",
+      "meaning": "영감"
+     }
+    ],
+    "toeicExpr": [
+     "inspire employees 직원들에게 영감을 주다",
+     "inspire creativity 창의력을 자극하다",
+     "inspire confidence 신뢰감을 불러일으키다"
+    ]
+   },
+   {
+    "word": "internal",
+    "pron": "[intə́:rnəl]",
+    "pos": "a.",
+    "meaning": "a. 내부의",
+    "tip": "[[b]]터널 in[[/b]](안의), 즉 터널 [[r]]내부의[[/r]]",
+    "toeicExpr": [
+     "internal use/policy 내부 사용/정책"
+    ]
+   },
+   {
+    "word": "involve",
+    "pron": "미[invάːlv] 영[invɔ́lv]",
+    "pos": "v.",
+    "meaning": "v. 포함시키다, 수반하다, 관련시키다",
+    "tip": "무리 [[b]]in[[/b]](안으로) 발을 [[b]]밟으[[/b]](밟어)어오게 하여 그 무리에 [[r]]포함시키다, 관련시키다[[/r]]",
+    "derivatives": [
+     {
+      "word": "involvement",
+      "meaning": "포함, 수반, 관련"
+     }
+    ],
+    "toeicExpr": [
+     "involve cooperation/effort 협력을/노력을 수반하다",
+     "involve risk/cost 위험을/비용을 수반하다(포함하다)",
+     "be involved in ~에 관여하다",
+     "be involved in a project/merger 한 프로젝트에/합병에 관여하다",
+     "direct involvement 직접적인 관련",
+     "active involvement 적극적인 관여"
+    ],
+    "examVar": [
+     {
+      "en": "1. The engineer was involved in a project to upgrade the company's internal network.",
+      "ko": "그 엔지니어는 회사 내부 네트워크를 업그레이드하는 프로젝트에 관여했다."
+     },
+     {
+      "en": "2. The position involves working closely with international clients, so strong communication skills are required.",
+      "ko": "이 직무는 해외 고객들과 긴밀히 협력하는 것을 수반하므로(포함하므로) 강한 의사소통 능력이 요구된다."
+     }
+    ]
+   },
+   {
+    "word": "instrument",
+    "pron": "[ínstrəmənt, ínstrumənt]",
+    "pos": "n.",
+    "meaning": "n. 기계, 기구",
+    "tip": "인테리어를 위해 집 [[b]]ins[[/b]](안에) 뚫으려는 구멍이 [[r]]많[[/r]]다. 그래서 전동드릴과 같은 [[r]]기계, 기구[[/r]]를 사용하다.",
+    "derivatives": [
+     {
+      "word": "instrumental",
+      "meaning": "중요한 역할을 하는 (← 기계, 기구가 중요한 역할을 하는)"
+     }
+    ],
+    "toeicExpr": [
+     "precision instrument 정밀 기구  measuring instrument 측정 기기",
+     "instrumental role 중요한 역할  instrumental contribution 중요한 기여",
+     "instrumental factor 핵심적인 요소"
+    ]
+   },
+   {
+    "word": "install",
+    "pron": "[instɔ́:l]",
+    "pos": "v.",
+    "meaning": "v. (장비ㆍ장치 등을) 설치하다",
+    "tip": "방 [[b]]ins[[/b]](안에) [[b]]tall[[/b]](큰) 크리스마스트리를 [[r]]설치하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "installation",
+      "meaning": "설치, 설비"
+     }
+    ],
+    "toeicExpr": [
+     "install equipment/machinery 장비를/기계를 설치하다",
+     "install a program 프로그램을 설치하다",
+     "installation fee 설치 비용",
+     "complete an installation 설치를 완료하다"
+    ]
+   },
+   {
+    "word": "index",
+    "pron": "[índeks]",
+    "pos": "n.",
+    "meaning": "n. 지수, 지표",
+    "tip": "동네 주민 각 가정 [[b]]덱 in[[/b]](안에) 소, 돼지 [[b]]수[[/b]]로 알아보는 동네의 경제 [[r]]지표, 지수[[/r]]",
+    "toeicExpr": [
+     "price index 물가지수  a stock market index 주가지수",
+     "economic/performance index 경제/성과 지표"
+    ]
+   },
+   {
+    "word": "instruct",
+    "pron": "[instrΛkt]",
+    "pos": "v.",
+    "meaning": "v. 가르치다, 지시하다, 알려주다",
+    "tip": "트럭 [[b]]in(s)[[/b]](안에서) 트럭 운전을 [[r]]가르치다, 알려주다[[/r]]",
+    "derivatives": [
+     {
+      "word": "instruction",
+      "meaning": "가르침, 교육, 지시"
+     },
+     {
+      "word": "instructor",
+      "meaning": "교사, 지도자"
+     }
+    ],
+    "toeicExpr": [
+     "instruct on safety 안전에 대해 교육하다",
+     "instruct + 목적어 + to부정사: …에게 ~하도록 지시하다, 안내하다 (5형식)",
+     "instruct employees to follow procedures 직원들에게 절차를 따르라고 지시하다",
+     "instruct customers to complete a form 고객들에게 양식을 작성하라고 안내하다",
+     "follow instructions 지시를 따르다",
+     "instruction manual 사용 설명서",
+     "language/fitness instructor 어학/피트니스 강사"
+    ],
+    "examVar": [
+     {
+      "en": "The director instructed the interns ______ the updated safety procedures during the site visit.",
+      "opt": "(A) following  (B) follow  (C) to following  (D) to follow",
+      "ans": "(D)",
+      "ko": "이사는 현장 방문 동안 업데이트된 안전 절차를 따르라고 인턴들에게 지시했다."
+     }
+    ]
+   },
+   {
+    "word": "investigate",
+    "pron": "[invéstigèit]",
+    "pos": "v.",
+    "meaning": "조사하다, 수사하다",
+    "tip": "\"핏자국으로 봐서 방 [[b]]in[[/b]](안에) 칼로 [[b]]뺏수[[/b]]. 그리고 [[b]]튀[[/b]]었어, [[b]]gate[[/b]](문) 밖으로.\" 하고 형사가 범행 현장을 [[r]]조사하다, 수사하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "investigation",
+      "meaning": "조사, 수사"
+     }
+    ],
+    "toeicExpr": [
+     "investigate the cause/issue 원인을/문제를 조사하다",
+     "conduct an investigation 조사를 실시하다"
+    ]
+   },
+   {
+    "word": "insert",
+    "pron": "[insə́:rt]",
+    "pos": "v.",
+    "meaning": "삽입하다, 끼워 넣다",
+    "tip": "샌드위치 빵 [[b]]in[[/b]](안에) 썬 [[b]]two[[/b]](2)개의 토마토를 [[r]]삽입하다, 끼워 넣다[[/r]]",
+    "toeicExpr": [
+     "insert an advertisement 광고를 삽입하다  insert data 데이터를 입력하다"
+    ]
+   },
+   {
+    "word": "incorporate",
+    "pron": "[inkɔ́:rpərèit]",
+    "pos": "v.",
+    "meaning": "통합하다, 포함시키다",
+    "tip": "코 [[b]]in[[/b]](안에) [[b]]코딱[[/b]]지들을 [[b]]퍼레이[[/b]](퍼내어) 돌돌 말아 [[r]]통합하다[[/r]], 그 덩어리는 모든 코딱지를 [[r]]포함하다[[/r]]",
+    "toeicExpr": [
+     "incorporate A into B A를 B에 통합하다, 포함시키다 (into: ~ 안으로, 또는 결과)",
+     "incorporate feedback into a report 의견을 보고서에 포함시키다(반영하다)",
+     "incorporate changes into a plan 변경 사항을 계획에 포함시키다"
+    ],
+    "examVar": [
+     {
+      "en": "The revised proposal incorporates customer feedback into its final design to improve usability.",
+      "ko": "개정된 제안서는 사용성을 향상시키기 위해 고객 피드백을 최종 디자인에 포함시킨다(반영한다)."
+     }
+    ]
+   },
+   {
+    "word": "intimate",
+    "pron": "[íntimət]",
+    "pos": "a.",
+    "meaning": "친밀한, 친숙한",
+    "tip": "같은 팀 [[b]]in[[/b]](안에서) [[b]]얻다[[/b]], 팀원들 간의 [[r]]친밀한, 친숙한[[/r]] 감정을.",
+    "derivatives": [
+     {
+      "word": "intimately",
+      "meaning": "친밀히, 밀접하게"
+     }
+    ],
+    "toeicExpr": [
+     "intimate relationship/conversation 친밀한 관계/대화",
+     "intimately connected 밀접하게 연결된",
+     "intimately related 긴밀히 관련된"
+    ]
+   },
+   {
+    "word": "intensive",
+    "pron": "[inténsiv]",
+    "pos": "a.",
+    "meaning": "집중적인, 철저한",
+    "tip": "소화가 잘되도록 입 [[b]]in[[/b]](안에) 음식을 [[b]]ten[[/b]](10)번 [[b]]씹으[[/b]](씹을) 정도로 [[r]]집중적인, 철저한[[/r]] 씹씹",
+    "toeicExpr": [
+     "intensive training/course 집중 훈련/과정"
+    ]
+   },
+   {
+    "word": "intense",
+    "pron": "[inténs]",
+    "pos": "a.",
+    "meaning": "강렬한, 극심한",
+    "tip": "영어 단어를 노트 [[b]]in[[/b]](안에) [[b]]10번씩이나 쓰[[/b]]면서 하는 [[r]]강렬한, 극심한[[/r]] 공부",
+    "toeicExpr": [
+     "intense pressure 극심한 압박감  intense competition 극심한(치열한) 경쟁"
+    ]
+   },
+   {
+    "word": "insight",
+    "pron": "[ínsàit]",
+    "pos": "n.",
+    "meaning": "통찰력",
+    "tip": "상황의 [[b]]in[[/b]](안쪽으로) [[b]]sight[[/b]](봄), 즉 [[r]]통찰력[[/r]]",
+    "toeicExpr": [
+     "market insight 시장 통찰력",
+     "gain/provide/offer insight into ~ ~에 대한 통찰력을 얻다/제공하다/주다",
+     "gain insight into a market 시장에 대한 통찰을 얻다 (into: ~ 안으로)",
+     "provide insight into customer behavior 고객 행동에 대한 통찰을 제공하다",
+     "offer insights into trends 트렌드에 대한 통찰을 제시하다"
+    ]
+   },
+   {
+    "word": "infection",
+    "pron": "[infékʃən]",
+    "pos": "n.",
+    "meaning": "전염, 감염",
+    "tip": "우리나라 [[b]]in[[/b]](안에) 청바지 [[b]]패션[[/b]]이 들어와 사람들에게 [[r]]전염, 감염[[/r]]되듯이 퍼진",
+    "derivatives": [
+     {
+      "word": "infect",
+      "meaning": "감염시키다, 전염시키다"
+     }
+    ],
+    "toeicExpr": [
+     "prevent infection 감염을 예방하다",
+     "infect a computer/file 컴퓨터를/파일을 감염시키다",
+     "infect through contact 접촉으로 감염시키다"
+    ]
+   },
+   {
+    "word": "incline",
+    "pron": "[inkláin]",
+    "pos": "v.",
+    "meaning": "~할 마음이 들게 하다, ~하는 경향이 있다",
+    "tip": "PC방 앞을 지날 때마다 마치 PC방 [[b]]in[[/b]](안으로) [[b]]끌[[/b]](끌어당기는) [[b]]line[[/b]](줄)이 있는 것마냥 게임을 [[r]]할 마음이 들게 하다[[/r]], 게임을 [[r]]하는 경향이 있다[[/r]]",
+    "toeicExpr": [
+     "be inclined to do ~하는 경향이 있다, ~할 가능성이 있다",
+     "be inclined to favor internal candidates 내부 지원자를 선호하는 경향이 있다",
+     "be inclined to trust experienced staff 경력 직원을 신뢰하는 경향이 있다"
+    ],
+    "examVar": [
+     {
+      "en": "Many customers are inclined to choose products with eco-friendly packaging.",
+      "ko": "많은 고객들은 친환경 포장을 사용하는 제품을 선택하려는 경향이 있다."
+     }
+    ]
+   },
+   {
+    "word": "interior",
+    "pron": "[intíəriər]",
+    "pos": "a./n.",
+    "meaning": "a. 내부의, 안쪽의  n. 내부",
+    "tip": "공이 우리 코트 [[b]]in[[/b]](안으로) [[b]]튀어리[[/b]](어), 즉 [[r]]내부의, 안쪽의[[/r]] 방향으로",
+    "toeicExpr": [
+     "interior design/space 실내 디자인/공간",
+     "the building's interior 건물의 내부",
+     "decorate the interior 내부를 장식하다"
+    ]
+   },
+   {
+    "word": "inevitable",
+    "pron": "[inévitəbl]",
+    "pos": "a.",
+    "meaning": "a. 피할 수 없는",
+    "tip": "막다른 쥐구멍 [[b]]in에[[/b]](안에) [[r]]비취 불[[/r]]을! 그러자 쥐가 [[r]]피할 수 없는[[/r]]",
+    "toeicExpr": [
+     "inevitable outcome 피할 수 없는 결과",
+     "inevitable change/delay 불가피한 변화/지연"
+    ]
+   },
+   {
+    "word": "ingredient",
+    "pron": "[ingrí:diənt]",
+    "pos": "n.",
+    "meaning": "n. 성분, 재료",
+    "tip": "동전 [[b]]in[[/b]](안에) 들어 있는 [[r]]구리 성분, 재료[[/r]]",
+    "toeicExpr": [
+     "main ingredient 주재료   natural ingredient 천연 성분",
+     "list of ingredients 성분 목록"
+    ]
+   },
+   {
+    "word": "intake",
+    "pron": "[íntèik]",
+    "pos": "n.",
+    "meaning": "n. 1. 섭취, 섭취량  2. 모집 인원",
+    "tip": "[[b]]in[[/b]](안으로) 음식이나 사람을 [[b]]take[[/b]](취하다), 즉 [[r]]섭취, 섭취량, 모집 인원[[/r]]",
+    "toeicExpr": [
+     "food/calorie/water intake 음식/칼로리/수분 섭취(량)",
+     "student intake 신입생 모집 인원",
+     "employee intake 신규 직원 채용 인원"
+    ]
+   },
+   {
+    "word": "integrate",
+    "pron": "[íntəgrèit]",
+    "pos": "v.",
+    "meaning": "v. 통합시키다, 통합되다",
+    "tip": "한반도 [[b]]in[[/b]](안에) 있는 삼국의 [[b]]터[[/b]](땅을) [[b]]great[[/b]](커다란) 통일신라로 [[r]]통합시키다, 통합되다[[/r]]",
+    "toeicExpr": [
+     "integrate A into B A를 B에 통합하다 (into: ~ 안으로, 또는 결과)",
+     "The new software integrates multiple functions into one platform. 새 소프트웨어는 여러 기능을 하나의 플랫폼에 통합한다.",
+     "integrate with ~와 통합하다, 결합하다",
+     "The database will be integrated with the company's existing system. 그 데이터베이스는 회사의 기존 시스템과 통합될 예정이다."
+    ],
+    "examVar": [
+     {
+      "en": "The new data-management tool allows users to integrate customer information into a single reporting system.",
+      "ko": "새로운 데이터 관리 도구는 사용자들이 고객 정보를 하나의 보고 시스템에 통합할 수 있도록 해 준다."
+     }
+    ]
+   },
+   {
+    "word": "insulate",
+    "pron": "미[ínsəlèit] 영[ínsjulèit]",
+    "pos": "v.",
+    "meaning": "v. 1. (보호) 격리하다  2. 절연하다, 단열하다",
+    "tip": "경찰서 [[b]]in[[/b]](안에서) [[b]]술[[/b]]에 취해 길가에 쓰러진 사람을 밤이 [[b]]late[[/b]](늦어) [[r]](보호) 격리하다[[/r]], 밖으로 나가지 못하게 막다, 즉 [[r]]절연하다, 단열하다[[/r]]",
+    "toeicExpr": [
+     "insulate A from B A를 B로부터 보호하다",
+     "insulate employees from risk 직원들을 위험으로부터 보호하다",
+     "insulate the company from losses 회사가 손실을 입지 않도록 보호하다",
+     "insulate a building 건물을 단열하다",
+     "insulate against noise 소음을 차단(방음)하다"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 52,
+  "title": "",
+  "words": [
+   {
+    "word": "infer",
+    "pron": "[infə́:r]",
+    "pos": "v.",
+    "meaning": "추론하다, 추정하다",
+    "tip": "머리 [[b]]in[[/b]](속의) 생각을 [[b]]퍼[[/b]]내다, 즉 [[r]]추론하다, 추정하다[[/r]]",
+    "toeicExpr": [
+     "infer A from B B로부터 A를 추론하다",
+     "We can infer the customer's needs from their feedback. 우리는 고객의 피드백으로부터 그들의 요구를 추론할 수 있다."
+    ]
+   },
+   {
+    "word": "inactive",
+    "pron": "[inǽktiv]",
+    "pos": "a.",
+    "meaning": "비활동적인, 비활성화된, 사용되지 않는",
+    "tip": "[[b]]in[[/b]](not) + [[b]]active[[/b]](활동적인)] [[r]]비활동적인[[/r]]",
+    "toeicExpr": [
+     "inactive account 비활성화된 계정",
+     "inactive membership 정지된 회원 자격",
+     "remain inactive for six months 6개월간 비활성 상태로 유지되다"
+    ]
+   },
+   {
+    "word": "intact",
+    "pron": "[intǽkt]",
+    "pos": "a.",
+    "meaning": "손대지 않은, 손상되지 않은",
+    "tip": "[[b]]in[[/b]](not) + [[b]]tact[[/b]](→ contact: 접촉)] [[r]]손대지 않은[[/r]], 그래서 [[r]]손상되지 않은[[/r]]",
+    "toeicExpr": [
+     "keep A intact A를 손상되지 않게 유지하다",
+     "keep the package intact 포장을 손상 없이 유지하다",
+     "remain intact 손상되지 않은 상태로 남다",
+     "leave A intact A를 그대로 두다",
+     "stay intact 그대로 유지되다"
+    ]
+   },
+   {
+    "word": "insist",
+    "pron": "[insíst]",
+    "pos": "v.",
+    "meaning": "주장하다, 고집하다",
+    "tip": "씻으라는 말에 \"[[b]]in[[/b]](not: 안) [[b]]씻으[[/b]](씻어!) 하고 침을 [[b]]투[[/b]]! 뱉으며 씻지 않겠다고 [[r]]주장하다, 고집하다[[/r]]",
+    "toeicExpr": [
+     "insist on ~을 주장하다, 고집하다 (on: 행동의 대상 앞에)",
+     "insist on full refund 전액 환불을 고집하다",
+     "insist on seeing the manager 매니저를 꼭 만나겠다고 하다",
+     "insist that + 주어 + (should) + 동사원형: ~라고 주장하다 (자주 출제됨)",
+     "The director insisted that all employees (should) attend the meeting. 이사는 모든 직원이 회의에 참석해야 한다고 주장했다."
+    ],
+    "examVar": [
+     {
+      "en": "1. The client insisted on receiving written confirmation before proceeding with the contract.",
+      "ko": "그 고객은 계약을 진행하기 전에 서면 확인을 받겠다고 고집했다."
+     },
+     {
+      "en": "2. The manager insisted that the damaged products _______ replaced immediately.",
+      "opt": "(A) are (B) were (C) be (D) being",
+      "ans": "(C)",
+      "ko": "매니저는 손상된 제품을 즉시 교체해야 한다고 주장했다.",
+      "note": "* <주어 + 동사 + that + 주어 + (should) + 동사원형> 형태를 써야 하는 동사 — 명령(order), 충고(advise, recommend), 주장(insist), 요구(require, request, demand), 결정(determine, decide), 제안(suggest, propose). [암기법] 명충! 주요 결정 (란 말이야!) 위의 동사들의 목적절인 that절에서 should의 의미 중 하나가 '~해야 한다'는 의미가 들어가기 때문에 <(should) + 동사원형> 형태를 쓴다. 위의 동사들에 '~해야 한다고 …하다'라고 대입해 보자. He suggested us that we should meet her. 그는 우리들에게 우리가 그녀를 만나야 한다고 제의했다. The manager ordered that all employees report early. 관리자는 모든 직원들이 일찍 출근하도록 명령했다."
+     }
+    ]
+   },
+   {
+    "word": "inconvenience",
+    "pron": "[ìnkənví:njəns]",
+    "pos": "n.",
+    "meaning": "불편",
+    "tip": "[[b]]in[[/b]](not) + [[b]]convenience[[/b]](편리함)] [[r]]불편[[/r]]",
+    "toeicExpr": [
+     "apologize for the inconvenience 불편에 대해 사과하다",
+     "cause inconvenience 불편을 초래하다"
+    ]
+   },
+   {
+    "word": "independence",
+    "pron": "[ìndipéndəns]",
+    "pos": "n.",
+    "meaning": "독립, 자주",
+    "tip": "[[b]]in[[/b]](not) + [[b]]dependence[[/b]](의지)] 의지하지 않음, 즉 [[r]]독립, 자주[[/r]]",
+    "derivatives": [
+     {
+      "word": "independent",
+      "meaning": "독립적인"
+     },
+     {
+      "word": "independently",
+      "meaning": "독립적으로, ~와 관계없이(of)"
+     }
+    ],
+    "toeicExpr": [
+     "financial independence 재정적 독립",
+     "independence from external influence 외부 영향으로부터의 독립",
+     "independent company/organization 독립 기업/단체",
+     "work independently 독립적으로 일하다  independently owned 개인 소유의"
+    ]
+   },
+   {
+    "word": "indispensable",
+    "pron": "[ìndispénsəbl]",
+    "pos": "a.",
+    "meaning": "없어서는 안 되는, 절대 필요한",
+    "tip": "[[b]]in[[/b]](not) + [[b]]dispense[[/b]](~없이 지내다) + [[b]]able[[/b]](~할 수 있는)] [[r]]~없이 지낼 수 없을[[/r]] 정도로 [[r]]없어서는 안 되는, 절대 필요한[[/r]]",
+    "toeicExpr": [
+     "indispensable to ~에 없어서는 안 되는",
+     "be indispensable to success 성공에 필수적이다",
+     "be indispensable to the company 회사에 없어서는 안 될 존재이다"
+    ]
+   },
+   {
+    "word": "integral",
+    "pron": "[íntigrəl]",
+    "pos": "a.",
+    "meaning": "(전체 구성을 위해) 필수적인, 핵심적인",
+    "tip": "우리나라 축구팀 응원을 위해서는 [[b]]in[[/b]](안에) 빨간 [[b]]티[[/b]]셔츠가 [[b]]그럴[[/b]](그러할), 즉 [[r]]필수적인[[/r]]",
+    "toeicExpr": [
+     "integral role/component 필수적인 역할/구성요소",
+     "integral member 핵심 구성원",
+     "be integral to ~에 필수적이다",
+     "Communication skills are integral to effective leadership. 의사소통 능력은 효과적인 리더십에 필수적이다."
+    ]
+   },
+   {
+    "word": "reserve",
+    "pron": "[rizə́:rv]",
+    "pos": "v.",
+    "meaning": "1. 예약하다  2. 따로 확보하다, 할당하다  3. (~할 권리를) 보유하다",
+    "tip": "① [[b]]re[[/b]](뒤에) 있는 페이지를 [[b]]접어[[/b]] 다음에 읽을 부분을 [[r]]예약하다[[/r]], 다음에 볼 것을 [[r]]따로 확보하다, 할당하다[[/r]]\n② [[r]]예약[[/r]]해 두었기 때문에 사용할 [[r]]권리를 보유하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "reservation",
+      "meaning": "예약"
+     },
+     {
+      "word": "reserved",
+      "meaning": "예약된, 지정된"
+     }
+    ],
+    "toeicExpr": [
+     "reserve a seat/table/room 좌석/테이블/방을 예약하다",
+     "reserve funds 자금을 따로 확보하다",
+     "be reserved for employees 직원용으로 할당되다",
+     "reserve the right to change prices 가격을 변경할 권리를 보유하다",
+     "reserve the right to modify the terms 약관을 수정할 권리를 보유하다",
+     "make a reservation 예약하다",
+     "confirm reservation 예약을 확인하다",
+     "reserved seat 예약석"
+    ],
+    "examVar": [
+     {
+      "en": "1. I will make seat reservations in advance of the concert.",
+      "ko": "나는 콘서트 전에 좌석 예약을 할 것이다."
+     },
+     {
+      "en": "2. Please remember to make a reservation at least two days in advance.",
+      "ko": "적어도 이틀 전에 예약을 해주시기 바랍니다."
+     },
+     {
+      "en": "3. The finance department decided to reserve a portion of next year's budget for unexpected operational costs.",
+      "ko": "재무 부서는 예상치 못한 운영 비용을 위해 내년 예산의 일부를 따로 확보하기로 결정했다."
+     },
+     {
+      "en": "4. The company has reserved the right to modify the terms of the agreement without prior notice.",
+      "ko": "해당 회사는 사전 통보 없이 계약 조건을 수정할 권리를 보유하고 있다."
+     }
+    ]
+   },
+   {
+    "word": "reduce",
+    "pron": "[ridjú:s]",
+    "pos": "v.",
+    "meaning": "줄이다, 감소시키다",
+    "tip": "[[b]]re[[/b]](다시) [[b]]쥬스[[/b]]를 마시고 또 마셔서 병에 있는 쥬스를 [[r]]줄이다, 감소시키다[[/r]]",
+    "derivatives": [
+     {
+      "word": "reduced",
+      "meaning": "할인된, 축소한"
+     },
+     {
+      "word": "reduction",
+      "meaning": "축소, 삭감, 할인"
+     }
+    ],
+    "toeicExpr": [
+     "reduce costs/expenses/emissions 비용을/지출을/배출량을 줄이다",
+     "reduced price 할인된 가격",
+     "tax reduction 세금 감면  risk reduction 위험 감소"
+    ]
+   },
+   {
+    "word": "remove",
+    "pron": "[rimú:v]",
+    "pos": "v.",
+    "meaning": "제거하다, 치우다",
+    "tip": "쓰레기를 [[b]]re[[/b]](뒤로) [[b]]move[[/b]](옮겨서) [[r]]치우다, 제거하다[[/r]]",
+    "toeicExpr": [
+     "remove obstacles/packaging 장애물을/포장을 제거하다",
+     "remove unnecessary files 불필요한 파일을 삭제하다"
+    ]
+   },
+   {
+    "word": "recall",
+    "pron": "[rikɔ́:l]",
+    "pos": "v./n.",
+    "meaning": "1. v. 상기시키다, 기억해내다  2. n. 리콜(결함 있는 물건의 회수) v. 회수하다",
+    "tip": "[[b]]re[[/b]](다시) [[b]]call[[/b]](전화해서) 약속을 [[r]]상기시키다[[/r]]",
+    "toeicExpr": [
+     "recall the details 세부 사항을 기억해내다",
+     "recall the exact date 정확한 날짜를 기억하다",
+     "product recall 결함 제품 회수",
+     "recall defective products 결함 제품을 회수하다"
+    ]
+   },
+   {
+    "word": "rely",
+    "pron": "[rilái]",
+    "pos": "v.",
+    "meaning": "의지하다, 믿다",
+    "tip": "아기가 엄마 등 [[b]]re[[/b]](뒤에) [[b]]lie[[/b]](누워) 엄마를 [[r]]의지하다, 믿다[[/r]]",
+    "derivatives": [
+     {
+      "word": "reliance",
+      "meaning": "의지, 믿음"
+     },
+     {
+      "word": "reliant",
+      "meaning": "의지하는, 믿는"
+     },
+     {
+      "word": "reliable",
+      "meaning": "의지할 만한, 믿음직한 (← -able: ~할 만한, ~할 수 있는)"
+     }
+    ],
+    "toeicExpr": [
+     "rely on ~에 의지하다  rely heavily on ~에 크게 의존하다 (on: 의지, 의존의 대상 앞)",
+     "rely on data 데이터에 의존하다  rely heavily on technology 기술에 크게 의존하다",
+     "reliance on technology 기술에 대한 의존",
+     "reliant on ~에 의존하는",
+     "be reliant on external support 외부 지원에 의존하다",
+     "reliable service 신뢰할 수 있는 서비스  reliable partner 믿을 수 있는 협력사"
+    ],
+    "examVar": [
+     {
+      "en": "1. Many small businesses still rely on seasonal customers to maintain steady sales.",
+      "ko": "많은 소규모 기업들은 여전히 안정적인 매출을 유지하기 위해 계절성 고객들에 의존한다."
+     },
+     {
+      "en": "2. The company is known for providing _______ customer service for over 20 years.",
+      "opt": "(A) reliant  (B) relying  (C) reliable  (D) reliance",
+      "ans": "(C)",
+      "ko": "그 회사는 20년 넘게 믿을 수 있는 고객 서비스를 제공하는 것으로 알려져 있다."
+     }
+    ]
+   },
+   {
+    "word": "review",
+    "pron": "[rivjúː]",
+    "meaning": "1. n. 검토  v. 검토하다  2. n. 평가, 후기",
+    "tip": "[[b]]re[[/b]](다시) + [[b]]view[[/b]](봄)] [[r]]검토[[/r]], [[r]]검토하다[[/r]], 다시 보고 [[r]]평가, 후기[[/r]]를 남기다",
+    "toeicExpr": [
+     "conduct a review 검토를 수행하다  under review 검토 중",
+     "review the document/application 문서를/신청서를 검토하다",
+     "annual performance review 연간 성과 평가",
+     "customer review 고객 후기  leave a review 리뷰를 남기다",
+     "positive/negative review 긍정적/부정적 후기"
+    ]
+   },
+   {
+    "word": "reminder",
+    "pron": "[rimáindər]",
+    "pos": "n.",
+    "meaning": "생각나게 하는 사람(것), 알림, 독촉(장)",
+    "tip": "[[b]]re[[/b]](again) + [[b]]mind[[/b]](마음) + [[b]]er[[/b]](~하는 사람, 것)] [[r]]다시 마음속에 생각나게 하는 것[[/r]]",
+    "toeicExpr": [
+     "payment reminder 결제 알림(독촉)  reminder email 알림(독촉) 이메일",
+     "reminder call 알림(독촉) 전화  send a reminder 알림을 보내다"
+    ]
+   },
+   {
+    "word": "recover",
+    "pron": "[rikávər]",
+    "pos": "v.",
+    "meaning": "회복하다, 되찾다",
+    "tip": "상처 난 부위에 [[b]]re[[/b]](다시) 딱지 [[b]]cover[[/b]](덮개)가 생겨나 [[r]]회복하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "recovery",
+      "meaning": "회복"
+     }
+    ],
+    "toeicExpr": [
+     "recover from illness/loss 병/손실에서 회복하다",
+     "economic recovery 경기 회복  full recovery 완전한 회복"
+    ]
+   },
+   {
+    "word": "respond",
+    "pron": "미[rispánd] 영[rispɔ́nd]",
+    "pos": "v.",
+    "meaning": "대답하다, 반응하다",
+    "tip": "내가 보낸 메일에 [[b]]res[[/b]](뒤로) 되돌려 [[b]]반드[[/b]]시 답장 달라고 해서 그가 [[r]]대답하다, 반응하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "response",
+      "meaning": "대답, 반응"
+     },
+     {
+      "word": "respondent",
+      "meaning": "응답자 (← -ent: ~사람, ~것)"
+     }
+    ],
+    "toeicExpr": [
+     "respond to a question 질문에 답하다",
+     "respond to an email 이메일에 답장하다",
+     "in response to the survey 설문에 대한 응답으로",
+     "immediate/positive/customer response 즉각적인/긍정적인/고객 반응",
+     "survey/interview/research respondent 설문/면접/연구 응답자"
+    ],
+    "examVar": [
+     {
+      "note": "respond와 answer를 비교하는 문제가 자주 출제되었다. *respond는 자동사로 전치사 to 없이 바로 목적어가 올 수 없다. 반면에 answer는 타동사이므로 뒤에 to 없이 바로 목적어가 온다.",
+      "en": "The customer service department is responsible for _______ to client inquiries promptly.",
+      "opt": "responding (O)  answering (X)",
+      "ko": "고객 서비스 부서는 고객 문의에 신속히 응답하는 것에 책임이 있다."
+     },
+     {
+      "note": "response와 respondent를 구분하는 문제가 출제되었다.",
+      "en": "The survey received more than 500 _______ in just two days.",
+      "opt": "responses (O)  respondents (X)",
+      "ko": "그 설문은 단 이틀 만에 500개가 넘는 응답을 받았다."
+     }
+    ]
+   },
+   {
+    "word": "repair",
+    "pron": "[ripéər]",
+    "meaning": "v. 고치다, 수리하다  n. 수리",
+    "tip": "[[b]]re[[/b]](다시) 자동차의 [[b]]페어[[/b]] 있는 곳을 원상태로 [[r]]고치다, 수리하다[[/r]]",
+    "toeicExpr": [
+     "repair a machine/vehicle/equipment 기계를/차를/장비를 수리하다",
+     "repair shop 수리점"
+    ]
+   },
+   {
+    "word": "retire",
+    "pron": "[ritáiər]",
+    "pos": "v.",
+    "meaning": "은퇴하다, 퇴직하다",
+    "tip": "\"[[b]]re[[/b]](뒤로) 물러나야겠어, 나이 들어 [[b]]tire[[/b]]d(피곤해).\" 즉, [[r]]은퇴하다, 퇴직하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "retirement",
+      "meaning": "퇴직, 은퇴"
+     }
+    ],
+    "toeicExpr": [
+     "retire from work 일에서 은퇴하다",
+     "retirement ceremony 퇴임식",
+     "retirement plan 퇴직 연금제도, 은퇴 계획"
+    ]
+   },
+   {
+    "word": "resource",
+    "pron": "[rí:sɔ:rs]",
+    "pos": "n.",
+    "meaning": "자원",
+    "tip": "재활용하여 [[b]]re[[/b]](다시) 썼수, [[r]]자원[[/r]]을.",
+    "toeicExpr": [
+     "resource allocation/development/utilization 자원 배분/개발/활용",
+     "human resources 인적 자원, 인사부"
+    ]
+   },
+   {
+    "word": "remind",
+    "pron": "[rimáind]",
+    "pos": "v.",
+    "meaning": "생각나게 하다, 상기시키다",
+    "tip": "[[b]]re[[/b]](다시) [[b]]mind[[/b]](마음)에 떠올리게 하다, 즉 [[r]]생각나게 하다[[/r]]",
+    "toeicExpr": [
+     "remind A of B A에게 B를 상기시키다 (of: ~에 관하여)",
+     "remind employees of a deadline 직원들에게 마감일을 상기시키다",
+     "remind customers of a payment due date 고객들에게 납부 기한을 상기시키다"
+    ],
+    "examVar": [
+     {
+      "en": "The manager reminded the employees of the upcoming audit.",
+      "ko": "그 관리자는 직원들에게 다가오는 감사를 상기시켰다."
+     }
+    ]
+   },
+   {
+    "word": "restore",
+    "pron": "[ristɔ́:r]",
+    "pos": "v.",
+    "meaning": "복구하다, 회복시키다",
+    "tip": "지진으로 파괴되었지만 [[b]]re[[/b]](다시) [[b]]store[[/b]](가게)를 [[r]]복구하다, 회복시키다[[/r]]",
+    "derivatives": [
+     {
+      "word": "restoration",
+      "meaning": "회복"
+     }
+    ],
+    "toeicExpr": [
+     "restore service 서비스를 복구하다  restore power 전력을 복구하다",
+     "restoration plan 복구 계획  the restoration of power 전력 복구"
+    ]
+   },
+   {
+    "word": "relieve",
+    "pron": "[rilí:v]",
+    "pos": "v.",
+    "meaning": "구제하다, (부담ㆍ압박 등을) 덜어주다",
+    "tip": "병들어 죽어가는 사람을 [[b]]re[[/b]](다시) [[b]]live[[/b]](살도록) 목숨을 [[r]]구제하다, (고통을) 덜어주다[[/r]]",
+    "derivatives": [
+     {
+      "word": "relief",
+      "meaning": "완화, (세금 등의) 경감"
+     }
+    ],
+    "toeicExpr": [
+     "relieve pressure 압박을 덜다",
+     "relieve workload 업무 부담을 줄이다",
+     "tax relief 세금 감면  financial relief 재정적 완화"
+    ]
+   },
+   {
+    "word": "recycle",
+    "pron": "[ri:sáikl]",
+    "pos": "v.",
+    "meaning": "재활용하다",
+    "tip": "쓰레기를 [[b]]re[[/b]](다시) [[b]]cycle[[/b]](순환)시키다, 즉 [[r]]재활용하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "recycling",
+      "meaning": "재활용"
+     }
+    ],
+    "toeicExpr": [
+     "recycle resources/plastic 자원을/플라스틱을 재활용하다",
+     "recycling bin 재활용 쓰레기통",
+     "encourage recycling 재활용을 장려하다"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 53,
+  "title": "",
+  "words": [
+   {
+    "word": "resign",
+    "pron": "[rizáin]",
+    "pos": "v.",
+    "meaning": "v. 사직하다, 사임하다",
+    "tip": "[[b]]re[[/b]](뒤로) 물러나겠다고 사직서에 [[b]]sign[[/b]](사인하다), 즉 [[r]]사직하다, 사임하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "resignation",
+      "meaning": "사직, 사임"
+     }
+    ],
+    "toeicExpr": [
+     "resign from + (조직/직장/회사): ~로부터 사임하다 (from: ~로부터)",
+     "resign from a position 직위에서 사임하다",
+     "resign from the company 회사에서 사직하다",
+     "resign from the board of directors 이사회에서 사임하다",
+     "resign as + (직책/직위): ~의 직책에서 사임하다 (as: ~로서)",
+     "resign as CEO/president/director CEO직에서/사장직에서/이사직에서 사임하다",
+     "submit a resignation 사직서를 제출하다  a letter of resignation 사직서"
+    ],
+    "examVar": [
+     {
+      "en": "After twenty years at the company, Mr. Hall decided to resign _______ his position as head of marketing.",
+      "opt": "(A) at  (B) from  (C) over  (D) as",
+      "ans": "(B)",
+      "ko": "20년간 회사에 근무한 후, Hall 씨는 마케팅 부서장 직책에서 사임하기로 결정했다."
+     }
+    ]
+   },
+   {
+    "word": "reply",
+    "pron": "[riplái]",
+    "pos": "v. / n.",
+    "meaning": "v. 대답하다, 답장하다  n. 대답, 답장",
+    "tip": "비둘기에 편지를 묶어 [[b]]re[[/b]](뒤로) 되돌려 [[b]]fly[[/b]](날려 보내다), 즉 [[r]]대답하다, 답장하다[[/r]]",
+    "toeicExpr": [
+     "reply to ~에 답장하다/답하다",
+     "reply to an email 이메일에 답장하다",
+     "prompt/written reply 신속한/서면 답변"
+    ]
+   },
+   {
+    "word": "reverse",
+    "pron": "[rivə́:rs]",
+    "pos": "v.",
+    "meaning": "v. 뒤바꾸다, 뒤집다",
+    "tip": "[[b]]re[[/b]](뒤로) 버스가 방향을 [[r]]뒤바꾸다[[/r]]",
+    "toeicExpr": [
+     "reverse a decision 결정을 번복하다",
+     "reverse a trend 추세를 반전시키다"
+    ]
+   },
+   {
+    "word": "renew",
+    "pron": "[rinjú:]",
+    "pos": "v.",
+    "meaning": "v. 갱신하다, 재개하다",
+    "tip": "[[b]]re[[/b]](다시) [[b]]new[[/b]](새로운) 것으로 만들다, 즉 [[r]]갱신하다, 재개하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "renewal",
+      "meaning": "갱신, 재개"
+     }
+    ],
+    "toeicExpr": [
+     "renew a contract/subscription/license 계약을/구독을/면허를 갱신하다",
+     "renew negotiations 협상을 재개하다",
+     "contract/membership/license renewal 계약/회원/면허 갱신"
+    ]
+   },
+   {
+    "word": "reflect",
+    "pron": "[riflékt]",
+    "pos": "v.",
+    "meaning": "v. 1. 반영하다  2. 숙고하다",
+    "tip": "선생님이 공식을 반영하여 [[b]]re[[/b]](다시) [[b]]플래 two[[/b]](2)번 문제를! 즉, 공식을 [[r]]반영하다[[/r]], 다시 풀려고 [[r]]숙고하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "reflection",
+      "meaning": "반영, 숙고"
+     }
+    ],
+    "toeicExpr": [
+     "reflect one's opinion ~의 의견을 반영하다  reflect reality 현실을 반영하다",
+     "careful reflection 신중한 숙고"
+    ],
+    "examVar": [
+     {
+      "en": "The revised guidelines better reflect the company's focus on environmental sustainability.",
+      "ko": "수정된 지침은 회사의 환경 지속 가능성에 대한 중점을 더 잘 반영한다."
+     }
+    ]
+   },
+   {
+    "word": "rebuild",
+    "pron": "[ri:bíld]",
+    "pos": "v.",
+    "meaning": "v. 다시 짓다, 재건하다",
+    "tip": "[[b]]re[[/b]](다시) [[b]]build[[/b]](건설하다), 즉 [[r]]다시 짓다, 재건하다[[/r]]",
+    "toeicExpr": [
+     "rebuild infrastructure 사회 기반 시설을 재건하다",
+     "rebuild the economy 경제를 재건하다"
+    ]
+   },
+   {
+    "word": "refresh",
+    "pron": "[rifréʃ]",
+    "pos": "v.",
+    "meaning": "v. 상쾌하게 하다, 새롭게 하다",
+    "tip": "[[b]]re[[/b]](다시) [[b]]fresh[[/b]](신선한, 새로운) 것으로 하다, 즉 [[r]]상쾌하게 하다, 새롭게 하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "refreshing",
+      "meaning": "신선한, 상쾌한"
+     }
+    ],
+    "toeicExpr": [
+     "refresh knowledge/skills 지식을/기술을 새롭게 하다",
+     "refresh product packaging 제품 포장을 새롭게 하다",
+     "refreshing drink/atmosphere 상쾌한 음료/분위기"
+    ]
+   },
+   {
+    "word": "refund",
+    "pron": "n. [ri:fʌnd] v. [ri(:)fʌ́nd]",
+    "pos": "n. / v.",
+    "meaning": "n. 환불  v. 환불하다",
+    "tip": "[[b]]re[[/b]](뒤로) 되돌려 [[b]]fund[[/b]](자금, 돈)을 주다, 즉 [[r]]환불, 환불하다[[/r]]",
+    "toeicExpr": [
+     "request a refund 환불을 요청하다  get/receive a refund 환불받다",
+     "full/partial refund 전액/부분 환불  refund policy 환불 정책"
+    ]
+   },
+   {
+    "word": "replace",
+    "pron": "[ripléis]",
+    "pos": "v.",
+    "meaning": "~에 대신하다, 대체하다, 교체하다",
+    "tip": "김 부장이 은퇴한 후 [[b]]re[[/b]](다시) 그 [[b]]place[[/b]](자리)를 이 부장이 [[r]]대신하다, 대체하다[[/r]]",
+    "toeicExpr": [
+     "replace A with B A를 B로 교체하다 (with: ~을 가지고)",
+     "replace outdated equipment with modern machinery 구식 장비를 최신 기계로 교체하다",
+     "replace A as B A를 B의 자리(직책ㆍ역할)에서 대신하다 (as: ~로서)",
+     "replace Mr. Lee as the CEO 이 대표를 CEO 자리에서 교체하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company is planning to replace temporary workers with full-time employees.",
+      "ko": "그 회사는 임시 근로자를 정규직 직원으로 대체할 계획이다."
+     }
+    ]
+   },
+   {
+    "word": "remarkable",
+    "pron": "[rimáːrkəbl]",
+    "pos": "a.",
+    "meaning": "주목할 만한, 놀라운",
+    "tip": "신문에서 [[b]]re[[/b]](다시) 또 별표 [[b]]mark[[/b]](마크)를 [[b]]able[[/b]](할 만한), 즉 [[r]]주목할 만한, 놀라운[[/r]] 뉴스",
+    "derivatives": [
+     {
+      "word": "remarkably",
+      "meaning": "두드러지게, 매우"
+     }
+    ],
+    "toeicExpr": [
+     "remarkable achievement 놀라운 성과   remarkable progress 눈에 띄는 발전",
+     "remarkably different 두드러지게 다른   remarkably successful 매우 성공적인"
+    ]
+   },
+   {
+    "word": "resolve",
+    "pron": "미[rizálv] 영[rizólv]",
+    "pos": "v.",
+    "meaning": "해결하다",
+    "tip": "[[[b]]re[[/b]](강조) + [[b]]solve[[/b]](해결하다)] [[r]]해결하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "resolution",
+      "meaning": "해결"
+     }
+    ],
+    "toeicExpr": [
+     "resolve a problem/conflict 문제를/갈등을 해결하다",
+     "find resolution 해결책을 모색하다   successful resolution 성공적인 해결"
+    ]
+   },
+   {
+    "word": "recruit",
+    "pron": "[rikrúːt]",
+    "pos": "v.",
+    "meaning": "(신입사원 등을) 모집하다",
+    "tip": "[[b]]re[[/b]](다시) 배 [[b]]crew[[/b]](승무원) [[b]]two[[/b]](2)명을 [[r]]모집하다[[/r]]",
+    "toeicExpr": [
+     "recruit new employees 신입사원을 모집하다",
+     "be recruited as + 직책: ~로 채용되다 (as: ~로서)",
+     "be recruited as a marketing manager 마케팅 매니저로 채용되다",
+     "be recruited as a sales representative 영업 담당자로 채용되다"
+    ]
+   },
+   {
+    "word": "represent",
+    "pron": "[rèprizént]",
+    "pos": "v.",
+    "meaning": "1. 대표하다  2. 나타내다, 의미하다",
+    "tip": "① [[b]]re[[/b]](뒤에) 있는 사람을 [[b]]pre[[/b]](앞으로) [[b]]sent[[/b]](보냈다). 그래서 그 사람이 우리를 [[r]]대표하다[[/r]]  ② 미스코리아가 [[b]]이쁘리, 젠[[/b]](쟤는) 한국의 미를 [[r]]나타내다, 대표하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "representative",
+      "meaning": "대표자, 담당자; 대표하는"
+     },
+     {
+      "word": "representation",
+      "meaning": "표현, 묘사, 대표함, 대리 행위"
+     }
+    ],
+    "toeicExpr": [
+     "represent the company 회사를 대표하다",
+     "represent a brand 브랜드를 대표하다",
+     "represent a major change 큰 변화를 의미하다",
+     "represent a trend 추세를 나타내다",
+     "sales representative 영업 담당자",
+     "company representative 회사 대표",
+     "representative example/product 대표적인 예/제품",
+     "accurate representation 정확한 표현/묘사",
+     "in representation of the company 회사를 대표하여"
+    ],
+    "examVar": [
+     {
+      "en": "The company's ______ will attend the trade fair in Singapore next week.",
+      "opt": "(A) represent  (B) representation  (C) representative  (D) representing",
+      "ans": "(C)",
+      "ko": "회사의 대표가 다음 주 싱가포르 무역 박람회에 참석할 것이다."
+     }
+    ]
+   },
+   {
+    "word": "refine",
+    "pron": "[rifáin]",
+    "pos": "v.",
+    "meaning": "정제하다, 개선하다",
+    "tip": "[[b]]re[[/b]](다시) [[b]]fine[[/b]](맑은) 상태로 만들다, 즉 [[r]]정제하다, 개선하다[[/r]]",
+    "toeicExpr": [
+     "refine crude oil 원유를 정제하다",
+     "refine a plan/strategy 계획을/전략을 개선하다"
+    ]
+   },
+   {
+    "word": "reinforce",
+    "pron": "[rìːinfɔ́ːrs]",
+    "pos": "v.",
+    "meaning": "강화하다",
+    "tip": "[[b]]re[[/b]](다시) [[b]]in[[/b]](안에) [[b]]force[[/b]](힘)을 넣어주다, 즉 [[r]]강화하다[[/r]]",
+    "toeicExpr": [
+     "reinforce a rule/policy/security 규정을/정책을/보안을 강화하다"
+    ]
+   },
+   {
+    "word": "reform",
+    "pron": "[rifɔ́ːrm]",
+    "pos": "v. / n.",
+    "meaning": "v. 개혁하다  n. 개혁",
+    "tip": "[[b]]re[[/b]](다시) [[b]]form[[/b]](형태)를 새롭게 만들어 [[r]]개혁, 개혁하다[[/r]]",
+    "toeicExpr": [
+     "reform company policies 회사 정책을 개혁하다",
+     "reform the system 시스템을 개혁하다",
+     "economic reform 경제 개혁"
+    ]
+   },
+   {
+    "word": "restrict",
+    "pron": "[ristríkt]",
+    "pos": "v.",
+    "meaning": "v. 제한하다, 금지하다",
+    "tip": "우범지역인 [[b]]re[[/b]](뒤의) [[b]]street[[/b]](거리)는 접근을 [[r]]제한하다, 금지하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "restriction",
+      "meaning": "제한, 금지"
+     }
+    ],
+    "toeicExpr": [
+     "restrict access to ~에 대한 접근을 제한하다",
+     "restrict use of ~의 사용을 제한하다",
+     "be restricted to ~에 한정되다, 제한되다",
+     "Access to the laboratory is restricted to authorized personnel only. 연구실 출입은 인가된 인원으로만 제한된다.",
+     "restrict A from -ing A가 ~하는 것을 제한하다 (from: ~하는 것으로부터)",
+     "restrict visitors from entering the facility 방문객이 그 시설에 들어가는 것을 제한하다",
+     "put/place restriction on ~에 제한을 두다 (on: 행위의 대상 앞에)"
+    ],
+    "examVar": [
+     {
+      "en": "New safety policies were introduced to restrict employees from entering the storage area without authorization.",
+      "ko": "새로운 안전 규정은 직원들이 허가 없이 보관 구역에 들어가는 것을 제한하기 위해 도입되었다."
+     }
+    ]
+   },
+   {
+    "word": "retail",
+    "pron": "[ri:teil]",
+    "pos": "n./v.",
+    "meaning": "n. 소매 v. 소매하다",
+    "tip": "[[b]]re[[/b]](뒤에) 달린 쥐 [[b]]tail[[/b]](꼬리)만큼 작은 규모로 [[r]]소매, 소매하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "retailer",
+      "meaning": "소매상인, 소매업체"
+     }
+    ],
+    "toeicExpr": [
+     "retail industry/market 소매 산업/시장",
+     "retail shop 소매점  retail prices 소매 가격",
+     "online/local retailer 온라인/지역 소매업체"
+    ]
+   },
+   {
+    "word": "reproduce",
+    "pron": "[ri:prədjú:s]",
+    "pos": "v.",
+    "meaning": "v. 복제하다",
+    "tip": "똑같이 [[b]]re[[/b]](다시) [[b]]produce[[/b]](생산하다), 즉 [[r]]복제하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "reproduction",
+      "meaning": "복제"
+     }
+    ],
+    "toeicExpr": [
+     "reproduce documents/data 문서를/데이터를 복제하다",
+     "unauthorized reproduction 무단 복제",
+     "copyright and reproduction rights 저작권 및 복제권"
+    ]
+   },
+   {
+    "word": "reaction",
+    "pron": "[riǽkʃən]",
+    "pos": "n.",
+    "meaning": "n. 반응",
+    "tip": "[[b]]re[[/b]](뒤로) 되돌려주는 [[b]]action[[/b]](활동, 행동), 즉 [[r]]반응[[/r]]",
+    "derivatives": [
+     {
+      "word": "react",
+      "meaning": "반응하다, 반작용하다"
+     }
+    ],
+    "toeicExpr": [
+     "customer/public/positive/negative reaction 고객/대중의/긍정적인/부정적인 반응",
+     "react to customer complaints 고객 불만에 반응하다"
+    ]
+   },
+   {
+    "word": "retreat",
+    "pron": "[ritrí:t]",
+    "pos": "v./n.",
+    "meaning": "1. v. 후퇴하다, 철수하다  2. n. 연수, 야유회",
+    "tip": "① 적으로부터 숨기 위해 [[b]]re[[/b]](뒤에) 있는 [[b]]tree[[/b]](나무) [[b]]to[[/b]](쪽으로) [[r]]후퇴하다[[/r]]\n② 숲속 [[b]]tree[[/b]](나무)들 [[b]]re[[/b]](뒤에) 있는 풀밭에서 [[r]]야유회[[/r]]를 하는 모습",
+    "toeicExpr": [
+     "retreat from the market 시장에서 철수하다",
+     "company retreat 회사 수련회, 워크숍",
+     "annual retreat 연례 연수",
+     "leadership retreat 관리자 연수"
+    ],
+    "examVar": [
+     {
+      "en": "The HR team announced that this year's company retreat will take place at a resort outside the city.",
+      "ko": "인사팀은 올해 회사 연례 연수가 시 외곽의 리조트에서 열릴 것이라고 발표했다."
+     }
+    ]
+   },
+   {
+    "word": "rebate",
+    "pron": "[rí:beit]",
+    "pos": "n.",
+    "meaning": "n. (금액 일부의) 환급, 리베이트",
+    "tip": "이미 지급한 돈을 [[b]]re[[/b]](뒤로) 되돌려 [[r]]뱉어냄[[/r]], 즉 [[r]]환급[[/r]]",
+    "toeicExpr": [
+     "cash rebate 현금 환급  tax rebate 세금 환급",
+     "qualify for a rebate 환급 대상이 되다",
+     "receive a rebate 환급을 받다"
+    ]
+   },
+   {
+    "word": "reimburse",
+    "pron": "[rì:imbə́:rs]",
+    "pos": "v.",
+    "meaning": "v. 갚다, 상환하다, 환급하다",
+    "tip": "버스비를 안 내고 내려서 [[b]]re[[/b]](다시) [[b]]버스 im[[/b]](안으로) 들어가 버스비를 [[r]]갚다, 상환하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "reimbursement",
+      "meaning": "상환, 변제, 환급"
+     }
+    ],
+    "toeicExpr": [
+     "reimburse employees for travel expenses 직원들에게 출장비를 상환하다",
+     "reimburse customers for damaged goods 고객에게 손상된 상품 비용을 환급하다",
+     "medical reimbursement 의료비 상환(환급)",
+     "full reimbursement 전액 상환"
+    ]
+   },
+   {
+    "word": "remodel",
+    "pron": "미[rì:mάdl] 영[rì:mɔ́dl]",
+    "pos": "v.",
+    "meaning": "개조하다, 고치다",
+    "tip": "① 집을 [[b]]리모델[[/b]]링하여 [[r]]개조하다, 고치다[[/r]]\n② re(다시) model(원형, 형태)를 [[r]]개조하다, 고치다[[/r]]",
+    "derivatives": [
+     {
+      "word": "remodeling(=remodelling)",
+      "meaning": "리모델링, 개조"
+     }
+    ],
+    "toeicExpr": [
+     "remodel a building 건물을 개조하다",
+     "remodel an office 사무실을 리모델링하다",
+     "office/store remodelling 사무실/매장 리모델링"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 54,
+  "title": "",
+  "words": [
+   {
+    "word": "resume",
+    "pron": "v. [rizú:m]\nn. [rézumèi]",
+    "pos": "v./n.",
+    "meaning": "1. v. 다시 시작하다, 재개하다  2. n. résumé 이력서",
+    "tip": "회사에서 해고당한 후 re(다시) 주먹을 불끈 [[b]]쥠[[/b]](쥠). 그리고 여기저기 [[r]]이력서[[/r]]를 내고 [[r]]다시 시작하다[[/r]]",
+    "toeicExpr": [
+     "resume work/operations/production 업무를/운영을/생산을 재개하다",
+     "submit/attach a résumé 이력서를 제출하다/첨부하다"
+    ],
+    "examVar": [
+     {
+      "en": "Please submit your updated _______ by Friday so the hiring manager can review your qualifications.",
+      "opt": "résumé (O) resumes (X)",
+      "ko": "금요일까지 업데이트된 이력서를 제출해 주시면 채용 담당자가 자격을 검토할 수 있습니다."
+     }
+    ]
+   },
+   {
+    "word": "reveal",
+    "pron": "[rivì:l]",
+    "pos": "v.",
+    "meaning": "밝히다, 드러내다",
+    "tip": "re(뒤로) 가서 [[b]]빌[[/b]]면서 선생님께 자신의 죄를 [[r]]밝히다, 드러내다[[/r]]",
+    "toeicExpr": [
+     "reveal information 정보를 공개하다",
+     "reveal customer preferences 고객 선호도를 보여주다"
+    ]
+   },
+   {
+    "word": "refreshments",
+    "pron": "[rifréʃmənts]",
+    "pos": "n.",
+    "meaning": "다과, 음식물",
+    "tip": "회의하다가 지쳤을 때 re(다시) 마음을 [[b]]fresh[[/b]](상쾌하게) 해주는 [[r]]다과, 음식물[[/r]]",
+    "toeicExpr": [
+     "provide refreshments 다과를 제공하다",
+     "complimentary/light refreshments 무료/간단한 다과"
+    ]
+   },
+   {
+    "word": "renowned",
+    "pron": "[rinάund]",
+    "pos": "a.",
+    "meaning": "유명한",
+    "tip": "알려지고 또 re(다시) [[b]]known[[/b]](알려진), 즉 [[r]]유명한[[/r]]",
+    "toeicExpr": [
+     "be renowned for + 명사: ~로 유명하다 (for: ~에 대하여)",
+     "be renowned for luxury accommodations 고급 숙박 시설로 유명하다",
+     "be renowned as + 직업/역할: ~로서 유명하다 (as: ~로서)",
+     "be renowned as a pioneer in the industry 업계의 선구자로 유명하다",
+     "renowned expert/company 유명한 전문가/기업"
+    ],
+    "examVar": [
+     {
+      "en": "The chef is widely renowned for creating innovative dishes that attract visitors from around the world.",
+      "ko": "그 셰프는 전 세계에서 방문객을 끌어들이는 혁신적인 요리를 만드는 것으로 널리 유명하다."
+     }
+    ]
+   },
+   {
+    "word": "resilient",
+    "pron": "미[riziljant] 영[riziliant]",
+    "pos": "a.",
+    "meaning": "탄력 있는, (부상 등에) 회복력 있는",
+    "tip": "스펀지를 찌르면 [[b]]re[[/b]](다시) [[b]]젤린언트[[/b]](찔린) 부분이 튀어나오는, 즉 [[r]]탄력 있는, 회복력 있는[[/r]]",
+    "toeicExpr": [
+     "resilient material 탄력 있는 재료",
+     "resilient economy/organization 회복력이 강한 경제/조직"
+    ]
+   },
+   {
+    "word": "reward",
+    "pron": "[riwɔ́ːrd]",
+    "pos": "n./v.",
+    "meaning": "n. 보상  v. 보상하다",
+    "tip": "[[b]]re[[/b]](뒤로) 되갚아 [[b]]워드[[/b]]를 쳐준 대가를 돈으로 [[r]]보상, 보상하다[[/r]]",
+    "toeicExpr": [
+     "reward employees for outstanding performance 뛰어난 성과에 대해 직원에게 보상하다",
+     "reward customers for loyalty 충성 고객에게 보상하다",
+     "financial reward 금전적 보상  reward program 포상 제도"
+    ]
+   },
+   {
+    "word": "retain",
+    "pron": "[ritéin]",
+    "pos": "v.",
+    "meaning": "보유하다, 계속 유지하다",
+    "tip": "씻으라고 했는데 어제도, 오늘도 [[b]]re[[/b]](다시) 때가 손톱 [[b]]in[[/b]](안에) 있다. 즉, 때를 계속 [[r]]보유하다, 계속 유지하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "retention",
+      "meaning": "보유(유지)"
+     }
+    ],
+    "toeicExpr": [
+     "retain customers 고객을 유지하다  retain ownership 소유권을 보유하다",
+     "employee retention 직원 유지(이직 방지)  data retention 데이터 보존(유지)",
+     "customer retention 고객 유지(충성도 유지)"
+    ],
+    "examVar": [
+     {
+      "note": "retain이 단순한 유지가 아니라 '직원·고객 등을 유지하다(이탈을 막다)'라는 의미로 쓰인다는 점을 묻는 문제가 자주 출제되었다.",
+      "en": "To reduce turnover, the company introduced several new benefits to help retain experienced employees.",
+      "ko": "이직률을 줄이기 위해 회사는 숙련된 직원을 유지하는 데 도움이 되는 여러 새로운 복지를 도입했다."
+     },
+     {
+      "en": "Many companies are investing in training programs to increase employee retention and reduce turnover.",
+      "ko": "많은 기업이 직원 유지율을 높이고 이직률을 줄이기 위해 교육 프로그램에 투자하고 있다."
+     }
+    ]
+   },
+   {
+    "word": "restructure",
+    "pron": "[rìːstrʌ́ktʃər]",
+    "pos": "v.",
+    "meaning": "구조조정하다, 구조를 개편하다",
+    "tip": "[[b]]re[[/b]](다시) [[b]]structure[[/b]](구조, 조직)을 만들다, 즉 [[r]]구조조정하다, 구조를 개편하다[[/r]]",
+    "toeicExpr": [
+     "restructure a company 회사를 구조조정하다",
+     "restructure the organization 조직을 재편하다"
+    ]
+   },
+   {
+    "word": "compare",
+    "pron": "[kəmpέər]",
+    "pos": "v.",
+    "meaning": "비교하다, 비유하다",
+    "tip": "\"이것과 [[b]]com[[/b]](함께) 같은 [[b]]패어?[[/b]](쌍이여?)\" 신발 한쪽을 찾으려고 서로 [[r]]비교하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "comparable",
+      "meaning": "비교할 만한, 필적하는"
+     },
+     {
+      "word": "comparative",
+      "meaning": "비교의, 비교상의, 상대적인"
+     },
+     {
+      "word": "comparison",
+      "meaning": "비교, 대조"
+     },
+     {
+      "word": "comparatively",
+      "meaning": "비교적, 상대적으로"
+     }
+    ],
+    "toeicExpr": [
+     "compare prices/results/data 가격을/결과를/데이터를 비교하다",
+     "compare A with B A를 B와 비교하다",
+     "compare last year's sales with this year's results 작년 매출을 올해 실적과 비교하다",
+     "comparable results 유사한(비교할 만한) 결과",
+     "comparable to competitors 경쟁사에 필적하는",
+     "comparative analysis/study/advantage 비교 분석/연구/우위",
+     "in comparison with ~와 비교하여",
+     "in comparison with competitors 경쟁사와 비교하여",
+     "comparatively easy/simple 비교적 쉬운/간단한",
+     "comparatively low/high 상대적으로 낮은/높은"
+    ],
+    "examVar": [
+     {
+      "en": "The two products are _______ in quality.",
+      "opt": "comparable (O)  comparative (X)",
+      "ko": "두 제품은 품질 면에서 비교할 만하다."
+     },
+     {
+      "en": "The report compares our financial performance with that of similar companies.",
+      "ko": "보고서는 우리의 재무 실적을 유사한 기업들과 비교한다."
+     },
+     {
+      "en": "Sales have increased by 12% in comparison with last year.",
+      "ko": "매출이 작년과 비교하여 12% 증가했다."
+     }
+    ]
+   },
+   {
+    "word": "confirm",
+    "pron": "[kənfáːrm]",
+    "pos": "v.",
+    "meaning": "확실하게 하다, 확인하다",
+    "tip": "① 미용사에게 반드시 [[b]]큰 펌[[/b]]으로 할 것을 몇 번이고 말하며 [[r]]확실하게 하다, 확인하다[[/r]] ② [[b]]con[[/b]](강조) + [[b]]firm[[/b]](확고한): 완전히 확고한 상태로 만들다, 즉 [[r]]확실하게 하다, 확인하다[[/r]]",
+    "toeicExpr": [
+     "confirm an appointment 약속을 확인하다",
+     "confirm a reservation 예약을 확인하다"
+    ]
+   },
+   {
+    "word": "commitment",
+    "pron": "[kəmítmənt]",
+    "pos": "n.",
+    "meaning": "1. 헌신, 전념  2. 약속",
+    "tip": "사장이 바이어들과 [[b]]com[[/b]](같이) [[b]]meet[[/b]](만날) [[r]]약속[[/r]]이 [[b]]많을[[/b]] 정도로 자신의 일에 [[r]]헌신, 전념[[/r]]",
+    "derivatives": [
+     {
+      "word": "commit",
+      "meaning": "1. 헌신하다, 전념하다  2. (자원·시간·돈 등을) 투입하다 (← 자원, 시간을 헌신하다, 전념하다)"
+     }
+    ],
+    "toeicExpr": [
+     "commitment to quality 품질에 대한 전념",
+     "commitment to customer satisfaction 고객 만족에 대한 헌신",
+     "make a commitment 약속을 하다",
+     "prior commitment 선약, 먼저 잡힌 약속",
+     "commit to improving service 서비스 개선에 전념하다",
+     "be committed to + 명사/동명사: ~에 전념하다, 헌신하다 (to: ~쪽으로)",
+     "be committed to providing excellent service 뛰어난 서비스를 제공하는 데 전념하다",
+     "be committed to quality control 품질관리 향상에 헌신하다(전념하다)",
+     "commit funds to a project 프로젝트에 자금을 투입하다",
+     "commit additional funding 추가 자금을 투입하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company is committed to improving workplace safety through continuous training programs.",
+      "ko": "그 회사는 지속적인 교육 프로그램을 통해 직장 안전을 개선하는 데 전념하고 있다."
+     }
+    ]
+   },
+   {
+    "word": "committee",
+    "pron": "[kəmíti]",
+    "pos": "n.",
+    "meaning": "위원회",
+    "tip": "[[b]]com[[/b]](함께) [[b]]미티[[/b]](미팅)하여 회의하는 [[r]]위원회[[/r]]",
+    "toeicExpr": [
+     "executive committee 집행위원회   management committee 경영위원회",
+     "committee meeting 위원회 회의   committee members 위원회 위원들"
+    ]
+   },
+   {
+    "word": "comply",
+    "pron": "[kəmplái]",
+    "pos": "n.",
+    "meaning": "(규칙·규정·법률 등을) 따르다, 순응하다",
+    "tip": "기러기들이 대장 새 뒤를 [[b]]com[[/b]](함께) [[b]]fly[[/b]](날면서) [[r]]따르다, 순응하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "compliant",
+      "meaning": "따르는, 순종하는"
+     },
+     {
+      "word": "compliance",
+      "meaning": "순응"
+     }
+    ],
+    "toeicExpr": [
+     "comply with ~에 순응하다, ~을 준수하다 (with: ~와 함께 맞추어)",
+     "comply with regulations 규정을 준수하다",
+     "comply with standards 기준에 따르다",
+     "be compliant with ~을 준수하다",
+     "be compliant with safety standards 안전 기준을 준수하다",
+     "in compliance with ~에 따라, 순응하여",
+     "in compliance with company policy 회사 정책에 따라"
+    ],
+    "examVar": [
+     {
+      "en": "1. The factory operates in compliance with environmental regulations.",
+      "ko": "그 공장은 환경 규정을 준수하여 운영된다."
+     },
+     {
+      "en": "2. The product was recalled because it did not comply with safety standards.",
+      "ko": "그 제품은 안전 기준을 지키지 않아 리콜되었다."
+     }
+    ]
+   },
+   {
+    "word": "competition",
+    "pron": "미[kàmpitíʃən] 영[kɔ̀mpitíʃən]",
+    "pos": "n.",
+    "meaning": "경쟁, 시합",
+    "tip": "[[r]]경쟁, 시합[[/r]]하느라 [[b]]com[[/b]](함께) [[b]]피 튀션[[/b]](튀셔).",
+    "derivatives": [
+     {
+      "word": "compete",
+      "meaning": "경쟁하다, 겨루다"
+     },
+     {
+      "word": "competitive",
+      "meaning": "경쟁력 있는, 경쟁이 치열한"
+     },
+     {
+      "word": "competitively",
+      "meaning": "경쟁력 있게, 경쟁적으로"
+     },
+     {
+      "word": "competitiveness",
+      "meaning": "경쟁력"
+     },
+     {
+      "word": "competitor",
+      "meaning": "경쟁업체, 경쟁자"
+     }
+    ],
+    "toeicExpr": [
+     "intense competition 치열한 경쟁   price competition 가격 경쟁",
+     "compete for market share 시장 점유율을 두고 경쟁하다",
+     "compete globally 세계적으로 경쟁하다",
+     "competitive advantage 경쟁 우위",
+     "competitive price/rate 경쟁력 있는 가격/요금",
+     "competitive market/industry 경쟁이 치열한 시장/산업",
+     "competitively priced 경쟁력 있게 가격이 책정된",
+     "global competitiveness 세계적 경쟁력   price competitiveness 가격 경쟁력",
+     "major competitor 주요 경쟁업체   leading competitor 선도 경쟁사"
+    ]
+   },
+   {
+    "word": "conform",
+    "pron": "[kənfɔ́ːrm]",
+    "pos": "v.",
+    "meaning": "(기준·규격·양식 등을) 따르다, 부합하다",
+    "tip": "에어로빅 수강생들이 [[b]]con[[/b]](함께) 선생님 [[b]]폼[[/b]]을 [[r]]따르다[[/r]], 선생님 폼에 [[r]]부합하다[[/r]]",
+    "toeicExpr": [
+     "conform to ~에 따르다 (to: ~쪽으로)",
+     "conform to safety standards 안전 기준을 따르다",
+     "conform to company policy 회사 정책에 따르다",
+     "conform to requirements 요구사항에 부합하다"
+    ],
+    "examVar": [
+     {
+      "note": "연상을 통해 comply는 '새들과 함께(with) 날아가는' 것이고 conform은 '강사 쪽으로(to) 바라보면서 폼을 따라 하는' 것으로 둘의 전치사를 구분하자!",
+      "en": "All new vehicles must ______ to international emission standards.",
+      "opt": "conform (O)  comply (X)",
+      "ko": "모든 신차는 국제 배기가스 기준에 부합해야 한다."
+     }
+    ]
+   },
+   {
+    "word": "compile",
+    "pron": "[kəmpáil]",
+    "pos": "v.",
+    "meaning": "(자료 등을) 모으다, 수집하다",
+    "tip": "① 여러 작은 자료들을 [[b]]큰 파일[[/b]]로 한데 [[r]]모으다[[/r]], [[r]]수집하다[[/r]]\n② [[b]]com[[/b]](함께) [[b]]파일(file)[[/b]]을 [[r]]모으다[[/r]], [[r]]수집하다[[/r]]",
+    "toeicExpr": [
+     "compile data 데이터를 수집하다",
+     "compile statistics 통계를 모으다",
+     "compile customer feedback 고객 의견을 수집하다"
+    ]
+   },
+   {
+    "word": "compound",
+    "pron": "[kámpaund, kɔ́mpaund]",
+    "pos": "1. n. / 2. n. / 3. n. / a.",
+    "meaning": "1. n. 혼합한, 혼합물  2. n. (건물/산업) 단지, 구내  3. n. 복리 a. 복리의",
+    "tip": "① [[b]]com[[/b]](함께) 몇 [[b]]파운드[[/b]]씩 합한 [[r]]혼합한[[/r]], [[r]]혼합물[[/r]]\n② [[r]]혼합된 건물들의 모임인 복합 건물, 즉 (건물) 단지[[/r]]\n③ [[r]]누적되는 이자들을 혼합한 이자, 즉 복리, 복리의[[/r]]",
+    "toeicExpr": [
+     "compound substance 혼합 물질",
+     "factory compound 공장 단지  residential compound 주거 단지",
+     "compound interest 복리  simple interest 단리 (원금에만 이자가 붙는 방식)"
+    ]
+   },
+   {
+    "word": "compromise",
+    "pron": "미[kámprəmàiz] 영[kɔ́mprəmàiz]",
+    "pos": "n. / v.",
+    "meaning": "n. 타협 v. 타협하다",
+    "tip": "[[b]]com[[/b]](함께) 침략하지 않기로 [[b]]promise[[/b]](약속하다), 즉 [[r]]타협[[/r]], [[r]]타협하다[[/r]]",
+    "toeicExpr": [
+     "make a compromise 타협하다",
+     "compromise on price 가격에 대해 타협하다"
+    ]
+   },
+   {
+    "word": "compel",
+    "pron": "[kəmpél]",
+    "pos": "v.",
+    "meaning": "강요하다, 어쩔 수 없이 ~하게 하다",
+    "tip": "일찐들이 한 학생을 [[b]]com[[/b]](함께) [[b]]팰[[/b]](패다). 그래서 빵을 사오도록 [[r]]강요하다, 어쩔 수 없이 ~하게 하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "compelling",
+      "meaning": "설득력 있는, 매력적인 (← 어쩔 수 없이 ~하게 하는)"
+     }
+    ],
+    "toeicExpr": [
+     "compel + 목적어 + to부정사: …로 하여금 ~하도록 강요하다  compel the firm to revise its policy 회사가 정책을 수정하게 만들다",
+     "compelling argument 설득력 있는 주장  compelling offer 매력적인 제안"
+    ],
+    "examVar": [
+     {
+      "en": "New safety regulations may compel manufacturers ______ additional testing before releasing products to the market.",
+      "opt": "(A) conduct  (B) conducting  (C) to conduct  (D) conducted",
+      "ans": "(C)",
+      "ko": "새로운 안전 규정은 제조업체가 제품을 시장에 출시하기 전에 추가적인 테스트를 수행하도록 강요할 수 있다."
+     }
+    ]
+   },
+   {
+    "word": "coworker",
+    "pron": "[kóuwə̀:rkər]",
+    "pos": "n.",
+    "meaning": "직장 동료",
+    "tip": "[[b]]co[[/b]](함께) [[b]]work[[/b]](일하는) [[b]]er[[/b]](사람), 즉 [[r]]직장 동료[[/r]]",
+    "toeicExpr": [
+     "former coworker 이전에 함께 일한 동료  fellow coworker 동료 직원"
+    ]
+   },
+   {
+    "word": "cooperation",
+    "pron": "미[kouápəréiʃən] 영[kouɔ́pəréiʃən]",
+    "pos": "n.",
+    "meaning": "협력, 협동",
+    "tip": "[[b]]co[[/b]](함께) [[b]]operation[[/b]](운영)하는 것, 즉 [[r]]협력, 협동[[/r]]",
+    "derivatives": [
+     {
+      "word": "cooperate",
+      "meaning": "협력하다, 협동하다"
+     }
+    ],
+    "toeicExpr": [
+     "in cooperation with ~와 협력하여  in cooperation with the local government 지방 정부와 협력하여",
+     "cooperate with + 사람/단체: ~와 협력하다  cooperate with another company 다른 회사와 협력하다",
+     "cooperate in(on) + 일/프로젝트: ~하는 데 협력하다  cooperate in a project 프로젝트에 협력하다  cooperate on a task 과제에 협력하다"
+    ],
+    "examVar": [
+     {
+      "en": "All employees must cooperate ______ their team leaders to improve productivity.",
+      "opt": "(A) in  (B) with  (C) on  (D) at",
+      "ans": "(B)",
+      "ko": "모든 직원은 생산성을 높이기 위해 팀장들과 협력해야 한다."
+     }
+    ]
+   },
+   {
+    "word": "context",
+    "pron": "미[kántekst] 영[kɔ́ntekst]",
+    "pos": "n.",
+    "meaning": "문맥, 전후 사정, 배경",
+    "tip": "[[b]]con[[/b]](함께) [[b]]text[[/b]](글)을 앞뒤에서 이어주는 [[r]]문맥, 전후 사정, 배경[[/r]]",
+    "toeicExpr": [
+     "in this/that context 이런/그런 상황에서  social/business context 사회적/비즈니스적 맥락(배경)"
+    ]
+   },
+   {
+    "word": "collaborate",
+    "pron": "[kəlǽbərèit]",
+    "pos": "v.",
+    "meaning": "공동으로 작업하다, 협력하다",
+    "tip": "[[b]]col[[/b]](함께) [[b]]labor[[/b]](노동) [[b]]ate[[/b]](하다), 즉 [[r]]공동으로 작업하다, 협력하다[[/r]]",
+    "toeicExpr": [
+     "collaborate with + 사람/단체: ~와 협력하다",
+     "collaborate with a partner 파트너와 협력하다",
+     "collaborate on + 프로젝트/과제/문서: (일ㆍ업무ㆍ프로젝트 등에) 협력하다",
+     "collaborate on a project 프로젝트를 공동으로 수행하다",
+     "collaborate on a new product 신제품을 공동 개발하다"
+    ],
+    "examVar": [
+     {
+      "en": "The engineers collaborated _______ a new design proposal for the client.",
+      "opt": "on (O)  with (X)",
+      "ko": "엔지니어들은 고객을 위한 새로운 디자인 제안서 작업에 협력했다."
+     }
+    ]
+   },
+   {
+    "word": "confront",
+    "pron": "[kənfrʌ́nt]",
+    "pos": "v.",
+    "meaning": "직면하다, 맞서다",
+    "tip": "[[b]]con[[/b]](함께) [[b]]front[[/b]](앞)으로 얼굴을 대하다, 즉 [[r]]직면하다, 맞서다[[/r]]",
+    "toeicExpr": [
+     "confront a problem 문제에 직면하다",
+     "confront challenges 도전에 맞서다"
+    ]
+   },
+   {
+    "word": "compatible",
+    "pron": "[kəmpǽtəbl]",
+    "pos": "a.",
+    "meaning": "1. 양립할 수 있는, 부합하는  2. 호환이 되는",
+    "tip": "[[b]]com[[/b]](함께) 패거리를 합쳐 인원이 [[b]]double[[/b]](2배인) 한패가 될 수 있는, 즉 서로 [[r]]양립할 수 있는, 호환이 되는[[/r]] 두 패거리",
+    "toeicExpr": [
+     "be compatible with company policy 회사 정책과 양립하다(부합하다)",
+     "compatible devices/software/components 호환 가능한 기기들/소프트웨어/부품"
+    ],
+    "examVar": [
+     {
+      "en": "This printer is compatible with both Windows and Mac systems.",
+      "ko": "이 프린터는 Windows와 Mac 시스템 모두와 호환된다."
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "day": 55,
+  "title": "",
+  "words": [
+   {
+    "word": "concentrate",
+    "pron": "미[kɑ́nsəntrèit] 영[kɔ́nsəntrèit]",
+    "pos": "v.",
+    "meaning": "집중하다, 집중시키다",
+    "tip": "[[b]]con[[/b]](함께) [[b]]centr[[/b]](center: 중심)으로 모으다, 즉 [[r]]집중시키다[[/r]]",
+    "toeicExpr": [
+     "concentrate on ~에 집중하다 (on: 행동의 목적 대상 앞에서 '~을, ~에')",
+     "concentrate on work 일에 집중하다",
+     "concentrate A on B A를 B에 집중시키다",
+     "concentrate efforts on product development 노력을 제품 개발에 집중하다",
+     "concentrate investment on new technology 투자를 신기술에 집중하다"
+    ],
+    "examVar": [
+     {
+      "en": "The employees will be able to concentrate on their work after some rest.",
+      "ko": "휴식을 취하고 오면 직원들이 더 집중해서 일을 할 수 있을 겁니다."
+     }
+    ]
+   },
+   {
+    "word": "companion",
+    "pron": "[kəmpǽnjən]",
+    "pos": "n.",
+    "meaning": "친구, 동료, 파트너",
+    "tip": "[[b]]com[[/b]](함께) 패거리를 이루는 [[b]]녀[[/b]](여자)들, 즉 [[r]]친구, 동료[[/r]]",
+    "toeicExpr": [
+     "travel companion 여행 동반자",
+     "business companion 비즈니스 파트너"
+    ]
+   },
+   {
+    "word": "competence",
+    "pron": "미[kɑ́mpitəns] 영[kɔ́mpitəns]",
+    "pos": "n.",
+    "meaning": "능숙함, 능숙",
+    "tip": "[[b]]컴퓨턴[[/b]](컴퓨터는) 수우미양가 중에 [[b]]수[[/b]]를 맞을 정도로 [[r]]능숙함, 능숙[[/r]]",
+    "derivatives": [
+     {
+      "word": "competent",
+      "meaning": "유능한"
+     }
+    ],
+    "toeicExpr": [
+     "professional competence 전문적 능숙함",
+     "demonstrate competence 능력을 입증하다",
+     "competent employee 유능한 직원",
+     "technically competent 기술적으로 유능한"
+    ],
+    "examVar": [
+     {
+      "note": "competition, competitiveness, competence를 구분하는 문제가 자주 출제되었다.",
+      "en": "예1) The government launched several programs to improve national _______.",
+      "opt": "(A) competition  (B) competitiveness  (C) competence  (D) competing",
+      "ans": "(B)",
+      "ko": "정부는 국가 경쟁력을 향상시키기 위한 여러 프로그램을 시작했다."
+     },
+     {
+      "en": "예2) Strong leadership and communication skills are essential to demonstrate professional _______.",
+      "opt": "(A) competition  (B) competitiveness  (C) competence  (D) competitor",
+      "ans": "(C)",
+      "ko": "강력한 리더십과 의사소통 능력은 전문적 역량을 보여주는 데 필수적이다."
+     }
+    ]
+   },
+   {
+    "word": "commence",
+    "pron": "[kəméns]",
+    "pos": "v.",
+    "meaning": "v. 시작하다, 시작되다",
+    "tip": "논술시험 시작종이 울리자 [[b]]com[[/b]](함께) [[b]]men[[/b]](사람들이) [[b]]쓰기[[/b]] [[r]]시작하다[[/r]]",
+    "toeicExpr": [
+     "commence a meeting 회의를 시작하다",
+     "commence operations/construction 운영을/공사를 시작하다",
+     "commence with an opening speech 개회사와 함께 시작되다"
+    ]
+   },
+   {
+    "word": "comprehend",
+    "pron": "미[kàmprihénd] 영[kɔ̀mprihénd]",
+    "pos": "v.",
+    "meaning": "v. 1. 포함하다  2. 이해하다",
+    "tip": "문제집 안에 [[b]]com[[/b]](함께) [[b]]풀이[[/b]]집 [[b]]핸드[[/b]]북을 [[r]]포함하다[[/r]], 그것을 보고 [[r]]이해하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "comprehensible",
+      "meaning": "이해할 수 있는"
+     },
+     {
+      "word": "comprehensive",
+      "meaning": "포괄적인, 종합적인"
+     }
+    ],
+    "toeicExpr": [
+     "comprehend all aspects/elements 모든 측면을/요소를 포함하다",
+     "comprehend the meaning/concept 의미를/개념을 이해하다",
+     "easily/fully comprehensible 쉽게/완전히 이해할 수 있는",
+     "comprehensive report 종합 보고서",
+     "comprehensive range 폭넓은 범위"
+    ],
+    "examVar": [
+     {
+      "en": "The new training manual provides a _______ overview of all safety procedures for new employees.",
+      "opt": "comprehensive (O)  comprehensible (X)",
+      "ko": "새로운 교육 매뉴얼은 신입 직원들을 위해 모든 안전 절차에 대한 포괄적인 개요를 제공한다.",
+      "note": "comprehensive와 comprehensible을 구분하는 문제가 출제되었다."
+     }
+    ]
+   },
+   {
+    "word": "consolidate",
+    "pron": "미[kənsálidèit] 영[kənsɔ́lidèit]",
+    "pos": "v.",
+    "meaning": "v. 1. 합병하다, 통합하다  2. 공고히 하다, 강화하다",
+    "tip": "두 회사가 \"[[b]]con[[/b]](함께) [[b]]살리! 데이트[[/b]]하듯.\" 하며 [[r]]합병하다[[/r]], [[r]]공고히 하다[[/r]]",
+    "toeicExpr": [
+     "consolidate companies 회사를 합병하다",
+     "consolidate departments 부서를 통합하다",
+     "consolidate market share 시장 점유율을 강화하다"
+    ]
+   },
+   {
+    "word": "commission",
+    "pron": "[kəmíʃən]",
+    "pos": "n./v.",
+    "meaning": "1. n. 위원회  2. n. 위탁, 위임  v. 의뢰하다, 주문하다  3. n. 수수료, 커미션",
+    "tip": "[[b]]com[[/b]](함께) 학교폭력 방지 [[b]]mission[[/b]](임무)를 [[r]]위탁[[/r]], [[r]]위임[[/r]]받은 학교폭력 [[r]]위원회[[/r]]",
+    "toeicExpr": [
+     "review commission 검토 위원회",
+     "give a commission 위임하다",
+     "commission a study/report 연구를/보고서를 의뢰하다",
+     "sales commission 판매 수수료   10% commission 10%의 수수료"
+    ],
+    "examVar": [
+     {
+      "en": "The company decided to commission an independent firm to conduct a detailed market analysis.",
+      "ko": "회사는 상세한 시장 분석을 수행하기 위해 독립된 업체에 이를 의뢰하기로 결정했다."
+     }
+    ]
+   },
+   {
+    "word": "condense",
+    "pron": "[kəndéns]",
+    "pos": "v.",
+    "meaning": "v. 압축하다, 요약하다",
+    "tip": "[[b]]con[[/b]](함께) [[b]]dense[[/b]](밀집한) 상태로 모으다, 즉 [[r]]압축하다[[/r]], [[r]]요약하다[[/r]]",
+    "toeicExpr": [
+     "condense data/information 데이터를/정보를 압축하다",
+     "condense a report/speech 보고서를/연설을 요약하다"
+    ],
+    "examVar": [
+     {
+      "en": "The information was condensed into a one-page summary for easier reading.",
+      "ko": "그 정보는 읽기 쉽게 한 페이지 요약으로 압축되었다."
+     }
+    ]
+   },
+   {
+    "word": "extent",
+    "pron": "[ikstént]",
+    "pos": "n.",
+    "meaning": "n. 범위, 정도, 넓이",
+    "tip": "[[b]]ex[[/b]](밖으로) [[b]]ten[[/b]](10)미터의 [[r]]범위, 정도, 넓이[[/r]]",
+    "derivatives": [
+     {
+      "word": "extend",
+      "meaning": "1. 확장하다, 연장하다  2. (감사 · 사과 등을) 표하다, (초대를) 하다"
+     },
+     {
+      "word": "extension",
+      "meaning": "확장, 확대"
+     },
+     {
+      "word": "extensive",
+      "meaning": "아주 넓은, 광범위한"
+     }
+    ],
+    "toeicExpr": [
+     "to some extent 어느 정도는   to a large extent 상당 부분, 크게\nThe project was successful to some extent.\n그 프로젝트는 어느 정도는 성공적이었다.",
+     "extend a deadline/contract 마감일을/계약을 연장하다",
+     "extend into new markets 새로운 시장으로 확장하다",
+     "extend an invitation 초대하다",
+     "extend gratitude/congratulations/apologies 감사를/축하를/사과를 표하다",
+     "extend our thanks 감사의 뜻을 전하다",
+     "extensive knowledge/research 광범위한 지식/조사"
+    ],
+    "examVar": [
+     {
+      "en": "1. The success of the project will depend on the extent to which all departments cooperate effectively.",
+      "ko": "그 프로젝트의 성공은 모든 부서가 얼마나 효과적으로 협력하느냐의 정도에 달려 있다."
+     },
+     {
+      "en": "2. We would like to extend our apologies for the inconvenience caused by the system error.",
+      "ko": "시스템 오류로 인한 불편에 대해 사과의 말씀을 드립니다."
+     },
+     {
+      "en": "3. The research team conducted an _______ review of customer feedback to identify recurring issues.",
+      "opt": "extensive (O)  extensible (X)",
+      "ko": "반복적으로 발생하는 문제를 파악하기 위해 연구팀은 고객 피드백에 대한 광범위한 조사를 실시했다."
+     }
+    ]
+   },
+   {
+    "word": "expire",
+    "pron": "[ikspáiər]",
+    "pos": "v.",
+    "meaning": "만료되다, 숨을 거두다",
+    "tip": "[[b]]ex[[/b]](밖에) 무덤이 [[b]]파이어[[/b]] 있다. 왜냐하면 목숨이 [[r]]만료되다, 숨을 거두다[[/r]]",
+    "derivatives": [
+     {
+      "word": "expiration",
+      "meaning": "(기간 · 임기 등의) 만료"
+     }
+    ],
+    "toeicExpr": [
+     "expire on + 날짜: ~에 만료되다 (on: 특정한 날짜 앞에)",
+     "The rental agreement will expire on December 31. 임대 계약은 12월 31일에 만료된다.",
+     "the membership/passport/contract expires 회원권이/여권이/계약이 만료되다",
+     "expiration date 유효기간, 만료일"
+    ]
+   },
+   {
+    "word": "expand",
+    "pron": "[ikspǽnd]",
+    "pos": "v.",
+    "meaning": "넓히다, 확장하다",
+    "tip": "케이팝 가수들이 우리나라 [[b]]ex[[/b]](밖으로) 팬들 범위를 [[r]]확장하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "expansion",
+      "meaning": "팽창, 확장"
+     }
+    ],
+    "toeicExpr": [
+     "expand business/production 사업을/생산을 확장하다",
+     "expand facilities 시설을 넓히다",
+     "expand capacity 용량을 확대하다",
+     "overseas expansion 해외 진출",
+     "rapid/global expansion 급속한/글로벌 확장"
+    ]
+   },
+   {
+    "word": "exploit",
+    "pron": "[iksplɔ́it]",
+    "pos": "v.",
+    "meaning": "(자원 · 기회 등을) 활용하다, 이용하다",
+    "tip": "보자기 [[b]]ex[[/b]](밖으로) [[b]]플러[[/b]](풀어) 안에 들어있던 [[b]]it[[/b]](그것) 비상금을 [[r]]활용하다[[/r]]",
+    "toeicExpr": [
+     "exploit market opportunities 시장 기회를 활용하다",
+     "exploit new technology 신기술을 활용하다"
+    ],
+    "examVar": [
+     {
+      "en": "The company plans to exploit emerging market trends to gain a competitive edge next year.",
+      "ko": "그 회사는 내년에 경쟁 우위를 확보하기 위해 새롭게 나타나는 시장 트렌드를 최대한 활용할 계획이다."
+     }
+    ]
+   },
+   {
+    "word": "enormous",
+    "pron": "[inɔ́ːrməs]",
+    "pos": "a.",
+    "meaning": "거대한, 엄청난",
+    "tip": "홍수로 인하여 댐 [[b]]e[[/b]](밖으로) 물이 [[b]]넘었수![[/b]] [[r]]거대한, 엄청난[[/r]] 물",
+    "derivatives": [
+     {
+      "word": "enormously",
+      "meaning": "엄청나게"
+     }
+    ],
+    "toeicExpr": [
+     "enormous amount 엄청난 양  enormous cost 막대한 비용",
+     "increase/grow enormously 엄청나게 증가하다/성장하다"
+    ]
+   },
+   {
+    "word": "exterior",
+    "pron": "[ikstíəriər]",
+    "pos": "a. 외부의  n. 외부",
+    "meaning": "a. 외부의  n. 외부",
+    "tip": "운동장 [[b]]ex[[/b]](밖으로) 공이 [[b]]튀어리[[/b]], 즉 운동장 [[r]]외부의[[/r]] 방향으로",
+    "toeicExpr": [
+     "exterior design/renovation 외관 디자인/보수",
+     "exterior of the building 건물의 외부"
+    ]
+   },
+   {
+    "word": "explode",
+    "pron": "[iksplóud]",
+    "pos": "v.",
+    "meaning": "1. 폭발하다, 터지다  2. 급격히 증가하다",
+    "tip": "테러범이 보낸 소포를 [[b]]ex[[/b]](밖으로) 풀러도 [[r]]폭발하다, 터지다[[/r]]  ② [[r]]폭발하다 → 폭발적으로(급격히) 증가하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "explosion",
+      "meaning": "폭발, 폭증, 급증"
+     }
+    ],
+    "toeicExpr": [
+     "A gas tank exploded. 가스 탱크가 폭발했다.",
+     "sales/demand/profits exploded 매출이/수요가/수익이 급증했다",
+     "explosion in sales 매출 급증"
+    ],
+    "examVar": [
+     {
+      "en": "Online orders for the company's winter collection have exploded over the past week due to a sudden cold wave.",
+      "ko": "갑작스러운 한파로 지난주 동안 회사의 겨울 컬렉션 온라인 주문이 급격히 증가했다."
+     }
+    ]
+   },
+   {
+    "word": "exposure",
+    "pron": "[ikspóuʒər]",
+    "pos": "n.",
+    "meaning": "드러냄, 노출",
+    "tip": "비밀이 [[b]]ex[[/b]](밖으로) [[b]]퍼져[[/b]]나가도록 비밀을 [[r]]드러냄, 노출[[/r]]",
+    "derivatives": [
+     {
+      "word": "expose",
+      "meaning": "드러내다, 노출시키다"
+     },
+     {
+      "word": "exposition",
+      "meaning": "박람회, 엑스포, 전시"
+     }
+    ],
+    "toeicExpr": [
+     "exposure to risk 위험에 노출",
+     "media exposure 정보 매체에 노출",
+     "expose confidential information 기밀 정보를 노출시키다",
+     "expose employees to risk 직원들을 위험에 노출시키다",
+     "international exposition 국제 박람회"
+    ]
+   },
+   {
+    "word": "evaluate",
+    "pron": "[ivǽljuèit]",
+    "pos": "v.",
+    "meaning": "평가하다",
+    "tip": "어떤 것의 [[b]]value[[/b]](가치)를 [[b]]e[[/b]](밖으로) 드러내다, 즉 [[r]]평가하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "evaluation",
+      "meaning": "평가, 심사, 검토"
+     }
+    ],
+    "toeicExpr": [
+     "evaluate performance/results 성과를/결과를 평가하다",
+     "performance/employee evaluation 성과/직원 평가",
+     "evaluation criteria 평가 기준"
+    ]
+   },
+   {
+    "word": "extreme",
+    "pron": "[ikstríːm]",
+    "pos": "a.",
+    "meaning": "극도의, 지나친",
+    "tip": "입 [[b]]ex[[/b]](밖으로) [[b]]트림[[/b]]이 계속 나오는 이유는 정도로 [[r]]극도의, 지나친[[/r]] 과식",
+    "derivatives": [
+     {
+      "word": "extremely",
+      "meaning": "매우, 극도로"
+     }
+    ],
+    "toeicExpr": [
+     "extreme caution 극도의 주의",
+     "extreme weather 극심한 날씨",
+     "with extreme care 세심하게, 아주 조심해서",
+     "extremely important/valuable 매우 중요한/귀중한"
+    ],
+    "examVar": [
+     {
+      "en": "All fragile items must be handled with extreme care during shipment.",
+      "ko": "모든 깨지기 쉬운 물품은 선적하는 동안 극도의 주의로 다뤄져야 한다."
+     }
+    ]
+   },
+   {
+    "word": "external",
+    "pron": "[ikstə́ːrnəl]",
+    "pos": "a.",
+    "meaning": "외부의, 밖의",
+    "tip": "[[b]]ex[[/b]](밖으로) [[b]]터널[[/b]]을 나온, 즉 터널 [[r]]외부의, 밖의[[/r]]",
+    "toeicExpr": [
+     "external factors/environment/audit 외부 요인/환경/감사",
+     "external affairs 대외 업무"
+    ]
+   },
+   {
+    "word": "explicit",
+    "pron": "[iksplísit]",
+    "pos": "a.",
+    "meaning": "명확한, 명백한",
+    "tip": "[[b]]ex[[/b]](밖으로) [[b]]플리싯[[/b]](플리시어) 밖으로 다 들어날 정도로 [[r]]명확한, 명백한[[/r]]",
+    "derivatives": [
+     {
+      "word": "explicitly",
+      "meaning": "명확하게"
+     }
+    ],
+    "toeicExpr": [
+     "explicit instruction/policy 명확한 지시/정책",
+     "explicitly state/explain 분명히 말하다/설명하다",
+     "unless explicitly stated otherwise 별도로 명시되지 않는 한"
+    ],
+    "examVar": [
+     {
+      "note": "explicitly와 implicitly(암묵적으로)를 구분하는 문제가 출제되었다.",
+      "en": "The policy changes were ______ stated in the employee handbook for everyone to understand.",
+      "opt": "explicitly (O)  implicitly (X)",
+      "ko": "정책 변경 사항은 모든 사람이 이해할 수 있도록 직원 안내서에 명시적으로 기재되었다."
+     }
+    ]
+   },
+   {
+    "word": "profitable",
+    "pron": "미[prɑ́fitəbl] 영[prɔ́fitəbl]",
+    "pos": "a.",
+    "meaning": "유리한, 이익이 되는",
+    "tip": "[[b]]pro[[/b]](앞으로)로 이익이 [[b]]핏![[/b]] 하고 [[b]]더블[[/b]](double 두 배)로 생길 주식, 즉 [[r]]유리한, 이익이 되는[[/r]]",
+    "derivatives": [
+     {
+      "word": "profit",
+      "meaning": "이익, 득"
+     }
+    ],
+    "toeicExpr": [
+     "profitable business/investment 수익성 있는 사업/투자",
+     "make a profit 이익을 내다",
+     "net/gross profit 순이익/총이익",
+     "profit margin 이익률"
+    ]
+   },
+   {
+    "word": "prominent",
+    "pron": "미[prɑ́minənt] 영[prɔ́minənt]",
+    "pos": "a.",
+    "meaning": "두드러진, 유명한",
+    "tip": "\"노래를 누가 제일 잘하니?\"라고 선생님이 묻자 학생들이 [[b]]pro[[/b]](앞으로) [[b]]미는 two[[/b]](2)명의 [[r]]두드러진, 유명한[[/r]] 학생",
+    "toeicExpr": [
+     "prominent figure/company 유명한 인물/회사",
+     "prominent expert in the field 그 분야의 저명한 전문가"
+    ]
+   },
+   {
+    "word": "promotion",
+    "pron": "[prəmóuʃən]",
+    "pos": "n.",
+    "meaning": "1. 승진, 진급  2. 홍보, (판매) 촉진",
+    "tip": "① 직원을 [[b]]pro[[/b]](앞으로) [[b]]모션[[/b]](모셔) [[r]]승진, 진급[[/r]]\n② 손님을 [[b]]pro[[/b]](앞으로) [[b]]모션[[/b]](모셔)놓고 [[r]]홍보, (판매) 촉진[[/r]]",
+    "derivatives": [
+     {
+      "word": "promote",
+      "meaning": "1. 승진시키다 2. 홍보하다, (판매) 촉진하다"
+     }
+    ],
+    "toeicExpr": [
+     "get a promotion 승진하다",
+     "be eligible for promotion 승진 자격이 있다",
+     "sales/marketing promotion 판매/마케팅 홍보",
+     "promotion event 판촉 행사",
+     "special promotion 특별 할인",
+     "promote Mr. Han to director 한 씨를 이사로 승진시키다",
+     "promote a new brand 새로운 브랜드를 홍보하다"
+    ],
+    "examVar": [
+     {
+      "en": "The marketing department will launch a social media campaign to promote the company's latest product line.",
+      "ko": "마케팅 부서는 회사의 최신 제품 라인을 홍보하기 위해 소셜 미디어 캠페인을 시작할 예정이다."
+     }
+    ]
+   },
+   {
+    "word": "prolong",
+    "pron": "미[prəlɔ́ːŋ, prəláŋ] 영[prəlɔ́ŋ]",
+    "pos": "v.",
+    "meaning": "연장하다, 늘이다",
+    "tip": "시간을 [[b]]pro[[/b]](앞으로) [[b]]long[[/b]](길게) [[r]]늘이다, 연장하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "prolonged",
+      "meaning": "장기의, 오래 끄는"
+     }
+    ],
+    "toeicExpr": [
+     "prolong the contract 계약을 연장하다",
+     "prolonged period 장기간   prolonged discussion 장시간 논의"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 56,
+  "title": "",
+  "words": [
+   {
+    "word": "overprice",
+    "pron": "[óuvərpràis]",
+    "pos": "v.",
+    "meaning": "과하게 값을 매기다",
+    "tip": "[[b]]over[[/b]](~을 넘어서) + [[b]]price[[/b]](값을 매기다)",
+    "toeicExpr": [
+     "overprice a product 제품의 가격을 과하게 책정하다",
+     "overpriced item 과하게 값이 매겨진 물품"
+    ]
+   },
+   {
+    "word": "overcharge",
+    "pron": "[óuvərtʃàːrdʒ]",
+    "pos": "n./v.",
+    "meaning": "n. 과잉 청구  v. 과잉 청구하다, 바가지를 씌우다",
+    "tip": "[[b]]over[[/b]](~ 이상으로) + [[b]]charge[[/b]](청구, 청구하다)",
+    "toeicExpr": [
+     "overcharge customers 고객에게 과잉 청구하다",
+     "overcharge fee 과다 청구된 금액"
+    ]
+   },
+   {
+    "word": "overhaul",
+    "pron": "[óuvərhɔ̀ːl]",
+    "pos": "n./v.",
+    "meaning": "1. n. 점검  v. 점검하다  2. v. 전면 개편하다",
+    "tip": "도로 전체에 [[b]]over[[/b]](걸쳐서) [[b]]hole[[/b]](구멍)이 난 싱크홀이 있는지 [[r]]점검, 점검하다[[/r]]. 그리고 문제가 있는 곳은 [[r]]전면 개편하다[[/r]](고치다)",
+    "toeicExpr": [
+     "overhaul a system/process 시스템을/절차를 전면 개편하다",
+     "overhaul the policy 정책을 전면 개편하다"
+    ]
+   },
+   {
+    "word": "oversight",
+    "pron": "[óuvərsàit]",
+    "pos": "n.",
+    "meaning": "1. 감독, 관리  2. 간과, 실수",
+    "tip": "① [[b]][over[[/b]](~ 위에서) + [[b]]sight[[/b]](봄)] [[r]]위에서[[/r]] 아랫사람들을 [[r]]보면서 감독, 관리[[/r]]\n② [[b]][over[[/b]](~ 넘어서) + [[b]]sight[[/b]](봄)] 대충 [[r]]넘어서 봄, 즉 간과, 실수[[/r]]",
+    "toeicExpr": [
+     "under the oversight of ~의 감독하에   financial oversight 재정 감독",
+     "oversight in the report 보고서의 실수   correct an oversight 실수를 바로잡다"
+    ],
+    "examVar": [
+     {
+      "en": "All financial operations are conducted under the oversight of the internal audit committee.",
+      "ko": "모든 재무 운영은 내부 감사위원회의 감독하에 수행된다."
+     }
+    ]
+   },
+   {
+    "word": "overlook",
+    "pron": "[óuvərlúk]",
+    "pos": "v.",
+    "meaning": "v. 1. 못 보고 지나치다, 못 본 체하다  2. 내려다보다",
+    "tip": "독수리가 [[b]]over[[/b]](위에서) [[b]]look[[/b]](보다), 즉 [[r]]내려다보다[[/r]], 토끼를 [[r]]못 보고 지나치다[[/r]], [[r]]못 본 체하다[[/r]]",
+    "toeicExpr": [
+     "overlook important details 중요한 세부 사항을 놓치다",
+     "overlook a mistake 실수를 눈감아주다",
+     "overlook the city/river/park 도시를/강을/공원을 내려다보다"
+    ]
+   },
+   {
+    "word": "oversee",
+    "pron": "[óuvərsi:]",
+    "pos": "v.",
+    "meaning": "v. 감독하다",
+    "tip": "[[b]]over[[/b]](위에서) 직원들을 [[b]]see[[/b]](보면서) [[r]]감독하다[[/r]]",
+    "toeicExpr": [
+     "oversee operations 운영을 감독하다  oversee a project 프로젝트를 감독하다",
+     "oversee staff/employees 직원을 감독하다"
+    ],
+    "examVar": [
+     {
+      "note": "overlook(간과하다), look over(검토하다), oversee(감독하다)를 구분하는 문제가 출제되었다.",
+      "en": "The manager apologized because he accidentally _______ an important error in the contract during the final review.",
+      "opt": "overlooked (O)  looked over (X)  oversaw (X)",
+      "ko": "관리자는 최종 검토 중에 계약서의 중요한 오류를 실수로 간과했기 때문에 사과했다."
+     }
+    ]
+   },
+   {
+    "word": "overtime",
+    "pron": "[óuvərtàim]",
+    "pos": "n.",
+    "meaning": "n. 초과근무, 야근",
+    "tip": "[[b]]over[[/b]](~ 이상으로) + [[b]]time[[/b]](시간)] 정해진 [[r]]시간 이상으로[[/r]] 근무, 즉 [[r]]초과근무[[/r]], [[r]]야근[[/r]]",
+    "toeicExpr": [
+     "work overtime 초과근무하다, 야근하다",
+     "overtime hours 초과근무 시간  overtime pay 초과근무 수당"
+    ]
+   },
+   {
+    "word": "overwhelm",
+    "pron": "[óuvərhwélm]",
+    "pos": "v.",
+    "meaning": "v. 압도하다",
+    "tip": "내 [[b]]over[[/b]](위에서) 혀를 [[b]]웰름[[/b]](낼름) 거리는 커다란 뱀이 나를 [[r]]압도하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "overwhelming",
+      "meaning": "압도적인, 너무도 강력한"
+     }
+    ],
+    "toeicExpr": [
+     "be overwhelmed with work 일에 압도되다",
+     "be overwhelmed by demand 수요 폭증으로 감당이 안 되다",
+     "overwhelming response 압도적인 반응"
+    ]
+   },
+   {
+    "word": "overcome",
+    "pron": "[òuvərkʌ́m]",
+    "pos": "v.",
+    "meaning": "v. 극복하다",
+    "tip": "어려운 고비 등을 [[b]]over[[/b]](~위로) 넘어 [[b]]come[[/b]](오다), 즉 [[r]]극복하다[[/r]]",
+    "toeicExpr": [
+     "overcome difficulties 어려움을 극복하다",
+     "overcome challenges 도전을 이겨내다"
+    ]
+   },
+   {
+    "word": "overhead",
+    "pron": "[óuvərhèd]",
+    "meaning": "1. a. 머리 위의  ad. 머리 위에\n2. n. (임대료 · 공과금 · 사무용품비 등의) 운영비, 고정비",
+    "tip": "① [[b]]head[[/b]](머리) [[b]]over[[/b]](위에), 즉 [[r]]머리 위의, 머리 위에[[/r]]\n② 옛날에는 [[r]]머리 위의[[/r]] 사무실 천장에 전선, 전등 등이 있어 그것에 대한 비용에서 유래된 말로 [[r]]운영비, 고정비[[/r]]",
+    "toeicExpr": [
+     "overhead lighting 천장 조명",
+     "overhead compartment 기내 수하물 보관함",
+     "overhead costs 운영비  overhead expenses 고정(운영) 비용",
+     "fixed overhead 고정 운영비  reduce overheads 운영비를 줄이다"
+    ],
+    "examVar": [
+     {
+      "en": "The company plans to cut operational expenses by reducing office rent and other fixed overheads.",
+      "ko": "회사는 사무실 임대료와 기타 고정 간접비를 줄여 운영비를 절감할 계획이다."
+     }
+    ]
+   },
+   {
+    "word": "overtake",
+    "pron": "[óuvərtéik]",
+    "pos": "v.",
+    "meaning": "v. ~을 따라잡다, 앞지르다",
+    "tip": "도둑을 따라가 [[b]]over[[/b]](위로) 점프하여 [[b]]take[[/b]](잡다), 즉 [[r]]따라잡다, 앞지르다[[/r]]",
+    "toeicExpr": [
+     "overtake the market leader 시장 선두를 앞지르다",
+     "overtake a competitor 경쟁자를 앞지르다"
+    ]
+   },
+   {
+    "word": "overseas",
+    "pron": "[óuvərsí:z]",
+    "meaning": "a. 해외의  ad. 해외로",
+    "tip": "[[b]]sea[[/b]](바다) [[b]]over[[/b]](너머) [[r]]해외의, 해외로[[/r]]",
+    "toeicExpr": [
+     "overseas branch/office 해외 지사/사무소",
+     "overseas market/shipment/business trip 해외 시장/배송/출장",
+     "work overseas 해외에서 근무하다"
+    ]
+   },
+   {
+    "word": "overall",
+    "pron": "[óuvərɔ́:l]",
+    "pos": "ad./a.",
+    "meaning": "ad. 전체적으로 a. 전반적인",
+    "tip": "[[b]]all[[/b]](모든) 것에 [[b]]over[[/b]](걸쳐서), 즉 [[r]]전체적으로[[/r]], [[r]]전반적인[[/r]]",
+    "toeicExpr": [
+     "overall performance/condition 전반적인 성과/상태",
+     "overall cost 총비용"
+    ]
+   },
+   {
+    "word": "overview",
+    "pron": "[óuvərvjú:]",
+    "pos": "n.",
+    "meaning": "n. 요약, 개요",
+    "tip": "글 전체에 [[b]]over[[/b]](걸쳐서) [[b]]view[[/b]](보다), 즉 [[r]]요약, 개요[[/r]]",
+    "toeicExpr": [
+     "provide an overview 개요를 제공하다",
+     "overview of the project 프로젝트 개요"
+    ]
+   },
+   {
+    "word": "ensure",
+    "pron": "미[inʃúər] 영[inʃɔ́:(r)]",
+    "pos": "v.",
+    "meaning": "v. 보장하다, 확실히 ~하게 하다",
+    "tip": "[[b]]en[[/b]](동·접) + [[b]]sure[[/b]](확신하는)] 확신이 들게 하다, 즉 [[r]]보장하다, 확실히 ~하게 하다[[/r]]",
+    "toeicExpr": [
+     "ensure quality/safety 품질을/안전을 보장하다",
+     "ensure that ~ ~임을 확실히 하다, ~이 이루어지도록 보장하다  Please ensure that all documents are properly signed before submission. 모든 서류가 제출 전에 올바르게 서명되었는지 확인해 주세요."
+    ]
+   },
+   {
+    "word": "enroll",
+    "pron": "[inróul]",
+    "pos": "v.",
+    "meaning": "v. 등록하다, 입학시키다",
+    "tip": "① 유치원 [[b]]en[[/b]](안에) 들어가 [[b]]놀[[/b]]라고 유치원에 [[r]]등록하다, 입학시키다[[/r]]\n②[[b]]en[[/b]](안에) + [[b]]roll[[/b]](두루마리, 말다)] 옛날에는 두루마리 안에 이름을 써서 기록을 보관한 데서 유래한 말",
+    "derivatives": [
+     {
+      "word": "enrollment",
+      "meaning": "등록, 입학"
+     }
+    ],
+    "toeicExpr": [
+     "enroll in a course/program 과정(강좌)에/프로그램에 등록하다",
+     "online enrollment 온라인 등록",
+     "course enrollment 강좌 등록"
+    ]
+   },
+   {
+    "word": "envelope",
+    "pron": "[énvəlòup]",
+    "pos": "n.",
+    "meaning": "n. 봉투",
+    "tip": "[[b]]en[[/b]](안)을 [[b]]벌립[[/b]](벌려) 서류를 넣는 [[r]]봉투[[/r]]",
+    "toeicExpr": [
+     "put in an envelope 봉투에 넣다  sealed envelope 봉인된 봉투"
+    ]
+   },
+   {
+    "word": "enable",
+    "pron": "[inéibl]",
+    "pos": "v.",
+    "meaning": "v. ~할 수 있게 하다",
+    "tip": "[[b]]en[[/b]](동·접) + [[b]]able[[/b]](~할 수 있는)] [[r]]~할 수 있게 하다[[/r]]",
+    "toeicExpr": [
+     "enable A to부정사: A가 ~할 수 있게 하다 (5형식)  enable customers to access services 고객이 서비스를 이용할 수 있게 하다",
+     "be enabled to부정사: ~할 수 있게 되다 (수동형)  be enabled to submit applications online 온라인으로 지원서를 제출할 수 있게 되다"
+    ]
+   },
+   {
+    "word": "enforce",
+    "pron": "[infɔ́:rs]",
+    "pos": "v.",
+    "meaning": "v. 강제하다, (법률·규정을) 집행하다, 시행하다",
+    "tip": "[[b]]en[[/b]](동·접) + [[b]]force[[/b]](힘)] 힘으로 ~하게 하다, 즉 [[r]]강제하다, 집행하다[[/r]]",
+    "toeicExpr": [
+     "enforce compliance 준수를 강제하다",
+     "enforce regulations 규정을 집행하다",
+     "enforce safety standards 안전 기준을 시행하다"
+    ]
+   },
+   {
+    "word": "employ",
+    "pron": "[implɔ́i]",
+    "pos": "v.",
+    "meaning": "v. 고용하다, (자원·기술·방법 등을) 활용하다",
+    "tip": "① \"이 방 [[b]]em[[/b]](안에) 짐을 [[b]]플로이[[/b]](풀러) 놓고 당장 일해!\" 하고 식당 종업원으로 [[r]]고용하다[[/r]]\n② 자원, 기술, 방법 등을 [[r]]고용한다[[/r]]는 것은 그것을 [[r]]활용하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "employment",
+      "meaning": "고용"
+     },
+     {
+      "word": "employer",
+      "meaning": "고용주"
+     },
+     {
+      "word": "employee",
+      "meaning": "피고용인, 종업원"
+     },
+     {
+      "word": "unemployment",
+      "meaning": "실업, 실직"
+     }
+    ],
+    "toeicExpr": [
+     "employ workers/staff 근로자를/직원을 고용하다",
+     "employ technology/resources 기술을/자원을 활용하다",
+     "full-time/part-time employment 정규직/시간제 고용  seek employment 일자리를 찾다  stable employment 안정된 고용",
+     "local/current employer 지역/현재 고용주",
+     "experienced employee 숙련된 직원  employee satisfaction 직원 만족도",
+     "high unemployment rate 높은 실업률  face unemployment 실직을 겪다"
+    ],
+    "examVar": [
+     {
+      "en": "To improve efficiency, the company decided to employ advanced data-analysis techniques in its marketing strategy.",
+      "ko": "효율성을 높이기 위해 회사는 마케팅 전략에 고급 데이터 분석 기법을 활용하기로 결정했다.",
+      "note": "1."
+     },
+     {
+      "en": "Under labor law, the ______ is required to provide a safe working environment for all staff members.",
+      "opt": "employer (O)  employee (X)",
+      "ko": "근로기준법에 따라 고용주는 모든 직원에게 안전한 근무 환경을 제공해야 한다.",
+      "note": "2. employer와 employee를 구분하는 문제가 자주 출제되었다."
+     }
+    ]
+   },
+   {
+    "word": "enlarge",
+    "pron": "[inlɑ́:rdʒ]",
+    "pos": "v.",
+    "meaning": "확대하다",
+    "tip": "[[b]]en[[/b]](동·접) + [[b]]large[[/b]](큰, 넓은)] [[r]]확대하다[[/r]]",
+    "toeicExpr": [
+     "enlarge a photo 사진을 확대하다  enlarge a business 사업을 확장하다",
+     "enlarge market/facilities 시장을/시설을 확대하다"
+    ]
+   },
+   {
+    "word": "empower",
+    "pron": "[impáuər]",
+    "pos": "v.",
+    "meaning": "권한을 주다, 자격을 주다",
+    "tip": "[[b]]em[[/b]](동·접) + [[b]]power[[/b]](힘)] 힘을 갖게 하다, 즉 [[r]]권한을 주다, 자격을 주다[[/r]]",
+    "toeicExpr": [
+     "empower someone to부정사: …에게 ~할 권한(자격)을 부여하다 (5형식)",
+     "empower managers to approve budgets 관리자에게 예산 승인 권한을 주다",
+     "be empowered to부정사: ~할 권한을 부여받다 (수동형)",
+     "be empowered to oversee operations 운영을 감독할 권한을 부여받다"
+    ]
+   },
+   {
+    "word": "enhance",
+    "pron": "미[inhǽns] 영[inhɑ́:ns]",
+    "pos": "v.",
+    "meaning": "(질·능력 등을) 높이다, 향상시키다",
+    "tip": "닭장 [[b]]en[[/b]](안의) [[b]]hen[[/b]](암탉)을 먹고 힘을 [[b]]쓰[[/b]]다, 즉 힘을 [[r]]높이다, 향상시키다[[/r]]",
+    "toeicExpr": [
+     "enhance efficiency/productivity/quality 효율성을/생산성을/품질을 높이다",
+     "enhance user experience 사용자 경험을 향상시키다"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 57,
+  "title": "",
+  "words": [
+   {
+    "word": "outstanding",
+    "pron": "[àutstǽndiŋ]",
+    "pos": "a.",
+    "meaning": "1. 눈에 확 띄는, 뛰어난  2. 미지급의, 미해결된",
+    "tip": "① 남들보다 [[b]]out[[/b]](밖으로) [[b]]standing[[/b]](서 있는), 즉 [[r]]눈에 확 띄는, 뛰어난[[/r]]\n② [[r]]미지급[[/r]]의 빚이 있어 빚쟁이들이 문 [[b]]out[[/b]](밖에) [[b]]standing[[/b]](서 있는)",
+    "toeicExpr": [
+     "outstanding performance/achievement 뛰어난 성과/업적",
+     "outstanding balance/invoice/payment/bill 미지급 잔액/청구서/금액/청구서",
+     "outstanding order 미처리 주문",
+     "outstanding issue 미해결 문제"
+    ],
+    "examVar": [
+     {
+      "en": "Please make sure to pay any outstanding balances before closing your account.",
+      "ko": "계정을 해지하기 전에 미지불 잔액을 모두 납부해 주세요."
+     }
+    ]
+   },
+   {
+    "word": "outspoken",
+    "pron": "[àutspóukan]",
+    "pos": "a.",
+    "meaning": "솔직한, 꾸밈없이 말하는",
+    "tip": "꾸밈없이 [[b]]out[[/b]](밖으로) 다 [[b]]spoken[[/b]](말하는), 즉 [[r]]솔직한, 꾸밈없이 말하는[[/r]]",
+    "toeicExpr": [
+     "outspoken opinion 솔직한 의견",
+     "outspoken critic 솔직한 비평가"
+    ]
+   },
+   {
+    "word": "outbreak",
+    "pron": "[àutbréik]",
+    "pos": "n.",
+    "meaning": "(전쟁·질병 등의) 발생, 발발",
+    "tip": "잠재해 있던 것이 세상 [[b]]out[[/b]](밖으로) [[b]]break[[/b]](깨고) 나옴, 즉 [[r]](전쟁·질병 등의) 발생, 발발[[/r]]",
+    "toeicExpr": [
+     "outbreak of disease/fire 질병/화재 발생"
+    ]
+   },
+   {
+    "word": "outline",
+    "pron": "[áutlàin]",
+    "pos": "n.",
+    "meaning": "윤곽, 개요",
+    "tip": "내용 전체를 이루고 있는 [[b]]out[[/b]](밖의) [[b]]line[[/b]](선), 즉 [[r]]윤곽, 개요[[/r]]",
+    "toeicExpr": [
+     "project outline 프로젝트 개요  brief outline 간단한 개요"
+    ]
+   },
+   {
+    "word": "outer",
+    "pron": "[áutər]",
+    "pos": "a.",
+    "meaning": "a. 바깥쪽의, 외부의",
+    "tip": "[[b]]out[[/b]](밖의) + [[b]]er[[/b]] [[r]]바깥쪽의, 외부의[[/r]]",
+    "toeicExpr": [
+     "outer layer 바깥층, 외층  outer surface 외부 표면  outer wall 외벽"
+    ]
+   },
+   {
+    "word": "outlook",
+    "pron": "[áutlùk]",
+    "pos": "n.",
+    "meaning": "n. 1. (미래에 대한) 전망  2. (보이는) 전망, 경치",
+    "tip": "[[b]]out[[/b]](밖으로) [[b]]look[[/b]](보이는) [[r]]전망, 미래에 대한 전망[[/r]]",
+    "toeicExpr": [
+     "economic/market/long-term outlook 경제/시장/장기적 전망",
+     "beautiful outlook 아름다운 경치",
+     "outlook over the sea 바다가 내려다보이는 전망"
+    ]
+   },
+   {
+    "word": "outcome",
+    "pron": "[áutkʌm]",
+    "pos": "n.",
+    "meaning": "n. 결과, 성과",
+    "tip": "안에서 작업하여 [[b]]out[[/b]](밖으로) [[b]]come[[/b]](나온) [[r]]결과, 성과[[/r]]",
+    "toeicExpr": [
+     "positive/negative outcome 긍정적인/부정적인 결과",
+     "research outcome 연구 성과"
+    ]
+   },
+   {
+    "word": "output",
+    "pron": "[áutpùt]",
+    "pos": "n.",
+    "meaning": "n. 생산, 출력, 생산량",
+    "tip": "기계가 생산한 물건을 [[b]]out[[/b]](밖으로) [[b]]put[[/b]](내놓아) [[r]]생산, 출력[[/r]]",
+    "derivatives": [
+     {
+      "word": "input",
+      "meaning": "투입, 입력"
+     }
+    ],
+    "toeicExpr": [
+     "production output 생산량  increase/reduce output 생산을 늘리다/줄이다  high/low output 높은/낮은 생산량",
+     "labor/energy input 노동/에너지 투입"
+    ]
+   },
+   {
+    "word": "outdated",
+    "pron": "[àutdéitid]",
+    "pos": "a.",
+    "meaning": "a. 시대에 뒤진, 구식의",
+    "tip": "현재 [[b]]date[[/b]](날짜) 수준 [[b]]out[[/b]](밖에) 있는, 즉 [[r]]시대에 뒤진, 구식의[[/r]]",
+    "derivatives": [
+     {
+      "word": "out of date",
+      "meaning": "구식의, 낡은"
+     }
+    ],
+    "toeicExpr": [
+     "outdated technology 구식 기술  outdated equipment 낡은 장비",
+     "out-of-date equipment 구식 장비  out-of-date software 구형 소프트웨어"
+    ]
+   },
+   {
+    "word": "outfit",
+    "pron": "[áutfit]",
+    "pos": "n.",
+    "meaning": "n. 옷, 복장",
+    "tip": "집 [[b]]out[[/b]](밖으로) 나갈 때 입는 [[b]]fit[[/b]](딱 맞는) [[r]]옷, 복장[[/r]]",
+    "toeicExpr": [
+     "business/casual/sports outfit 비즈니스/캐주얼/운동 복장"
+    ]
+   },
+   {
+    "word": "outmoded",
+    "pron": "[àutmóudid]",
+    "pos": "a.",
+    "meaning": "a. 구식의, 시대에 뒤떨어진",
+    "tip": "[[b]]out[[/b]](밖으로) + [[b]]mode[[/b]](방식) + [[b]]ed[[/b]] 현재에서 밖으로 벗어난 방식의, 즉 [[r]]구식의, 시대에 뒤떨어진[[/r]]",
+    "derivatives": [
+     {
+      "word": "mode",
+      "meaning": "1. 방법, 방식  2. (기계·장치의) 모드, 상태"
+     }
+    ],
+    "toeicExpr": [
+     "outmoded system 구식 시스템  outmoded policy 시대에 뒤떨어진 정책",
+     "mode of operation/payment 작동/지불 방식",
+     "automatic/manual mode 자동/수동 모드"
+    ]
+   },
+   {
+    "word": "outlet",
+    "pron": "[áutlet]",
+    "pos": "n.",
+    "meaning": "n. 1. 배출구  2. 콘센트  3. 아웃렛, 판매점, 직영점",
+    "tip": "[[b]]out[[/b]](out) + [[b]]let[[/b]](하게 하다)] 찌꺼기나 전기가 [[b]]out[[/b]](밖으로) 나가도록 [[b]]let[[/b]](허락하는) 것, 즉 [[r]]배출구, 콘센트[[/r]]",
+    "toeicExpr": [
+     "power outlet 전기 콘센트  air outlet 통풍구, 배기구",
+     "factory outlet 공장 직영점  retail outlet 소매점, 판매점"
+    ]
+   },
+   {
+    "word": "outright",
+    "pron": "[áutràit]",
+    "pos": "ad.",
+    "meaning": "ad. 완전히, 단번에",
+    "tip": "[[b]]out[[/b]](강조: 완전히) [[b]]right[[/b]](바로), 즉 [[r]]완전히, 단번에[[/r]]",
+    "toeicExpr": [
+     "deny outright 완전히 부인하다  ban outright 완전히 금지하다  reject outright 단칼에 거절하다"
+    ]
+   },
+   {
+    "word": "outgoing",
+    "pron": "[áutgóuiŋ]",
+    "pos": "a.",
+    "meaning": "a. 1. 나가는, 발송되는  2. 외향적인",
+    "tip": "① [[b]]out[[/b]](밖으로) + [[b]]go[[/b]](가다) + [[b]]ing[[/b]](형·어)] 밖으로 [[r]]나가는, 발송되는[[/r]]\n② [[b]]out[[/b]](밖으로) [[b]]going[[/b]](가는) 성격은 [[r]]외향적인[[/r]] 성격",
+    "toeicExpr": [
+     "outgoing mail 발송 우편물  outgoing shipments 발송되는 화물  outgoing calls 발신 전화  outgoing messages 발신 메시지",
+     "outgoing personality 외향적인 성격"
+    ]
+   },
+   {
+    "word": "disapprove",
+    "pron": "[dìsəprúːv]",
+    "pos": "v.",
+    "meaning": "찬성하지 않다, 못마땅해하다",
+    "tip": "[[b]]dis[[/b]](not) + [[b]]approve[[/b]](승인하다)] [[r]]찬성하지 않다, 못마땅해하다[[/r]]",
+    "toeicExpr": [
+     "disapprove of decision/proposal 결정에/제안에 찬성하지 않다"
+    ]
+   },
+   {
+    "word": "disorder",
+    "pron": "[disɔ́ːrdər]",
+    "pos": "n.",
+    "meaning": "무질서, 혼란",
+    "tip": "[[b]]order[[/b]](질서)가 있지 [[b]]dis[[/b]](않는), 즉 [[r]]무질서, 혼란[[/r]]",
+    "toeicExpr": [
+     "social disorder 사회적 혼란   public disorder 공공질서 혼란",
+     "cause disorder in operations 운영에 혼란을 초래하다"
+    ]
+   },
+   {
+    "word": "dislike",
+    "pron": "[disláik]",
+    "pos": "v.",
+    "meaning": "싫어하다",
+    "tip": "[[b]]dis[[/b]](not) + [[b]]like[[/b]](좋아하다)] [[r]]싫어하다[[/r]]",
+    "toeicExpr": [
+     "dislike working overtime 초과근무를 싫어하다",
+     "dislike unnecessary meetings 불필요한 회의를 싫어하다"
+    ]
+   },
+   {
+    "word": "dishonest",
+    "pron": "미[disánist] 영[disɔ́nist]",
+    "pos": "a.",
+    "meaning": "부정직한",
+    "tip": "[[b]]dis[[/b]](not) + [[b]]honest[[/b]](정직한)] [[r]]부정직한[[/r]]",
+    "toeicExpr": [
+     "dishonest behavior/conduct 부정직한 행동/행위"
+    ]
+   },
+   {
+    "word": "discard",
+    "pron": "[diskáːrd]",
+    "pos": "v.",
+    "meaning": "버리다, 폐기하다",
+    "tip": "[[b]]dis[[/b]](away) + [[b]]card[[/b]](카드)] 카드놀이에서 불필요한 [[b]]card[[/b]](카드) 패를 [[b]]dis[[/b]](멀리) [[r]]버리다, 폐기하다[[/r]]",
+    "toeicExpr": [
+     "discard old equipment/materials 오래된 장비를/자재를 폐기하다",
+     "discard unnecessary documents 불필요한 문서를 버리다"
+    ]
+   },
+   {
+    "word": "displace",
+    "pron": "[displéis]",
+    "pos": "v.",
+    "meaning": "대체하다",
+    "tip": "[[b]]dis[[/b]](멀리) 그 [[b]]place[[/b]](위치)에 있던 사람을 보내고 다른 사람으로 [[r]]대체하다[[/r]]",
+    "toeicExpr": [
+     "displace manual labor 수작업을 대체하다",
+     "displace existing systems 기존 시스템을 대체하다"
+    ]
+   },
+   {
+    "word": "disabled",
+    "pron": "[diséibld]",
+    "pos": "a.",
+    "meaning": "1. 장애가 있는, 장애인을 위한   2. 작동하지 않는, 비활성화된",
+    "tip": "[[b]]dis[[/b]](not) + [[b]]able[[/b]](~할 수 있는) + [[b]]d[[/b]](형·어)] ~을 할 수 없게 된, 즉 [[r]]장애가 있는, 작동하지 않는[[/r]]",
+    "derivatives": [
+     {
+      "word": "disability",
+      "meaning": "무능, 장애"
+     }
+    ],
+    "toeicExpr": [
+     "disabled access 장애인용 출입구   disabled parking 장애인 전용 주차구역",
+     "disabled employees/passengers 장애가 있는 직원/승객",
+     "disabled account/feature 비활성화된 계정/기능",
+     "disabled access card 정지된 출입 카드",
+     "people with disabilities 장애인들"
+    ]
+   },
+   {
+    "word": "disagree",
+    "pron": "[disəgríː]",
+    "pos": "v.",
+    "meaning": "반대하다",
+    "tip": "[[b]]dis[[/b]](not) + [[b]]agree[[/b]](동의하다)] [[r]]반대하다[[/r]]",
+    "toeicExpr": [
+     "disagree with the proposal 제안에 반대하다 (with: ~와 함께하는)",
+     "disagree with the findings 조사 결과에 동의하지 않다"
+    ]
+   },
+   {
+    "word": "discontinue",
+    "pron": "[dìskəntínjuː]",
+    "pos": "v.",
+    "meaning": "중지하다, 중단하다",
+    "tip": "[[b]]dis[[/b]](not) + [[b]]continue[[/b]](계속하다)] [[r]]중지하다[[/r]]",
+    "toeicExpr": [
+     "discontinue a product 제품을 단종하다",
+     "discontinue service 서비스를 중단하다",
+     "temporarily discontinue 일시적으로 중단하다"
+    ]
+   },
+   {
+    "word": "disclose",
+    "pron": "[disklóuz]",
+    "pos": "v.",
+    "meaning": "드러내다, 폭로하다",
+    "tip": "[[b]]dis[[/b]](not) + [[b]]close[[/b]](닫다)] 닫지 않고 [[r]]드러내다, 폭로하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "disclosure",
+      "meaning": "공개, 공시"
+     }
+    ],
+    "toeicExpr": [
+     "disclose information/details 정보를/세부사항을 공개하다",
+     "disclose personal information 개인정보를 공개하다",
+     "public disclosure 대중 공개   full disclosure 전면 공개",
+     "mandatory disclosure 의무 공시"
+    ]
+   }
+  ]
+ },
+ {
+  "day": 58,
+  "title": "",
+  "words": [
+   {
+    "word": "unlimited",
+    "pron": "[ʌnlímitid]",
+    "pos": "a.",
+    "meaning": "무제한의, 무한한",
+    "tip": "[[b]]un[[/b]](not) + [[b]]limited[[/b]](한정된, 제한된)] 제한되지 않은, 즉 [[r]]무제한의, 무한한[[/r]]",
+    "toeicExpr": [
+     "unlimited access/use 무제한 접근/사용",
+     "unlimited potential/possibilities 무한한 잠재력/가능성"
+    ]
+   },
+   {
+    "word": "uncertain",
+    "pron": "[ʌnsə́ːrtn]",
+    "pos": "a.",
+    "meaning": "불확실한",
+    "tip": "[[b]]un[[/b]](not) + [[b]]certain[[/b]](확실한)] 확실하지 않은, 즉 [[r]]불확실한[[/r]]",
+    "toeicExpr": [
+     "uncertain future/outcome 불확실한 미래/결과"
+    ]
+   },
+   {
+    "word": "uncover",
+    "pron": "[ʌnkʌ́vər]",
+    "pos": "v.",
+    "meaning": "알아내다, 밝혀내다",
+    "tip": "[[b]]un[[/b]](not) + [[b]]cover[[/b]](덮개)] 덮개를 없애고 그 안에 있는 것을 [[r]]알아내다, 밝혀내다[[/r]]",
+    "toeicExpr": [
+     "uncover hidden costs 숨겨진 비용을 발견하다",
+     "uncover the cause of a problem 문제의 원인을 밝혀내다"
+    ]
+   },
+   {
+    "word": "unlock",
+    "pron": "미[ʌnlάːk] 영[ʌnlɔ́k]",
+    "pos": "v.",
+    "meaning": "열다, 자물쇠를 열다",
+    "tip": "[[b]]un[[/b]](not) + [[b]]lock[[/b]](잠그다)] [[r]]열다, 자물쇠를 열다[[/r]]",
+    "toeicExpr": [
+     "unlock the door/safe 문을/금고를 열다"
+    ]
+   },
+   {
+    "word": "unlikely",
+    "pron": "[ʌnláikli]",
+    "pos": "a.",
+    "meaning": "있음직하지 않은, ~일 것 같지 않은",
+    "tip": "[[b]]un[[/b]](not) + [[b]]like[[/b]](~같은) + [[b]]ly[[/b]]] [[r]]있음직하지 않은, ~일 것 같지 않은[[/r]]",
+    "toeicExpr": [
+     "be unlikely to do ~일 것 같지 않다",
+     "be unlikely to meet expectations 기대를 충족할 가능성이 낮다",
+     "be unlikely to receive approval 승인을 받을 가능성이 낮다",
+     "It is unlikely that ~ ~일 것 같지 않다",
+     "It is unlikely that the project will be completed on time. 그 프로젝트가 제시간에 완료될 것 같지 않다.",
+     "be likely to do ~할 가능성이 있다",
+     "be likely to affect sales 매출에 영향을 줄 가능성이 있다",
+     "be likely to result in delays 지연을 초래할 가능성이 있다"
+    ]
+   },
+   {
+    "word": "uneasy",
+    "pron": "[ʌníːzi]",
+    "pos": "a.",
+    "meaning": "불안한, 우려되는",
+    "tip": "[[b]]un[[/b]](not) + [[b]]easy[[/b]](마음 편한)] [[r]]불안한, 우려되는[[/r]]",
+    "toeicExpr": [
+     "feel uneasy about the results 결과에 대해 불안해하다",
+     "be uneasy about market conditions 시장 상황에 대해 불안하다"
+    ],
+    "examVar": [
+     {
+      "en": "Several staff members said they felt uneasy about the company's upcoming restructuring plans.",
+      "ko": "여러 직원들은 회사의 다가오는 구조조정 계획에 대해 마음이 편치 않다고 말했다."
+     }
+    ]
+   },
+   {
+    "word": "unfold",
+    "pron": "[ʌnfóuld]",
+    "pos": "v.",
+    "meaning": "1. 펴다, 펼치다  2. (어떤 내용이 서서히) 펼쳐지다, 밝혀지다",
+    "tip": "[[b]]un[[/b]](not) + [[b]]fold[[/b]](접다)] [[r]]펴다[[/r]]",
+    "toeicExpr": [
+     "unfold a document 문서를 펼치다   unfold a brochure 브로셔를 펼치다",
+     "as the situation unfolds 상황이 전개됨에 따라",
+     "plans unfold as expected 계획이 예상대로 진행되다"
+    ],
+    "examVar": [
+     {
+      "en": "As more details continue to unfold, the company plans to issue an official statement regarding the incident.",
+      "ko": "더 많은 세부 사항이 계속 드러남에 따라 회사는 그 사건에 대한 공식 성명을 발표할 계획이다."
+     }
+    ]
+   },
+   {
+    "word": "unveil",
+    "pron": "[ʌnvèil]",
+    "pos": "v.",
+    "meaning": "베일을 벗기다, 공개하다",
+    "tip": "[[b]]un[[/b]](not) + [[b]]veil[[/b]](베일)] [[r]]베일을 벗기다, 공개하다[[/r]]",
+    "toeicExpr": [
+     "unveil a new product/plan 새로운 제품/계획을 공개하다",
+     "unveil a marketing strategy 마케팅 전략을 공개하다"
+    ]
+   },
+   {
+    "word": "prefer",
+    "pron": "[prifə́ːr]",
+    "pos": "v.",
+    "meaning": "~을 더 좋아하다",
+    "tip": "뷔페에서 다른 음식들보다 [[b]]pre[[/b]](먼저) 퍼 담을 정도로 그 음식을 [[r]]더 좋아하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "preferable",
+      "meaning": "더 바람직한"
+     },
+     {
+      "word": "preferred",
+      "meaning": "더 선호되는"
+     },
+     {
+      "word": "preference",
+      "meaning": "더 좋아함"
+     }
+    ],
+    "toeicExpr": [
+     "prefer + 동명사/to부정사",
+     "She prefers working from home. = She prefers to work from home. 그녀는 재택 근무하는 것을 더 선호한다.",
+     "prefer A to B B보다 A를 더 좋아하다",
+     "prefer coffee to tea 차보다 커피를 더 좋아하다",
+     "preferable method 더 바람직한 방법",
+     "preferred language 선호되는 언어",
+     "preferred payment method 선호되는 결제 방식",
+     "customer preference 고객 선호도",
+     "personal preference 개인적 기호"
+    ],
+    "examVar": [
+     {
+      "en": "1. Many customers prefer online support ______ phone assistance when resolving simple issues.",
+      "opt": "(A) over   (B) than   (C) to   (D) with",
+      "ans": "(C)",
+      "ko": "많은 고객들은 간단한 문제를 해결할 때 전화 상담보다 온라인 지원을 더 선호한다."
+     },
+     {
+      "en": "2. preferable과 preferred를 구분하는 문제가 출제되었다.",
+      "note": "예1) For safety reasons, it is ______ to store chemicals in a cool and dry place. preferable (O) preferred (X) 안전상의 이유로, 화학 물질을 서늘하고 건조한 곳에 보관하는 것이 더 바람직하다.  예2) Online training has become the ______ choice among younger employees due to its flexibility. preferred (O) preferable (X) 온라인 교육은 그 유연성 때문에 젊은 직원들 사이에서 선호되는 선택이 되었다."
+     }
+    ]
+   },
+   {
+    "word": "predict",
+    "pron": "[pridíkt]",
+    "pos": "v.",
+    "meaning": "예언하다, 예측하다",
+    "tip": "[[b]]pre[[/b]](미리) + [[b]]dict[[/b]]('speak'을 뜻하는 어근)] 미리 말하다, 즉 [[r]]예언하다, 예측하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "prediction",
+      "meaning": "예언, 예측"
+     },
+     {
+      "word": "predictable",
+      "meaning": "예측 가능한, 뻔한"
+     },
+     {
+      "word": "unpredictable",
+      "meaning": "예측할 수 없는, 변덕스러운"
+     }
+    ],
+    "toeicExpr": [
+     "predict sales/demand 판매량을/수요를 예측하다",
+     "economic/market prediction 경제/시장 예측",
+     "predictable outcome 예측 가능한 결과",
+     "predictable pattern 예측 가능한 패턴",
+     "unpredictable weather 예측 불가능한 날씨",
+     "unpredictable market conditions 변덕스러운 시장 상황"
+    ]
+   },
+   {
+    "word": "predetermine",
+    "pron": "[pridité:rmin]",
+    "pos": "v.",
+    "meaning": "미리 결정하다",
+    "tip": "[[b]]pre[[/b]](미리) + [[b]]determine[[/b]](결정하다)] [[r]]미리 결정하다[[/r]]",
+    "toeicExpr": [
+     "predetermined schedule 미리 정해진 일정"
+    ]
+   },
+   {
+    "word": "preliminary",
+    "pron": "미[prilíminèri] 영[prilíminəri]",
+    "pos": "a.",
+    "meaning": "예비의, 준비 단계의",
+    "tip": "비가 올 것 같으니 [[r]]예비의[[/r]] 우산을 [[b]]pre[[/b]](미리) 내 [[b]]님이[[/b]] 가방 안에 [[r]]넣어리[[/r]].",
+    "toeicExpr": [
+     "preliminary interview 1차(사전) 면접",
+     "preliminary result/meeting 예비 결과/회의"
+    ]
+   },
+   {
+    "word": "prerequisite",
+    "pron": "[prirékwəzit]",
+    "pos": "n.",
+    "meaning": "선행조건, 전제조건",
+    "tip": "[[b]]pre[[/b]](before) + [[b]]require[[/b]](요구하다) + [[b]]site[[/b]]] 앞서 요구하는 것, 즉 [[r]]전제조건[[/r]]",
+    "toeicExpr": [
+     "meet the prerequisite 선행조건을 충족하다",
+     "essential prerequisite 필수 전제조건",
+     "prerequisite qualification 필수 자격"
+    ]
+   },
+   {
+    "word": "prevent",
+    "pron": "[privént]",
+    "pos": "v.",
+    "meaning": "막다, 방해하다, 예방하다",
+    "tip": "횡단보도를 지나는 아이들을 보호하기 위해 [[b]]pre[[/b]](앞에서) [[b]]벤츠[[/b]] 자동차를 [[r]]막다, 방해하다[[/r]], 사고를 [[r]]예방하다[[/r]]",
+    "derivatives": [
+     {
+      "word": "preventive",
+      "meaning": "방지하는, 예방의"
+     }
+    ],
+    "toeicExpr": [
+     "prevent accidents 사고를 예방하다   prevent damage 손상을 막다",
+     "prevent A from -ing A가 ~하는 것을 막다, 방해하다 (from: ~하는 것으로부터)",
+     "take preventive measures 예방 조치를 취하다"
+    ],
+    "examVar": [
+     {
+      "en": "The new password system will prevent unauthorized users from accessing employee records.",
+      "ko": "새 비밀번호 시스템은 무단 사용자가 직원 기록에 접근하는 것을 막을 것이다."
+     }
+    ]
+   },
+   {
+    "word": "prevail",
+    "pron": "[privéil]",
+    "pos": "v.",
+    "meaning": "1. 이기다, 우세하다  2. 만연하다, 널리 퍼지다",
+    "tip": "① 적이 나보다 [[b]]pre[[/b]](먼저) 칼에 [[b]]베일[[/b]], 즉 내가 [[r]]이기다, 우세하다[[/r]]\n② 농부에 의해 [[b]]풀이 베일[[/b]], 왜냐하면 풀이 [[r]]만연하다, 널리 퍼지다[[/r]]",
+    "toeicExpr": [
+     "prevail over competitors 경쟁자들을 이기다 (over: 상대보다 위에서)",
+     "prevail over challenges 도전에서 승리하다",
+     "prevail among customers 고객들 사이에서 널리 퍼지다",
+     "prevail in the market 시장에서 일반적이다"
+    ]
+   },
+   {
+    "word": "prevalent",
+    "pron": "[prévalant]",
+    "pos": "a.",
+    "meaning": "만연하는, 널리 퍼진",
+    "tip": "반도체 시장에 [[b]]pre[[/b]](먼저) [[b]]발 넌트[[/b]](넣은) 삼성 반도체가 세계에 [[r]]만연하는, 널리 퍼진[[/r]]",
+    "toeicExpr": [
+     "become prevalent 널리 퍼지게 되다",
+     "prevalent belief/practice/trend 널리 퍼진 믿음/관행/경향"
+    ]
+   },
+   {
+    "word": "previous",
+    "pron": "[prí:viəs]",
+    "pos": "a.",
+    "meaning": "이전의, 앞의",
+    "tip": "밥그릇을 언제 비웠어? 벌써 [[r]]이전에[[/r]] 너보다 [[b]]pre[[/b]](먼저) [[b]]비웠수[[/b]]. 난 금방 먹거든.",
+    "derivatives": [
+     {
+      "word": "previously",
+      "meaning": "이전에, 미리"
+     }
+    ],
+    "toeicExpr": [
+     "previous experience/position/meeting 이전 경력/직위/회의",
+     "previous year 전년도"
+    ],
+    "examVar": [
+     {
+      "en": "The report shows that customer complaints have decreased compared to the previous quarter.",
+      "ko": "보고서에 따르면 고객 불만은 이전 분기와 비교해 감소했다."
+     }
+    ]
+   },
+   {
+    "word": "prejudice",
+    "pron": "[prédʒudis]",
+    "pos": "n.",
+    "meaning": "선입관, 편견",
+    "tip": "[[b]]pre[[/b]](미리) + [[b]]jud[[/b]](→ judge: 판단하다) + [[b]]ice[[/b]](명·어)] [[r]]선입관, 편견[[/r]]",
+    "toeicExpr": [
+     "cultural prejudice 문화적 편견",
+     "eliminate prejudice in hiring 채용에서 편견을 없애다"
+    ]
    }
   ]
  }

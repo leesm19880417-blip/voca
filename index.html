@@ -1421,7 +1421,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260623a';
+  window.APP_VERSION='20260623b';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1447,7 +1447,7 @@
 <script src="vocab_secret_top.js?v=20260622l"></script>
 <script src="vocab_kyungsunsik.js?v=20260622l"></script>
 <script src="vocab_kss_toeic.js?v=20260622l"></script>
-<script src="vocab_kstn1.js?v=20260623a"></script>
+<script src="vocab_kstn1.js?v=20260623b"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
 <script src="vocab_legend.js?v=20260622l"></script>
 <script src="sentences.js?v=20260622l"></script>
@@ -2519,7 +2519,9 @@ function renderFlashcard(){
     }).join('')}</div>`:'';
   const fcQuiz=w.quiz?`<div class="fc-quiz">Q. ${esc(w.quiz.sentence)}<br><span class="qopt">(A) ${esc(w.quiz.a)} &nbsp; (B) ${esc(w.quiz.b)}</span> → 정답 <span class="qans">(${esc(w.quiz.answer)})</span></div>`:'';
   const fcMnemonic=w.img?`<div class="fc-mnemonic"><img src="${esc(w.img)}?v=${window.APP_VERSION||''}" alt="연상 그림" loading="lazy" onerror="this.parentNode.style.display='none'"></div>`:'';
-  $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)}${w.sup?`<sup class="wsup">${esc(w.sup)}</sup>`:''} <span class="fc-pos-sm">${posTag(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div>${fcMnemonic}${fcTip}${fcDeriv}${fcExpr}${fcEx}${fcVar}${fcQuiz}`;
+  // 경선식(kstn): 뒷면은 뜻(한글)+연상만. 그 외 책: 기존대로 전체.
+  const fcBackTail = fcKstn ? '' : `${fcDeriv}${fcExpr}${fcEx}${fcVar}${fcQuiz}`;
+  $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)}${w.sup?`<sup class="wsup">${esc(w.sup)}</sup>`:''} <span class="fc-pos-sm">${posTag(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div>${fcMnemonic}${fcTip}${fcBackTail}`;
   $('flip-card').classList.toggle('flipped', flashFlipped);
   // 마스터 진척 표시 (서로 다른 날 MASTER_DAYS회 통과 → 졸업)
   const fcm=$('fc-master');
