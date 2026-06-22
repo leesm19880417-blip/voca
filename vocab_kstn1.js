@@ -5,579 +5,579 @@ const VOCAB_KSTN1 = [
   "words": [
    {
     "word": "share",
-    "meaning": "1. 몫, 지분, 주식 2. 공유하다, 나누다",
+    "pron": "[ʃɛər]",
     "pos": "n./v.",
-    "tip": "[[b]]쉐어→세어[[/b]] 돈을 [[b]]세어[[/b]]서 각자의 [[r]]몫[[/r]]으로 [[r]]나눈다[[/r]]",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "market share 시장 점유율",
-     "share information 정보를 공유하다",
-     "fair share 공정한 몫"
-    ],
-    "examples": [
+    "meaning": "1. n. 몫, 지분, 주식  2. v. 공유하다, 나누다",
+    "tip": "돈을 [[b]]세어[[/b]]서 각자의 [[r]]몫[[/r]]을 [[r]]공유하다[[/r]], [[r]]나누다[[/r]] 그리고 어떤 회사에 대해 갖고 있는 몫을 말하는 [[r]]지분, 주식[[/r]]",
+    "derivatives": [
      {
-      "en": "Each partner will receive an equal share of the profits.",
-      "ko": "각 동업자는 이익의 동등한 몫을 받게 될 것이다."
+      "word": "shareholder",
+      "meaning": "주주 (← share(주식)을 갖고 있는 사람(holder))"
      }
     ],
-    "quiz": {
-     "sentence": "The company decided to ______ its quarterly results with all employees.",
-     "a": "share",
-     "b": "offer",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "share prices 주가 · purchase/sell shares 주식을 매입하다/매도하다",
+     "market share 시장 점유율 (← market에서 차지하는 share(몫))",
+     "share information 정보를 공유하다",
+     "annual shareholders' meeting 연례주주총회"
+    ]
    },
    {
     "word": "offer",
-    "meaning": "제공하다, 제안하다; 제공, 제안, 할인(제안)",
+    "pron": "[ɔːfər]",
     "pos": "v./n.",
-    "tip": "[[b]]오퍼[[/b]] [[b]]오! 퍼[[/b]]주듯이 좋은 조건을 [[r]]제안하고 제공한다[[/r]]",
-    "tipLabel": "💡 연상",
+    "meaning": "v. 제공하다, 제안하다  n. 제공, 제안, 할인(제안)",
+    "tip": "옷을 싸게 거저 [[b]]퍼[[/b]]줄 테니 사세요! 하고 옷을 싼값에 [[r]]제공하다[[/r]], [[r]](싼값을) 제안하다[[/r]]",
     "toeicExpr": [
-     "special offer 특별 할인",
-     "job offer 일자리 제안",
-     "offer a discount 할인을 제공하다"
+     "offer a discount/service 할인을/서비스를 제공하다",
+     "offer a proposal 제안을 하다 · offer to help 돕겠다고 제안하다",
+     "job offer 일자리 제의 · special offer 특별 할인(제공)",
+     "one-time offer 딱 한 번만 제공되는 기회",
+     "promotional offer 판매촉진을 위한 (가격 인하) 제안",
+     "on offer 제공되는, 판매 중인 (← 전치사 on: (계속) ~중인)",
+     "items/services on offer 판매 중인 상품/서비스",
+     "offer A B A에게 B를 제공하다 (4형식 동사로 쓰임)",
+     "The company offered customers a 20% discount on all items. 그 회사는 고객들에게 모든 상품에 대해 20% 할인을 제공했다."
     ],
-    "examples": [
+    "examVar": [
      {
-      "en": "The hotel offers free breakfast to all its guests.",
-      "ko": "그 호텔은 모든 투숙객에게 무료 아침 식사를 제공한다."
+      "en": "The company launched several promotional offers to attract new customers during the holiday season.",
+      "ko": "그 회사는 연휴 기간 동안 새로운 고객을 유치하기 위해 여러 판촉 행사를 시작했다."
+     },
+     {
+      "en": "offer와 provide의 차이를 묻는 문제가 자주 출제되었다.",
+      "note": "offer는 4형식 동사로도 쓰여 <offer 사람 something> 형태로 with 없이 쓰인다.  *provide 사람 with something: …에게 ~을 제공하다",
+      "opt": "The training program will ___ participants with practical skills. → offer (X) / provide (O)",
+      "ko": "그 교육 프로그램은 참가자들에게 실용적인 기술을 제공할 것이다."
      }
-    ],
-    "quiz": {
-     "sentence": "They made a generous ______ to buy the entire building.",
-     "a": "offer",
-     "b": "share",
-     "answer": "A"
-    }
+    ]
    },
    {
     "word": "fix",
-    "meaning": "1. 고정시키다, (일시·가격 등을) 정하다 2. 수리하다, 바로잡다",
+    "pron": "[fiks]",
     "pos": "v.",
-    "tip": "[[b]]픽스[[/b]] 못을 [[b]]픽![[/b]] 박아 [[r]]고정하고[[/r]] 고장난 걸 [[r]]수리한다[[/r]]",
-    "tipLabel": "💡 연상",
+    "meaning": "v. 1. 고정시키다, (일시·가격 등을) 정하다  2. 수리하다, 바로잡다",
+    "tip": "[[b]]픽![[/b]] 쓰러지려는 탑을 막대로 받쳐서 [[r]]고정시키다[[/r]], [[r]]수리하다[[/r]]. 그리고 일시, 가격 등을 [[r]]고정시키다[[/r]], 즉 [[r](일시·가격 등을) 정하다[[/r]]",
     "toeicExpr": [
-     "fix a problem 문제를 해결하다",
-     "fix the price 가격을 정하다",
-     "fix a date 날짜를 정하다"
-    ],
-    "examples": [
-     {
-      "en": "The technician came to fix the broken printer this morning.",
-      "ko": "기술자가 오늘 아침 고장난 프린터를 수리하러 왔다."
-     }
-    ],
-    "quiz": {
-     "sentence": "We need to ______ the leaking pipe before it causes more damage.",
-     "a": "fix",
-     "b": "arrange",
-     "answer": "A"
-    }
+     "fixed price 정가 (← 고정된 가격)",
+     "fix the price/date 가격을/날짜를 정하다",
+     "fix an appointment 약속을 정하다",
+     "fix a door/machine 문을/기계를 수리하다",
+     "fix the schedule 일정을 바로잡다(정하다)"
+    ]
    },
    {
     "word": "board",
-    "meaning": "1. 판자, 게시판 2. (차·배·비행기 등을) 타다",
+    "sup": "1",
+    "pron": "[bɔːrd]",
     "pos": "n./v.",
-    "tip": "[[b]]보드[[/b]] 서핑 [[b]]보드[[/b]] 같은 [[r]]판자[[/r]] 위에 올라 [[r]]타고[[/r]] 파도를 즐긴다",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "bulletin board 게시판",
-     "board a plane 비행기에 탑승하다",
-     "on board 탑승한, 합류한"
-    ],
-    "examples": [
+    "meaning": "1. n. 판자, 게시판  2. v. (차·배·비행기 등을) 타다",
+    "tip": "① black[[r]]board[[/r]]([[r]]칠판[[/r]])는 black(검은) [[r]]판자, 게시판[[/r]]  ② 스키장에서 [[b]]보드[[/b]]를 [[r]]타다[[/r]]. 또는 옛날에는 배에 board(판자)를 대고 그것을 타고 올라가 배에 [[r]]타다[[/r]]",
+    "derivatives": [
      {
-      "en": "Passengers may now board the train at platform three.",
-      "ko": "승객들은 이제 3번 승강장에서 기차에 탑승하실 수 있습니다."
+      "word": "boarding",
+      "meaning": "탑승, 승선"
      }
     ],
-    "quiz": {
-     "sentence": "Please post the notice on the ______ near the entrance.",
-     "a": "board",
-     "b": "branch",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "notice-board = bulletin board 게시판",
+     "board a flight/bus/train 비행기/버스/기차에 타다",
+     "boarding pass 탑승권 · boarding area 탑승장",
+     "on board 탑승한, (사람·짐이) 타고 있는 (on: 교통수단 위에(on) 접촉한 상태)",
+     "passengers on board 탑승 중인 승객",
+     "all items on board 기내에 있는 모든 물품"
+    ]
    },
    {
     "word": "board",
-    "meaning": "이사회, 위원회",
+    "sup": "2",
+    "pron": "[bɔːrd]",
     "pos": "n.",
-    "tip": "[[b]]보드[[/b]] 회사를 [[b]]보도[[/b]]록 감시하는 사람들이 모인 [[r]]이사회·위원회[[/r]]",
-    "tipLabel": "💡 연상",
+    "meaning": "n. 이사회, 위원회",
+    "tip": "직위를 나타내는 [[b]]board[[/b]](판자)인 명패를 앞에 두고 회의하는 [[r]]이사회, 위원회[[/r]]",
     "toeicExpr": [
      "board of directors 이사회",
-     "board meeting 이사회 회의",
-     "board member 이사회 구성원"
+     "advisory board 자문 위원회",
+     "board member 이사회 구성원",
+     "executive board 이사회, 최고 경영진 위원회"
     ],
-    "examples": [
+    "examVar": [
      {
-      "en": "The board approved the new budget at yesterday's meeting.",
-      "ko": "이사회는 어제 회의에서 새 예산을 승인했다."
+      "en": "The merger must receive final approval from the company's board before the contract is signed.",
+      "ko": "그 합병은 계약이 체결되기 전에 회사 이사회의 최종 승인을 받아야 한다."
      }
-    ],
-    "quiz": {
-     "sentence": "The ______ of directors will vote on the merger next week.",
-     "a": "board",
-     "b": "agenda",
-     "answer": "A"
-    }
+    ]
    },
    {
     "word": "aboard",
-    "meaning": "~에 탑승하여, ~에 탑승한; 탑승하여",
-    "pos": "prep./adv.",
-    "tip": "[[b]]어보드[[/b]] [[b]]어! 보드[[/b]](배)에 [[r]]탑승하여[[/r]] 출발한다",
-    "tipLabel": "💡 연상",
+    "pron": "[əbɔːrd]",
+    "pos": "prep./ad.",
+    "meaning": "prep. ~에 탑승하여, ~에 탑승한  ad. 탑승하여",
+    "tip": "① 스키장에서 [[b]]어, 보드[[/b]]를 [[r]]타고[[/r]]  ② [a + board(타다, 탑승하다)] [[r](배, 비행기 등에) 타고, 탑승하여[[/r]]",
     "toeicExpr": [
-     "all aboard 모두 탑승하세요",
-     "welcome aboard 합류를 환영합니다",
-     "go aboard 탑승하다"
+     "passengers aboard the aircraft 항공기에 탑승한 승객들",
+     "all passengers aboard 탑승 중인 모든 승객",
+     "welcome aboard 탑승을 환영하다",
+     "go aboard the plane/ship 비행기에/배에 탑승하다"
     ],
-    "examples": [
+    "examVar": [
      {
-      "en": "Once everyone was aboard, the ferry left the harbor.",
-      "ko": "모두가 탑승하자, 페리는 항구를 떠났다."
+      "en": "Once aboard, refreshments will be served.",
+      "ko": "탑승하고 나면, 음료가 제공됩니다.",
+      "note": "*Once aboard = Once you are aboard"
+     },
+     {
+      "en": "There were more than 300 passengers aboard the vessel.",
+      "ko": "그 선박에는 300명 이상의 승객이 탑승해 있었습니다."
      }
-    ],
-    "quiz": {
-     "sentence": "The captain welcomed all the guests ______ the cruise ship.",
-     "a": "aboard",
-     "b": "belong",
-     "answer": "A"
-    }
+    ]
    },
    {
     "word": "arrange",
-    "meaning": "1. 가지런히 하다, 배열하다 2. 예정을 세우다, 준비하다",
+    "pron": "[əréindʒ]",
     "pos": "v.",
-    "tip": "[[b]]어레인지[[/b]] [[b]]어레인지[[/b]] 꽃을 가지런히 [[r]]배열하고[[/r]] 행사를 [[r]]준비한다[[/r]]",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "arrange a meeting 회의를 잡다",
-     "arrange furniture 가구를 배치하다",
-     "arrange a flight 항공편을 준비하다"
-    ],
-    "examples": [
+    "meaning": "v. 1. 가지런히 하다, 배열하다  2. 예정을 세우다, 준비하다",
+    "tip": "[[b]]오렌지[[/b]]를 [[r]]배열하다[[/r]], 그런 다음 [[b]]오렌지[[/b]]에 오늘 먹을 거, 내일 먹을 거 등과 같이 날짜를 써놓아 먹을 [[r]]예정을 세우다[[/r]]",
+    "derivatives": [
      {
-      "en": "Could you arrange a meeting with the new client for Friday?",
-      "ko": "금요일에 신규 고객과의 회의를 잡아 주시겠어요?"
+      "word": "arrangement",
+      "meaning": "준비, 배열, 배치"
      }
     ],
-    "quiz": {
-     "sentence": "The assistant will ______ all the travel details for the trip.",
-     "a": "arrange",
-     "b": "designate",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "be neatly arranged 깔끔하게 정돈되어 있다 · arrange files 파일을 정리하다",
+     "arrange a meeting 회의를 준비하다 · arrange an appointment 약속을 잡다",
+     "arrange a ride to the hotel 호텔로 가는 교통수단을 마련하다",
+     "make arrangements 준비를 하다 · travel arrangement 여행 준비",
+     "seating arrangements 좌석 배치"
+    ]
    },
    {
     "word": "belong",
-    "meaning": "(~에) 속하다",
+    "pron": "[bilɔːŋ]",
     "pos": "v.",
-    "tip": "[[b]]빌롱[[/b]] [[b]]비룽비룽[[/b]] 떠다니던 풍선이 마침내 주인에게 [[r]]속한다[[/r]]",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "belong to ~에 속하다",
-     "belong here 여기에 속하다",
-     "items that belong 소속된 물품들"
-    ],
-    "examples": [
+    "meaning": "v. (~에) 속하다",
+    "tip": "[[b]]B조[[/b]]에 [[b]]long[[/b]](길게) 줄 서 있는 사람들은 [[r]]B조에 속하다[[/r]]",
+    "derivatives": [
      {
-      "en": "These documents belong to the accounting department.",
-      "ko": "이 서류들은 회계 부서에 속한다."
+      "word": "belongings",
+      "meaning": "소지품, 소유물"
      }
     ],
-    "quiz": {
-     "sentence": "All the equipment in this room ______ to the research team.",
-     "a": "belongs",
-     "b": "arranges",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "belong to ~에 속하다, ~의 소유이다",
+     "This document belongs to the finance department. 이 문서는 재무 부서에 속합니다.",
+     "The equipment belongs to our company. 이 장비는 우리 회사 소유입니다.",
+     "This laptop belongs to Mr. Kim. 이 노트북은 김 씨의 것입니다."
+    ],
+    "examVar": [
+     {
+      "en": "This equipment ___ the marketing department, not the sales department.",
+      "opt": "(A) belong  (B) belongs to  (C) belonging  (D) belonged",
+      "ans": "(B)",
+      "ko": "이 장비는 영업부가 아니라 마케팅 부서에 속한다.",
+      "note": "belong은 자동사로 전치사 to와 함께 쓰여야 한다."
+     }
+    ]
    },
    {
     "word": "volunteer",
-    "meaning": "자원봉사자; 자진하여 하다",
+    "pron": "[vɑ̀ləntíər]",
     "pos": "n./v.",
-    "tip": "[[b]]발런티어[[/b]] [[b]]발 운 티어[[/b]]→발 벗고 운동장에 나선 [[r]]자원봉사자[[/r]]가 [[r]]자진하여[[/r]] 돕는다",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "volunteer work 자원봉사 활동",
-     "volunteer to help 자진하여 돕다",
-     "recruit volunteers 자원봉사자를 모집하다"
-    ],
-    "examples": [
+    "meaning": "n. 자원봉사자  v. 자진하여 하다",
+    "tip": "\"제가 할게요!\" 하고 (제)[[b]]발[[/b]]로 [[r]]튀어나오는[[/r]] [[r]]자원봉사자[[/r]]",
+    "derivatives": [
      {
-      "en": "Many employees volunteer at the local food bank every weekend.",
-      "ko": "많은 직원들이 주말마다 지역 푸드뱅크에서 자원봉사를 한다."
+      "word": "voluntary",
+      "meaning": "자발적인"
+     },
+     {
+      "word": "voluntarily",
+      "meaning": "자발적으로"
      }
     ],
-    "quiz": {
-     "sentence": "Several staff members offered to ______ for the charity event.",
-     "a": "volunteer",
-     "b": "negotiate",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "volunteer work 자원봉사 활동",
+     "volunteer to help 도와주겠다고 자진하다",
+     "volunteer for the local charity event 지역 자선 행사에 자원하다",
+     "voluntary donation 자발적인 기부",
+     "voluntarily participate/agree 자발적으로 참여하다/동의하다"
+    ]
    },
    {
     "word": "domestic",
-    "meaning": "국내의, 가정의",
-    "pos": "adj.",
-    "tip": "[[b]]도메스틱[[/b]] [[b]]도매 스틱[[/b]](과자)은 수입 안 하고 [[r]]국내의[[/r]] [[r]]가정[[/r]]에서 만든다",
-    "tipLabel": "💡 연상",
+    "pron": "[dəméstik]",
+    "pos": "a.",
+    "meaning": "a. 국내의, 가정의",
+    "tip": "국경선 [[b]]담[[/b]]벼락[[b]]에서[[/b]] [[b]]틱![[/b]] 하고 [[r]]국내의[[/r]] 영역으로 들어오는 밀입국자",
     "toeicExpr": [
-     "domestic flight 국내선",
-     "domestic market 국내 시장",
-     "domestic product 국내 제품"
-    ],
-    "examples": [
-     {
-      "en": "The airline expanded its domestic routes across the country.",
-      "ko": "그 항공사는 전국에 걸쳐 국내 노선을 확장했다."
-     }
-    ],
-    "quiz": {
-     "sentence": "The company focuses mainly on the ______ market rather than exports.",
-     "a": "domestic",
-     "b": "diverse",
-     "answer": "A"
-    }
+     "domestic flight 국내선 · domestic market/product 국내 시장/제품"
+    ]
    },
    {
     "word": "caution",
-    "meaning": "조심, 경고; 주의(경고)를 주다",
+    "pron": "[kɔ́ːʃən]",
     "pos": "n./v.",
-    "tip": "[[b]]코션[[/b]] [[b]]코 손[[/b]] 다칠라, [[r]]조심[[/r]]하라고 [[r]]경고[[/r]]한다",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "use caution 주의를 기울이다",
-     "with caution 조심스럽게",
-     "caution sign 주의 표지판"
-    ],
-    "examples": [
+    "meaning": "n. 조심, 경고  v. 주의(경고)를 주다",
+    "tip": "낯선 사람이 [[b]]꼬션?(꼬셔?)[[/b]] 조심해야 해! 즉, [[r]]조심, 경고[[/r]]",
+    "derivatives": [
      {
-      "en": "Drivers should proceed with caution on the icy road.",
-      "ko": "운전자들은 빙판길에서 조심해서 진행해야 한다."
+      "word": "cautious",
+      "meaning": "조심하는, 신중한 (행동·태도가 신중하고 조심스러운)"
+     },
+     {
+      "word": "cautiously",
+      "meaning": "주의 깊게, 조심스럽게"
      }
     ],
-    "quiz": {
-     "sentence": "The sign warns workers to use ______ when handling chemicals.",
-     "a": "caution",
-     "b": "power",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "exercise caution 주의하다 (빈칸에 exercise를 넣는 문제가 출제되었음)",
+     "use extreme caution 매우 주의하다 · caution sign 경고 표지판",
+     "safety caution 안전 경고 · caution on the label 라벨의 경고문",
+     "be cautioned to follow instructions 지시를 따르라는 주의를 받다",
+     "be cautioned to slow down 속도를 줄이라는 주의를 받다",
+     "be cautious about investing/driving 투자에/운전에 조심하다",
+     "cautious approach 신중한 접근",
+     "drive/act cautiously 주의 깊게 운전하다/행동하다",
+     "cautiously optimistic 조심스럽게 낙관적인"
+    ],
+    "examVar": [
+     {
+      "en": "Use extreme caution when swimming in the ocean.",
+      "ko": "바다에서 수영할 때는 세심한 주의를 기울여라."
+     },
+     {
+      "en": "He was cautioned against being late.",
+      "ko": "그는 지각하지 말라고 주의를 받았다."
+     },
+     {
+      "en": "The expert is cautiously optimistic about our chances of success.",
+      "ko": "그 전문가는 우리의 성공 가능성에 대해 조심스럽게 낙관적이다."
+     }
+    ]
    },
    {
     "word": "sold out",
+    "pos": "a.",
     "meaning": "다 팔린, 매진된",
-    "pos": "adj.",
-    "tip": "[[b]]솔드 아웃[[/b]] 물건이 [[b]]쏠려 아웃[[/b]](밖)으로 다 나가서 [[r]]매진된[[/r]]",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "sold out concert 매진된 콘서트",
-     "completely sold out 완전히 매진된",
-     "sold out tickets 매진된 표"
-    ],
-    "examples": [
+    "tip": "[[b]]sold[[/b]](팔린) + [[b]]out[[/b]](강조) 완전히 다 팔린, 즉 [[r]]매진된[[/r]]",
+    "derivatives": [
      {
-      "en": "The concert tickets were sold out within just ten minutes.",
-      "ko": "콘서트 표는 단 10분 만에 매진되었다."
+      "word": "sellout",
+      "meaning": "매진"
+     },
+     {
+      "word": "sell out",
+      "meaning": "매진되다, 매진시키다 (sell은 '팔다, 팔리다', 즉 타동사·자동사 둘 다 쓰인다.)"
      }
     ],
-    "quiz": {
-     "sentence": "We arrived late, but unfortunately the show was already ______.",
-     "a": "sold out",
-     "b": "available",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "completely sold out 완전히 매진된 · almost sold out 거의 매진된",
+     "The concert tickets are sold out. 콘서트 티켓은 매진입니다.",
+     "ticket sellout 티켓 매진",
+     "sell out in minutes 몇 분 만에 매진되다 · sell out completely 완전히 매진되다",
+     "Tickets for the play usually sell out before the weekend. 그 연극 티켓은 보통 주말 전에 매진된다.",
+     "Tickets sold out. 티켓이 매진되었다. (자동사 과거형태로 과거에 매진되었다는 사실을 말함)",
+     "Tickets are sold out. (현재 다 팔린 상태를 뜻함)"
+    ],
+    "examVar": [
+     {
+      "en": "The concert tickets ___ within an hour of going on sale.",
+      "opt": "(A) sold out  (B) are sold out  (C) sellout  (D) selling out",
+      "ans": "(A)",
+      "ko": "콘서트 티켓은 판매 시작 후 한 시간 만에 매진되었다.",
+      "note": "과거 시제이고, 다 팔린 상태(be sold out)가 아니라 다 팔린 동작(sell out)을 나타내므로 (A)가 정답이다."
+     },
+     {
+      "en": "All the rooms at the resort are ___ for the holiday weekend.",
+      "opt": "(A) sold out  (B) sell out  (C) selling out  (D) sellout",
+      "ans": "(A)",
+      "ko": "리조트의 모든 객실은 연휴 기간에 매진되었다.",
+      "note": "'be + sold out' 형태 → '매진된 상태' 표현"
+     }
+    ]
    },
    {
     "word": "branch",
-    "meaning": "1. 나뭇가지 2. (회사나 프랜차이즈의) 지점",
+    "pron": "미[bræntʃ] 영[brɑːntʃ]",
     "pos": "n.",
-    "tip": "[[b]]브랜치[[/b]] 나무 [[b]]브랜치[[/b]]처럼 본사에서 뻗어 나온 [[r]]나뭇가지[[/r]] 같은 [[r]]지점[[/r]]",
-    "tipLabel": "💡 연상",
+    "meaning": "n. 1. 나뭇가지  2. (회사나 프랜차이즈의) 지점",
+    "tip": "① 불엔(불에는) [[b]]취~[[/b]] 하고 잘 타는 [[r]]나뭇가지[[/r]]  ② [[b]]branch[[/b]](나뭇가지)가 갈라져 나가듯 본사에서 갈라져 나간 [[r]]지점[[/r]]",
     "toeicExpr": [
-     "branch office 지점, 지사",
-     "local branch 지역 지점",
-     "open a branch 지점을 개설하다"
-    ],
-    "examples": [
-     {
-      "en": "The bank opened a new branch in the downtown area.",
-      "ko": "그 은행은 시내 지역에 새 지점을 열었다."
-     }
-    ],
-    "quiz": {
-     "sentence": "You can deposit the check at any local ______ of the bank.",
-     "a": "branch",
-     "b": "board",
-     "answer": "A"
-    }
+     "tree branch 나뭇가지",
+     "branch office 지점 · main branch 본점 · bank branch 은행 지점"
+    ]
    },
    {
     "word": "designate",
-    "meaning": "1. 가리키다, 지정하다 2. 임명하다",
+    "pron": "[dézignèit]",
     "pos": "v.",
-    "tip": "[[b]]데지그네이트[[/b]] [[b]]대지(땅)에 그네 있다[[/b]]고 콕 [[r]]지정하고[[/r]] 관리자를 [[r]]임명한다[[/r]]",
-    "tipLabel": "💡 연상",
+    "meaning": "v. 1. 가리키다, 지정하다  2. 임명하다",
+    "tip": "\"[[b]]돼지 그것으로 내에이트[[/b]](내세요!)\" 하며 돼지 무리 중의 하나를 [[r]]가리키다[[/r]], 오늘의 저녁거리로 [[r]]임명하다[[/r]]",
     "toeicExpr": [
-     "designate an area 구역을 지정하다",
-     "designated parking 지정 주차구역",
-     "designate a successor 후임자를 임명하다"
+     "designate a time/place 시간을/장소를 지정하다",
+     "designated places/seat 지정 장소/자리",
+     "officially designated parking zone 공식 지정 주차 구역",
+     "designate the area as non-smoking 그 구역을 금연 구역으로 지정하다",
+     "be designated as the team leader 팀장으로 임명되다",
+     "designate Mr. Lee as the new project leader 이 씨를 새로운 프로젝트 리더로 임명하다"
     ],
-    "examples": [
+    "examVar": [
      {
-      "en": "The manager designated a quiet room for private phone calls.",
-      "ko": "관리자는 개인 통화를 위해 조용한 방 하나를 지정했다."
+      "en": "The meeting is designated to begin at 3 P.M.",
+      "ko": "회의는 오후 3시에 시작하도록 지정되었다."
      }
-    ],
-    "quiz": {
-     "sentence": "The committee will ______ a new chairperson at the meeting.",
-     "a": "designate",
-     "b": "arrange",
-     "answer": "A"
-    }
+    ]
    },
    {
     "word": "eager",
-    "meaning": "간절히 바라는, 열망하는",
-    "pos": "adj.",
-    "tip": "[[b]]이거[[/b]] [[b]]이거! 이거![[/b]] 갖고 싶다고 [[r]]간절히 바라며[[/r]] [[r]]열망한다[[/r]]",
-    "tipLabel": "💡 연상",
+    "pron": "[íːgər]",
+    "pos": "a.",
+    "meaning": "a. 간절히 바라는, 열망하는",
+    "tip": "\"[[b]]이거[[/b]] 사줘요!\" 하며 아이가 장난감을 갖기를 [[r]]간절히 바라는[[/r]]",
     "toeicExpr": [
-     "eager to learn 배우기를 열망하는",
-     "eager for success 성공을 갈망하는",
-     "an eager student 열성적인 학생"
-    ],
-    "examples": [
-     {
-      "en": "The new interns are eager to learn as much as possible.",
-      "ko": "신입 인턴들은 가능한 한 많이 배우기를 열망한다."
-     }
-    ],
-    "quiz": {
-     "sentence": "She was ______ to start her new job at the firm.",
-     "a": "eager",
-     "b": "immediate",
-     "answer": "A"
-    }
+     "eager + to부정사 / eager for + 명사: ~하기를 열망하는",
+     "eager to learn/participate 배우기를/참여하기를 열망하는",
+     "eager for promotion/approval 승진을/승인을 간절히 원하는"
+    ]
    },
    {
     "word": "baggage",
-    "meaning": "(여행할 때의) 수하물, 짐",
+    "pron": "[bǽgidʒ]",
     "pos": "n.",
-    "tip": "[[b]]배기지[[/b]] [[b]]배 기지[[/b]](배꼽)까지 짊어진 무거운 [[r]]수하물·짐[[/r]]",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "baggage claim 수하물 찾는 곳",
-     "carry-on baggage 기내 휴대 수하물",
-     "baggage allowance 수하물 허용량"
-    ],
-    "examples": [
+    "meaning": "n. (여행할 때의) 수하물, 짐",
+    "tip": "여행할 때 가지고 가는 [[b]]bag이지[[/b]](가방이지), 즉 여행용 [[r]]수하물, 짐[[/r]]",
+    "derivatives": [
      {
-      "en": "Please collect your baggage at carousel number five.",
-      "ko": "5번 컨베이어에서 수하물을 찾으시기 바랍니다."
+      "word": "luggage",
+      "meaning": "수하물, 짐"
      }
     ],
-    "quiz": {
-     "sentence": "Passengers can pick up their ______ in the arrivals hall.",
-     "a": "baggage",
-     "b": "certificate",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "carry-on baggage 기내 휴대용 수하물 · baggage claim 수하물 찾는 곳",
+     "extra luggage 추가 수하물 · excess luggage 초과 수하물"
+    ]
    },
    {
     "word": "immediate",
-    "meaning": "1. 즉시의, 당장의 2. (시간·거리·관계 등이) 가장 가까운, 직속의",
-    "pos": "adj.",
-    "tip": "[[b]]이미디엇[[/b]] [[b]]이미 됐었[[/b]]다, [[r]]즉시[[/r]] [[r]]당장[[/r]] 처리되었다",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "immediate attention 즉각적인 관심",
-     "immediate supervisor 직속 상사",
-     "take immediate action 즉각 조치를 취하다"
-    ],
-    "examples": [
+    "pron": "[imíːdiət]",
+    "pos": "a.",
+    "meaning": "a. 1. 즉시의, 당장의  2. (시간·거리·관계 등이) 가장 가까운, 직속의",
+    "tip": "홍길동을 적이 칼로 내려치는 순간 [[r]]즉시의, 당장의[[/r]] 속도로 [[b]]이미 뒤[[/b]]에 적이 [[r]]가까운[[/r]] 위치에 [[b]]있다[[/b]]",
+    "derivatives": [
      {
-      "en": "The issue requires our immediate attention before the deadline.",
-      "ko": "그 문제는 마감 전에 우리의 즉각적인 관심이 필요하다."
+      "word": "immediately",
+      "meaning": "곧, 즉시, 바로"
      }
     ],
-    "quiz": {
-     "sentence": "The customer demanded an ______ refund for the faulty product.",
-     "a": "immediate",
-     "b": "eager",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "immediate response/action/effect 즉각적인 반응/조치/효과",
+     "immediate opening 바로 채용 가능한 자리 (opening: 공석)",
+     "immediate availability 즉시 이용(근무, 제공) 가능",
+     "immediate availability for work 즉시 근무 가능함",
+     "immediate supervisor 직속 상사 · immediate family 직계 가족",
+     "respond immediately 즉시 대응하다 · leave immediately 즉시 떠나다",
+     "immediately after ~ 직후 (= directly after)",
+     "The store reopened immediately after the inspection was completed. 점검이 완료된 직후 가게는 다시 영업을 재개했습니다."
+    ],
+    "examVar": [
+     {
+      "en": "Please obtain approval from your immediate supervisor before proceeding.",
+      "ko": "진행하기 전에 직속 상사의 승인을 받으세요."
+     },
+     {
+      "en": "There is an immediate opening in the accounting department.",
+      "ko": "회계 부서에 즉시 충원이 가능한 공석이 있습니다."
+     },
+     {
+      "en": "Applicants with immediate availability will be given priority.",
+      "ko": "즉시 근무가 가능한 지원자가 우선 고려됩니다."
+     }
+    ]
    },
    {
     "word": "agenda",
-    "meaning": "협의 사항, 안건",
+    "pron": "[ədʒéndə]",
     "pos": "n.",
-    "tip": "[[b]]어젠다[[/b]] [[b]]어! 전다[[/b]](던다)→안건을 회의 탁자에 던져 올린 [[r]]협의 사항·안건[[/r]]",
-    "tipLabel": "💡 연상",
+    "meaning": "n. 협의 사항, 안건",
+    "tip": "[[b]]어젠[[/b]] 결론을 못 내서 오늘 한 번 [[b]]더[[/b]] 협의할 [[r]]협의 사항, 안건[[/r]]",
     "toeicExpr": [
-     "meeting agenda 회의 안건",
-     "item on the agenda 안건 항목",
-     "set the agenda 안건을 정하다"
+     "meeting agenda 회의 안건 · set the agenda 안건을 정하다",
+     "put the issue on the agenda 그 문제를 안건에 올리다"
     ],
-    "examples": [
+    "examVar": [
      {
-      "en": "The first item on the agenda is the annual budget review.",
-      "ko": "안건의 첫 번째 항목은 연간 예산 검토이다."
+      "en": "The project manager added a new item to the meeting agenda.",
+      "ko": "프로젝트 매니저가 회의 안건에 새 항목을 추가했습니다."
      }
-    ],
-    "quiz": {
-     "sentence": "Let's move on to the next item on today's ______.",
-     "a": "agenda",
-     "b": "board",
-     "answer": "A"
-    }
+    ]
    },
    {
     "word": "certificate",
-    "meaning": "증명서, 면허증",
+    "pron": "미[sərtífikeit] 영[sərtífikət]",
     "pos": "n.",
-    "tip": "[[b]]서티피킷[[/b]] [[b]]서, 티(셔츠), 피, 킷[[/b]]까지 다 받았다는 정식 [[r]]증명서·면허증[[/r]]",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "gift certificate 상품권",
-     "birth certificate 출생증명서",
-     "certificate of completion 수료증"
-    ],
-    "examples": [
+    "meaning": "n. 증명서, 면허증",
+    "tip": "① 가로 세로 [[b]]thirty[[/b]](30)미리가 되도록 [[b]]cut[[/b]](자른) [[r]]증명서, 면허증[[/r]]에 붙일 사진  ② [[b]]certain[[/b]](확실한) 것임을 증명하는 것",
+    "derivatives": [
      {
-      "en": "You will receive a certificate after completing the training course.",
-      "ko": "교육 과정을 수료한 후 증명서를 받게 됩니다."
+      "word": "certification",
+      "meaning": "자격 증명, 인증"
+     },
+     {
+      "word": "certify",
+      "meaning": "증명하다, 인증하다"
      }
     ],
-    "quiz": {
-     "sentence": "Each participant earned a ______ upon finishing the program.",
-     "a": "certificate",
-     "b": "baggage",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "gift certificate 상품권 · medical certificate 진단서",
+     "official certificate 공식 증명서",
+     "certification process 인증 절차 · certification exam 자격 시험",
+     "certification requirements 인증 요건",
+     "certify the results 결과를 증명하다 · certify a product 제품을 인증하다"
+    ]
    },
    {
     "word": "closely",
-    "meaning": "1. 바싹, 가까이 2. 면밀히, 주의 깊게",
-    "pos": "adv.",
-    "tip": "[[b]]클로슬리[[/b]] [[b]]끌로(가까이) 슬쩍[[/b]] 다가가 [[r]]바싹[[/r]] [[r]]면밀히[[/r]] 살펴본다",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "work closely 긴밀히 협력하다",
-     "monitor closely 면밀히 감시하다",
-     "look closely 자세히 들여다보다"
-    ],
-    "examples": [
+    "pron": "[klóusli]",
+    "pos": "ad.",
+    "meaning": "ad. 1. 바싹, 가까이  2. 면밀히, 주의 깊게",
+    "tip": "[[b]]close[[/b]](가까운) + [[b]]ly[[/b]](부·어) 어떤 것을 [[r]]가까이[[/r]] 보다, 즉 [[r]]면밀히, 주의 깊게[[/r]] 보다",
+    "derivatives": [
      {
-      "en": "The two departments work closely together on every project.",
-      "ko": "두 부서는 모든 프로젝트에서 긴밀히 협력한다."
+      "word": "close",
+      "meaning": "가까운, 면밀한; 닫다"
      }
     ],
-    "quiz": {
-     "sentence": "Inspectors examined the samples ______ before approving them.",
-     "a": "closely",
-     "b": "immediately",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "examine closely 면밀히 조사하다 · read closely 꼼꼼히 읽다",
+     "work closely with the team 팀과 긴밀히 협력하다",
+     "closely related to the project 그 프로젝트와 밀접하게 관련된",
+     "keep a close eye on market trends 시장 동향을 면밀히 관찰하다"
+    ],
+    "examVar": [
+     {
+      "en": "The supervisor will examine the safety procedures ___ to ensure compliance with regulations.",
+      "opt": "(A) nearly  (B) closely  (C) close  (D) closing",
+      "ans": "(B)",
+      "ko": "감독관은 규정 준수를 보장하기 위해 안전 절차를 면밀히 검사할 것이다."
+     }
+    ]
    },
    {
     "word": "negotiate",
-    "meaning": "협상하다",
+    "pron": "[nigóuʃièit]",
     "pos": "v.",
-    "tip": "[[b]]네고시에이트[[/b]] [[b]]네고(깎기) 시에 있다[[/b]]→가격을 깎으려고 [[r]]협상한다[[/r]]",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "negotiate a contract 계약을 협상하다",
-     "negotiate a deal 거래를 협상하다",
-     "negotiate terms 조건을 협상하다"
-    ],
-    "examples": [
+    "meaning": "v. 협상하다",
+    "tip": "\"8:2로 나누는데 [[b]]니 것이 eight[[/b]](8)이라고? 내 것이 eight(8)이야!\"라고 말하며 [[r]]협상하다[[/r]]",
+    "derivatives": [
      {
-      "en": "Both sides met to negotiate the terms of the new contract.",
-      "ko": "양측은 새 계약 조건을 협상하기 위해 만났다."
+      "word": "negotiation",
+      "meaning": "협상"
      }
     ],
-    "quiz": {
-     "sentence": "The two companies will ______ the price before signing the deal.",
-     "a": "negotiate",
-     "b": "volunteer",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "negotiate a salary 임금을 협상하다",
+     "negotiate a contract 계약을 협상하다",
+     "contract negotiation 계약 협상",
+     "price negotiation 가격 협상"
+    ]
    },
    {
     "word": "diverse",
-    "meaning": "다양한, 가지각색의",
-    "pos": "adv.",
-    "tip": "[[b]]다이버스[[/b]] [[b]]다 이 버스[[/b]]에 각양각색 사람이 타서 [[r]]다양한[[/r]] [[r]]가지각색[[/r]]이다",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "diverse range 다양한 범위",
-     "diverse workforce 다양한 인력",
-     "culturally diverse 문화적으로 다양한"
-    ],
-    "examples": [
+    "pron": "[daivə́ːrs, divə́ːrs]",
+    "pos": "a.",
+    "meaning": "a. 다양한, 가지각색의",
+    "tip": "거리에 사람들이 [[r]]다양한, 가지각색의[[/r]] 옷을 [[b]]다 입었수[[/b]].",
+    "derivatives": [
      {
-      "en": "Our company hires people from diverse cultural backgrounds.",
-      "ko": "우리 회사는 다양한 문화적 배경을 가진 사람들을 고용한다."
+      "word": "diversity",
+      "meaning": "다양성"
+     },
+     {
+      "word": "diversify",
+      "meaning": "다양화하다"
      }
     ],
-    "quiz": {
-     "sentence": "The store offers a ______ selection of imported goods.",
-     "a": "diverse",
-     "b": "domestic",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "diverse range of products 다양한 종류의 제품들",
+     "a wide diversity of products 다양한 제품들",
+     "diversify into new markets 새로운 시장으로 다각화하다",
+     "diversify its products 제품을 다양화하다"
+    ]
    },
    {
     "word": "power",
-    "meaning": "1. 힘, 권한, 권력 2. 전력, 전원",
+    "pron": "[páuər]",
     "pos": "n.",
-    "tip": "[[b]]파워[[/b]] [[b]]파워[[/b]]가 넘치는 [[r]]힘·권력[[/r]]과 콘센트의 [[r]]전력·전원[[/r]]",
-    "tipLabel": "💡 연상",
+    "meaning": "n. 1. 힘, 권한, 권력  2. 전력, 전원",
+    "tip": "① 자신이 결정할 수 있는 [[b]]파워[[/b]](힘), 즉 [[r]]권한, 권력[[/r]]  ② 전기의 [[b]]파워[[/b]](힘), 즉 [[r]]전력, 전원[[/r]]",
     "toeicExpr": [
-     "power outage 정전",
-     "purchasing power 구매력",
-     "power supply 전원 공급"
+     "have the power to approve contracts 계약을 승인할 권한이 있다",
+     "have the power to cancel reservations 예약을 취소할 권한이 있다",
+     "power outage 정전 · power supply 전원 공급",
+     "restore power 전력을 복구하다 · cut off power 전원을 차단하다"
     ],
-    "examples": [
+    "examVar": [
      {
-      "en": "A sudden power outage shut down the entire factory.",
-      "ko": "갑작스러운 정전으로 공장 전체가 멈췄다."
+      "en": "The director has the ___ to approve budget increases.",
+      "opt": "(A) power  (B) energy  (C) force  (D) strength",
+      "ans": "(A)",
+      "ko": "그 이사는 예산 증액을 승인할 권한을 가지고 있다."
+     },
+     {
+      "en": "The factory halted production due to a sudden power outage.",
+      "ko": "그 공장은 갑작스러운 정전으로 생산을 중단했다."
      }
-    ],
-    "quiz": {
-     "sentence": "The storm caused a ______ failure across the whole city.",
-     "a": "power",
-     "b": "caution",
-     "answer": "A"
-    }
+    ]
    },
    {
     "word": "available",
-    "meaning": "이용할 수 있는, 구할 수 있는, 시간 여유가 있는",
-    "pos": "adj.",
-    "tip": "[[b]]어베일러블[[/b]] [[b]]어! 배 일러블[[/b]]→배(船)가 도착했다고 일러주니 지금 [[r]]이용할 수 있는[[/r]]",
-    "tipLabel": "💡 연상",
-    "toeicExpr": [
-     "available for purchase 구매 가능한",
-     "readily available 쉽게 구할 수 있는",
-     "available upon request 요청 시 이용 가능한"
-    ],
-    "examples": [
+    "pron": "[əvéiləbl]",
+    "pos": "a.",
+    "meaning": "a. 이용할 수 있는, 구할 수 있는, 시간 여유가 있는",
+    "tip": "[[b]]어[[/b]], [[b]]배가 일억불[[/b]] 주면 [[r]]구할 수 있는[[/r]], [[r]]이용할 수 있는[[/r]], 이용할 [[r]]시간 여유가 있는[[/r]]",
+    "derivatives": [
      {
-      "en": "The manager is not available for a meeting until next week.",
-      "ko": "그 관리자는 다음 주까지 회의할 시간 여유가 없다."
+      "word": "unavailable",
+      "meaning": "이용할 수 없는, 구할 수 없는, 시간 여유가 되지 않는"
+     },
+     {
+      "word": "availability",
+      "meaning": "이용 가능성, (시간·자원·사람의) 여유, 재고 있음"
      }
     ],
-    "quiz": {
-     "sentence": "The new software will be ______ for download next month.",
-     "a": "available",
-     "b": "sold out",
-     "answer": "A"
-    }
+    "toeicExpr": [
+     "readily available 손쉽게 구할 수 있는",
+     "available resources 이용 가능한 자원",
+     "available upon request 요청 시 제공되는 (← on+명사/동명사: ~하자마자, ~하는 즉시)",
+     "available for purchase 구매 가능한",
+     "The manager is unavailable. 관리자는 만날 수 없다.",
+     "Some items are unavailable. 어떤 품목들은 구할 수 없다(품절이 되었다).",
+     "product availability 제품 재고 여부 · room availability 객실 이용 가능 여부",
+     "check availability 가능 여부를 확인하다 · immediate availability 즉시 사용 가능성"
+    ],
+    "examVar": [
+     {
+      "en": "Are you available now?",
+      "ko": "지금 시간 있으세요?"
+     },
+     {
+      "en": "The professor is available for consultation from 9 to 12 every morning.",
+      "ko": "교수님은 매일 오전 9시에서 12시까지 면담에 응하실 수 있습니다."
+     },
+     {
+      "en": "Only first class is available.",
+      "ko": "일등석밖에 없습니다."
+     },
+     {
+      "en": "We don't have any rooms available.",
+      "ko": "빈방이 없는데요."
+     },
+     {
+      "en": "It is now available for $115.",
+      "ko": "지금은 115달러로 구입할 수 있다."
+     }
+    ]
    }
   ]
  },

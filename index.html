@@ -411,6 +411,19 @@
   .word-card .wquiz { font-size: 0.8em; color: var(--text-mid); margin-top: 8px; background: #eef2ff; border-radius: 6px; padding: 7px 9px; line-height: 1.55; }
   .word-card .wquiz .qopt { color: var(--text-light); }
   .word-card .wquiz .qans { color: #4338ca; font-weight: 800; }
+  .word-card .wsup { font-size: 0.55em; vertical-align: super; color: var(--text-light); font-weight: 700; margin-left: 1px; }
+  /* 기출변형 문제 (주황 박스) */
+  .word-card .wvar { font-size: 0.8em; color: var(--text-mid); margin-top: 8px; background: #fff7ed; border-left: 3px solid #f59e0b; border-radius: 6px; padding: 7px 9px; line-height: 1.55; }
+  .word-card .wvar .vlabel { display: block; font-size: 0.92em; font-weight: 800; color: #d97706; margin-bottom: 4px; }
+  .word-card .wvar .vitem { padding: 2px 0; }
+  .word-card .wvar .vitem + .vitem { border-top: 1px dashed var(--border); margin-top: 5px; padding-top: 6px; }
+  .word-card .wvar .vq { font-weight: 600; color: var(--text); }
+  .word-card .wvar .vopt { color: var(--text-light); margin-top: 1px; }
+  .word-card .wvar .vans { color: #b45309; font-weight: 700; margin-top: 1px; }
+  .word-card .wvar .vans b { color: #b45309; }
+  .word-card .wvar .vko { color: var(--text-mid); margin-top: 1px; }
+  .word-card .wvar .vnote { color: var(--text-light); font-style: italic; margin-top: 2px; }
+  body.dark .word-card .wvar { background: rgba(245,158,11,0.12); }
   /* ===== LC 공부하기 ===== */
   .lc-entry { background: var(--surface); color: var(--text); border:0.5px solid var(--border); border-radius: var(--r); padding: 12px 14px; display:flex; align-items:center; gap:13px; cursor:pointer; box-shadow: var(--shadow-sm); margin-bottom: 8px; transition: box-shadow .2s, border-color .2s; }
   .lc-entry:active { transform: scale(0.99); }
@@ -714,6 +727,20 @@
   .fc-quiz { max-width:460px; text-align:left; font-size:0.86em; color:var(--text-mid); background:var(--primary-light); border-radius:10px; padding:9px 12px; line-height:1.5; }
   .fc-quiz .qopt { color:var(--text-light); } .fc-quiz .qans { font-weight:800; color:var(--success); }
   body.dark .fc-expr { background:var(--surface-2); } body.dark .fc-quiz { background:rgba(99,102,241,0.14); }
+  /* 카드 앞면 발음기호 + 뒷면 파생어/기출변형 */
+  .fc-pron { font-size:0.95em; color:var(--text-light); margin:-2px 0 8px; }
+  .fc-deriv { max-width:460px; text-align:left; font-size:0.86em; color:var(--text-mid); margin-bottom:12px; line-height:1.6; padding:0 2px; }
+  .fc-deriv .dv { color:var(--primary); font-weight:700; }
+  .fc-deriv .dp { color:var(--text-light); font-style:italic; margin:0 3px; }
+  .fc-var { max-width:460px; text-align:left; background:#fff7ed; border-left:3px solid #f59e0b; border-radius:10px; padding:9px 12px; margin-bottom:12px; font-size:0.86em; color:var(--text-mid); line-height:1.5; }
+  .fc-var .vlabel { display:block; font-size:0.82em; font-weight:800; color:#d97706; margin-bottom:4px; }
+  .fc-var .vitem { padding:2px 0; }
+  .fc-var .vitem + .vitem { border-top:1px dashed var(--border); margin-top:5px; padding-top:6px; }
+  .fc-var .vq { font-weight:600; color:var(--text); }
+  .fc-var .vopt { color:var(--text-light); }
+  .fc-var .vans { color:#b45309; font-weight:700; }
+  .fc-var .vnote { color:var(--text-light); font-style:italic; }
+  body.dark .fc-var { background:rgba(245,158,11,0.12); }
   .card-hint { text-align: center; font-size: 0.76em; color: var(--text-light); margin: 12px 0 16px; }
   .card-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
   .card-actions .btn { padding: 13px 10px; font-size: 0.9em; }
@@ -961,7 +988,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260622k" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260622l" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -970,7 +997,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260622k" alt="기초영어 1000문장">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260622l" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -978,7 +1005,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260622k" alt="영어회화 핵심패턴 233">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260622l" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -986,7 +1013,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openD100()">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260622k" alt="왕초보 100일의 기적">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260622l" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
@@ -1394,7 +1421,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260622k';
+  window.APP_VERSION='20260623a';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1413,24 +1440,24 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260622k"></script>
-<script src="vocab_eduwill.js?v=20260622k"></script>
-<script src="vocab_wangchobo.js?v=20260622k"></script>
-<script src="vocab_hackers.js?v=20260622k"></script>
-<script src="vocab_secret_top.js?v=20260622k"></script>
-<script src="vocab_kyungsunsik.js?v=20260622k"></script>
-<script src="vocab_kss_toeic.js?v=20260622k"></script>
-<script src="vocab_kstn1.js?v=20260622k"></script>
-<script src="vocab_noisaegim.js?v=20260622k"></script>
-<script src="vocab_legend.js?v=20260622k"></script>
-<script src="sentences.js?v=20260622k"></script>
-<script src="p233.js?v=20260622k"></script>
-<script src="day100.js?v=20260622k"></script>
-<script src="comm.js?v=20260622k"></script>
-<script src="lc_data.js?v=20260622k"></script>
-<script src="lc_answers.js?v=20260622k"></script>
-<script src="lc_answers_p2.js?v=20260622k"></script>
-<script src="lc_answers_p34.js?v=20260622k"></script>
+<script src="vocabulary.js?v=20260622l"></script>
+<script src="vocab_eduwill.js?v=20260622l"></script>
+<script src="vocab_wangchobo.js?v=20260622l"></script>
+<script src="vocab_hackers.js?v=20260622l"></script>
+<script src="vocab_secret_top.js?v=20260622l"></script>
+<script src="vocab_kyungsunsik.js?v=20260622l"></script>
+<script src="vocab_kss_toeic.js?v=20260622l"></script>
+<script src="vocab_kstn1.js?v=20260623a"></script>
+<script src="vocab_noisaegim.js?v=20260622l"></script>
+<script src="vocab_legend.js?v=20260622l"></script>
+<script src="sentences.js?v=20260622l"></script>
+<script src="p233.js?v=20260622l"></script>
+<script src="day100.js?v=20260622l"></script>
+<script src="comm.js?v=20260622l"></script>
+<script src="lc_data.js?v=20260622l"></script>
+<script src="lc_answers.js?v=20260622l"></script>
+<script src="lc_answers_p2.js?v=20260622l"></script>
+<script src="lc_answers_p34.js?v=20260622l"></script>
 <script>
 'use strict';
 
@@ -1441,7 +1468,7 @@ const BOOKS = [
   { id:'hackers', name:'해커스(토익)',   icon:'📕', color:'#ef4444', data:(typeof VOCAB_HACKERS   !=='undefined'?VOCAB_HACKERS   :[]) },
   { id:'eduwill', name:'에듀윌(토익)',   icon:'📙', color:'#f59e0b', data:(typeof VOCAB_EDUWILL   !=='undefined'?VOCAB_EDUWILL   :[]) },
   { id:'kst',     name:'경선식(토익)', icon:'🚀', color:'#2563eb', data:(typeof VOCAB_KSS_TOEIC !=='undefined'?VOCAB_KSS_TOEIC :[]) },
-  { id:'kstn1',   name:'경선식 최신(토익)①', icon:'🎯', color:'#eab308', unitLabel:'Lecture', data:(typeof VOCAB_KSTN1 !=='undefined'?VOCAB_KSTN1 :[]) },
+  { id:'kstn1',   name:'경선식 최신(토익)', icon:'🎯', color:'#eab308', unitLabel:'Lecture', data:(typeof VOCAB_KSTN1 !=='undefined'?VOCAB_KSTN1 :[]) },
   { id:'ns',      name:'뇌새김(토익)', icon:'💭', color:'#f97316', data:(typeof VOCAB_NOISAEGIM !=='undefined'?VOCAB_NOISAEGIM :[]) },
   { id:'wang',    name:'왕초보영단어',   icon:'📗', color:'#10b981', data:(typeof VOCAB_WANGCHOBO !=='undefined'?VOCAB_WANGCHOBO :[]) },
   { id:'legend',  name:'레전드 필수영단어', icon:'🏆', color:'#e11d48', data:(typeof VOCAB_LEGEND !=='undefined'?VOCAB_LEGEND :[]) },
@@ -1963,7 +1990,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260622k" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260622l" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
@@ -1977,7 +2004,7 @@ function renderHome(){
   // 영어단어의 소통 — 단어장 목록(왕초보 위)에 카드로 표시
   const commTot=(typeof COMM!=='undefined'&&COMM)?COMM.reduce((s,c)=>s+(c.themes||[]).reduce((a,t)=>a+(t.items||[]).length,0),0):0;
   const commCard=`<div class="book-card" onclick="openComm()">
-      <img class="b-cover" src="covers/comm.jpg?v=20260622k" alt="영어단어의 소통" loading="lazy">
+      <img class="b-cover" src="covers/comm.jpg?v=20260622l" alt="영어단어의 소통" loading="lazy">
       <div class="b-body">
         <div class="b-name">영어단어의 소통</div>
         <div class="b-meta">상황·감각·일상·여가 · 표현 ${commTot}개</div>
@@ -2372,31 +2399,46 @@ function renderWordList(words, book, day){
     const on=state.bookmarks[wordKey(book,day,w.word)];
     // 파생어
     const deriv=(w.derivatives&&w.derivatives.length)
-      ? `<div class="wderiv">${w.derivatives.map(d=>`<span class="dv">${esc(d.word)}</span>${d.pos?`<span class="dp">${esc(d.pos)}</span>`:''}${esc(d.meaning||'')}`).join(' · ')}</div>`
+      ? `<div class="wderiv">${w.derivatives.map(d=>`<span class="dv">${esc(d.word)}</span>${d.pos?`<span class="dp">${esc(d.pos)}</span>`:' '}${esc(d.meaning||'')}`).join(' · ')}</div>`
       : '';
     // 기출 예문(여러 개) — examples[] 우선, 없으면 단일 example
     const exList=(w.examples&&w.examples.length) ? w.examples : (w.example?[{en:w.example,ko:w.exampleKor||''}]:[]);
     const ex=exList.map((e,j)=>`<div class="wex">${j===0?'<span class="exlabel">기출</span>':''}<button class="spk" onclick="speak('${speakAttr(e.en)}')" title="예문 발음">🔊</button> ${highlightWord(e.en, w.word)}</div>${e.ko?`<div class="wexk">${esc(e.ko)}</div>`:''}`).join('');
-    // TIP / 연상 (tipLabel 지정 시 라벨 변경)
-    const tip=w.tip?`<div class="wtip"><span class="tlabel">${esc(w.tipLabel||'만점 TIP')}</span>${tipHtml(w.tip)}</div>`:'';
-    // 토익 출제 표현 (콜로케이션 등)
+    const isKstn=book&&String(book).startsWith('kstn');
+    // TIP / 연상 (경선식 책은 '💡 연상')
+    const tipLab=w.tipLabel||(isKstn?'💡 연상':'만점 TIP');
+    const tip=w.tip?`<div class="wtip"><span class="tlabel">${esc(tipLab)}</span>${tipHtml(w.tip)}</div>`:'';
+    // 기출표현 (콜로케이션 등)
+    const exprLab=isKstn?'★ 기출표현':'★토익 출제 표현';
     const expr=(w.toeicExpr&&w.toeicExpr.length)
-      ? `<div class="wexpr"><span class="elabel">★토익 출제 표현</span>${w.toeicExpr.map(t=>`<div class="ei">${esc(t)}</div>`).join('')}</div>`
+      ? `<div class="wexpr"><span class="elabel">${exprLab}</span>${w.toeicExpr.map(t=>`<div class="ei">${esc(t)}</div>`).join('')}</div>`
       : '';
-    // Part 5,6 기출 문제
+    // 기출변형 문제 (en/opt/ans/ko/note)
+    const varHtml=(w.examVar&&w.examVar.length)
+      ? `<div class="wvar"><span class="vlabel">📝 기출변형 문제</span>${w.examVar.map(v=>{
+          const en=v.en?`<div class="vq">${highlightWord(v.en,w.word)}</div>`:'';
+          const opt=v.opt?`<div class="vopt">${esc(v.opt)}</div>`:'';
+          const ans=v.ans?`<div class="vans">정답 <b>${esc(v.ans)}</b></div>`:'';
+          const ko=v.ko?`<div class="vko">${esc(v.ko)}</div>`:'';
+          const note=v.note?`<div class="vnote">${esc(v.note)}</div>`:'';
+          return `<div class="vitem">${en}${opt}${ko}${ans}${note}</div>`;
+        }).join('')}</div>`
+      : '';
+    // Part 5,6 기출 문제 (구버전 데이터 호환)
     const quiz=w.quiz?`<div class="wquiz">Q. ${esc(w.quiz.sentence)}<br><span class="qopt">(A) ${esc(w.quiz.a)} &nbsp; (B) ${esc(w.quiz.b)}</span> → 정답 <span class="qans">(${esc(w.quiz.answer)})</span></div>`:'';
     const img=imageBook(book)?`<div class="wimg loading" data-word="${esc(w.word)}"></div>`:'';
     return `<div class="word-card">
       <div class="wnum">${i+1}</div>
       <div class="wbody">
         ${img}
-        <div class="wtop"><span class="wword">${esc(w.word)}</span>${w.pos?`<span class="wpos">${posTag(w.pos)}</span>`:''}${w.pron?`<span class="wpron">${esc(w.pron)}</span>`:''}<button class="spk" onclick="speak('${speakAttr(w.word)}')" title="단어 발음">🔊</button></div>
+        <div class="wtop"><span class="wword">${esc(w.word)}${w.sup?`<sup class="wsup">${esc(w.sup)}</sup>`:''}</span>${w.pos?`<span class="wpos">${posTag(w.pos)}</span>`:''}${w.pron?`<span class="wpron">${esc(w.pron)}</span>`:''}<button class="spk" onclick="speak('${speakAttr(w.word)}')" title="단어 발음">🔊</button></div>
         ${w.meaning?`<div class="wmean">${esc(w.meaning)}</div>`:''}
+        ${tip}
         ${deriv}
         ${ex}
         ${expr}
+        ${varHtml}
         ${quiz}
-        ${tip}
       </div>
       <button class="star-btn ${on?'on':''}" onclick="toggleBookmark('${q(book)}',${day},'${q(w.word)}',this)">${on?'★':'☆'}<span class="slabel">${on?'저장됨':'즐겨찾기'}</span></button>
     </div>`;
@@ -2459,15 +2501,25 @@ function renderFlashcard(){
   $('fc-progress').style.width = (_sessTotal ? (_sessMastered/_sessTotal*100) : ((currentIdx+1)/currentWords.length*100))+'%';
   const fcBook=w.book||currentBook;
   const fcImg=imageBook(fcBook)?`<div class="fc-img wimg loading" data-word="${esc(w.word)}"></div>`:'';
-  $('flip-front').innerHTML=`${fcImg}<div class="fc-word">${esc(w.word)}</div><div class="fc-pos">${posTag(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
+  $('flip-front').innerHTML=`${fcImg}<div class="fc-word">${esc(w.word)}${w.sup?`<sup class="wsup">${esc(w.sup)}</sup>`:''}</div>${w.pron?`<div class="fc-pron">${esc(w.pron)}</div>`:''}<div class="fc-pos">${posTag(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
   if(fcImg){ const ie=$('flip-front').querySelector('.wimg'); if(ie) loadWordImage(ie); }
-  const fcTip=w.tip?`<div class="fc-tip"><span class="tlabel">${esc(w.tipLabel||'만점 TIP')}</span>${tipHtml(w.tip)}</div>`:'';
+  const fcKstn=fcBook&&String(fcBook).startsWith('kstn');
+  const fcTip=w.tip?`<div class="fc-tip"><span class="tlabel">${esc(w.tipLabel||(fcKstn?'💡 연상':'만점 TIP'))}</span>${tipHtml(w.tip)}</div>`:'';
+  const fcDeriv=(w.derivatives&&w.derivatives.length)?`<div class="fc-deriv">${w.derivatives.map(d=>`<span class="dv">${esc(d.word)}</span>${d.pos?`<span class="dp">${esc(d.pos)}</span>`:' '}${esc(d.meaning||'')}`).join('<br>')}</div>`:'';
   const fcExList=(w.examples&&w.examples.length)?w.examples:(w.example?[{en:w.example,ko:w.exampleKor||''}]:[]);
   const fcEx=fcExList.map((e,j)=>`<div class="fc-ex">${j===0?'<span class="exlabel">예문</span>':''}${highlightWord(e.en, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(e.en)}')">🔊</button></div>${e.ko?`<div class="fc-ex-ko">${esc(e.ko)}</div>`:''}`).join('');
   const fcExpr=(w.toeicExpr&&w.toeicExpr.length)?`<div class="fc-expr"><span class="elabel">★ 기출표현</span>${w.toeicExpr.map(t=>`<div class="ei">${esc(t)}</div>`).join('')}</div>`:'';
+  const fcVar=(w.examVar&&w.examVar.length)?`<div class="fc-var"><span class="vlabel">📝 기출변형 문제</span>${w.examVar.map(v=>{
+      const en=v.en?`<div class="vq">${highlightWord(v.en,w.word)}</div>`:'';
+      const opt=v.opt?`<div class="vopt">${esc(v.opt)}</div>`:'';
+      const ans=v.ans?`<div class="vans">정답 <b>${esc(v.ans)}</b></div>`:'';
+      const ko=v.ko?`<div class="vko">${esc(v.ko)}</div>`:'';
+      const note=v.note?`<div class="vnote">${esc(v.note)}</div>`:'';
+      return `<div class="vitem">${en}${opt}${ko}${ans}${note}</div>`;
+    }).join('')}</div>`:'';
   const fcQuiz=w.quiz?`<div class="fc-quiz">Q. ${esc(w.quiz.sentence)}<br><span class="qopt">(A) ${esc(w.quiz.a)} &nbsp; (B) ${esc(w.quiz.b)}</span> → 정답 <span class="qans">(${esc(w.quiz.answer)})</span></div>`:'';
   const fcMnemonic=w.img?`<div class="fc-mnemonic"><img src="${esc(w.img)}?v=${window.APP_VERSION||''}" alt="연상 그림" loading="lazy" onerror="this.parentNode.style.display='none'"></div>`:'';
-  $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posTag(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div>${fcMnemonic}${fcTip}${fcExpr}${fcEx}${fcQuiz}`;
+  $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)}${w.sup?`<sup class="wsup">${esc(w.sup)}</sup>`:''} <span class="fc-pos-sm">${posTag(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div>${fcMnemonic}${fcTip}${fcDeriv}${fcExpr}${fcEx}${fcVar}${fcQuiz}`;
   $('flip-card').classList.toggle('flipped', flashFlipped);
   // 마스터 진척 표시 (서로 다른 날 MASTER_DAYS회 통과 → 졸업)
   const fcm=$('fc-master');
