@@ -1,6 +1,6 @@
 const VOCAB_KSTN1 = [
  {
-  "day": "1",
+  "day": 1,
   "title": "강 1",
   "words": [
    {
@@ -143,7 +143,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "2",
+  "day": 2,
   "title": "강 2",
   "words": [
    {
@@ -288,7 +288,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "3",
+  "day": 3,
   "title": "강 3",
   "words": [
    {
@@ -433,7 +433,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "4",
+  "day": 4,
   "title": "강 4",
   "words": [
    {
@@ -576,7 +576,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "5",
+  "day": 5,
   "title": "강 5",
   "words": [
    {
@@ -719,7 +719,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "6",
+  "day": 6,
   "title": "강 6",
   "words": [
    {
@@ -861,7 +861,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "7",
+  "day": 7,
   "title": "강 7",
   "words": [
    {
@@ -1005,7 +1005,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "8",
+  "day": 8,
   "title": "강 8",
   "words": [
    {
@@ -1152,7 +1152,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "9",
+  "day": 9,
   "title": "강 9",
   "words": [
    {
@@ -1297,7 +1297,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "10",
+  "day": 10,
   "title": "강 10",
   "words": [
    {
@@ -1444,7 +1444,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "11",
+  "day": 11,
   "title": "강 11",
   "words": [
    {
@@ -1589,7 +1589,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "12",
+  "day": 12,
   "title": "강 12",
   "words": [
    {
@@ -1719,7 +1719,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "13",
+  "day": 13,
   "title": "강 13",
   "words": [
    {
@@ -1851,7 +1851,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "14",
+  "day": 14,
   "title": "강 14",
   "words": [
    {
@@ -1978,7 +1978,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "15",
+  "day": 15,
   "title": "강 15",
   "words": [
    {
@@ -2115,7 +2115,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "16",
+  "day": 16,
   "title": "강 16",
   "words": [
    {
@@ -2247,7 +2247,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "17",
+  "day": 17,
   "title": "강 17",
   "words": [
    {
@@ -2391,7 +2391,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "18",
+  "day": 18,
   "title": "강 18",
   "words": [
    {
@@ -2530,7 +2530,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "19",
+  "day": 19,
   "title": "강 19",
   "words": [
    {
@@ -2668,7 +2668,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "20",
+  "day": 20,
   "title": "강 20",
   "words": [
    {
@@ -2809,7 +2809,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "21",
+  "day": 21,
   "title": "강 21",
   "words": [
    {
@@ -2944,7 +2944,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "22",
+  "day": 22,
   "title": "강 22",
   "words": [
    {
@@ -3039,7 +3039,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "23",
+  "day": 23,
   "title": "강 23",
   "words": [
    {
@@ -3143,7 +3143,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "24",
+  "day": 24,
   "title": "강 24",
   "words": [
    {
@@ -3256,7 +3256,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "25",
+  "day": 25,
   "title": "강 25",
   "words": [
    {
@@ -3385,7 +3385,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "26",
+  "day": 26,
   "title": "강 26",
   "words": [
    {
@@ -3533,7 +3533,7 @@ const VOCAB_KSTN1 = [
   ]
  },
  {
-  "day": "27",
+  "day": 27,
   "title": "강 27",
   "words": [
    {
