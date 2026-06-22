@@ -696,6 +696,8 @@
   .fc-meaning { font-size: 1.7em; font-weight: 800; color: var(--text); margin-bottom: 14px; word-break: keep-all; }
   .fc-word-sm { font-size: 1.15em; font-weight: 700; color: var(--primary); margin-bottom: 18px; }
   .fc-pos-sm { font-size: 0.7em; color: var(--text-light); font-weight: 500; }
+  .fc-mnemonic { margin: 4px 0 14px; max-width: 300px; }
+  .fc-mnemonic img { display:block; width:100%; max-height: 300px; object-fit: contain; border-radius: 12px; background:#fff; border:1px solid var(--border); }
   .fc-tip { font-size: 0.9em; color: var(--text-mid); background: var(--surface-2); border-left: 3px solid var(--primary); border-radius: 8px; padding: 9px 11px; margin-bottom: 14px; max-width: 460px; text-align: left; line-height: 1.55; white-space: pre-line; }
   .fc-tip .tlabel { display:inline-block; font-size:0.92em; font-weight:800; color:var(--primary); margin-right:5px; }
   body.dark .fc-tip { background: rgba(99,102,241,0.14); }
@@ -948,7 +950,7 @@
     </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
-      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260622d" alt="서아쌤 비밀과외 LC">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260622e" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
         <b>서아쌤 비밀과외 LC</b>
         <small>Part 1~4 · 음원 듣기 · Practice 정답 보기</small>
@@ -957,7 +959,7 @@
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()">
-      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260622d" alt="기초영어 1000문장">
+      <img class="lc-entry-cover" src="covers/speak.jpg?v=20260622e" alt="기초영어 1000문장">
       <div class="lc-entry-body">
         <b>기초영어 1000문장 말하기</b>
         <small>한글 보고 영어로 말하기 · 탭하면 정답+발음 듣기 · 3챕터</small>
@@ -965,7 +967,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openP233()">
-      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260622d" alt="영어회화 핵심패턴 233">
+      <img class="lc-entry-cover" src="covers/p233.jpg?v=20260622e" alt="영어회화 핵심패턴 233">
       <div class="lc-entry-body">
         <b>영어회화 핵심패턴 233</b>
         <small>회화 필수 패턴 233개 · 탭하면 발음 · 31개 주제</small>
@@ -973,7 +975,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openD100()">
-      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260622d" alt="왕초보 100일의 기적">
+      <img class="lc-entry-cover" src="covers/d100.jpg?v=20260622e" alt="왕초보 100일의 기적">
       <div class="lc-entry-body">
         <b>왕초보 영어회화 100일의 기적</b>
         <small>하루 1표현 · 대화·발음·단어 · 100일 챌린지</small>
@@ -1381,7 +1383,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260622d';
+  window.APP_VERSION='20260622e';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1400,23 +1402,23 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
-<script src="vocabulary.js?v=20260622d"></script>
-<script src="vocab_eduwill.js?v=20260622d"></script>
-<script src="vocab_wangchobo.js?v=20260622d"></script>
-<script src="vocab_hackers.js?v=20260622d"></script>
-<script src="vocab_secret_top.js?v=20260622d"></script>
-<script src="vocab_kyungsunsik.js?v=20260622d"></script>
-<script src="vocab_kss_toeic.js?v=20260622d"></script>
-<script src="vocab_noisaegim.js?v=20260622d"></script>
-<script src="vocab_legend.js?v=20260622d"></script>
-<script src="sentences.js?v=20260622d"></script>
-<script src="p233.js?v=20260622d"></script>
-<script src="day100.js?v=20260622d"></script>
-<script src="comm.js?v=20260622d"></script>
-<script src="lc_data.js?v=20260622d"></script>
-<script src="lc_answers.js?v=20260622d"></script>
-<script src="lc_answers_p2.js?v=20260622d"></script>
-<script src="lc_answers_p34.js?v=20260622d"></script>
+<script src="vocabulary.js?v=20260622e"></script>
+<script src="vocab_eduwill.js?v=20260622e"></script>
+<script src="vocab_wangchobo.js?v=20260622e"></script>
+<script src="vocab_hackers.js?v=20260622e"></script>
+<script src="vocab_secret_top.js?v=20260622e"></script>
+<script src="vocab_kyungsunsik.js?v=20260622e"></script>
+<script src="vocab_kss_toeic.js?v=20260622e"></script>
+<script src="vocab_noisaegim.js?v=20260622e"></script>
+<script src="vocab_legend.js?v=20260622e"></script>
+<script src="sentences.js?v=20260622e"></script>
+<script src="p233.js?v=20260622e"></script>
+<script src="day100.js?v=20260622e"></script>
+<script src="comm.js?v=20260622e"></script>
+<script src="lc_data.js?v=20260622e"></script>
+<script src="lc_answers.js?v=20260622e"></script>
+<script src="lc_answers_p2.js?v=20260622e"></script>
+<script src="lc_answers_p34.js?v=20260622e"></script>
 <script>
 'use strict';
 
@@ -1948,7 +1950,7 @@ function renderHome(){
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
-    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260622d" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
+    const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260622e" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
     return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
@@ -1962,7 +1964,7 @@ function renderHome(){
   // 영어단어의 소통 — 단어장 목록(왕초보 위)에 카드로 표시
   const commTot=(typeof COMM!=='undefined'&&COMM)?COMM.reduce((s,c)=>s+(c.themes||[]).reduce((a,t)=>a+(t.items||[]).length,0),0):0;
   const commCard=`<div class="book-card" onclick="openComm()">
-      <img class="b-cover" src="covers/comm.jpg?v=20260622d" alt="영어단어의 소통" loading="lazy">
+      <img class="b-cover" src="covers/comm.jpg?v=20260622e" alt="영어단어의 소통" loading="lazy">
       <div class="b-body">
         <div class="b-name">영어단어의 소통</div>
         <div class="b-meta">상황·감각·일상·여가 · 표현 ${commTot}개</div>
@@ -2440,7 +2442,8 @@ function renderFlashcard(){
   if(fcImg){ const ie=$('flip-front').querySelector('.wimg'); if(ie) loadWordImage(ie); }
   const fcTip=w.tip?`<div class="fc-tip"><span class="tlabel">${esc(w.tipLabel||'만점 TIP')}</span>${esc(w.tip)}</div>`:'';
   const fcEx=w.example?`<div class="fc-ex">${highlightWord(w.example, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.example)}')">🔊</button></div>${w.exampleKor?`<div class="fc-ex-ko">${esc(w.exampleKor)}</div>`:''}`:'';
-  $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posTag(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div>${fcTip}${fcEx}`;
+  const fcMnemonic=w.img?`<div class="fc-mnemonic"><img src="${esc(w.img)}" alt="연상 그림" loading="lazy" onerror="this.parentNode.style.display='none'"></div>`:'';
+  $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)} <span class="fc-pos-sm">${posTag(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div>${fcMnemonic}${fcTip}${fcEx}`;
   $('flip-card').classList.toggle('flipped', flashFlipped);
   // 마스터 진척 표시 (서로 다른 날 MASTER_DAYS회 통과 → 졸업)
   const fcm=$('fc-master');
@@ -2623,9 +2626,9 @@ function answerQuiz(btn, ans){
     quizScore++;
     state.learned[wordKey(bk,dy,it.word)]=true;
     delete state.wrongs[wordKey(bk,dy,it.word)];
-    const auto = it.type==='en-ko';   // 영→한 정답이면 3초 뒤 자동으로 다음 문제
-    $('quiz-fb').innerHTML=`<div class="feedback ok">✅ 정답!${auto?' <span class="auto-hint">잠시 후 다음 문제로…</span>':''}</div>`;
-    if(auto) _quizAutoT=setTimeout(()=>{ _quizAutoT=null; nextQuizQuestion(); }, 3000);
+    const auto = it.type==='en-ko';   // 영→한 정답이면 1초 뒤 자동으로 다음 문제
+    $('quiz-fb').innerHTML=`<div class="feedback ok">✅ 정답!${auto?' <span class="auto-hint">다음 문제로…</span>':''}</div>`;
+    if(auto) _quizAutoT=setTimeout(()=>{ _quizAutoT=null; nextQuizQuestion(); }, 1000);
   } else {
     state.wrongs[wordKey(bk,dy,it.word)]={...it, day:dy, book:bk};
     quizWrong.push(it);
