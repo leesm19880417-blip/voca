@@ -1,7 +1,7 @@
 const VOCAB_KSTN1 = [
  {
   "day": 1,
-  "title": "강 1",
+  "title": "",
   "words": [
    {
     "word": "share",
@@ -144,7 +144,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 2,
-  "title": "강 2",
+  "title": "",
   "words": [
    {
     "word": "expert",
@@ -289,7 +289,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 3,
-  "title": "강 3",
+  "title": "",
   "words": [
    {
     "word": "direction",
@@ -434,7 +434,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 4,
-  "title": "강 4",
+  "title": "",
   "words": [
    {
     "word": "charge",
@@ -577,7 +577,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 5,
-  "title": "강 5",
+  "title": "",
   "words": [
    {
     "word": "appropriate",
@@ -720,7 +720,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 6,
-  "title": "강 6",
+  "title": "",
   "words": [
    {
     "word": "urgent",
@@ -862,7 +862,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 7,
-  "title": "강 7",
+  "title": "",
   "words": [
    {
     "word": "violation",
@@ -1006,7 +1006,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 8,
-  "title": "강 8",
+  "title": "",
   "words": [
    {
     "word": "refer",
@@ -1153,7 +1153,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 9,
-  "title": "강 9",
+  "title": "",
   "words": [
    {
     "word": "accord",
@@ -1298,7 +1298,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 10,
-  "title": "강 10",
+  "title": "",
   "words": [
    {
     "word": "strategy",
@@ -1445,7 +1445,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 11,
-  "title": "강 11",
+  "title": "",
   "words": [
    {
     "word": "fee",
@@ -1590,7 +1590,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 12,
-  "title": "강 12",
+  "title": "",
   "words": [
    {
     "word": "inform",
@@ -1720,7 +1720,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 13,
-  "title": "강 13",
+  "title": "",
   "words": [
    {
     "word": "affiliate",
@@ -1852,7 +1852,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 14,
-  "title": "강 14",
+  "title": "",
   "words": [
    {
     "word": "budget",
@@ -1979,7 +1979,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 15,
-  "title": "강 15",
+  "title": "",
   "words": [
    {
     "word": "cope",
@@ -2116,7 +2116,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 16,
-  "title": "강 16",
+  "title": "",
   "words": [
    {
     "word": "opening",
@@ -2248,7 +2248,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 17,
-  "title": "강 17",
+  "title": "",
   "words": [
    {
     "word": "lease",
@@ -2392,7 +2392,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 18,
-  "title": "강 18",
+  "title": "",
   "words": [
    {
     "word": "name",
@@ -2531,7 +2531,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 19,
-  "title": "강 19",
+  "title": "",
   "words": [
    {
     "word": "annual",
@@ -2669,7 +2669,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 20,
-  "title": "강 20",
+  "title": "",
   "words": [
    {
     "word": "lower",
@@ -2810,7 +2810,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 21,
-  "title": "강 21",
+  "title": "",
   "words": [
    {
     "word": "turnover",
@@ -2945,7 +2945,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 22,
-  "title": "강 22",
+  "title": "",
   "words": [
    {
     "word": "pending",
@@ -3040,7 +3040,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 23,
-  "title": "강 23",
+  "title": "",
   "words": [
    {
     "word": "advance",
@@ -3144,7 +3144,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 24,
-  "title": "강 24",
+  "title": "",
   "words": [
    {
     "word": "applaud",
@@ -3257,7 +3257,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 25,
-  "title": "강 25",
+  "title": "",
   "words": [
    {
     "word": "interest",
@@ -3386,7 +3386,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 26,
-  "title": "강 26",
+  "title": "",
   "words": [
    {
     "word": "cash",
@@ -3534,7 +3534,7 @@ const VOCAB_KSTN1 = [
  },
  {
   "day": 27,
-  "title": "강 27",
+  "title": "",
   "words": [
    {
     "word": "gear",
