@@ -3592,7 +3592,7 @@ const VOCAB_KSTN1 = [
    },
    {
     "word": "property",
-    "pron": "미 [prɔ́parti] 영 [prɔ́parti]",
+    "pron": "미 [práparti] 영 [prɔ́parti]",
     "pos": "n.",
     "meaning": "n. 재산, 자산, 부동산",
     "tip": "재산이 많으면 그 [[r]]재산[[/r]]을 [[b]]풀어[[/b]] [[b]]파티[[/b]]를 즐기는 부자들",
@@ -22198,7 +22198,7 @@ const VOCAB_KSTN1 = [
     "pron": "[riər]",
     "pos": "n./a.",
     "meaning": "n. 뒤  a. 후방의",
-    "tip": "① 엄마 등 [[b]]뒤[[/b]]에 아기를 [[r]]누어[[/r]](눕혀)\n② [[b]]리어[[/b]]카는 자전거 [[b]]rear[[/b]]([[b]]뒤에[[/b]]) 끌고 가는 [[b]]car[[/b]](차)에서 유래한 콩글리쉬",
+    "tip": "① 엄마 등 [[r]]뒤[[/r]]에 아기를 [[b]]누어[[/b]](눕혀)\n② [[b]]리어[[/b]]카는 자전거 [[b]]rear[[/b]]([[r]]뒤에[[/r]]) 끌고 가는 [[b]]car[[/b]](차)에서 유래한 콩글리쉬",
     "toeicExpr": [
      "rear door/entrance 뒤쪽의 문/출입구  rear seat 뒷좌석"
     ]
@@ -22208,7 +22208,7 @@ const VOCAB_KSTN1 = [
     "pron": "[flout]",
     "pos": "v.",
     "meaning": "v. 1. (물위나 공중에) 뜨다, 띄우다  2. (가격ㆍ수치 등이) 변동되다  3. (아이디어를) 제안하다",
-    "tip": "① [[b]]flow[[/b]](흐르는) 물 위에 [[r]]뜨다[[/r]], 즉 [[r]]뜨다, 띄우다[[/r]]\n② 종이배를 물에 [[b]]띄웠더니[[/b]] 물결에 따라 [[r]]변동되다[[/r]]\n③ 아이디어를 [[b]]float[[/b]]([[b]]띄워서[[/b]]) 상대방에게 보내다, 즉 [[r]]제안하다[[/r]]",
+    "tip": "① [[b]]flow[[/b]](흐르는) 물 위에 [[b]]뜨다[[/b]], 즉 [[r]]뜨다, 띄우다[[/r]]\n② 종이배를 물에 [[b]]띄웠더니[[/b]] 물결에 따라 [[r]]변동되다[[/r]]\n③ 아이디어를 [[b]]float[[/b]]([[b]]띄워서[[/b]]) 상대방에게 보내다, 즉 [[r]]제안하다[[/r]]",
     "toeicExpr": [
      "float in the air 공중에 떠 있다  floating object 떠 있는 물체",
      "floating price 변동 가격  floating interest rate 변동 금리",
@@ -31801,7 +31801,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "lay off",
     "meaning": "해고하다",
-    "tip": "[[b]]lay[[/b]](놓다) + [[b]]off[[/b]](떨어뜨려): 회사에서 떨어뜨려 놓다",
+    "tip": "lay(놓다) + off(떨어뜨려): 회사에서 떨어뜨려 놓다",
     "examples": [
      {
       "en": "The company intends to lay some of the employees off next year.",
@@ -31812,7 +31812,7 @@ const VOCAB_KSTN1 = [
    {
     "word": "half off",
     "meaning": "반값의, 50% 할인의 (30% off: 30% 할인)",
-    "tip": "[[b]]half[[/b]](절반) + [[b]]off[[/b]](떨어져, 떼어내어)",
+    "tip": "half(절반) + off(떨어져, 떼어내어)",
     "examples": [
      {
       "en": "Every item in the store is on a half-off sale!",
@@ -35194,7 +35194,7 @@ const VOCAB_KSTN1 = [
     "pron": "[daiǽmitər]",
     "pos": "n.",
     "meaning": "n. 지름, 직경",
-    "tip": "[[b]]다이애미터[[/b]]: [[b]]다이아몬드[[/b]]가 몇 [[b]]미터[[/b]]인지 재는 [[r]]지름, 직경[[/r]]",
+    "tip": "다이애미터: [[b]]다이아몬드[[/b]]가 몇 [[b]]미터[[/b]]인지 재는 [[r]]지름, 직경[[/r]]",
     "toeicExpr": [
      "diameter of a circle 원의 지름",
      "10 cm in diameter 지름 10cm"
