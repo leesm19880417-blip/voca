@@ -208,7 +208,7 @@ const VOCAB_KSTN1 = [
     "pron": "[daméstik]",
     "pos": "a.",
     "meaning": "a. 국내의, 가정의",
-    "tip": "국경선 [[b]]담[[/b]](벽락)[[?]][[b]]에서[[/b]] [[b]]틱[[/b]]! 하고 [[r]]국내[[/r]]의 영역으로 들어오는 밀입국자",
+    "tip": "국경선 [[b]]담[[/b]](벽락)[[b]]에서[[/b]] [[b]]틱[[/b]]! 하고 [[r]]국내[[/r]]의 영역으로 들어오는 밀입국자",
     "toeicExpr": [
      "domestic flight 국내선  domestic market/product 국내 시장/제품"
     ]
@@ -482,7 +482,7 @@ const VOCAB_KSTN1 = [
    },
    {
     "word": "diverse",
-    "pron": "[daivə́ːr]s, divə́ːr)s]",
+    "pron": "[daivə́:(r)s, divə́:(r)s]",
     "pos": "ad.",
     "meaning": "다양한, 가지각색의",
     "tip": "거리에 사람들이 [[r]]다양한, 가지각색[[/r]]의 옷을 [[b]]다 입었수[[/b]].",
@@ -1229,7 +1229,7 @@ const VOCAB_KSTN1 = [
     "pron": "[det]",
     "pos": "n.",
     "meaning": "n. 빚, 채무",
-    "tip": "[[b]]b는 묵음[[/b]] [[r]]大[[/r]](크게) [[r]]투[[/r]]자하기 위해 은행에서 얻은 [[r]]빚, 채무[[/r]]",
+    "tip": "[[b]]b는 묵음[[/b]] [[b]]大[[/b]](크게) [[b]]투[[/b]]자하기 위해 은행에서 얻은 [[r]]빚, 채무[[/r]]",
     "toeicExpr": [
      "pay off a debt 빚을 갚다  be in debt 빚을 지다 (← 빚 속에 있다)"
     ]
@@ -2416,7 +2416,7 @@ const VOCAB_KSTN1 = [
     "pron": "[évidəns]",
     "pos": "n.",
     "meaning": "n. 증거",
-    "tip": "비싼 술집에서 쓴 신용카드 영수증을 시어머니가 며느리에게 보이며 \"[[r]]애비가 돈을 쓴 증거[[/r]]다.\"",
+    "tip": "비싼 술집에서 쓴 신용카드 영수증을 시어머니가 며느리에게 보이며 \"[[b]]애비[[/b]]가 [[b]]돈을[[/b]] 쓴 [[r]]증거[[/r]]다.\"",
     "derivatives": [
      {
       "word": "evident",
@@ -2435,7 +2435,7 @@ const VOCAB_KSTN1 = [
     "pron": "[íʃuː]",
     "pos": "n./v.",
     "meaning": "1. n. 문제, 쟁점\n2. v. (잡지·돈·채권·주식 등을) 발행하다, 발표하다  n. 발행분, (잡지의) 호\n3. v. 발급하다, 공식적으로 내주다",
-    "tip": "① 무슨 [[r]]문제[[/r]]라도 [[b]]있슈[[/b]]?\n② 창구 직원이나 점포 직원이 \"여기 [[b]]있슈[[/b]](받으세요)\" 하며 [[r]]종이로 된 것들을 주다[[/r]], 즉 [[r]](잡지의) 호, 티켓, 면허증, 영수증 등을 내주다, 발행하다, 발급하다[[/r]]",
+    "tip": "① 무슨 [[r]]문제[[/r]]라도 [[b]]있슈[[/b]]?\n② 창구 직원이나 점포 직원이 \"여기 [[b]]있슈[[/b]](받으세요)\" 하며 [[r]]종이로 된 것들을 주다[[/r]], 즉 [[r]](잡지의) 호[[/r]], 티켓, 면허증, 영수증 등을 [[r]]내주다, 발행하다, 발급하다[[/r]]",
     "toeicExpr": [
      "important issue 중요한 문제",
      "current issue 현재 쟁점, 현안",
@@ -2479,7 +2479,7 @@ const VOCAB_KSTN1 = [
     "pron": "[gǽðər]",
     "pos": "v.",
     "meaning": "v. 모으다, 수집하다, 모이다",
-    "tip": "개에게 과자를 주자 동네 [[b]]개들[[/b]]이 [[r]]더 모이다[[/r]], [[r]]모으다[[/r]]",
+    "tip": "개에게 과자를 주자 동네 [[b]]개들[[/b]]이 [[b]]더[[/b]] [[r]]모이다[[/r]], [[r]]모으다[[/r]]",
     "toeicExpr": [
      "gather information/evidence 정보를/증거를 수집하다",
      "gather in the lobby 로비에 모이다",
@@ -2687,7 +2687,7 @@ const VOCAB_KSTN1 = [
     "pron": "[ikwípmənt]",
     "pos": "n.",
     "meaning": "장비, 장비 설치",
-    "tip": "교정한 상태로 [[b]]이[[/b]](이빨을) [[b]]keep[[/b]](유지하는) 장치가 이빨마다 [[r]]많다[[/r]]. 즉, 치아교정 [[r]]장비, 장비 설치[[/r]]",
+    "tip": "교정한 상태로 [[b]]이[[/b]](이빨을) [[b]]keep[[/b]](유지하는) 장치가 이빨마다 [[b]]많다[[/b]]. 즉, 치아교정 [[r]]장비, 장비 설치[[/r]]",
     "derivatives": [
      {
       "word": "equip",
@@ -3054,7 +3054,7 @@ const VOCAB_KSTN1 = [
     "pron": "[əwέər]",
     "pos": "a.",
     "meaning": "~을 알고 있는",
-    "tip": "A: 이거 알아?  B: [[b]]어[[/b]] 외워서 알고 있어. 즉, [[r]]알고 있는[[/r]]",
+    "tip": "A: 이거 알아?  B: [[b]]어 외워[[/b]]서 알고 있어. 즉, [[r]]알고 있는[[/r]]",
     "derivatives": [
      {
       "word": "awareness",
@@ -3256,7 +3256,7 @@ const VOCAB_KSTN1 = [
     "pron": "[dístrikt]",
     "pos": "n.",
     "meaning": "n. 구역, 지역",
-    "tip": "[[b]]뒤[[/b]] street[[b]]([[/b]]거리[[b]])[[/b]]의 깡패 집단 [[r]]구역, 지역[[/r]]",
+    "tip": "[[b]]뒤[[/b]] [[b]]street[[/b]](거리)의 깡패 집단 [[r]]구역, 지역[[/r]]",
     "toeicExpr": [
      "business/financial district 상업/금융 지구",
      "residential district 주거지 구역"
@@ -5059,7 +5059,7 @@ const VOCAB_KSTN1 = [
     "pron": "n. [kάntrækt]\nv. [kəntrǽkt]",
     "pos": "n./v.",
     "meaning": "1. n. 계약  v. 계약하다  2. v. 줄어들다, 수축시키다  3. v. (질병 등이) 걸리다",
-    "tip": "\"권투시합을 [[b]]act![[/b]](하겠습니다!)\"라고 [[r]]계약하고[[/r]] 체중을 감량하여 체중이 [[r]]줄어들다[[/r]], 과도한 체중감량으로 [[r]]병에 걸리다[[/r]]",
+    "tip": "\"[[b]]권투[[/b]]시합을 [[b]]act![[/b]](하겠습니다!)\"라고 [[r]]계약하고[[/r]] 체중을 감량하여 체중이 [[r]]줄어들다[[/r]], 과도한 체중감량으로 [[r]]병에 걸리다[[/r]]",
     "derivatives": [
      {
       "word": "contractor",
@@ -5261,7 +5261,7 @@ const VOCAB_KSTN1 = [
     "pron": "[ɔ:ltə́:rnətiv]",
     "pos": "n./a.",
     "meaning": "n. 대안, 대체  a. 대안의, 대체의",
-    "tip": "[[b]]alter[[/b]](바꾸다) 너 [[b]]TV[[/b]]: [[b]]alter![[/b]](바꿔!) [[r]]너[[/r]]의 소니 [[r]]TV[[/r]]를 [[r]]대안[[/r]]인 삼성 TV로 [[r]]대체[[/r]]해라!",
+    "tip": "alter(바꾸다) 너 TV: [[b]]alter![[/b]](바꿔!) [[b]]너[[/b]]의 소니 [[b]]TV[[/b]]를 [[r]]대안[[/r]]인 삼성 TV로 [[r]]대체[[/r]]해라!",
     "derivatives": [
      {
       "word": "alternatively",
@@ -5292,7 +5292,7 @@ const VOCAB_KSTN1 = [
     "pron": "a. [ɔ́:ltərnət] v. [ɔ́:ltərnèit]",
     "pos": "a./v.",
     "meaning": "1. a. 번갈아 하는, 하나 거르는  v. 번갈아 하다  2. a. 대체의",
-    "tip": "서로 [[b]]alter![[/b]](바꿔!) 너희들 [[b]]two[[/b]](두 사람), 즉 [[r]]번갈아 하는[[/r]], 계속 하지 않고 [[r]]하나 거르는[[/r]]. 그리고 각각은 서로의 [[r]]대안[[/r]]",
+    "tip": "서로 [[b]]alter![[/b]](바꿔!) [[b]]너희들[[/b]] [[b]]two[[/b]](두 사람), 즉 [[r]]번갈아 하는[[/r]], 계속 하지 않고 [[r]]하나 거르는[[/r]]. 그리고 각각은 서로의 [[r]]대안[[/r]]",
     "derivatives": [
      {
       "word": "alternately",
@@ -6283,7 +6283,7 @@ const VOCAB_KSTN1 = [
     "pron": "[émigrèit]",
     "pos": "v.",
     "meaning": "(다른 나라로) 이주하다",
-    "tip": "[[b]]애미[[/b]]가 great(큰) 나라 미국으로 [[r]]이주하다[[/r]] (접두어 e는 'out'을 뜻하여 밖으로 나가다, 즉 다른 나라로 이주하다)",
+    "tip": "[[b]]애미[[/b]]가 [[b]]great[[/b]](큰) 나라 미국으로 [[r]]이주하다[[/r]] (접두어 e는 'out'을 뜻하여 밖으로 나가다, 즉 다른 나라로 이주하다)",
     "derivatives": [
      {
       "word": "emigrant",
@@ -6305,7 +6305,7 @@ const VOCAB_KSTN1 = [
     "pron": "[ímigrèit]",
     "pos": "v.",
     "meaning": "(외국으로부터) 이주해 오다",
-    "tip": "나는 애미보다 먼저 [[b]]이미[[/b]] great(큰) 나라 미국으로 [[r]]이주해 와 있다[[/r]]. (접두어 im은 '안으로'를 뜻하여 우리나라로 이주해 들어오다)",
+    "tip": "나는 애미보다 먼저 [[b]]이미[[/b]] [[b]]great[[/b]](큰) 나라 미국으로 [[r]]이주해 와 있다[[/r]]. (접두어 im은 '안으로'를 뜻하여 우리나라로 이주해 들어오다)",
     "derivatives": [
      {
       "word": "immigrant",
@@ -6555,7 +6555,7 @@ const VOCAB_KSTN1 = [
     "pron": "[dispáit]",
     "pos": "prep.",
     "meaning": "~에도 불구하고 (= in spite of)",
-    "tip": "★ 고려청자는 [[b]]this[[/b]](이렇게) [[b]]파이[[/b]]였음에도 불구하고 1억이야.",
+    "tip": "★ 고려청자는 [[b]]this[[/b]](이렇게) [[b]]파이[[/b]]였음에도 [[r]]불구하고[[/r]] 1억이야.",
     "toeicExpr": [
      "despite difficulties 어려움에도 불구하고  despite objections 반대에도 불구하고",
      "despite the fact that ~ ~라는 사실에도 불구하고",
@@ -7841,7 +7841,7 @@ const VOCAB_KSTN1 = [
     "pron": "미[ɔ̀ːrɡənizéiʃən] 영[ɔ̀ːrɡənaizéiʃən]",
     "pos": "n.",
     "meaning": "n. 조직, 단체",
-    "tip": "(들어)[[b]]오거나[[/b]] 하려면 [[r]]나이[[/r]]를 [[b]]재서[[/b]]. 노인회와 같이 나이 제한을 두는 [[r]]조직, 단체[[/r]]",
+    "tip": "(들어)[[b]]오거나[[/b]] 하려면 [[b]]나이[[/b]]를 [[b]]재서[[/b]]. 노인회와 같이 나이 제한을 두는 [[r]]조직, 단체[[/r]]",
     "derivatives": [
      {
       "word": "organize",
@@ -7997,7 +7997,7 @@ const VOCAB_KSTN1 = [
     "pron": "[eim]",
     "pos": "v./n.",
     "meaning": "v. 겨누다, 목표 삼다, ~할 작정이다  n. 목적",
-    "tip": "사과를 얹은 애를 [[b]]겨누다[[/b]], [[r]]목표[[/r]]는 [[b]]애임[[/b]].",
+    "tip": "사과를 얹은 애를 [[r]]겨누다[[/r]], [[r]]목표[[/r]]는 [[b]]애임[[/b]].",
     "toeicExpr": [
      "primary aim 가장 중요한 목표",
      "aim at efficiency 효율성을 목표로 하다",
@@ -8130,7 +8130,7 @@ const VOCAB_KSTN1 = [
     "pron": "[síːkwəns]",
     "pos": "n.",
     "meaning": "연속, 순서",
-    "tip": "식당에서 [[b]]식권[[/b]]을 쓰기 위해 줄을 [[b]]연속[[/b]]으로 서서 기다리는 [[r]]순서[[/r]]",
+    "tip": "식당에서 [[b]]식권[[/b]]을 쓰기 위해 줄을 [[r]]연속[[/r]]으로 서서 기다리는 [[r]]순서[[/r]]",
     "toeicExpr": [
      "in sequence 순서대로 (← in: 방식, 상태)",
      "in the correct sequence 올바른 순서로",
@@ -9375,7 +9375,7 @@ const VOCAB_KSTN1 = [
     "pron": "[índəstri]",
     "pos": "n.",
     "meaning": "n. 1. 산업  2. 근면",
-    "tip": "[[b]]인도's tree[[/b]](인도네시아의) [[b]]tree[[/b]](나무) [[r]]산업[[/r]]에 [[r]]근면[[/r]]하게 일하는 사람들",
+    "tip": "[[b]]인도's[[/b]](인도네시아의) [[b]]tree[[/b]](나무) [[r]]산업[[/r]]에 [[r]]근면[[/r]]하게 일하는 사람들",
     "derivatives": [
      {
       "word": "industrious",
@@ -11618,7 +11618,7 @@ const VOCAB_KSTN1 = [
     "pron": "미[réiʃou] 영[réiʃiòu]",
     "pos": "n.",
     "meaning": "비율",
-    "tip": "각자의 재산 [[r]]비율[[/r]]에 따라 세금을 [[r]]내시오[[/r]].",
+    "tip": "각자의 재산 [[r]]비율[[/r]]에 따라 세금을 [[b]]내시오[[/b]].",
     "toeicExpr": [
      "success/high ratio 성공/높은 비율",
      "A to B ratio=ratio of A and B A대 B의 비율",
@@ -11663,7 +11663,7 @@ const VOCAB_KSTN1 = [
     "pron": "미[dὰkjuméntəri] 영[dɔ̀kjuméntəri]",
     "pos": "a. 문서의, 서류의  n. 기록 영화",
     "meaning": "a. 문서의, 서류의  n. 기록 영화",
-    "tip": "[[b]]다큐멘터리 영화[[/b]]란 [[b]]문서로 이뤄진 자료[[/b]]에 기반한 [[r]]기록 영화[[/r]]",
+    "tip": "[[b]]다큐멘터리 영화[[/b]]란 [[r]]문서로 이뤄진[[/r]] 자료에 기반한 [[r]]기록 영화[[/r]]",
     "derivatives": [
      {
       "word": "document",
@@ -11971,7 +11971,7 @@ const VOCAB_KSTN1 = [
    },
    {
     "word": "return",
-    "pron": "[ritɔ́:rn]",
+    "pron": "[ritə́:rn]",
     "meaning": "1. v. 돌아오다  n. 왕복  2. v. 돌려주다, 반품하다, 환불하다  3. n. 수익, 수익률",
     "tip": "① [[b]]re[[/b]](뒤로) [[b]]turn[[/b]](돌아서) 오다, 즉 [[r]]돌아오다, 왕복[[/r]]\n② [[b]]re[[/b]](다시) [[b]]turn[[/b]](돌려서) 주다, 즉 [[r]]돌려주다, 반품하다[[/r]]\n③ 노동이나 투자에 대한 대가로 [[b]]return[[/b]](돌아오다), 즉 [[r]]수익, 수익률[[/r]]",
     "toeicExpr": [
@@ -12550,7 +12550,7 @@ const VOCAB_KSTN1 = [
     "pron": "[príːmiəm]",
     "pos": "n./a.",
     "meaning": "1. n. 보험료  2. n. 추가 요금, 할증금  3. a. 최고급의",
-    "tip": "[프리미엄] ① [[b]]프리미엄[[/b]](웃돈, [[r]]할증금, 추가 요금[[/r]])을 줘야 구할 수 있을 정도로 [[r]]고급의[[/r]] ② [[b]]프리미어[[/b]] 리그에 가면 선수에게는 월급과 함께 [[r]]추가 요금, 최고급[[/r]]의 차량 및 보험료까지 내준다고 암기",
+    "tip": "[프리미엄] ① [[b]]프리미엄[[/b]](웃돈, [[r]]할증금, 추가 요금[[/r]])을 줘야 구할 수 있을 정도로 [[r]]고급의[[/r]] ② [[b]]프리미어[[/b]] 리그에 가면 선수에게는 월급과 함께 [[r]]추가 요금, 최고급[[/r]]의 차량 및 [[r]]보험료[[/r]]까지 내준다고 암기",
     "toeicExpr": [
      "insurance premium 보험료",
      "pay a premium 보험료를(추가 요금을) 지불하다",
@@ -12744,7 +12744,7 @@ const VOCAB_KSTN1 = [
     "pron": "[igzɔ́ːst]",
     "pos": "v.",
     "meaning": "1. v. 다 써버리다, 고갈시키다  2. v. 지치게 하다",
-    "tip": "\"(내가) 이그! 젔수 투!\" 하며 달리기 시합에서 체력을 [[r]]다 써버리고, 지쳐서 포기하다[[/r]]",
+    "tip": "\"(내가) [[b]]이그! 젔수 투![[/b]]\" 하며 달리기 시합에서 체력을 [[r]]다 써버리고, 지쳐서 포기하다[[/r]]",
     "toeicExpr": [
      "exhaust all resources 모든 자원을 고갈시키다",
      "exhaust the budget 예산을 소진하다",
@@ -13912,7 +13912,7 @@ const VOCAB_KSTN1 = [
     "pron": "[káunsəl]",
     "pos": "v.",
     "meaning": "v. 상담하다, 조언하다  n. 상담, 조언",
-    "tip": "흰 [[b]]까운[[/b]]을 입은 의사가 환자에게 [[r]]설[[/r]]명하며 [[r]]상담하다, 조언하다[[/r]]",
+    "tip": "흰 [[b]]까운[[/b]]을 입은 의사가 환자에게 [[b]]설[[/b]]명하며 [[r]]상담하다, 조언하다[[/r]]",
     "derivatives": [
      {
       "word": "counselor",
@@ -14020,7 +14020,7 @@ const VOCAB_KSTN1 = [
     "pron": "[əpláiəns]",
     "pos": "n.",
     "meaning": "가전제품, 전기 기구",
-    "tip": "\"[[b]]어, fly[[/b]](비행할) 때는 [[r]]안 써[[/r]]\" 즉, 항공 통신 안전을 위해 비행기 안에서는 안 쓰는 휴대폰, 컴퓨터 [[r]]전기 기구, 가전제품[[/r]] 비행기 모드로 해놔야 해.",
+    "tip": "\"[[b]]어, fly[[/b]](비행할) 때는 [[b]]안 써[[/b]]\" 즉, 항공 통신 안전을 위해 비행기 안에서는 안 쓰는 휴대폰, 컴퓨터 [[r]]전기 기구, 가전제품[[/r]] 비행기 모드로 해놔야 해.",
     "toeicExpr": [
      "household appliance 가전 제품  kitchen appliance 주방용품",
      "electrical appliances 전기 제품  office appliances 사무용 기기"
@@ -14140,7 +14140,7 @@ const VOCAB_KSTN1 = [
     "pron": "[témplət, témpleit]",
     "pos": "n.",
     "meaning": "형판, 틀, 서식, 양식",
-    "tip": "[[b]]ten[[/b]](10)개의 [[b]]plate[[/b]](접시)를 찍어내는 [[r]]형판, 틀[[/r]] → 글을 쓸 때의 [[r]]틀[[/r]]은 [[r]]서식, 양식[[/r]]",
+    "tip": "[[b]]ten[[/b]](10)개의 [[b]]plate[[/b]](접시)를 찍어내는 [[r]]형판, 틀[[/r]] → 글을 쓸 때의 [[b]]틀[[/b]]은 [[r]]서식, 양식[[/r]]",
     "toeicExpr": [
      "design template 디자인 형판",
      "document/e-mail/contract/invoice template 문서/이메일/계약서/송장 서식(양식)"
@@ -14610,7 +14610,7 @@ const VOCAB_KSTN1 = [
     "pron": "[stríndʒənt]",
     "pos": "a.",
     "meaning": "a. 엄격한, 엄중한",
-    "tip": "★ \"[[b]]string[[/b]](끈)을 [[r]]전투[[/r]] 포로를 묶어 도망가지 못하게 해!\" 소리치는 [[r]]엄격한[[/r]] 장군",
+    "tip": "★ \"[[b]]string[[/b]](끈)을 [[b]]전투[[/b]] 포로를 묶어 도망가지 못하게 해!\" 소리치는 [[r]]엄격한[[/r]] 장군",
     "derivatives": [
      {
       "word": "stringently",
@@ -16313,7 +16313,7 @@ const VOCAB_KSTN1 = [
     "pron": "[kǽpitl]",
     "pos": "n./a.",
     "meaning": "1. n. 자본  a. 자본의  2. a. 중요한, 주요한",
-    "tip": "현대[[b]]캐피털[[/b]], 롯데[[b]]캐피털[[/b]]은 [[r]]자본[[/r]]을 빌려주는 회사. 그리고 [[r]]자본[[/r]]은 회사에서 정말 [[r]]중요한, 주요한[[/r]] 요소",
+    "tip": "현대[[b]]캐피털[[/b]], 롯데[[b]]캐피털[[/b]]은 [[r]]자본[[/r]]을 빌려주는 회사. 그리고 [[b]]자본[[/b]]은 회사에서 정말 [[r]]중요한, 주요한[[/r]] 요소",
     "toeicExpr": [
      "raise/secure capital 자본(자금)을 조달하다/확보하다",
      "capital investment/expenditure/market 자본 투자/지출/시장",
@@ -16469,7 +16469,7 @@ const VOCAB_KSTN1 = [
     "pron": "[bu:st]",
     "pos": "v./n.",
     "meaning": "v. 증가시키다, 북돋우다  n. 상승, 부양책",
-    "tip": "엄청난 뉴스를 발표하여 신문 판매 [[r]]부수[[/r]]를 [[b]]two[[/b]](2)배로 [[r]]증가시키다, 북돋우다[[/r]]",
+    "tip": "엄청난 뉴스를 발표하여 신문 판매 [[b]]부수[[/b]]를 [[b]]two[[/b]](2)배로 [[r]]증가시키다, 북돋우다[[/r]]",
     "toeicExpr": [
      "boost sales/profits/productivity 매출을/수익을/생산성을 늘리다",
      "boost confidence 자신감을 북돋우다",
@@ -16674,7 +16674,7 @@ const VOCAB_KSTN1 = [
     "pron": "[kʌ́stəmàiz]",
     "pos": "v.",
     "meaning": "사용자의 요구에 맞추다, 주문제작하다",
-    "tip": "[[b]]customer[[/b]](고객) + [[b]]ize[[/b]](동·어)] 고객에게 맞추다, [[r]]주문제작하다[[/r]]",
+    "tip": "[[b]]customer[[/b]](고객) + [[b]]ize[[/b]](동·어)] [[r]]고객에게 맞추다, 주문제작하다[[/r]]",
     "derivatives": [
      {
       "word": "customized",
@@ -16699,7 +16699,7 @@ const VOCAB_KSTN1 = [
     "pron": "[θraiv]",
     "pos": "v.",
     "meaning": "번영하다",
-    "tip": "\"[[b]]쓰라이!(써라!)[[/b]] [[r]]부(富)[[/r]]\" 하고 돈을 뿌릴 정도로 [[r]]번영하다[[/r]]",
+    "tip": "\"[[b]]쓰라이!(써라!)[[/b]] [[b]]부(富)[[/b]]\" 하고 돈을 뿌릴 정도로 [[r]]번영하다[[/r]]",
     "toeicExpr": [
      "thrive in a competitive market 경쟁적인 시장에서 번영하다",
      "thrive on innovation 혁신을 바탕으로 성장하다",
@@ -17743,7 +17743,8 @@ const VOCAB_KSTN1 = [
      "chief engineer 수석 엔지니어",
      "chief executive officer (CEO) 최고경영자",
      "chief financial officer (CFO) 최고재무책임자"
-    ]
+    ],
+    "pos": "a./n."
    },
    {
     "word": "oblige",
@@ -18286,7 +18287,7 @@ const VOCAB_KSTN1 = [
     "pron": "미[hwεəræz] 영[wεəræz]",
     "pos": "conj.",
     "meaning": "그에 반하여, 반면에",
-    "tip": "[[b]]where[[/b]](~에서) + [[b]]as[[/b]](~할 때)] [[b]]where[[/b]]는 장소를 나타낸다, 그에 반하여, 반면에 [[b]]as[[/b]]는 시간을 나타낸다.",
+    "tip": "[[b]]where[[/b]](~에서) + [[b]]as[[/b]](~할 때)] [[b]]where[[/b]]는 장소를 나타낸다, [[r]]그에 반하여, 반면에[[/r]] [[b]]as[[/b]]는 시간을 나타낸다.",
     "toeicExpr": [
      "Some departments reported an increase in revenue, whereas others experienced a decline. 일부 부서는 매출 증가를 보고한 반면, 다른 부서는 감소를 겪었다."
     ],
@@ -19559,7 +19560,7 @@ const VOCAB_KSTN1 = [
    },
    {
     "word": "territory",
-    "pron": "미[térɔ̀:ri] 영[térətəri]",
+    "pron": "미[térətɔ̀:ri] 영[térətəri]",
     "pos": "n.",
     "meaning": "n. 지역, 영역",
     "tip": "이곳은 [[b]]테러[[/b]]가 자주 일어나는 [[b]]터리[[/b]](땅이리), 즉 테러가 일어나는 [[r]]지역, 영역[[/r]]",
@@ -22453,7 +22454,7 @@ const VOCAB_KSTN1 = [
     "pron": "미[ənɑ́niməs] 영[ənɔ́niməs]",
     "pos": "a.",
     "meaning": "a. 익명의",
-    "tip": "기부자 서명할 때, 부끄러워서 자기 이름인 [[b]]오난희[[/b]]라고 못 쓰고 [[r]]익명의[[/r]] 이름으로 쓰다",
+    "tip": "기부자 서명할 때, 부끄러워서 자기 이름인 [[b]]오난희[[/b]]라고 [[r]]못 쓰고[[/r]] [[r]]익명의[[/r]] 이름으로 쓰다",
     "derivatives": [
      {
       "word": "anonymously",
@@ -22492,7 +22493,7 @@ const VOCAB_KSTN1 = [
     "pron": "[ǽdvəkèit]",
     "pos": "v.",
     "meaning": "v. 옹호하다, 지지하다, 주장하다",
-    "tip": "엄마 아빠가 싸워 아빠는 방에 있고 엄마는 부엌에 있는데 [[b]]애두 뷔케[[/b]](부엌에) 엄마랑 같이 [[r]]있다[[/r]], 즉 엄마를 [[r]]옹호하다, 지지하다[[/r]]",
+    "tip": "엄마 아빠가 싸워 아빠는 방에 있고 엄마는 부엌에 있는데 [[b]]애두 뷔케[[/b]](부엌에) 엄마랑 같이 [[b]]있다[[/b]], 즉 엄마를 [[r]]옹호하다, 지지하다[[/r]]",
     "toeicExpr": [
      "advocate reform 개혁을 옹호하다",
      "advocate policy 정책을 옹호하다",
@@ -26504,7 +26505,7 @@ const VOCAB_KSTN1 = [
     "word": "preside",
     "pron": "[prizáid]",
     "pos": "v.",
-    "meaning": "v. 주재하다, 사회를 보다",
+    "meaning": "주재하다, 사회를 보다",
     "tip": "[[b]]pre[[/b]](앞에) 있는 [[b]]side[[/b]](측면)으로 나와 [[r]]주재하다, 사회를 보다[[/r]]",
     "toeicExpr": [
      "preside over ~의 사회를 맡다, 진행하다 (over: 대상 위에서)",
@@ -26522,7 +26523,7 @@ const VOCAB_KSTN1 = [
     "word": "preview",
     "pron": "[príːvjùː]",
     "pos": "v.",
-    "meaning": "v. 미리 검토하다",
+    "meaning": "미리 검토하다",
     "tip": "[[b]]pre[[/b]](미리) + [[b]]view[[/b]](보다)] [[r]]미리 검토하다[[/r]]",
     "toeicExpr": [
      "preview a presentation/report/proposal 발표 자료를/보고서를/제안서를 미리 검토하다"
@@ -26532,7 +26533,7 @@ const VOCAB_KSTN1 = [
     "word": "precondition",
     "pron": "[priːkəndíʃən]",
     "pos": "n.",
-    "meaning": "n. 전제조건",
+    "meaning": "전제조건",
     "tip": "[[b]]pre[[/b]](before) + [[b]]condition[[/b]](조건, 상태)] 앞서 필요한 [[r]]조건[[/r]], 즉 [[r]]전제조건[[/r]]",
     "toeicExpr": [
      "precondition for employment/enrollment 고용을/등록을 위한 전제조건"
@@ -26542,7 +26543,7 @@ const VOCAB_KSTN1 = [
     "word": "precaution",
     "pron": "[prikɔ́ːʃən]",
     "pos": "n.",
-    "meaning": "n. 예방, 예방책",
+    "meaning": "예방, 예방책",
     "tip": "[[b]]pre[[/b]](미리) [[b]]caution[[/b]](조심, 경고), 즉 [[r]]예방, 예방책[[/r]]",
     "toeicExpr": [
      "take precautions 예방 조치를 취하다",
@@ -26560,7 +26561,7 @@ const VOCAB_KSTN1 = [
     "word": "multiply",
     "pron": "[mʌ́ltiplài]",
     "pos": "v.",
-    "meaning": "v. 증가하다, 곱하다",
+    "meaning": "증가하다, 곱하다",
     "tip": "[[b]]multi[[/b]](많은) [[b]]fly[[/b]](파리)들이 알을 까서 수가 [[r]]증가하다, 곱하다[[/r]]",
     "toeicExpr": [
      "costs/complaints multiply 비용이/불만이 증가하다",
@@ -26572,7 +26573,7 @@ const VOCAB_KSTN1 = [
     "word": "multiple",
     "pron": "[mʌ́ltipl]",
     "pos": "a.",
-    "meaning": "a. 많은, 다수의",
+    "meaning": "많은, 다수의",
     "tip": "들판의 [[b]]multi[[/b]](많은) 풀, 즉 [[r]]많은, 다수의[[/r]] 풀",
     "toeicExpr": [
      "multiple tasks/opportunities/problems 많은 업무/기회/문제"
@@ -28516,7 +28517,7 @@ const VOCAB_KSTN1 = [
     "pron": "[krédit]",
     "pos": "n./v.",
     "meaning": "1. n. 신용, 신용거래  2. n. (계좌에) 입금 v. 입금처리하다  3. n. 공로 v. 공로를 인정하다",
-    "tip": "① [[r]]크레딧 카드는 신용카드[[/r]] ② [[r]]크레딧 카드로 쓴 금액을 월말에 입금, 입금처리하다[[/r]]",
+    "tip": "① [[b]]크레딧[[/b]] 카드는 [[r]]신용카드[[/r]]  ② [[b]]크레딧[[/b]] 카드로 쓴 금액을 월말에 [[r]]입금, 입금처리하다[[/r]]",
     "toeicExpr": [
      "credit card 신용카드",
      "credit limit/rating 신용 한도/등급",
@@ -30130,6 +30131,28 @@ const VOCAB_KSTN1 = [
      "easy for me 나에게는 쉬운",
      "suitable for beginners 초보자에게 적합한",
      "too expensive for students 학생들에게는 너무 비싼"
+    ]
+   },
+   {
+    "word": "over",
+    "pos": "prep./ad.",
+    "meaning": "1. ~ 위에, ~ 위로  2. ~의 여기저기에, ~의 전면에 걸쳐서  3. ~ (동안) 내내, <시기 등이> ~에 걸쳐서  4. ~을 먹으면서, ~을 마시면서  5. ~을 넘어서, ~ 이상",
+    "toeicExpr": [
+     "clouds over the city 도시 위에 떠 있는 구름",
+     "a sign over the entrance 입구 위에 있는 표지판",
+     "all over the floor 바닥 곳곳에",
+     "advertised all over the Internet 인터넷 전역에 광고된",
+     "distributed all over the region 지역 전체에 배포된",
+     "over the past decade 지난 10년 동안",
+     "over the weekend 주말 내내",
+     "over several months 몇 달에 걸쳐",
+     "discuss the matter over dinner 저녁 식사하며 그 문제를 논의하다",
+     "negotiate over coffee 커피 마시며 협상하다",
+     "talk business over drinks 음료를 마시며 비즈니스를 이야기하다",
+     "over budget 예산을 초과하여",
+     "over 50 applicants 지원자 50명 이상",
+     "over the limit 제한을 넘어서",
+     "over capacity 수용 한도 초과"
     ]
    }
   ]
