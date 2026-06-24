@@ -758,8 +758,10 @@
   .quiz-q.q-sentence { font-size: 1.02em; font-weight: 600; line-height: 1.55; color: var(--text); padding: 20px 16px; }
   .quiz-q.q-sentence .q-blank { color: var(--primary); font-weight: 800; letter-spacing: 1px; }
   .explain.p5x { display: block; margin-top: 8px; text-align: left; }
-  .explain.p5x .p5ko { display: block; color: var(--text-mid); font-size: 0.92em; margin-bottom: 5px; }
-  .explain.p5x .p5note { display: block; color: var(--text-light); font-size: 0.88em; line-height: 1.5; }
+  .explain.p5x .p5ko { display: block; color: var(--text); font-size: 0.95em; margin-bottom: 7px; line-height: 1.5; }
+  .explain.p5x .p5ko b { color: var(--primary); margin-right: 5px; font-weight: 800; }
+  .explain.p5x .p5note { display: block; color: var(--text-mid); font-size: 0.9em; line-height: 1.55; background: var(--surface-2); border-radius: 8px; padding: 8px 10px; }
+  .explain.p5x .p5note b { color: var(--accent); margin-right: 5px; font-weight: 800; }
   .quiz-options { display: flex; flex-direction: column; gap: 10px; }
   .quiz-option {
     background: var(--surface); border: 1.5px solid var(--border); padding: 15px 16px; border-radius: var(--r-sm);
@@ -1427,7 +1429,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260624c';
+  window.APP_VERSION='20260624d';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1454,6 +1456,7 @@
 <script src="vocab_kyungsunsik.js?v=20260622l"></script>
 <script src="vocab_kss_toeic.js?v=20260622l"></script>
 <script src="vocab_kstn1.js?v=20260623e"></script>
+<script src="vocab_part5.js?v=20260624d"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
 <script src="vocab_legend.js?v=20260622l"></script>
 <script src="sentences.js?v=20260622l"></script>
@@ -1509,6 +1512,22 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
     }));
   });
   try{ window._ksTipsAdded=added; }catch(e){}
+})();
+
+// 생성된 Part5 기출변형 문제를 해당 단어장 단어에 주입 (vocab_part5.js)
+(function injectGenPart5(){
+  if(typeof PART5_GEN==='undefined') return;
+  const norm = w => String(w||'').toLowerCase().replace(/\s+/g,' ').trim();
+  let added=0;
+  ['siwon','top','hackers','eduwill'].forEach(id=>{
+    const map=PART5_GEN[id]; if(!map) return; const b=bookById(id); if(!b) return;
+    b.data.forEach(d=>d.words.forEach(w=>{
+      const it=map[norm(w.word)];
+      if(it && it.opt && it.ans){ if(!w.examVar) w.examVar=[];
+        if(!w.examVar.some(v=>v.opt===it.opt)){ w.examVar.push({en:it.en,opt:it.opt,ans:it.ans,ko:it.ko,note:it.note}); added++; } }
+    }));
+  });
+  try{ window._genP5Added=added; }catch(e){}
 })();
 
 // ============ 상태 ============
@@ -2447,7 +2466,7 @@ function startPart5Quiz(){
   showView('quiz'); renderQuiz();
 }
 function part5Blank(s){ return esc(s).replace(/(_{2,}|＿+)/g,'<span class="q-blank">______</span>'); }
-function part5Explain(it){ return `<div class="explain p5x">${it.ko?`<span class="p5ko">📖 ${esc(it.ko)}</span>`:''}${it.note?`<span class="p5note">💡 ${esc(it.note)}</span>`:''}</div>`; }
+function part5Explain(it){ return `<div class="explain p5x">${it.ko?`<span class="p5ko"><b>📖 해석</b> ${esc(it.ko)}</span>`:''}${it.note?`<span class="p5note"><b>💡 해설</b> ${esc(it.note)}</span>`:''}</div>`; }
 // 연상 팁 색상 마크업 → 색 span ([[b]]파랑[[/b]] = 발음연상, [[r]]빨강[[/r]] = 뜻). 마크업 없으면 일반 텍스트.
 function tipHtml(s){
   if(!s) return '';
