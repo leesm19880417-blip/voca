@@ -1421,7 +1421,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260623e';
+  window.APP_VERSION='20260624a';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -2704,7 +2704,7 @@ function answerQuiz(btn, ans){
     quizScore++;
     state.learned[wordKey(bk,dy,it.word)]=true;
     delete state.wrongs[wordKey(bk,dy,it.word)];
-    const auto = it.type==='en-ko';   // 영→한 정답이면 1초 뒤 자동으로 다음 문제
+    const auto = true;   // 정답이면(영→한·한→영 모두) 1초 뒤 자동으로 다음 문제
     $('quiz-fb').innerHTML=`<div class="feedback ok">✅ 정답!${auto?' <span class="auto-hint">다음 문제로…</span>':''}</div>`;
     if(auto) _quizAutoT=setTimeout(()=>{ _quizAutoT=null; nextQuizQuestion(); }, 1000);
   } else {
