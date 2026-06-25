@@ -175,7 +175,7 @@ const VOCAB_KSTN1 = [
       "opt": "(A) belong  (B) belongs to  (C) belonging  (D) belonged",
       "ans": "(B)",
       "ko": "이 장비는 영업부가 아니라 마케팅 부서에 속한다.",
-      "note": "belong은 자동사로 전치사 to와 함께 쓰여야 한다."
+      "note": "belong은 목적어를 바로 취하지 못하는 완전자동사라 '~에 속하다'라는 의미를 표현하려면 반드시 전치사 to를 붙여 belong to 형태로 써야 한다. 따라서 빈칸 뒤에 the marketing department라는 명사가 바로 오므로 전치사 to가 포함된 (B) belongs to가 정답이다. (A) belong은 to가 없어 명사를 연결할 수 없고, (C) belonging은 동사 자리에 올 수 없는 분사/동명사 형태이며, (D) belonged는 to가 없을 뿐 아니라 일반적 사실을 말하는 문장이라 현재시제가 자연스럽다. belong은 진행형(is belonging)으로도 쓰지 않는 상태동사임을 함께 기억해 두자."
      }
     ]
    },
@@ -283,15 +283,15 @@ const VOCAB_KSTN1 = [
       "en": "1. The concert tickets ______ within an hour of going on sale.",
       "opt": "(A) sold out  (B) are sold out  (C) sellout  (D) selling out",
       "ans": "(A)",
-      "ko": "콘서트 티켓은 판매 시작 후 한 시간 만에 매진되었다.",
-      "note": "과거 시제이고, 다 팔린 상태(be sold out)가 아니라 다 팔린 동작(sell out)을 나타내므로 (A)가 정답이다."
+      "ko": "콘서트 티켓은 판매가 시작된 지 한 시간 만에 매진되었다.",
+      "note": "문장에 within an hour of going on sale라는 과거의 특정 기간이 제시되어 있으므로 과거에 '매진되는 일이 일어났다'는 동작을 나타내야 한다. sell out은 '다 팔리다'라는 자동사적 의미로 쓰여 주어가 사물이어도 능동형으로 표현하므로 과거형 (A) sold out이 정답이다. (B) are sold out은 현재 시점의 '매진된 상태'를 나타내 과거 시점 표현과 맞지 않고, (C) sellout과 (D) selling out은 본동사로 쓸 수 있는 형태가 아니다. 동작이냐 상태냐, 그리고 시제 단서를 함께 보는 것이 핵심이다."
      },
      {
       "en": "2. All the rooms at the resort are ______ for the holiday weekend.",
       "opt": "(A) sold out  (B) sell out  (C) selling out  (D) sellout",
       "ans": "(A)",
-      "ko": "리조트의 모든 객실은 연휴 기간에 매진되었다.",
-      "note": "'be + sold out' 형태 → '매진된 상태' 표현"
+      "ko": "리조트의 모든 객실은 연휴 주말 동안 매진된 상태이다.",
+      "note": "빈칸 앞에 be동사 are가 있으므로 빈칸에는 보어가 될 수 있는 형태가 와야 하고, 문맥상 '현재 매진되어 있는 상태'를 나타내야 한다. be sold out은 '매진된 상태이다'라는 수동/상태 표현으로 are와 결합해 자연스러우므로 (A) sold out이 정답이다. (B) sell out은 동사원형이라 be동사 뒤에 올 수 없고, (C) selling out은 진행의 의미라 '연휴 동안의 매진 상태'라는 정태적 의미와 어울리지 않으며, (D) sellout은 명사라 주어와 의미가 호응하지 않는다. 앞 문제와 비교해 '동작(sold out)' vs '상태(be sold out)'의 차이를 익혀 두자."
      }
     ]
    },
@@ -457,7 +457,8 @@ const VOCAB_KSTN1 = [
       "en": "The supervisor will examine the safety procedures _______ to ensure compliance with regulations.",
       "opt": "(A) nearly    (B) closely    (C) close    (D) closing",
       "ans": "(B)",
-      "ko": "감독관은 규정 준수를 보장하기 위해 안전 절차를 면밀히 검사할 것이다."
+      "ko": "감독관은 규정 준수를 보장하기 위해 안전 절차를 면밀히 검사할 것이다.",
+      "note": "빈칸은 동사 examine을 꾸미는 자리이므로 동사를 수식하는 부사가 와야 한다. closely는 '면밀히, 자세히'라는 뜻의 부사로 examine과 의미가 잘 어울리므로 (B) closely가 정답이다. (A) nearly는 '거의'라는 뜻이라 '거의 검사한다'는 어색한 의미가 되고, (C) close는 '가까운/가까이'의 뜻으로 examine을 자연스럽게 수식하지 못하며(close는 물리적 거리에 주로 쓰임), (D) closing은 분사/동명사라 부사 자리에 올 수 없다. close와 closely가 둘 다 부사지만 closely만 '면밀히'라는 추상적 의미를 갖는다는 점이 출제 포인트다."
      }
     ]
    },
@@ -520,7 +521,8 @@ const VOCAB_KSTN1 = [
       "en": "1. The director has the ______ to approve budget increases.",
       "opt": "(A) power   (B) energy   (C) force   (D) strength",
       "ans": "(A)",
-      "ko": "그 이사는 예산 증액을 승인할 권한을 가지고 있다."
+      "ko": "그 이사는 예산 증액을 승인할 권한을 가지고 있다.",
+      "note": "빈칸 뒤에 to approve(승인할)라는 to부정사가 이어지므로 '~할 권한/권력'이라는 의미의 명사가 필요하다. power는 to부정사와 함께 the power to do 형태로 '~할 권한'을 나타내므로 (A) power가 정답이다. (B) energy는 '에너지/기력', (C) force는 '물리적 힘/강제력', (D) strength는 '체력/강도'를 뜻해 '승인 권한'이라는 공식적·제도적 의미와 맞지 않는다. 비슷해 보이는 '힘' 계열 단어 중 권한·권력을 나타낼 때는 power를 쓴다는 어휘 구분이 핵심이다."
      },
      {
       "en": "2. The factory halted production due to a sudden power outage.",
@@ -617,14 +619,15 @@ const VOCAB_KSTN1 = [
       "en": "expert와 expertise를 구분하는 문제가 자주 출제되었다.\n예) She has gained valuable ______ through years of research in biotechnology.",
       "opt": "(A) expert  (B) experts  (C) expertise  (D) expertly",
       "ans": "(C)",
-      "ko": "그녀는 수년간의 생명공학 연구를 통해 귀중한 전문 지식을 습득했다."
+      "ko": "그녀는 수년간의 생명공학 연구를 통해 귀중한 전문 지식을 습득했다.",
+      "note": "빈칸은 형용사 valuable의 수식을 받으며 동사 gained의 목적어가 되는 명사 자리이다. 문맥상 '연구를 통해 얻은 것'은 사람(전문가)이 아니라 '전문 지식'이어야 하므로 추상명사 (C) expertise가 정답이다. (A) expert는 '전문가'라는 사람 명사라 '습득하다'의 목적어로 의미가 어색하고, (B) experts도 마찬가지로 사람을 뜻하며, (D) expertly는 부사라 명사 자리에 올 수 없다. expert(전문가, 가산명사) vs expertise(전문 지식, 불가산명사)의 의미·품사 구분이 빈출 포인트다."
      },
      {
       "en": "expert + in/at/on 구분 문제가 자주 출제되었다.\n예) Dr. Kim is an expert ______ analyzing consumer behavior trends.",
       "opt": "(A) at  (B) in  (C) on  (D) for",
       "ans": "(A)",
-      "ko": "김 박사는 소비자 행동 트렌드 분석에 능숙하다.",
-      "note": "analyze = 활동 → expert at"
+      "ko": "김 박사는 소비자 행동 트렌드를 분석하는 데 능숙한 전문가이다.",
+      "note": "expert 뒤에 동명사 analyzing(분석하는 활동)이 이어지므로, 어떤 '활동·행위'에 능숙하다고 할 때 쓰는 전치사가 필요하다. 활동을 나타낼 때는 expert at 형태를 쓰므로 (A) at이 정답이다. expert in은 보통 분야·학문(expert in biology)을 나타내고, expert on은 특정 주제(expert on climate change)와 어울리며, (D) for는 expert와 함께 쓰지 않는다. 여기서는 analyzing이 구체적인 활동이므로 at이 가장 자연스럽다. expert at(활동) / in(분야) / on(주제)의 쓰임을 묶어서 기억하자."
      }
     ]
    },
@@ -691,7 +694,8 @@ const VOCAB_KSTN1 = [
       "en": "The technician finally admitted to _______ the system files without permission.",
       "opt": "(A) modify  (B) modified  (C) modifying  (D) modification",
       "ans": "(C)",
-      "ko": "기술자는 허가 없이 시스템 파일을 수정한 것을 결국 인정했다."
+      "ko": "그 기술자는 허가 없이 시스템 파일을 수정한 것을 결국 인정했다.",
+      "note": "admit to에서 to는 to부정사가 아니라 전치사이므로 뒤에는 동명사가 와야 한다. 따라서 '수정한 것'을 나타내는 동명사 (C) modifying이 정답이다. (A) modify는 동사원형이라 전치사 뒤에 올 수 없고, (B) modified는 과거형/과거분사라 단독으로 목적어 역할을 못하며, (D) modification은 명사지만 뒤에 the system files라는 목적어를 직접 취할 수 없다(명사는 of 등이 필요). admit to -ing, confess to -ing, be used to -ing처럼 'to + 동명사'를 취하는 표현들을 함께 정리해 두자."
      }
     ]
    },
@@ -760,14 +764,15 @@ const VOCAB_KSTN1 = [
       "en": "All marketing materials must be reviewed by our business _______.",
       "opt": "(A) associate  (B) associated  (C) association  (D) associating",
       "ans": "(A)",
-      "ko": "모든 마케팅 자료는 우리 업무 파트너가 검토해야 한다.",
-      "note": "associate가 동사/명사/형용사 중 무엇인지 판단하게 하는 문제가 자주 출제되었다."
+      "ko": "모든 마케팅 자료는 우리 업무 파트너(동료)가 검토해야 한다.",
+      "note": "빈칸은 형용사 business의 수식을 받으며 by의 목적어가 되는 명사 자리로, '동료, 파트너'를 뜻하는 명사 associate가 와야 하므로 (A) associate가 정답이다. associate는 명사로 '동료/제휴자', 동사로 '연관 짓다', 형용사로 '준-(associate professor)'의 의미를 갖는 다품사 단어다. (B) associated(분사/형용사)와 (D) associating(분사)은 by의 목적어가 될 명사 자리에 부적합하고, (C) association은 '협회/연관성'을 뜻해 '자료를 검토하는 주체'라는 문맥과 맞지 않는다. business associate(업무 동료)라는 짝을 기억하면 좋다."
      },
      {
       "en": "The research _______ analyzed customer preferences across regions.",
       "opt": "(A) associated  (B) associate  (C) associates  (D) association",
       "ans": "(C)",
-      "ko": "연구 보조원들은 지역별 고객 선호도를 분석했다."
+      "ko": "연구 보조원들은 지역별 고객 선호도를 분석했다.",
+      "note": "빈칸은 정관사 the와 명사 research의 수식을 받으며 동사 analyzed의 주어가 되는 명사 자리이다. 동사 analyzed에는 수 일치 제약이 없지만, '연구 보조원'을 가리키는 가산명사가 필요하고 문맥상 한 명 이상으로 보는 복수형 (C) associates가 자연스러우므로 정답이다. (A) associated는 분사/형용사, (D) association은 의미가 맞지 않으며, (B) associate는 단수형이라 the research associate처럼 단수 주어로도 가능하지만 출제 의도상 복수 보조원들을 가리키는 associates가 정답이다. research associate(연구원/연구 보조원)라는 직책 표현으로 익혀 두자."
      }
     ]
    },
@@ -789,14 +794,14 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "currently는 현재의 흐름이나 경향을 나타내는 말이기 때문에 현재시제 또는 현재 진행형 시제와 함께 쓰인다. currently + 과거시제(X), 미래시제(X), 완료시제(거의 쓰이지 않음)",
+      "note": "부사 currently(현재)는 현재의 상태나 진행 중인 일을 나타내므로 현재시제 또는 현재진행형과 함께 쓰인다. 주어 the company가 3인칭 단수이므로 현재시제 동사 (B) employs가 정답이다. (A) employed(과거)와 (D) had employed(과거완료)는 '현재'를 뜻하는 currently와 시제가 충돌하고, (C) employing은 본동사가 될 수 없다. currently는 과거·미래·완료시제와는 어울리지 않는다는 점을 시제 단서로 활용하자.",
       "en": "The company currently ______ over 500 workers worldwide.",
       "opt": "(A) employed  (B) employs  (C) employing  (D) had employed",
       "ko": "그 회사는 전 세계적으로 500명 이상의 직원을 고용하고 있다.",
       "ans": "(B)"
      },
      {
-      "note": "currently와 presently를 구분하는 문제가 출제되었다.",
+      "note": "빈칸은 be동사 is와 보어 out of service 사이에서 문장을 수식하는 부사 자리이므로 (A) currently가 정답이다. currently는 '현재, 지금'이라는 뜻으로 일시적이고 진행 중인 상태(현재 운행 중단)를 강조한다. (D) current는 형용사라 부사 자리에 올 수 없고, (C) present는 형용사/명사라 부사 역할을 못한다. (B) presently도 '현재'라는 뜻으로 쓰이긴 하지만 '곧, 머지않아'라는 의미로도 자주 쓰여 모호하므로, '지금 현재'의 상태를 분명히 나타내는 currently가 더 적절하다.",
       "en": "The elevator is ______ out of service for maintenance.",
       "opt": "(A) currently  (B) presently  (C) present  (D) current",
       "ko": "그 엘리베이터는 현재 점검으로 운행되지 않는다.",
@@ -821,7 +826,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "consist는 자동사로 수동태로 쓰이지 않고 전치사 of와 함께 쓰이는 점이 자주 출제되었다.",
+      "note": "consist는 '~으로 구성되다'라는 뜻의 완전자동사로, 수동태로 쓰지 않고 전치사 of와 함께 consist of 형태로 쓴다. 주어가 단수(the training program)이므로 현재시제 (A) consists가 정답이다. (B) is consisted는 자동사를 수동태로 만든 잘못된 형태라 틀리고(consist는 수동 불가), (C) consisting은 본동사가 될 수 없으며, (D) consist는 단수 주어와 수가 맞지 않는다. consist of(~로 구성되다)는 be composed of, be made up of로 바꿔 쓸 수 있다는 점도 함께 알아 두자.",
       "en": "The training program ______ of three main courses and two optional workshops.",
       "opt": "(A) consists  (B) is consisted  (C) consisting  (D) consist",
       "ko": "그 교육 프로그램은 세 개의 주요 과정과 두 개의 선택 워크숍으로 구성된다.",
@@ -1003,7 +1008,8 @@ const VOCAB_KSTN1 = [
       "en": "Please review the attached document for further ________.",
       "opt": "(A) details  (B) detail  (C) detailing  (D) detailed",
       "ans": "(A)",
-      "ko": "자세한 내용은 첨부 문서를 확인하세요."
+      "ko": "자세한 내용은 첨부된 문서를 확인하세요.",
+      "note": "for further details(추가 세부 사항을 위해)라는 표현에서 detail은 '세부 사항'이라는 뜻으로 쓰일 때 보통 복수형 details로 쓴다. 따라서 (A) details가 정답이다. (B) detail은 단수형으로 '세부 사항'의 의미일 때는 어색하고('a detail'처럼 개별 항목을 가리킬 때만 단수), (C) detailing은 동명사, (D) detailed는 형용사/과거분사라 전치사 for의 목적어가 될 명사 자리에 적합하지 않다. for further details, for more details처럼 안내 문구에서 자주 등장하는 복수 표현으로 익혀 두자."
      }
     ]
    },
@@ -1197,7 +1203,7 @@ const VOCAB_KSTN1 = [
       "opt": "(A) direction  (B) directive  (C) directions  (D) directing",
       "ans": "(C)",
       "ko": "접수원은 회의실까지 가는 명확한 길 안내를 제공했다.",
-      "note": "direction이 \"방향, 지시\"란 뜻일 때는 추상적 의미로 단수형을 쓰지만 \"길 안내, 지시사항\"이란 뜻일 때는 다수의 길 안내 및 지시사항들이 포함되므로 복수형으로 쓰인다."
+      "note": "direction이 '방향, 지시'라는 추상적 의미일 때는 단수로 쓰지만, '길 안내, 사용 설명, 지시 사항'이라는 의미일 때는 여러 단계의 안내가 모인 것이므로 복수형 directions로 쓴다. 여기서는 회의실까지 가는 '길 안내'를 뜻하므로 (C) directions가 정답이다. (A) direction은 단수라 '길 안내'의 의미로는 어색하고, (B) directive는 '(공식적인) 명령/지시서'라는 다른 단어이며, (D) directing은 동명사/분사라 명사 자리에 부적합하다. give directions(길을 안내하다), follow the directions(설명을 따르다)처럼 복수로 쓰이는 관용 표현을 기억하자."
      },
      {
       "en": "Inquiries regarding refunds will be directed to the accounting department.",
@@ -1274,15 +1280,15 @@ const VOCAB_KSTN1 = [
       "en": "The new manager has the ________ to approve business trips and expense reports.",
       "opt": "(A) authority  (B) author  (C) authorize  (D) authorization",
       "ans": "(A)",
-      "ko": "새 매니저는 출장과 비용 보고서를 승인할 권한이 있다.",
-      "note": "authority와 authorization을 구분하는 문제가 자주 출제되었다."
+      "ko": "새 매니저는 출장과 비용 보고서를 승인할 권한을 가지고 있다.",
+      "note": "관사 the 뒤 명사 자리이면서 'to부정사(to approve)'의 수식을 받아 '~할 권한'이라는 의미를 만드는 (A) authority가 정답이다. authority는 '권한, 권위'라는 추상명사로 'the authority to + 동사원형(~할 권한)' 형태가 토익에 자주 나온다. (B) author(저자)는 의미가 맞지 않고, (C) authorize(승인하다)는 동사라 명사 자리에 올 수 없으며, (D) authorization(승인, 허가)은 '승인 행위' 자체를 뜻해 'to부정사로 권한을 설명하는' 이 문맥과는 어울리지 않는다."
      },
      {
       "en": "Ms. Jenkins is an ________ on international trade law and will give a lecture at the conference.",
       "opt": "(A) authority  (B) authorization  (C) authorize  (D) authoritative",
       "ans": "(A)",
-      "ko": "Jenkins 씨는 국제 무역법의 전문가이며 회의에서 강의를 할 예정이다.",
-      "note": "authority가 '전문가, 권위자'의 뜻으로도 출제되었다."
+      "ko": "Jenkins 씨는 국제 무역법의 권위자이며 회의에서 강의를 할 예정이다.",
+      "note": "부정관사 an 뒤 단수명사 자리이고 'be an authority on ~(~에 관한 권위자/전문가이다)'라는 관용 표현을 완성하는 (A) authority가 정답이다. 여기서 authority는 앞 문제의 '권한'과 달리 '전문가, 권위자'라는 가산명사로 쓰였다. (B) authorization은 '승인'이라 사람을 가리킬 수 없고, (C) authorize는 동사, (D) authoritative(권위 있는)는 형용사라 관사 뒤 명사 자리에 올 수 없다. 전치사가 on이라는 점도 함께 기억해 두자."
      }
     ]
    },
@@ -1343,7 +1349,8 @@ const VOCAB_KSTN1 = [
       "en": "'take measures (조치를 취하다)' 표현을 물어보는 문제가 자주 출제되었다. 조치를 취할 때는 여러 단계, 여러 가지 조치를 취하기 때문에 복수형을 쓴다.\nThe company decided to take ______ to prevent further data breaches.",
       "opt": "(A) measure  (B) measurable  (C) measures  (D) measuring",
       "ans": "(C)",
-      "ko": "그 회사는 추가적인 데이터 유출을 막기 위해 조치를 취하기로 결정했다."
+      "ko": "그 회사는 추가적인 데이터 유출을 막기 위해 조치를 취하기로 결정했다.",
+      "note": "동사 take의 목적어 자리이면서 'take measures(조치를 취하다)'라는 관용 표현을 완성하는 (C) measures가 정답이다. 보통 조치는 여러 단계로 이루어지므로 복수형 measures를 쓰는 것이 토익의 단골 포인트다. (A) measure는 단수라 이 표현과 맞지 않고, (B) measurable(측정 가능한)은 형용사, (D) measuring은 동명사/분사라 take의 목적어로 어색하다. take measures to부정사 형태로 '~하기 위한 조치를 취하다'를 함께 외워 두자."
      }
     ]
    },
@@ -1574,7 +1581,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "announce, notify, inform의 차이를 묻는 문제가 출제되었다.\n* notify/inform은 'notify/inform + 사람 + of/about + 내용' 형태로 쓰인다.\n* announce는 사람을 바로 뒤에 목적어로 쓰지 않고 'announce + 내용'",
+      "note": "빈칸 바로 뒤에 사람이 아닌 '내용(the company's expansion plans)'이 목적어로 왔으므로 'announce + 내용' 구조를 취하는 (A) announce(발표하다)가 정답이다. (B) notify, (C) inform은 'notify/inform + 사람 + of/about + 내용'처럼 사람을 먼저 목적어로 받기 때문에 바로 내용이 오는 이 문장에 맞지 않는다. (D) advise(조언하다)도 의미상 어색하다. announce는 '소식·계획을 공식적으로 발표하다'라는 뜻으로 사람을 직접 목적어로 쓰지 않는다는 점이 핵심이다.",
       "en": "The CEO will ______ the company's expansion plans at the annual meeting next week.",
       "opt": "(A) announce  (B) notify  (C) inform  (D) advise",
       "ans": "(A)",
@@ -1584,7 +1591,8 @@ const VOCAB_KSTN1 = [
       "en": "The HR department will ______ all employees of the revised health insurance policy.",
       "opt": "(A) notify  (B) informed  (C) announce  (D) report",
       "ans": "(A)",
-      "ko": "인사 부서는 개정된 건강 보험 정책을 모든 직원에게 알릴 것이다."
+      "ko": "인사 부서는 개정된 건강 보험 정책을 모든 직원에게 알릴 것이다.",
+      "note": "빈칸 뒤에 사람 목적어(all employees)가 오고 그 뒤에 'of + 내용(of the revised health insurance policy)'이 이어지므로 'notify + 사람 + of + 내용' 구조를 만드는 (A) notify가 정답이다. (B) informed는 과거형/과거분사라 조동사 will 뒤 동사원형 자리에 올 수 없고, (C) announce는 사람을 직접 목적어로 받지 않으며, (D) report도 'report + 사람 + of' 형태로는 쓰지 않는다. notify A of B(A에게 B를 알리다) 패턴을 inform과 함께 묶어 기억하자."
      },
      {
       "note": "notice는 시험에 자주 출제된다.",
@@ -1615,7 +1623,8 @@ const VOCAB_KSTN1 = [
       "en": "The participants were divided ______ four small groups for the activity.",
       "opt": "(A) to  (B) into  (C) by  (D) among",
       "ans": "(B)",
-      "ko": "참가자들은 활동을 위해 네 개의 작은 그룹으로 나누어졌다."
+      "ko": "참가자들은 활동을 위해 네 개의 작은 그룹으로 나누어졌다.",
+      "note": "'divide A into B(A를 B로 나누다)'의 수동태 'be divided into ~' 표현을 완성하는 (B) into가 정답이다. 하나의 대상을 여러 부분으로 '안으로 들어가듯' 나눈다는 의미라 전치사 into를 쓴다. (A) to는 방향만 나타내고 분할의 뜻이 없어 어색하고, (C) by는 'divide A by B(A를 B로 나누다, 수학적 나눗셈)'일 때 쓰며, (D) among은 '~사이에 분배하다'일 때 쓰여 여기서는 맞지 않는다. be divided into를 통째로 외워 두면 좋다."
      }
     ]
    },
@@ -1704,7 +1713,8 @@ const VOCAB_KSTN1 = [
       "en": "Guests will not be ______ for parking during their stay at the hotel.",
       "opt": "(A) cost  (B) charged  (C) priced  (D) spent",
       "ans": "(B)",
-      "ko": "투숙객은 호텔에 머무는 동안 주차 요금이 부과되지 않습니다."
+      "ko": "투숙객은 호텔에 머무는 동안 주차 요금이 부과되지 않습니다.",
+      "note": "'charge + 사람 + for ~(~에 대해 요금을 부과하다)'의 수동태 'be charged for ~' 구조를 완성하는 (B) charged가 정답이다. 사람을 주어로 두고 '요금이 부과되다'를 표현할 때는 charge를 쓴다. (A) cost는 '사물이 값이 나가다'라 사람을 주어로 한 수동태로 쓰지 않고, (C) priced는 '가격이 매겨지다'라 주차 요금 부과 문맥과 어색하며, (D) spent(돈을 쓰다)는 의미가 반대다. charge A for B 패턴과 그 수동태 형태를 기억하자."
      },
      {
       "en": "Mr. Han will be in charge of arranging the annual seminar.",
@@ -1910,10 +1920,10 @@ const VOCAB_KSTN1 = [
     "examVar": [
      {
       "en": "occupation, occupant, occupancy를 구분하는 문제가 자주 출제되었다.",
-      "ko": "Please indicate your name, address, and ______ on the application form.",
+      "ko": "신청서에 이름, 주소, 직업을 기입해 주세요.",
       "opt": "(A) occupation  (B) occupancy  (C) occupant  (D) occupying",
       "ans": "(A)",
-      "note": "신청서에 이름, 주소, 직업을 기입해 주세요."
+      "note": "name, address와 나란히 신청서에 적는 항목이므로 '직업'을 뜻하는 (A) occupation이 정답이다. occupation은 '직업, 점유'라는 추상명사다. (B) occupancy(점유, 입주율)는 공간 사용 정도를 뜻하고, (C) occupant(입주자, 사용자)는 사람을 가리키며, (D) occupying은 분사/동명사라 이름·주소와 병렬되는 명사 항목으로 어색하다. occupation(직업) vs occupant(사용자) vs occupancy(점유율)의 의미 차이를 구분하는 것이 핵심이다."
      }
     ]
    },
@@ -1973,7 +1983,8 @@ const VOCAB_KSTN1 = [
       "en": "2. 'be dedicated to A (A에 전념하다)'에서 A에 동명사/명사가 온다는 점을 묻는 문제가 자주 출제되었다.\nThe team is dedicated to ______ new ways to improve productivity.",
       "opt": "(A) develop  (B) development  (C) developing  (D) developed",
       "ans": "(C)",
-      "ko": "그 팀은 생산성을 향상시킬 새로운 방법을 개발하는 데 전념하고 있다."
+      "ko": "그 팀은 생산성을 향상시킬 새로운 방법을 개발하는 데 전념하고 있다.",
+      "note": "'be dedicated to ~(~에 전념하다)'에서 to는 to부정사가 아니라 전치사이므로 뒤에 동명사가 와야 한다. 따라서 (C) developing이 정답이다. (A) develop(동사원형)과 (D) developed는 전치사 to 뒤에 올 수 없고, (B) development(명사)는 뒤의 목적어(new ways)를 받을 수 없어 어색하다. be dedicated to -ing, be committed to -ing, look forward to -ing처럼 'to + 동명사'를 취하는 표현들을 묶어서 기억해 두자."
      }
     ]
    },
@@ -2132,7 +2143,8 @@ const VOCAB_KSTN1 = [
       "en": "attendee / attendant / attendance / attention의 의미 및 형태 혼동 문제가 자주 출제되었다.",
       "opt": "The hotel ______ will assist guests with their luggage at the entrance.\n(A) attendant  (B) attendee  (C) attendance  (D) attention",
       "ans": "(A)",
-      "ko": "호텔 안내원이 입구에서 손님들의 짐을 도와줄 것이다."
+      "ko": "호텔 안내원이 입구에서 손님들의 짐을 도와줄 것이다.",
+      "note": "입구에서 손님의 짐을 돕는 '사람'을 가리키므로 '안내원, 종업원'을 뜻하는 (A) attendant가 정답이다. (B) attendee는 '(행사) 참석자'라 호텔 측에서 짐을 돕는 직원과 맞지 않고, (C) attendance(출석, 참석률)와 (D) attention(주의, 관심)은 사람을 가리키지 않는 추상명사라 주어로 어색하다. attendant(시중드는 직원) vs attendee(참석자)의 사람 명사 구분과, attendance/attention 같은 추상명사와의 형태 혼동에 유의하자."
      }
     ]
    },
@@ -2181,13 +2193,15 @@ const VOCAB_KSTN1 = [
       "en": "The CEO is a ______ respected leader in the international business community.",
       "opt": "(A) high  (B) highly  (C) height  (D) highest",
       "ans": "(B)",
-      "ko": "그 CEO는 국제 비즈니스계에서 매우 존경받는 지도자이다."
+      "ko": "그 CEO는 국제 비즈니스계에서 매우 존경받는 지도자이다.",
+      "note": "뒤의 분사형 형용사 respected(존경받는)를 수식하는 부사 자리이므로 '매우, 대단히'라는 뜻의 (B) highly가 정답이다. highly는 정도를 강조하는 부사로 respected, qualified, recommended 같은 형용사와 잘 어울린다. (A) high는 주로 '높은/높이'라는 물리적 의미라 의미가 맞지 않고, (C) height(높이)는 명사, (D) highest는 최상급 형용사라 형용사를 수식하는 부사 자리에 올 수 없다. high(물리적으로 높이)와 highly(정도가 매우)의 의미 차이가 핵심이다."
      },
      {
       "en": "The workers stacked the boxes ______ on the storage shelves.",
       "opt": "(A) high  (B) highly  (C) height  (D) higher",
       "ans": "(A)",
-      "ko": "작업자들은 상자들을 보관 선반 위에 높게 쌓았다."
+      "ko": "작업자들은 상자들을 보관 선반 위에 높게 쌓았다.",
+      "note": "동사 stacked(쌓았다)를 수식하면서 '높이, 높게'라는 물리적 높이를 나타내야 하므로 (A) high가 정답이다. high는 형용사뿐 아니라 '높게'라는 부사로도 쓰여 위로 쌓는 동작과 잘 어울린다. (B) highly는 '매우, 대단히'라는 정도의 의미라 물리적으로 높이 쌓는 이 문맥과 맞지 않는다. (C) height는 명사, (D) higher는 비교급이라 단독 부사 자리에 부적절하다. high(물리적 높이) vs highly(정도)의 구분을 다시 확인하는 문제다."
      }
     ]
    }
@@ -2288,7 +2302,8 @@ const VOCAB_KSTN1 = [
     "examVar": [
      {
       "en": "1. Please complete all sections of the form, leaving blank those that are not applicable.",
-      "ko": "해당되지 않는 항목은 비워 두고, 양식의 모든 항목을 작성해 주십시오."
+      "ko": "모든 지원자들은 다음 주 금요일까지 이력서를 제출해야 한다.",
+      "note": "이력서를 제출하는 '사람들'을 가리키므로 '지원자들'을 뜻하는 (A) applicants가 정답이다. (B) applications(지원서)는 사물이라 이력서를 제출하는 주체가 될 수 없고, (C) appliances(가전제품, 장치)는 의미가 전혀 다르며, (D) applies는 동사 형태라 주어 명사 자리에 올 수 없다. applicant(지원자, 사람) vs application(지원서) vs appliance(전기장치)의 의미 차이를 구분하는 것이 핵심 포인트다."
      },
      {
       "note": "2. applicable과 used의 사용 차이를 묻는 문제가 출제되었다.",
@@ -2453,11 +2468,11 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "1. 'issue a refund'가 수동태 형태로 자주 출제되었다.",
+      "note": "'issue a refund(환불을 발급/처리하다)'의 수동태 'a refund will be issued' 구조를 완성하는 (A) issued가 정답이다. issue는 '발급하다, 지급하다'라는 뜻으로 refund, ticket, statement 등과 자주 쓰인다. (B) paid는 'pay a refund'로 잘 쓰지 않고, (C) charged(부과되다)는 의미가 반대이며, (D) announced(발표되다)는 환불 지급 문맥과 어울리지 않는다. issue a refund 표현이 수동태로 자주 출제된다는 점을 기억하자.",
       "en": "A full refund will be ______ to customers who return defective products.",
       "opt": "(A) issued  (B) paid  (C) charged  (D) announced",
       "ans": "(A)",
-      "ko": "불량 제품을 반품하는 고객에게 전액 환불될 것이다."
+      "ko": "불량 제품을 반품하는 고객에게 전액 환불이 발급될 것이다."
      },
      {
       "note": "2. issue의 다양한 의미를 묻는 문제들이 자주 출제되었다.",
@@ -2647,7 +2662,8 @@ const VOCAB_KSTN1 = [
       "en": "adopt, adapt, adept(숙련된, 정통한)를 구분하는 문제가 자주 출제되었다.\nThe company decided to ______ a new marketing strategy to attract more customers.",
       "opt": "(A) adapt (B) adopt (C) adept (D) addition",
       "ans": "(B)",
-      "ko": "그 회사는 더 많은 고객을 유치하기 위해 새로운 마케팅 전략을 채택하기로 결정했다."
+      "ko": "그 회사는 더 많은 고객을 유치하기 위해 새로운 마케팅 전략을 채택하기로 결정했다.",
+      "note": "전략을 '채택하다'라는 의미가 필요하므로 (B) adopt가 정답이다. adopt a strategy/policy/plan(전략·정책·계획을 채택하다)처럼 새로운 것을 받아들일 때 쓴다. (A) adapt(적응시키다, 개조하다)는 철자가 비슷하지만 의미가 다르고, (C) adept(숙련된)는 형용사라 to부정사 동사 자리에 올 수 없으며, (D) addition(추가)은 명사라 부적절하다. adopt(채택하다) vs adapt(적응하다) vs adept(숙련된)의 철자·의미·품사 차이를 구분하는 것이 핵심이다."
      }
     ]
    },
@@ -2877,7 +2893,7 @@ const VOCAB_KSTN1 = [
       "opt": "(A) urgency  (B) urgent  (C) urgently  (D) urging",
       "ans": "(B)",
       "ko": "긴급한 안전 문제 때문에, 감독관은 모든 직원에게 즉시 건물을 대피하라고 지시했다.",
-      "note": "urging은 urge의 분사형으로 \"(사람이) ~하라고 재촉하는, 촉구하는\""
+      "note": "관사 an과 명사 safety issue 사이에 들어가 명사를 꾸며주는 형용사 자리이므로 (B) urgent(긴급한)가 정답이다. (A) urgency는 명사, (C) urgently는 부사라 명사를 수식할 수 없고, (D) urging은 urge(촉구하다)의 분사형으로 '(사람이) ~하라고 재촉하는'이라는 능동적 의미여서 '문제(issue)'와 어울리지 않는다. urgent는 '시간을 다투는, 급박한'이라는 뜻으로 issue, matter, request, need 등과 자주 짝을 이룬다."
      }
     ]
    },
@@ -2986,7 +3002,8 @@ const VOCAB_KSTN1 = [
       "en": "공공요금(전기·가스·수도)은 utilities(복수형)를 쓴다.\nThe monthly rent includes maintenance fees and all _______ such as water and electricity.",
       "opt": "(A) utilities  (B) utility  (C) utilization  (D) utilized",
       "ans": "(A)",
-      "ko": "월세에는 관리비와 수도, 전기 같은 모든 공공요금이 포함됩니다."
+      "ko": "월세에는 관리비와 수도, 전기 같은 모든 공공요금이 포함됩니다.",
+      "note": "all 뒤에 와서 such as water and electricity(수도, 전기 등)의 예시를 받는 자리이므로 '공공요금'을 뜻하는 복수명사 (A) utilities가 정답이다. 전기·가스·수도 같은 공공요금은 보통 복수형 utilities로 쓴다. (B) utility는 단수라 all과 such as 예시(복수)에 맞지 않고, (C) utilization은 '활용', (D) utilized는 동사/분사라 의미·품사 모두 어울리지 않는다."
      }
     ]
    },
@@ -3106,7 +3123,8 @@ const VOCAB_KSTN1 = [
       "en": "2. The marketing director tried to convince investors ______ the product's long-term potential.",
       "opt": "(A) for  (B) of  (C) about  (D) with",
       "ans": "(B)",
-      "ko": "마케팅 이사는 투자자들에게 그 제품의 장기적인 잠재력을 납득시키려고 했다."
+      "ko": "마케팅 이사는 투자자들에게 그 제품의 장기적인 잠재력을 납득시키려고 했다.",
+      "note": "convince A of B(A에게 B를 납득시키다/확신시키다) 구문이므로 전치사 (B) of가 정답이다. '~에 대해 설득하다'라는 우리말 때문에 (C) about을 고르기 쉽지만, convince는 of나 that절과 결합한다. convince + 목적어 + of + 명사, 또는 convince + 목적어 + that절 형태를 함께 기억해 두자. (A) for, (D) with는 convince와 함께 쓰지 않는다."
      }
     ]
    },
@@ -3209,20 +3227,21 @@ const VOCAB_KSTN1 = [
       "opt": "(A) change  (B) changing  (C) changed  (D) to change",
       "ans": "(B)",
       "ko": "노동조합은 현 퇴직 정책 변경에 강하게 반대한다.",
-      "note": "be opposed to + 동명사/명사"
+      "note": "be opposed to에서 to는 to부정사가 아니라 전치사이므로 뒤에 명사나 동명사가 와야 한다. 따라서 동명사 (B) changing이 정답이다. (D) to change는 to부정사라 전치사 to 뒤에 올 수 없고, (A) change(원형동사), (C) changed(과거/과거분사)도 자리에 맞지 않는다. be opposed to -ing, look forward to -ing, be accustomed to -ing처럼 'to + 동명사' 형태를 묶어서 외워 두자."
      },
      {
       "en": "품사와 의미 구분 문제가 출제되었다.\nThe company defeated its strongest _______ in the market last quarter.",
       "opt": "(A) opponent  (B) opposition  (C) opposing  (D) oppose",
       "ans": "(A)",
-      "ko": "그 회사는 지난 분기에 시장에서 가장 강력한 경쟁자를 물리쳤다."
+      "ko": "그 회사는 지난 분기에 시장에서 가장 강력한 경쟁자를 물리쳤다.",
+      "note": "소유격 its와 형용사 strongest의 수식을 받는 명사 자리이며, '물리치다(defeat)'의 목적어로 '사람'이 와야 자연스러우므로 (A) opponent(경쟁자, 상대)가 정답이다. (B) opposition은 '반대(행위), 반대 세력'이라는 추상명사라 '물리친 대상'으로는 어색하고, (C) opposing은 형용사/분사, (D) oppose는 동사라 명사 자리에 올 수 없다. opponent는 사람(상대·경쟁자), opposition은 반대·저항이라는 의미 차이를 구분해 두자."
      },
      {
       "en": "object to와 oppose를 구분하는 문제가 출제되었다.\nSeveral employees strongly _______ to working overtime without extra pay.",
       "opt": "(A) oppose  (B) object  (C) opposition  (D) opposed",
       "ans": "(B)",
       "ko": "몇몇 직원들은 추가 수당 없이 야근하는 것에 강하게 반대한다.",
-      "note": "object는 자동사이므로 뒤에 전치사 to를 취한다. oppose는 타동사로 전치사 없이 목적어를 취한다."
+      "note": "빈칸 뒤에 전치사 to가 있으므로 자동사가 필요하다. object는 자동사로 object to(~에 반대하다)처럼 전치사 to를 동반하므로 (B) object가 정답이다. (A) oppose는 타동사여서 전치사 없이 바로 목적어를 취하므로 뒤의 to와 충돌한다. (C) opposition은 명사, (D) opposed는 동사 형태가 어긋난다. 'object to + 명사/동명사 = oppose + 명사'로 두 표현을 비교해 기억하자."
      }
     ]
    },
@@ -3438,7 +3457,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "staff와 staffing의 차이를 구분하는 문제가 출제되었다.",
+      "note": "관사 a와 명사 agency 사이에서 명사를 꾸며 '인력 (파견) 회사'라는 복합명사를 만드는 (B) staffing이 정답이다. staffing agency는 '인력 채용/파견 회사'를 뜻하는 관용 표현이다. (A) staff는 '직원'을 뜻하는 집합명사로 agency와 결합해 의미를 이루지 못하고, (C) staffed는 과거분사, (D) staffs는 동사 형태라 명사 앞 수식어 자리에 맞지 않는다.",
       "en": "The company hired a _______ agency to find temporary workers for the busy season.",
       "opt": "(A) staff  (B) staffing  (C) staffed  (D) staffs",
       "ans": "(B)",
@@ -3448,7 +3467,8 @@ const VOCAB_KSTN1 = [
       "en": "The clinic is currently _______ with experienced nurses.",
       "opt": "(A) staff  (B) staffing  (C) staffed  (D) staffs",
       "ans": "(C)",
-      "ko": "그 진료소는 현재 숙련된 간호사들로 인력이 배치되어 있다."
+      "ko": "그 진료소는 현재 숙련된 간호사들로 인력이 배치되어 있다.",
+      "note": "be staffed with(~로 인력이 배치되어 있다)라는 수동 표현이므로 과거분사 (C) staffed가 정답이다. 동사 staff는 '~에 직원을 배치하다'라는 타동사라, '간호사들로 채워진' 상태를 나타내려면 be동사 뒤에 수동의 과거분사가 와야 한다. (B) staffing은 진행/동명사, (A) staff·(D) staffs는 명사/동사라 'be + 보어' 자리에 맞지 않는다. be staffed with experienced nurses(숙련된 간호사들로 충원되다)를 통째로 익혀 두자."
      }
     ]
    },
@@ -3618,7 +3638,7 @@ const VOCAB_KSTN1 = [
       "opt": "(A) lend  (B) rent  (C) borrow  (D) lease",
       "ans": "(C)",
       "ko": "회사는 사업 확장을 위해 은행에서 추가 자금을 빌리기로 결정했다.",
-      "note": "lend (작은 물건, 돈 등을) 빌려주다 / rent (부동산, 차, 큰 기계 등을) 임대하다, 임차하다 / lease (장기 계약으로 건물, 장비, 차량 등을) 임대하다, 임차하다"
+      "note": "'은행에서(from the bank)' 자금을 가져오는 것이므로 '빌려오다(차입하다)'를 뜻하는 (C) borrow가 정답이다. (A) lend는 '빌려주다'로 방향이 반대이며, (B) rent와 (D) lease는 부동산·차량·장비 등을 임대/임차할 때 쓰는 말이라 '자금(funds)'에는 어울리지 않는다. borrow A from B(B에게서 A를 빌리다)와 lend A to B(B에게 A를 빌려주다)의 방향 차이를 꼭 구분하자."
      }
     ]
    },
@@ -3758,14 +3778,14 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "1. in addition to 다음에 명사/동명사가 오는 문제가 자주 출제되었다.",
+      "note": "in addition to에서 to는 전치사이므로 뒤에 명사나 동명사가 와야 한다. 따라서 동명사 (C) reviewing이 정답이다. (A) review(원형), (B) reviews(복수명사/3인칭 동사), (D) reviewed(과거/분사)는 모두 전치사 to의 목적어 자리에 맞지 않는다. in addition to -ing(~하는 것에 더해)는 전치사구이고, 뒤에 'the report'라는 목적어를 받을 수 있는 동명사가 적절하다.",
       "en": "In addition to _______ the report, the assistant prepared a presentation.",
       "opt": "(A) review  (B) reviews  (C) reviewing  (D) reviewed",
       "ans": "(C)",
       "ko": "보고서를 검토하는 것에 더해, 그 비서는 발표 자료를 준비했다."
      },
      {
-      "note": "2. 'In addition to + 명사' vs 'In addition, + 완전한 문장' (쉼표 유무 + 문장 구조로 판단)",
+      "note": "빈칸 뒤에 쉼표와 함께 'the company will provide...'라는 완전한 문장이 이어지므로, 문장 전체를 이어주는 접속부사 (B) In addition(게다가, 또한)이 정답이다. (A) In addition to는 'to + 명사/동명사'를 받는 전치사구라 뒤에 완전한 문장이 올 수 없다. (C) In addition for, (D) In addition with는 존재하지 않는 형태다. 'In addition to + 명사' vs 'In addition, + 완전한 문장'을 쉼표와 뒤 구조로 구분하자.",
       "en": "_______, the company will provide additional training for new employees.",
       "opt": "(A) In addition to  (B) In addition  (C) In addition for  (D) In addition with",
       "ans": "(B)",
@@ -3833,7 +3853,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "object to(반대하다), objection(반대), objective(목표, 목적) 구분 문제가 자주 출제되었다.",
+      "note": "any의 수식을 받고 뒤에 to the proposed changes(~에 대한)가 이어지므로, '이의, 반대'를 뜻하며 to와 결합하는 명사 (C) objection이 정답이다. (A) object는 동사 '반대하다'/명사 '물체', (B) objectives는 '목표', (D) objected는 동사라 자리에 맞지 않는다. have an objection to(~에 이의가 있다)를 묶어서 외우고, object to(반대하다)·objection(반대)·objective(목표)의 의미를 구분하자.",
       "en": "The committee chairperson asked if anyone had any ___ to the proposed changes.",
       "opt": "(A) object  (B) objectives  (C) objection  (D) objected",
       "ans": "(C)",
@@ -3891,7 +3911,7 @@ const VOCAB_KSTN1 = [
       "opt": "(A) change  (B) changing  (C) be changed  (D) changeable",
       "ans": "(A)",
       "ko": "모든 일정은 사전 통보 없이 변경될 수 있다.",
-      "note": "전치사 to 다음에 명사 change(변경)가 와야 하고, changing(동명사)은 뒤에 목적어가 필요하다."
+      "note": "be subject to에서 to는 전치사이므로 뒤에 명사가 와야 하며, '변경'이라는 명사 (A) change가 정답이다. change는 명사와 동사가 같은 형태인데 여기서는 명사로 쓰였다. (B) changing은 동명사로 뒤에 목적어가 필요해 어색하고, (C) be changed는 동사원형 형태라 전치사 뒤에 올 수 없으며, (D) changeable은 형용사다. be subject to change(변경될 수 있다)는 일정·가격 안내문에 자주 나오는 표현이다."
      }
     ]
    },
@@ -4143,13 +4163,15 @@ const VOCAB_KSTN1 = [
       "en": "1. Regular maintenance contributes ___ extending the lifespan of equipment.",
       "opt": "(A) to  (B) for  (C) in  (D) by",
       "ans": "(A)",
-      "ko": "정기적인 유지 관리는 장비 수명을 연장하는 데 기여한다."
+      "ko": "정기적인 유지 관리는 장비 수명을 연장하는 데 기여한다.",
+      "note": "동사 contribute는 자동사로 '~에 기여하다'라는 뜻일 때 전치사 to와 결합하므로 (A) to가 정답이다. contribute to + 명사/동명사(~에 기여하다, 이바지하다) 형태를 기억하자. (B) for, (C) in, (D) by는 contribute와 함께 쓰지 않는다. 이때 to는 to부정사가 아니라 전치사이므로 뒤에 동명사(extending)가 온 점도 함께 확인하자."
      },
      {
       "en": "2. Regular maintenance contributes to ___ equipment failures.",
       "opt": "(A) prevent  (B) preventing  (C) prevented  (D) be prevented",
       "ans": "(B)",
-      "ko": "정기적인 유지 관리는 장비 고장을 예방하는 데 기여한다."
+      "ko": "정기적인 유지 관리는 장비 고장을 예방하는 데 기여한다.",
+      "note": "contribute to에서 to는 전치사이므로 뒤에 동명사가 와야 하고, 뒤의 목적어 equipment failures를 받을 수 있는 (B) preventing이 정답이다. (A) prevent(원형)와 (C) prevented(과거/분사), (D) be prevented(수동 원형)는 전치사 to의 목적어 자리에 맞지 않는다. 특히 prevent는 '예방하다'라는 능동의 의미라 수동형 be prevented는 의미상으로도 어색하다."
      }
     ]
    },
@@ -4432,13 +4454,15 @@ const VOCAB_KSTN1 = [
       "en": "1. valued와 valuable을 구분하는 문제가 자주 출제되었다.\n* valued + 사람/관계\n* valuable + 사물/정보/시간/자산 (보통 사람을 수식하지 않음)\nThe company expressed its gratitude to all its ______ customers for their continued support.",
       "opt": "(A) valuable  (B) valued  (C) valuing  (D) valuation",
       "ans": "(B)",
-      "ko": "회사는 지속적인 지원에 대해 모든 소중한 고객들에게 감사를 표했다."
+      "ko": "회사는 지속적인 지원에 대해 소중히 여기는 모든 고객들에게 감사를 표했다.",
+      "note": "빈칸은 customers(사람)를 수식하는 자리이다. valued는 '소중히 여겨지는, 귀중한'이라는 뜻으로 사람이나 관계를 수식할 때 쓰므로 (B)가 정답이다. (A) valuable은 '값비싼, 귀중한'이지만 주로 사물·정보·시간·자산 등을 수식하며 사람을 직접 꾸미는 경우는 드물어 valued customers가 자연스러운 관용 표현이다. (C) valuing(현재분사)과 (D) valuation(명사)은 의미·품사상 customers를 수식할 수 없다. valued customer(소중한 고객), valued employee(소중한 직원)처럼 '사람+valued' 짝을 기억해 두는 것이 좋다."
      },
      {
       "en": "2. For security reasons, please do not leave your ______ unattended in the hotel lobby.",
       "opt": "(A) valuables  (B) valuable  (C) valuation  (D) value",
       "ans": "(A)",
-      "ko": "보안상의 이유로, 호텔 로비에 귀중품을 방치하지 말아 주십시오."
+      "ko": "보안상의 이유로, 호텔 로비에 귀중품을 방치하지 말아 주십시오.",
+      "note": "동사 leave의 목적어 자리이므로 명사가 필요하고, 의미상 '귀중품들'을 뜻하는 복수명사 (A) valuables가 정답이다. valuable은 보통 형용사('값비싼')이지만 복수형 valuables로 쓰면 '귀중품'이라는 명사가 된다. (B) valuable은 형용사라 목적어가 될 수 없고, (C) valuation은 '평가·가치 산정', (D) value는 '가치'라는 추상명사로 '소지품으로서의 귀중품'이라는 문맥에 맞지 않는다. leave ~ unattended(~을 방치하다)라는 표현도 함께 익혀 두자."
      }
     ]
    },
@@ -4787,11 +4811,11 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "by means of(~에 의하여), by all means(물론이지, 반드시), by no means(결코 ~아니다)를 구분하는 문제가 자주 출제되었다.",
+      "note": "빈칸 뒤에 명사구(a temporary software patch)가 이어지고 '~을 통해/수단으로'라는 의미가 필요하므로 전치사구 (C) by means of가 정답이다. (A) by all means는 '반드시, 물론이지'라는 강한 긍정의 부사구, (B) by no means는 '결코 ~아니다'라는 강한 부정의 부사구, (D) by any means는 '어떻게 해서든'이라는 의미로 모두 뒤에 명사를 직접 받아 '수단'을 나타내지 못한다. by means of만이 뒤에 수단을 나타내는 명사를 취하는 전치사 역할을 한다는 점이 핵심이다.",
       "en": "The technical issue was resolved _______ a temporary software patch created by the support team.",
       "opt": "(A) by all means  (B) by no means  (C) by means of  (D) by any means",
       "ans": "(C)",
-      "ko": "기술적 문제는 지원팀이 만든 임시 소프트웨어 패치를 통해 해결되었다."
+      "ko": "그 기술적 문제는 지원팀이 만든 임시 소프트웨어 패치를 통해 해결되었다."
      }
     ]
    },
@@ -5439,7 +5463,8 @@ const VOCAB_KSTN1 = [
       "en": "identity와 identification을 구분하는 문제가 자주 출제되었다.\nCustomers are asked to show a photo ______ at the counter.",
       "opt": "(A) identity  (B) identify  (C) ID  (D) identifying",
       "ans": "(C)",
-      "ko": "고객은 창구에서 사진이 부착된 신분증을 제시해야 한다."
+      "ko": "고객은 창구에서 사진이 부착된 신분증을 제시해야 한다.",
+      "note": "show의 목적어 자리이면서 photo의 수식을 받는 명사가 필요하고, '신분증'을 뜻하는 (C) ID가 문맥상 정답이다. photo ID(사진이 부착된 신분증)는 토익에 자주 나오는 짝 표현이다. (A) identity는 '정체성·신원'이라는 추상명사라 '제시하는 증명서'라는 의미에 어색하고, (B) identify는 동사, (D) identifying은 분사로 목적어 자리에 단독으로 쓸 수 없다. identity(신원)와 ID/identification(신분증)을 의미로 구분하는 것이 포인트이다."
      }
     ]
    },
@@ -5619,19 +5644,22 @@ const VOCAB_KSTN1 = [
       "en": "The bank charges a small ______ for processing international wire transfers.",
       "opt": "(A) price   (B) cost   (C) fee   (D) expense",
       "ans": "(C)",
-      "ko": "그 은행은 국제 송금 처리를 위해 소액의 수수료를 부과한다."
+      "ko": "그 은행은 국제 송금 처리를 위해 소액의 수수료를 부과한다.",
+      "note": "서비스 제공의 대가로 부과하는 '수수료'를 뜻하는 (C) fee가 정답이다. fee는 송금·입장·등록·전문 서비스 등에 대해 청구하는 요금을 가리킨다. (A) price는 상품 자체의 '판매 가격', (B) cost는 '드는 비용·원가', (D) expense는 '지출 비용'으로, 은행이 서비스 처리 대가로 청구하는 금액에는 맞지 않는다. charge a fee(수수료를 부과하다)라는 연어로 기억해 두자."
      },
      {
       "en": "The listed ______ of the office furniture includes delivery and installation.",
       "opt": "(A) fee   (B) price   (C) expense   (D) charge",
       "ans": "(B)",
-      "ko": "그 사무용 가구의 표시된 가격에는 배송과 설치가 포함되어 있다."
+      "ko": "그 사무용 가구의 표시된 가격에는 배송과 설치가 포함되어 있다.",
+      "note": "상품(사무용 가구)의 판매 '가격'을 뜻하는 (B) price가 정답이다. listed price(표시 가격)처럼 물건의 정해진 판매가에는 price를 쓴다. (A) fee는 서비스 수수료, (C) expense는 지출 비용, (D) charge는 이용·서비스에 대한 청구액으로, 가구 자체에 매겨진 판매 가격이라는 문맥에는 맞지 않는다. '상품 가격 = price'라는 기본 의미 구분이 핵심이다."
      },
      {
       "en": "The company reduced operating ______ by switching to a more efficient supplier.",
       "opt": "(A) fees   (B) prices   (C) costs   (D) charges",
       "ans": "(C)",
-      "ko": "그 회사는 더 효율적인 공급업체로 전환함으로써 운영 비용을 줄였다."
+      "ko": "그 회사는 더 효율적인 공급업체로 전환함으로써 운영 비용을 줄였다.",
+      "note": "operating과 결합해 '운영 비용'을 뜻하는 (C) costs가 정답이다. operating costs(운영비)는 사업 운영에 드는 비용을 가리키는 고정 표현이다. (A) fees는 수수료, (B) prices는 판매 가격, (D) charges는 청구 금액으로, 회사가 사업을 운영하며 발생하는 '드는 비용'이라는 의미에는 cost가 적절하다. reduce/cut costs(비용을 줄이다)도 함께 익혀 두자."
      }
     ]
    },
@@ -5698,7 +5726,8 @@ const VOCAB_KSTN1 = [
       "en": "1. The new training program is expected to be beneficial ______ all newly hired employees.",
       "opt": "(A) for   (B) with   (C) to   (D) by",
       "ans": "(C)",
-      "ko": "새로운 교육 프로그램은 새로 채용된 모든 직원들에게 유익할 것으로 예상된다."
+      "ko": "새로운 교육 프로그램은 새로 채용된 모든 직원들에게 유익할 것으로 예상된다.",
+      "note": "형용사 beneficial은 '~에게 유익한'이라는 의미일 때 전치사 to와 함께 쓰이므로 (C) to가 정답이다. be beneficial to + 대상(사람/조직)이 고정된 형태이다. (A) for, (B) with, (D) by는 beneficial과 함께 쓰이지 않는 전치사로 오답이다. 비슷하게 helpful to, similar to처럼 to와 결합하는 형용사들을 묶어서 기억하면 좋다."
      },
      {
       "en": "2. Customers can benefit from lower prices during the promotional period.",
@@ -5758,7 +5787,7 @@ const VOCAB_KSTN1 = [
     "examVar": [
      {
       "en": "indication, show, showing의 차이를 묻는 문제가 자주 출제되었다.",
-      "note": "indication 간접적인 징후 / show 직접적으로 보여주는 것 / showing 성과, 실적",
+      "note": "관사 a와 형용사 clear의 수식을 받는 명사 자리이고, 의미상 '(간접적인) 징후·암시'를 뜻하는 (A) indication이 정답이다. provide a clear indication of(~의 명확한 징후를 제공하다)라는 흐름이 자연스럽다. (D) shows는 동사(3인칭 단수)라 명사 자리에 올 수 없고, (B) show는 '쇼·공연' 또는 '직접 보여주는 것', (C) showing은 '성과·실적'이라는 의미라 '데이터가 드러내는 간접적 징후'라는 문맥에 어울리지 않는다. indication(간접적 징후)과 show(직접 제시)의 뉘앙스 차이가 핵심이다.",
       "ko": "그 보고서는 온라인 쇼핑에 대한 관심 증가의 명확한 징후를 제공한다.",
       "opt": "The report provides a clear ______ of increased interest in online shopping. (A) indication (B) show (C) showing (D) shows",
       "ans": "(A)"
@@ -5958,7 +5987,7 @@ const VOCAB_KSTN1 = [
       "opt": "(A) Most of (B) Majority of (C) The majority (D) Most",
       "ans": "(A)",
       "ko": "제공된 정보의 대부분은 정확했다.",
-      "note": "Most가 답이 되려면 Most information provided ~ 형태로 와야 한다."
+      "note": "빈칸 뒤에 'the information(정관사+명사)'이 이어지므로 'of the + 명사' 구조를 취할 수 있는 (A) Most of가 정답이다. most of the information(그 정보의 대부분)처럼 한정사(the)가 붙은 명사 앞에서는 most of를 쓴다. (D) Most는 정관사 없는 명사를 직접 수식해야 하므로 Most information provided 형태여야 하고, the가 있으면 쓸 수 없다. (B) Majority of는 the majority of로 써야 하고, (C) The majority는 뒤에 of가 빠져 구조가 맞지 않는다."
      },
      {
       "note": "2. most, majority, almost(거의, 대체로), mostly(대부분, 주로)와의 비교 문제가 자주 출제되었다."
@@ -5968,14 +5997,14 @@ const VOCAB_KSTN1 = [
       "opt": "(A) Almost (B) Mostly (C) Most (D) Majority",
       "ans": "(C)",
       "ko": "대부분의 직원들이 유연 근무를 선호한다.",
-      "note": "명사를 직접 수식하려면 most가 와야 한다. almost/mostly는 부사이기 때문에 명사를 수식할 수 없고 majority는 반드시 the majority of 형태로 와야 한다."
+      "note": "한정사 없이 복수명사 employees를 직접 수식하는 자리이므로 (C) Most가 정답이다. most + 복수/불가산명사(most employees) 형태로 '대부분의 ~'를 나타낸다. (A) Almost와 (B) Mostly는 부사라서 명사를 직접 수식할 수 없고(almost all employees처럼 한정사 앞에서만 가능), (D) Majority는 반드시 the majority of employees 형태로 써야 한다. '한정사 없는 명사 → most, 한정사 있는 명사 → most of'라는 구분이 핵심이다."
      },
      {
       "en": "_______ the participants completed the survey on time.",
       "opt": "(A) Most (B) Almost (C) Majority (D) Most of",
       "ans": "(D)",
       "ko": "참가자들 대부분이 설문을 제시간에 완료했다.",
-      "note": "'most of + the/소유격/지시사 + 명사' 구조만 가능하다. 뒤에 the participants(정관사+명사)가 있으므로 most가 오려면 뒤에 the가 없어야 하고, almost/mostly는 부사이기 때문에 명사를 수식할 수 없다. majority는 반드시 the majority of 형태로 와야 한다."
+      "note": "빈칸 뒤에 'the participants(정관사+명사)'가 오므로 'of the + 명사' 구조를 갖는 (D) Most of가 정답이다. most of the participants(참가자들의 대부분) 형태가 맞다. (A) Most는 the가 붙은 명사 앞에 단독으로 올 수 없고(most participants처럼 the가 없어야 함), (B) Almost는 부사라 명사를 직접 수식하지 못하며, (C) Majority는 the majority of 형태여야 한다. 'most of + the/소유격/지시사 + 명사' 구조를 기억하는 것이 포인트이다."
      }
     ]
    },
@@ -6018,7 +6047,8 @@ const VOCAB_KSTN1 = [
       "en": "The new model is similar _______ the previous version in terms of design.",
       "opt": "(A) with   (B) as   (C) to   (D) for",
       "ans": "(C)",
-      "ko": "새 모델은 디자인 면에서 이전 버전과 유사하다."
+      "ko": "새 모델은 디자인 면에서 이전 버전과 유사하다.",
+      "note": "형용사 similar는 '~과 유사한'이라는 의미일 때 전치사 to와 함께 쓰이므로 (C) to가 정답이다. be similar to + 비교 대상이 고정된 형태이다. (A) with, (B) as, (D) for는 similar와 결합하지 않는 전치사로 오답이다. 다만 'A be similar to B'와 달리 'have something in common with'처럼 다른 표현에서는 with를 쓰므로 similar 뒤에는 to라는 점을 확실히 기억하자."
      }
     ]
    },
@@ -6124,7 +6154,7 @@ const VOCAB_KSTN1 = [
       "opt": "The advisory board ______ experts from various fields, including finance, technology, and healthcare. (A) consists (B) is composed (C) comprises (D) is made",
       "ans": "(C)",
       "ko": "그 자문위원회는 금융, 기술, 의료 등 다양한 분야의 전문가들로 구성되어 있다.",
-      "note": "comprise는 'be comprised of'의 수동 형태와는 달리 능동에서는 뒤에 전치사가 없이 바로 목적어가 오는 구조(comprise + 명사)를 갖는다. consists of / is composed of / is made of는 모두 of가 필요하므로 comprise와 구조가 다르다."
+      "note": "빈칸 뒤에 전치사 없이 목적어(experts)가 바로 이어지므로, 능동태에서 전치사 없이 목적어를 취하는 (C) comprises가 정답이다. comprise는 '~으로 구성되다, ~을 포함하다'를 뜻하며 comprise + 명사 구조로 쓴다. (A) consists는 consist of, (B) is composed는 be composed of, (D) is made는 be made of/up of처럼 모두 of가 필요하므로 of 없이 바로 experts가 온 이 빈칸에는 들어갈 수 없다. comprise는 of를 쓰지 않는다는 점이 핵심 함정이다."
      }
     ]
    },
@@ -6197,7 +6227,8 @@ const VOCAB_KSTN1 = [
       "en": "Managers should keep employees ______ of any changes to company procedures.",
       "opt": "(A) inform (B) informing (C) informed (D) informative",
       "ans": "(C)",
-      "ko": "관리자는 회사 절차 변경 사항에 대해 직원들이 알고 있도록 해야 한다."
+      "ko": "관리자는 회사 절차 변경 사항에 대해 직원들이 알고 있도록 해야 한다.",
+      "note": "keep + 목적어(employees) + 목적격보어 구조에서, 직원들이 '정보를 받는(알고 있는)' 수동적 상태를 나타내는 과거분사 (C) informed가 정답이다. keep someone informed of(~에게 ~을 계속 알려 주다)는 토익 빈출 표현이다. (A) inform은 동사원형, (B) informing은 현재분사로 '직원들이 알려 주는' 능동의 의미가 되어 어색하고, (D) informative는 '유익한'이라는 형용사로 사람의 상태를 나타내기에 의미가 맞지 않는다."
      },
      {
       "en": "The manager will ______ employees that the office will be closed for maintenance this weekend.",
@@ -6382,15 +6413,15 @@ const VOCAB_KSTN1 = [
       "en": "1. The equipment is not ________ for use in extreme temperatures.",
       "opt": "(A) fit   (B) fitting   (C) fitted   (D) fitness",
       "ans": "(A)",
-      "ko": "그 장비는 극한 온도에서 사용하기에 적합하지 않다.",
-      "note": "be fit for = 적합하다 → 형용사 fit 필요. 자동사로 수동형 fitted는 불가."
+      "ko": "그 장비는 극한의 온도에서 사용하기에 적합하지 않다.",
+      "note": "be동사(is not) 뒤 보어 자리이며 'be fit for ~(~에 적합하다)' 구문이므로 형용사 (A) fit이 정답이다. fit은 형용사로 '적합한, 알맞은'의 뜻을 가진다. (C) fitted는 '맞춰진/장착된'이라는 수동의 의미가 되어 'for use in extreme temperatures'와 의미가 맞지 않고, (D) fitness는 명사(건강·적합성)라서 보어 자리에 의미상 어울리지 않으며, (B) fitting은 진행형이 아니므로 부적절하다. 'be fit for + 명사', 'be fit to부정사' 형태를 함께 알아두자."
      },
      {
       "en": "2. The new policy does not fit ________ the company's long-term strategy.",
       "opt": "(A) into   (B) for   (C) with   (D) to",
       "ans": "(A)",
       "ko": "그 새로운 정책은 회사의 장기 전략에 부합하지 않는다.",
-      "note": "<be fit + for + 명사 / to부정사>에서 (fit은 형용사), fit into에서 (fit은 동사) 문제에서는 동사 fit이기 때문에 뒤에 전치사 into를 써야 한다."
+      "note": "여기서 fit은 일반동사로 쓰였고 'fit into ~(~에 꼭 들어맞다, 부합하다)'라는 자동사+전치사 표현이 필요하므로 (A) into가 정답이다. 형용사 fit은 'be fit for/to부정사'로 쓰지만, 동사 fit이 '들어맞다'의 의미일 때는 fit into를 쓴다. (B) for, (C) with, (D) to는 동사 fit과 함께 '~에 부합하다'라는 의미를 만들지 못한다. 형용사 fit과 동사 fit의 전치사 차이를 구분하는 것이 핵심이다."
      }
     ]
    },
@@ -6413,8 +6444,8 @@ const VOCAB_KSTN1 = [
       "en": "The manager demanded that the report _______ by the end of the day.",
       "opt": "(A) is submitted (B) be submitted (C) was submitted (D) has been submitted",
       "ans": "(B)",
-      "ko": "관리자는 그 보고서가 오늘 안에 제출되기를 요구했다.",
-      "note": "다음 동사들 다음에 오는 that절에서는 보통 '~해야 한다(should)'는 의미가 들어가기 때문에 <(should) + 동사원형> 형태를 쓴다. 명령(order) 충고(advise, recommend) 주장(insist) 요구(require, request, demand) 결정(determine, decide) 제안(suggest)  [암기법] 명충(한 놈) 주요 결정(란 말이야!) ~해야 한다고 명령하다, 충고하다, 주장하다"
+      "ko": "관리자는 그 보고서가 오늘 안에 제출되어야 한다고 요구했다.",
+      "note": "demand(요구하다)처럼 명령·요구·주장·제안 등을 뜻하는 동사 뒤의 that절에서는 '(should)+동사원형'을 쓰므로 (B) be submitted가 정답이다. 시제나 수에 일치시키는 (A) is submitted, (C) was submitted, (D) has been submitted는 모두 that절의 '당위(should)' 규칙을 어겨 틀리다. 이런 동사로는 order, advise, recommend, insist, require, request, demand, suggest 등이 있으며, that절 동사는 항상 원형(여기서는 수동이므로 be+p.p.)으로 쓴다는 점을 기억하자."
      }
     ]
    },
@@ -6473,21 +6504,21 @@ const VOCAB_KSTN1 = [
       "opt": "(A) needs (B) requests (C) requires (D) asks",
       "ans": "(C)",
       "ko": "회사 정책은 직원들이 항상 신분증을 착용하도록 요구한다.",
-      "note": "need는 5형식으로 쓰지 않음. 그리고 '필요로 하다'란 의미가 어울리지 않음 회사 정책은 의무/필수 요건이기 때문에 request(요청하다)와 ask(부탁하다)보다는 require(요구한다)가 더 적절함"
+      "note": "빈칸은 'require + 목적어 + to부정사(~가 …하도록 요구하다)'라는 5형식 구조의 동사 자리이며, 의무·필수 요건을 나타내므로 (C) requires가 정답이다. (A) need는 'need 목적어 to부정사' 형태의 5형식으로 잘 쓰지 않고 '필요로 하다'라는 의미도 어색하다. (B) request(요청하다)와 (D) ask(부탁하다)는 의미가 약하여 회사의 강제 규정에는 require가 가장 적절하다. require A to부정사 구문을 통째로 익혀두자."
      },
      {
       "en": "2. Customers are _______ to keep receipts for refunds.",
       "opt": "(A) requesting (B) requested (C) required (D) requiring",
       "ans": "(C)",
-      "ko": "고객은 환불을 위해 영수증을 보관해야 한다.",
-      "note": "수동태 형태이며, 환불 조건은 의무/필수 요건이기 때문에 requested(요청된다)보다는 required(요구된다)가 더 적절함"
+      "ko": "고객은 환불을 위해 영수증을 보관하도록 요구받는다.",
+      "note": "'require A to부정사'의 수동태 'A be required to부정사(A가 …하도록 요구받다)' 구조이므로 빈칸에는 과거분사 (C) required가 들어가 'are required to keep'이 되어야 한다. (A) requesting, (D) requiring은 능동의 -ing형이라 'be동사+to부정사' 수동 구조와 맞지 않고, (B) requested는 '요청받다'로 의미가 약하다. 환불 조건은 의무 사항이므로 required가 의미상 가장 자연스럽다."
      },
      {
       "en": "3. The company policy requires that each employee _______ a confidentiality agreement.",
       "opt": "(A) sign (B) signs (C) signed (D) signing",
       "ans": "(A)",
       "ko": "회사 정책은 각 직원이 기밀 유지 계약서에 서명할 것을 요구한다.",
-      "note": "\"명령, 충고, 주장, 요구, 결정, 제안 + that + 주어 + (should) 동사원형\""
+      "note": "require(요구하다) 뒤의 that절은 당위의 '(should)+동사원형'을 취하므로 주어 each employee가 단수여도 (A) sign(원형)이 정답이다. 따라서 3인칭 단수 (B) signs, 과거 (C) signed, -ing형 (D) signing은 모두 틀리다. '명령·충고·주장·요구·결정·제안' 동사 + that + 주어 + (should) 동사원형 규칙을 적용하면 된다."
      }
     ]
    },
@@ -6535,8 +6566,8 @@ const VOCAB_KSTN1 = [
       "en": "The doctor recommended that the patient _______ additional tests.",
       "opt": "(A) undergo  (B) undergoes  (C) underwent  (D) undergoing",
       "ans": "(A)",
-      "ko": "의사는 환자가 추가 검사를 받을 것을 권했다.",
-      "note": "\"명령, 충고, 주장, 요구, 결정, 제안 + that + 주어 + (should) 동사원형\""
+      "ko": "의사는 그 환자가 추가 검사를 받을 것을 권했다.",
+      "note": "recommend(권하다)도 당위를 나타내는 동사이므로 that절에서 '(should)+동사원형'을 써서 (A) undergo가 정답이다. 주어 the patient가 단수라도 시제·수일치를 시킨 (B) undergoes, (C) underwent는 쓰지 않으며, (D) undergoing은 동사원형이 아니라 부적절하다. recommend, suggest, insist, demand 등 뒤 that절의 동사는 항상 원형으로 쓴다는 점이 출제 포인트다."
      }
     ]
    },
@@ -6566,8 +6597,8 @@ const VOCAB_KSTN1 = [
       "en": "_______ his limited experience, Mr. Park successfully completed the project on time.",
       "opt": "(A) Despite  (B) Nevertheless  (C) Although  (D) However",
       "ans": "(A)",
-      "ko": "경험이 제한적이었음에도 불구하고, 박 씨는 프로젝트를 제시간에 성공적으로 마쳤다.",
-      "note": "nevertheless와 however는 전치사가 아닌 접속부사로 문장 전체를 이어 주는 역할을 하며 전치사처럼 명사구 앞에 직접 올 수 없다. although는 접속사로 뒤에 '주어+동사'가 오는 절이 필요하므로 현재 문장 구조와 맞지 않는다."
+      "ko": "경험이 부족했음에도 불구하고, 박 씨는 프로젝트를 제시간에 성공적으로 마쳤다.",
+      "note": "빈칸 뒤에 'his limited experience'라는 명사구가 바로 오므로, 명사구를 이끄는 전치사 (A) Despite(~에도 불구하고)가 정답이다. (C) Although는 접속사라서 뒤에 '주어+동사'의 절이 와야 하고, (B) Nevertheless와 (D) However는 접속부사로 명사구 앞에 직접 올 수 없다. 'despite/in spite of + 명사구' vs 'although + 절'의 차이를 구분하는 것이 핵심이다."
      }
     ]
    },
@@ -7029,7 +7060,8 @@ const VOCAB_KSTN1 = [
       "en": "The heavy snowfall caused several major highways _______ for hours.",
       "opt": "(A) closing  (B) to closing  (C) to close  (D) closed",
       "ans": "(C)",
-      "ko": "폭설로 인해 주요 고속도로 몇 곳이 몇 시간 동안 폐쇄되었다."
+      "ko": "폭설로 인해 주요 고속도로 몇 곳이 몇 시간 동안 폐쇄되었다.",
+      "note": "cause는 'cause + 목적어 + to부정사(~가 …하게 만들다/초래하다)' 형태의 5형식 동사이므로 (C) to close가 정답이다. (A) closing, (D) closed는 to부정사가 아니어서 cause의 목적격보어로 쓸 수 없고, (B) to closing은 'to + -ing'라는 잘못된 형태다. cause/allow/enable/force/require + 목적어 + to부정사 구문을 함께 정리해 두자."
      }
     ]
    },
@@ -7199,10 +7231,10 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "work는 '업무'의 의미일 때는 여러 가지 일들의 복합이라도 불가산 명사로 단수로 쓰인다.",
+      "note": "work가 '일, 업무'를 뜻할 때는 셀 수 없는 명사(불가산명사)이므로 'a lot of' 뒤에 단수형 (A) work가 와야 한다. (B) works는 '작품·공장'의 뜻일 때만 복수로 쓰여 여기서는 부적절하고, (C) job은 가산명사라 'a lot of jobs'처럼 복수여야 하며, (D) working은 동명사/형용사로 목적어 자리에 의미상 어색하다. work는 여러 일이 모여도 불가산명사로 단수 취급한다는 점이 출제 포인트다.",
       "en": "She has a lot of ______ to finish before the deadline.",
       "opt": "(A) work  (B) works  (C) job  (D) working",
-      "ko": "그녀는 마감일까지 끝내야 할 많은 업무가 있다.",
+      "ko": "그녀는 마감일 전에 끝내야 할 일이 많이 있다.",
       "ans": "(A)"
      },
      {
@@ -7554,7 +7586,8 @@ const VOCAB_KSTN1 = [
       "en": "The new software has greatly improved employee ________.",
       "opt": "(A) product  (B) productive  (C) productivity  (D) production",
       "ans": "(C)",
-      "ko": "새 소프트웨어는 직원들의 생산성을 크게 향상시켰다."
+      "ko": "새 소프트웨어는 직원들의 생산성을 크게 향상시켰다.",
+      "note": "타동사 improved의 목적어 자리이고 'employee ____(직원 ___)'에서 '생산성'이라는 명사가 필요하므로 (C) productivity(생산성)가 정답이다. (A) product(제품)와 (D) production(생산량)도 명사지만 'employee productivity(직원 생산성)'라는 의미 연결에 가장 적합한 것은 productivity이며, (B) productive는 형용사라 목적어 자리에 올 수 없다. 명사 자리에서 의미까지 따져 어휘를 고르는 문제다."
      }
     ]
    },
@@ -7698,7 +7731,7 @@ const VOCAB_KSTN1 = [
       "opt": "(A) are  (B) were  (C) is  (D) have been",
       "ans": "(C)",
       "ko": "그 회사의 인력은 내년에 증가할 것으로 예상된다.",
-      "note": "workforce는 집합명사 → 전체 덩어리로 볼 때 단수 취급이 원칙"
+      "note": "주어 workforce는 집합명사로 하나의 전체 덩어리로 볼 때 단수 취급이 원칙이므로 단수 동사 (C) is가 정답이다. 따라서 복수 동사 (A) are, (B) were, (D) have been은 수일치에 어긋난다. 또한 'be expected to(…할 것으로 예상되다)' 구조에서 단수 주어에 맞춰 is expected가 와야 한다. workforce, staff, team 같은 집합명사의 단수 취급을 기억하자."
      }
     ]
    },
@@ -7743,7 +7776,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "live와 alive를 구분하는 문제가 자주 출제되었다.\n* alive는 명사를 수식하는 한정적 용법으로는 쓰지 못하고 서술적 용법으로만 쓰인다.",
+      "note": "빈칸은 명사 performance를 앞에서 꾸미는 한정적 용법의 형용사 자리이며 '라이브의, 생방송의'를 뜻하는 (C) live가 정답이다. (B) alive는 '살아 있는'의 뜻으로 보어로만 쓰이는 서술적 용법 형용사라 명사를 직접 수식할 수 없고, (A) lively는 '활기찬', (D) living은 '살아 있는'으로 의미가 맞지 않는다. 명사 앞에서 '실황의'를 뜻하는 live와 서술용법만 가능한 alive를 구분하는 빈출 문제다.",
       "en": "All tickets for the band's first ______ performance sold out within minutes.",
       "opt": "(A) lively  (B) alive  (C) live  (D) living",
       "ans": "(C)",
@@ -7895,7 +7928,8 @@ const VOCAB_KSTN1 = [
       "en": "The manufacturing plant is operating at full _______ to meet customer demand.",
       "opt": "(A) ability  (B) capacity  (C) capability  (D) efficiency",
       "ans": "(B)",
-      "ko": "그 제조 공장은 고객 수요를 충족하기 위해 최대 가동으로 운영되고 있다."
+      "ko": "그 제조 공장은 고객 수요를 충족하기 위해 최대 가동률로 운영되고 있다.",
+      "note": "'at full capacity(최대 생산 능력/가동률로)'는 공장·설비의 가동 정도를 나타내는 관용 표현이므로 (B) capacity가 정답이다. (A) ability와 (C) capability는 사람의 '능력'을 뜻해 공장의 생산 용량에 맞지 않고, (D) efficiency(효율)는 'full'과 어울려 가동률을 나타내는 의미가 아니다. 'operate at full capacity(최대 가동으로 운영하다)'를 한 덩어리로 익혀두자."
      }
     ]
    },
@@ -8154,7 +8188,8 @@ const VOCAB_KSTN1 = [
       "en": "1. The delay resulted in a _______ mistake for the company.",
       "opt": "(A) costly  (B) cost  (C) costing  (D) costed",
       "ans": "(A)",
-      "ko": "그 지연은 회사에 큰 손실을 초래하는 실수로 이어졌다."
+      "ko": "그 지연은 회사에 큰 손실을 초래하는 실수로 이어졌다.",
+      "note": "빈칸은 명사 mistake를 수식하는 형용사 자리이고 '많은 비용이 드는, 손실이 큰'을 뜻하는 (A) costly가 정답이다. costly는 -ly로 끝나지만 부사가 아니라 형용사라는 점이 함정이다. (B) cost는 명사/동사, (C) costing과 (D) costed는 동사 형태라 명사를 직접 수식할 수 없다. '-ly로 끝나는 형용사(costly, friendly, likely, timely 등)'를 정리해 두면 유용하다."
      },
      {
       "en": "2. The recall was _______ to the manufacturer's reputation.\ncostly (O)  expensive (X)",
@@ -8339,8 +8374,8 @@ const VOCAB_KSTN1 = [
       "en": "The hotel received several ______ about the noise coming from the construction site.",
       "opt": "(A) complain   (B) complaint   (C) complaints   (D) complaining",
       "ans": "(C)",
-      "ko": "그 호텔은 공사 현장에서 발생한 소음에 대해 몇 건의 불만을 접수했다.",
-      "note": "complain과 complaint를 구분하는 문제가 자주 출제되었다. / several(몇 개의)이 있기 때문에 복수형이 와야 한다."
+      "ko": "그 호텔은 공사 현장에서 들려오는 소음에 대해 여러 건의 불만을 접수했다.",
+      "note": "빈칸은 동사 received의 목적어 자리이고 앞에 수량 형용사 several(여러 개의)이 있으므로 가산명사의 복수형이 와야 한다. 따라서 (C) complaints가 정답이다. (A) complain은 동사라 명사 자리에 올 수 없고, (B) complaint는 단수형이라 several과 수일치가 맞지 않으며, (D) complaining은 동명사로 several의 수식을 받지 못한다. complain(동사: 불평하다)과 complaint(명사: 불만)의 품사 구분과, several·many·a few 뒤에는 반드시 복수명사가 온다는 점이 핵심 포인트다."
      }
     ]
    },
@@ -8365,8 +8400,8 @@ const VOCAB_KSTN1 = [
      {
       "en": "The project faced many unexpected difficulties; _______, the team managed to complete it on time.",
       "opt": "(A) moreover (B) nevertheless (C) otherwise (D) therefore",
-      "ko": "그 프로젝트는 많은 예상치 못한 어려움에 직면했지만, 그럼에도 불구하고 팀은 제시간에 그것을 완수했다.",
-      "note": "moreover: 게다가, 더욱이 / otherwise: 그렇지 않으면 / therefore: 그러므로",
+      "ko": "그 프로젝트는 예상치 못한 많은 어려움에 직면했지만, 그럼에도 불구하고 팀은 그것을 제시간에 완수해냈다.",
+      "note": "앞 절(어려움에 직면했다)과 뒤 절(제시간에 완수했다)이 서로 대조·역접 관계이므로 '그럼에도 불구하고'라는 양보의 연결부사 (B) nevertheless가 정답이다. (A) moreover(게다가)와 (D) therefore(그러므로)는 각각 첨가·인과 관계라 역접 흐름과 맞지 않고, (C) otherwise(그렇지 않으면)는 조건의 의미라 문맥에 어울리지 않는다. nevertheless는 however처럼 앞 내용과 상반되는 결과를 이끌 때 쓰는 접속부사라는 점이 출제 포인트다.",
       "ans": "(B)"
      }
     ]
@@ -8526,7 +8561,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "품사 구분 문제가 자주 출제되었다.",
+      "note": "빈칸은 형용사 All과 명사 conference의 수식을 받으며 문장의 주어가 되는 명사 자리이고, 동사 must check in이 복수 동사 형태이므로 복수명사가 와야 한다. 따라서 사람 명사의 복수형 (D) participants가 정답이다. (A) participates는 동사, (B) participating은 분사/동명사라 주어 자리에 부적합하고, (C) participant는 단수형이라 All 및 복수 동사와 수일치가 맞지 않는다. participate(동사: 참가하다)에서 파생된 사람 명사 participant(참가자)를 묻는 품사 문제다.",
       "en": "All conference ______ must check in at the registration desk before 9 a.m.",
       "opt": "(A) participates  (B) participating  (C) participant  (D) participants",
       "ans": "(D)",
@@ -8858,13 +8893,15 @@ const VOCAB_KSTN1 = [
       "en": "The company decided to ________ new office space instead of purchasing a building.",
       "opt": "(A) lend  (B) lease  (C) borrow  (D) buy",
       "ans": "(B)",
-      "ko": "그 회사는 건물을 구입하는 대신 새 사무실 공간을 임차하기로 결정했다."
+      "ko": "그 회사는 건물을 구입하는 대신 새 사무실 공간을 임차하기로 결정했다.",
+      "note": "'사들이는(purchasing) 대신 빌려 쓴다'는 문맥이므로 '(부동산·장비 등을 계약을 맺고) 임차하다'라는 뜻의 (B) lease가 정답이다. (A) lend(빌려주다)는 방향이 반대이고, (C) borrow는 주로 무료로 잠깐 빌리는 것이라 사무실 공간에는 어색하며, (D) buy는 instead of purchasing과 의미가 중복·모순된다. lease는 부동산이나 차량처럼 장기 계약을 맺고 돈을 내며 빌리는 경우에 쓰는 동사라는 점이 핵심이다."
      },
      {
       "en": "The bank agreed to ________ the company additional funds for its expansion project.",
       "opt": "(A) lease  (B) lend  (C) borrow  (D) rent",
       "ans": "(B)",
-      "ko": "그 은행은 회사의 확장 프로젝트를 위해 추가 자금을 빌려주기로 동의했다."
+      "ko": "그 은행은 회사의 확장 프로젝트를 위해 추가 자금을 빌려주기로 동의했다.",
+      "note": "은행이 회사에게 돈을 '빌려주는' 상황이므로 'lend A B(A에게 B를 빌려주다)' 구조를 만드는 (B) lend가 정답이다. 빈칸 뒤에 the company(간접목적어)와 additional funds(직접목적어)가 이어지는 4형식 구조가 단서다. (C) borrow는 '빌리다(받아오다)'로 방향이 반대이고, (A) lease는 부동산·장비 임대에 주로 쓰여 자금에는 부적합하며, (D) rent도 부동산·물건 임대에 쓰는 동사다. 돈을 빌려줄 때는 lend, 빌릴 때는 borrow를 쓴다는 방향 구분이 핵심 포인트다."
      }
     ]
    },
@@ -8950,7 +8987,8 @@ const VOCAB_KSTN1 = [
       "en": "host, guest, participant의 의미를 구분하는 문제가 출제되었다.",
       "opt": "Ms. Lee was the ______ of the seminar and introduced all the guest speakers.  (A) host  (B) guest  (C) visitor  (D) participant",
       "ans": "(A)",
-      "ko": "이 씨는 그 세미나의 주최자였으며 모든 초청 연사를 소개했다."
+      "ko": "이 씨는 그 세미나의 주최자였으며 모든 초청 연사를 소개했다.",
+      "note": "초청 연사들(guest speakers)을 소개하는 사람은 행사를 주관하는 '주최자'이므로 (A) host가 정답이다. (B) guest는 초대받은 손님, (C) visitor는 방문객, (D) participant는 단순 참가자로, 모두 연사를 소개하고 행사를 진행하는 주체와는 거리가 멀다. host는 행사·모임을 주최하고 진행하는 사람을 가리키며, 손님(guest)·참가자(participant)와 역할이 대비된다는 점이 출제 포인트다."
      }
     ]
    },
@@ -9229,7 +9267,8 @@ const VOCAB_KSTN1 = [
       "en": "예2) She ________ her keys on the counter this morning.",
       "opt": "(A) lay  (B) lies  (C) laid  (D) lied",
       "ans": "(C)",
-      "ko": "그녀는 오늘 아침 카운터에 열쇠를 놓았다."
+      "ko": "그녀는 오늘 아침 카운터에 자신의 열쇠를 놓았다.",
+      "note": "this morning이라는 과거 시점 표현이 있으므로 과거시제가 필요하고, 빈칸 뒤에 목적어 her keys가 있으므로 '~을 놓다, 두다'라는 뜻의 타동사 lay의 과거형 (C) laid가 정답이다. (A) lay는 현재형(또는 lie의 과거형)이라 시제가 맞지 않고, (B) lies는 자동사 lie(눕다/거짓말하다)의 현재형, (D) lied는 lie(거짓말하다)의 과거형이라 의미가 다르다. 타동사 lay(놓다)-laid-laid와 자동사 lie(눕다)-lay-lain을 혼동하지 않는 것이 핵심이다."
      }
     ]
    },
@@ -9476,8 +9515,8 @@ const VOCAB_KSTN1 = [
       "en": "The manager approved the proposal; ______, he offered additional funding for the project.",
       "opt": "(A) meanwhile  (B) otherwise  (C) furthermore  (D) instead",
       "ans": "(C)",
-      "ko": "매니저는 그 제안을 승인했다. 게다가, 프로젝트에 추가 자금도 제공했다.",
-      "note": "meanwhile: 그동안에 / otherwise: 그렇지 않으면 / instead: 그 대신에"
+      "ko": "매니저는 그 제안을 승인했다. 게다가, 그는 프로젝트에 추가 자금까지 제공했다.",
+      "note": "앞 절(제안 승인)에 더해 뒤 절(추가 자금 제공)에서 긍정적 내용을 더 보태고 있으므로 '게다가, 더욱이'라는 첨가의 연결부사 (C) furthermore가 정답이다. (A) meanwhile(그동안에)은 동시성, (B) otherwise(그렇지 않으면)는 조건, (D) instead(그 대신에)는 대체의 의미라 모두 흐름과 맞지 않는다. furthermore는 moreover·in addition처럼 앞 내용에 비슷한 정보를 추가할 때 쓰는 접속부사라는 점이 출제 포인트다."
      }
     ]
    },
@@ -9614,7 +9653,7 @@ const VOCAB_KSTN1 = [
       "opt": "(A) personnel  (B) personal  (C) personality  (D) personally",
       "ans": "(A)",
       "ko": "보안 구역 출입은 승인된 직원에게만 제한된다.",
-      "note": "personal: 개인의 / personality: 성격"
+      "note": "빈칸은 형용사 authorized의 수식을 받으며 '승인된 ___'에 해당하는 명사 자리이고, 문맥상 출입이 허가되는 대상은 '직원'이므로 (A) personnel이 정답이다. personnel은 '(집합적) 직원, 인력'을 뜻하는 명사다. (B) personal은 '개인의'라는 형용사라 의미가 다르고, (C) personality(성격)는 사람을 가리키지 않으며, (D) personally(개인적으로)는 부사라 자리에 맞지 않는다. 발음·철자가 비슷한 personnel(직원)과 personal(개인의)을 품사와 의미로 구분하는 것이 핵심이다."
      }
     ]
    },
@@ -10178,11 +10217,11 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "throughout, through(~을 통해), thorough(철저한)를 구분하는 문제가 자주 출제되었다.",
+      "note": "빈칸 뒤에 all company departments라는 명사구가 이어지고 '모든 부서 전반에 걸쳐'라는 의미가 필요하므로 '~ 전역에 걸쳐, ~ 내내'를 뜻하는 전치사 (C) throughout이 정답이다. (A) through(~을 통해/관통하여)는 범위 전체를 아우르는 의미가 약하고, (B) thorough(철저한)는 형용사라 전치사 자리에 올 수 없으며, (D) thought(생각)는 명사다. 철자가 비슷한 through·thorough·throughout을 품사와 의미로 구분하는 것이 빈출 포인트다.",
       "en": "The new policy will be implemented ________ all company departments starting next week.",
       "opt": "(A) through  (B) thorough  (C) throughout  (D) thought",
       "ans": "(C)",
-      "ko": "새 정책은 다음 주부터 회사 전 부서에 걸쳐 시행될 예정이다."
+      "ko": "새 정책은 다음 주부터 회사의 전 부서에 걸쳐 시행될 예정이다."
      }
     ]
    },
@@ -10345,7 +10384,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "품사와 의미를 구분하는 문제가 자주 출제되었다.",
+      "note": "빈칸은 부정관사 a와 명사 role 사이에서 명사를 수식하는 형용사 자리이고, 'play a critical role(중요한 역할을 하다)'이라는 의미가 필요하므로 (B) critical이 정답이다. (A) critic(비평가)과 (C) criticism(비평)은 명사라 명사 role 앞 수식어 자리에 올 수 없고, (D) critically는 부사라 명사를 수식할 수 없다. critical은 '중요한, 결정적인'이라는 뜻으로 'play a critical[crucial/vital] role in'은 자주 출제되는 표현이라는 점이 핵심이다.",
       "en": "Regular maintenance plays a ______ role in ensuring workplace safety.",
       "opt": "(A) critic  (B) critical  (C) criticism  (D) critically",
       "ko": "정기적인 유지보수는 작업장 안전을 보장하는 데 중요한 역할을 한다.",
@@ -10539,7 +10578,8 @@ const VOCAB_KSTN1 = [
       "en": "1. The factory produces _______ quantity of waste each day.",
       "opt": "(A) many  (B) much  (C) a large  (D) a many",
       "ans": "(C)",
-      "ko": "그 공장은 매일 많은 양의 폐기물을 생산한다."
+      "ko": "그 공장은 매일 많은 양의 폐기물을 생산한다.",
+      "note": "빈칸 뒤의 quantity는 가산명사이므로 부정관사 a와 함께 형용사 large의 수식을 받아 'a large quantity of(많은 양의)'를 이루는 (C) a large가 정답이다. (A) many와 (D) a many는 셀 수 있는 복수명사를 직접 수식하므로 단수형 quantity 앞에 올 수 없고, (B) much는 quantity 앞에 부정관사 a가 빠져 'a quantity' 형태와 맞지 않는다. 'a large quantity[amount] of + 명사'가 '많은 양의 ~'를 나타내는 정형 표현이라는 점이 핵심 포인트다."
      },
      {
       "en": "2. The company ordered a large _______ of raw materials for next month's production.",
@@ -11632,7 +11672,8 @@ const VOCAB_KSTN1 = [
       "en": "The company aims to improve the ______ of output to input.",
       "opt": "(A) ratio  (B) percent  (C) amount  (D) quantity",
       "ans": "(A)",
-      "ko": "회사는 산출 대비 투입의 비율을 개선하는 것을 목표로 한다."
+      "ko": "그 회사는 투입 대비 산출의 비율을 개선하는 것을 목표로 한다.",
+      "note": "'A 대 B'를 나타내는 'the ratio of A to B(A의 B에 대한 비율)' 구조에서 전치사 to와 함께 쓰여 두 수치의 비율을 뜻하는 (A) ratio가 정답이다. (B) percent(퍼센트)는 보통 숫자와 함께 쓰여 of ~ to ~ 구조에 어울리지 않고, (C) amount(양)와 (D) quantity(양)는 단순한 수량을 뜻할 뿐 두 값의 상대적 비율을 나타내지 못한다. 'the ratio of output to input'처럼 ratio가 'of ... to ...'와 함께 쓰인다는 점이 핵심이다."
      }
     ]
    },
@@ -11804,7 +11845,8 @@ const VOCAB_KSTN1 = [
       "en": "Employees must give ___ notice before taking leave.",
       "opt": "(A) advance  (B) advanced  (C) advancing  (D) advancement",
       "ans": "(A)",
-      "ko": "직원은 휴가를 내기 전에 사전 통지를 해야 한다."
+      "ko": "직원은 휴가를 내기 전에 사전 통지를 해야 한다.",
+      "note": "빈칸은 명사 notice를 수식하는 자리이고 'advance notice(사전 통지)'라는 굳어진 표현이 필요하므로, 명사가 형용사처럼 다른 명사를 수식하는 (A) advance가 정답이다. 여기서 advance는 '사전의, 미리의'라는 의미로 notice와 함께 복합명사를 이룬다. (B) advanced는 '고급의, 진보된'이라는 다른 뜻이라 문맥에 맞지 않고, (C) advancing은 분사, (D) advancement(발전·승진)는 명사라 notice를 수식하기에 부적합하다. advance notice·advance payment·advance booking 같은 표현을 기억하는 것이 핵심이다."
      },
      {
       "en": "He requested a salary advance due to unexpected expenses.",
@@ -11814,7 +11856,8 @@ const VOCAB_KSTN1 = [
       "en": "Employees received ___ training on the new software.",
       "opt": "(A) advance  (B) advanced  (C) advancing  (D) advancement",
       "ans": "(B)",
-      "ko": "직원들은 새 소프트웨어에 대한 고급(상급의) 교육을 받았다."
+      "ko": "직원들은 새 소프트웨어에 대한 고급(상급) 교육을 받았다.",
+      "note": "빈칸은 명사 training을 수식하는 형용사 자리이고 '고급의, 상급의' 교육이라는 의미가 자연스러우므로 (B) advanced가 정답이다. advanced는 '진보된, 수준 높은'이라는 뜻의 형용사다. (A) advance는 '사전의'라는 의미라 'advance training(사전 교육)'은 문맥상 어색하고, (C) advancing은 진행 분사, (D) advancement(발전·승진)는 명사라 training을 수식하기에 맞지 않는다. 같은 어근에서 나온 advance(사전의)와 advanced(고급의)의 의미 차이를 구분하는 것이 출제 포인트다."
      }
     ]
    },
@@ -12261,11 +12304,11 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "applaud는 타동사로 전치사 없이 바로 목적어를 취하는 점을 묻는 문제가 출제되었다.",
+      "note": "빈칸은 주어(The audience)의 동사 자리이고 뒤에 목적어(the performer)가 바로 이어지므로, 타동사 과거형 (A) applauded가 정답이다. applaud는 '~에게 박수를 보내다, 칭찬하다'라는 타동사로 전치사 없이 목적어를 바로 취하므로 (B) applauded to는 to가 불필요해 틀리고, (C) applauding은 동사 없이 분사만으로는 본동사가 될 수 없으며, (D) applause는 명사라 동사 자리에 올 수 없다. 'applaud + 사람/행위'(전치사 없이 바로) 형태를 기억해 두자.",
       "en": "The audience stood and ______ the performer at the end of the concert.",
       "opt": "(A) applauded  (B) applauded to  (C) applauding  (D) applause",
       "ans": "(A)",
-      "ko": "관객들은 콘서트가 끝나자 일어서서 공연자에게 박수쳤다."
+      "ko": "관객들은 콘서트가 끝나자 자리에서 일어나 그 공연자에게 박수를 보냈다."
      }
     ]
    },
@@ -13301,7 +13344,8 @@ const VOCAB_KSTN1 = [
       "en": "Please affix your signature ________ the application form and submit it by Friday.",
       "opt": "(A) at  (B) on  (C) to  (D) for",
       "ans": "(C)",
-      "ko": "신청서에 서명한 후 금요일까지 제출해 주십시오."
+      "ko": "신청서에 서명을 첨부하신 후 금요일까지 제출해 주십시오.",
+      "note": "affix는 'affix A to B'(A를 B에 붙이다/첨부하다) 형태로 쓰이는 동사라서 방향·부착 대상을 나타내는 전치사 (C) to가 정답이다. (A) at은 지점, (B) on은 표면 접촉, (D) for는 목적을 나타내 의미상 어울리지 않는다. attach, append처럼 '~에 붙이다'를 뜻하는 동사들이 to와 짝을 이룬다는 점을 함께 기억하면 좋다."
      }
     ]
    },
@@ -13397,7 +13441,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "accuse, charge, blame을 구분하는 문제가 출제되었다.\n* accuse A of B: A를 B 혐의로 고발하다/비난하다\n* charge A with B: A를 B 혐의로 기소하다\n* blame A for B: A를 B에게 대해 ~에 대해 책임 지우다",
+      "note": "빈칸 뒤에 'the manager of misusing...' 구조가 이어지므로 'accuse A of B'(A를 B의 혐의로 고발/비난하다) 형태를 만드는 (A) accused가 정답이다. (B) charge는 'charge A with B', (C) blame은 'blame A for B / blame B on A' 형태로 of를 쓰지 않아 뒤따르는 전치사 of와 맞지 않고, (D) inform은 'inform A of B'(A에게 B를 알리다)로 의미가 '고발'과 달라 부적절하다. of 뒤에는 명사 또는 동명사(misusing)가 온다는 점도 함께 확인하자.",
       "en": "예) The committee ______ the manager of misusing company funds.",
       "opt": "(A) accused  (B) charged  (C) blamed  (D) informed",
       "ans": "(A)",
@@ -13958,8 +14002,8 @@ const VOCAB_KSTN1 = [
       "en": "The project leaders submitted reports summarizing their findings in their ________ sections of the document.",
       "opt": "(A) respectful  (B) respectable  (C) respective  (D) respected",
       "ans": "(C)",
-      "ko": "프로젝트 리더들은 문서의 각자 해당하는 부분에 그들의 결과를 요약한 보고서를 제출했다.",
-      "note": "respective / respectful / respectable을 구분하는 문제가 자주 출제되었다."
+      "ko": "프로젝트 리더들은 문서에서 각자 맡은 부분에 자신들의 조사 결과를 요약한 보고서를 제출했다.",
+      "note": "빈칸은 명사 sections를 꾸미는 형용사 자리이고 '각자의, 각각의'라는 의미가 필요하므로 (C) respective가 정답이다. (A) respectful은 '공손한, 존중하는', (B) respectable은 '존경할 만한, 상당한', (D) respected는 '존경받는'이라는 뜻으로 문맥에 맞지 않는다. respective는 보통 복수명사 앞에서 '각각의'를 뜻하며 their respective ~ 형태로 자주 출제된다는 점을 기억하자."
      }
     ]
    },
@@ -14814,8 +14858,8 @@ const VOCAB_KSTN1 = [
       "en": "The company ______ launched a new product line and sales have risen dramatically.",
       "opt": "(A) lately  (B) recently  (C) currently  (D) always",
       "ans": "(B)",
-      "ko": "그 회사는 최근에 신제품을 출시해서 매출이 극적으로 올랐다.",
-      "note": "lately, recently, currently(현재, 지금) 각각의 부사와 어울리는 시제를 묻는 문제가 출제되었다. * lately: 현재완료 시제와 주로 쓰임. 과거시제는 쓰지 않음 * recently: 현재완료와 과거시제 모두 쓰임 * currently: (현재, 지금) 현재진행 시제와 현재시제로 주로 쓰임. 과거시제는 쓰지 않음. 과거시제를 사용했으므로 recently가 정답이다."
+      "ko": "그 회사는 최근에 새로운 제품군을 출시했고, 그 결과 매출이 급격히 증가했다.",
+      "note": "동사 launched가 과거시제이고 뒤 절이 현재완료(have risen)로 자연스럽게 이어지므로, 과거·현재완료 모두와 쓰이는 (B) recently가 정답이다. (A) lately는 주로 현재완료와 쓰이고 단순 과거와는 어울리지 않으며, (C) currently는 '현재, 지금'을 뜻해 현재(진행)시제와 쓰여 과거 동사 launched와 충돌하고, (D) always는 빈도부사로 '극적인 매출 변화'라는 일회성 사건 문맥과 맞지 않는다. recently는 과거/현재완료 양쪽에 모두 호환된다는 점이 핵심이다."
      }
     ]
    },
@@ -15039,7 +15083,8 @@ const VOCAB_KSTN1 = [
       "en": "The shipment was delayed due to bad weather; ______, customers were notified of the new delivery date.",
       "opt": "(A) however  (B) therefore  (C) meanwhile  (D) otherwise",
       "ans": "(B)",
-      "ko": "악천후로 인해 배송이 지연되었으며, 그 결과 고객들에게 새로운 배송 날짜가 안내되었다."
+      "ko": "악천후로 인해 배송이 지연되었고, 따라서 고객들에게 새로운 배송 날짜가 통지되었다.",
+      "note": "앞 절(지연)이 원인이고 뒤 절(통지)이 그 결과이므로 '그러므로, 따라서'라는 인과 접속부사 (B) therefore가 정답이다. (A) however(그러나)는 역접, (C) meanwhile(그동안)은 시간상 동시 진행, (D) otherwise(그렇지 않으면)는 조건·대안을 나타내 모두 인과 흐름과 맞지 않는다. 세미콜론(;)으로 두 절을 잇고 접속부사로 논리 관계를 표시하는 구조를 익혀 두자."
      }
     ]
    },
@@ -15778,7 +15823,8 @@ const VOCAB_KSTN1 = [
       "en": "The company offers ________ solutions for small businesses.",
       "opt": "(A) tailoring  (B) tailored  (C) tailor  (D) tailors",
       "ko": "그 회사는 소규모 기업을 위한 맞춤형 해결책을 제공한다.",
-      "ans": "(B)"
+      "ans": "(B)",
+      "note": "빈칸은 명사 solutions를 앞에서 꾸미는 형용사 자리이고 '맞춤 제작된'이라는 수동·완료의 의미가 필요하므로 과거분사 (B) tailored가 정답이다. (A) tailoring(현재분사)은 'solutions가 무엇을 맞춤 제작한다'는 능동 의미가 되어 어색하고, (C) tailor(동사·명사 단수), (D) tailors(동사 3인칭/명사 복수)는 명사를 수식하는 형용사 자리에 올 수 없다. tailored solutions(맞춤형 해결책)는 토익 빈출 표현이다."
      }
     ]
    },
@@ -15809,7 +15855,8 @@ const VOCAB_KSTN1 = [
       "en": "The company hired an experienced ________ to manage its finances.",
       "opt": "(A) account  (B) accounting  (C) accountant  (D) accountability",
       "ko": "그 회사는 재정을 관리하기 위해 경력 있는 회계사를 고용했다.",
-      "ans": "(C)"
+      "ans": "(C)",
+      "note": "관사 an과 형용사 experienced의 수식을 받고 동사 hired의 목적어가 되는 '사람 명사' 자리이므로 '회계사'를 뜻하는 (C) accountant가 정답이다. (A) account(계좌·설명), (B) accounting(회계·회계학)은 사물·개념 명사라 '고용 대상'으로 부자연스럽고, (D) accountability(책임)도 사람을 가리키지 않는다. '사람을 hire한다'는 문맥에서는 -ant/-er/-or형 직업 명사를 고르는 것이 포인트다."
      }
     ]
    },
@@ -16338,7 +16385,7 @@ const VOCAB_KSTN1 = [
       "opt": "(A) Per  (B) By  (C) With  (D) For",
       "ans": "(A)",
       "ko": "회사 방침에 따라 환불은 불가능하다.",
-      "note": "by는 수단, 방법에 쓰이기 때문에 적절치 못하다."
+      "note": "빈칸 뒤 company policy를 받아 '~에 따라'라는 기준·근거를 나타내야 하므로 전치사 (A) Per가 정답이다(as per와 같은 의미). (B) By는 수단·방법, (C) With는 동반·소유, (D) For는 목적·대상을 나타내 '방침에 따라'라는 의미를 만들지 못한다. per/as per/in accordance with는 규정·방침을 근거로 제시할 때 쓰는 표현임을 기억하자."
      },
      {
       "en": "The parking fee is charged per hour.",
@@ -16460,7 +16507,8 @@ const VOCAB_KSTN1 = [
       "en": "The company submitted its lowest ______ to win the project.",
       "opt": "(A) bid  (B) bidding  (C) bidder  (D) bidded",
       "ans": "(A)",
-      "ko": "그 회사는 프로젝트를 따내기 위해 최저 입찰가를 제출했다."
+      "ko": "그 회사는 프로젝트를 따내기 위해 최저 입찰가를 제출했다.",
+      "note": "소유격 its와 최상급 형용사 lowest의 수식을 받고 동사 submitted의 목적어가 되는 명사 자리이며 '입찰(가)'를 뜻해야 하므로 (A) bid가 정답이다. (B) bidding(입찰 행위·동명사)은 'lowest bidding'이 어색하고, (C) bidder는 '입찰자(사람)'라 '제출하는 대상'으로 맞지 않으며, (D) bidded는 잘못된 형태(bid의 과거형도 bid)다. submit a bid(입찰서를 제출하다), the lowest bid(최저 입찰가)를 함께 알아 두자."
      }
     ]
    },
@@ -16627,7 +16675,8 @@ const VOCAB_KSTN1 = [
       "en": "The lease stipulates that the tenant ___ written notice prior to termination.",
       "opt": "(A) provides  (B) provided  (C) provide  (D) providing",
       "ans": "(C)",
-      "ko": "임대 계약은 해지 전에 세입자가 서면 통지를 제공해야 한다고 규정한다."
+      "ko": "그 임대 계약은 해지 전에 세입자가 서면 통지를 제공해야 한다고 규정한다.",
+      "note": "stipulate, require, demand, suggest처럼 '요구·규정'을 뜻하는 동사의 that절에서는 동사가 'should + 동사원형'에서 should가 생략된 동사원형으로 쓰이므로 (C) provide가 정답이다. 주어 the tenant가 3인칭 단수여도 -s를 붙이지 않으므로 (A) provides는 틀리고, (B) provided(과거), (D) providing(분사)도 이 가정법 현재 구조에 맞지 않는다. 'stipulate that 주어 + (should) 동사원형' 패턴을 기억하자."
      }
     ]
    },
@@ -16890,7 +16939,8 @@ const VOCAB_KSTN1 = [
       "en": "point out과 point at을 구분하는 문제가 자주 출제되었다.\n* point out은 '(문제 · 오류 · 사실)을 지적하다'라는 의미\n* point at은 '(손 · 도구로) 가리키다'란 의미로 물리적 방향 · 대상을 가리키는 것을 뜻한다\nDuring the meeting, the supervisor pointed ______ several errors in the financial report.",
       "opt": "(A) at   (B) to   (C) out   (D) toward",
       "ans": "(C)",
-      "ko": "회의 중에 상사는 재무 보고서에 있는 여러 오류를 지적했다."
+      "ko": "회의 중에 상사는 재무 보고서에 있는 여러 오류를 지적했다.",
+      "note": "목적어가 several errors(문제·오류)이므로 '(문제·오류·사실)을 지적하다'라는 뜻의 (C) out이 정답이 되어 point out을 완성한다. (A) at은 point at(손·도구로 물리적 방향을 가리키다)이 되어 '오류를 가리키다'라는 추상적 의미와 맞지 않고, (B) to, (D) toward 역시 물리적 방향성을 나타내 '오류를 지적하다'라는 뜻을 만들지 못한다. point out errors/problems vs. point at an object의 차이를 구분하는 것이 핵심이다."
      }
     ]
    },
@@ -17697,7 +17747,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "occur는 자동사로, 수동태로 쓰지 않음을 묻는 문제가 자주 출제되었다.",
+      "note": "occur는 '발생하다'라는 자동사라서 수동태로 쓸 수 없으므로, 현재완료 능동형을 만드는 과거분사 (B) occurred가 정답이다. (A) been occurred는 수동태(be + p.p.) 형태라 자동사인 occur에는 쓸 수 없어 틀리고, (C) occurring은 have 뒤에 단독으로 올 수 없으며, (D) to occur는 have 뒤에 부정사가 와서 완료시제를 만들 수 없다. happen, arise, exist처럼 자동사는 수동태가 불가능하다는 점을 함께 기억하자.",
       "en": "Several technical issues have ______ since the system upgrade.",
       "opt": "(A) been occurred  (B) occurred  (C) occurring  (D) to occur",
       "ko": "시스템 업그레이드 이후 여러 기술적 문제가 발생했다.",
@@ -17774,7 +17824,8 @@ const VOCAB_KSTN1 = [
       "en": "The new regulation obliges companies ______ customer data securely.",
       "opt": "(A) stored  (B) storing  (C) to store  (D) storage",
       "ko": "새 규정은 기업들이 고객 데이터를 안전하게 보관하도록 의무화한다.",
-      "ans": "(C)"
+      "ans": "(C)",
+      "note": "oblige는 'oblige A to do'(A에게 ~하도록 의무를 지우다) 형태로 목적격보어 자리에 to부정사를 취하므로 (C) to store가 정답이다. (A) stored(과거·과거분사), (B) storing(분사·동명사), (D) storage(명사)는 모두 'oblige + 목적어 + to부정사' 구조의 보어 자리에 올 수 없다. require, force, compel, enable처럼 5형식에서 to부정사를 보어로 취하는 동사군과 묶어 기억하자."
      }
     ]
    },
@@ -18086,7 +18137,8 @@ const VOCAB_KSTN1 = [
       "en": "Employee bonuses are adjusted in proportion ______ individual performance.",
       "opt": "(A) with  (B) of  (C) to  (D) for",
       "ans": "(C)",
-      "ko": "직원 보너스는 개인 성과를 기준으로 비례하여 조정된다."
+      "ko": "직원 보너스는 개인 성과에 비례하여 조정된다.",
+      "note": "'in proportion to ~'는 '~에 비례하여'라는 관용 표현이므로 to를 만드는 (C) to가 정답이다. (A) with, (B) of, (D) for는 이 숙어에서 쓰이지 않는다. in proportion to(~에 비례하여)와 반대 의미의 in inverse proportion to(~에 반비례하여)를 함께 익혀 두면 좋다."
      }
     ]
    },
@@ -18225,7 +18277,8 @@ const VOCAB_KSTN1 = [
       "en": "1. Chemicals must be ______ in designated facilities to prevent environmental damage.",
       "opt": "(A) disposed   (B) disposed of   (C) disposing   (D) disposal",
       "ans": "(B)",
-      "ko": "환경 피해를 방지하기 위해 화학물질은 지정된 시설에서 처리되어야 한다."
+      "ko": "환경 피해를 방지하기 위해 화학물질은 지정된 시설에서 처리되어야 한다.",
+      "note": "동사 dispose는 '처리하다'의 의미일 때 자동사로서 반드시 전치사 of와 함께 'dispose of(~을 처리·폐기하다)' 형태로 쓰인다. 여기서는 'must be ______'로 수동태 자리이므로 과거분사 형태가 필요하지만, 'dispose of'의 of를 빠뜨리면 안 되므로 (B) disposed of가 정답이다. (A) disposed는 of가 없어 목적어(여기서는 수동태의 주어 Chemicals)와 연결이 끊겨 틀리고, (C) disposing(진행/동명사)과 (D) disposal(명사)은 수동태 동사 자리에 올 수 없다. 'dispose of waste/chemicals(폐기물·화학물질을 처리하다)'는 토익 빈출 표현이다."
      },
      {
       "en": "2. All necessary resources are at our disposal to ensure the project's success.",
@@ -18293,7 +18346,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "접속사 whereas의 의미를 묻는 문제가 자주 출제되었다.",
+      "note": "빈칸은 앞 절과 뒤 절이라는 두 개의 완전한 문장을 연결하므로 접속사가 필요하며, 앞뒤 내용이 '자세한 보고서 vs 간단한 업데이트'로 대조를 이루므로 '~인 반면에'라는 뜻의 종속접속사 (D) whereas가 정답이다. (A) therefore(그러므로), (B) moreover(게다가), (C) otherwise(그렇지 않으면)는 모두 접속부사여서 두 절을 직접 연결할 수 없고 의미상으로도 대조 관계를 나타내지 못한다. whereas/while은 대조를 나타내는 접속사로 토익에서 자주 출제된다.",
       "en": "The previous manager preferred detailed written reports, ___ the new manager encourages brief weekly updates.",
       "opt": "(A) therefore (B) moreover (C) otherwise (D) whereas",
       "ans": "(D)",
@@ -18510,13 +18563,15 @@ const VOCAB_KSTN1 = [
       "en": "1. Employees are required to make an accurate ______ of all transactions.",
       "opt": "(A) entrance  (B) entry  (C) entrant  (D) entering",
       "ans": "(B)",
-      "ko": "직원들은 모든 거래를 정확히 기록해야 한다."
+      "ko": "직원들은 모든 거래를 정확히 기록(기입)해야 한다.",
+      "note": "'make an accurate ______'에서 관사 an과 형용사 accurate의 수식을 받는 명사 자리이며, 문맥상 '(장부 등에의) 기록·기입'을 뜻하는 (B) entry가 정답이다. 'make an entry'는 '기재하다'라는 회계·사무 빈출 표현이다. (A) entrance(입구·입장)는 의미가 맞지 않고, (C) entrant(참가자)는 사람을 가리켜 어색하며, (D) entering은 동명사/분사로 'an'의 수식을 받는 명사 자리에 부적절하다."
      },
      {
       "en": "2. Each ______ must submit the application form by Friday.",
       "opt": "(A) entry  (B) entrance  (C) entrant  (D) entering",
       "ans": "(C)",
-      "ko": "각 참가자는 금요일까지 신청서를 제출해야 한다."
+      "ko": "각 참가자는 금요일까지 신청서를 제출해야 한다.",
+      "note": "'Each ______ must submit the application(각 ~는 신청서를 제출해야 한다)'에서 신청서를 제출하는 주체는 '사람'이어야 하므로 '참가자·응모자'를 뜻하는 (C) entrant가 정답이다. each 뒤에는 단수명사가 오는데 entrant는 그 조건도 만족한다. (A) entry(기입·출품작)와 (B) entrance(입구·입장)는 사람이 아니라서 동사 submit의 주어로 어색하고, (D) entering은 명사가 아니다. 같은 어근에서 사람을 나타내는 -ant 형태(entrant)를 구별하는 것이 핵심이다."
      }
     ]
    },
@@ -18875,14 +18930,15 @@ const VOCAB_KSTN1 = [
       "en": "1. The new advertisement is designed to ______ younger customers.",
       "opt": "(A) appeal at  (B) appeal to  (C) appealing  (D) appealed",
       "ans": "(B)",
-      "ko": "새 광고는 젊은 고객들에게 매력적으로 다가가도록 설계되었다."
+      "ko": "새 광고는 젊은 고객들의 마음을 끌도록(매력적으로 다가가도록) 설계되었다.",
+      "note": "appeal이 '마음을 끌다, 매력적이다'의 뜻일 때는 자동사로서 전치사 to와 함께 'appeal to + 사람(~에게 호소력이 있다)' 형태로 쓰이므로 (B) appeal to가 정답이다. (A) appeal at은 전치사 결합이 틀렸고, (C) appealing과 (D) appealed는 'designed to + 동사원형' 구조에 맞지 않는다. 'appeal to younger customers(젊은 고객의 마음을 끌다)'처럼 to 뒤에 대상이 오는 점을 기억하자."
      },
      {
       "en": "2. The company decided to ______ the court's decision.",
       "opt": "(A) appeal  (B) appeal to  (C) appeal for  (D) appeal with",
       "ans": "(A)",
       "ko": "회사는 법원의 결정에 항소하기로 결정했다.",
-      "note": "appeal the decision과 같이 appeal이 '항소하다'란 뜻으로 쓰일 때는 전치사 없이 바로 목적어를 취한다."
+      "note": "appeal이 '항소하다'라는 뜻으로 쓰일 때는 타동사로서 전치사 없이 바로 목적어(the court's decision)를 취하므로 (A) appeal이 정답이다. 같은 단어라도 '마음을 끌다'일 때는 'appeal to'(자동사), '항소하다'일 때는 'appeal + 목적어'(타동사)로 구조가 달라진다. 따라서 전치사가 붙은 (B) appeal to, (C) appeal for, (D) appeal with는 목적어 the decision을 직접 취하지 못해 모두 틀리다."
      }
     ]
    }
@@ -18958,7 +19014,8 @@ const VOCAB_KSTN1 = [
       "en": "The sales statistics ______ published in the annual report.",
       "opt": "(A) is  (B) was  (C) are  (D) has",
       "ans": "(C)",
-      "ko": "판매 통계는 연례 보고서에 게재되었다."
+      "ko": "판매 통계는 연례 보고서에 게재되어 있다.",
+      "note": "statistics가 '통계 자료·수치'라는 뜻으로 쓰일 때는 복수 취급하는 명사이고, 여기서는 주어가 'The sales statistics'로 복수이므로 복수 동사이자 수동태(be published)를 만드는 (C) are가 정답이다. (A) is와 (B) was는 단수 동사라 복수 주어와 수일치가 맞지 않고, (D) has는 'has published'가 되어 능동태가 되므로 'published in the report(보고서에 게재된)'라는 수동 의미와 맞지 않는다. 참고로 statistics가 '통계학'이라는 학문을 뜻할 때는 단수 취급한다."
      }
     ]
    },
@@ -19405,7 +19462,8 @@ const VOCAB_KSTN1 = [
       "en": "1. All fragile items should be wrapped _______ protective material.",
       "opt": "(A) of  (B) to  (C) with  (D) in",
       "ans": "(C)",
-      "ko": "모든 깨지기 쉬운 물품은 보호 재료로 포장되어야 한다."
+      "ko": "모든 깨지기 쉬운 물품은 보호용 재료로 포장되어야 한다.",
+      "note": "'wrap A in/with B'는 'A를 B로 싸다·포장하다'라는 표현으로, 포장에 사용하는 재료·소재 앞에는 전치사 with(또는 in)를 쓴다. 여기서는 보호 재료라는 '수단'을 나타내므로 (C) with가 정답이다. (A) of, (B) to는 wrap과 어울리지 않는다. 참고로 'wrap A in B'도 가능한데(예: wrap it in paper), 보기에서 (D) in과 (C) with가 함께 제시되면 '수단·도구'를 강조하는 with가 정답으로 처리된 것이다."
      },
      {
       "en": "2. The project must be wrapped up by the end of the month.",
@@ -19743,7 +19801,7 @@ const VOCAB_KSTN1 = [
       "opt": "(A) to  (B) on  (C) with  (D) for",
       "ans": "(B)",
       "ko": "개정된 정관은 이사회에 의사결정 권한을 부여한다.",
-      "note": "confer A on B에서 on은 윗사람이나 기관이 아랫사람이나 기관 위에(on) 내려놓는 의미가 있다. 즉, on은 권한·의무·혜택·부담 등이 부여·부과되는 대상 앞에 쓰이는 경우가 있다. 그와 유사하게 쓰인 경우는 다음과 같다. * bestow A on B: A를 B에게 수여하다, 베풀다 * impose A on B: A를 B에게 부과하다 * place A on B: A를 B에게 지우다, 부과하다"
+      "note": "'confer A on B'는 'A(권한 등)를 B(사람·기관)에게 부여하다'라는 표현으로, 권한이 부여되는 대상 앞에는 전치사 on을 쓰므로 (B) on이 정답이다. on은 권한·의무·혜택·부담을 누군가에게 '얹어 주는' 의미를 담는다. 같은 패턴으로 bestow A on B(수여하다), impose A on B(부과하다), place A on B(지우다)가 있다. (A) to, (C) with, (D) for는 confer와 결합하는 전치사가 아니다."
      }
     ]
    },
@@ -19832,14 +19890,14 @@ const VOCAB_KSTN1 = [
       "opt": "(A) worth  (B) worthy  (C) worthwhile  (D) value",
       "ans": "(C)",
       "ko": "그 추가 교육은 높은 비용에도 불구하고 할 만한 가치가 있는 것으로 여겨졌다.",
-      "note": "worth는 단독으로 쓰지 못하고 뒤에 명사/동명사가 와야 한다. worthy는 'be worthy of + 명사/동명사' 형태로만 쓰인다."
+      "note": "빈칸은 'was considered ______'로 보어 자리에 단독으로 쓰일 형용사가 필요하며, '(시간·노력을 들일) 가치가 있는'이라는 뜻으로 뒤에 아무것도 없이 단독으로 쓸 수 있는 (C) worthwhile이 정답이다. (A) worth는 단독으로 쓰지 못하고 반드시 뒤에 명사/동명사가 와야 하며, (B) worthy는 'be worthy of + 명사' 형태로만 쓰여 of가 필요하고, (D) value는 명사라서 보어 자리에 부적절하다. worth/worthy/worthwhile의 구조 차이를 구분하는 것이 핵심이다."
      },
      {
       "en": "2. The proposal is _______ of further discussion by the executive board.",
       "opt": "(A) worth  (B) worthwhile  (C) worthy  (D) valued",
       "ans": "(C)",
       "ko": "그 제안은 경영진의 추가 논의를 받을 자격이 있다.",
-      "note": "worth, worthwhile은 뒤에 of를 취하지 않는다."
+      "note": "빈칸 뒤에 'of further discussion'처럼 of가 이어지므로 'be worthy of + 명사(~할 가치가 있다, ~받을 만하다)' 구조를 만드는 (C) worthy가 정답이다. (A) worth는 of 없이 바로 명사를 취하고, (B) worthwhile은 뒤에 of를 취하지 않으며, (D) valued도 of와 결합하지 않는다. 즉 worthy만 of를 동반한다는 점이 정답의 결정적 단서다."
      }
     ]
    },
@@ -20262,7 +20320,7 @@ const VOCAB_KSTN1 = [
       "opt": "(A) work  (B) to work  (C) working  (D) workable",
       "ans": "(C)",
       "ko": "한 씨는 일과 삶의 균형을 개선하기 위해 늦게까지 일하는 것을 그만두기로 결정했다.",
-      "note": "quit의 뒤에 동명사(-ing)가 오는 패턴을 물어보는 문제가 자주 출제되었다."
+      "note": "동사 quit은 목적어로 to부정사가 아니라 동명사(-ing)를 취하므로 '일하는 것을 그만두다'라는 의미의 (C) working이 정답이다. (A) work(동사원형/명사)와 (B) to work(to부정사)는 quit의 목적어가 될 수 없고, (D) workable(형용사)은 목적어 자리에 올 수 없다. quit, finish, enjoy, mind, avoid 등은 동명사를 목적어로 취하는 동사로 토익에 자주 나온다."
      }
     ]
    },
@@ -21452,7 +21510,8 @@ const VOCAB_KSTN1 = [
       "en": "Applicants must indicate their _______ on the registration form.",
       "opt": "(A) nation  (B) national  (C) nationality  (D) nationally",
       "ans": "(C)",
-      "ko": "지원자는 등록 양식에 자신의 국적을 기입해야 한다."
+      "ko": "지원자는 등록 양식에 자신의 국적을 기입해야 한다.",
+      "note": "소유격 their의 수식을 받으며 동사 indicate의 목적어가 되는 명사 자리이고, 문맥상 '국적'을 뜻하는 (C) nationality가 정답이다. (A) nation(국가)은 등록 양식에 기입하는 항목으로 어색하고, (B) national(형용사 '국가의' 또는 명사 '국민')과 (D) nationally(부사 '전국적으로')는 의미·품사가 맞지 않는다. '자신의 국적을 기입하다(indicate one's nationality)'라는 문맥에 가장 적절한 단어를 고르는 것이 핵심이다."
      }
     ]
    },
@@ -21797,8 +21856,8 @@ const VOCAB_KSTN1 = [
       "en": "loosen, loose, lose(잃다)의 품사와 의미를 구분하는 문제가 출제되었다.",
       "ex": "One of the screws on the chair has come ______, so it needs to be tightened.",
       "opt": "(A) lose  (B) loose  (C) loosen  (D) losing",
-      "ko": "의자에 있는 나사 하나가 풀려서 조여야 한다.",
-      "note": "loosen에서 en(동사를 만들어주는 접미어)으로 구별하자.",
+      "ko": "의자에 있는 나사 하나가 풀려 있어서 조여야 한다.",
+      "note": "이 문제는 형태가 비슷한 loose(형용사 '느슨한'), loosen(동사 '풀다·느슨하게 하다'), lose(동사 '잃다')를 구분하는 문제다. 나사가 '느슨한·풀린' 상태를 나타내는 형용사 자리이므로 (B) loose가 정답이다. (A) lose(잃다)와 (D) losing은 의미가 맞지 않고, (C) loosen은 '느슨하게 하다'라는 동사여서 상태를 묘사하는 형용사 자리에 부적절하다. 동사를 만드는 접미어 -en이 붙은 loosen과 형용사 loose를 형태로 구별하자.",
       "ans": "(B)"
      }
     ]
@@ -22323,7 +22382,8 @@ const VOCAB_KSTN1 = [
       "en": "We are looking forward to ________ you at the annual conference.",
       "opt": "(A) see (B) seeing (C) seen (D) to see",
       "ko": "우리는 연례 회의에서 당신을 뵙기를 기대합니다.",
-      "ans": "(B)"
+      "ans": "(B)",
+      "note": "'look forward to'의 to는 to부정사의 to가 아니라 전치사 to이므로 뒤에는 명사 또는 동명사(-ing)가 와야 한다. 따라서 동명사 (B) seeing이 정답이다. (A) see(동사원형)와 (D) to see(to부정사)는 전치사 to 뒤에 올 수 없고, (C) seen(과거분사)도 부적절하다. 'be used to -ing', 'be committed to -ing', 'object to -ing'처럼 to를 전치사로 쓰는 표현들과 함께 묶어 기억하면 좋다."
      }
     ]
    },
@@ -23490,7 +23550,8 @@ const VOCAB_KSTN1 = [
       "en": "The director instructed the interns ______ the updated safety procedures during the site visit.",
       "opt": "(A) following  (B) follow  (C) to following  (D) to follow",
       "ans": "(D)",
-      "ko": "이사는 현장 방문 동안 업데이트된 안전 절차를 따르라고 인턴들에게 지시했다."
+      "ko": "이사는 현장 방문 동안 업데이트된 안전 절차를 따르라고 인턴들에게 지시했다.",
+      "note": "동사 instruct는 <instruct + 목적어 + to부정사>(~에게 …하라고 지시하다) 구조를 취하므로 빈칸에는 to부정사인 (D) to follow가 정답이다. (B) follow는 동사원형으로 목적어 뒤에 단독으로 올 수 없고, (A) following(동명사/현재분사)도 이 구조에 맞지 않는다. (C) to following은 to 뒤에 동명사가 와서 형태가 틀렸다. order, advise, encourage, allow처럼 <동사+목적어+to부정사>를 취하는 동사들과 함께 묶어 외워 두면 좋다."
      }
     ]
    },
@@ -23771,8 +23832,8 @@ const VOCAB_KSTN1 = [
       "en": "2. The manager insisted that the damaged products _______ replaced immediately.",
       "opt": "(A) are (B) were (C) be (D) being",
       "ans": "(C)",
-      "ko": "매니저는 손상된 제품을 즉시 교체해야 한다고 주장했다.",
-      "note": "* <주어 + 동사 + that + 주어 + (should) + 동사원형> 형태를 써야 하는 동사 — 명령(order), 충고(advise, recommend), 주장(insist), 요구(require, request, demand), 결정(determine, decide), 제안(suggest, propose). [암기법] 명충! 주요 결정 (란 말이야!) 위의 동사들의 목적절인 that절에서 should의 의미 중 하나가 '~해야 한다'는 의미가 들어가기 때문에 <(should) + 동사원형> 형태를 쓴다. 위의 동사들에 '~해야 한다고 …하다'라고 대입해 보자. He suggested us that we should meet her. 그는 우리들에게 우리가 그녀를 만나야 한다고 제의했다. The manager ordered that all employees report early. 관리자는 모든 직원들이 일찍 출근하도록 명령했다."
+      "ko": "매니저는 손상된 제품이 즉시 교체되어야 한다고 주장했다.",
+      "note": "insist(주장하다)는 that절에서 <(should) + 동사원형>을 쓰는 동사이므로, should가 생략된 동사원형 (C) be가 정답이다. 주절이 과거(insisted)라도 시제 일치를 적용하지 않고 동사원형을 그대로 쓰는 점이 핵심이다. 따라서 시제에 맞춘 (A) are, (B) were는 오답이고, (D) being은 동사 역할을 못 한다. 이런 동사로는 명령(order)·충고(advise, recommend)·주장(insist)·요구(require, request, demand)·결정(decide)·제안(suggest, propose)이 있으며 '명충 주요 결정'으로 암기한다."
      }
     ]
    },
@@ -23963,7 +24024,8 @@ const VOCAB_KSTN1 = [
       "en": "2. The company is known for providing _______ customer service for over 20 years.",
       "opt": "(A) reliant  (B) relying  (C) reliable  (D) reliance",
       "ans": "(C)",
-      "ko": "그 회사는 20년 넘게 믿을 수 있는 고객 서비스를 제공하는 것으로 알려져 있다."
+      "ko": "그 회사는 20년 넘게 믿을 수 있는 고객 서비스를 제공하는 것으로 알려져 있다.",
+      "note": "빈칸은 명사 customer service를 앞에서 꾸미는 형용사 자리이므로 '믿을 수 있는'이라는 뜻의 형용사 (C) reliable이 정답이다. (A) reliant도 형용사지만 'be reliant on(~에 의존하는)' 형태로 쓰여 의미가 맞지 않는다. (B) relying(분사)은 능동의 '의존하는'이 되어 서비스를 수식하기에 어색하고, (D) reliance는 명사라서 명사 앞 수식 자리에 올 수 없다. reliable service(믿을 만한 서비스)는 자주 출제되는 짝꿍 표현이다."
      }
     ]
    },
@@ -24188,7 +24250,8 @@ const VOCAB_KSTN1 = [
       "en": "After twenty years at the company, Mr. Hall decided to resign _______ his position as head of marketing.",
       "opt": "(A) at  (B) from  (C) over  (D) as",
       "ans": "(B)",
-      "ko": "20년간 회사에 근무한 후, Hall 씨는 마케팅 부서장 직책에서 사임하기로 결정했다."
+      "ko": "20년간 회사에 근무한 후, Hall 씨는 마케팅 부서장 직책에서 사임하기로 결정했다.",
+      "note": "동사 resign은 직책·자리에서 물러난다는 의미로 전치사 from과 함께 'resign from one's position(~직책에서 사임하다)'으로 쓰이므로 (B) from이 정답이다. (A) at, (C) over는 resign과 어울려 '~에서 사임하다'를 만들지 못한다. (D) as는 'resign as head of marketing'처럼 직함 앞에는 쓸 수 있으나, 여기서는 his position이라는 명사가 뒤따르므로 from이 맞다. retire from, step down from과 같은 계열로 기억하면 좋다."
      }
     ]
    },
@@ -24394,7 +24457,8 @@ const VOCAB_KSTN1 = [
       "en": "The company's ______ will attend the trade fair in Singapore next week.",
       "opt": "(A) represent  (B) representation  (C) representative  (D) representing",
       "ans": "(C)",
-      "ko": "회사의 대표가 다음 주 싱가포르 무역 박람회에 참석할 것이다."
+      "ko": "회사의 대표가 다음 주 싱가포르 무역 박람회에 참석할 것이다.",
+      "note": "소유격 The company's 뒤 주어 자리이며 동사 will attend의 주체가 되어야 하므로 '대표자'라는 뜻의 사람 명사 (C) representative가 정답이다. (A) represent는 동사, (D) representing은 분사/동명사라서 주어로 쓰기 어색하다. (B) representation은 '표현, 대표(추상)'라는 명사지만 박람회에 참석하는 사람을 가리키기에는 부적절하다. representative는 '대표자, 영업사원'을 뜻하는 가산 사람명사로 토익에서 자주 나온다."
      }
     ]
    },
@@ -24967,7 +25031,8 @@ const VOCAB_KSTN1 = [
       "en": "New safety regulations may compel manufacturers ______ additional testing before releasing products to the market.",
       "opt": "(A) conduct  (B) conducting  (C) to conduct  (D) conducted",
       "ans": "(C)",
-      "ko": "새로운 안전 규정은 제조업체가 제품을 시장에 출시하기 전에 추가적인 테스트를 수행하도록 강요할 수 있다."
+      "ko": "새로운 안전 규정은 제조업체가 제품을 시장에 출시하기 전에 추가적인 테스트를 수행하도록 강요할 수 있다.",
+      "note": "compel은 <compel + 목적어 + to부정사>(~에게 …하도록 강요하다) 구조를 취하므로 빈칸에는 to부정사인 (C) to conduct가 정답이다. (A) conduct(동사원형), (B) conducting(동명사), (D) conducted(과거/분사)는 모두 목적어 manufacturers 뒤에서 '~하도록'의 to부정사 자리를 채우지 못한다. force, require, oblige, enable 등도 같은 <동사+목적어+to부정사> 구조를 쓰므로 함께 외워 두면 유용하다."
      }
     ]
    },
@@ -25003,7 +25068,8 @@ const VOCAB_KSTN1 = [
       "en": "All employees must cooperate ______ their team leaders to improve productivity.",
       "opt": "(A) in  (B) with  (C) on  (D) at",
       "ans": "(B)",
-      "ko": "모든 직원은 생산성을 높이기 위해 팀장들과 협력해야 한다."
+      "ko": "모든 직원은 생산성을 높이기 위해 팀장들과 협력해야 한다.",
+      "note": "동사 cooperate는 '~와 협력하다'라는 뜻으로 함께하는 대상 앞에 전치사 with를 써서 'cooperate with somebody'로 쓰므로 (B) with가 정답이다. (A) in, (C) on, (D) at는 cooperate와 결합해 '협력 대상'을 나타내지 못한다. work with, collaborate with와 같은 짝으로 기억하면 좋고, cooperation(협력)도 'cooperation with'로 자주 쓰인다."
      }
     ]
    },
@@ -25123,7 +25189,7 @@ const VOCAB_KSTN1 = [
     ],
     "examVar": [
      {
-      "note": "competition, competitiveness, competence를 구분하는 문제가 자주 출제되었다.",
+      "note": "national 뒤에서 향상의 대상이 되는 명사가 필요한데, 문맥상 '국가 경쟁력'이 자연스러우므로 (B) competitiveness(경쟁력)가 정답이다. (A) competition은 '경쟁, 대회', (C) competence는 '능력, 역량'으로 의미가 맞지 않고, (D) competing은 분사/동명사라 national의 수식을 받는 명사 자리에 어색하다. competition(경쟁/대회)·competitiveness(경쟁력)·competence(역량) 세 명사를 의미로 구분하는 문제가 자주 출제된다.",
       "en": "예1) The government launched several programs to improve national _______.",
       "opt": "(A) competition  (B) competitiveness  (C) competence  (D) competing",
       "ans": "(B)",
@@ -25133,7 +25199,8 @@ const VOCAB_KSTN1 = [
       "en": "예2) Strong leadership and communication skills are essential to demonstrate professional _______.",
       "opt": "(A) competition  (B) competitiveness  (C) competence  (D) competitor",
       "ans": "(C)",
-      "ko": "강력한 리더십과 의사소통 능력은 전문적 역량을 보여주는 데 필수적이다."
+      "ko": "강력한 리더십과 의사소통 능력은 전문적 역량을 보여주는 데 필수적이다.",
+      "note": "demonstrate professional ______에서 '전문적 역량을 보여주다'라는 의미가 자연스러우므로 (C) competence(역량, 능력)가 정답이다. (A) competition(경쟁/대회), (B) competitiveness(경쟁력)는 professional과 어울려 개인의 '역량'을 나타내지 못하고, (D) competitor는 '경쟁자'라는 사람 명사라 의미가 맞지 않는다. competence는 직무 수행 능력을 뜻하며 demonstrate/show competence 형태로 자주 쓰인다."
      }
     ]
    },
@@ -26349,7 +26416,8 @@ const VOCAB_KSTN1 = [
       "en": "1. Many customers prefer online support ______ phone assistance when resolving simple issues.",
       "opt": "(A) over   (B) than   (C) to   (D) with",
       "ans": "(C)",
-      "ko": "많은 고객들은 간단한 문제를 해결할 때 전화 상담보다 온라인 지원을 더 선호한다."
+      "ko": "많은 고객들은 간단한 문제를 해결할 때 전화 상담보다 온라인 지원을 더 선호한다.",
+      "note": "동사 prefer는 'prefer A to B'(B보다 A를 선호하다) 구조에서 비교 대상 앞에 전치사 to를 쓰므로 (C) to가 정답이다. 일반 비교에 쓰는 (B) than은 prefer와 함께 쓰지 않는다는 점이 함정이다. (A) over는 'prefer A over B'로 가능하긴 하나 토익 정답으로는 전통적으로 to를 우선시한다. (D) with는 의미가 맞지 않는다. be superior/inferior to처럼 to를 동반하는 표현들과 묶어 기억하면 좋다."
      },
      {
       "en": "2. preferable과 preferred를 구분하는 문제가 출제되었다.",
@@ -27274,7 +27342,7 @@ const VOCAB_KSTN1 = [
       "en": "ensure, assure, insure를 구분하는 문제가 자주 출제되었다.\n예〉 The new guidelines were introduced to _______ that all safety procedures are followed consistently across all departments.",
       "opt": "(A) assure   (B) insure   (C) ensure   (D) involve",
       "ko": "새로운 지침은 모든 부서에서 모든 안전 절차가 일관되게 준수되도록 보장하기 위해 도입되었다.",
-      "note": "assure는 뒤에 사람이 와서 '사람에게 안심시키다, 보장하다', insure는 '보험을 들다, 손해에 대해 보장하다', ensure는 사람이 아닌 결과 또는 상황이 목적어로 온다. <assure + 사람>, <ensure + 결과/상황>",
+      "note": "빈칸 뒤에 that절(상황/결과)이 목적어로 오므로 '(결과·상황을) 확실히 하다, 보장하다'라는 뜻의 (C) ensure가 정답이다. (A) assure는 <assure + 사람>으로 사람을 안심시킬 때 쓰고, (B) insure는 '보험에 들다, 손해를 보장하다'라는 뜻이라 맞지 않으며, (D) involve는 '포함하다'로 의미가 어긋난다. ensure는 사람이 아닌 결과/상황(that절·명사)을 목적어로 취한다는 점이 핵심 구분 포인트다.",
       "ans": "(C)"
      }
     ]
@@ -27304,7 +27372,8 @@ const VOCAB_KSTN1 = [
       "en": "be accustomed to에서 to는 전치사이기 때문에 뒤에 동명사나 명사가 오는 점이 자주 출제되었다.\n예〉 New employees are not yet accustomed to _______ with complex software.",
       "opt": "(A) deal   (B) dealing   (C) dealt   (D) deals",
       "ko": "신입 직원들은 아직 복잡한 소프트웨어를 다루는 데 익숙하지 않다.",
-      "ans": "(B)"
+      "ans": "(B)",
+      "note": "be accustomed to에서 to는 to부정사가 아니라 전치사이므로 뒤에는 동명사나 명사가 와야 한다. 따라서 동명사 (B) dealing이 정답이다. (A) deal(동사원형), (C) dealt(과거/과거분사), (D) deals(3인칭 단수)는 전치사 to 뒤에 올 수 없다. be used to -ing, look forward to -ing, be devoted to -ing처럼 'to + 동명사'를 쓰는 표현들과 함께 외워 두면 좋다."
      }
     ]
    },
@@ -27861,7 +27930,8 @@ const VOCAB_KSTN1 = [
       "en": "2. The team agreed to proceed ___ the revised proposal after reviewing all feedback.",
       "opt": "(A) to  (B) with  (C) on  (D) for",
       "ans": "(B)",
-      "ko": "팀은 모든 피드백을 검토한 후 수정된 제안을 계속 진행하기로 합의했다."
+      "ko": "팀은 모든 피드백을 검토한 후 수정된 제안을 계속 진행하기로 합의했다.",
+      "note": "동사 proceed가 '~을 계속 진행하다'라는 의미일 때는 전치사 with와 결합해 'proceed with something'으로 쓰므로 (B) with가 정답이다. (A) to는 'proceed to + 장소/다음 단계'처럼 다른 의미로 쓰여 여기서는 어색하고, (C) on, (D) for는 proceed와 어울리지 않는다. proceed with the plan/project(계획·프로젝트를 진행하다)는 자주 나오는 표현이다."
      }
     ]
    },
@@ -28104,7 +28174,8 @@ const VOCAB_KSTN1 = [
       "en": "The revised fee structure is equivalent _______ the one used last year.",
       "opt": "(A) at  (B) with  (C) to  (D) for",
       "ans": "(C)",
-      "ko": "개정된 요금 체계는 작년에 사용된 것과 동등하다."
+      "ko": "개정된 요금 체계는 작년에 사용된 것과 동등하다.",
+      "note": "형용사 equivalent는 '~와 동등한, 맞먹는'이라는 뜻으로 비교 대상 앞에 전치사 to를 써서 'equivalent to'로 쓰므로 (C) to가 정답이다. (A) at, (B) with, (D) for는 equivalent와 결합해 '~와 동등한'을 만들지 못한다. similar to, identical to, equal to처럼 to를 동반하는 형용사들과 한 묶음으로 외워 두면 좋다."
      }
     ]
    },
@@ -28744,7 +28815,8 @@ const VOCAB_KSTN1 = [
       "en": "It would be more ______ to delay the project until the budget is approved.",
       "opt": "(A) sensible  (B) sensitive  (C) sensational  (D) senseless",
       "ans": "(A)",
-      "ko": "예산이 승인될 때까지 프로젝트를 미루는 것이 더 현명할 것이다."
+      "ko": "예산이 승인될 때까지 프로젝트를 미루는 것이 더 현명할 것이다.",
+      "note": "문맥상 '미루는 것이 더 현명하다'는 판단의 의미가 자연스러우므로 '분별 있는, 현명한'이라는 뜻의 (A) sensible이 정답이다. (B) sensitive는 '민감한', (C) sensational은 '선풍적인, 충격적인', (D) senseless는 '무의미한, 무분별한'으로 모두 의미가 맞지 않는다. sensible(현명한)과 sensitive(민감한)는 형태가 비슷해 의미로 구분하는 문제가 자주 출제된다."
      }
     ]
    },
@@ -33530,8 +33602,8 @@ const VOCAB_KSTN1 = [
       "en": "The merger between the two _______ will be finalized by the end of this quarter.",
       "opt": "(A) corporate  (B) corporations  (C) cooperate  (D) cooperation",
       "ans": "(B)",
-      "ko": "두 법인 간의 합병은 이번 분기 말까지 마무리될 것이다.",
-      "note": "cooperate 협력하다 / cooperation 협력, 협동"
+      "ko": "두 법인(기업) 간의 합병은 이번 분기 말까지 마무리될 것이다.",
+      "note": "빈칸은 정관사 the가 없고 복수를 나타내는 자리이며, 전치사 between은 둘 이상의 대상을 필요로 하므로 명사의 복수형 (B) corporations가 정답이다. (A) corporate는 '기업의'라는 형용사라 between의 목적어 자리에 올 수 없고, (C) cooperate는 '협력하다'라는 동사, (D) cooperation은 '협력'이라는 뜻으로 의미상 합병(merger) 문맥과 맞지 않는다. corporation은 '(법인격을 가진) 회사·법인'을 뜻하며 'between the two corporations(두 법인 사이)'처럼 between 다음에는 반드시 복수명사를 써야 한다는 점이 핵심 포인트다."
      }
     ]
    },
