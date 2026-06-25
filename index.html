@@ -1432,7 +1432,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260626b';
+  window.APP_VERSION='20260626c';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1542,11 +1542,11 @@ function wordAssoc(w, book){
 // 전 단어장 뜻 표기 통일: 품사 영어약어→(명)(동)…, 뜻번호 "1."→"①" (런타임 1회, 비파괴적·멱등)
 (function normalizeMeanings(){
   const POSM={n:'명',v:'동',a:'형',adj:'형',ad:'부',adv:'부',prep:'전',conj:'접',pron:'대',int:'감',aux:'조'};
-  const posRe=/(?<![A-Za-z])(adj|adv|ad|prep|conj|pron|int|aux|n|v|a)\.(?=\s|$)/g;
-  const numRe=/(?<![\d.])([1-9])\.(?=\s)/g;
+  const posRe=/(^|[^A-Za-z])(adj|adv|ad|prep|conj|pron|int|aux|n|v|a)\.(?=\s|$)/g;
+  const numRe=/(^|[^\d.])([1-9])\.(?=\s)/g;
   const fix=s=>{ if(!s) return s;
-    let t=String(s).replace(posRe,(m,g)=>'('+POSM[g]+')');
-    t=t.replace(numRe,(m,g)=>String.fromCharCode(0x2460+(+g)-1));
+    let t=String(s).replace(posRe,(m,g1,g2)=>g1+'('+POSM[g2]+')');
+    t=t.replace(numRe,(m,g1,g2)=>g1+String.fromCharCode(0x2460+(+g2)-1));
     return t;
   };
   try{ BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{ if(w.meaning) w.meaning=fix(w.meaning); }))); }catch(e){}
