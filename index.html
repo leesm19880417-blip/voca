@@ -404,6 +404,8 @@
   .word-card .exlabel { display:inline-block; font-size:0.62em; font-weight:700; color:#fff; background:var(--primary); border-radius:5px; padding:1px 5px; margin-right:5px; vertical-align:middle; }
   .word-card .wtip { font-size: 0.8em; color: var(--text-mid); margin-top: 8px; background: var(--surface-2); border-left: 3px solid var(--primary); border-radius: 6px; padding: 7px 9px; white-space: pre-line; line-height: 1.55; }
   .word-card .wtip .tlabel { display:inline-block; font-size:0.92em; font-weight:800; color:var(--primary); margin-right:5px; }
+  .word-card .wassoc { border-left-color: var(--violet); background: rgba(139,92,246,0.08); }
+  .word-card .wassoc .tlabel { color: var(--violet); }
   .word-card .wexpr { font-size: 0.8em; color: var(--text-mid); margin-top: 8px; background: #ecfdf5; border-left: 3px solid #10b981; border-radius: 6px; padding: 7px 9px; line-height: 1.55; }
   .word-card .wexpr .elabel { display:block; font-size:0.92em; font-weight:800; color:#059669; margin-bottom:3px; }
   .word-card .wexpr .ei { padding: 1px 0; }
@@ -1430,7 +1432,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260625e';
+  window.APP_VERSION='20260625f';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1509,11 +1511,17 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
   ['siwon','top','hackers','eduwill'].forEach(id=>{
     const b=bookById(id); if(!b) return;
     b.data.forEach(d=>d.words.forEach(w=>{
-      if(!w.tip){ const t=lut[norm(w.word)]; if(t){ w.tip=t; w.tipLabel='💡 연상'; w._ksTip=true; added++; } }
+      const t=lut[norm(w.word)]; if(t && !w.assoc){ w.assoc=t; w._ksAssoc=true; added++; }  // 연상은 별도 필드(기존 tip 보존)
     }));
   });
   try{ window._ksTipsAdded=added; }catch(e){}
 })();
+// 카드/목록에서 보여줄 '연상' 텍스트: assoc 우선, 없으면 경선식 계열 책의 tip(자체가 연상)
+function wordAssoc(w, book){
+  if(w && w.assoc) return w.assoc;
+  if(w && w.tip && (book==='kstn1' || book==='kst' || book==='kss')) return w.tip;
+  return '';
+}
 
 // 생성된 Part5 기출변형 문제를 해당 단어장 단어에 주입 (vocab_part5.js)
 (function injectGenPart5(){
@@ -2490,6 +2498,8 @@ function renderWordList(words, book, day){
     // TIP / 연상 (경선식 책은 '💡 연상')
     const tipLab=w.tipLabel||(isKstn?'💡 연상':'만점 TIP');
     const tip=w.tip?`<div class="wtip"><span class="tlabel">${esc(tipLab)}</span>${tipHtml(w.tip)}</div>`:'';
+    // 연상(경선식) — 자체 팁이 있어도 그 위에 별도 표시
+    const assocHtml=(w.assoc && w.assoc!==w.tip)?`<div class="wtip wassoc"><span class="tlabel">💡 연상</span>${tipHtml(w.assoc)}</div>`:'';
     // 기출표현 (콜로케이션 등)
     const exprLab=isKstn?'★ 기출표현':'★토익 출제 표현';
     const expr=(w.toeicExpr&&w.toeicExpr.length)
@@ -2515,6 +2525,7 @@ function renderWordList(words, book, day){
         ${img}
         <div class="wtop"><span class="wword">${esc(w.word)}${w.sup?`<sup class="wsup">${esc(w.sup)}</sup>`:''}</span>${w.pos?`<span class="wpos">${posTag(w.pos)}</span>`:''}${w.pron?`<span class="wpron">${esc(w.pron)}</span>`:''}<button class="spk" onclick="speak('${speakAttr(w.word)}')" title="단어 발음">🔊</button></div>
         ${w.meaning?`<div class="wmean">${esc(w.meaning)}</div>`:''}
+        ${assocHtml}
         ${tip}
         ${deriv}
         ${ex}
@@ -2586,7 +2597,8 @@ function renderFlashcard(){
   $('flip-front').innerHTML=`${fcImg}<div class="fc-word">${esc(w.word)}${w.sup?`<sup class="wsup">${esc(w.sup)}</sup>`:''}</div>${w.pron?`<div class="fc-pron">${esc(w.pron)}</div>`:''}<div class="fc-pos">${posTag(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
   if(fcImg){ const ie=$('flip-front').querySelector('.wimg'); if(ie) loadWordImage(ie); }
   const fcKstn=fcBook&&String(fcBook).startsWith('kstn');
-  const fcTip=w.tip?`<div class="fc-tip"><span class="tlabel">${esc(w.tipLabel||(fcKstn?'💡 연상':'만점 TIP'))}</span>${tipHtml(w.tip)}</div>`:'';
+  const _fcAssoc=wordAssoc(w, fcBook);   // 카드 뒷면은 연상만 (siwon 관련기출 tip은 표시 안 함)
+  const fcTip=_fcAssoc?`<div class="fc-tip"><span class="tlabel">💡 연상</span>${tipHtml(_fcAssoc)}</div>`:'';
   const fcDeriv=(w.derivatives&&w.derivatives.length)?`<div class="fc-deriv">${w.derivatives.map(d=>`<span class="dv">${esc(d.word)}</span>${d.pos?`<span class="dp">${esc(d.pos)}</span>`:' '}${esc(d.meaning||'')}`).join('<br>')}</div>`:'';
   const fcExList=(w.examples&&w.examples.length)?w.examples:(w.example?[{en:w.example,ko:w.exampleKor||''}]:[]);
   const fcEx=fcExList.map((e,j)=>`<div class="fc-ex">${j===0?'<span class="exlabel">예문</span>':''}${highlightWord(e.en, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(e.en)}')">🔊</button></div>${e.ko?`<div class="fc-ex-ko">${esc(e.ko)}</div>`:''}`).join('');
