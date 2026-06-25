@@ -1432,7 +1432,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260625f';
+  window.APP_VERSION='20260626b';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1458,7 +1458,7 @@
 <script src="vocab_secret_top.js?v=20260622l"></script>
 <script src="vocab_kyungsunsik.js?v=20260622l"></script>
 <script src="vocab_kss_toeic.js?v=20260622l"></script>
-<script src="vocab_kstn1.js?v=20260625c"></script>
+<script src="vocab_kstn1.js?v=20260626a"></script>
 <script src="vocab_part5.js?v=20260625b"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
 <script src="vocab_legend.js?v=20260622l"></script>
@@ -1537,6 +1537,19 @@ function wordAssoc(w, book){
     }));
   });
   try{ window._genP5Added=added; }catch(e){}
+})();
+
+// 전 단어장 뜻 표기 통일: 품사 영어약어→(명)(동)…, 뜻번호 "1."→"①" (런타임 1회, 비파괴적·멱등)
+(function normalizeMeanings(){
+  const POSM={n:'명',v:'동',a:'형',adj:'형',ad:'부',adv:'부',prep:'전',conj:'접',pron:'대',int:'감',aux:'조'};
+  const posRe=/(?<![A-Za-z])(adj|adv|ad|prep|conj|pron|int|aux|n|v|a)\.(?=\s|$)/g;
+  const numRe=/(?<![\d.])([1-9])\.(?=\s)/g;
+  const fix=s=>{ if(!s) return s;
+    let t=String(s).replace(posRe,(m,g)=>'('+POSM[g]+')');
+    t=t.replace(numRe,(m,g)=>String.fromCharCode(0x2460+(+g)-1));
+    return t;
+  };
+  try{ BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{ if(w.meaning) w.meaning=fix(w.meaning); }))); }catch(e){}
 })();
 
 // ============ 상태 ============
@@ -2631,7 +2644,7 @@ function flipCard(){
   if(_swiped){ _swiped=false; return; } // 스와이프 후엔 뒤집지 않음
   flashFlipped=!flashFlipped;
   $('flip-card').classList.toggle('flipped', flashFlipped);
-  if(autoSpeak) speak(flashFlipped ? currentWords[currentIdx].example : currentWords[currentIdx].word); // 뒷면=예문, 앞면=단어
+  if(autoSpeak && !flashFlipped) speak(currentWords[currentIdx].word); // 앞면=단어 발음, 뒷면=발음 안 함(예문 안 읽음)
 }
 function toggleAutoSpeak(){
   autoSpeak=!autoSpeak;
@@ -2784,7 +2797,7 @@ function renderQuiz(){
   if(it.type==='part5'){ $('quiz-prompt').textContent='빈칸에 알맞은 것을 고르세요 (Part 5)'; qEl.innerHTML=part5Blank(it.sentence); }
   else if(it.type==='ko-en'){ $('quiz-prompt').textContent='뜻에 맞는 영단어를 고르세요'; qEl.innerHTML=`${esc(it.meaning)} <small>${posTag(it.pos)}</small>`; }
   else { $('quiz-prompt').textContent='영단어의 뜻을 고르세요'; qEl.innerHTML=`${esc(it.word)} <small>${posTag(it.pos)}</small> <button class="spk" onclick="speak('${speakAttr(it.word)}')" title="발음 듣기">🔊</button>`; speak(it.word); }
-  $('quiz-options').innerHTML=it.options.map((opt,i)=>`<button class="quiz-option" data-opt="${esc(opt)}" onclick="answerQuiz(this,'${q(opt)}')"><span class="onum">${i+1}</span><span>${esc(opt)}</span></button>`).join('');
+  $('quiz-options').innerHTML=it.options.map((opt,i)=>`<button class="quiz-option" data-opt="${esc(opt)}" onclick="answerQuiz(this,'${q(opt)}')"><span class="onum">${String.fromCharCode(65+i)}</span><span>${esc(opt)}</span></button>`).join('');
   $('quiz-fb').innerHTML=''; $('quiz-next').style.display='none';
 }
 function answerQuiz(btn, ans){
