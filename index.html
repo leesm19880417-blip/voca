@@ -711,8 +711,9 @@
   .fc-pos-sm { font-size: 0.7em; color: var(--text-light); font-weight: 500; }
   .fc-mnemonic { margin: 4px 0 14px; max-width: 300px; }
   .fc-mnemonic img { display:block; width:100%; max-height: 300px; object-fit: contain; border-radius: 12px; background:#fff; border:1px solid var(--border); }
-  .fc-tip { font-size: 0.9em; color: var(--text-mid); background: var(--surface-2); border-left: 3px solid var(--primary); border-radius: 8px; padding: 9px 11px; margin-bottom: 14px; max-width: 460px; text-align: left; line-height: 1.55; white-space: pre-line; }
-  .fc-tip .tlabel { display:inline-block; font-size:0.92em; font-weight:800; color:var(--primary); margin-right:5px; }
+  .fc-tip { font-size: 1.25em; color: var(--text); background: var(--surface-2); border-left: 4px solid var(--primary); border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; max-width: 500px; text-align: left; line-height: 1.65; white-space: pre-line; }
+  .fc-tip .tlabel { display:block; font-size:0.78em; font-weight:800; color:var(--primary); margin-bottom:6px; }
+  .fc-tip .tcb, .fc-tip .tcr { font-size: 1.05em; }
   body.dark .fc-tip { background: rgba(99,102,241,0.14); }
   .fc-ex { font-size: 0.98em; color: var(--text-mid); font-style: italic; max-width: 460px; }
   .fc-ex-ko { font-size: 0.9em; color: var(--text-light); margin-top: 4px; max-width: 460px; }
@@ -1429,7 +1430,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260625c';
+  window.APP_VERSION='20260625d';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
