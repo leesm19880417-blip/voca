@@ -1430,7 +1430,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260625d';
+  window.APP_VERSION='20260625e';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -2601,8 +2601,8 @@ function renderFlashcard(){
     }).join('')}</div>`:'';
   const fcQuiz=w.quiz?`<div class="fc-quiz">Q. ${esc(w.quiz.sentence)}<br><span class="qopt">(A) ${esc(w.quiz.a)} &nbsp; (B) ${esc(w.quiz.b)}</span> → 정답 <span class="qans">(${esc(w.quiz.answer)})</span></div>`:'';
   const fcMnemonic=w.img?`<div class="fc-mnemonic"><img src="${esc(w.img)}?v=${window.APP_VERSION||''}" alt="연상 그림" loading="lazy" onerror="this.parentNode.style.display='none'"></div>`:'';
-  // 경선식(kstn): 뒷면은 뜻(한글)+연상만. 그 외 책: 기존대로 전체.
-  const fcBackTail = fcKstn ? '' : `${fcDeriv}${fcExpr}${fcEx}${fcVar}${fcQuiz}`;
+  // 카드 뒷면은 모든 단어장에서 뜻(한글)+연상만 (기출표현·기출변형·예문 등은 단어목록에서)
+  const fcBackTail = '';
   $('flip-back').innerHTML=`<div class="fc-meaning">${esc(w.meaning)}</div><div class="fc-word-sm">${esc(w.word)}${w.sup?`<sup class="wsup">${esc(w.sup)}</sup>`:''} <span class="fc-pos-sm">${posTag(w.pos)}</span> <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊</button></div>${fcMnemonic}${fcTip}${fcBackTail}`;
   $('flip-card').classList.toggle('flipped', flashFlipped);
   // 마스터 진척 표시 (서로 다른 날 MASTER_DAYS회 통과 → 졸업)
