@@ -435,6 +435,20 @@
   .lc-entry-body b { font-size: 1.02em; font-weight:800; }
   .lc-entry-body small { color: var(--text-light); font-size:0.78em; }
   .lc-entry-go { font-size: 1.3em; color: var(--text-light); }
+  /* 해커스 왕기초 LC */
+  .hlc-cover { width:46px; height:62px; border-radius:7px; flex-shrink:0; background:linear-gradient(150deg,#fde047,#facc15); color:#92400e; display:flex; flex-direction:column; align-items:center; justify-content:center; font-size:1.3em; line-height:1; box-shadow:0 2px 8px rgba(0,0,0,0.2); }
+  .hlc-cover small { font-size:0.34em; font-weight:800; margin-top:3px; text-align:center; line-height:1.1; }
+  .hlc-list { padding-bottom: 90px; }
+  .hlc-day { background:var(--surface); border:0.5px solid var(--border); border-radius:13px; margin-bottom:9px; overflow:hidden; box-shadow:var(--shadow-sm); }
+  .hlc-day-head { width:100%; background:none; border:none; cursor:pointer; padding:14px 15px; display:flex; align-items:center; gap:10px; font-size:1em; color:var(--text); }
+  .hlc-day-name { font-weight:800; flex:1; text-align:left; }
+  .hlc-day-cnt { font-size:0.78em; color:var(--text-light); }
+  .hlc-arr { color:var(--text-light); font-size:0.9em; }
+  .hlc-tracks { grid-template-columns:repeat(auto-fill,minmax(92px,1fr)); gap:8px; padding:4px 13px 14px; }
+  .hlc-track { background:var(--surface-2); border:1px solid var(--border); border-radius:10px; padding:11px 8px; font-size:0.9em; font-weight:600; color:var(--text-mid); cursor:pointer; transition:all .15s; }
+  .hlc-track:active { transform:scale(0.96); }
+  @media (hover:hover){ .hlc-track:hover{ border-color:var(--primary); color:var(--primary); } }
+  .hlc-track.playing { background:var(--primary); color:#fff; border-color:var(--primary); }
   /* ===== 1000문장 말하기 ===== */
   .sp-chapter { background:var(--surface); border-radius:var(--r); box-shadow:var(--shadow-sm); padding:16px; margin-bottom:10px; display:flex; align-items:center; gap:13px; cursor:pointer; border-left:5px solid var(--primary); }
   .sp-chapter:active{ transform:scale(0.99); }
@@ -1005,6 +1019,14 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
+    <div class="lc-entry" onclick="openHLC()">
+      <div class="lc-entry-cover hlc-cover">🎧<small>왕기초<br>LC</small></div>
+      <div class="lc-entry-body">
+        <b>해커스 토익 왕기초 LISTENING</b>
+        <small>음원 듣기 전용 · 4주 20일 · 재생/정지/배속</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()">
       <img class="lc-entry-cover" src="covers/speak.jpg?v=20260622l" alt="기초영어 1000문장">
@@ -1042,6 +1064,15 @@
     </div>
     <div class="lc-tabs" id="lc-tabs"></div>
     <div class="lc-pages" id="lc-pages"></div>
+  </div>
+
+  <!-- 해커스 토익 왕기초 LC (음원 전용) -->
+  <div id="view-hlc" class="view">
+    <div class="stack-header">
+      <button class="icon-btn" onclick="goHome()">←</button>
+      <div class="stack-title">🎧 해커스 토익 왕기초 LC<small>음원 듣기 · 4주 20일</small></div>
+    </div>
+    <div class="hlc-list" id="hlc-list"></div>
   </div>
 
   <!-- 기초 1000문장 말하기 -->
@@ -1432,7 +1463,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260626d';
+  window.APP_VERSION='20260626e';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1470,6 +1501,7 @@
 <script src="lc_answers.js?v=20260622l"></script>
 <script src="lc_answers_p2.js?v=20260622l"></script>
 <script src="lc_answers_p34.js?v=20260622l"></script>
+<script src="hlc_data.js?v=20260626e"></script>
 <script>
 'use strict';
 
@@ -1832,6 +1864,29 @@ function lcToggle(){ if(!_lcAudio) return; if(_lcAudio.paused) _lcAudio.play(); 
 function lcSkip(n){ if(!_lcAudio) return; _lcAudio.currentTime=Math.max(0,Math.min(_lcAudio.duration||0,_lcAudio.currentTime+n)); }
 function lcSeek(v){ if(!_lcAudio) return; _lcAudio.currentTime=parseFloat(v)||0; }
 function lcStop(){ if(_lcAudio){ _lcAudio.pause(); } $('lc-player').classList.remove('on'); }
+// ===== 해커스 토익 왕기초 LC (음원 전용) =====
+let _hlcOpenDay=0, _hlcCur={d:-1,t:-1};
+function openHLC(){ showView('hlc'); renderHLC(); }
+function renderHLC(){
+  const days=(typeof HLC!=='undefined')?HLC:[];
+  $('hlc-list').innerHTML=days.map((d,i)=>`
+    <div class="hlc-day">
+      <button class="hlc-day-head" onclick="hlcToggleDay(${i})"><span class="hlc-day-name">${esc(d.day)}</span><span class="hlc-day-cnt">${d.tracks.length}개</span><span class="hlc-arr">${_hlcOpenDay===i?'▾':'▸'}</span></button>
+      <div class="hlc-tracks" style="display:${_hlcOpenDay===i?'grid':'none'}">
+        ${d.tracks.map((t,j)=>`<button class="hlc-track" id="hlc-trk-${i}-${j}" onclick="hlcPlay(${i},${j})">🎧 ${esc(t.l)}</button>`).join('')}
+      </div>
+    </div>`).join('');
+  hlcHighlight();
+}
+function hlcToggleDay(i){ _hlcOpenDay=(_hlcOpenDay===i?-1:i); renderHLC(); }
+function hlcSrc(di,ti){ const d=HLC[di],t=d.tracks[ti]; return encodeURIComponent('Hackers_Toeic_Basic_LC')+'/'+encodeURIComponent(d.day)+'/'+encodeURIComponent(t.f); }
+function hlcPlay(di,ti){
+  const d=HLC[di]; if(!d||!d.tracks[ti]) return;
+  _hlcCur={d:di,t:ti};
+  lcPlayCore(d.day+' · '+d.tracks[ti].l, hlcSrc(di,ti), ()=>{ if(ti+1<d.tracks.length) hlcPlay(di,ti+1); });
+  hlcHighlight();
+}
+function hlcHighlight(){ document.querySelectorAll('.hlc-track.playing').forEach(e=>e.classList.remove('playing')); const el=$('hlc-trk-'+_hlcCur.d+'-'+_hlcCur.t); if(el) el.classList.add('playing'); }
 function openLC(){ showView('lc'); renderLC(); }
 function renderLC(){
   // 탭 (Part 필터)
