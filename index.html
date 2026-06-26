@@ -453,7 +453,15 @@
   .ab-script-head { display:flex; align-items:center; justify-content:space-between; padding:10px 13px; font-size:0.85em; font-weight:800; color:var(--primary); background:var(--primary-light); }
   .ab-script-x { background:none; border:none; color:var(--text-light); font-size:1em; cursor:pointer; padding:0 4px; }
   .ab-script img { display:block; width:100%; cursor:zoom-in; }
-  .ab-script-body { padding: 10px 12px 14px; max-height: 60vh; overflow-y: auto; }
+  .ab-script-body { padding: 10px 13px 14px; max-height: 62vh; overflow-y: auto; }
+  .ab-script-body .abs-intro { font-size:0.82em; font-weight:700; color:var(--accent); margin:8px 0 4px; }
+  .ab-script-body .abs-qn { font-size:0.8em; font-weight:800; color:var(--primary); margin:12px 0 3px; }
+  .ab-script-body .abs-line { font-size:0.92em; color:var(--text); line-height:1.5; margin-top:5px; }
+  .ab-script-body .abs-line b { color:var(--primary); }
+  .ab-script-body .abs-ko { font-size:0.84em; color:var(--text-light); line-height:1.4; margin-top:1px; }
+  .ab-script-body .abs-ansbox { margin-top:12px; border-top:1px dashed var(--border); padding-top:8px; }
+  .ab-script-body .abs-ansbox summary { font-size:0.85em; font-weight:800; color:var(--success); cursor:pointer; }
+  .ab-script-body .abs-anslist { margin-top:6px; font-size:0.9em; font-weight:700; color:var(--success); letter-spacing:0.5px; }
   /* ===== 1000문장 말하기 ===== */
   .sp-chapter { background:var(--surface); border-radius:var(--r); box-shadow:var(--shadow-sm); padding:16px; margin-bottom:10px; display:flex; align-items:center; gap:13px; cursor:pointer; border-left:5px solid var(--primary); }
   .sp-chapter:active{ transform:scale(0.99); }
@@ -1477,7 +1485,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260626i';
+  window.APP_VERSION='20260626j';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1892,6 +1900,30 @@ function abAudioPage(key){
   if(!window._abPageMap){ window._abPageMap={}; D.forEach(pg=>(pg.audios||[]).forEach(a=>{ if(!_abPageMap[a]) _abPageMap[a]=pg.page; })); }
   return _abPageMap[key]||0;
 }
+// 대본 전체를 펼쳐서 표시 + 정답은 맨 아래 접힘(따로)
+function abScriptHtml(page){
+  const pg=(typeof LC_ANS!=='undefined'?LC_ANS:{})[page]; if(!pg) return '';
+  const spk=en=>`<button class="spk" onclick="event.stopPropagation();speak('${speakAttr(en)}')">🔊</button>`;
+  const opt=(L,o)=>`<div class="abs-line"><b>(${L})</b> ${esc(o.en)} ${spk(o.en)}</div><div class="abs-ko">${esc(o.ko)}</div>`;
+  let h=''; const ans=[];
+  if(pg.type==='script'||pg.type==='talk'){
+    (pg.sets||[]).forEach(set=>{
+      if(set.intro) h+=`<div class="abs-intro">${esc(set.intro)}</div>`;
+      (set.script||[]).forEach(t=>{ h+=`<div class="abs-line">${t.sp?`<b>${esc(t.sp)}:</b> `:''}${esc(t.en)} ${spk(t.en)}</div><div class="abs-ko">${esc(t.ko)}</div>`; });
+      (set.qs||[]).forEach(q=>{ if(q.answer) ans.push(`${esc(String(q.n))}.(${esc(q.answer)})`); });
+    });
+  } else if(pg.type==='photo'||pg.type==='qr'){
+    (pg.items||[]).forEach(q=>{
+      h+=`<div class="abs-qn">${esc(String(q.n))}번</div>`;
+      if(q.q) h+=`<div class="abs-line"><b>Q.</b> ${esc(q.q.en)} ${spk(q.q.en)}</div><div class="abs-ko">${esc(q.q.ko)}</div>`;
+      ['A','B','C','D'].filter(L=>q.opts&&q.opts[L]).forEach(L=>{ h+=opt(L,q.opts[L]); });
+      if(q.answer) ans.push(`${esc(String(q.n))}.(${esc(q.answer)})`);
+    });
+  }
+  if(!h) return '';
+  if(ans.length) h+=`<details class="abs-ansbox"><summary>정답 보기</summary><div class="abs-anslist">${ans.join('   ')}</div></details>`;
+  return h;
+}
 function abShowScript(di,ti){
   const sc=$('ab-script'); if(!sc) return;
   const cfg=AUDIO_BOOKS[_abKey];
@@ -1899,11 +1931,11 @@ function abShowScript(di,ti){
   const f=cfg.data[di].tracks[ti].f.replace(/\.mp3$/i,'');
   const pg=abAudioPage(f);
   if(!pg){ sc.style.display='none'; sc.innerHTML=''; return; }
-  // 정답및해설(답안지)의 스크립트 패널 우선, 없으면 페이지 이미지
-  const panel=(typeof lcAnsPanel==='function')?lcAnsPanel(pg):'';
-  const body = panel ? `<div class="ab-script-body">${panel}</div>`
-                     : `<img loading="lazy" src="lc_pages/p${String(pg).padStart(3,'0')}.jpg" alt="p.${pg}" onclick="openLcFs(${pg})">`;
-  sc.innerHTML=`<div class="ab-script-head"><span>📝 스크립트·정답 · p.${pg}</span><button class="ab-script-x" onclick="$('ab-script').style.display='none'">✕</button></div>${body}`;
+  // 대본 전체 표시(정답은 따로). 데이터 없으면 페이지 이미지로 폴백
+  const script=abScriptHtml(pg);
+  const body = script ? `<div class="ab-script-body">${script}</div>`
+                      : `<img loading="lazy" src="lc_pages/p${String(pg).padStart(3,'0')}.jpg" alt="p.${pg}" onclick="openLcFs(${pg})">`;
+  sc.innerHTML=`<div class="ab-script-head"><span>📄 스크립트 · p.${pg}</span><button class="ab-script-x" onclick="$('ab-script').style.display='none'">✕</button></div>${body}`;
   sc.style.display='block';
 }
 function renderAB(){
