@@ -449,6 +449,10 @@
   .hlc-track:active { transform:scale(0.96); }
   @media (hover:hover){ .hlc-track:hover{ border-color:var(--primary); color:var(--primary); } }
   .hlc-track.playing { background:var(--primary); color:#fff; border-color:var(--primary); }
+  .ab-script { background:var(--surface); border:0.5px solid var(--border); border-radius:13px; margin-bottom:11px; overflow:hidden; box-shadow:var(--shadow-sm); }
+  .ab-script-head { display:flex; align-items:center; justify-content:space-between; padding:10px 13px; font-size:0.85em; font-weight:800; color:var(--primary); background:var(--primary-light); }
+  .ab-script-x { background:none; border:none; color:var(--text-light); font-size:1em; cursor:pointer; padding:0 4px; }
+  .ab-script img { display:block; width:100%; cursor:zoom-in; }
   /* ===== 1000문장 말하기 ===== */
   .sp-chapter { background:var(--surface); border-radius:var(--r); box-shadow:var(--shadow-sm); padding:16px; margin-bottom:10px; display:flex; align-items:center; gap:13px; cursor:pointer; border-left:5px solid var(--primary); }
   .sp-chapter:active{ transform:scale(0.99); }
@@ -1080,6 +1084,7 @@
       <button class="icon-btn" onclick="goHome()">←</button>
       <div class="stack-title" id="ab-title">🎧 음원</div>
     </div>
+    <div class="ab-script" id="ab-script" style="display:none"></div>
     <div class="hlc-list" id="ab-list"></div>
   </div>
 
@@ -1471,7 +1476,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260626g';
+  window.APP_VERSION='20260626h';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1876,10 +1881,26 @@ function lcStop(){ if(_lcAudio){ _lcAudio.pause(); } $('lc-player').classList.re
 // ===== 음원 전용 LC (해커스 왕기초 / 서아쌤 LC 음원) =====
 const AUDIO_BOOKS={
   hlc:{data:(typeof HLC!=='undefined'?HLC:[]), base:'Hackers_Toeic_Basic_LC', title:'🎧 해커스 토익 왕기초 LC', sub:'음원 듣기 · 4주 20일'},
-  slc:{data:(typeof SLC!=='undefined'?SLC:[]), base:'LC 음원', title:'🎧 서아쌤 비밀과외 LC (음원)', sub:'음원 듣기 · Playlist 1~10'}
+  slc:{data:(typeof SLC!=='undefined'?SLC:[]), base:'LC 음원', title:'🎧 서아쌤 비밀과외 LC (음원)', sub:'음원 듣기 · Playlist 1~10', script:true}
 };
 let _abKey='hlc', _abOpenDay=0, _abCur={d:-1,t:-1};
-function openAB(key){ if(AUDIO_BOOKS[key]) _abKey=key; _abOpenDay=0; _abCur={d:-1,t:-1}; showView('ab'); renderAB(); }
+function openAB(key){ if(AUDIO_BOOKS[key]) _abKey=key; _abOpenDay=0; _abCur={d:-1,t:-1}; const sc=$('ab-script'); if(sc){sc.style.display='none';sc.innerHTML='';} showView('ab'); renderAB(); }
+// 음원(파일명) → 스크립트 페이지 (서아쌤 LC: lc_data 매핑)
+function abAudioPage(key){
+  const D=(typeof LC_PAGES!=='undefined'?LC_PAGES:(typeof LC_DATA!=='undefined'?LC_DATA:null)); if(!D) return 0;
+  if(!window._abPageMap){ window._abPageMap={}; D.forEach(pg=>(pg.audios||[]).forEach(a=>{ if(!_abPageMap[a]) _abPageMap[a]=pg.page; })); }
+  return _abPageMap[key]||0;
+}
+function abShowScript(di,ti){
+  const sc=$('ab-script'); if(!sc) return;
+  const cfg=AUDIO_BOOKS[_abKey];
+  if(!cfg.script){ sc.style.display='none'; sc.innerHTML=''; return; }
+  const f=cfg.data[di].tracks[ti].f.replace(/\.mp3$/i,'');
+  const pg=abAudioPage(f);
+  if(!pg){ sc.style.display='none'; sc.innerHTML=''; return; }
+  sc.innerHTML=`<div class="ab-script-head"><span>📄 스크립트 · p.${pg}</span><button class="ab-script-x" onclick="$('ab-script').style.display='none'">✕</button></div><img loading="lazy" src="lc_pages/p${String(pg).padStart(3,'0')}.jpg" alt="p.${pg}" onclick="openLcFs(${pg})">`;
+  sc.style.display='block';
+}
 function renderAB(){
   const cfg=AUDIO_BOOKS[_abKey], days=cfg.data;
   $('ab-title').innerHTML=`${cfg.title}<small>${esc(cfg.sub)}</small>`;
@@ -1898,7 +1919,7 @@ function abPlay(di,ti){
   const cfg=AUDIO_BOOKS[_abKey],d=cfg.data[di]; if(!d||!d.tracks[ti]) return;
   _abCur={d:di,t:ti};
   lcPlayCore(d.day+' · '+d.tracks[ti].l, abSrc(di,ti), ()=>{ if(ti+1<d.tracks.length) abPlay(di,ti+1); });
-  abHighlight();
+  abHighlight(); abShowScript(di,ti);
 }
 function abHighlight(){ document.querySelectorAll('.hlc-track.playing').forEach(e=>e.classList.remove('playing')); const el=$('ab-trk-'+_abCur.d+'-'+_abCur.t); if(el) el.classList.add('playing'); }
 function openLC(){ showView('lc'); renderLC(); }
