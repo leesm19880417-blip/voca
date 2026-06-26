@@ -453,6 +453,7 @@
   .ab-script-head { display:flex; align-items:center; justify-content:space-between; padding:10px 13px; font-size:0.85em; font-weight:800; color:var(--primary); background:var(--primary-light); }
   .ab-script-x { background:none; border:none; color:var(--text-light); font-size:1em; cursor:pointer; padding:0 4px; }
   .ab-script img { display:block; width:100%; cursor:zoom-in; }
+  .ab-script-body { padding: 10px 12px 14px; max-height: 60vh; overflow-y: auto; }
   /* ===== 1000문장 말하기 ===== */
   .sp-chapter { background:var(--surface); border-radius:var(--r); box-shadow:var(--shadow-sm); padding:16px; margin-bottom:10px; display:flex; align-items:center; gap:13px; cursor:pointer; border-left:5px solid var(--primary); }
   .sp-chapter:active{ transform:scale(0.99); }
@@ -1476,7 +1477,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260626h';
+  window.APP_VERSION='20260626i';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1898,7 +1899,11 @@ function abShowScript(di,ti){
   const f=cfg.data[di].tracks[ti].f.replace(/\.mp3$/i,'');
   const pg=abAudioPage(f);
   if(!pg){ sc.style.display='none'; sc.innerHTML=''; return; }
-  sc.innerHTML=`<div class="ab-script-head"><span>📄 스크립트 · p.${pg}</span><button class="ab-script-x" onclick="$('ab-script').style.display='none'">✕</button></div><img loading="lazy" src="lc_pages/p${String(pg).padStart(3,'0')}.jpg" alt="p.${pg}" onclick="openLcFs(${pg})">`;
+  // 정답및해설(답안지)의 스크립트 패널 우선, 없으면 페이지 이미지
+  const panel=(typeof lcAnsPanel==='function')?lcAnsPanel(pg):'';
+  const body = panel ? `<div class="ab-script-body">${panel}</div>`
+                     : `<img loading="lazy" src="lc_pages/p${String(pg).padStart(3,'0')}.jpg" alt="p.${pg}" onclick="openLcFs(${pg})">`;
+  sc.innerHTML=`<div class="ab-script-head"><span>📝 스크립트·정답 · p.${pg}</span><button class="ab-script-x" onclick="$('ab-script').style.display='none'">✕</button></div>${body}`;
   sc.style.display='block';
 }
 function renderAB(){
