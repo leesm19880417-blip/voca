@@ -774,6 +774,8 @@
   .card-hint { text-align: center; font-size: 0.76em; color: var(--text-light); margin: 12px 0 16px; }
   .card-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
   .card-actions .btn { padding: 13px 10px; font-size: 0.9em; }
+  .card-actions-skip { grid-template-columns: 1fr; margin-top: 22px; }
+  .card-actions-skip .btn { color: var(--text-light); }
 
   /* ===== Quiz ===== */
   .quiz-wrap { background: var(--surface); border-radius: var(--r); box-shadow: var(--shadow); padding: 18px; margin-top: 6px; }
@@ -1195,11 +1197,11 @@
     <p class="card-hint">탭하면 뒤집혀요 · <b>외울 때까지</b> 그날 안에서 계속 반복돼요</p>
     <div id="fc-master" class="fc-master"></div>
     <div class="srs-actions">
-      <button class="srs-btn srs-again" onclick="srsRate(0)">모름<small>곧 다시</small></button>
       <button class="srs-btn srs-hard" onclick="srsRate(1)">애매<small>조금 뒤 다시</small></button>
+      <button class="srs-btn srs-again" onclick="srsRate(0)">모름<small>곧 다시</small></button>
       <button class="srs-btn srs-good" onclick="srsRate(2)">외움<small>통과 ✓</small></button>
     </div>
-    <div class="card-actions">
+    <div class="card-actions card-actions-skip">
       <button class="btn btn-soft" onclick="nextCard()">건너뛰기 →</button>
     </div>
   </div>
@@ -1485,7 +1487,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260626k';
+  window.APP_VERSION='20260626m';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1511,6 +1513,7 @@
 <script src="vocab_secret_top.js?v=20260622l"></script>
 <script src="vocab_kyungsunsik.js?v=20260622l"></script>
 <script src="vocab_kss_toeic.js?v=20260622l"></script>
+<script src="vocab_kss_basic.js?v=20260626m"></script>
 <script src="vocab_kstn1.js?v=20260626a"></script>
 <script src="vocab_part5.js?v=20260625b"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
@@ -1540,6 +1543,7 @@ const BOOKS = [
   { id:'wang',    name:'왕초보영단어',   icon:'📗', color:'#10b981', data:(typeof VOCAB_WANGCHOBO !=='undefined'?VOCAB_WANGCHOBO :[]) },
   { id:'legend',  name:'레전드 필수영단어', icon:'🏆', color:'#e11d48', data:(typeof VOCAB_LEGEND !=='undefined'?VOCAB_LEGEND :[]) },
   { id:'kss',     name:'경선식 중학(완성)', icon:'🧠', color:'#a855f7', data:(typeof VOCAB_KSS !=='undefined'?VOCAB_KSS :[]) },
+  { id:'kssb',    name:'경선식 중학(기본)', icon:'📗', color:'#16a34a', data:(typeof VOCAB_KSS_BASIC !=='undefined'?VOCAB_KSS_BASIC :[]) },
 ];
 // 새 스키마(examples[]) → 기존 기능(플래시카드·퀴즈)용 단일 example/exampleKor 보강
 BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
@@ -2180,7 +2184,7 @@ function bookStats(b){
   });
   return { learned, total, doneDays, days:b.data.length };
 }
-const COVER={ siwon:'covers/siwon.jpg', top:'covers/top.jpg', eduwill:'covers/eduwill.jpg', wang:'covers/wang.jpg', hackers:'covers/hackers.jpg', kss:'covers/kss.jpg', kst:'covers/kst.jpg', kstn1:'covers/kstn1.jpg', legend:'covers/legend.jpg', ns:'covers/ns.jpg' };
+const COVER={ siwon:'covers/siwon.jpg', top:'covers/top.jpg', eduwill:'covers/eduwill.jpg', wang:'covers/wang.jpg', hackers:'covers/hackers.jpg', kss:'covers/kss.jpg', kssb:'covers/kssb.jpg', kst:'covers/kst.jpg', kstn1:'covers/kstn1.jpg', legend:'covers/legend.jpg', ns:'covers/ns.jpg' };
 function renderHome(){
   const grid=$('book-grid');
   const cards=BOOKS.map(b=>{
