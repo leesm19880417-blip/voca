@@ -1019,8 +1019,16 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
-    <div class="lc-entry" onclick="openHLC()">
-      <div class="lc-entry-cover hlc-cover">🎧<small>왕기초<br>LC</small></div>
+    <div class="lc-entry" onclick="openAB('slc')">
+      <img class="lc-entry-cover" src="covers/lc.jpg?v=20260622l" alt="서아쌤 비밀과외 LC 음원">
+      <div class="lc-entry-body">
+        <b>서아쌤 비밀과외 LC <small style="color:var(--primary);font-weight:800">음원</small></b>
+        <small>음원 듣기 전용 · Playlist 1~10 · 재생/정지/배속</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
+    <div class="lc-entry" onclick="openAB('hlc')">
+      <img class="lc-entry-cover" src="covers/hlc.jpg" alt="해커스 토익 왕기초 LISTENING" onerror="this.onerror=null;this.src='covers/hlc.svg?v=20260626f'">
       <div class="lc-entry-body">
         <b>해커스 토익 왕기초 LISTENING</b>
         <small>음원 듣기 전용 · 4주 20일 · 재생/정지/배속</small>
@@ -1066,13 +1074,13 @@
     <div class="lc-pages" id="lc-pages"></div>
   </div>
 
-  <!-- 해커스 토익 왕기초 LC (음원 전용) -->
-  <div id="view-hlc" class="view">
+  <!-- 음원 전용 LC (해커스 왕기초 / 서아쌤 LC 음원) -->
+  <div id="view-ab" class="view">
     <div class="stack-header">
       <button class="icon-btn" onclick="goHome()">←</button>
-      <div class="stack-title">🎧 해커스 토익 왕기초 LC<small>음원 듣기 · 4주 20일</small></div>
+      <div class="stack-title" id="ab-title">🎧 음원</div>
     </div>
-    <div class="hlc-list" id="hlc-list"></div>
+    <div class="hlc-list" id="ab-list"></div>
   </div>
 
   <!-- 기초 1000문장 말하기 -->
@@ -1463,7 +1471,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260626e';
+  window.APP_VERSION='20260626f';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1502,6 +1510,7 @@
 <script src="lc_answers_p2.js?v=20260622l"></script>
 <script src="lc_answers_p34.js?v=20260622l"></script>
 <script src="hlc_data.js?v=20260626e"></script>
+<script src="slc_data.js?v=20260626f"></script>
 <script>
 'use strict';
 
@@ -1864,29 +1873,34 @@ function lcToggle(){ if(!_lcAudio) return; if(_lcAudio.paused) _lcAudio.play(); 
 function lcSkip(n){ if(!_lcAudio) return; _lcAudio.currentTime=Math.max(0,Math.min(_lcAudio.duration||0,_lcAudio.currentTime+n)); }
 function lcSeek(v){ if(!_lcAudio) return; _lcAudio.currentTime=parseFloat(v)||0; }
 function lcStop(){ if(_lcAudio){ _lcAudio.pause(); } $('lc-player').classList.remove('on'); }
-// ===== 해커스 토익 왕기초 LC (음원 전용) =====
-let _hlcOpenDay=0, _hlcCur={d:-1,t:-1};
-function openHLC(){ showView('hlc'); renderHLC(); }
-function renderHLC(){
-  const days=(typeof HLC!=='undefined')?HLC:[];
-  $('hlc-list').innerHTML=days.map((d,i)=>`
+// ===== 음원 전용 LC (해커스 왕기초 / 서아쌤 LC 음원) =====
+const AUDIO_BOOKS={
+  hlc:{data:(typeof HLC!=='undefined'?HLC:[]), base:'Hackers_Toeic_Basic_LC', title:'🎧 해커스 토익 왕기초 LC', sub:'음원 듣기 · 4주 20일'},
+  slc:{data:(typeof SLC!=='undefined'?SLC:[]), base:'LC 음원', title:'🎧 서아쌤 비밀과외 LC (음원)', sub:'음원 듣기 · Playlist 1~10'}
+};
+let _abKey='hlc', _abOpenDay=0, _abCur={d:-1,t:-1};
+function openAB(key){ if(AUDIO_BOOKS[key]) _abKey=key; _abOpenDay=0; _abCur={d:-1,t:-1}; showView('ab'); renderAB(); }
+function renderAB(){
+  const cfg=AUDIO_BOOKS[_abKey], days=cfg.data;
+  $('ab-title').innerHTML=`${cfg.title}<small>${esc(cfg.sub)}</small>`;
+  $('ab-list').innerHTML=days.map((d,i)=>`
     <div class="hlc-day">
-      <button class="hlc-day-head" onclick="hlcToggleDay(${i})"><span class="hlc-day-name">${esc(d.day)}</span><span class="hlc-day-cnt">${d.tracks.length}개</span><span class="hlc-arr">${_hlcOpenDay===i?'▾':'▸'}</span></button>
-      <div class="hlc-tracks" style="display:${_hlcOpenDay===i?'grid':'none'}">
-        ${d.tracks.map((t,j)=>`<button class="hlc-track" id="hlc-trk-${i}-${j}" onclick="hlcPlay(${i},${j})">🎧 ${esc(t.l)}</button>`).join('')}
+      <button class="hlc-day-head" onclick="abToggleDay(${i})"><span class="hlc-day-name">${esc(d.day)}</span><span class="hlc-day-cnt">${d.tracks.length}개</span><span class="hlc-arr">${_abOpenDay===i?'▾':'▸'}</span></button>
+      <div class="hlc-tracks" style="display:${_abOpenDay===i?'grid':'none'}">
+        ${d.tracks.map((t,j)=>`<button class="hlc-track" id="ab-trk-${i}-${j}" onclick="abPlay(${i},${j})">🎧 ${esc(t.l)}</button>`).join('')}
       </div>
     </div>`).join('');
-  hlcHighlight();
+  abHighlight();
 }
-function hlcToggleDay(i){ _hlcOpenDay=(_hlcOpenDay===i?-1:i); renderHLC(); }
-function hlcSrc(di,ti){ const d=HLC[di],t=d.tracks[ti]; return encodeURIComponent('Hackers_Toeic_Basic_LC')+'/'+encodeURIComponent(d.day)+'/'+encodeURIComponent(t.f); }
-function hlcPlay(di,ti){
-  const d=HLC[di]; if(!d||!d.tracks[ti]) return;
-  _hlcCur={d:di,t:ti};
-  lcPlayCore(d.day+' · '+d.tracks[ti].l, hlcSrc(di,ti), ()=>{ if(ti+1<d.tracks.length) hlcPlay(di,ti+1); });
-  hlcHighlight();
+function abToggleDay(i){ _abOpenDay=(_abOpenDay===i?-1:i); renderAB(); }
+function abSrc(di,ti){ const cfg=AUDIO_BOOKS[_abKey],d=cfg.data[di],t=d.tracks[ti]; return encodeURIComponent(cfg.base)+'/'+encodeURIComponent(d.day)+'/'+encodeURIComponent(t.f); }
+function abPlay(di,ti){
+  const cfg=AUDIO_BOOKS[_abKey],d=cfg.data[di]; if(!d||!d.tracks[ti]) return;
+  _abCur={d:di,t:ti};
+  lcPlayCore(d.day+' · '+d.tracks[ti].l, abSrc(di,ti), ()=>{ if(ti+1<d.tracks.length) abPlay(di,ti+1); });
+  abHighlight();
 }
-function hlcHighlight(){ document.querySelectorAll('.hlc-track.playing').forEach(e=>e.classList.remove('playing')); const el=$('hlc-trk-'+_hlcCur.d+'-'+_hlcCur.t); if(el) el.classList.add('playing'); }
+function abHighlight(){ document.querySelectorAll('.hlc-track.playing').forEach(e=>e.classList.remove('playing')); const el=$('ab-trk-'+_abCur.d+'-'+_abCur.t); if(el) el.classList.add('playing'); }
 function openLC(){ showView('lc'); renderLC(); }
 function renderLC(){
   // 탭 (Part 필터)
