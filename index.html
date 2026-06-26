@@ -1485,7 +1485,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260626j';
+  window.APP_VERSION='20260626k';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1539,7 +1539,7 @@ const BOOKS = [
   { id:'ns',      name:'뇌새김(토익)', icon:'💭', color:'#f97316', data:(typeof VOCAB_NOISAEGIM !=='undefined'?VOCAB_NOISAEGIM :[]) },
   { id:'wang',    name:'왕초보영단어',   icon:'📗', color:'#10b981', data:(typeof VOCAB_WANGCHOBO !=='undefined'?VOCAB_WANGCHOBO :[]) },
   { id:'legend',  name:'레전드 필수영단어', icon:'🏆', color:'#e11d48', data:(typeof VOCAB_LEGEND !=='undefined'?VOCAB_LEGEND :[]) },
-  { id:'kss',     name:'경선식(중학)', icon:'🧠', color:'#a855f7', data:(typeof VOCAB_KSS !=='undefined'?VOCAB_KSS :[]) },
+  { id:'kss',     name:'경선식 중학(완성)', icon:'🧠', color:'#a855f7', data:(typeof VOCAB_KSS !=='undefined'?VOCAB_KSS :[]) },
 ];
 // 새 스키마(examples[]) → 기존 기능(플래시카드·퀴즈)용 단일 example/exampleKor 보강
 BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
@@ -1556,7 +1556,7 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
 (function propagateKsTips(){
   const norm = w => String(w||'').toLowerCase().replace(/[¹²³⁴]/g,'').replace(/[.,!?;:]+$/,'').replace(/\s+/g,' ').trim();
   const lut = {};
-  ['kstn1','kst'].forEach(id=>{            // kstn1(최신, 검증본) 우선
+  ['kstn1','kst','kss','kssb'].forEach(id=>{   // 연상 출처: 경선식 토익(최신·일반)+중학(완성·기본). 최신 우선
     const b=bookById(id); if(!b) return;
     b.data.forEach(d=>d.words.forEach(w=>{
       if(w.tip){ const k=norm(w.word); if(k && !lut[k]) lut[k]=w.tip; }
