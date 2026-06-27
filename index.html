@@ -763,6 +763,13 @@
   .fc-tip .tlabel { display:block; font-size:0.78em; font-weight:800; color:var(--primary); margin-bottom:6px; }
   .fc-tip .tcb, .fc-tip .tcr { font-size: 1.05em; }
   body.dark .fc-tip { background: rgba(99,102,241,0.14); }
+  .fc-hint { margin: 16px auto 4px; max-width: 460px; background: var(--surface-2); border: 1.5px dashed #fcd34d; border-radius: 12px; padding: 13px 16px; text-align: center; }
+  body.dark .fc-hint { background: rgba(250,204,21,0.10); border-color:#a16207; }
+  .fc-hint-lbl { display:block; font-size:0.74em; font-weight:800; color:#b45309; margin-bottom:7px; }
+  body.dark .fc-hint-lbl { color:#fbbf24; }
+  .fc-hint-body { font-size:1.18em; line-height:1.6; color:var(--text); }
+  .assoc-blank { display:inline-block; min-width:54px; border-bottom:2.5px solid #f59e0b; color:transparent; font-weight:800; margin:0 2px; vertical-align:baseline; }
+  .fc-hint-q { font-size:0.82em; color:var(--text-light); margin-top:8px; font-weight:600; }
   .fc-ex { font-size: 0.98em; color: var(--text-mid); font-style: italic; max-width: 460px; }
   .fc-ex-ko { font-size: 0.9em; color: var(--text-light); margin-top: 4px; max-width: 460px; }
   /* 연상 색상 (발음=파랑, 뜻=빨강) */
@@ -1229,6 +1236,7 @@
     <div class="stack-header">
       <button class="icon-btn" onclick="exitMode()">←</button>
       <div class="stack-title" id="fc-count">1 / 30</div>
+      <button class="icon-btn" id="fc-assocrecall" onclick="toggleAssocRecall()" title="연상 빈칸(능동 회상) 켜기/끄기">💡</button>
       <button class="icon-btn" id="fc-autospeak" onclick="toggleAutoSpeak()" title="자동 발음 켜기/끄기">🔊</button>
       <button class="icon-btn" onclick="shuffleFlashcards()">🔀</button>
     </div>
@@ -1593,7 +1601,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260628a';
+  window.APP_VERSION='20260628b';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1797,6 +1805,7 @@ let currentBook='siwon', currentDay=null, currentWords=[], currentIdx=0, current
 let quizData=[], quizIdx=0, quizScore=0, quizWrong=[];
 let aqCount=20, myStudyCount=20, aqBook='all', flashFlipped=false, studySource=null, typingHintUsed=false, _reviewMode=false, _sessTotal=0, _sessMastered=0, _swiped=false;
 let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동 발음 (기본 켜짐)
+let assocRecall = (localStorage.getItem('fc_assocrecall') === '1'); // 연상 빈칸(능동 회상) (기본 꺼짐)
 
 const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result'];
 const $ = id => document.getElementById(id);
@@ -1919,7 +1928,7 @@ function showView(name){
   bankStudyTime(); _curView=name; _studyClock=Date.now();
   document.querySelectorAll('.view').forEach(v=>v.classList.remove('active'));
   $('view-'+name).classList.add('active');
-  if(name==='flashcard') syncAutoSpeakBtn();
+  if(name==='flashcard'){ syncAutoSpeakBtn(); syncAssocRecallBtn(); }
   const isStack = STACK_VIEWS.includes(name);
   document.body.classList.toggle('stack-mode', isStack);
   if(!isStack) document.querySelectorAll('.nav-item').forEach(t=>t.classList.toggle('active', t.dataset.tab===name));
@@ -2775,6 +2784,25 @@ function tipHtml(s){
      .replace(/\[\[r\]\]/g,'<span class="tcr">').replace(/\[\[\/r\]\]/g,'</span>');
   return h;
 }
+// 연상에서 뜻(빨강 [[r]]) 부분만 빈칸으로 — 능동 회상용. 빨강이 없으면 null(빈칸 불가).
+function assocBlankHtml(s){
+  if(!s || String(s).indexOf('[[r]]')<0) return null;
+  let h=esc(String(s));
+  h=h.replace(/\[\[b\]\]/g,'<span class="tcb">').replace(/\[\[\/b\]\]/g,'</span>')
+     .replace(/\[\[r\]\]([\s\S]*?)\[\[\/r\]\]/g,'<span class="assoc-blank">＿＿＿</span>');
+  return h;
+}
+function toggleAssocRecall(){
+  assocRecall=!assocRecall;
+  localStorage.setItem('fc_assocrecall', assocRecall?'1':'0');
+  syncAssocRecallBtn();
+  toast(assocRecall ? '💡 연상 빈칸 — 발음·어근 힌트로 뜻을 떠올려보세요' : '연상 빈칸 꺼짐');
+  if(document.querySelector('#view-flashcard.active')) renderFlashcard();
+}
+function syncAssocRecallBtn(){
+  const b=$('fc-assocrecall'); if(!b) return;
+  b.style.opacity=assocRecall?'1':'0.4';
+}
 function renderWordList(words, book, day){
   $('word-list').innerHTML=words.map((w,i)=>{
     const on=state.bookmarks[wordKey(book,day,w.word)];
@@ -2885,10 +2913,12 @@ function renderFlashcard(){
   $('fc-progress').style.width = (_sessTotal ? (_sessMastered/_sessTotal*100) : ((currentIdx+1)/currentWords.length*100))+'%';
   const fcBook=w.book||currentBook;
   const fcImg=imageBook(fcBook)?`<div class="fc-img wimg loading" data-word="${esc(w.word)}"></div>`:'';
-  $('flip-front').innerHTML=`${fcImg}<div class="fc-word">${esc(w.word)}${w.sup?`<sup class="wsup">${esc(w.sup)}</sup>`:''}</div>${w.pron?`<div class="fc-pron">${esc(w.pron)}</div>`:''}<div class="fc-pos">${posTag(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button><div class="fc-tap">탭하여 뜻 보기 👆</div>`;
-  if(fcImg){ const ie=$('flip-front').querySelector('.wimg'); if(ie) loadWordImage(ie); }
   const fcKstn=fcBook&&String(fcBook).startsWith('kstn');
   const _fcAssoc=wordAssoc(w, fcBook);   // 카드 뒷면은 연상만 (siwon 관련기출 tip은 표시 안 함)
+  const _blank = assocRecall ? assocBlankHtml(_fcAssoc) : null;   // 연상 빈칸(능동 회상): 뜻만 가림
+  const fcHint = _blank ? `<div class="fc-hint"><span class="fc-hint-lbl">💡 연상 힌트${w._genTip?' <span class="ai-badge">AI</span>':''}</span><div class="fc-hint-body">${_blank}</div><div class="fc-hint-q">밑줄에 들어갈 뜻을 떠올려보세요 🤔</div></div>` : '';
+  $('flip-front').innerHTML=`${fcImg}<div class="fc-word">${esc(w.word)}${w.sup?`<sup class="wsup">${esc(w.sup)}</sup>`:''}</div>${w.pron?`<div class="fc-pron">${esc(w.pron)}</div>`:''}<div class="fc-pos">${posTag(w.pos)}</div><button class="spk big" onclick="event.stopPropagation(); speak('${speakAttr(w.word)}')">🔊 발음 듣기</button>${fcHint}<div class="fc-tap">탭하여 뜻 보기 👆</div>`;
+  if(fcImg){ const ie=$('flip-front').querySelector('.wimg'); if(ie) loadWordImage(ie); }
   const fcTip=_fcAssoc?`<div class="fc-tip"><span class="tlabel">💡 연상${w._genTip?' <span class="ai-badge">AI</span>':''}</span>${tipHtml(_fcAssoc)}</div>`:'';
   const fcDeriv=(w.derivatives&&w.derivatives.length)?`<div class="fc-deriv">${w.derivatives.map(d=>`<span class="dv">${esc(d.word)}</span>${d.pos?`<span class="dp">${esc(d.pos)}</span>`:' '}${esc(d.meaning||'')}`).join('<br>')}</div>`:'';
   const fcExList=(w.examples&&w.examples.length)?w.examples:(w.example?[{en:w.example,ko:w.exampleKor||''}]:[]);
