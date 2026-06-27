@@ -1557,7 +1557,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260627d';
+  window.APP_VERSION='20260627e';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -3020,9 +3020,9 @@ function answerQuiz(btn, ans){
     delete state.wrongs[wordKey(bk,dy,it.word)];
     if(it.type==='part5'){   // 기출변형은 해설을 읽도록 자동 넘김 X
       $('quiz-fb').innerHTML=`<div class="feedback ok">✅ 정답!</div>${part5Explain(it)}`;
-    } else {                 // 단어 퀴즈는 정답 시 1초 뒤 자동 넘김
-      $('quiz-fb').innerHTML=`<div class="feedback ok">✅ 정답! <span class="auto-hint">다음 문제로…</span></div>`;
-      _quizAutoT=setTimeout(()=>{ _quizAutoT=null; nextQuizQuestion(); }, 1000);
+    } else {                 // 단어 퀴즈는 정답 시 바로 다음 문제로
+      $('quiz-fb').innerHTML=`<div class="feedback ok">✅ 정답!</div>`;
+      _quizAutoT=setTimeout(()=>{ _quizAutoT=null; nextQuizQuestion(); }, 250);
     }
   } else {
     state.wrongs[wordKey(bk,dy,it.word)]={...it, day:dy, book:bk};
