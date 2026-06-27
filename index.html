@@ -1164,7 +1164,8 @@
     <div id="chapter-audio"></div>
     <div class="mode-grid">
       <button class="mode-btn" onclick="startFlashcard()"><span class="m-ico">📇</span><span class="m-txt"><b>플래시카드</b><small>카드 넘기며 암기</small></span></button>
-      <button class="mode-btn" onclick="startQuiz('en-ko')"><span class="m-ico">🎯</span><span class="m-txt"><b>영→한 퀴즈</b><small>뜻 맞히기</small></span></button>
+      <button class="mode-btn" onclick="startQuiz('en-ko')"><span class="m-ico">🎯</span><span class="m-txt"><b>영→한 퀴즈</b><small>뜻 맞히기 · 4지선다</small></span></button>
+      <button class="mode-btn" onclick="startQuiz('en-ko',2)"><span class="m-ico">⚖️</span><span class="m-txt"><b>영→한 (2지선다)</b><small>둘 중 뜻 고르기 · 쉬움</small></span></button>
       <button class="mode-btn" onclick="startQuiz('ko-en')"><span class="m-ico">🔤</span><span class="m-txt"><b>한→영 퀴즈</b><small>단어 맞히기</small></span></button>
       <button class="mode-btn" onclick="startTyping()"><span class="m-ico">⌨️</span><span class="m-txt"><b>받아쓰기</b><small>철자 입력</small></span></button>
       <button class="mode-btn" id="day-part5-btn" style="display:none" onclick="startPart5Quiz()"><span class="m-ico">📝</span><span class="m-txt"><b>기출변형 (Part 5)</b><small>빈칸 실전 문제</small></span></button>
@@ -1557,7 +1558,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260627e';
+  window.APP_VERSION='20260627f';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -2970,7 +2971,7 @@ function completeFlash(){
 }
 
 // ============ 퀴즈 ============
-function startQuiz(type){ const words=dayWords(); if(!words) return; studySource='day'; setupQuiz(words,type,currentDay); }
+function startQuiz(type, nChoices){ const words=dayWords(); if(!words) return; studySource='day'; setupQuiz(words,type,currentDay,nChoices); }
 function distractorPool(){
   // 혼합 출처(전체평가-전체, 즐겨찾기, 오답) 퀴즈는 전 단어장에서 보기 생성
   if(studySource==='review'||studySource==='bookmarks'||studySource==='wrongs'||(studySource==='all'&&aqBook==='all')) return allWords();
@@ -2978,12 +2979,13 @@ function distractorPool(){
   if(b && b.data.length) return b.data.flatMap(d=>d.words);
   return allWords();
 }
-function setupQuiz(words, type, day){
+function setupQuiz(words, type, day, nChoices){
   currentMode=type; currentDay=day||currentDay;
+  const nOpt=(nChoices===2)?2:4;
   let pool=distractorPool();
   if(pool.length<8) pool=pool.concat(allWords());
   quizData=shuffle(words).map(w=>{
-    const others=shuffle(pool.filter(x=>x.word!==w.word && x.meaning!==w.meaning)).slice(0,3).map(x=>type==='ko-en'?x.word:x.meaning);
+    const others=shuffle(pool.filter(x=>x.word!==w.word && x.meaning!==w.meaning)).slice(0,nOpt-1).map(x=>type==='ko-en'?x.word:x.meaning);
     const correct=type==='ko-en'?w.word:w.meaning;
     return {...w, options:shuffle([correct,...others]), correct, type};
   });
