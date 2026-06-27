@@ -685,6 +685,27 @@
   .weak-desc{ font-size:0.82em; color:var(--text-light); margin:-6px 0 12px; }
   .wmiss{ display:inline-block; font-size:0.72em; font-weight:800; color:var(--danger); background:var(--danger-light); border:1px solid #fca5a5; border-radius:999px; padding:1px 8px; margin-left:6px; white-space:nowrap; }
   body.dark .wmiss{ background:rgba(239,68,68,.18); border-color:#7f1d1d; }
+  .cf-card{ background:var(--surface); border:1.5px solid var(--border); border-radius:var(--r); padding:14px 16px; margin-bottom:12px; box-shadow:var(--shadow-sm); }
+  .cf-pair{ display:flex; align-items:stretch; gap:8px; }
+  .cf-item{ flex:1; background:var(--surface-2); border-radius:10px; padding:10px 12px; min-width:0; }
+  .cf-w{ font-weight:800; font-size:1.08em; color:var(--primary); margin-bottom:3px; }
+  .cf-w .spk{ font-size:0.7em; }
+  .cf-m{ font-size:0.86em; color:var(--text); line-height:1.4; }
+  .cf-vs{ align-self:center; font-size:0.78em; font-weight:800; color:var(--text-light); flex:0 0 auto; }
+  .cf-tip{ font-size:0.86em; color:var(--text); line-height:1.55; margin-top:11px; padding-top:10px; border-top:1px dashed var(--border); }
+  .cf-tip-lbl{ font-weight:800; color:#b45309; margin-right:6px; }
+  body.dark .cf-tip-lbl{ color:#fbbf24; }
+  .cf-q{ max-width:520px; margin:0 auto; }
+  .cf-q-prog{ text-align:center; font-size:0.82em; color:var(--text-light); font-weight:700; margin-bottom:18px; }
+  .cf-q-mean{ text-align:center; font-size:1.5em; font-weight:800; color:var(--text); margin-bottom:6px; }
+  .cf-q-sub{ font-size:0.6em; font-weight:600; color:var(--text-light); margin-top:6px; }
+  .cf-q-opts{ display:flex; flex-direction:column; gap:11px; margin-top:22px; }
+  .cf-opt{ padding:16px; border:2px solid var(--border); background:var(--surface); border-radius:14px; font-size:1.15em; font-weight:700; color:var(--text); cursor:pointer; transition:all .15s; }
+  .cf-opt:active{ transform:scale(0.98); }
+  .cf-opt:disabled{ cursor:default; }
+  .cf-opt.cf-ok{ border-color:var(--primary); background:var(--primary); color:#fff; }
+  .cf-opt.cf-no{ border-color:#fca5a5; background:var(--danger-light); color:var(--danger); }
+  .cf-q-tip{ margin-top:16px; padding:13px 15px; background:var(--surface-2); border-radius:12px; font-size:0.92em; line-height:1.6; }
   .rc-left{ display:flex; align-items:center; gap:12px; }
   .rc-ico{ font-size:1.6em; }
   .rc-left b{ font-size:1.02em; } .rc-left small{ display:block; color:var(--text-light); font-size:0.8em; margin-top:1px; }
@@ -1083,6 +1104,10 @@
       <div>📒 <b>내 단어장</b> <small id="mywords-count">0개 단어</small></div>
       <span>＋ 추가 / 학습 →</span>
     </div>
+    <div class="review-card" onclick="openConfuse()">
+      <div class="rc-left"><span class="rc-ico">🔀</span><div><b>헷갈리는 단어</b><small id="confuse-count">자주 혼동하는 짝 비교·구별</small></div></div>
+      <span class="rc-go">비교 →</span>
+    </div>
     <div class="section-label">🎧 LC 공부하기</div>
     <div class="lc-entry" onclick="openLC()">
       <img class="lc-entry-cover" src="covers/lc.jpg?v=20260622l" alt="서아쌤 비밀과외 LC">
@@ -1328,6 +1353,17 @@
     <div class="section-label">⭐ 즐겨찾기 <span id="bm-count" style="color:var(--text-light); font-weight:600;"></span></div>
     <div id="bm-actions" class="mode-grid" style="grid-template-columns:1fr 1fr;"></div>
     <div class="word-list" id="bookmarks-list"></div>
+  </div>
+
+  <!-- 헷갈리는 단어 -->
+  <div id="view-confuse" class="view">
+    <div class="stack-header">
+      <button class="icon-btn" onclick="showView('home')">←</button>
+      <div class="stack-title">🔀 헷갈리는 단어</div>
+      <button class="icon-btn" onclick="startConfuseQuiz()" title="구별 퀴즈">🎯</button>
+    </div>
+    <p class="weak-desc" style="margin:4px 2px 14px;">철자·뜻이 비슷해 자주 헷갈리는 짝이에요. 차이를 콕 집어 외워요 ✨</p>
+    <div id="confuse-list"></div>
   </div>
 
   <!-- 오답노트 -->
@@ -1615,7 +1651,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260628d';
+  window.APP_VERSION='20260628e';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1646,6 +1682,7 @@
 <script src="vocab_kstn1.js?v=20260626a"></script>
 <script src="vocab_part5.js?v=20260625b"></script>
 <script src="vocab_gentips.js?v=20260627k"></script>
+<script src="vocab_confusables.js?v=20260628e"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
 <script src="vocab_legend.js?v=20260622l"></script>
 <script src="sentences.js?v=20260622l"></script>
@@ -1822,7 +1859,7 @@ let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동
 let assocRecall = (localStorage.getItem('fc_assocrecall') === '1'); // 연상 빈칸(능동 회상) (기본 꺼짐)
 let exampleCloze = (localStorage.getItem('fc_cloze') === '1'); // 문맥 빈칸(예문 속 단어) (기본 꺼짐)
 
-const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result'];
+const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result','confuse'];
 const $ = id => document.getElementById(id);
 // Firebase 키 금지문자(. # $ / [ ])는 _로 치환 — 안 하면 해당 단어 학습 시 클라우드 저장 전체가 실패함
 const safeKeyPart = s => String(s).replace(/[.#$/\[\]]/g, '_');
@@ -3587,6 +3624,58 @@ function renderBookmarks(){
 }
 
 // ============ 오답노트 (전 단어장 통합) ============
+// ===== 헷갈리는 단어 비교 =====
+function openConfuse(){ showView('confuse'); renderConfuse(); }
+function renderConfuse(){
+  const el=$('confuse-list'); if(!el) return;
+  if(typeof CONFUSABLES==='undefined' || !CONFUSABLES.length){ el.innerHTML='<div class="empty"><p>데이터 준비 중</p></div>'; return; }
+  el.innerHTML=CONFUSABLES.map(c=>`<div class="cf-card">
+    <div class="cf-pair">${c.items.map(it=>`<div class="cf-item"><div class="cf-w">${esc(it.w)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(it.w)}')">🔊</button></div><div class="cf-m">${esc(it.m)}</div></div>`).join('<div class="cf-vs">vs</div>')}</div>
+    <div class="cf-tip"><span class="cf-tip-lbl">💡 구별</span>${esc(c.tip)}</div>
+  </div>`).join('');
+}
+let _cfQuiz=null, _cfIdx=0, _cfScore=0;
+function startConfuseQuiz(){
+  if(typeof CONFUSABLES==='undefined' || !CONFUSABLES.length) return;
+  // 각 항목(그룹의 단어들)마다 1문제: 뜻 보여주고 같은 그룹 단어 중 고르기
+  const qs=[];
+  CONFUSABLES.forEach(c=>{ if(c.items.length<2) return;
+    c.items.forEach((it,i)=>{ qs.push({ q:it.m, ans:it.w, opts:shuffle(c.items.map(x=>x.w)), tip:c.tip }); });
+  });
+  _cfQuiz=shuffle(qs).slice(0,20); _cfIdx=0; _cfScore=0;
+  renderCfQuestion();
+}
+function renderCfQuestion(){
+  const el=$('confuse-list');
+  if(_cfIdx>=_cfQuiz.length){
+    el.innerHTML=`<div class="empty"><div class="e-emoji">${_cfScore===_cfQuiz.length?'🏆':'✨'}</div><p>${_cfScore} / ${_cfQuiz.length} 정답!</p>
+      <button class="btn btn-primary" style="margin-top:14px;" onclick="startConfuseQuiz()">다시 풀기</button>
+      <button class="btn btn-soft" style="margin-top:8px;" onclick="renderConfuse()">비교표 보기</button></div>`;
+    return;
+  }
+  const it=_cfQuiz[_cfIdx];
+  el.innerHTML=`<div class="cf-q">
+    <div class="cf-q-prog">${_cfIdx+1} / ${_cfQuiz.length} · 점수 ${_cfScore}</div>
+    <div class="cf-q-mean">"${esc(it.q)}"<div class="cf-q-sub">알맞은 단어를 고르세요</div></div>
+    <div class="cf-q-opts">${it.opts.map(o=>`<button class="cf-opt" data-w="${esc(o)}" onclick="answerCf(this,'${q(o)}')">${esc(o)}</button>`).join('')}</div>
+    <div class="cf-q-tip" id="cf-q-tip" style="display:none"></div>
+    <button class="btn btn-primary btn-block" id="cf-next" style="display:none; margin-top:14px;" onclick="_cfIdx++; renderCfQuestion();">다음 →</button>
+  </div>`;
+}
+function answerCf(btn, picked){
+  const it=_cfQuiz[_cfIdx];
+  const correct = picked===it.ans;
+  if(correct) _cfScore++;
+  document.querySelectorAll('.cf-opt').forEach(b=>{
+    b.disabled=true;
+    if(b.dataset.w===it.ans) b.classList.add('cf-ok');
+    else if(b===btn) b.classList.add('cf-no');
+  });
+  if(correct) speak(it.ans);
+  const tip=$('cf-q-tip');
+  tip.style.display=''; tip.innerHTML=`<b>${correct?'✅ 정답':'❌ 정답은 '+esc(it.ans)}</b><br>${esc(it.tip)}`;
+  $('cf-next').style.display='';
+}
 // 취약 단어: 누적 오답(missTally) 2회 이상, 많이 틀린 순
 function weakWords(min){
   min=min||2;
