@@ -682,6 +682,9 @@
   .mission-stat b{ color:var(--text); font-weight:800; }
   body.dark .mission-card{ --mission-track:#334155; background:var(--surface); border-color:var(--border); }
   body.dark .mission-card.mission-done{ background:linear-gradient(135deg,#2a2710,#1a1f2e); border-color:#7c6a1e; }
+  .weak-desc{ font-size:0.82em; color:var(--text-light); margin:-6px 0 12px; }
+  .wmiss{ display:inline-block; font-size:0.72em; font-weight:800; color:var(--danger); background:var(--danger-light); border:1px solid #fca5a5; border-radius:999px; padding:1px 8px; margin-left:6px; white-space:nowrap; }
+  body.dark .wmiss{ background:rgba(239,68,68,.18); border-color:#7f1d1d; }
   .rc-left{ display:flex; align-items:center; gap:12px; }
   .rc-ico{ font-size:1.6em; }
   .rc-left b{ font-size:1.02em; } .rc-left small{ display:block; color:var(--text-light); font-size:0.8em; margin-top:1px; }
@@ -1324,6 +1327,12 @@
 
   <!-- 오답노트 -->
   <div id="view-wrongs" class="view">
+    <div id="weak-section" style="display:none">
+      <div class="section-label">🎯 취약 단어 <span id="weak-count" style="color:var(--text-light); font-weight:600;"></span></div>
+      <p class="weak-desc">자주 틀린 단어예요. 집중해서 한 번 더 잡고 가요 💪</p>
+      <div id="weak-actions" class="mode-grid" style="grid-template-columns:1fr 1fr;"></div>
+      <div class="word-list" id="weak-list"></div>
+    </div>
     <div class="section-label">📝 오답노트 <span id="wr-count" style="color:var(--text-light); font-weight:600;"></span></div>
     <div id="wr-actions" class="mode-grid" style="grid-template-columns:1fr 1fr 1fr;"></div>
     <div class="word-list" id="wrongs-list"></div>
@@ -1601,7 +1610,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260628b';
+  window.APP_VERSION='20260628c';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -3113,7 +3122,7 @@ function completeFlash(){
 function startQuiz(type, nChoices){ const words=dayWords(); if(!words) return; studySource='day'; setupQuiz(words,type,currentDay,nChoices); }
 function distractorPool(){
   // 혼합 출처(전체평가-전체, 즐겨찾기, 오답) 퀴즈는 전 단어장에서 보기 생성
-  if(studySource==='review'||studySource==='bookmarks'||studySource==='wrongs'||(studySource==='all'&&aqBook==='all')) return allWords();
+  if(studySource==='review'||studySource==='bookmarks'||studySource==='wrongs'||studySource==='weak'||(studySource==='all'&&aqBook==='all')) return allWords();
   const b=bookById(currentBook);
   if(b && b.data.length) return b.data.flatMap(d=>d.words);
   return allWords();
@@ -3264,7 +3273,7 @@ function showResult(score,total,wrongList,heading){
 }
 function goBack(){
   if(studySource==='bookmarks'){ showView('bookmarks'); renderBookmarks(); }
-  else if(studySource==='wrongs'){ showView('wrongs'); renderWrongs(); }
+  else if(studySource==='wrongs'||studySource==='weak'){ showView('wrongs'); renderWrongs(); }
   else if(studySource==='all'){ showView('all-quiz'); }
   else if(studySource==='custom'){ openMyWords(); }
   else if(currentDay && bookById(currentBook)) openDay(currentBook, currentDay);
@@ -3544,7 +3553,37 @@ function renderBookmarks(){
 }
 
 // ============ 오답노트 (전 단어장 통합) ============
+// 취약 단어: 누적 오답(missTally) 2회 이상, 많이 틀린 순
+function weakWords(min){
+  min=min||2;
+  const tally=state.missTally||{};
+  const keys=Object.keys(tally).filter(k=>tally[k]>=min);
+  if(!keys.length) return [];
+  const map={};
+  BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{ map[wordKey(b.id,d.day,w.word)]={...w,book:b.id,day:d.day}; })));
+  (state.customWords||[]).forEach(w=>{ map[wordKey('my','my',w.word)]={...w,book:'my',day:'my'}; });
+  const out=[];
+  keys.forEach(k=>{ const w=map[k]; if(w) out.push({...w, _miss:tally[k]}); });
+  out.sort((a,b)=>b._miss-a._miss);
+  return out;
+}
+function renderWeak(){
+  const sec=$('weak-section'); if(!sec) return;
+  const list=weakWords(2);
+  if(!list.length){ sec.style.display='none'; return; }
+  sec.style.display='';
+  $('weak-count').textContent=`(${list.length})`;
+  $('weak-actions').innerHTML=`
+    <button class="mode-btn" onclick="studyFromList('weak','flashcard')"><span class="m-ico">📇</span><span class="m-txt"><b>집중 플래시카드</b><small>${list.length}개</small></span></button>
+    <button class="mode-btn" onclick="studyFromList('weak','quiz')"><span class="m-ico">🎯</span><span class="m-txt"><b>집중 퀴즈</b><small>약점 공략</small></span></button>`;
+  $('weak-list').innerHTML=list.map((w,i)=>`<div class="word-card">
+    <div class="wnum">${i+1}</div>
+    <div class="wbody"><div class="wtop"><span class="wword">${esc(w.word)}</span><span class="wpos">${posTag(w.pos)}</span><span class="wmiss">✕ ${w._miss}회 틀림</span><span class="wtag">${esc(bookName(w.book||'siwon'))}${w.day!=='my'?` · DAY ${w.day}`:''}</span></div>
+    <div class="wmean">${esc(w.meaning)}</div>${wordAssoc(w,w.book)?`<div class="wmean" style="font-size:0.86em;color:var(--text-light)">💡 ${tipHtml(wordAssoc(w,w.book))}</div>`:''}</div>
+  </div>`).join('');
+}
 function renderWrongs(){
+  renderWeak();
   const list=Object.values(state.wrongs).filter(Boolean);
   $('wr-count').textContent=`(${list.length})`;
   $('wr-actions').innerHTML = list.length ? `
@@ -3565,7 +3604,7 @@ function clearWrongs(){
   confirmDo('오답노트 비우기','모든 오답을 삭제할까요?',()=>{ state.wrongs={}; saveState(); updateHeaderStats(); renderWrongs(); closeConfirm(); });
 }
 function studyFromList(source,mode){
-  const list = source==='bookmarks'?bookmarkWords():Object.values(state.wrongs).filter(Boolean);
+  const list = source==='bookmarks'?bookmarkWords():source==='weak'?weakWords(2):Object.values(state.wrongs).filter(Boolean);
   if(!list.length) return;
   studySource=source; currentDay=null;
   if(mode==='flashcard'){ currentWords=list; currentIdx=0; flashFlipped=false; _reviewMode=false; _sessTotal=currentWords.length; _sessMastered=0; showView('flashcard'); renderFlashcard(); }
