@@ -1562,7 +1562,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260627g';
+  window.APP_VERSION='20260627h';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -2264,9 +2264,11 @@ function bookStats(b){
 }
 const COVER={ siwon:'covers/siwon.jpg', top:'covers/top.jpg', eduwill:'covers/eduwill.jpg', wang:'covers/wang.jpg', hackers:'covers/hackers.jpg', kss:'covers/kss.jpg', kssb:'covers/kssb.jpg', kst:'covers/kst.jpg', kstn1:'covers/kstn1.jpg', legend:'covers/legend.jpg', ns:'covers/ns.jpg' };
 // ===== 단어장 순서 드래그(꾹 눌러 이동) — 사용자별 저장 =====
-let _bookSortable=null;
+let _bookSortable=null, _bookSortTries=0;
 function initBookSort(){
-  const grid=$('book-grid'); if(!grid || typeof Sortable==='undefined') return;
+  const grid=$('book-grid'); if(!grid) return;
+  if(typeof Sortable==='undefined'){ if(_bookSortTries++<15) setTimeout(initBookSort, 350); return; }  // 라이브러리 로드 대기
+  _bookSortTries=0;
   if(_bookSortable){ try{ _bookSortable.destroy(); }catch(e){} _bookSortable=null; }
   _bookSortable=Sortable.create(grid, {
     animation:160, delay:280, delayOnTouchOnly:true, touchStartThreshold:8,
