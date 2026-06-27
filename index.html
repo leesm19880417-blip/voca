@@ -668,6 +668,20 @@
   .review-card{ background:var(--surface); border:1.5px solid var(--border); border-radius:var(--r); padding:14px 18px; margin-bottom:12px; display:flex; align-items:center; justify-content:space-between; cursor:pointer; box-shadow:var(--shadow-sm); gap:10px; }
   .review-card:active{ transform:scale(0.98); }
   .review-card.rc-due{ background:linear-gradient(135deg,#fff7ed,#fff); border-color:#fdba74; }
+  .mission-card{ --mission-track:#d1fae5; display:flex; align-items:center; gap:15px; background:linear-gradient(135deg,#ecfdf5,#fff); border:1.5px solid #99f6e4; border-radius:var(--r); padding:13px 16px; margin-bottom:18px; box-shadow:var(--shadow-sm); }
+  .mission-card.mission-done{ background:linear-gradient(135deg,#fef9c3,#fff); border-color:#fde047; }
+  .mission-ring{ position:relative; width:56px; height:56px; flex:0 0 56px; }
+  .mission-ring svg{ width:56px; height:56px; transform:rotate(-90deg); }
+  #mission-ring-fg{ transition:stroke-dashoffset .5s ease; }
+  .mission-ring-pct{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:0.8em; font-weight:800; color:var(--primary); }
+  .mission-body{ flex:1; min-width:0; }
+  .mission-title{ font-weight:800; font-size:0.98em; display:flex; align-items:center; gap:8px; margin-bottom:3px; }
+  .mission-goal-edit{ font-size:0.68em; font-weight:700; color:var(--primary); background:rgba(13,148,136,.12); border:none; border-radius:999px; padding:2px 9px; cursor:pointer; }
+  .mission-goal-edit:active{ transform:scale(0.95); }
+  .mission-stat{ font-size:0.82em; color:var(--text-light); }
+  .mission-stat b{ color:var(--text); font-weight:800; }
+  body.dark .mission-card{ --mission-track:#334155; background:var(--surface); border-color:var(--border); }
+  body.dark .mission-card.mission-done{ background:linear-gradient(135deg,#2a2710,#1a1f2e); border-color:#7c6a1e; }
   .rc-left{ display:flex; align-items:center; gap:12px; }
   .rc-ico{ font-size:1.6em; }
   .rc-left b{ font-size:1.02em; } .rc-left small{ display:block; color:var(--text-light); font-size:0.8em; margin-top:1px; }
@@ -1019,6 +1033,21 @@
           <span>⭐ <b id="ms-stars">0</b></span>
         </div>
       </div>
+    </div>
+    <div class="mission-card" id="mission-card">
+      <div class="mission-ring">
+        <svg viewBox="0 0 60 60">
+          <circle cx="30" cy="30" r="22" fill="none" stroke="var(--mission-track)" stroke-width="6"/>
+          <circle id="mission-ring-fg" cx="30" cy="30" r="22" fill="none" stroke="url(#mg)" stroke-width="6" stroke-linecap="round" stroke-dasharray="138.2" stroke-dashoffset="138.2"/>
+          <defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14b8a6"/><stop offset="1" stop-color="#0d9488"/></linearGradient></defs>
+        </svg>
+        <div class="mission-ring-pct" id="mission-pct">0%</div>
+      </div>
+      <div class="mission-body">
+        <div class="mission-title">🎯 오늘의 미션 <button class="mission-goal-edit" id="mission-goal-lbl" onclick="editDailyGoal()">목표 30</button></div>
+        <div class="mission-stat" id="mission-stat">오늘 0 / 30 학습</div>
+      </div>
+      <span class="rc-go" id="mission-go" onclick="startReview()">복습 →</span>
     </div>
     <div class="trans-box">
       <div class="trans-head"><span><i class="ti ti-language" aria-hidden="true"></i> AI 번역 · 단어 분석</span><button class="trans-clear" id="trans-clear" onclick="resetTrans()" style="display:none"><i class="ti ti-rotate" aria-hidden="true"></i> 초기화</button></div>
@@ -1564,7 +1593,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260627k';
+  window.APP_VERSION='20260628a';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1710,7 +1739,7 @@ function wordAssoc(w, book){
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], dailyGoal:30, missTally:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
@@ -2336,6 +2365,7 @@ function renderHome(){
   if($('review-count')) $('review-count').textContent = due ? `복습할 단어 ${due}개` : '복습할 단어 없음 (외운 단어는 자동 예약)';
   if($('review-card')) $('review-card').classList.toggle('rc-due', due>0);
   if($('review-go')) $('review-go').textContent = due ? `시작 (${due}) →` : '예약됨';
+  renderMission(due);
   renderWeekCal();
   renderStudyCarousel();
   updateHeaderStats();
@@ -2937,6 +2967,7 @@ function srsRate(grade){
     // 모름 → 큐 맨 뒤로 (다른 단어 먼저 돌고 다시). 3번 틀리면 즐겨찾기 자동 추가.
     state.wrongs[key]={...w,day:dy,book:bk};
     const miss=(prev.miss||0)+1;
+    if(!state.missTally) state.missTally={}; state.missTally[key]=(state.missTally[key]||0)+1;
     // 모름 → 마스터 진척(pc) 초기화 (잊으면 다시 처음부터 — 철저하게)
     state.srs[key]={l:0, miss, pc:0, pd:prev.pd, mastered:false, due:srsToday()};
     if(miss>=3 && !state.bookmarks[key]){ state.bookmarks[key]={word:w.word,day:dy,book:bk}; toast('⭐ '+miss+'번 틀려서 즐겨찾기에 추가했어요'); }
@@ -2967,12 +2998,48 @@ function markKnown(known){ srsRate(known?2:0); } // 하위호환
 // 퀴즈 복습용: 카드 큐와 무관하게 SRS 일정만 갱신(정답=외움, 오답=모름). 마스터 졸업시 true 반환
 function srsSchedule(bk, dy, word, ok){
   const key=wordKey(bk,dy,word); const prev=state.srs[key]||{l:0,miss:0}; const tdy=srsToday();
-  if(!ok){ state.srs[key]={l:0, miss:(prev.miss||0)+1, pc:0, pd:prev.pd, mastered:false, due:tdy}; return false; }
+  if(!ok){ state.srs[key]={l:0, miss:(prev.miss||0)+1, pc:0, pd:prev.pd, mastered:false, due:tdy}; if(!state.missTally) state.missTally={}; state.missTally[key]=(state.missTally[key]||0)+1; return false; }
   const l=Math.min((prev.l||0)+1, SRS_INT.length);
   let pc=prev.pc||0, pd=prev.pd; if(pd!==tdy){ pc++; pd=tdy; }
   const mastered=pc>=MASTER_DAYS;
   state.srs[key]={l, miss:0, pc, pd, mastered, due: mastered ? tdy+9999 : tdy+SRS_INT[l-1]};
   return mastered && !prev.mastered;
+}
+function renderMission(dueCount){
+  const el=$('mission-card'); if(!el) return;
+  const today=srsToday();
+  const done=(state.studyDays||{})[today]||0;
+  const goal=Math.max(1, state.dailyGoal||30);
+  const due=(typeof dueCount==='number')?dueCount:dueWords().length;
+  const pct=Math.min(100, Math.round(done/goal*100));
+  const fg=$('mission-ring-fg');
+  if(fg){ const C=138.2; fg.style.strokeDashoffset=C*(1-pct/100); }
+  if($('mission-pct')) $('mission-pct').textContent=pct+'%';
+  if($('mission-goal-lbl')) $('mission-goal-lbl').textContent='목표 '+goal;
+  const reached=done>=goal;
+  if($('mission-stat')) $('mission-stat').innerHTML = reached
+    ? `🎉 목표 달성! <b>${done}</b>/${goal} · ${due?`복습 <b>${due}</b>개 남음`:'복습 0개'}`
+    : `오늘 <b>${done}</b> / ${goal} 학습 · ${due?`복습 <b>${due}</b>개 대기`:'복습 0개'}`;
+  el.classList.toggle('mission-done', reached);
+  const go=$('mission-go'); if(go) go.textContent = due ? `복습 ${due} →` : '복습 →';
+  updateAppBadge(due);
+}
+// 앱 아이콘 배지(홈화면 설치 시·지원 기기): 남은 복습 수
+function updateAppBadge(due){
+  try{
+    if(typeof due!=='number') due=dueWords().length;
+    if(navigator.setAppBadge){ if(due>0) navigator.setAppBadge(due); else navigator.clearAppBadge&&navigator.clearAppBadge(); }
+  }catch(e){}
+}
+function editDailyGoal(){
+  const cur=state.dailyGoal||30;
+  const v=prompt('하루에 학습/복습할 목표 단어 수를 정하세요 (5~300)', cur);
+  if(v===null) return;
+  let n=parseInt(String(v).replace(/[^0-9]/g,''),10); if(!n) n=cur;
+  n=Math.max(5, Math.min(300, n));
+  state.dailyGoal=n; saveState();
+  if(document.querySelector('#view-home.active')) renderMission();
+  toast('🎯 하루 목표 '+n+'개로 설정했어요');
 }
 function dueWords(){
   const t=srsToday(), out=[];
@@ -3787,6 +3854,8 @@ function mergeStates(a, b){
   out.examDate = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.examDate||b.examDate||null) : (b.examDate||a.examDate||null);
   out.targetWords = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.targetWords||b.targetWords||null) : (b.targetWords||a.targetWords||null);
   out.bookOrder = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.bookOrder||b.bookOrder||[]) : (b.bookOrder||a.bookOrder||[]);  // 단어장 순서: 최신 기기 우선
+  out.dailyGoal = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.dailyGoal||b.dailyGoal||30) : (b.dailyGoal||a.dailyGoal||30);  // 하루 목표: 최신 기기 우선
+  out.missTally = _mergeMap(a.missTally, b.missTally, (p,q)=>Math.max(p||0,q||0));  // 단어별 누적 오답: 큰 쪽 보존
   out.updatedAt = (a.updatedAt&&b.updatedAt) ? (a.updatedAt>b.updatedAt?a.updatedAt:b.updatedAt) : (a.updatedAt||b.updatedAt||null);
   return out;
 }
