@@ -947,6 +947,15 @@
   .sheet .grabber { width: 40px; height: 4px; background: var(--border); border-radius: 3px; margin: 6px auto 16px; }
   .sheet h3 { font-size: 1.15em; font-weight: 800; margin-bottom: 6px; color: var(--text); }
   .sheet { color: var(--text); }
+  .help-sheet { max-height: 88vh; display:flex; flex-direction:column; }
+  .help-body { overflow-y:auto; -webkit-overflow-scrolling:touch; margin:4px 0 14px; padding-right:2px; }
+  .help-sec { margin-bottom:15px; }
+  .help-sec > b { display:block; font-size:1.0em; margin-bottom:6px; color:var(--primary); }
+  .help-sec ul { margin:0; padding-left:18px; }
+  .help-sec li { font-size:0.9em; color:var(--text-mid); line-height:1.6; margin-bottom:5px; }
+  .help-sec li b { color:var(--text); font-weight:700; }
+  .help-tip { background:var(--primary-light); border-radius:12px; padding:11px 13px; font-size:0.88em; color:var(--text-mid); line-height:1.55; }
+  .help-tip b { color:var(--primary); }
   .sheet .sub { font-size: 0.86em; color: var(--text-light); margin-bottom: 16px; }
   .sync-status { display: flex; align-items: center; gap: 9px; padding: 12px 14px; border-radius: var(--r-sm); font-size: 0.88em; font-weight: 600; margin-bottom: 16px; }
   .sync-status.off { background: var(--surface-2); color: var(--text-light); }
@@ -972,6 +981,7 @@
   <div class="brand"><span class="bw">영어</span><span class="bw bw-s"> Study</span><span class="bw-dot">.</span></div>
   <div class="bar-actions">
     <button class="prog-pill" id="prog-pill" onclick="setDday()" title="진도 · D-day 설정"><span class="pp-dot" id="pp-dot"></span><span id="pp-pct">0%</span><span class="pp-dday" id="pp-dday"></span></button>
+    <button class="theme-btn" onclick="openHelp()" aria-label="도움말 · 사용법">❓</button>
     <button class="theme-btn" id="theme-btn" onclick="toggleDark()" aria-label="다크 모드">🌙</button>
     <button class="user-btn" onclick="openUser()" aria-label="사용자 설정">
       <span class="user-ico">⚙️</span><span class="user-name" id="user-name-label">게스트</span>
@@ -1347,6 +1357,66 @@
   </div>
 </div>
 
+<!-- 도움말 · 사용법 -->
+<div class="overlay" id="help-overlay">
+  <div class="sheet help-sheet" style="max-width:540px;">
+    <div class="grabber"></div>
+    <h3>❓ 앱 사용법</h3>
+    <p class="sub">단어 암기부터 LC 음원까지 한 앱에서. 아래를 보고 마음껏 활용하세요.</p>
+    <div class="help-body">
+
+      <div class="help-sec"><b>🚀 시작하기</b>
+        <ul>
+          <li>오른쪽 위 <b>⚙️ 사용자 이름</b>을 정하면 폰·PC 어디서든 같은 이름으로 <b>진도·즐겨찾기·오답·마스터가 그대로 동기화</b>돼요(비밀번호 없음).</li>
+          <li>홈에서 <b>단어장</b>을 고르고, <b>Day(또는 Lecture)</b>를 선택하면 단어 목록이 나와요.</li>
+        </ul>
+      </div>
+
+      <div class="help-sec"><b>📖 단어 목록 보는 법</b>
+        <ul>
+          <li><b>💡 연상</b>: 경선식 연상은 <span style="color:#2563eb;font-weight:800">파랑=발음 소리</span>, <span style="color:#dc2626;font-weight:800">빨강=뜻</span>으로 색이 칠해져 있어요.</li>
+          <li><b>★ 기출표현 · 📝 기출변형</b>: 토익 출제 표현과 변형 문제도 함께 봐요.</li>
+          <li><b>🔊</b> 누르면 발음, <b>☆</b> 누르면 즐겨찾기(나중에 모아서 복습).</li>
+        </ul>
+      </div>
+
+      <div class="help-sec"><b>🧠 학습 모드 (Day 화면 위쪽 버튼)</b>
+        <ul>
+          <li><b>📇 플래시카드</b>: 카드를 <b>탭하면 뒤집혀</b> 뜻·연상이 나와요. 아래 <b>애매·모름·외움</b>으로 평가(또는 좌=모름/우=외움 <b>스와이프</b>). <b>외울 때까지 그날 안에서 반복</b>되고, 서로 다른 3일에 '외움' 통과하면 <b>🏆 마스터(졸업)</b>.</li>
+          <li><b>🎯 영→한 / 🔤 한→영 퀴즈</b>: 4지선다. <b>정답이면 1초 뒤 자동</b>으로 다음 문제.</li>
+          <li><b>⌨️ 받아쓰기</b>: 뜻·발음 보고 영어 철자를 직접 입력(능동 회상).</li>
+          <li><b>📝 기출변형(Part 5)</b>: 빈칸 실전 문제 + 자세한 <b>해석·해설</b>(경선식 최신·토익비밀과외·최빈출에서 제공).</li>
+        </ul>
+      </div>
+
+      <div class="help-sec"><b>🔁 복습 시스템 (망각곡선)</b>
+        <ul>
+          <li><b>오늘의 복습</b>: 외운 단어를 <b>점점 긴 간격</b>으로 다시 띄워줘요. 매일 조금씩 하는 게 핵심!</li>
+          <li><b>오답노트 · 즐겨찾기</b>: 틀린 단어와 ★표시 단어만 모아서 집중 복습.</li>
+          <li><b>전체 평가</b>: 여러 Day·단어장을 묶어 무작위 출제.</li>
+        </ul>
+      </div>
+
+      <div class="help-sec"><b>🎧 LC 공부하기 (홈 아래)</b>
+        <ul>
+          <li><b>서아쌤 비밀과외 LC</b>: Part 1~4 문제 + 정답·스크립트.</li>
+          <li><b>서아쌤 LC (음원)</b> · <b>해커스 토익 왕기초 LC</b>: 음원 전용. <b>재생/정지 · 배속 · ±5초 · 구간이동</b>, 끝나면 다음 트랙 자동. 서아쌤 음원은 <b>재생 중 대본(스크립트)이 같이</b> 떠요.</li>
+        </ul>
+      </div>
+
+      <div class="help-sec"><b>🗣️ 말하기 · ⚙️ 기타</b>
+        <ul>
+          <li><b>말하기 연습</b>: 기초 1000문장 · 핵심패턴 233 · 100일의 기적.</li>
+          <li>상단 <b>진도/D-day</b>(%) 탭해서 목표일 설정, <b>🌙 다크 모드</b> 전환.</li>
+        </ul>
+      </div>
+
+      <div class="help-tip">💡 추천 흐름: <b>플래시카드로 외우기 → 퀴즈/받아쓰기로 확인 → 오늘의 복습으로 장기기억</b></div>
+    </div>
+    <button class="btn btn-primary btn-block" onclick="closeHelp()" style="margin-top:6px;">확인</button>
+  </div>
+</div>
+
 <!-- 확인 모달 -->
 <div class="overlay" id="confirm-overlay">
   <div class="sheet" style="max-width:420px;">
@@ -1487,7 +1557,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260627b';
+  window.APP_VERSION='20260627c';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -3769,6 +3839,8 @@ function maybeOnboardName(){
 }
 function openUser(mandatory){ const inp=$('user-input'); if(inp) inp.value=(SYNC_CODE==='guest')?'':SYNC_CODE; renderRecentUsers(); const o=$('user-overlay'); if(o){ o.classList.toggle('mandatory', !!mandatory); o.classList.add('active'); } if(mandatory && inp) setTimeout(function(){ inp.focus(); }, 350); }
 function closeUser(){ const o=$('user-overlay'); if(o){ o.classList.remove('active'); o.classList.remove('mandatory'); } }
+function openHelp(){ const o=$('help-overlay'); if(o) o.classList.add('active'); }
+function closeHelp(){ const o=$('help-overlay'); if(o) o.classList.remove('active'); }
 function applyUser(){ const inp=$('user-input'); if(!inp) return; const name=(inp.value||'').trim(); if(!name){ toast('이름을 입력하세요'); if(inp) inp.focus(); return; } switchUser(name); }
 // 게스트 제거 — 본인 이름으로 로그인 안 돼 있으면 강제로 설정창
 function requireLogin(){ try{ if(!SYNC_CODE || SYNC_CODE==='guest'){ openUser(true); } }catch(e){} }
