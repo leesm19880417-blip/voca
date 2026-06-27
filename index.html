@@ -301,6 +301,10 @@
 
   /* ===== Book Grid ===== */
   .book-grid { display: flex; flex-direction: column; gap: 10px; }
+  .reorder-hint { font-size:0.82em; font-weight:600; color:var(--text-light); }
+  .book-card.bc-ghost { opacity:0.35; }
+  .book-card.bc-chosen { box-shadow:0 8px 24px rgba(99,102,241,0.35); border-color:var(--primary); }
+  .book-card.bc-drag { opacity:0.96; transform:scale(1.02); }
   .book-card {
     background: var(--surface);
     padding: 12px 14px;
@@ -1085,7 +1089,7 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
-    <div class="section-label">📚 단어장 선택</div>
+    <div class="section-label">📚 단어장 선택 <span class="reorder-hint">· 꾹 눌러 순서 변경</span></div>
     <div class="book-grid" id="book-grid"></div>
   </div>
 
@@ -1558,7 +1562,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260627f';
+  window.APP_VERSION='20260627g';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1577,6 +1581,7 @@
 <!-- Firebase SDK (compat 빌드 — 전역 firebase 객체 사용) -->
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js" defer></script>
 <script src="vocabulary.js?v=20260622l"></script>
 <script src="vocab_eduwill.js?v=20260622l"></script>
 <script src="vocab_wangchobo.js?v=20260622l"></script>
@@ -1690,7 +1695,7 @@ function wordAssoc(w, book){
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
@@ -2258,14 +2263,30 @@ function bookStats(b){
   return { learned, total, doneDays, days:b.data.length };
 }
 const COVER={ siwon:'covers/siwon.jpg', top:'covers/top.jpg', eduwill:'covers/eduwill.jpg', wang:'covers/wang.jpg', hackers:'covers/hackers.jpg', kss:'covers/kss.jpg', kssb:'covers/kssb.jpg', kst:'covers/kst.jpg', kstn1:'covers/kstn1.jpg', legend:'covers/legend.jpg', ns:'covers/ns.jpg' };
+// ===== 단어장 순서 드래그(꾹 눌러 이동) — 사용자별 저장 =====
+let _bookSortable=null;
+function initBookSort(){
+  const grid=$('book-grid'); if(!grid || typeof Sortable==='undefined') return;
+  if(_bookSortable){ try{ _bookSortable.destroy(); }catch(e){} _bookSortable=null; }
+  _bookSortable=Sortable.create(grid, {
+    animation:160, delay:280, delayOnTouchOnly:true, touchStartThreshold:8,
+    ghostClass:'bc-ghost', chosenClass:'bc-chosen', dragClass:'bc-drag',
+    onEnd:saveBookOrder
+  });
+}
+function saveBookOrder(){
+  const grid=$('book-grid'); if(!grid) return;
+  const ids=[...grid.querySelectorAll('.book-card[data-bid]')].map(e=>e.dataset.bid);
+  state.bookOrder=ids; state.updatedAt=nowISO(); saveState(); toast('🔀 단어장 순서 저장됨');
+}
 function renderHome(){
   const grid=$('book-grid');
-  const cards=BOOKS.map(b=>{
+  const items=BOOKS.map(b=>{
     const s=bookStats(b);
     const pct=s.total?Math.round(s.learned/s.total*100):0;
     const ready=b.data.length>0;
     const cov=COVER[b.id]?`<img class="b-cover" src="${COVER[b.id]}?v=20260622l" alt="${esc(b.name)}" loading="lazy">`:`<div class="b-ico">${b.icon}</div>`;
-    return `<div class="book-card" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
+    return { id:b.id, html:`<div class="book-card" data-bid="${b.id}" onclick="${ready?`openBook('${b.id}')`:`toast('단어 데이터 준비 중이에요')`}">
       <span class="b-pct">${pct}%</span>
       ${cov}
       <div class="b-body">
@@ -2273,21 +2294,25 @@ function renderHome(){
         <div class="b-meta">${ready?`${s.days} Day · ${s.total}단어 · 완료 ${s.doneDays}일`:'데이터 준비 중'}</div>
         <div class="pbar"><div class="pfill" style="width:${pct}%; background:linear-gradient(90deg, ${b.color}, ${b.color}aa);"></div></div>
       </div>
-    </div>`;
+    </div>` };
   });
   // 영어단어의 소통 — 단어장 목록(왕초보 위)에 카드로 표시
   const commTot=(typeof COMM!=='undefined'&&COMM)?COMM.reduce((s,c)=>s+(c.themes||[]).reduce((a,t)=>a+(t.items||[]).length,0),0):0;
-  const commCard=`<div class="book-card" onclick="openComm()">
+  const commCard={ id:'comm', html:`<div class="book-card" data-bid="comm" onclick="openComm()">
       <img class="b-cover" src="covers/comm.jpg?v=20260622l" alt="영어단어의 소통" loading="lazy">
       <div class="b-body">
         <div class="b-name">영어단어의 소통</div>
         <div class="b-meta">상황·감각·일상·여가 · 표현 ${commTot}개</div>
         <div class="pbar"><div class="pfill" style="width:100%; background:linear-gradient(90deg,#14b8a6,#6366f1);"></div></div>
       </div>
-    </div>`;
+    </div>` };
   const wi=BOOKS.findIndex(b=>b.id==='wang');
-  cards.splice(wi>=0?wi:cards.length, 0, commCard);
-  grid.innerHTML=cards.join('');
+  items.splice(wi>=0?wi:items.length, 0, commCard);
+  // 사용자 지정 순서 적용 (없는 id는 뒤로)
+  const ord=Array.isArray(state.bookOrder)?state.bookOrder:[];
+  if(ord.length) items.sort((x,y)=>{ const ix=ord.indexOf(x.id), iy=ord.indexOf(y.id); return (ix<0?9999:ix)-(iy<0?9999:iy); });
+  grid.innerHTML=items.map(it=>it.html).join('');
+  initBookSort();
   if($('mywords-count')) $('mywords-count').textContent=(state.customWords||[]).length+'개 단어';
   // 오늘의 복습 카운트
   const due=dueWords().length;
@@ -3744,6 +3769,7 @@ function mergeStates(a, b){
   out.lastStudyDay = Math.max(a.lastStudyDay||0, b.lastStudyDay||0);
   out.examDate = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.examDate||b.examDate||null) : (b.examDate||a.examDate||null);
   out.targetWords = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.targetWords||b.targetWords||null) : (b.targetWords||a.targetWords||null);
+  out.bookOrder = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.bookOrder||b.bookOrder||[]) : (b.bookOrder||a.bookOrder||[]);  // 단어장 순서: 최신 기기 우선
   out.updatedAt = (a.updatedAt&&b.updatedAt) ? (a.updatedAt>b.updatedAt?a.updatedAt:b.updatedAt) : (a.updatedAt||b.updatedAt||null);
   return out;
 }
