@@ -6719,6 +6719,1248 @@ const VOCAB_KSS_BASIC = [
     "pos": "a.",
     "meaning": "피할 수 없는",
     "tip": "[[b]]un[[/b]](not) + [[b]]avoid[[/b]](피하다) + [[b]]able[[/b]](~할 수 있는): [[r]]피할 수 없는[[/r]]"
+   },
+   {
+    "word": "unbelievable",
+    "pron": "[ʌnbilíːvəbl]",
+    "pos": "a.",
+    "meaning": "믿을 수 없는, 믿겨지지 않는",
+    "tip": "[[b]]un[[/b]](not) + [[b]]believe[[/b]](믿다) + [[b]]able[[/b]](~할 수 있는): [[r]]믿을 수 없는[[/r]]"
+   },
+   {
+    "word": "unhappy",
+    "pron": "[ʌnhǽpi]",
+    "pos": "a.",
+    "meaning": "불행한",
+    "tip": "[[b]]un[[/b]](not) + [[b]]happy[[/b]](행복한): [[r]]불행한[[/r]]"
+   },
+   {
+    "word": "unkind",
+    "pron": "[ʌnkáind]",
+    "pos": "a.",
+    "meaning": "불친절한",
+    "tip": "[[b]]un[[/b]](not) + [[b]]kind[[/b]](친절한): [[r]]불친절한[[/r]]"
+   },
+   {
+    "word": "unknown",
+    "pron": "[ʌnnóun]",
+    "pos": "a.",
+    "meaning": "알려지지 않은",
+    "tip": "[[b]]un[[/b]](not) + [[b]]known[[/b]](알려진): [[r]]알려지지 않은[[/r]]"
+   },
+   {
+    "word": "unable",
+    "pron": "[ʌnéibl]",
+    "pos": "a.",
+    "meaning": "~할 수 없는",
+    "tip": "[[b]]un[[/b]](not) + [[b]]able[[/b]](~할 수 있는): [[r]]~할 수 없는[[/r]]",
+    "derivatives": [
+     {
+      "word": "be unable to",
+      "meaning": "~할 수 없다"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "day": 37,
+  "title": "",
+  "words": [
+   {
+    "word": "define",
+    "pron": "[difáin]",
+    "pos": "v.",
+    "meaning": "정의하다, 분명히 하다",
+    "tip": "1. [[b]]뒤[[/b]]에 [[b]]파인[[/b]] 배수로까지가 우리 땅이라고 [[r]]정의하다, 분명히 하다[[/r]] 2. de(강조) + fin(end) + e(동사형 어미)",
+    "derivatives": [
+     {
+      "word": "definition",
+      "meaning": "정의"
+     },
+     {
+      "word": "definite",
+      "meaning": "분명한, 확실한"
+     }
+    ]
+   },
+   {
+    "word": "finish",
+    "pron": "[fíniʃ]",
+    "pos": "v.",
+    "meaning": "끝나다, 끝내다",
+    "tip": "fin(end) + ish(동사형 어미): [[r]]끝나다, 끝내다[[/r]]"
+   },
+   {
+    "word": "final",
+    "pron": "[fáinl]",
+    "pos": "a.",
+    "meaning": "마지막의",
+    "tip": "fin(end) + al(형용사형 어미): [[r]]마지막의[[/r]]",
+    "derivatives": [
+     {
+      "word": "finally",
+      "meaning": "마침내"
+     }
+    ]
+   },
+   {
+    "word": "finalize",
+    "pron": "[fáinəlàiz]",
+    "pos": "v.",
+    "meaning": "마무리짓다, 완성하다",
+    "tip": "final(마지막의) + ize(동사형 어미): [[r]]마무리짓다, 완성하다[[/r]]"
+   },
+   {
+    "word": "infinite",
+    "pron": "[ínfənət]",
+    "pos": "a.",
+    "meaning": "무한한, 끝없는",
+    "tip": "in(not) + fin(end) + ite: [[r]]끝이 없는[[/r]]",
+    "derivatives": [
+     {
+      "word": "infinitely",
+      "meaning": "무한히, 대단히"
+     }
+    ]
+   },
+   {
+    "word": "include",
+    "pron": "[inklú:d]",
+    "pos": "v.",
+    "meaning": "포함하다, 포함시키다",
+    "tip": "[[b]]in[[/b]](안에) 넣고 문을 [[b]]clude[[/b]](닫아서) 그 안에 [[r]]포함하다, 포함시키다[[/r]]"
+   },
+   {
+    "word": "conclude",
+    "pron": "[kənklú:d]",
+    "pos": "v.",
+    "meaning": "끝내다, 결론을 내리다",
+    "tip": "[[b]]con[[/b]](함께) 회의록이나 입을 [[b]]clude[[/b]](닫고) 회의를 [[r]]끝내다, 결론을 내리다[[/r]]",
+    "derivatives": [
+     {
+      "word": "conclusion",
+      "meaning": "결정, 결론"
+     }
+    ]
+   },
+   {
+    "word": "exclude",
+    "pron": "[iksklú:d]",
+    "pos": "v.",
+    "meaning": "제외시키다, 배제하다",
+    "tip": "[[b]]ex[[/b]](밖으로) 내쫓고 [[b]]clude[[/b]](닫아서) [[r]]제외시키다, 배제하다[[/r]]"
+   },
+   {
+    "word": "depress",
+    "pron": "[diprés]",
+    "pos": "v.",
+    "meaning": "우울하게 만들다",
+    "tip": "1. 아버지가 집 [[b]]뒤 풀에[[/b]](풀밭에) [[b]]쓰[[/b]]러지셨다는 소식이 나를 [[r]]우울하게 만들다[[/r]] 2. 기분을 [[b]]de[[/b]](아래로) [[b]]press[[/b]](눌러) [[r]]우울하게 만들다[[/r]]",
+    "derivatives": [
+     {
+      "word": "depressed",
+      "meaning": "우울한"
+     }
+    ]
+   },
+   {
+    "word": "pressure",
+    "pron": "[préʃər]",
+    "pos": "n.",
+    "meaning": "압력, 압박",
+    "tip": "[[b]]press[[/b]](push) + [[b]]ure[[/b]](명사형 어미): 찍어 누름, 즉 [[r]]압력, 압박[[/r]]"
+   },
+   {
+    "word": "express",
+    "pron": "[iksprés]",
+    "pos": "v.",
+    "meaning": "v. 표현하다, 나타내다  a. 급행의, 속달의",
+    "tip": "1. 감정을 [[b]]ex[[/b]](밖으로) [[b]]press[[/b]](눌러서) 짜내다, 즉 [[r]]표현하다, 나타내다[[/r]] 2. 지구 [[b]]ex[[/b]](밖으로) 출발 버튼을 [[b]]press[[/b]](눌러서) 빠르게 출발하는 [[r]]급행의[[/r]] 우주로켓",
+    "derivatives": [
+     {
+      "word": "expression",
+      "meaning": "표현, 표정"
+     }
+    ]
+   },
+   {
+    "word": "impression",
+    "pron": "[impréʃən]",
+    "pos": "n.",
+    "meaning": "인상, 감명",
+    "tip": "마음 [[b]]im[[/b]](안에서) [[b]]press[[/b]](누르고 있는) 감정, 즉 [[r]]인상, 감명[[/r]]",
+    "derivatives": [
+     {
+      "word": "impress",
+      "meaning": "인상을 주다, 감명을 주다"
+     },
+     {
+      "word": "impressive",
+      "meaning": "감동적인, 인상적인"
+     }
+    ]
+   },
+   {
+    "word": "compress",
+    "pron": "[kəmprés]",
+    "pos": "v.",
+    "meaning": "압축하다",
+    "tip": "[[b]]com[[/b]](강조) + [[b]]press[[/b]](push): 완전히 눌러 [[r]]압축하다[[/r]]"
+   },
+   {
+    "word": "import",
+    "pron": "v.[impɔ́ːrt] n.[impɔːrt]",
+    "pos": "v. n.",
+    "meaning": "v. 수입하다 n. 수입(품)",
+    "tip": "1. 나라 [[b]]im[[/b]](안으로) 상품을 [[b]]port[[/b]](나르다), 즉 [[r]]수입, 수입하다[[/r]]\n2. 외국 물품을 나라 [[b]]im[[/b]](안으로) [[b]]뽀트[[/b]](보트)에 싣고 들어와 [[r]]수입, 수입하다[[/r]]"
+   },
+   {
+    "word": "export",
+    "pron": "v.[ikspɔ́ːrt] n.[ékspɔːrt]",
+    "pos": "v. n.",
+    "meaning": "v. 수출하다 n. 수출(품)",
+    "tip": "1. 나라 [[b]]ex[[/b]](밖으로) 상품을 [[b]]port[[/b]](나르다), 즉 [[r]]수출, 추출하다[[/r]]\n2. 국내 물품을 나라 [[b]]ex[[/b]](밖으로) [[b]]뽀트[[/b]](보트)에 싣고 [[r]]수출, 추출하다[[/r]]"
+   },
+   {
+    "word": "transport",
+    "pron": "n.[trǽnspɔːrt] v.[trænspɔ́ːrt]",
+    "pos": "n. v.",
+    "meaning": "n. 운송 v. 운송하다",
+    "tip": "국경선을 [[b]]trans[[/b]](가로질러) 수출품을 [[b]]port[[/b]](운반하여) [[r]]운송, 운송하다[[/r]]"
+   },
+   {
+    "word": "portable",
+    "pron": "[pɔ́ːrtəbl]",
+    "pos": "a.",
+    "meaning": "a. 휴대할 수 있는, 휴대용의",
+    "tip": "[[b]]port[[/b]](carry) + [[b]]able[[/b]](~할 수 있는): 운반할 수 있는, 즉 [[r]]휴대할 수 있는, 휴대용의[[/r]]"
+   },
+   {
+    "word": "influenza",
+    "pron": "[ìnfluénzə]",
+    "pos": "n.",
+    "meaning": "독감 (= flu)",
+    "tip": "코 [[b]]in[[/b]](안에) 콧물이 [[b]]flu[[/b]](흐르고) [[b]]앉아[[/b]]서 쉬어야 하는 [[r]]독감[[/r]]"
+   },
+   {
+    "word": "fluent",
+    "pron": "[flúːənt]",
+    "pos": "a.",
+    "meaning": "유창한",
+    "tip": "물 [[b]]flu[[/b]](흐르는) 듯한 [[b]]플루[[/b]](말투)로 [[r]]유창한[[/r]]",
+    "derivatives": [
+     {
+      "word": "fluently",
+      "meaning": "유창하게"
+     }
+    ]
+   },
+   {
+    "word": "influence",
+    "pron": "[ínfluəns]",
+    "pos": "n.",
+    "meaning": "n. 영향 v. 영향을 미치다",
+    "tip": "외국 문명이 우리나라 [[b]]in[[/b]](안으로) [[b]]flu[[/b]](흘러) 들어와 [[r]]영향, 영향을 미치다[[/r]]"
+   },
+   {
+    "word": "fluid",
+    "pron": "[flúːid]",
+    "pos": "n.",
+    "meaning": "액체",
+    "tip": "[[b]]flu[[/b]](flow) + [[b]]id[[/b]]: 흐르는 것, 즉 [[r]]액체[[/r]]"
+   },
+   {
+    "word": "statue",
+    "pron": "[stǽtʃuː]",
+    "pos": "n.",
+    "meaning": "동상, 조각상",
+    "tip": "[[b]]sta[[/b]](서서) 추위에 아랑곳 않는 [[r]]동상, 조각상[[/r]]"
+   },
+   {
+    "word": "stable",
+    "pron": "[stéibl]",
+    "pos": "a.",
+    "meaning": "안정적인",
+    "tip": "1. 아이를 [[b]]수태[[/b]]해서 [[b]]이불[[/b]] 속에 누워 안정을 취하는, 즉 [[r]]안정적인[[/r]] 2. 쓰러지지 않고 [[b]]sta[[/b]](서 있을) [[b]]ble[[/b]](수 있는), 즉 [[r]]안정적인[[/r]]",
+    "derivatives": [
+     {
+      "word": "unstable",
+      "meaning": "불안정한"
+     }
+    ]
+   },
+   {
+    "word": "establish",
+    "pron": "[istǽbliʃ]",
+    "pos": "v.",
+    "meaning": "설립하다, 확립하다",
+    "tip": "마당 [[b]]e[[/b]](밖에) 건물 등을 [[b]]sta[[/b]](세우다), 즉 [[r]]설립하다, 확립하다[[/r]]"
+   }
+  ]
+ },
+ {
+  "day": 38,
+  "title": "",
+  "words": [
+   {
+    "word": "cucumber",
+    "pron": "[kjúːkʌmbər]",
+    "pos": "n.",
+    "meaning": "오이"
+   },
+   {
+    "word": "rate",
+    "pron": "[reit]",
+    "pos": "n.",
+    "meaning": "¹ 비율, 등급 ² 요금"
+   },
+   {
+    "word": "wrist",
+    "pron": "[rist]",
+    "pos": "n.",
+    "meaning": "손목, 손목관절"
+   },
+   {
+    "word": "trust",
+    "pron": "[trʌst]",
+    "pos": "n.",
+    "meaning": "n. 신뢰 v. 신뢰하다"
+   },
+   {
+    "word": "clerk",
+    "pron": "[kləːrk]",
+    "pos": "n.",
+    "meaning": "사무원, 점원"
+   },
+   {
+    "word": "Pacific",
+    "pron": "[pəsífik]",
+    "pos": "n.",
+    "meaning": "n. 태평양 a. 태평양의"
+   },
+   {
+    "word": "Atlantic",
+    "pron": "[ætlǽntik]",
+    "pos": "n.",
+    "meaning": "n. 대서양 a. 대서양의"
+   },
+   {
+    "word": "temple",
+    "pron": "[témpl]",
+    "pos": "n.",
+    "meaning": "사찰, 절"
+   },
+   {
+    "word": "lake",
+    "pron": "[leik]",
+    "pos": "n.",
+    "meaning": "호수, 연못"
+   },
+   {
+    "word": "violet",
+    "pron": "[váiəlit]",
+    "pos": "n.",
+    "meaning": "보라색 a. 보라색의"
+   },
+   {
+    "word": "custom",
+    "pron": "[kʌ́stəm]",
+    "pos": "n.",
+    "meaning": "관습, 풍습"
+   },
+   {
+    "word": "customer",
+    "pron": "[kʌ́stəmər]",
+    "pos": "n.",
+    "meaning": "손님, 단골"
+   },
+   {
+    "word": "blood",
+    "pron": "[blʌd]",
+    "pos": "n.",
+    "meaning": "피, 혈액"
+   },
+   {
+    "word": "bowl",
+    "pron": "[boul]",
+    "pos": "n.",
+    "meaning": "사발, 그릇"
+   },
+   {
+    "word": "client",
+    "pron": "[kláiənt]",
+    "pos": "n.",
+    "meaning": "고객"
+   },
+   {
+    "word": "vase",
+    "pron": "[veis]",
+    "pos": "n.",
+    "meaning": "꽃병"
+   },
+   {
+    "word": "absent",
+    "pron": "[ǽbsənt]",
+    "pos": "a.",
+    "meaning": "결석한"
+   },
+   {
+    "word": "rise",
+    "pron": "[raiz]",
+    "meaning": "¹ n. 증가 v. 오르다 ² v. (해·달이) 떠오르다 (rise-rose-risen)"
+   },
+   {
+    "word": "raise",
+    "pron": "[reiz]",
+    "pos": "v.",
+    "meaning": "올리다, 일으켜 세우다"
+   },
+   {
+    "word": "debate",
+    "pron": "[dibéit]",
+    "pos": "v.",
+    "meaning": "논쟁하다, 토론하다 n. 논쟁, 토론"
+   },
+   {
+    "word": "survey",
+    "pron": "[sərvéi]",
+    "meaning": "n. (설문) 조사 v. 조사하다"
+   },
+   {
+    "word": "oxygen",
+    "pron": "[@áksidʒen] [@ɔ́ksidʒen]",
+    "pos": "n.",
+    "meaning": "산소"
+   },
+   {
+    "word": "hydrogen",
+    "pron": "[háidrədʒən]",
+    "pos": "n.",
+    "meaning": "수소"
+   },
+   {
+    "word": "factor",
+    "pron": "[fǽktər]",
+    "pos": "n.",
+    "meaning": "요소, 요인"
+   },
+   {
+    "word": "clown",
+    "pron": "[klaun]",
+    "pos": "n.",
+    "meaning": "어릿광대"
+   },
+   {
+    "word": "soy",
+    "pron": "[sɔi]",
+    "pos": "n.",
+    "meaning": "콩, 간장"
+   },
+   {
+    "word": "become",
+    "meaning": "~이 되다 (become-became-become)"
+   },
+   {
+    "word": "bed",
+    "meaning": "침대, 침상"
+   },
+   {
+    "word": "bedroom",
+    "meaning": "침실"
+   },
+   {
+    "word": "before",
+    "meaning": "앞에, 이전에, ~ 전에"
+   },
+   {
+    "word": "begin",
+    "meaning": "시작하다, 착수하다 (begin-began-begun)"
+   },
+   {
+    "word": "believe",
+    "meaning": "믿다"
+   },
+   {
+    "word": "belief",
+    "meaning": "믿음"
+   },
+   {
+    "word": "bell",
+    "meaning": "종, 방울, 초인종"
+   },
+   {
+    "word": "belt",
+    "meaning": "띠, 벨트"
+   },
+   {
+    "word": "bench",
+    "meaning": "벤치, 긴 의자"
+   },
+   {
+    "word": "bicycle",
+    "meaning": "자전거"
+   },
+   {
+    "word": "big",
+    "meaning": "큰"
+   },
+   {
+    "word": "bird",
+    "meaning": "새"
+   },
+   {
+    "word": "black",
+    "meaning": "검은, 어두운, 검은색"
+   },
+   {
+    "word": "blanket",
+    "meaning": "담요"
+   },
+   {
+    "word": "blouse",
+    "meaning": "블라우스"
+   },
+   {
+    "word": "blue",
+    "meaning": "푸른, 파란색"
+   },
+   {
+    "word": "boat",
+    "meaning": "보트, 작은 배"
+   },
+   {
+    "word": "body",
+    "meaning": "몸, 신체"
+   },
+   {
+    "word": "book",
+    "meaning": "책, 서적"
+   },
+   {
+    "word": "bookstore",
+    "meaning": "서점"
+   },
+   {
+    "word": "boot",
+    "meaning": "장화, 부츠"
+   },
+   {
+    "word": "box",
+    "meaning": "상자"
+   },
+   {
+    "word": "boy",
+    "meaning": "소년, 남자아이"
+   },
+   {
+    "word": "bread",
+    "meaning": "빵"
+   },
+   {
+    "word": "break",
+    "meaning": "깨뜨리다, 부서지다 (break-broke-broken)"
+   },
+   {
+    "word": "breakfast",
+    "meaning": "아침식사"
+   },
+   {
+    "word": "bridge",
+    "meaning": "다리"
+   },
+   {
+    "word": "brother",
+    "meaning": "형제, 친구"
+   },
+   {
+    "word": "brown",
+    "meaning": "갈색의, 갈색"
+   },
+   {
+    "word": "bus",
+    "meaning": "버스"
+   },
+   {
+    "word": "business",
+    "meaning": "사업, 일"
+   },
+   {
+    "word": "businessman",
+    "meaning": "실업가, 경영자"
+   },
+   {
+    "word": "busy",
+    "meaning": "바쁜, 분주한"
+   },
+   {
+    "word": "but",
+    "meaning": "그러나"
+   },
+   {
+    "word": "butter",
+    "meaning": "버터"
+   },
+   {
+    "word": "butterfly",
+    "meaning": "나비"
+   },
+   {
+    "word": "button",
+    "meaning": "단추"
+   },
+   {
+    "word": "buy",
+    "meaning": "사다, 구매하다 (buy-bought-bought)"
+   },
+   {
+    "word": "by",
+    "meaning": "~ 곁에, ~까지는, ~에 의하여"
+   },
+   {
+    "word": "cafeteria",
+    "meaning": "카페테리아, 구내식당"
+   },
+   {
+    "word": "cake",
+    "meaning": "케이크"
+   },
+   {
+    "word": "calendar",
+    "meaning": "달력"
+   },
+   {
+    "word": "call",
+    "meaning": "부르다, 불러오다, 전화를 걸다"
+   },
+   {
+    "word": "camera",
+    "meaning": "카메라, 사진기"
+   },
+   {
+    "word": "camp",
+    "meaning": "야영, 야영지"
+   },
+   {
+    "word": "campaign",
+    "meaning": "캠페인, 사회운동"
+   },
+   {
+    "word": "can",
+    "meaning": "<조동사> ~할 수 있다, ~해도 좋다 (can-could)"
+   },
+   {
+    "word": "candy",
+    "meaning": "캔디, 사탕"
+   },
+   {
+    "word": "cap",
+    "meaning": "모자, 뚜껑"
+   },
+   {
+    "word": "captain",
+    "meaning": "선장, 두목"
+   },
+   {
+    "word": "car",
+    "meaning": "자동차"
+   },
+   {
+    "word": "card",
+    "meaning": "카드, 엽서"
+   },
+   {
+    "word": "case",
+    "meaning": "경우, 입장, 사건"
+   },
+   {
+    "word": "cat",
+    "meaning": "고양이"
+   },
+   {
+    "word": "certain",
+    "meaning": "확실한, 어떤"
+   },
+   {
+    "word": "certainly",
+    "meaning": "확실히"
+   },
+   {
+    "word": "chain",
+    "meaning": "사슬, 체인점"
+   },
+   {
+    "word": "chalk",
+    "meaning": "분필"
+   },
+   {
+    "word": "chance",
+    "meaning": "기회, 운, 가능성"
+   },
+   {
+    "word": "change",
+    "meaning": "변화하다, 바꾸다, 변화, 잔돈"
+   },
+   {
+    "word": "check",
+    "meaning": "조사, 검사, 조사하다, 수표"
+   },
+   {
+    "word": "cheese",
+    "meaning": "치즈"
+   },
+   {
+    "word": "chess",
+    "meaning": "체스"
+   },
+   {
+    "word": "chicken",
+    "meaning": "병아리, 닭, 닭고기"
+   },
+   {
+    "word": "child",
+    "meaning": "아이, 아동, 유아"
+   },
+   {
+    "word": "inside",
+    "meaning": "안쪽, 안쪽의"
+   },
+   {
+    "word": "interest",
+    "meaning": "흥미, 관심"
+   },
+   {
+    "word": "interested",
+    "meaning": "흥미를 느끼는, 관심 있어 하는"
+   },
+   {
+    "word": "interesting",
+    "meaning": "흥미 있는, 재미있는"
+   },
+   {
+    "word": "internet",
+    "meaning": "인터넷"
+   },
+   {
+    "word": "island",
+    "meaning": "섬"
+   },
+   {
+    "word": "it",
+    "meaning": "그것"
+   },
+   {
+    "word": "item",
+    "meaning": "항목, 종목, 품목"
+   },
+   {
+    "word": "jacket",
+    "meaning": "웃옷, 재킷"
+   },
+   {
+    "word": "jean",
+    "meaning": "청바지, 진"
+   },
+   {
+    "word": "jet",
+    "meaning": "제트기의, 제트기"
+   },
+   {
+    "word": "joke",
+    "meaning": "농담"
+   },
+   {
+    "word": "juice",
+    "meaning": "주스"
+   },
+   {
+    "word": "jump",
+    "meaning": "깡충 뛰다, 뛰어오르다"
+   },
+   {
+    "word": "jungle",
+    "meaning": "정글, 밀림"
+   },
+   {
+    "word": "just",
+    "meaning": "단지, 겨우, 정확히"
+   },
+   {
+    "word": "key",
+    "meaning": "열쇠"
+   },
+   {
+    "word": "kick",
+    "meaning": "차다, 걷어차다"
+   },
+   {
+    "word": "kill",
+    "meaning": "죽이다, 살해하다"
+   },
+   {
+    "word": "kindness",
+    "meaning": "친절"
+   },
+   {
+    "word": "king",
+    "meaning": "왕, 국왕, 군주"
+   },
+   {
+    "word": "kiss",
+    "meaning": "키스, 입맞춤"
+   },
+   {
+    "word": "kitchen",
+    "meaning": "부엌"
+   },
+   {
+    "word": "knee",
+    "meaning": "무릎"
+   },
+   {
+    "word": "knife",
+    "meaning": "나이프, 식칼"
+   },
+   {
+    "word": "know",
+    "meaning": "알고 있다, 알다, 이해하다 (know-knew-known)"
+   },
+   {
+    "word": "lady",
+    "meaning": "숙녀, 부인"
+   },
+   {
+    "word": "lamp",
+    "meaning": "등불, 램프"
+   },
+   {
+    "word": "large",
+    "meaning": "큰, 넓은, 광범위한"
+   },
+   {
+    "word": "late",
+    "meaning": "늦은, 지각한"
+   },
+   {
+    "word": "later",
+    "meaning": "나중에, 더 늦은"
+   },
+   {
+    "word": "learn",
+    "meaning": "배우다, 익히다, 공부하다"
+   },
+   {
+    "word": "left",
+    "meaning": "왼쪽의"
+   },
+   {
+    "word": "leg",
+    "meaning": "다리"
+   },
+   {
+    "word": "leisure",
+    "meaning": "여가, 한가한 시간, 레저"
+   },
+   {
+    "word": "less",
+    "meaning": "더 적은(little의 비교급)"
+   },
+   {
+    "word": "letter",
+    "meaning": "글자, 편지"
+   },
+   {
+    "word": "level",
+    "meaning": "수준, 수평"
+   },
+   {
+    "word": "life",
+    "meaning": "생명, 삶"
+   },
+   {
+    "word": "like",
+    "meaning": "좋아하다, 바라다"
+   },
+   {
+    "word": "line",
+    "meaning": "선, 줄"
+   },
+   {
+    "word": "lion",
+    "meaning": "사자"
+   },
+   {
+    "word": "list",
+    "meaning": "목록, 표, 리스트"
+   },
+   {
+    "word": "listen",
+    "meaning": "귀를 기울이다, 경청하다, 듣다"
+   },
+   {
+    "word": "little",
+    "meaning": "작은, 어린, 거의 ~않다"
+   },
+   {
+    "word": "live",
+    "pron": "[liv]",
+    "meaning": "[liv] 살다, 생존하다, 거주하다 [laiv] 살아있는, 생생한"
+   },
+   {
+    "word": "long",
+    "meaning": "긴, 길이가 긴, 오랜"
+   },
+   {
+    "word": "look",
+    "meaning": "보다, 바라보다, 봄, (겉)모습"
+   },
+   {
+    "word": "love",
+    "meaning": "사랑, 사랑하다"
+   },
+   {
+    "word": "low",
+    "meaning": "낮은"
+   },
+   {
+    "word": "luck",
+    "meaning": "운, 행운"
+   },
+   {
+    "word": "lucky",
+    "meaning": "행운의"
+   },
+   {
+    "word": "lunch",
+    "meaning": "점심"
+   },
+   {
+    "word": "machine",
+    "meaning": "기계, 기계장치"
+   },
+   {
+    "word": "mail",
+    "meaning": "우편물, 우편"
+   },
+   {
+    "word": "mailbox",
+    "meaning": "우체통"
+   },
+   {
+    "word": "man",
+    "meaning": "남자, 인간, 사람, 인류"
+   },
+   {
+    "word": "manner",
+    "meaning": "방법, 예절, 예의, 매너"
+   },
+   {
+    "word": "many",
+    "meaning": "많은, 다수의"
+   },
+   {
+    "word": "marathon",
+    "meaning": "마라톤 경주"
+   },
+   {
+    "word": "mark",
+    "meaning": "표, 기호, 부호, 마크, 표시하다"
+   },
+   {
+    "word": "marriage",
+    "meaning": "결혼"
+   },
+   {
+    "word": "mask",
+    "meaning": "탈, 복면"
+   },
+   {
+    "word": "master",
+    "meaning": "대가, 마스터, 완전히 익히다"
+   },
+   {
+    "word": "may",
+    "meaning": "<조동사> ~할지도 모른다, ~해도 좋다 (may-might)"
+   },
+   {
+    "word": "smog",
+    "meaning": "스모그, 연무"
+   },
+   {
+    "word": "smoke",
+    "meaning": "담배를 피우다, 연기"
+   },
+   {
+    "word": "smoking",
+    "meaning": "흡연, 담배 피우는"
+   },
+   {
+    "word": "smooth",
+    "meaning": "부드러운, 매끄러운"
+   },
+   {
+    "word": "snake",
+    "meaning": "뱀"
+   },
+   {
+    "word": "snow",
+    "meaning": "눈"
+   },
+   {
+    "word": "so",
+    "meaning": "그와 같이, 그렇게, <접속사> 그래서"
+   },
+   {
+    "word": "soccer",
+    "meaning": "축구"
+   },
+   {
+    "word": "sock",
+    "meaning": "양말"
+   },
+   {
+    "word": "soft",
+    "meaning": "부드러운"
+   },
+   {
+    "word": "soldier",
+    "meaning": "군인, 병사"
+   },
+   {
+    "word": "son",
+    "meaning": "아들, 자식"
+   },
+   {
+    "word": "song",
+    "meaning": "노래"
+   },
+   {
+    "word": "soon",
+    "meaning": "이윽고, 곧"
+   },
+   {
+    "word": "sorry",
+    "meaning": "슬픈, 유감스러운"
+   },
+   {
+    "word": "sound",
+    "meaning": "소리, 음향"
+   },
+   {
+    "word": "soup",
+    "meaning": "수프"
+   },
+   {
+    "word": "space",
+    "meaning": "공간, 우주, 장소"
+   },
+   {
+    "word": "spaceship",
+    "meaning": "우주선"
+   },
+   {
+    "word": "speak",
+    "meaning": "이야기하다, 연설하다 (speak-spoke-spoken)"
+   },
+   {
+    "word": "speaker",
+    "meaning": "말하는 사람, 강연자"
+   },
+   {
+    "word": "speed",
+    "meaning": "빠르기, 속력"
+   },
+   {
+    "word": "spider",
+    "meaning": "거미"
+   },
+   {
+    "word": "spoon",
+    "meaning": "숟가락"
+   },
+   {
+    "word": "sport",
+    "meaning": "스포츠, 운동, 경기"
+   },
+   {
+    "word": "stadium",
+    "meaning": "경기장, 스타디움"
+   },
+   {
+    "word": "stage",
+    "meaning": "무대, 시기"
+   },
+   {
+    "word": "stamp",
+    "meaning": "우표, 도장"
+   },
+   {
+    "word": "stand",
+    "meaning": "일어서다 (stand-stood-stood)"
+   },
+   {
+    "word": "standard",
+    "meaning": "표준, 기준"
+   },
+   {
+    "word": "star",
+    "meaning": "별"
+   },
+   {
+    "word": "start",
+    "meaning": "출발하다, 시작하다"
+   },
+   {
+    "word": "station",
+    "meaning": "정거장, 역"
+   },
+   {
+    "word": "stay",
+    "meaning": "머무르다, 체재하다"
+   },
+   {
+    "word": "steak",
+    "meaning": "스테이크"
+   },
+   {
+    "word": "steam",
+    "meaning": "증기, 수증기"
+   },
+   {
+    "word": "step",
+    "meaning": "걸음, 한 걸음"
+   },
+   {
+    "word": "stone",
+    "meaning": "돌, 바위"
+   },
+   {
+    "word": "stop",
+    "meaning": "멈추다, 정지시키다"
+   },
+   {
+    "word": "store",
+    "meaning": "가게"
+   },
+   {
+    "word": "story",
+    "meaning": "이야기, 줄거리"
+   },
+   {
+    "word": "strange",
+    "meaning": "이상한, 낯선"
+   },
+   {
+    "word": "stranger",
+    "meaning": "낯선 사람"
+   },
+   {
+    "word": "strawberry",
+    "meaning": "딸기"
+   },
+   {
+    "word": "street",
+    "meaning": "거리"
+   },
+   {
+    "word": "stress",
+    "meaning": "스트레스, 압박, 강세"
+   },
+   {
+    "word": "strong",
+    "meaning": "강한, 굳센"
+   },
+   {
+    "word": "student",
+    "meaning": "학생"
+   },
+   {
+    "word": "study",
+    "meaning": "공부하다, 연구하다"
+   },
+   {
+    "word": "style",
+    "meaning": "방식, 방법, 모양"
+   },
+   {
+    "word": "succeed",
+    "meaning": "성공하다"
+   },
+   {
+    "word": "success",
+    "meaning": "성공"
+   },
+   {
+    "word": "successful",
+    "meaning": "성공적인"
+   },
+   {
+    "word": "such",
+    "meaning": "그러한"
+   },
+   {
+    "word": "sugar",
+    "meaning": "설탕"
+   },
+   {
+    "word": "sun",
+    "meaning": "태양, 해"
+   },
+   {
+    "word": "supermarket",
+    "meaning": "슈퍼마켓"
+   },
+   {
+    "word": "support",
+    "meaning": "지탱하다, 지지하다"
+   },
+   {
+    "word": "sure",
+    "meaning": "틀림없는, 확실한"
+   },
+   {
+    "word": "surely",
+    "meaning": "확실히, 반드시"
+   },
+   {
+    "word": "surprise",
+    "meaning": "놀라게 하다"
+   },
+   {
+    "word": "sweater",
+    "meaning": "스웨터"
+   },
+   {
+    "word": "sweet",
+    "meaning": "달콤한, 맛 좋은"
+   },
+   {
+    "word": "swim",
+    "meaning": "헤엄치다"
+   },
+   {
+    "word": "system",
+    "meaning": "조직, 체계"
+   },
+   {
+    "word": "table",
+    "meaning": "식탁, 탁자"
+   },
+   {
+    "word": "talk",
+    "meaning": "말하다, 이야기하다"
+   },
+   {
+    "word": "tall",
+    "meaning": "키 큰, 높이가 ~인"
+   },
+   {
+    "word": "target",
+    "meaning": "과녁, 표적"
+   },
+   {
+    "word": "tea",
+    "meaning": "차"
    }
   ]
  }
