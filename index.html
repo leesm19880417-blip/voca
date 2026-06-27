@@ -410,6 +410,7 @@
   .word-card .wtip .tlabel { display:inline-block; font-size:0.92em; font-weight:800; color:var(--primary); margin-right:5px; }
   .word-card .wassoc { border-left-color: var(--violet); background: rgba(139,92,246,0.08); }
   .word-card .wassoc .tlabel { color: var(--violet); }
+  .ai-badge { font-size:0.72em; font-weight:800; color:#fff; background:var(--violet); border-radius:5px; padding:0 5px; margin-left:2px; vertical-align:middle; letter-spacing:0.3px; }
   .word-card .wexpr { font-size: 0.8em; color: var(--text-mid); margin-top: 8px; background: #ecfdf5; border-left: 3px solid #10b981; border-radius: 6px; padding: 7px 9px; line-height: 1.55; }
   .word-card .wexpr .elabel { display:block; font-size:0.92em; font-weight:800; color:#059669; margin-bottom:3px; }
   .word-card .wexpr .ei { padding: 1px 0; }
@@ -1563,7 +1564,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260627j';
+  window.APP_VERSION='20260627k';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1593,6 +1594,7 @@
 <script src="vocab_kss_basic.js?v=20260627b"></script>
 <script src="vocab_kstn1.js?v=20260626a"></script>
 <script src="vocab_part5.js?v=20260625b"></script>
+<script src="vocab_gentips.js?v=20260627k"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
 <script src="vocab_legend.js?v=20260622l"></script>
 <script src="sentences.js?v=20260622l"></script>
@@ -1651,6 +1653,18 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
     }));
   });
   try{ window._ksTipsAdded=added; }catch(e){}
+})();
+// 경선식 연상이 없는 단어에 AI 생성 연상 주입 (vocab_gentips.js) — 전 단어장, tip·assoc 둘 다 없을 때만
+(function injectGenTips(){
+  if(typeof GEN_TIPS==='undefined') return;
+  const norm = w => String(w||'').toLowerCase().replace(/[¹²³⁴]/g,'').replace(/[.,!?;:]+$/,'').replace(/\s+/g,' ').trim();
+  let added=0;
+  BOOKS.forEach(b=>b.data.forEach(d=>d.words.forEach(w=>{
+    if(w.tip||w.assoc) return;
+    const t=GEN_TIPS[norm(w.word)];
+    if(t){ w.assoc=t; w._genTip=true; added++; }
+  })));
+  try{ window._genTipsAdded=added; }catch(e){}
 })();
 // 카드/목록에서 보여줄 '연상' 텍스트: assoc 우선, 없으면 경선식 계열 책의 tip(자체가 연상)
 function wordAssoc(w, book){
@@ -2746,7 +2760,7 @@ function renderWordList(words, book, day){
     const tipLab=w.tipLabel||(isKstn?'💡 연상':'만점 TIP');
     const tip=w.tip?`<div class="wtip"><span class="tlabel">${esc(tipLab)}</span>${tipHtml(w.tip)}</div>`:'';
     // 연상(경선식) — 자체 팁이 있어도 그 위에 별도 표시
-    const assocHtml=(w.assoc && w.assoc!==w.tip)?`<div class="wtip wassoc"><span class="tlabel">💡 연상</span>${tipHtml(w.assoc)}</div>`:'';
+    const assocHtml=(w.assoc && w.assoc!==w.tip)?`<div class="wtip wassoc"><span class="tlabel">💡 연상${w._genTip?' <span class="ai-badge">AI</span>':''}</span>${tipHtml(w.assoc)}</div>`:'';
     // 기출표현 (콜로케이션 등)
     const exprLab=isKstn?'★ 기출표현':'★토익 출제 표현';
     const expr=(w.toeicExpr&&w.toeicExpr.length)
@@ -2845,7 +2859,7 @@ function renderFlashcard(){
   if(fcImg){ const ie=$('flip-front').querySelector('.wimg'); if(ie) loadWordImage(ie); }
   const fcKstn=fcBook&&String(fcBook).startsWith('kstn');
   const _fcAssoc=wordAssoc(w, fcBook);   // 카드 뒷면은 연상만 (siwon 관련기출 tip은 표시 안 함)
-  const fcTip=_fcAssoc?`<div class="fc-tip"><span class="tlabel">💡 연상</span>${tipHtml(_fcAssoc)}</div>`:'';
+  const fcTip=_fcAssoc?`<div class="fc-tip"><span class="tlabel">💡 연상${w._genTip?' <span class="ai-badge">AI</span>':''}</span>${tipHtml(_fcAssoc)}</div>`:'';
   const fcDeriv=(w.derivatives&&w.derivatives.length)?`<div class="fc-deriv">${w.derivatives.map(d=>`<span class="dv">${esc(d.word)}</span>${d.pos?`<span class="dp">${esc(d.pos)}</span>`:' '}${esc(d.meaning||'')}`).join('<br>')}</div>`:'';
   const fcExList=(w.examples&&w.examples.length)?w.examples:(w.example?[{en:w.example,ko:w.exampleKor||''}]:[]);
   const fcEx=fcExList.map((e,j)=>`<div class="fc-ex">${j===0?'<span class="exlabel">예문</span>':''}${highlightWord(e.en, w.word)} <button class="spk" onclick="event.stopPropagation(); speak('${speakAttr(e.en)}')">🔊</button></div>${e.ko?`<div class="fc-ex-ko">${esc(e.ko)}</div>`:''}`).join('');
