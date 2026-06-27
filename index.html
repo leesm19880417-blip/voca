@@ -1563,7 +1563,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260627i';
+  window.APP_VERSION='20260627j';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -3032,7 +3032,7 @@ function renderQuiz(){
   if(it.type==='part5'){ $('quiz-prompt').textContent='빈칸에 알맞은 것을 고르세요 (Part 5)'; qEl.innerHTML=part5Blank(it.sentence); }
   else if(it.type==='ko-en'){ $('quiz-prompt').textContent='뜻에 맞는 영단어를 고르세요'; qEl.innerHTML=`${esc(it.meaning)} <small>${posTag(it.pos)}</small>`; }
   else { $('quiz-prompt').textContent='영단어의 뜻을 고르세요'; qEl.innerHTML=`${esc(it.word)} <small>${posTag(it.pos)}</small> <button class="spk" onclick="speak('${speakAttr(it.word)}')" title="발음 듣기">🔊</button>`; speak(it.word); }
-  $('quiz-options').innerHTML=it.options.map((opt,i)=>`<button class="quiz-option" data-opt="${esc(opt)}" onclick="answerQuiz(this,'${q(opt)}')"><span class="onum">${String.fromCharCode(65+i)}</span><span>${esc(opt)}</span></button>`).join('');
+  $('quiz-options').innerHTML=it.options.map((opt,i)=>`<button class="quiz-option" data-opt="${esc(opt)}" onclick="answerQuiz(this, this.dataset.opt)"><span class="onum">${String.fromCharCode(65+i)}</span><span>${esc(opt)}</span></button>`).join('');
   $('quiz-fb').innerHTML=''; $('quiz-next').style.display='none';
 }
 function answerQuiz(btn, ans){
