@@ -1533,7 +1533,8 @@
     <p class="sub" id="reviewmode-sub" style="margin-bottom:16px;">복습할 단어 0개 · 방식을 골라주세요</p>
     <div class="rm-grid">
       <button class="rm-btn" onclick="startReviewMode('flashcard')"><span class="rm-ico">📇</span><span class="rm-txt"><b>카드로 복습</b><small>앞뒤 뒤집으며 외움/모름 체크</small></span></button>
-      <button class="rm-btn" onclick="startReviewMode('en-ko')"><span class="rm-ico">🎯</span><span class="rm-txt"><b>영 → 한 퀴즈</b><small>영어 보고 뜻 고르기</small></span></button>
+      <button class="rm-btn" onclick="startReviewMode('en-ko')"><span class="rm-ico">🎯</span><span class="rm-txt"><b>영 → 한 퀴즈</b><small>영어 보고 뜻 고르기 · 4지선다</small></span></button>
+      <button class="rm-btn" onclick="startReviewMode('en-ko',2)"><span class="rm-ico">⚖️</span><span class="rm-txt"><b>영 → 한 (2지선다)</b><small>둘 중 뜻 고르기 · 쉬움</small></span></button>
       <button class="rm-btn" onclick="startReviewMode('ko-en')"><span class="rm-ico">✏️</span><span class="rm-txt"><b>한 → 영 퀴즈</b><small>뜻 보고 영어 고르기</small></span></button>
     </div>
     <button class="btn btn-ghost btn-block" onclick="closeReviewMode()" style="margin-top:10px;">취소</button>
@@ -1562,7 +1563,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260627h';
+  window.APP_VERSION='20260627i';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -2977,7 +2978,7 @@ function startReview(){
   $('reviewmode-overlay').classList.add('active');
 }
 function closeReviewMode(){ $('reviewmode-overlay').classList.remove('active'); }
-function startReviewMode(mode){
+function startReviewMode(mode, nChoices){
   closeReviewMode();
   const list=(_reviewList&&_reviewList.length)?_reviewList.slice():dueWords();
   if(!list.length){ toast('오늘 복습할 단어가 없어요 👍'); return; }
@@ -2986,7 +2987,7 @@ function startReviewMode(mode){
     currentWords=list; currentIdx=0; flashFlipped=false; _sessTotal=currentWords.length; _sessMastered=0;
     showView('flashcard'); renderFlashcard();
   } else {
-    currentBook='review'; currentDay='review'; setupQuiz(list, mode, 'review');
+    currentBook='review'; currentDay='review'; setupQuiz(list, mode, 'review', nChoices);
   }
 }
 function shuffleFlashcards(){ currentWords=shuffle(currentWords); currentIdx=0; flashFlipped=false; renderFlashcard(); toast('🔀 섞었어요'); }
