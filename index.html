@@ -1688,7 +1688,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260628g';
+  window.APP_VERSION='20260628h';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1895,6 +1895,7 @@ let aqCount=20, myStudyCount=20, aqBook='all', flashFlipped=false, studySource=n
 let autoSpeak = (localStorage.getItem('fc_autospeak') !== '0'); // 카드 자동 발음 (기본 켜짐)
 let assocRecall = (localStorage.getItem('fc_assocrecall') === '1'); // 연상 빈칸(능동 회상) (기본 꺼짐)
 let exampleCloze = (localStorage.getItem('fc_cloze') === '1'); // 문맥 빈칸(예문 속 단어) (기본 꺼짐)
+let _fcClozeShown = false; // 현재 카드 앞면이 문맥 빈칸인지 (자동발음 금지용)
 
 const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result','confuse'];
 const $ = id => document.getElementById(id);
@@ -3030,6 +3031,7 @@ function renderFlashcard(){
   const fcHint = _blank ? `<div class="fc-hint"><span class="fc-hint-lbl">💡 연상 힌트${w._genTip?' <span class="ai-badge">AI</span>':''}</span><div class="fc-hint-body">${_blank}</div><div class="fc-hint-q">밑줄에 들어갈 뜻을 떠올려보세요 🤔</div></div>` : '';
   const _fcEx0 = (w.examples&&w.examples.length)?w.examples[0]:(w.example?{en:w.example,ko:w.exampleKor||''}:null);
   const _cloze = (exampleCloze && _fcEx0) ? clozeHtml(_fcEx0.en, w.word) : null;   // 문맥 빈칸: 예문 속 단어 가림
+  _fcClozeShown = !!_cloze;   // 문맥 빈칸 앞면이면 단어 자동발음 금지(답 노출 방지)
   if(_cloze){
     $('flip-front').innerHTML=`<div class="fc-cloze-lbl">📝 빈칸에 들어갈 단어는?</div><div class="fc-cloze-sent">${_cloze}</div>${_fcEx0.ko?`<div class="fc-cloze-ko">${esc(_fcEx0.ko)}</div>`:''}<div class="fc-pos">${posTag(w.pos)}</div>${fcHint}<div class="fc-tap">단어를 떠올리고 탭 👆</div>`;
   } else {
@@ -3063,13 +3065,14 @@ function renderFlashcard(){
     if(ms&&ms.mastered){ fcm.className='fc-master done'; fcm.innerHTML='🏆 마스터 완료'; }
     else { fcm.className='fc-master'; fcm.innerHTML='마스터까지 <span class="dots"><span class="md-on">'+'●'.repeat(pc)+'</span><span class="md-off">'+'○'.repeat(MASTER_DAYS-pc)+'</span></span> ('+pc+'/'+MASTER_DAYS+'일)'; }
   }
-  if(autoSpeak) speak(w.word);  // 새 카드(앞면) 뜨면 단어 자동 발음
+  if(autoSpeak && !_fcClozeShown) speak(w.word);  // 새 카드(앞면) 뜨면 단어 자동 발음 (문맥 빈칸이면 답 노출 방지로 생략)
 }
 function flipCard(){
   if(_swiped){ _swiped=false; return; } // 스와이프 후엔 뒤집지 않음
   flashFlipped=!flashFlipped;
   $('flip-card').classList.toggle('flipped', flashFlipped);
-  if(autoSpeak && !flashFlipped) speak(currentWords[currentIdx].word); // 앞면=단어 발음, 뒷면=발음 안 함(예문 안 읽음)
+  if(autoSpeak && !flashFlipped && !_fcClozeShown) speak(currentWords[currentIdx].word); // 앞면=단어 발음(문맥 빈칸이면 생략), 뒷면=발음 안 함
+  else if(autoSpeak && flashFlipped && _fcClozeShown) speak(currentWords[currentIdx].word); // 문맥 빈칸은 뒤집어 답 볼 때 발음(정답 확인)
 }
 function toggleAutoSpeak(){
   autoSpeak=!autoSpeak;
