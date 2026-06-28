@@ -706,6 +706,20 @@
   .cf-opt.cf-ok{ border-color:var(--primary); background:var(--primary); color:#fff; }
   .cf-opt.cf-no{ border-color:#fca5a5; background:var(--danger-light); color:var(--danger); }
   .cf-q-tip{ margin-top:16px; padding:13px 15px; background:var(--surface-2); border-radius:12px; font-size:0.92em; line-height:1.6; }
+  .push-box{ margin-top:18px; padding:14px 16px; background:var(--surface-2); border:1.5px solid var(--border); border-radius:14px; }
+  .push-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  .push-head small{ color:var(--text-light); font-size:0.8em; }
+  .push-time-row{ display:flex; align-items:center; justify-content:space-between; margin-top:14px; padding-top:12px; border-top:1px solid var(--border); }
+  .push-time-row label{ font-weight:700; font-size:0.92em; }
+  .push-time-row input[type=time]{ font-size:1.05em; padding:7px 10px; border:1.5px solid var(--border); border-radius:10px; background:var(--surface); color:var(--text); }
+  .push-note{ font-size:0.76em; color:var(--text-light); margin:11px 0 0; line-height:1.5; }
+  .switch{ position:relative; display:inline-block; width:48px; height:28px; flex:0 0 auto; }
+  .switch input{ opacity:0; width:0; height:0; }
+  .switch .slider{ position:absolute; inset:0; background:#cbd5e1; border-radius:999px; transition:.25s; cursor:pointer; }
+  .switch .slider:before{ content:""; position:absolute; height:22px; width:22px; left:3px; top:3px; background:#fff; border-radius:50%; transition:.25s; box-shadow:0 1px 3px rgba(0,0,0,.3); }
+  .switch input:checked + .slider{ background:var(--primary); }
+  .switch input:checked + .slider:before{ transform:translateX(20px); }
+  body.dark .switch .slider{ background:#475569; }
   .rc-left{ display:flex; align-items:center; gap:12px; }
   .rc-ico{ font-size:1.6em; }
   .rc-left b{ font-size:1.02em; } .rc-left small{ display:block; color:var(--text-light); font-size:0.8em; margin-top:1px; }
@@ -1446,6 +1460,19 @@
     </div>
     <button class="btn btn-primary btn-block" onclick="applyUser()">이 이름으로 시작 / 전환</button>
     <div id="user-recent"></div>
+
+    <div class="push-box" id="push-box">
+      <div class="push-head">
+        <div><b>🔔 매일 복습 알림</b><br><small id="push-status">정한 시각에 복습 알림을 보내드려요</small></div>
+        <label class="switch"><input type="checkbox" id="push-toggle" onchange="onPushToggle(this.checked)"><span class="slider"></span></label>
+      </div>
+      <div class="push-time-row" id="push-time-row" style="display:none">
+        <label for="push-time">알림 시각</label>
+        <input type="time" id="push-time" value="20:00" onchange="onPushTimeChange(this.value)">
+      </div>
+      <p class="push-note" id="push-note">※ 휴대폰은 <b>홈 화면에 추가(설치)</b> 후 켜야 알림이 와요. 아이폰은 iOS 16.4 이상 + 설치 필수.</p>
+    </div>
+
     <button class="btn btn-ghost btn-block user-close" onclick="closeUser()" style="margin-top:14px;">닫기</button>
   </div>
 </div>
@@ -1661,7 +1688,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260628f';
+  window.APP_VERSION='20260628g';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -4155,7 +4182,7 @@ function maybeOnboardName(){
     setTimeout(function(){ if(SYNC_CODE==='guest'){ openUser(); toast('💾 이름을 정하면 폰·PC 어디서나 진도가 같이 저장돼요'); } }, 1000);
   }catch(e){}
 }
-function openUser(mandatory){ const inp=$('user-input'); if(inp) inp.value=(SYNC_CODE==='guest')?'':SYNC_CODE; renderRecentUsers(); const o=$('user-overlay'); if(o){ o.classList.toggle('mandatory', !!mandatory); o.classList.add('active'); } if(mandatory && inp) setTimeout(function(){ inp.focus(); }, 350); }
+function openUser(mandatory){ const inp=$('user-input'); if(inp) inp.value=(SYNC_CODE==='guest')?'':SYNC_CODE; renderRecentUsers(); const o=$('user-overlay'); if(o){ o.classList.toggle('mandatory', !!mandatory); o.classList.add('active'); } if(mandatory && inp) setTimeout(function(){ inp.focus(); }, 350); refreshPushUI(); }
 function closeUser(){ const o=$('user-overlay'); if(o){ o.classList.remove('active'); o.classList.remove('mandatory'); } }
 function openHelp(){ const o=$('help-overlay'); if(o) o.classList.add('active'); }
 function closeHelp(){ const o=$('help-overlay'); if(o) o.classList.remove('active'); }
@@ -4216,8 +4243,78 @@ document.addEventListener('keydown',e=>{
   card.addEventListener('pointercancel', ()=>{ on=false; card.style.transition='transform .2s,opacity .2s'; card.style.transform=''; card.style.opacity=''; });
 })();
 
+// ============ 웹 푸시 알림 (매일 복습 알림) ============
+const VAPID_PUBLIC_KEY = 'BBh6TKcG4EKiJOyFey3P8HaSrXIxBfLKpdISBNxTZ4UP5Ae-Yde8-G-Bx3YiWPvphh8bC0WGTD-v9JM7l9aGtR0';
+const PUSH_DB = (typeof firebaseConfig!=='undefined' && firebaseConfig.databaseURL) ? firebaseConfig.databaseURL : '';
+let _swReg = null;
+function pushSupported(){ return ('serviceWorker' in navigator) && ('PushManager' in window) && ('Notification' in window); }
+function getPushId(){ let id=localStorage.getItem('push_id'); if(!id){ id='p'+Math.abs(Date.now()^(performance.now()*1000|0)).toString(36)+Math.floor(performance.now()).toString(36); localStorage.setItem('push_id', id); } return id; }
+function urlB64ToUint8Array(base64){ const pad='='.repeat((4-base64.length%4)%4); const b=(base64+pad).replace(/-/g,'+').replace(/_/g,'/'); const raw=atob(b); return Uint8Array.from([...raw].map(c=>c.charCodeAt(0))); }
+async function registerSW(){
+  if(!('serviceWorker' in navigator)) return null;
+  try{ _swReg = await navigator.serviceWorker.register('sw.js'); return _swReg; }
+  catch(e){ console.warn('SW 등록 실패', e); return null; }
+}
+function getPushTime(){ const v=(localStorage.getItem('push_time')||'20:00').split(':'); return { hour:parseInt(v[0],10)||20, minute:parseInt(v[1],10)||0 }; }
+async function refreshPushUI(){
+  const box=$('push-box'), tog=$('push-toggle'), row=$('push-time-row'), tm=$('push-time'), st=$('push-status'), note=$('push-note');
+  if(!box) return;
+  if(!pushSupported()){ box.style.opacity='0.55'; if(tog){tog.disabled=true;} if(st) st.textContent='이 브라우저는 알림을 지원하지 않아요'; return; }
+  if(tm){ const t=getPushTime(); tm.value=String(t.hour).padStart(2,'0')+':'+String(t.minute).padStart(2,'0'); }
+  let on=false;
+  try{ const reg=_swReg||await navigator.serviceWorker.getRegistration(); const sub=reg&&await reg.pushManager.getSubscription(); on=!!sub && Notification.permission==='granted'; }catch(e){}
+  if(tog) tog.checked=on;
+  if(row) row.style.display=on?'flex':'none';
+  if(st) st.textContent=on?('매일 '+$('push-time').value+'에 알림을 보내드려요'):'정한 시각에 복습 알림을 보내드려요';
+}
+async function onPushToggle(checked){
+  if(checked){ await enablePush(); } else { await disablePush(); }
+  refreshPushUI();
+}
+async function onPushTimeChange(val){
+  const p=(val||'20:00').split(':'); localStorage.setItem('push_time', val);
+  await savePushRecord(true);
+  const st=$('push-status'); if(st) st.textContent='매일 '+val+'에 알림을 보내드려요';
+  toast('⏰ 매일 '+val+'에 알림');
+}
+async function enablePush(){
+  if(!pushSupported()){ toast('이 브라우저는 알림 미지원'); return; }
+  try{
+    const perm=await Notification.requestPermission();
+    if(perm!=='granted'){ toast('알림 권한이 거부됐어요'); return; }
+    const reg=_swReg||await registerSW(); if(!reg){ toast('알림 준비 실패'); return; }
+    await navigator.serviceWorker.ready;
+    let sub=await reg.pushManager.getSubscription();
+    if(!sub) sub=await reg.pushManager.subscribe({ userVisibleOnly:true, applicationServerKey:urlB64ToUint8Array(VAPID_PUBLIC_KEY) });
+    await savePushRecord(true, sub);
+    toast('🔔 알림 켜짐! 매일 '+(localStorage.getItem('push_time')||'20:00')+'에 와요');
+  }catch(e){ console.warn(e); toast('알림 설정 중 오류'); }
+}
+async function disablePush(){
+  try{
+    const reg=_swReg||await navigator.serviceWorker.getRegistration();
+    const sub=reg&&await reg.pushManager.getSubscription();
+    if(sub) await sub.unsubscribe();
+  }catch(e){}
+  // Firebase 레코드 비활성화
+  if(PUSH_DB){ try{ await fetch(PUSH_DB+'/push/'+getPushId()+'/enabled.json', {method:'PUT', body:'false'}); }catch(e){} }
+  toast('알림을 껐어요');
+}
+async function savePushRecord(enabled, subOverride){
+  if(!PUSH_DB) return;
+  try{
+    let sub=subOverride;
+    if(!sub){ const reg=_swReg||await navigator.serviceWorker.getRegistration(); sub=reg&&await reg.pushManager.getSubscription(); }
+    if(!sub) return;
+    const j=sub.toJSON(); const t=getPushTime();
+    const rec={ endpoint:j.endpoint, keys:j.keys, hour:t.hour, minute:t.minute, enabled:!!enabled, name:(typeof SYNC_CODE!=='undefined'?SYNC_CODE:'guest'), ua:navigator.userAgent.slice(0,120) };
+    await fetch(PUSH_DB+'/push/'+getPushId()+'.json', { method:'PUT', body:JSON.stringify(rec) });
+  }catch(e){ console.warn('push 저장 실패', e); }
+}
+
 // ============ 초기화 ============
 initDark();
+registerSW();
 renderHome();
 renderAQBooks();
 fbInit();

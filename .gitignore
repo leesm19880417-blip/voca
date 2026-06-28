@@ -56,3 +56,6 @@ _kst1/
 _kst2/
 _kst3/
 _kstn/
+
+# 웹푸시 VAPID 개인키(절대 커밋 금지) — GitHub 시크릿으로만 사용
+_push_secret.txt
