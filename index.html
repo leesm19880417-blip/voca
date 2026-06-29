@@ -1688,7 +1688,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260629a';
+  window.APP_VERSION='20260629b';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1773,8 +1773,9 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
     }));
   });
   let added=0;
-  ['siwon','top','hackers','eduwill'].forEach(id=>{
-    const b=bookById(id); if(!b) return;
+  const ksSrc={kstn1:1,kst:1,kss:1,kssb:1};
+  BOOKS.forEach(b=>{   // 전 단어장에 경선식 연상 전파(경선식 책 자신은 제외 — 이미 tip 보유)
+    if(ksSrc[b.id]) return;
     b.data.forEach(d=>d.words.forEach(w=>{
       const t=lut[norm(w.word)]; if(t && !w.assoc){ w.assoc=t; w._ksAssoc=true; added++; }  // 연상은 별도 필드(기존 tip 보존)
     }));
