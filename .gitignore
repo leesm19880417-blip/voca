@@ -62,3 +62,7 @@ _push_secret.txt
 
 # 토익 모의고사 작업 폴더(렌더 이미지·OCR 파트)
 _texam/
+
+# AI 연상 생성 작업 폴더
+_gentips/
+_gentips2/
