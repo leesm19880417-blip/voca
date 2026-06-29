@@ -1688,7 +1688,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260628h';
+  window.APP_VERSION='20260629a';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1720,6 +1720,7 @@
 <script src="vocab_part5.js?v=20260625b"></script>
 <script src="vocab_gentips.js?v=20260627k"></script>
 <script src="vocab_confusables.js?v=20260628e"></script>
+<script src="vocab_toeic_exam.js?v=20260629a"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
 <script src="vocab_legend.js?v=20260622l"></script>
 <script src="sentences.js?v=20260622l"></script>
@@ -1741,6 +1742,7 @@ const BOOKS = [
   { id:'top',     name:'토익비밀과외(최빈출)', icon:'🎯', color:'#0ea5e9', data:(typeof VOCAB_SECRET_TOP !=='undefined'?VOCAB_SECRET_TOP :[]) },
   { id:'hackers', name:'해커스(토익)',   icon:'📕', color:'#ef4444', data:(typeof VOCAB_HACKERS   !=='undefined'?VOCAB_HACKERS   :[]) },
   { id:'eduwill', name:'에듀윌(토익)',   icon:'📙', color:'#f59e0b', data:(typeof VOCAB_EDUWILL   !=='undefined'?VOCAB_EDUWILL   :[]) },
+  { id:'texam',   name:'토익 기출 단어', icon:'📘', color:'#1d4e89', unitLabel:'Chapter', data:(typeof VOCAB_TOEIC_EXAM !=='undefined'?VOCAB_TOEIC_EXAM :[]) },
   { id:'kst',     name:'경선식(토익)', icon:'🚀', color:'#2563eb', data:(typeof VOCAB_KSS_TOEIC !=='undefined'?VOCAB_KSS_TOEIC :[]) },
   { id:'kstn1',   name:'경선식 최신(토익)', icon:'🎯', color:'#eab308', unitLabel:'Lecture', data:(typeof VOCAB_KSTN1 !=='undefined'?VOCAB_KSTN1 :[]) },
   { id:'ns',      name:'뇌새김(토익)', icon:'💭', color:'#f97316', data:(typeof VOCAB_NOISAEGIM !=='undefined'?VOCAB_NOISAEGIM :[]) },
@@ -2405,7 +2407,7 @@ function bookStats(b){
   });
   return { learned, total, doneDays, days:b.data.length };
 }
-const COVER={ siwon:'covers/siwon.jpg', top:'covers/top.jpg', eduwill:'covers/eduwill.jpg', wang:'covers/wang.jpg', hackers:'covers/hackers.jpg', kss:'covers/kss.jpg', kssb:'covers/kssb.jpg', kst:'covers/kst.jpg', kstn1:'covers/kstn1.jpg', legend:'covers/legend.jpg', ns:'covers/ns.jpg' };
+const COVER={ siwon:'covers/siwon.jpg', top:'covers/top.jpg', eduwill:'covers/eduwill.jpg', texam:'covers/texam.jpg', wang:'covers/wang.jpg', hackers:'covers/hackers.jpg', kss:'covers/kss.jpg', kssb:'covers/kssb.jpg', kst:'covers/kst.jpg', kstn1:'covers/kstn1.jpg', legend:'covers/legend.jpg', ns:'covers/ns.jpg' };
 // ===== 단어장 순서 드래그(꾹 눌러 이동) — 사용자별 저장 =====
 let _bookSortable=null, _bookSortTries=0;
 function initBookSort(){
