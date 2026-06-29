@@ -1688,7 +1688,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260629b';
+  window.APP_VERSION='20260629c';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1797,7 +1797,7 @@ const totalDayCount = () => BOOKS.reduce((s,b)=>s+b.data.length,0);
 // 카드/목록에서 보여줄 '연상' 텍스트: assoc 우선, 없으면 경선식 계열 책의 tip(자체가 연상)
 function wordAssoc(w, book){
   if(w && w.assoc) return w.assoc;
-  if(w && w.tip && (book==='kstn1' || book==='kst' || book==='kss')) return w.tip;
+  if(w && w.tip && (book==='kstn1' || book==='kst' || book==='kss' || book==='kssb')) return w.tip;
   return '';
 }
 
