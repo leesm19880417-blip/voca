@@ -729,6 +729,31 @@
   .lcg-opt.ok{ border-color:var(--primary); background:var(--primary); color:#fff; }
   .lcg-opt.no{ border-color:#fca5a5; background:var(--danger-light); color:var(--danger); }
   .lcg-note{ font-size:0.85em; color:var(--text-light); margin-top:8px; line-height:1.5; }
+  .mock-player{ position:sticky; top:0; z-index:5; background:var(--surface); border:1.5px solid var(--border); border-radius:14px; padding:12px; margin-bottom:12px; box-shadow:var(--shadow-sm); }
+  .mock-seekwrap{ display:flex; align-items:center; gap:8px; margin-top:10px; }
+  .mock-seekwrap input{ flex:1; }
+  .mock-time{ font-size:0.78em; color:var(--text-light); font-variant-numeric:tabular-nums; white-space:nowrap; }
+  .mock-rate{ display:flex; align-items:center; gap:6px; margin-top:8px; font-size:0.8em; color:var(--text-light); }
+  .mock-rate button{ padding:3px 10px; border:1px solid var(--border); background:var(--surface); color:var(--text); border-radius:8px; font-weight:700; cursor:pointer; }
+  .mock-rate button.on{ background:var(--primary); color:#fff; border-color:var(--primary); }
+  .mock-hint{ font-size:0.8em; color:var(--text-light); margin-bottom:8px; }
+  .mock-qwrap{ display:flex; flex-direction:column; gap:6px; }
+  .mock-qimg{ width:100%; border:1px solid var(--border); border-radius:8px; cursor:zoom-in; background:#fff; }
+  .mock-grid{ display:grid; grid-template-columns:1fr 1fr; gap:4px 12px; }
+  .mock-row{ display:flex; align-items:center; gap:5px; padding:3px 0; }
+  .mock-qn{ width:26px; text-align:right; font-size:0.82em; font-weight:700; color:var(--text-light); }
+  .mock-opt{ width:30px; height:30px; border:1.5px solid var(--border); background:var(--surface); color:var(--text); border-radius:50%; font-size:0.8em; font-weight:800; cursor:pointer; padding:0; }
+  .mock-opt.sel{ background:var(--primary); color:#fff; border-color:var(--primary); }
+  .mock-opt.ok{ background:var(--primary); color:#fff; border-color:var(--primary); }
+  .mock-opt.no{ background:var(--danger-light); color:var(--danger); border-color:#fca5a5; }
+  .mock-part{ grid-column:1/-1; font-size:0.72em; font-weight:700; color:var(--primary); background:var(--surface-2); border-radius:6px; padding:4px 8px; margin:5px 0; text-align:center; }
+  .mock-scorebox{ text-align:center; padding:18px; background:var(--surface-2); border-radius:14px; }
+  .mock-score{ font-size:2.6em; font-weight:800; color:var(--primary); }
+  .mock-score span{ font-size:0.4em; color:var(--text-light); }
+  .mock-scoresub{ font-size:0.86em; color:var(--text-light); margin-top:2px; }
+  .mock-wrong{ font-size:0.84em; color:var(--text); margin-top:10px; line-height:1.5; word-break:break-all; }
+  .imgfs{ position:fixed; inset:0; background:rgba(0,0,0,.85); z-index:9999; display:flex; align-items:center; justify-content:center; padding:10px; overflow:auto; }
+  .imgfs img{ max-width:100%; border-radius:6px; }
   .push-box{ margin-top:18px; padding:14px 16px; background:var(--surface-2); border:1.5px solid var(--border); border-radius:14px; }
   .push-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
   .push-head small{ color:var(--text-light); font-size:0.8em; }
@@ -1178,11 +1203,19 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
-    <div class="lc-entry" onclick="openAB('atlc')">
-      <img class="lc-entry-cover" src="covers/atlc.svg" alt="토익 LC 실전 모의고사">
+    <div class="lc-entry" onclick="openMock()">
+      <img class="lc-entry-cover" src="covers/atlc.svg" alt="실전 모의고사 문제풀이">
       <div class="lc-entry-body">
-        <b>토익 LC 실전 모의고사</b>
-        <small>Actual Test 3회 · 빠른속도 · 영국호주 발음 훈련</small>
+        <b>실전 모의고사 (문제풀이) <span class="ai-badge" style="background:#1d4e89">채점</span></b>
+        <small>Actual Test 3회 · 음원+문제+자동채점+스크립트</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
+    <div class="lc-entry" onclick="openAB('atlc')">
+      <span class="lc-entry-ico">⏩</span>
+      <div class="lc-entry-body">
+        <b>실전 모의고사 음원 (듣기 전용)</b>
+        <small>Actual Test 3회 · 빠른속도(FAST) · 영국호주 발음 훈련</small>
       </div>
       <span class="lc-entry-go">→</span>
     </div>
@@ -1414,6 +1447,16 @@
     <div class="section-label">⭐ 즐겨찾기 <span id="bm-count" style="color:var(--text-light); font-weight:600;"></span></div>
     <div id="bm-actions" class="mode-grid" style="grid-template-columns:1fr 1fr;"></div>
     <div class="word-list" id="bookmarks-list"></div>
+  </div>
+
+  <!-- 실전 모의고사 문제풀이 -->
+  <div id="view-mock" class="view">
+    <div class="stack-header">
+      <button class="icon-btn" onclick="mockBack()">←</button>
+      <div class="stack-title" id="mock-title">📄 실전 모의고사</div>
+      <div class="stack-title" id="mock-hd" style="flex:0 0 auto; font-size:0.82em; color:var(--primary);"></div>
+    </div>
+    <div id="mock-body"></div>
   </div>
 
   <!-- AI LC 문제풀이 -->
@@ -1750,7 +1793,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260705b';
+  window.APP_VERSION='20260705c';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1785,6 +1828,7 @@
 <script src="vocab_toeic_exam.js?v=20260629a"></script>
 <script src="lc_audio_extra.js?v=20260629e"></script>
 <script src="lcgen.js?v=20260705b"></script>
+<script src="mock_lc.js?v=20260705c"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
 <script src="vocab_legend.js?v=20260622l"></script>
 <script src="sentences.js?v=20260622l"></script>
@@ -1964,7 +2008,7 @@ let assocRecall = (localStorage.getItem('fc_assocrecall') === '1'); // 연상 �
 let exampleCloze = (localStorage.getItem('fc_cloze') === '1'); // 문맥 빈칸(예문 속 단어) (기본 꺼짐)
 let _fcClozeShown = false; // 현재 카드 앞면이 문맥 빈칸인지 (자동발음 금지용)
 
-const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result','confuse','lcgen'];
+const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result','confuse','lcgen','mock'];
 const $ = id => document.getElementById(id);
 // Firebase 키 금지문자(. # $ / [ ])는 _로 치환 — 안 하면 해당 단어 학습 시 클라우드 저장 전체가 실패함
 const safeKeyPart = s => String(s).replace(/[.#$/\[\]]/g, '_');
@@ -3733,6 +3777,100 @@ function renderBookmarks(){
 }
 
 // ============ 오답노트 (전 단어장 통합) ============
+// ===== 실전 모의고사 LC (음원 + 문제이미지 + 자동채점 + 스크립트) =====
+let _mockT=null, _mockAns={};
+function mockData(){ return (typeof MOCK_LC!=='undefined')?MOCK_LC:[]; }
+function openMock(){ _mockT=null; showView('mock'); renderMockList(); }
+function mockBack(){ if(_mockT){ lcStop&&lcStop(); try{if(_lcAudio)_lcAudio.pause();}catch(e){} _mockT=null; renderMockList(); } else { showView('home'); } }
+function renderMockList(){
+  $('mock-title').textContent='📄 실전 모의고사'; $('mock-hd').textContent='';
+  const d=mockData();
+  $('mock-body').innerHTML=`<p class="weak-desc" style="margin:4px 2px 16px">실제 시험처럼 음원을 <b>멈추지 말고</b> 들으며 100문항을 풀어요. 다 풀면 자동 채점 + 스크립트로 복습! (약 45분)</p>
+    ${d.map(t=>`<div class="review-card rc-due" onclick="mockStart(${t.n})" style="margin-bottom:12px">
+      <div class="rc-left"><span class="rc-ico">🎧</span><div><b>Actual Test ${t.n}</b><small>LC 100문항 · Part 1~4 · 자동 채점</small></div></div>
+      <span class="rc-go">시작 →</span></div>`).join('')}`;
+}
+function mockStart(n){
+  const t=mockData().find(x=>x.n===n); if(!t) return;
+  _mockT=t; _mockAns={};
+  $('mock-title').textContent=`Actual Test ${n}`;
+  const imgs=t.qpages.map(f=>`<img class="mock-qimg" loading="lazy" src="mock_img/${f}" onclick="openImgFs('mock_img/${f}')">`).join('');
+  // 답안 그리드 Q1~100
+  let grid='';
+  for(let q=1;q<=100;q++){
+    grid+=`<div class="mock-row" id="mock-row-${q}"><span class="mock-qn">${q}</span>${['A','B','C','D'].map((L,i)=>`<button class="mock-opt" id="mock-o-${q}-${i}" onclick="mockPick(${q},${i})">${L}</button>`).join('')}</div>`;
+    if(q===6) grid+='<div class="mock-part">▲ Part 1 &nbsp;/&nbsp; ▼ Part 2 (사진·대화는 음원으로)</div>';
+    if(q===31) grid+='<div class="mock-part">▼ Part 3 (대화)</div>';
+    if(q===70) grid+='<div class="mock-part">▼ Part 4 (담화)</div>';
+  }
+  $('mock-body').innerHTML=`
+    <div class="mock-player">
+      <button id="mock-playbtn" class="lcg-play" onclick="mockPlay(${n})">▶︎ 음원 재생 / 일시정지</button>
+      <div class="mock-seekwrap"><input type="range" id="mock-seek" min="0" max="1000" value="0" oninput="mockSeek(this.value)"><span id="mock-time" class="mock-time">0:00</span></div>
+      <div class="mock-rate">배속 <button onclick="mockRate(0.8)">0.8x</button><button onclick="mockRate(1)" class="on" id="mock-r1">1x</button><button onclick="mockRate(1.2)">1.2x</button></div>
+    </div>
+    <div class="mock-hint">📄 아래 문제를 보며 들으세요 (탭하면 크게). Part 2는 문제지에 안 나와요(음원만).</div>
+    <div class="mock-qwrap">${imgs}</div>
+    <div class="section-label" style="margin-top:20px">✏️ 답안지 (100문항)</div>
+    <div class="mock-grid">${grid}</div>
+    <button class="btn btn-primary btn-block" style="margin-top:16px" onclick="mockGrade()">채점하기 (${'<span id=\"mock-cnt\">0</span>'}/100)</button>
+    <div id="mock-result" style="margin-top:16px"></div>`;
+  mockUpdCnt();
+  window.scrollTo(0,0);
+}
+function mockPick(q,i){
+  _mockAns[q]=i;
+  ['A','B','C','D'].forEach((_,j)=>{ const b=$(`mock-o-${q}-${j}`); if(b) b.classList.toggle('sel', j===i); });
+  mockUpdCnt();
+}
+function mockUpdCnt(){ const c=$('mock-cnt'); if(c) c.textContent=Object.keys(_mockAns).length; }
+let _mockRate=1;
+function mockAudSrc(t){ return 'LC_actual/'+encodeURIComponent(t.audio); }
+function mockPlay(n){
+  const t=_mockT; if(!t) return;
+  if(_lcAudio && _lcAudio.src && _lcAudio.src.indexOf(encodeURIComponent(t.audio))>=0){
+    if(_lcAudio.paused){ _lcAudio.play(); $('mock-playbtn').classList.add('playing'); }
+    else { _lcAudio.pause(); $('mock-playbtn').classList.remove('playing'); }
+    return;
+  }
+  try{ if(_lcAudio) _lcAudio.pause(); }catch(e){}
+  _lcAudio=new Audio(mockAudSrc(t)); _lcAudio.playbackRate=_mockRate;
+  _lcAudio.ontimeupdate=()=>{ const s=$('mock-seek'),tm=$('mock-time'); if(s&&_lcAudio.duration){ s.value=Math.round(_lcAudio.currentTime/_lcAudio.duration*1000); } if(tm){ tm.textContent=fmtT(_lcAudio.currentTime)+' / '+fmtT(_lcAudio.duration||0); } };
+  _lcAudio.onended=()=>{ const b=$('mock-playbtn'); if(b) b.classList.remove('playing'); };
+  _lcAudio.play().then(()=>{ $('mock-playbtn').classList.add('playing'); }).catch(()=>{});
+}
+function fmtT(s){ s=Math.floor(s||0); return Math.floor(s/60)+':'+String(s%60).padStart(2,'0'); }
+function mockSeek(v){ if(_lcAudio&&_lcAudio.duration){ _lcAudio.currentTime=v/1000*_lcAudio.duration; } }
+function mockRate(r){ _mockRate=r; if(_lcAudio) _lcAudio.playbackRate=r; document.querySelectorAll('.mock-rate button').forEach(b=>b.classList.remove('on')); const el=[...document.querySelectorAll('.mock-rate button')].find(b=>b.textContent===r+'x'); if(el) el.classList.add('on'); }
+function mockGrade(){
+  const t=_mockT; if(!t) return;
+  const ans=t.answers; let ok=0; const wrong=[];
+  for(let q=1;q<=100;q++){
+    const correct='ABCD'.indexOf(ans[q-1]);
+    const sel=_mockAns[q];
+    const row=$(`mock-row-${q}`);
+    ['A','B','C','D'].forEach((_,j)=>{ const b=$(`mock-o-${q}-${j}`); if(!b)return; b.disabled=true; b.classList.remove('sel'); if(j===correct) b.classList.add('ok'); else if(j===sel) b.classList.add('no'); });
+    if(sel===correct){ ok++; } else { wrong.push(q); }
+  }
+  const score=ok, lc=Math.min(495, Math.round(ok*4.95/5)*5+5);  // 대략 환산
+  try{ if(_lcAudio) _lcAudio.pause(); }catch(e){}
+  const r=$('mock-result');
+  r.innerHTML=`<div class="mock-scorebox">
+    <div class="mock-score">${score}<span>/100</span></div>
+    <div class="mock-scoresub">맞은 개수 · 대략 LC ${lc}점 안팎</div>
+    <div class="mock-wrong">${wrong.length?('틀린 문항: '+wrong.join(', ')):'전부 정답! 🏆'}</div>
+    <button class="btn btn-primary btn-block" style="margin-top:12px" onclick="mockShowScript()">📄 스크립트·해설 보기</button>
+  </div><div id="mock-script"></div>`;
+  r.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function mockShowScript(){
+  const t=_mockT; const el=$('mock-script'); if(!el) return;
+  el.innerHTML=`<div class="section-label" style="margin-top:18px">📄 정답 및 스크립트</div>`+
+    t.spages.map(f=>`<img class="mock-qimg" loading="lazy" src="mock_img/${f}" onclick="openImgFs('mock_img/${f}')">`).join('');
+  el.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function openImgFs(src){ const o=document.createElement('div'); o.className='imgfs'; o.onclick=()=>o.remove(); o.innerHTML=`<img src="${src}">`; document.body.appendChild(o); }
+
 // ===== AI LC 문제풀이 (TTS 성우 재생 + 자동 채점) =====
 let _lcgMode='p2', _lcgOrder={p2:[],p3:[],p4:[]}, _lcgPos={p2:0,p3:0,p4:0}, _lcgScore={ok:0,tot:0};
 let _lcgAudio=null, _lcgTok=0, _lcgDone=false, _lcgSel={};
