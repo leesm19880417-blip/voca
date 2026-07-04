@@ -706,6 +706,29 @@
   .cf-opt.cf-ok{ border-color:var(--primary); background:var(--primary); color:#fff; }
   .cf-opt.cf-no{ border-color:#fca5a5; background:var(--danger-light); color:var(--danger); }
   .cf-q-tip{ margin-top:16px; padding:13px 15px; background:var(--surface-2); border-radius:12px; font-size:0.92em; line-height:1.6; }
+  .lcg-tabs{ display:flex; gap:8px; margin-bottom:16px; }
+  .lcg-tabs .chip.on{ background:var(--primary); color:#fff; border-color:var(--primary); }
+  .lcg-card{ background:var(--surface); border:1.5px solid var(--border); border-radius:var(--r); padding:18px; box-shadow:var(--shadow-sm); }
+  .lcg-prog{ text-align:center; font-size:0.82em; color:var(--text-light); font-weight:700; margin-bottom:14px; }
+  .lcg-play{ display:block; width:100%; padding:16px; font-size:1.05em; font-weight:800; color:#fff; background:linear-gradient(135deg,var(--primary),#0f766e); border:none; border-radius:14px; cursor:pointer; margin-bottom:16px; }
+  .lcg-play.playing{ opacity:0.75; animation:lcgpulse 1.2s ease-in-out infinite; }
+  @keyframes lcgpulse{ 50%{ transform:scale(0.985); } }
+  .lcg-abc{ display:flex; gap:10px; }
+  .lcg-abc button{ flex:1; padding:20px 0; font-size:1.35em; font-weight:800; border:2px solid var(--border); background:var(--surface); color:var(--text); border-radius:14px; cursor:pointer; }
+  .lcg-abc button:disabled{ cursor:default; }
+  .lcg-abc button.ok{ border-color:var(--primary); background:var(--primary); color:#fff; }
+  .lcg-abc button.no{ border-color:#fca5a5; background:var(--danger-light); color:var(--danger); }
+  .lcg-result{ margin-top:16px; padding:14px 15px; background:var(--surface-2); border-radius:12px; font-size:0.92em; line-height:1.6; }
+  .lcg-line{ margin-bottom:6px; }
+  .lcg-line b.sp{ color:var(--primary); }
+  .lcg-ko{ color:var(--text-light); font-size:0.88em; margin:-2px 0 8px; }
+  .lcg-q{ margin-top:16px; padding:13px 14px; border:1.5px solid var(--border); border-radius:12px; }
+  .lcg-q-title{ font-weight:700; margin-bottom:10px; font-size:0.95em; }
+  .lcg-opt{ display:block; width:100%; text-align:left; padding:10px 12px; margin-bottom:7px; border:1.5px solid var(--border); background:var(--surface); color:var(--text); border-radius:10px; cursor:pointer; font-size:0.92em; line-height:1.4; }
+  .lcg-opt.sel{ border-color:var(--primary); background:var(--primary-light); }
+  .lcg-opt.ok{ border-color:var(--primary); background:var(--primary); color:#fff; }
+  .lcg-opt.no{ border-color:#fca5a5; background:var(--danger-light); color:var(--danger); }
+  .lcg-note{ font-size:0.85em; color:var(--text-light); margin-top:8px; line-height:1.5; }
   .push-box{ margin-top:18px; padding:14px 16px; background:var(--surface-2); border:1.5px solid var(--border); border-radius:14px; }
   .push-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; }
   .push-head small{ color:var(--text-light); font-size:0.8em; }
@@ -1163,6 +1186,14 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
+    <div class="lc-entry" onclick="openLcgen()">
+      <span class="lc-entry-ico">🎙️</span>
+      <div class="lc-entry-body">
+        <b>AI LC 문제풀이 <span class="ai-badge">AI</span></b>
+        <small>Part 2·3·4 듣고 풀기 · 성우 음성 · 자동 채점</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()">
       <img class="lc-entry-cover" src="covers/speak.jpg?v=20260622l" alt="기초영어 1000문장">
@@ -1383,6 +1414,21 @@
     <div class="section-label">⭐ 즐겨찾기 <span id="bm-count" style="color:var(--text-light); font-weight:600;"></span></div>
     <div id="bm-actions" class="mode-grid" style="grid-template-columns:1fr 1fr;"></div>
     <div class="word-list" id="bookmarks-list"></div>
+  </div>
+
+  <!-- AI LC 문제풀이 -->
+  <div id="view-lcgen" class="view">
+    <div class="stack-header">
+      <button class="icon-btn" onclick="lcgStop(); showView('home')">←</button>
+      <div class="stack-title">🎙️ AI LC 문제풀이</div>
+      <div class="stack-title" id="lcg-score" style="flex:0 0 auto; font-size:0.85em; color:var(--primary);"></div>
+    </div>
+    <div class="lcg-tabs">
+      <button class="chip" id="lcg-tab-p2" onclick="lcgMode('p2')">Part 2 응답</button>
+      <button class="chip" id="lcg-tab-p3" onclick="lcgMode('p3')">Part 3 대화</button>
+      <button class="chip" id="lcg-tab-p4" onclick="lcgMode('p4')">Part 4 담화</button>
+    </div>
+    <div id="lcg-body"></div>
   </div>
 
   <!-- 헷갈리는 단어 -->
@@ -1704,7 +1750,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260629e';
+  window.APP_VERSION='20260705a';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1738,6 +1784,7 @@
 <script src="vocab_confusables.js?v=20260628e"></script>
 <script src="vocab_toeic_exam.js?v=20260629a"></script>
 <script src="lc_audio_extra.js?v=20260629e"></script>
+<script src="lcgen.js?v=20260705a"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
 <script src="vocab_legend.js?v=20260622l"></script>
 <script src="sentences.js?v=20260622l"></script>
@@ -1917,7 +1964,7 @@ let assocRecall = (localStorage.getItem('fc_assocrecall') === '1'); // 연상 �
 let exampleCloze = (localStorage.getItem('fc_cloze') === '1'); // 문맥 빈칸(예문 속 단어) (기본 꺼짐)
 let _fcClozeShown = false; // 현재 카드 앞면이 문맥 빈칸인지 (자동발음 금지용)
 
-const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result','confuse'];
+const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result','confuse','lcgen'];
 const $ = id => document.getElementById(id);
 // Firebase 키 금지문자(. # $ / [ ])는 _로 치환 — 안 하면 해당 단어 학습 시 클라우드 저장 전체가 실패함
 const safeKeyPart = s => String(s).replace(/[.#$/\[\]]/g, '_');
@@ -3686,6 +3733,140 @@ function renderBookmarks(){
 }
 
 // ============ 오답노트 (전 단어장 통합) ============
+// ===== AI LC 문제풀이 (TTS 성우 재생 + 자동 채점) =====
+let _lcgMode='p2', _lcgOrder={p2:[],p3:[],p4:[]}, _lcgPos={p2:0,p3:0,p4:0}, _lcgScore={ok:0,tot:0};
+let _lcgAudio=null, _lcgTok=0, _lcgDone=false, _lcgSel={};
+const LCG_V={ M:'en-US-Neural2-D', W:'en-US-Neural2-F', M2:'en-GB-Neural2-B', W2:'en-AU-Neural2-A' };
+function lcgData(){ return (typeof LCGEN!=='undefined')?LCGEN:{p2:[],p3:[],p4:[]}; }
+async function lcgTtsSrc(text, voice){
+  const key=voice+'|'+text;
+  if(_ttsCache[key]) return _ttsCache[key];
+  if(!ttsReady()) return null;
+  try{
+    const res=await fetch('https://texttospeech.googleapis.com/v1/text:synthesize?key='+encodeURIComponent(GOOGLE_TTS_KEY),{
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({ input:{text:text}, voice:{languageCode:voice.slice(0,5), name:voice}, audioConfig:{audioEncoding:'MP3', speakingRate:1.0} })
+    });
+    const data=await res.json();
+    if(data&&data.audioContent){ const src='data:audio/mp3;base64,'+data.audioContent; _ttsCache[key]=src; return src; }
+  }catch(e){}
+  return null;
+}
+function lcgStop(){ _lcgTok++; try{ if(_lcgAudio){ _lcgAudio.pause(); _lcgAudio=null; } }catch(e){} try{ window.speechSynthesis&&speechSynthesis.cancel(); }catch(e){} const b=$('lcg-playbtn'); if(b) b.classList.remove('playing'); }
+async function lcgPlaySeq(segs){
+  lcgStop(); const tok=++_lcgTok;
+  const btn=$('lcg-playbtn'); if(btn) btn.classList.add('playing');
+  for(const s of segs){
+    if(tok!==_lcgTok) return;
+    const src=await lcgTtsSrc(s.t, s.v||LCG_V.W);
+    if(tok!==_lcgTok) return;
+    if(src){
+      await new Promise(res=>{ _lcgAudio=new Audio(src); _lcgAudio.onended=res; _lcgAudio.onerror=res; _lcgAudio.play().catch(res); });
+    } else {
+      await new Promise(res=>{ try{ const u=new SpeechSynthesisUtterance(s.t); u.lang='en-US'; u.rate=0.95; u.onend=res; u.onerror=res; speechSynthesis.speak(u); }catch(e){ res(); } });
+    }
+    if(tok!==_lcgTok) return;
+    if(s.p) await new Promise(r=>setTimeout(r, s.p));
+  }
+  if(tok===_lcgTok && btn) btn.classList.remove('playing');
+}
+function openLcgen(){
+  const d=lcgData();
+  ['p2','p3','p4'].forEach(k=>{ if(!_lcgOrder[k].length && (d[k]||[]).length){ _lcgOrder[k]=shuffle(d[k].map((_,i)=>i)); _lcgPos[k]=0; } });
+  showView('lcgen'); lcgMode(_lcgMode);
+}
+function lcgMode(m){ lcgStop(); _lcgMode=m; _lcgDone=false; _lcgSel={};
+  ['p2','p3','p4'].forEach(k=>{ const t=$('lcg-tab-'+k); if(t) t.classList.toggle('on', k===m); });
+  renderLcg();
+}
+function lcgCur(){ const d=lcgData()[_lcgMode]||[]; const ord=_lcgOrder[_lcgMode]; if(!d.length||!ord.length) return null; return d[ord[_lcgPos[_lcgMode]%ord.length]]; }
+function lcgNext(){ lcgStop(); _lcgPos[_lcgMode]++; _lcgDone=false; _lcgSel={}; renderLcg(); lcgAutoPlay(); }
+function lcgScoreHtml(){ const s=_lcgScore; if($('lcg-score')) $('lcg-score').textContent = s.tot? `${s.ok}/${s.tot}` : ''; }
+function renderLcg(){
+  lcgScoreHtml();
+  const el=$('lcg-body'); if(!el) return;
+  const it=lcgCur();
+  if(!it){ el.innerHTML='<div class="empty"><div class="e-emoji">🎙️</div><p>문제 준비 중이에요</p><p class="e-sub">잠시 후 다시 열어주세요</p></div>'; return; }
+  const pos=_lcgPos[_lcgMode]+1;
+  if(_lcgMode==='p2'){
+    el.innerHTML=`<div class="lcg-card">
+      <div class="lcg-prog">Part 2 · ${pos}번째 · 질문을 듣고 알맞은 응답을 고르세요</div>
+      <button id="lcg-playbtn" class="lcg-play" onclick="lcgPlayP2()">🔊 문제 듣기 (다시 듣기 가능)</button>
+      <div class="lcg-abc">
+        ${[0,1,2].map(i=>`<button id="lcg-abc-${i}" onclick="lcgAnsP2(${i})">${'ABC'[i]}</button>`).join('')}
+      </div>
+      <div id="lcg-result" class="lcg-result" style="display:none"></div>
+    </div>`;
+  } else {
+    const isP3=_lcgMode==='p3';
+    el.innerHTML=`<div class="lcg-card">
+      <div class="lcg-prog">${isP3?'Part 3':'Part 4'} · ${pos}번째 · ${esc(it.title||'')} · 듣고 아래 문항에 답하세요</div>
+      <button id="lcg-playbtn" class="lcg-play" onclick="lcgPlayTalk()">🔊 ${isP3?'대화':'담화'} 듣기 (다시 듣기 가능)</button>
+      ${(it.qs||[]).map((q,qi)=>`<div class="lcg-q" id="lcg-q-${qi}">
+        <div class="lcg-q-title">${qi+1}. ${esc(q.q)}</div>
+        ${q.opts.map((o,oi)=>`<button class="lcg-opt" id="lcg-opt-${qi}-${oi}" onclick="lcgSelTalk(${qi},${oi})">(${'ABCD'[oi]}) ${esc(o)}</button>`).join('')}
+        <div class="lcg-note" id="lcg-note-${qi}" style="display:none"></div>
+      </div>`).join('')}
+      <div id="lcg-result" class="lcg-result" style="display:none"></div>
+    </div>`;
+  }
+}
+function lcgAutoPlay(){ if(_lcgMode==='p2') lcgPlayP2(); else lcgPlayTalk(); }
+function lcgPlayP2(){
+  const it=lcgCur(); if(!it) return;
+  const qv = (_lcgPos[_lcgMode]%2===0)?LCG_V.M:LCG_V.W;   // 질문·응답 성우 교차
+  const ov = qv===LCG_V.M?LCG_V.W:LCG_V.M;
+  const segs=[{t:it.q, v:qv, p:700}];
+  it.opts.forEach((o,i)=>segs.push({t:'ABC'[i]+'. '+o, v:ov, p:450}));
+  lcgPlaySeq(segs);
+}
+function lcgAnsP2(i){
+  if(_lcgDone) return; _lcgDone=true;
+  const it=lcgCur(); const ok=(i===it.ans);
+  _lcgScore.tot++; if(ok) _lcgScore.ok++;
+  lcgScoreHtml();
+  [0,1,2].forEach(j=>{ const b=$('lcg-abc-'+j); if(!b) return; b.disabled=true; if(j===it.ans) b.classList.add('ok'); else if(j===i) b.classList.add('no'); });
+  const r=$('lcg-result');
+  r.style.display='';
+  r.innerHTML=`<b>${ok?'✅ 정답!':'❌ 정답은 '+('ABC'[it.ans])}</b>
+    <div class="lcg-line" style="margin-top:8px"><b>Q.</b> ${esc(it.q)} <button class="spk" onclick="lcgPlaySeq([{t:'${q(it.q)}',v:LCG_V.M}])">🔊</button></div><div class="lcg-ko">${esc(it.qko||'')}</div>
+    ${it.opts.map((o,j)=>`<div class="lcg-line"><b>(${'ABC'[j]})${j===it.ans?' ✓':''}</b> ${esc(o)}</div><div class="lcg-ko">${esc((it.optko||[])[j]||'')}</div>`).join('')}
+    ${it.note?`<div class="lcg-note">💡 ${esc(it.note)}</div>`:''}
+    <button class="btn btn-primary btn-block" style="margin-top:12px" onclick="lcgNext()">다음 문제 →</button>`;
+}
+function lcgPlayTalk(){
+  const it=lcgCur(); if(!it) return;
+  let segs=[];
+  if(_lcgMode==='p3') segs=(it.script||[]).map(l=>({t:l.en, v:l.sp==='M'?LCG_V.M:LCG_V.W, p:250}));
+  else { const v=(it.sp==='M')?LCG_V.M:LCG_V.W; segs=(it.script||[]).map(l=>({t:l.en, v, p:180})); }
+  lcgPlaySeq(segs);
+}
+function lcgSelTalk(qi,oi){
+  if(_lcgDone) return;
+  const it=lcgCur();
+  _lcgSel[qi]=oi;
+  it.qs[qi].opts.forEach((_,j)=>{ const b=$('lcg-opt-'+qi+'-'+j); if(b) b.classList.toggle('sel', j===oi); });
+  if(Object.keys(_lcgSel).length>=it.qs.length) lcgGradeTalk();
+}
+function lcgGradeTalk(){
+  _lcgDone=true;
+  const it=lcgCur(); let okCnt=0;
+  it.qs.forEach((q,qi)=>{
+    const sel=_lcgSel[qi]; const ok=sel===q.ans; if(ok) okCnt++;
+    _lcgScore.tot++; if(ok) _lcgScore.ok++;
+    q.opts.forEach((_,j)=>{ const b=$('lcg-opt-'+qi+'-'+j); if(!b) return; b.disabled=true; b.classList.remove('sel'); if(j===q.ans) b.classList.add('ok'); else if(j===sel) b.classList.add('no'); });
+    const n=$('lcg-note-'+qi); if(n&&q.ko){ n.style.display=''; n.textContent='💡 '+q.ko; }
+  });
+  lcgScoreHtml();
+  const r=$('lcg-result');
+  const isP3=_lcgMode==='p3';
+  const script=(it.script||[]).map(l=>`<div class="lcg-line">${isP3?`<b class="sp">${esc(l.sp)}:</b> `:''}${esc(l.en)}</div><div class="lcg-ko">${esc(l.ko||'')}</div>`).join('');
+  r.style.display='';
+  r.innerHTML=`<b>${okCnt}/${it.qs.length} 정답!</b>
+    <details style="margin-top:10px"><summary>📄 스크립트 보기</summary><div style="margin-top:8px">${script}</div></details>
+    <button class="btn btn-primary btn-block" style="margin-top:12px" onclick="lcgNext()">다음 문제 →</button>`;
+}
+
 // ===== 헷갈리는 단어 비교 =====
 function openConfuse(){ showView('confuse'); renderConfuse(); }
 function renderConfuse(){
