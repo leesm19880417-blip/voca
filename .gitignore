@@ -66,3 +66,7 @@ _texam/
 # AI 연상 생성 작업 폴더
 _gentips/
 _gentips2/
+
+# LC 신규 음원 원본 zip(대용량)·작업 폴더 — 압축본(LC_bbo/LC_actual)만 사용
+LC음원(new)/
+_lcnew/

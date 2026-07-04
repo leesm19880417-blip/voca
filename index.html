@@ -1147,6 +1147,22 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
+    <div class="lc-entry" onclick="openAB('bblc')">
+      <img class="lc-entry-cover" src="covers/bblc.svg" alt="돌아온 토익 뽀개기 LC">
+      <div class="lc-entry-body">
+        <b>돌아온 토익 뽀개기 LC</b>
+        <small>기초·발음 훈련 + Part 1~4 유형 공략 · 137트랙</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
+    <div class="lc-entry" onclick="openAB('atlc')">
+      <img class="lc-entry-cover" src="covers/atlc.svg" alt="토익 LC 실전 모의고사">
+      <div class="lc-entry-body">
+        <b>토익 LC 실전 모의고사</b>
+        <small>Actual Test 3회 · 빠른속도 · 영국호주 발음 훈련</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()">
       <img class="lc-entry-cover" src="covers/speak.jpg?v=20260622l" alt="기초영어 1000문장">
@@ -1688,7 +1704,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260629d';
+  window.APP_VERSION='20260629e';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1721,6 +1737,7 @@
 <script src="vocab_gentips.js?v=20260629d"></script>
 <script src="vocab_confusables.js?v=20260628e"></script>
 <script src="vocab_toeic_exam.js?v=20260629a"></script>
+<script src="lc_audio_extra.js?v=20260629e"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
 <script src="vocab_legend.js?v=20260622l"></script>
 <script src="sentences.js?v=20260622l"></script>
@@ -2118,7 +2135,9 @@ function lcStop(){ if(_lcAudio){ _lcAudio.pause(); } $('lc-player').classList.re
 // ===== 음원 전용 LC (해커스 왕기초 / 서아쌤 LC 음원) =====
 const AUDIO_BOOKS={
   hlc:{data:(typeof HLC!=='undefined'?HLC:[]), base:'Hackers_Toeic_Basic_LC', title:'🎧 해커스 토익 왕기초 LC', sub:'음원 듣기 · 4주 20일'},
-  slc:{data:(typeof SLC!=='undefined'?SLC:[]), base:'LC 음원', title:'🎧 서아쌤 비밀과외 LC (음원)', sub:'음원 듣기 · Playlist 1~10', script:true}
+  slc:{data:(typeof SLC!=='undefined'?SLC:[]), base:'LC 음원', title:'🎧 서아쌤 비밀과외 LC (음원)', sub:'음원 듣기 · Playlist 1~10', script:true},
+  bblc:{data:(typeof BBLC!=='undefined'?BBLC:[]), base:'LC_bbo', title:'🎧 돌아온 토익 뽀개기 LC', sub:'기초·발음 + Part 1~4 유형 공략'},
+  atlc:{data:(typeof ATLC!=='undefined'?ATLC:[]), base:'LC_actual', title:'🎧 토익 LC 실전 모의고사', sub:'Actual Test 3회 · 빠른속도 · 영국호주 훈련'}
 };
 let _abKey='hlc', _abOpenDay=0, _abCur={d:-1,t:-1};
 function openAB(key){ if(AUDIO_BOOKS[key]) _abKey=key; _abOpenDay=0; _abCur={d:-1,t:-1}; const sc=$('ab-script'); if(sc){sc.style.display='none';sc.innerHTML='';} showView('ab'); renderAB(); }
@@ -2179,7 +2198,7 @@ function renderAB(){
   abHighlight();
 }
 function abToggleDay(i){ _abOpenDay=(_abOpenDay===i?-1:i); renderAB(); }
-function abSrc(di,ti){ const cfg=AUDIO_BOOKS[_abKey],d=cfg.data[di],t=d.tracks[ti]; return encodeURIComponent(cfg.base)+'/'+encodeURIComponent(d.day)+'/'+encodeURIComponent(t.f); }
+function abSrc(di,ti){ const cfg=AUDIO_BOOKS[_abKey],d=cfg.data[di],t=d.tracks[ti]; const mid=(d.dir!==undefined)?(d.dir?encodeURIComponent(d.dir)+'/':''):encodeURIComponent(d.day)+'/'; return encodeURIComponent(cfg.base)+'/'+mid+encodeURIComponent(t.f); }
 function abPlay(di,ti){
   const cfg=AUDIO_BOOKS[_abKey],d=cfg.data[di]; if(!d||!d.tracks[ti]) return;
   _abCur={d:di,t:ti};
