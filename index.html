@@ -1508,8 +1508,8 @@
   <!-- AI LC 문제풀이 -->
   <div id="view-lcgen" class="view">
     <div class="stack-header">
-      <button class="icon-btn" onclick="lcgStop(); showView('home')">←</button>
-      <div class="stack-title">🎙️ AI LC 문제풀이</div>
+      <button class="icon-btn" onclick="lcgStop(); lcgBack()">←</button>
+      <div class="stack-title" id="lcg-title">🎙️ AI LC 문제풀이</div>
       <div class="stack-title" id="lcg-score" style="flex:0 0 auto; font-size:0.85em; color:var(--primary);"></div>
     </div>
     <div class="lcg-tabs">
@@ -1533,6 +1533,11 @@
 
   <!-- 오답노트 -->
   <div id="view-wrongs" class="view">
+    <div id="wrongq-section" style="display:none">
+      <div class="section-label">🔁 틀린 문제 (LC·RC 문제풀이)</div>
+      <p class="weak-desc">문제풀이에서 틀린 문항이에요. 다시 풀어 맞히면 사라져요 💪</p>
+      <div id="wrongq-actions" class="mode-grid" style="grid-template-columns:1fr 1fr;"></div>
+    </div>
     <div id="weak-section" style="display:none">
       <div class="section-label">🎯 취약 단어 <span id="weak-count" style="color:var(--text-light); font-weight:600;"></span></div>
       <p class="weak-desc">자주 틀린 단어예요. 집중해서 한 번 더 잡고 가요 💪</p>
@@ -1839,7 +1844,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260705e';
+  window.APP_VERSION='20260705f';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1994,7 +1999,7 @@ function wordAssoc(w, book){
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], dailyGoal:30, missTally:{}, updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], dailyGoal:30, missTally:{}, wrongQ:[], updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
@@ -3825,6 +3830,59 @@ function renderBookmarks(){
 }
 
 // ============ 오답노트 (전 단어장 통합) ============
+// ===== 틀린 문제 보관함 (LC/RC 문제풀이 오답) =====
+let _wqReview=false;
+function wqKey(kind, part, item){
+  const t = item.q || item.en || (item.script&&item.script[0]&&item.script[0].en) || (item.passage||item.text||'').slice(0,50) || JSON.stringify(item).slice(0,50);
+  return kind+'|'+part+'|'+String(t).replace(/\s+/g,' ').slice(0,70);
+}
+function saveWrongQ(kind, part, item){
+  if(!state.wrongQ) state.wrongQ=[];
+  const k=wqKey(kind,part,item);
+  if(state.wrongQ.some(w=>w.k===k)) return;
+  state.wrongQ.push({k, kind, part, item});
+  if(state.wrongQ.length>300) state.wrongQ=state.wrongQ.slice(-300);
+  saveState();
+}
+function removeWrongQ(kind, part, item){
+  if(!state.wrongQ||!state.wrongQ.length) return;
+  const k=wqKey(kind,part,item);
+  const i=state.wrongQ.findIndex(w=>w.k===k);
+  if(i>=0){ state.wrongQ.splice(i,1); saveState(); }
+}
+function wrongQGroup(kind){ const o={}; (state.wrongQ||[]).filter(w=>w.kind===kind).forEach(w=>{ (o[w.part]=o[w.part]||[]).push(w.item); }); return o; }
+function startWrongReview(kind){
+  const g=wrongQGroup(kind);
+  const parts = kind==='lc'?['p2','p3','p4']:['p5','p6','p7'];
+  const total = parts.reduce((s,p)=>s+((g[p]||[]).length),0);
+  if(!total){ toast('다시 풀 오답이 없어요 👍'); return; }
+  _wqReview=true;
+  const first=parts.find(p=>(g[p]||[]).length)||parts[0];
+  if(kind==='lc'){
+    lcgLoad({p2:g.p2||[], p3:g.p3||[], p4:g.p4||[]}, true); _lcgHome='wrongs';
+    if($('lcg-title')) $('lcg-title').textContent='🔁 틀린 LC 다시풀기';
+    showView('lcgen'); lcgMode(first);
+  } else {
+    rcgLoad({p5:g.p5||[], p6:g.p6||[], p7:g.p7||[]}, true); _rcgHome='wrongs';
+    if($('rcg-title')) $('rcg-title').textContent='🔁 틀린 RC 다시풀기';
+    showView('rcgen'); rcgMode(first);
+  }
+}
+function lcgBack(){ showView(_lcgHome); if(_lcgHome==='wrongs') renderWrongs(); }
+function renderWrongQ(){
+  const sec=$('wrongq-section'); if(!sec) return;
+  const lc=wrongQGroup('lc'), rc=wrongQGroup('rc');
+  const nlc=['p2','p3','p4'].reduce((s,p)=>s+((lc[p]||[]).length),0);
+  const nrc=['p5','p6','p7'].reduce((s,p)=>s+((rc[p]||[]).length),0);
+  if(!nlc && !nrc){ sec.style.display='none'; return; }
+  sec.style.display='';
+  $('wrongq-actions').innerHTML=`
+    ${nlc?`<button class="mode-btn" onclick="startWrongReview('lc')"><span class="m-ico">🎧</span><span class="m-txt"><b>틀린 LC 다시풀기</b><small>${nlc}문제</small></span></button>`:''}
+    ${nrc?`<button class="mode-btn" onclick="startWrongReview('rc')"><span class="m-ico">📖</span><span class="m-txt"><b>틀린 RC 다시풀기</b><small>${nrc}문제</small></span></button>`:''}
+    <button class="mode-btn" onclick="clearWrongQ()"><span class="m-ico">🗑️</span><span class="m-txt"><b>비우기</b><small>LC·RC 오답</small></span></button>`;
+}
+function clearWrongQ(){ if(!(state.wrongQ||[]).length) return; confirmDo('틀린 문제 비우기','LC·RC 문제풀이 오답을 모두 지울까요?',()=>{ state.wrongQ=[]; saveState(); renderWrongQ(); closeConfirm(); }); }
+
 // ===== AI RC 문제풀이 (Part 5 문법·어휘 / Part 6 문맥 / Part 7 독해) =====
 let _rcgMode='p5', _rcgOrder={p5:[],p6:[],p7:[]}, _rcgPos={p5:0,p6:0,p7:0}, _rcgScore={ok:0,tot:0}, _rcgDone=false, _rcgSel={};
 let _rcSrc=null, _rcgHome='home';
@@ -3833,10 +3891,10 @@ function rcgLoad(src, seq){
   _rcSrc=src; _rcgScore={ok:0,tot:0}; _rcgMode='p5';
   ['p5','p6','p7'].forEach(k=>{ const arr=(src[k]||[]); _rcgOrder[k]= seq? arr.map((_,i)=>i) : shuffle(arr.map((_,i)=>i)); _rcgPos[k]=0; });
 }
-function rcgBack(){ showView(_rcgHome); if(_rcgHome==='mockrc') renderMockRcList(); }
+function rcgBack(){ showView(_rcgHome); if(_rcgHome==='mockrc') renderMockRcList(); else if(_rcgHome==='wrongs') renderWrongs(); }
 function openRcgen(){
   rcgLoad((typeof RCGEN!=='undefined')?RCGEN:{p5:[],p6:[],p7:[]}, false);
-  _rcgHome='home'; if($('rcg-title')) $('rcg-title').textContent='✍️ AI RC 문제풀이';
+  _rcgHome='home'; _wqReview=false; if($('rcg-title')) $('rcg-title').textContent='✍️ AI RC 문제풀이';
   showView('rcgen'); rcgMode('p5');
 }
 // 실전 모의고사 RC (실제 300문항)
@@ -3853,7 +3911,7 @@ function renderMockRcList(){
 function mockRcStart(n){
   const t=mockRcData()['t'+n]; if(!t) return;
   rcgLoad(t, true);   // 실전은 순서대로
-  _rcgHome='mockrc'; if($('rcg-title')) $('rcg-title').textContent=`📄 Test ${n} · RC`;
+  _rcgHome='mockrc'; _wqReview=false; if($('rcg-title')) $('rcg-title').textContent=`📄 Test ${n} · RC`;
   showView('rcgen'); rcgMode('p5');
 }
 function rcgMode(m){ _rcgMode=m; _rcgDone=false; _rcgSel={};
@@ -3899,7 +3957,9 @@ function renderRcg(){
 }
 function rcgAnsP5(i){
   if(_rcgDone) return; _rcgDone=true;
-  const it=rcgCur(); const ok=(i===it.ans); _rcgScore.tot++; if(ok)_rcgScore.ok++; rcgUpdScore();
+  const it=rcgCur(); const ok=(i===it.ans); _rcgScore.tot++; if(ok)_rcgScore.ok++;
+  if(!ok) saveWrongQ('rc','p5',it); else if(_wqReview) removeWrongQ('rc','p5',it);
+  rcgUpdScore();
   it.opts.forEach((_,j)=>{ const b=$('rcg-o-'+j); if(!b)return; b.disabled=true; if(j===it.ans)b.classList.add('ok'); else if(j===i)b.classList.add('no'); });
   const r=$('rcg-result'); r.style.display='';
   r.innerHTML=`<b>${ok?'✅ 정답!':'❌ 정답은 ('+OPTL[it.ans]+')'}</b>
@@ -3919,6 +3979,7 @@ function rcgGrade(){
     q.opts.forEach((_,j)=>{ const b=$('rcg-o-'+qi+'-'+j); if(!b)return; b.disabled=true; b.classList.remove('sel'); if(j===q.ans)b.classList.add('ok'); else if(j===sel)b.classList.add('no'); });
     const n=$('rcg-note-'+qi); if(n&&(q.note||q.ko)){ n.style.display=''; n.textContent='💡 '+(q.note||q.ko); }
   });
+  if(okCnt<it.qs.length) saveWrongQ('rc',_rcgMode,it); else if(_wqReview) removeWrongQ('rc',_rcgMode,it);
   rcgUpdScore();
   const r=$('rcg-result'); r.style.display='';
   r.innerHTML=`<b>${okCnt}/${it.qs.length} 정답!</b><button class="btn btn-primary btn-block" style="margin-top:12px" onclick="rcgNext()">다음 →</button>`;
@@ -4023,7 +4084,9 @@ function openImgFs(src){ const o=document.createElement('div'); o.className='img
 let _lcgMode='p2', _lcgOrder={p2:[],p3:[],p4:[]}, _lcgPos={p2:0,p3:0,p4:0}, _lcgScore={ok:0,tot:0};
 let _lcgAudio=null, _lcgTok=0, _lcgDone=false, _lcgSel={};
 const LCG_V={ M:'en-US-Neural2-D', W:'en-US-Neural2-F', M2:'en-GB-Neural2-B', W2:'en-AU-Neural2-A' };
-function lcgData(){ return (typeof LCGEN!=='undefined')?LCGEN:{p2:[],p3:[],p4:[]}; }
+let _lcSrc=null, _lcgHome='home';
+function lcgData(){ return _lcSrc || ((typeof LCGEN!=='undefined')?LCGEN:{p2:[],p3:[],p4:[]}); }
+function lcgLoad(src, seq){ _lcSrc=src; _lcgScore={ok:0,tot:0}; ['p2','p3','p4'].forEach(k=>{ const arr=src[k]||[]; _lcgOrder[k]= seq?arr.map((_,i)=>i):shuffle(arr.map((_,i)=>i)); _lcgPos[k]=0; }); }
 async function lcgTtsSrc(text, voice){
   const key=voice+'|'+text;
   if(_ttsCache[key]) return _ttsCache[key];
@@ -4057,9 +4120,12 @@ async function lcgPlaySeq(segs){
   if(tok===_lcgTok && btn) btn.classList.remove('playing');
 }
 function openLcgen(){
+  lcgLoad((typeof LCGEN!=='undefined')?LCGEN:{p2:[],p3:[],p4:[]}, false);
+  _lcSrc=null; _lcgHome='home'; _wqReview=false;
   const d=lcgData();
   ['p2','p3','p4'].forEach(k=>{ if(!_lcgOrder[k].length && (d[k]||[]).length){ _lcgOrder[k]=shuffle(d[k].map((_,i)=>i)); _lcgPos[k]=0; } });
-  showView('lcgen'); lcgMode(_lcgMode);
+  if($('lcg-title')) $('lcg-title').textContent='🎙️ AI LC 문제풀이';
+  showView('lcgen'); lcgMode('p2');
 }
 function lcgMode(m){ lcgStop(); _lcgMode=m; _lcgDone=false; _lcgSel={};
   ['p2','p3','p4'].forEach(k=>{ const t=$('lcg-tab-'+k); if(t) t.classList.toggle('on', k===m); });
@@ -4110,6 +4176,7 @@ function lcgAnsP2(i){
   if(_lcgDone) return; _lcgDone=true;
   const it=lcgCur(); const ok=(i===it.ans);
   _lcgScore.tot++; if(ok) _lcgScore.ok++;
+  if(!ok) saveWrongQ('lc','p2',it); else if(_wqReview) removeWrongQ('lc','p2',it);
   lcgScoreHtml();
   [0,1,2].forEach(j=>{ const b=$('lcg-abc-'+j); if(!b) return; b.disabled=true; if(j===it.ans) b.classList.add('ok'); else if(j===i) b.classList.add('no'); });
   const r=$('lcg-result');
@@ -4143,6 +4210,7 @@ function lcgGradeTalk(){
     q.opts.forEach((_,j)=>{ const b=$('lcg-opt-'+qi+'-'+j); if(!b) return; b.disabled=true; b.classList.remove('sel'); if(j===q.ans) b.classList.add('ok'); else if(j===sel) b.classList.add('no'); });
     const n=$('lcg-note-'+qi); if(n&&q.ko){ n.style.display=''; n.textContent='💡 '+q.ko; }
   });
+  if(okCnt<it.qs.length) saveWrongQ('lc',_lcgMode,it); else if(_wqReview) removeWrongQ('lc',_lcgMode,it);
   lcgScoreHtml();
   const r=$('lcg-result');
   const isP3=_lcgMode==='p3';
@@ -4235,6 +4303,7 @@ function renderWeak(){
   </div>`).join('');
 }
 function renderWrongs(){
+  renderWrongQ();
   renderWeak();
   const list=Object.values(state.wrongs).filter(Boolean);
   $('wr-count').textContent=`(${list.length})`;
@@ -4577,6 +4646,7 @@ function mergeStates(a, b){
   out.bookOrder = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.bookOrder||b.bookOrder||[]) : (b.bookOrder||a.bookOrder||[]);  // 단어장 순서: 최신 기기 우선
   out.dailyGoal = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.dailyGoal||b.dailyGoal||30) : (b.dailyGoal||a.dailyGoal||30);  // 하루 목표: 최신 기기 우선
   out.missTally = _mergeMap(a.missTally, b.missTally, (p,q)=>Math.max(p||0,q||0));  // 단어별 누적 오답: 큰 쪽 보존
+  { const seen={}, wq=[]; (a.wrongQ||[]).concat(b.wrongQ||[]).forEach(w=>{ if(w&&w.k&&!seen[w.k]){ seen[w.k]=1; wq.push(w); } }); out.wrongQ = wq.slice(-300); }  // 틀린 문제: 합집합(키 기준), 최근 300개
   out.updatedAt = (a.updatedAt&&b.updatedAt) ? (a.updatedAt>b.updatedAt?a.updatedAt:b.updatedAt) : (a.updatedAt||b.updatedAt||null);
   return out;
 }
