@@ -1233,11 +1233,19 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="section-label">📖 RC 공부하기 (독해·문법)</div>
+    <div class="lc-entry" onclick="openMockRc()">
+      <img class="lc-entry-cover" src="covers/atlc.svg" alt="실전 모의고사 RC">
+      <div class="lc-entry-body">
+        <b>실전 모의고사 RC (실제 기출) <span class="ai-badge" style="background:#1d4e89">채점</span></b>
+        <small>시원스쿨 Actual Test 3회 · Part 5·6·7 실제 300문항 · 자동채점</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
     <div class="lc-entry" onclick="openRcgen()">
       <span class="lc-entry-ico">✍️</span>
       <div class="lc-entry-body">
         <b>AI RC 문제풀이 <span class="ai-badge">AI</span></b>
-        <small>Part 5 문법·어휘 / Part 6 문맥 / Part 7 독해 · 자동 채점+해설</small>
+        <small>Part 5 문법·어휘 / Part 6 문맥 / Part 7 독해 · 무제한 · 자동 채점+해설</small>
       </div>
       <span class="lc-entry-go">→</span>
     </div>
@@ -1473,11 +1481,20 @@
     <div id="mock-body"></div>
   </div>
 
+  <!-- 실전 모의고사 RC (실제) — 회차 선택 -->
+  <div id="view-mockrc" class="view">
+    <div class="stack-header">
+      <button class="icon-btn" onclick="showView('home')">←</button>
+      <div class="stack-title">📄 실전 모의고사 RC</div>
+    </div>
+    <div id="mockrc-body"></div>
+  </div>
+
   <!-- AI RC 문제풀이 -->
   <div id="view-rcgen" class="view">
     <div class="stack-header">
-      <button class="icon-btn" onclick="showView('home')">←</button>
-      <div class="stack-title">✍️ AI RC 문제풀이</div>
+      <button class="icon-btn" onclick="rcgBack()">←</button>
+      <div class="stack-title" id="rcg-title">✍️ AI RC 문제풀이</div>
       <div class="stack-title" id="rcg-score" style="flex:0 0 auto; font-size:0.85em; color:var(--primary);"></div>
     </div>
     <div class="lcg-tabs">
@@ -1822,7 +1839,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260705d';
+  window.APP_VERSION='20260705e';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1859,6 +1876,7 @@
 <script src="lcgen.js?v=20260705b"></script>
 <script src="mock_lc.js?v=20260705c"></script>
 <script src="rcgen.js?v=20260705d"></script>
+<script src="mock_rc.js?v=20260705e"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
 <script src="vocab_legend.js?v=20260622l"></script>
 <script src="sentences.js?v=20260622l"></script>
@@ -2038,7 +2056,7 @@ let assocRecall = (localStorage.getItem('fc_assocrecall') === '1'); // 연상 �
 let exampleCloze = (localStorage.getItem('fc_cloze') === '1'); // 문맥 빈칸(예문 속 단어) (기본 꺼짐)
 let _fcClozeShown = false; // 현재 카드 앞면이 문맥 빈칸인지 (자동발음 금지용)
 
-const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result','confuse','lcgen','mock','rcgen'];
+const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result','confuse','lcgen','mock','rcgen','mockrc'];
 const $ = id => document.getElementById(id);
 // Firebase 키 금지문자(. # $ / [ ])는 _로 치환 — 안 하면 해당 단어 학습 시 클라우드 저장 전체가 실패함
 const safeKeyPart = s => String(s).replace(/[.#$/\[\]]/g, '_');
@@ -3809,11 +3827,34 @@ function renderBookmarks(){
 // ============ 오답노트 (전 단어장 통합) ============
 // ===== AI RC 문제풀이 (Part 5 문법·어휘 / Part 6 문맥 / Part 7 독해) =====
 let _rcgMode='p5', _rcgOrder={p5:[],p6:[],p7:[]}, _rcgPos={p5:0,p6:0,p7:0}, _rcgScore={ok:0,tot:0}, _rcgDone=false, _rcgSel={};
-function rcgData(){ return (typeof RCGEN!=='undefined')?RCGEN:{p5:[],p6:[],p7:[]}; }
+let _rcSrc=null, _rcgHome='home';
+function rcgData(){ return _rcSrc || ((typeof RCGEN!=='undefined')?RCGEN:{p5:[],p6:[],p7:[]}); }
+function rcgLoad(src, seq){
+  _rcSrc=src; _rcgScore={ok:0,tot:0}; _rcgMode='p5';
+  ['p5','p6','p7'].forEach(k=>{ const arr=(src[k]||[]); _rcgOrder[k]= seq? arr.map((_,i)=>i) : shuffle(arr.map((_,i)=>i)); _rcgPos[k]=0; });
+}
+function rcgBack(){ showView(_rcgHome); if(_rcgHome==='mockrc') renderMockRcList(); }
 function openRcgen(){
-  const d=rcgData();
-  ['p5','p6','p7'].forEach(k=>{ if(!_rcgOrder[k].length && (d[k]||[]).length){ _rcgOrder[k]=shuffle(d[k].map((_,i)=>i)); _rcgPos[k]=0; } });
-  showView('rcgen'); rcgMode(_rcgMode);
+  rcgLoad((typeof RCGEN!=='undefined')?RCGEN:{p5:[],p6:[],p7:[]}, false);
+  _rcgHome='home'; if($('rcg-title')) $('rcg-title').textContent='✍️ AI RC 문제풀이';
+  showView('rcgen'); rcgMode('p5');
+}
+// 실전 모의고사 RC (실제 300문항)
+function mockRcData(){ return (typeof MOCK_RC!=='undefined')?MOCK_RC:{}; }
+function openMockRc(){ showView('mockrc'); renderMockRcList(); }
+function renderMockRcList(){
+  const d=mockRcData();
+  $('mockrc-body').innerHTML=`<p class="weak-desc" style="margin:4px 2px 16px">시원스쿨 모의고사의 <b>실제 RC 문제</b>예요. Part 5·6·7을 파트별로 풀고 바로 채점·해설을 봐요.</p>
+    ${[1,2,3].map(n=>{ const t=d['t'+n]; if(!t) return ''; const tot=(t.p5.length)+(t.p6.reduce((s,x)=>s+x.qs.length,0))+(t.p7.reduce((s,x)=>s+x.qs.length,0));
+      return `<div class="review-card rc-due" onclick="mockRcStart(${n})" style="margin-bottom:12px">
+        <div class="rc-left"><span class="rc-ico">📄</span><div><b>Actual Test ${n} · RC</b><small>Part 5·6·7 · 실제 ${tot}문항</small></div></div>
+        <span class="rc-go">시작 →</span></div>`; }).join('')}`;
+}
+function mockRcStart(n){
+  const t=mockRcData()['t'+n]; if(!t) return;
+  rcgLoad(t, true);   // 실전은 순서대로
+  _rcgHome='mockrc'; if($('rcg-title')) $('rcg-title').textContent=`📄 Test ${n} · RC`;
+  showView('rcgen'); rcgMode('p5');
 }
 function rcgMode(m){ _rcgMode=m; _rcgDone=false; _rcgSel={};
   ['p5','p6','p7'].forEach(k=>{ const t=$('rcg-tab-'+k); if(t) t.classList.toggle('on', k===m); });
@@ -3831,7 +3872,7 @@ function renderRcg(){
   const pos=_rcgPos[_rcgMode]+1;
   if(_rcgMode==='p5'){
     el.innerHTML=`<div class="lcg-card">
-      <div class="lcg-prog">Part 5 · ${pos}번째 · 빈칸에 알맞은 것을 고르세요</div>
+      <div class="lcg-prog">Part 5 · ${it.n?it.n+'번':pos+'번째'} · 빈칸에 알맞은 것을 고르세요</div>
       <div class="rcg-sent">${esc(it.en).replace('______','<span class=\"rcg-blank\">______</span>')}</div>
       <div class="lcg-q-opts">${it.opts.map((o,i)=>`<button class="lcg-opt" id="rcg-o-${i}" onclick="rcgAnsP5(${i})">(${OPTL[i]}) ${esc(o)}</button>`).join('')}</div>
       <div id="rcg-result" class="lcg-result" style="display:none"></div>
@@ -3839,8 +3880,8 @@ function renderRcg(){
   } else if(_rcgMode==='p6'){
     el.innerHTML=`<div class="lcg-card">
       <div class="lcg-prog">Part 6 · ${pos}번째 · ${esc(it.title||'')} · 빈칸 4개를 채우세요</div>
-      <div class="rcg-passage">${esc(it.text).replace(/\((\d)\)______/g,'<b class=\"rcg-bn\">($1)</b> ______')}</div>
-      ${it.qs.map((q,qi)=>`<div class="lcg-q" id="rcg-q-${qi}"><div class="lcg-q-title">(${qi+1}) 번 빈칸</div>
+      <div class="rcg-passage">${esc(it.text).replace(/\((\d+)\)______/g,'<b class=\"rcg-bn\">($1)</b> ______')}</div>
+      ${it.qs.map((q,qi)=>`<div class="lcg-q" id="rcg-q-${qi}"><div class="lcg-q-title">${q.n?q.n+'번':'('+(qi+1)+')'} 빈칸</div>
         ${q.opts.map((o,oi)=>`<button class="lcg-opt" id="rcg-o-${qi}-${oi}" onclick="rcgSel(${qi},${oi})">(${OPTL[oi]}) ${esc(o)}</button>`).join('')}
         <div class="lcg-note" id="rcg-note-${qi}" style="display:none"></div></div>`).join('')}
       <div id="rcg-result" class="lcg-result" style="display:none"></div>
@@ -3849,7 +3890,7 @@ function renderRcg(){
     el.innerHTML=`<div class="lcg-card">
       <div class="lcg-prog">Part 7 · ${pos}번째 · ${esc(it.title||'')} · 지문을 읽고 답하세요</div>
       <div class="rcg-passage">${esc(it.passage).replace(/\n/g,'<br>')}</div>
-      ${it.qs.map((q,qi)=>`<div class="lcg-q" id="rcg-q-${qi}"><div class="lcg-q-title">${qi+1}. ${esc(q.q)}</div>
+      ${it.qs.map((q,qi)=>`<div class="lcg-q" id="rcg-q-${qi}"><div class="lcg-q-title">${q.n||(qi+1)}. ${esc(q.q)}</div>
         ${q.opts.map((o,oi)=>`<button class="lcg-opt" id="rcg-o-${qi}-${oi}" onclick="rcgSel(${qi},${oi})">(${OPTL[oi]}) ${esc(o)}</button>`).join('')}
         <div class="lcg-note" id="rcg-note-${qi}" style="display:none"></div></div>`).join('')}
       <div id="rcg-result" class="lcg-result" style="display:none"></div>
@@ -4048,7 +4089,7 @@ function renderLcg(){
       <div class="lcg-prog">${isP3?'Part 3':'Part 4'} · ${pos}번째 · ${esc(it.title||'')} · 듣고 아래 문항에 답하세요</div>
       <button id="lcg-playbtn" class="lcg-play" onclick="lcgPlayTalk()">🔊 ${isP3?'대화':'담화'} 듣기 (다시 듣기 가능)</button>
       ${(it.qs||[]).map((q,qi)=>`<div class="lcg-q" id="lcg-q-${qi}">
-        <div class="lcg-q-title">${qi+1}. ${esc(q.q)}</div>
+        <div class="lcg-q-title">${q.n||(qi+1)}. ${esc(q.q)}</div>
         ${q.opts.map((o,oi)=>`<button class="lcg-opt" id="lcg-opt-${qi}-${oi}" onclick="lcgSelTalk(${qi},${oi})">(${'ABCD'[oi]}) ${esc(o)}</button>`).join('')}
         <div class="lcg-note" id="lcg-note-${qi}" style="display:none"></div>
       </div>`).join('')}
