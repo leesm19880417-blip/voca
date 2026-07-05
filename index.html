@@ -1392,6 +1392,7 @@
     <div class="stack-header">
       <button class="icon-btn" onclick="exitMode()">←</button>
       <div class="stack-title" id="fc-count">1 / 30</div>
+      <button class="icon-btn" id="fc-bm" onclick="fcToggleBm()" title="즐겨찾기 추가/해제">☆</button>
       <button class="icon-btn" id="fc-cloze" onclick="toggleCloze()" title="문맥 빈칸(예문 속 단어 맞히기) 켜기/끄기">📝</button>
       <button class="icon-btn" id="fc-assocrecall" onclick="toggleAssocRecall()" title="연상 빈칸(능동 회상) 켜기/끄기">💡</button>
       <button class="icon-btn" id="fc-autospeak" onclick="toggleAutoSpeak()" title="자동 발음 켜기/끄기">🔊</button>
@@ -1852,7 +1853,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260705i';
+  window.APP_VERSION='20260706a';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -3242,6 +3243,7 @@ function renderFlashcard(){
     else { fcm.className='fc-master'; fcm.innerHTML='마스터까지 <span class="dots"><span class="md-on">'+'●'.repeat(pc)+'</span><span class="md-off">'+'○'.repeat(MASTER_DAYS-pc)+'</span></span> ('+pc+'/'+MASTER_DAYS+'일)'; }
   }
   if(autoSpeak && !_fcClozeShown) speak(w.word);  // 새 카드(앞면) 뜨면 단어 자동 발음 (문맥 빈칸이면 답 노출 방지로 생략)
+  syncFcBmBtn();
 }
 function flipCard(){
   if(_swiped){ _swiped=false; return; } // 스와이프 후엔 뒤집지 않음
@@ -3398,6 +3400,14 @@ function startReviewMode(mode, nChoices){
   }
 }
 function shuffleFlashcards(){ currentWords=shuffle(currentWords); currentIdx=0; flashFlipped=false; renderFlashcard(); toast('🔀 섞었어요'); }
+function fcCurKey(){ const w=currentWords[currentIdx]; if(!w) return null; const bk=w.book||currentBook, dy=w.day||currentDay; return {w, bk, dy, key:wordKey(bk,dy,w.word)}; }
+function syncFcBmBtn(){ const b=$('fc-bm'); if(!b) return; const c=fcCurKey(); const on=c&&!!state.bookmarks[c.key]; b.textContent=on?'★':'☆'; b.style.color=on?'#f59e0b':''; }
+function fcToggleBm(){
+  const c=fcCurKey(); if(!c) return;
+  if(state.bookmarks[c.key]){ delete state.bookmarks[c.key]; toast('☆ 즐겨찾기 해제'); }
+  else { state.bookmarks[c.key]={word:c.w.word, day:c.dy, book:c.bk}; toast('⭐ 즐겨찾기에 추가했어요'); }
+  saveState(); updateHeaderStats(); syncFcBmBtn();
+}
 function completeFlash(){
   if(studySource==='day' && currentDay){ state.completed[`${currentBook}:${currentDay}`]=true; saveState(); }
   const tot=_sessTotal||_sessMastered;
