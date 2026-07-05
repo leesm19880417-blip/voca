@@ -1844,7 +1844,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260705f';
+  window.APP_VERSION='20260705g';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1879,9 +1879,9 @@
 <script src="vocab_toeic_exam.js?v=20260629a"></script>
 <script src="lc_audio_extra.js?v=20260629e"></script>
 <script src="lcgen.js?v=20260705b"></script>
-<script src="mock_lc.js?v=20260705c"></script>
+<script src="mock_lc.js?v=20260705g"></script>
 <script src="rcgen.js?v=20260705d"></script>
-<script src="mock_rc.js?v=20260705e"></script>
+<script src="mock_rc.js?v=20260705g"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
 <script src="vocab_legend.js?v=20260622l"></script>
 <script src="sentences.js?v=20260622l"></script>
@@ -3903,9 +3903,9 @@ function openMockRc(){ showView('mockrc'); renderMockRcList(); }
 function renderMockRcList(){
   const d=mockRcData();
   $('mockrc-body').innerHTML=`<p class="weak-desc" style="margin:4px 2px 16px">시원스쿨 모의고사의 <b>실제 RC 문제</b>예요. Part 5·6·7을 파트별로 풀고 바로 채점·해설을 봐요.</p>
-    ${[1,2,3].map(n=>{ const t=d['t'+n]; if(!t) return ''; const tot=(t.p5.length)+(t.p6.reduce((s,x)=>s+x.qs.length,0))+(t.p7.reduce((s,x)=>s+x.qs.length,0));
+    ${Object.keys(d).sort().map(k=>{ const n=+k.replace('t',''); const t=d[k]; if(!t) return ''; const tot=(t.p5.length)+(t.p6.reduce((s,x)=>s+x.qs.length,0))+(t.p7.reduce((s,x)=>s+x.qs.length,0)); const nm=n===4?'해커스 만점공략':'Actual Test '+n;
       return `<div class="review-card rc-due" onclick="mockRcStart(${n})" style="margin-bottom:12px">
-        <div class="rc-left"><span class="rc-ico">📄</span><div><b>Actual Test ${n} · RC</b><small>Part 5·6·7 · 실제 ${tot}문항</small></div></div>
+        <div class="rc-left"><span class="rc-ico">📄</span><div><b>${nm} · RC</b><small>Part 5·6·7 · 실제 ${tot}문항</small></div></div>
         <span class="rc-go">시작 →</span></div>`; }).join('')}`;
 }
 function mockRcStart(n){
@@ -3996,7 +3996,7 @@ function renderMockList(){
   const d=mockData();
   $('mock-body').innerHTML=`<p class="weak-desc" style="margin:4px 2px 16px">실제 시험처럼 음원을 <b>멈추지 말고</b> 들으며 100문항을 풀어요. 다 풀면 자동 채점 + 스크립트로 복습! (약 45분)</p>
     ${d.map(t=>`<div class="review-card rc-due" onclick="mockStart(${t.n})" style="margin-bottom:12px">
-      <div class="rc-left"><span class="rc-ico">🎧</span><div><b>Actual Test ${t.n}</b><small>LC 100문항 · Part 1~4 · 자동 채점</small></div></div>
+      <div class="rc-left"><span class="rc-ico">🎧</span><div><b>${t.n===4?'해커스 만점공략':'Actual Test '+t.n}</b><small>LC 100문항 · Part 1~4 · 자동 채점</small></div></div>
       <span class="rc-go">시작 →</span></div>`).join('')}`;
 }
 function mockStart(n){
