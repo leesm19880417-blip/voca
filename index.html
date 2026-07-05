@@ -1200,6 +1200,14 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
+    <div class="lc-entry" onclick="openAB('mclc')">
+      <img class="lc-entry-cover" src="covers/mclc.jpg" alt="맨처음 토익 LC">
+      <div class="lc-entry-body">
+        <b>맨처음 토익 LC</b>
+        <small>Part 1~4 유형별 · Unit 학습 · 282트랙 · 재생/배속</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
     <div class="lc-entry" onclick="openAB('bblc')">
       <img class="lc-entry-cover" src="covers/bblc.svg" alt="돌아온 토익 뽀개기 LC">
       <div class="lc-entry-body">
@@ -1844,7 +1852,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260705h';
+  window.APP_VERSION='20260705i';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1878,6 +1886,7 @@
 <script src="vocab_confusables.js?v=20260628e"></script>
 <script src="vocab_toeic_exam.js?v=20260629a"></script>
 <script src="lc_audio_extra.js?v=20260629e"></script>
+<script src="lc_mclc.js?v=20260705i"></script>
 <script src="lcgen.js?v=20260705b"></script>
 <script src="mock_lc.js?v=20260705h"></script>
 <script src="rcgen.js?v=20260705d"></script>
@@ -2281,7 +2290,8 @@ const AUDIO_BOOKS={
   hlc:{data:(typeof HLC!=='undefined'?HLC:[]), base:'Hackers_Toeic_Basic_LC', title:'🎧 해커스 토익 왕기초 LC', sub:'음원 듣기 · 4주 20일'},
   slc:{data:(typeof SLC!=='undefined'?SLC:[]), base:'LC 음원', title:'🎧 서아쌤 비밀과외 LC (음원)', sub:'음원 듣기 · Playlist 1~10', script:true},
   bblc:{data:(typeof BBLC!=='undefined'?BBLC:[]), base:'LC_bbo', title:'🎧 돌아온 토익 뽀개기 LC', sub:'기초·발음 + Part 1~4 유형 공략'},
-  atlc:{data:(typeof ATLC!=='undefined'?ATLC:[]), base:'LC_actual', title:'🎧 토익 LC 실전 모의고사', sub:'Actual Test 3회 · 빠른속도 · 영국호주 훈련'}
+  atlc:{data:(typeof ATLC!=='undefined'?ATLC:[]), base:'LC_actual', title:'🎧 토익 LC 실전 모의고사', sub:'Actual Test 3회 · 빠른속도 · 영국호주 훈련'},
+  mclc:{data:(typeof MCLC!=='undefined'?MCLC:[]), base:'MC_LC', title:'🎧 맨처음 토익 LC', sub:'Part 1~4 유형별 · Unit 학습 · 282트랙'}
 };
 let _abKey='hlc', _abOpenDay=0, _abCur={d:-1,t:-1};
 function openAB(key){ if(AUDIO_BOOKS[key]) _abKey=key; _abOpenDay=0; _abCur={d:-1,t:-1}; const sc=$('ab-script'); if(sc){sc.style.display='none';sc.innerHTML='';} showView('ab'); renderAB(); }

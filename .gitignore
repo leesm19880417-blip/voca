@@ -83,3 +83,6 @@ _rcgen/
 
 # 모의고사 RC OCR 작업 폴더
 _rcx/
+
+# 맨처음 LC 빌드 스크립트
+_mclc_build.py
