@@ -1844,7 +1844,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260705g';
+  window.APP_VERSION='20260705h';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1879,7 +1879,7 @@
 <script src="vocab_toeic_exam.js?v=20260629a"></script>
 <script src="lc_audio_extra.js?v=20260629e"></script>
 <script src="lcgen.js?v=20260705b"></script>
-<script src="mock_lc.js?v=20260705g"></script>
+<script src="mock_lc.js?v=20260705h"></script>
 <script src="rcgen.js?v=20260705d"></script>
 <script src="mock_rc.js?v=20260705g"></script>
 <script src="vocab_noisaegim.js?v=20260622l"></script>
@@ -3996,14 +3996,27 @@ function renderMockList(){
   const d=mockData();
   $('mock-body').innerHTML=`<p class="weak-desc" style="margin:4px 2px 16px">실제 시험처럼 음원을 <b>멈추지 말고</b> 들으며 100문항을 풀어요. 다 풀면 자동 채점 + 스크립트로 복습! (약 45분)</p>
     ${d.map(t=>`<div class="review-card rc-due" onclick="mockStart(${t.n})" style="margin-bottom:12px">
-      <div class="rc-left"><span class="rc-ico">🎧</span><div><b>${t.n===4?'해커스 만점공략':'Actual Test '+t.n}</b><small>LC 100문항 · Part 1~4 · 자동 채점</small></div></div>
+      <div class="rc-left"><span class="rc-ico">🎧</span><div><b>${t.title||('Actual Test '+t.n)}</b><small>${t.selfCheck?'듣기+문제+해설 (자율 채점)':'LC 100문항 · Part 1~4 · 자동 채점'}</small></div></div>
       <span class="rc-go">시작 →</span></div>`).join('')}`;
 }
 function mockStart(n){
   const t=mockData().find(x=>x.n===n); if(!t) return;
   _mockT=t; _mockAns={};
-  $('mock-title').textContent=`Actual Test ${n}`;
+  $('mock-title').textContent=t.title||`Actual Test ${n}`;
   const imgs=t.qpages.map(f=>`<img class="mock-qimg" loading="lazy" src="mock_img/${f}" onclick="openImgFs('mock_img/${f}')">`).join('');
+  if(t.selfCheck){   // 정답표 없는 세트: 듣기+문제+해설 자율학습
+    $('mock-body').innerHTML=`
+    <div class="mock-player">
+      <button id="mock-playbtn" class="lcg-play" onclick="mockPlay(${n})">▶︎ 음원 재생 / 일시정지</button>
+      <div class="mock-seekwrap"><input type="range" id="mock-seek" min="0" max="1000" value="0" oninput="mockSeek(this.value)"><span id="mock-time" class="mock-time">0:00</span></div>
+      <div class="mock-rate">배속 <button onclick="mockRate(0.8)">0.8x</button><button onclick="mockRate(1)" class="on" id="mock-r1">1x</button><button onclick="mockRate(1.2)">1.2x</button></div>
+    </div>
+    <div class="mock-hint">📄 음원을 들으며 문제를 풀고, 아래 <b>해설 보기</b>로 정답·해설을 확인하세요 (해설에 정답이 밑줄로 표시돼 있어요).</div>
+    <div class="mock-qwrap">${imgs}</div>
+    <button class="btn btn-primary btn-block" style="margin-top:16px" onclick="mockShowScript()">📄 해설·정답 보기</button>
+    <div id="mock-result" style="margin-top:16px"></div><div id="mock-script"></div>`;
+    window.scrollTo(0,0); return;
+  }
   // 답안 그리드 Q1~100
   let grid='';
   for(let q=1;q<=100;q++){
