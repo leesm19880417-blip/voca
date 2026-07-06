@@ -757,6 +757,14 @@
   .mock-score span{ font-size:0.4em; color:var(--text-light); }
   .mock-scoresub{ font-size:0.86em; color:var(--text-light); margin-top:2px; }
   .mock-wrong{ font-size:0.84em; color:var(--text); margin-top:10px; line-height:1.5; word-break:break-all; }
+  .lcg-abc.small{ gap:8px; }
+  .lcg-abc.small button{ padding:12px 0; font-size:1.05em; }
+  .ets-setq{ border-top:1px solid var(--border); padding-top:12px; margin-top:12px; }
+  .ets-setq-t{ font-weight:600; font-size:0.95em; margin-bottom:9px; line-height:1.45; }
+  .ets-setopts{ margin-top:10px; padding:10px 12px; background:var(--surface-2); border-radius:10px; }
+  .ets-fb{ font-weight:800; margin-bottom:6px; }
+  .ets-fb.okc{ color:var(--primary); } .ets-fb.noc{ color:var(--danger); }
+  .lcg-line .sp{ color:var(--primary); }
   .ets-grid{ display:grid; grid-template-columns:repeat(10,1fr); gap:5px; }
   .ets-qn{ aspect-ratio:1; border:1.5px solid var(--border); background:var(--surface); color:var(--text); border-radius:8px; font-size:0.82em; font-weight:700; cursor:pointer; padding:0; }
   .ets-qn:active{ transform:scale(0.94); }
@@ -1895,7 +1903,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260706e';
+  window.APP_VERSION='20260706f';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1931,7 +1939,7 @@
 <script src="lc_audio_extra.js?v=20260629e"></script>
 <script src="lc_mclc.js?v=20260705i"></script>
 <script src="lc_ets.js?v=20260706b"></script>
-<script src="ets_lc1.js?v=20260706e"></script>
+<script src="ets_lc1.js?v=20260706f"></script>
 <script src="ets_rc1.js?v=20260706c"></script>
 <script src="lcgen.js?v=20260705b"></script>
 <script src="mock_lc.js?v=20260705h"></script>
@@ -3896,48 +3904,85 @@ function renderBookmarks(){
 }
 
 // ============ 오답노트 (전 단어장 통합) ============
-// ===== ETS 기출 LC 문제풀이 (문항별: 듣기 + 보기 선택 → 채점 + 해설) =====
-let _etsIdx=0, _etsDone=false, _etsAudio=null, _etsScore={ok:0,tot:0};
-function etsData(){ return (typeof ETS_LC1!=='undefined')?ETS_LC1:[]; }
+// ===== ETS 기출 LC 문제풀이 (Part1·2 문항 + Part3·4 세트: 표+대화+스크립트) =====
+let _etsIdx=0, _etsDone=false, _etsAudio=null, _etsScore={ok:0,tot:0}, _etsSetAns={};
+function etsData(){ return (typeof ETS_LC1!=='undefined')?ETS_LC1:{q12:[],sets34:[]}; }
+function etsItems(){ const d=etsData(); return [...(d.q12||[]).map(x=>({t:'q',d:x})), ...(d.sets34||[]).map(x=>({t:'s',d:x}))]; }
 function etsStop(){ try{ if(_etsAudio){ _etsAudio.pause(); _etsAudio=null; } }catch(e){} const b=$('ets-playbtn'); if(b) b.classList.remove('playing'); }
 function openEtsLc(){ _etsIdx=0; _etsScore={ok:0,tot:0}; showView('etsq'); renderEts(); }
-function etsCur(){ const d=etsData(); return d.length?d[_etsIdx%d.length]:null; }
+function etsCur(){ const its=etsItems(); return its.length?its[_etsIdx%its.length]:null; }
 function etsScoreHtml(){ if($('ets-score')) $('ets-score').textContent=_etsScore.tot?`${_etsScore.ok}/${_etsScore.tot}`:''; }
+function etsNext(){ _etsIdx++; renderEts(); window.scrollTo({top:0,behavior:'smooth'}); }
 function renderEts(){
   etsStop(); etsScoreHtml();
-  const el=$('ets-body'), it=etsCur();
+  const el=$('ets-body'), cur=etsCur();
   if(!el) return;
-  if(!it){ el.innerHTML='<div class="empty"><div class="e-emoji">🎧</div><p>문제 준비 중</p></div>'; return; }
+  if(!cur){ el.innerHTML='<div class="empty"><div class="e-emoji">🎧</div><p>문제 준비 중</p></div>'; return; }
+  const total=etsItems().length;
+  if(cur.t==='q') renderEtsQ(cur.d, total); else renderEtsSet(cur.d);
+}
+function etsPlayAudio(af){ etsStop(); const b=$('ets-playbtn'); if(b) b.classList.add('playing');
+  try{ _etsAudio=new Audio('ETS_LC/'+encodeURIComponent(af)); _etsAudio.onended=()=>{ if(b) b.classList.remove('playing'); }; _etsAudio.play().catch(()=>{}); }catch(e){} }
+// Part 1·2
+function renderEtsQ(it, total){
   _etsDone=false;
-  const nOpt=it.opts.length;
   const img=it.img?`<img class="mock-qimg" src="ets_img/${esc(it.img)}" style="max-width:440px;margin:8px auto 4px;display:block" onclick="openImgFs('ets_img/${esc(it.img)}')">`:'';
   const partlbl=it.part===1?'Part 1 (사진 묘사)':'Part 2 (질의응답)';
-  el.innerHTML=`<div class="lcg-card">
-    <div class="lcg-prog">${partlbl} · ${it.n}번 / ${etsData().length} · 듣고 정답을 고르세요</div>
+  $('ets-body').innerHTML=`<div class="lcg-card">
+    <div class="lcg-prog">${partlbl} · ${it.n}번 · 듣고 정답을 고르세요</div>
     ${img}
-    <button id="ets-playbtn" class="lcg-play" onclick="etsPlay()">🔊 음원 듣기 (다시 듣기)</button>
-    <div class="lcg-abc">${Array.from({length:nOpt},(_,i)=>`<button id="ets-o-${i}" onclick="etsAns(${i})">${'ABCD'[i]}</button>`).join('')}</div>
+    <button id="ets-playbtn" class="lcg-play" onclick="etsPlayAudio('${q(it.audio)}')">🔊 음원 듣기 (다시 듣기)</button>
+    <div class="lcg-abc">${it.opts.map((o,i)=>`<button id="ets-o-${i}" onclick="etsAnsQ(${i})">${'ABCD'[i]}</button>`).join('')}</div>
     <div id="ets-result" class="lcg-result" style="display:none"></div>
   </div>`;
 }
-function etsPlay(){
-  const it=etsCur(); if(!it) return; etsStop();
-  const b=$('ets-playbtn'); if(b) b.classList.add('playing');
-  try{ _etsAudio=new Audio('ETS_LC/'+encodeURIComponent(it.audio));
-    _etsAudio.onended=()=>{ if(b) b.classList.remove('playing'); };
-    _etsAudio.play().catch(()=>{});
-  }catch(e){}
-}
-function etsAns(i){
+function etsAnsQ(i){
   if(_etsDone) return; _etsDone=true;
-  const it=etsCur(); const ok=(i===it.ans); _etsScore.tot++; if(ok)_etsScore.ok++; etsScoreHtml();
+  const it=etsCur().d; const ok=(i===it.ans); _etsScore.tot++; if(ok)_etsScore.ok++; etsScoreHtml();
   it.opts.forEach((_,j)=>{ const bt=$('ets-o-'+j); if(!bt)return; bt.disabled=true; if(j===it.ans)bt.classList.add('ok'); else if(j===i)bt.classList.add('no'); });
   const r=$('ets-result'); r.style.display='';
-  const qline=it.q?`<div class="lcg-line"><b>Q.</b> ${esc(it.q)} <button class="spk" onclick="speak('${q(it.q)}')">🔊</button></div><div class="lcg-ko">${esc(it.qko||'')}</div>`:'';
+  const qline=it.q?`<div class="lcg-line"><b>Q.</b> ${esc(it.q)}</div><div class="lcg-ko">${esc(it.qko||'')}</div>`:'';
   const opts=it.opts.map((o,j)=>`<div class="lcg-line"><b>(${'ABCD'[j]})${j===it.ans?' ✓':''}</b> ${esc(o)}</div><div class="lcg-ko">${esc((it.optko||[])[j]||'')}</div>`).join('');
   r.innerHTML=`<b style="font-size:1.1em">${ok?'✅ 정답!':'❌ 오답 · 정답은 ('+('ABCD'[it.ans])+')'}</b>${qline}
-    <div style="margin-top:8px"><b style="font-size:0.85em;color:var(--text-light)">📝 스크립트 · 해석</b></div>${opts}
-    <button class="btn btn-primary btn-block" style="margin-top:12px" onclick="_etsIdx++; renderEts(); window.scrollTo({top:0,behavior:'smooth'})">다음 문제 →</button>`;
+    <div style="margin-top:8px"><b style="font-size:0.82em;color:var(--text-light)">📝 스크립트 · 해석</b></div>${opts}
+    <button class="btn btn-primary btn-block" style="margin-top:12px" onclick="etsNext()">다음 문제 →</button>`;
+}
+// Part 3·4 세트
+function renderEtsSet(s){
+  _etsSetAns={};
+  const g=s.gimg?`<img class="mock-qimg" src="ets_img/${esc(s.gimg)}" style="max-width:460px;margin:2px auto 10px;display:block" onclick="openImgFs('ets_img/${esc(s.gimg)}')">`:'';
+  const qs=s.qs.map((qq,qi)=>`<div class="ets-setq">
+      <div class="ets-setq-t"><b>${qq.n}.</b> ${esc(qq.q)}</div>
+      <div class="lcg-abc small">${qq.opts.map((o,j)=>`<button id="ets-so-${qi}-${j}" onclick="etsAnsSet(${qi},${j})">${'ABCD'[j]}</button>`).join('')}</div>
+      <div class="ets-setopts" id="ets-setopts-${qi}" style="display:none"></div>
+    </div>`).join('');
+  $('ets-body').innerHTML=`<div class="lcg-card">
+    <div class="lcg-prog">Part ${s.part} · ${s.start}~${s.start+2}번 · 듣고 푸세요${s.gimg?' · 표 참고':''}</div>
+    ${g}
+    <button id="ets-playbtn" class="lcg-play" onclick="etsPlayAudio('${q(s.audio)}')">🔊 ${s.part===3?'대화':'담화'} 듣기 (다시 듣기)</button>
+    ${qs}
+    <div id="ets-script" style="display:none"></div>
+    <div id="ets-setnext"></div>
+  </div>`;
+}
+function etsAnsSet(qi,j){
+  const s=etsCur().d, qq=s.qs[qi];
+  if(_etsSetAns[qi]!=null) return;
+  _etsSetAns[qi]=j;
+  const ok=(j===qq.ans); _etsScore.tot++; if(ok)_etsScore.ok++; etsScoreHtml();
+  qq.opts.forEach((_,k)=>{ const b=$(`ets-so-${qi}-${k}`); if(!b)return; b.disabled=true; if(k===qq.ans)b.classList.add('ok'); else if(k===j)b.classList.add('no'); });
+  const o=$('ets-setopts-'+qi); o.style.display='';
+  o.innerHTML=`<div class="ets-fb ${ok?'okc':'noc'}">${ok?'✅ 정답':'❌ 오답 · 정답 ('+('ABCD'[qq.ans])+')'}</div>`+
+    qq.opts.map((op,k)=>`<div class="lcg-line"><b>(${'ABCD'[k]})${k===qq.ans?' ✓':''}</b> ${esc(op)}</div>`).join('')+
+    (qq.ko?`<div class="lcg-note">💡 ${esc(qq.ko)}</div>`:'');
+  if(Object.keys(_etsSetAns).length>=s.qs.length){
+    const sc=$('ets-script');
+    if(s.script&&s.script.length){ sc.style.display='';
+      sc.innerHTML=`<div class="section-label" style="margin-top:16px">📝 전체 ${s.part===3?'대화':'담화'} 스크립트 + 해석</div>`+
+        s.script.map(l=>`<div class="lcg-line">${l.sp?`<b class="sp">${esc(l.sp)}</b> `:''}${esc(l.en)}</div><div class="lcg-ko">${esc(l.ko||'')}</div>`).join('');
+    }
+    $('ets-setnext').innerHTML=`<button class="btn btn-primary btn-block" style="margin-top:12px" onclick="etsNext()">다음 →</button>`;
+  }
 }
 // ETS 기출 RC — RC 엔진 재사용(정답+번역/해설 표시)
 function openEtsRc(){
