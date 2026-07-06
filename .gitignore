@@ -86,3 +86,11 @@ _rcx/
 
 # 맨처음 LC 빌드 스크립트
 _mclc_build.py
+
+# 알림 정시설정 안내(개인용)
+_알림_정시설정.txt
+
+# ETS 음원 빌드 스크립트
+_ets_audio.py
+# ETS 원본(대용량)
+ETS LC RC 기출문제/
