@@ -94,3 +94,7 @@ _알림_정시설정.txt
 _ets_audio.py
 # ETS 원본(대용량)
 ETS LC RC 기출문제/
+
+# ETS Test1 OCR 작업
+_ets1/
+_ets_audio.py

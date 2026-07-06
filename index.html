@@ -1200,6 +1200,14 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
+    <div class="lc-entry" onclick="openEtsLc()">
+      <img class="lc-entry-cover" src="covers/etslc.svg" alt="ETS 기출 LC 문제풀이">
+      <div class="lc-entry-body">
+        <b>ETS 기출 LC (문제풀이) <span class="ai-badge" style="background:#0b2447">Test 1</span></b>
+        <small>공식 기출 · 문제별 음원 듣고 풀기 · 정답+해석 · Part 1·2</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
     <div class="lc-entry" onclick="openAB('etslc')">
       <img class="lc-entry-cover" src="covers/etslc.svg" alt="ETS 기출 LC 음원">
       <div class="lc-entry-body">
@@ -1249,6 +1257,14 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="section-label">📖 RC 공부하기 (독해·문법)</div>
+    <div class="lc-entry" onclick="openEtsRc()">
+      <img class="lc-entry-cover" src="covers/etsrc.svg" alt="ETS 기출 RC" onerror="this.onerror=null;this.src='covers/etslc.svg'">
+      <div class="lc-entry-body">
+        <b>ETS 기출 RC (문제풀이) <span class="ai-badge" style="background:#0b2447">Test 1</span></b>
+        <small>공식 기출 · Part 5 · 정답+번역+해설 즉시</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
     <div class="lc-entry" onclick="openMockRc()">
       <img class="lc-entry-cover" src="covers/atlc.svg" alt="실전 모의고사 RC">
       <div class="lc-entry-body">
@@ -1505,6 +1521,16 @@
       <div class="stack-title">📄 실전 모의고사 RC</div>
     </div>
     <div id="mockrc-body"></div>
+  </div>
+
+  <!-- ETS 기출 LC 문제풀이 -->
+  <div id="view-etsq" class="view">
+    <div class="stack-header">
+      <button class="icon-btn" onclick="etsStop(); showView('home')">←</button>
+      <div class="stack-title">🎧 ETS 기출 LC · Test 1</div>
+      <div class="stack-title" id="ets-score" style="flex:0 0 auto; font-size:0.85em; color:var(--primary);"></div>
+    </div>
+    <div id="ets-body"></div>
   </div>
 
   <!-- AI RC 문제풀이 -->
@@ -1861,7 +1887,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260706b';
+  window.APP_VERSION='20260706c';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -1897,6 +1923,8 @@
 <script src="lc_audio_extra.js?v=20260629e"></script>
 <script src="lc_mclc.js?v=20260705i"></script>
 <script src="lc_ets.js?v=20260706b"></script>
+<script src="ets_lc1.js?v=20260706c"></script>
+<script src="ets_rc1.js?v=20260706c"></script>
 <script src="lcgen.js?v=20260705b"></script>
 <script src="mock_lc.js?v=20260705h"></script>
 <script src="rcgen.js?v=20260705d"></script>
@@ -2080,7 +2108,7 @@ let assocRecall = (localStorage.getItem('fc_assocrecall') === '1'); // 연상 �
 let exampleCloze = (localStorage.getItem('fc_cloze') === '1'); // 문맥 빈칸(예문 속 단어) (기본 꺼짐)
 let _fcClozeShown = false; // 현재 카드 앞면이 문맥 빈칸인지 (자동발음 금지용)
 
-const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result','confuse','lcgen','mock','rcgen','mockrc'];
+const STACK_VIEWS = ['lc','speak','p233','d100','comm','book','day','mywords','flashcard','quiz','typing','result','confuse','lcgen','mock','rcgen','mockrc','etsq'];
 const $ = id => document.getElementById(id);
 // Firebase 키 금지문자(. # $ / [ ])는 _로 치환 — 안 하면 해당 단어 학습 시 클라우드 저장 전체가 실패함
 const safeKeyPart = s => String(s).replace(/[.#$/\[\]]/g, '_');
@@ -3860,6 +3888,56 @@ function renderBookmarks(){
 }
 
 // ============ 오답노트 (전 단어장 통합) ============
+// ===== ETS 기출 LC 문제풀이 (문제별 음원 인라인 + 정답 + 해석) =====
+let _etsIdx=0, _etsScore={ok:0,tot:0}, _etsDone=false, _etsAudio=null, _etsTok=0;
+function etsData(){ return (typeof ETS_LC1!=='undefined')?ETS_LC1:[]; }
+function openEtsLc(){ _etsIdx=0; _etsScore={ok:0,tot:0}; showView('etsq'); renderEts(); }
+function etsStop(){ _etsTok++; try{ if(_etsAudio){ _etsAudio.pause(); _etsAudio=null; } }catch(e){} const b=$('ets-playbtn'); if(b) b.classList.remove('playing'); }
+function etsCur(){ const d=etsData(); return d.length?d[_etsIdx%d.length]:null; }
+function etsScoreHtml(){ if($('ets-score')) $('ets-score').textContent=_etsScore.tot?`${_etsScore.ok}/${_etsScore.tot}`:''; }
+function renderEts(){
+  etsStop(); etsScoreHtml();
+  const el=$('ets-body'); if(!el) return;
+  const it=etsCur();
+  if(!it){ el.innerHTML='<div class="empty"><div class="e-emoji">🎧</div><p>문제 준비 중</p></div>'; return; }
+  _etsDone=false;
+  const nOpt=it.opts.length;
+  const img=it.img?`<img class="mock-qimg" src="ets_img/${esc(it.img)}" style="max-width:440px;margin:0 auto 12px;display:block" onclick="openImgFs('ets_img/${esc(it.img)}')">`:'';
+  const partlbl=it.part===1?'Part 1 (사진 묘사)':'Part 2 (질의응답)';
+  el.innerHTML=`<div class="lcg-card">
+    <div class="lcg-prog">${partlbl} · ${it.n}번 · 음원을 듣고 고르세요</div>
+    ${img}
+    <button id="ets-playbtn" class="lcg-play" onclick="etsPlay()">▶︎ 음원 듣기 (다시 듣기)</button>
+    <div class="lcg-abc">${Array.from({length:nOpt},(_,i)=>`<button id="ets-o-${i}" onclick="etsAns(${i})">${'ABCD'[i]}</button>`).join('')}</div>
+    <div id="ets-result" class="lcg-result" style="display:none"></div>
+  </div>`;
+  etsPlay();
+}
+function etsPlay(){
+  const it=etsCur(); if(!it) return; etsStop(); const tok=++_etsTok;
+  const b=$('ets-playbtn'); if(b) b.classList.add('playing');
+  try{ _etsAudio=new Audio('ETS_LC/'+encodeURIComponent(it.audio));
+    _etsAudio.onended=()=>{ if(tok===_etsTok&&b) b.classList.remove('playing'); };
+    _etsAudio.play().catch(()=>{});
+  }catch(e){}
+}
+function etsAns(i){
+  if(_etsDone) return; _etsDone=true;
+  const it=etsCur(); const ok=(i===it.ans); _etsScore.tot++; if(ok)_etsScore.ok++; etsScoreHtml();
+  it.opts.forEach((_,j)=>{ const bt=$('ets-o-'+j); if(!bt)return; bt.disabled=true; if(j===it.ans)bt.classList.add('ok'); else if(j===i)bt.classList.add('no'); });
+  const r=$('ets-result'); r.style.display='';
+  const qline=it.q?`<div class="lcg-line"><b>Q.</b> ${esc(it.q)} <button class="spk" onclick="speak('${q(it.q)}')">🔊</button></div><div class="lcg-ko">${esc(it.qko||'')}</div>`:'';
+  const opts=it.opts.map((o,j)=>`<div class="lcg-line"><b>(${'ABCD'[j]})${j===it.ans?' ✓':''}</b> ${esc(o)}</div><div class="lcg-ko">${esc((it.optko||[])[j]||'')}</div>`).join('');
+  r.innerHTML=`<b>${ok?'✅ 정답!':'❌ 정답은 '+('ABCD'[it.ans])}</b>${qline}<div style="margin-top:8px">${opts}</div>
+    <button class="btn btn-primary btn-block" style="margin-top:12px" onclick="_etsIdx++; renderEts()">다음 →</button>`;
+}
+// ETS 기출 RC — RC 엔진 재사용(정답+번역/해설 표시)
+function openEtsRc(){
+  rcgLoad((typeof ETS_RC1!=='undefined')?ETS_RC1:{p5:[],p6:[],p7:[]}, true);
+  _rcgHome='home'; _wqReview=false; if($('rcg-title')) $('rcg-title').textContent='📘 ETS 기출 RC · Test 1';
+  showView('rcgen'); rcgMode('p5');
+}
+
 // ===== 틀린 문제 보관함 (LC/RC 문제풀이 오답) =====
 let _wqReview=false;
 function wqKey(kind, part, item){
