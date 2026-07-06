@@ -1921,7 +1921,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260706i';
+  window.APP_VERSION='20260706j';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -3925,7 +3925,7 @@ function renderBookmarks(){
 // ===== ETS 기출 LC 문제풀이 (Part1·2 문항 + Part3·4 세트: 표+대화+스크립트) =====
 let _etsIdx=0, _etsDone=false, _etsAudio=null, _etsScore={ok:0,tot:0}, _etsSetAns={};
 let _etsTest=1, _etsPart=1, _etsLevel='tests';
-function etsTestData(t){ return (t===1 && typeof ETS_LC1!=='undefined')?ETS_LC1:null; }
+function etsTestData(t){ try{ return window['ETS_LC'+t]||null; }catch(e){ return null; } }
 const ETS_PARTS=[{p:1,name:'Part 1 · 사진 묘사'},{p:2,name:'Part 2 · 질의응답'},{p:3,name:'Part 3 · 짧은 대화'},{p:4,name:'Part 4 · 짧은 담화'}];
 function etsPartItems(t,part){ const d=etsTestData(t); if(!d) return [];
   if(part<=2) return (d.q12||[]).filter(x=>x.part===part).map(x=>({t:'q',d:x}));
@@ -4036,7 +4036,7 @@ function etsAnsSet(qi,j){
 // ETS 기출 RC — Test→Part 선택 후 RC 엔진 재사용(정답+번역/해설)
 let _etsRcTest=1, _etsRcLevel='tests';
 const ETSRC_PARTS=[{p:'p5',name:'Part 5 · 문법·어휘'},{p:'p6',name:'Part 6 · 문맥'},{p:'p7',name:'Part 7 · 독해'}];
-function etsRcTestData(t){ return (t===1 && typeof ETS_RC1!=='undefined')?ETS_RC1:null; }
+function etsRcTestData(t){ try{ return window['ETS_RC'+t]||null; }catch(e){ return null; } }
 function openEtsRc(){ showView('etsrc'); renderEtsRcTests(); }
 function etsRcBack(){ if(_etsRcLevel==='parts') renderEtsRcTests(); else showView('home'); }
 function renderEtsRcTests(){
