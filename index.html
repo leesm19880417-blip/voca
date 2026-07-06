@@ -757,6 +757,10 @@
   .mock-score span{ font-size:0.4em; color:var(--text-light); }
   .mock-scoresub{ font-size:0.86em; color:var(--text-light); margin-top:2px; }
   .mock-wrong{ font-size:0.84em; color:var(--text); margin-top:10px; line-height:1.5; word-break:break-all; }
+  .ets-nav{ display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:12px; }
+  .ets-navbtn{ padding:8px 16px; border:1.5px solid var(--border); background:var(--surface); color:var(--text); border-radius:10px; font-weight:800; font-size:0.9em; cursor:pointer; }
+  .ets-navbtn:active{ transform:scale(0.96); }
+  .ets-pos{ font-size:0.85em; font-weight:700; color:var(--text-light); }
   .lcg-abc.small{ gap:8px; }
   .lcg-abc.small button{ padding:12px 0; font-size:1.05em; }
   .ets-setq{ border-top:1px solid var(--border); padding-top:12px; margin-top:12px; }
@@ -1217,7 +1221,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openEtsLc()">
-      <img class="lc-entry-cover" src="covers/etslc.svg" alt="ETS 기출 LC 문제풀이">
+      <img class="lc-entry-cover" src="covers/etslc.jpg" alt="ETS 기출 LC 문제풀이">
       <div class="lc-entry-body">
         <b>ETS 기출 LC (문제풀이) <span class="ai-badge" style="background:#0b2447">Test 1</span></b>
         <small>공식 기출 · 문제별 음원 듣고 풀기 · 정답+해석 · Part 1·2</small>
@@ -1225,7 +1229,7 @@
       <span class="lc-entry-go">→</span>
     </div>
     <div class="lc-entry" onclick="openAB('etslc')">
-      <img class="lc-entry-cover" src="covers/etslc.svg" alt="ETS 기출 LC 음원">
+      <img class="lc-entry-cover" src="covers/etslc.jpg" alt="ETS 기출 LC 음원">
       <div class="lc-entry-body">
         <b>ETS 기출 LC (음원)</b>
         <small>공식 기출 Test 1~10 · 문제별 음원 · 재생/배속</small>
@@ -1274,7 +1278,7 @@
     </div>
     <div class="section-label">📖 RC 공부하기 (독해·문법)</div>
     <div class="lc-entry" onclick="openEtsRc()">
-      <img class="lc-entry-cover" src="covers/etsrc.svg" alt="ETS 기출 RC" onerror="this.onerror=null;this.src='covers/etslc.svg'">
+      <img class="lc-entry-cover" src="covers/etsrc.jpg" alt="ETS 기출 RC" onerror="this.onerror=null;this.src='covers/etslc.jpg'">
       <div class="lc-entry-body">
         <b>ETS 기출 RC (문제풀이) <span class="ai-badge" style="background:#0b2447">Test 1</span></b>
         <small>공식 기출 · Part 5 · 정답+번역+해설 즉시</small>
@@ -1545,6 +1549,11 @@
       <button class="icon-btn" onclick="etsStop(); showView('home')">←</button>
       <div class="stack-title">🎧 ETS 기출 LC · Test 1</div>
       <div class="stack-title" id="ets-score" style="flex:0 0 auto; font-size:0.85em; color:var(--primary);"></div>
+    </div>
+    <div class="ets-nav">
+      <button class="ets-navbtn" onclick="etsPrev()">◀ 이전</button>
+      <span class="ets-pos" id="ets-pos">1 / 50</span>
+      <button class="ets-navbtn" onclick="etsGoNext()">다음 ▶</button>
     </div>
     <div id="ets-body"></div>
   </div>
@@ -1903,7 +1912,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260706f';
+  window.APP_VERSION='20260706g';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -3913,10 +3922,13 @@ function openEtsLc(){ _etsIdx=0; _etsScore={ok:0,tot:0}; showView('etsq'); rende
 function etsCur(){ const its=etsItems(); return its.length?its[_etsIdx%its.length]:null; }
 function etsScoreHtml(){ if($('ets-score')) $('ets-score').textContent=_etsScore.tot?`${_etsScore.ok}/${_etsScore.tot}`:''; }
 function etsNext(){ _etsIdx++; renderEts(); window.scrollTo({top:0,behavior:'smooth'}); }
+function etsGoNext(){ etsNext(); }
+function etsPrev(){ const n=etsItems().length; if(!n) return; _etsIdx=(_etsIdx-1+n)%n; renderEts(); window.scrollTo({top:0,behavior:'smooth'}); }
 function renderEts(){
   etsStop(); etsScoreHtml();
   const el=$('ets-body'), cur=etsCur();
   if(!el) return;
+  { const n=etsItems().length, pos=$('ets-pos'); if(pos&&n) pos.textContent=((_etsIdx%n+n)%n+1)+' / '+n; }
   if(!cur){ el.innerHTML='<div class="empty"><div class="e-emoji">🎧</div><p>문제 준비 중</p></div>'; return; }
   const total=etsItems().length;
   if(cur.t==='q') renderEtsQ(cur.d, total); else renderEtsSet(cur.d);
