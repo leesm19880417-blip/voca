@@ -4018,7 +4018,7 @@ function etsPartItems(t,part){ const d=etsTestData(t); if(!d) return [];
   if(part<=2) return (d.q12||[]).filter(x=>x.part===part).map(x=>({t:'q',d:x}));
   return (d.sets34||[]).filter(x=>x.part===part).map(x=>({t:'s',d:x})); }
 let _etsAns={}, _etsWrongOnly=false, _etsWrongSet=null;
-function etsProgKey(t,p){ return 'lc:'+(t||_etsTest)+':'+(p||_etsPart); }
+function etsProgKey(t,p){ return (ES.lc==='HK_LC'?'hk':'')+'lc:'+(t||_etsTest)+':'+(p||_etsPart); }
 function etsItems(){ const all=etsPartItems(_etsTest,_etsPart);
   if(_etsWrongOnly && _etsWrongSet) return all.filter(it=>{ const qs=it.t==='q'?[it.d]:it.d.qs; return qs.some(qq=>_etsWrongSet.has(qq.n)); });
   return all; }
@@ -4051,8 +4051,15 @@ function renderEtsParts(t){
       <div class="rc-left"><span class="rc-ico">${pt.p<=2?'🖼️':'💬'}</span><div><b>${esc(pt.name)}</b><small>${sub}</small></div></div>
       <span class="rc-go">${done?(done>=tq?'다시':'이어서'):'풀기'} →</span></div>
       ${wrong?`<button class="ets-navbtn" style="width:100%;margin:-4px 0 10px;color:var(--danger);border-color:#fca5a5" onclick="event.stopPropagation();etsOpenPart(${t},${pt.p},true)">🔁 틀린 ${wrong}문제 다시풀기</button>`:''}`; }).join('');
-  $('ets-body').innerHTML=`<button class="ets-navbtn" style="margin-bottom:12px" onclick="renderEtsTests()">◀ 회차 목록</button>${cards}`;
+  const anyDone=ETS_PARTS.some(pt=>{ const s=etsProgStat(t,pt.p); return s&&s.done>0; });
+  const resetBtn=anyDone?`<button class="ets-navbtn" style="width:100%;margin-top:6px;color:var(--text-light)" onclick="etsResetTest(${t})">🗑️ 이 회차 진도 초기화</button>`:'';
+  $('ets-body').innerHTML=`<button class="ets-navbtn" style="margin-bottom:12px" onclick="renderEtsTests()">◀ 회차 목록</button>${cards}${resetBtn}`;
   window.scrollTo(0,0);
+}
+function etsResetTest(t){
+  if(!confirm(`Test ${String(t).padStart(2,'0')} 진도를 초기화할까요?\n(푼 답과 정답 기록이 지워지고 처음부터 다시 풀 수 있어요.)`)) return;
+  if(state.etsProg){ ETS_PARTS.forEach(pt=>{ delete state.etsProg[etsProgKey(t,pt.p)]; }); state.updatedAt=nowISO(); saveState(); }
+  renderEtsParts(t); toast('🗑️ 진도 초기화됨');
 }
 function etsOpenPart(t,part,wrongOnly){ _etsTest=t; _etsPart=part; _etsLevel='quiz'; _etsWrongOnly=!!wrongOnly;
   const pr=(state.etsProg||{})[etsProgKey(t,part)];
