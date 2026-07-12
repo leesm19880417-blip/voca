@@ -98,3 +98,10 @@ ETS LC RC 기출문제/
 # ETS Test1 OCR 작업
 _ets1/
 _ets_audio.py
+
+# 해커스 1000제 원본(대용량 PDF·zip)·작업 폴더·프로브
+해커스 토익 1000제(1)/
+_probe_hk/
+HK_LC/
+_asm_hk*.py
+_hk*_crop.py

@@ -1228,6 +1228,14 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
+    <div class="lc-entry" onclick="openHkLc()">
+      <img class="lc-entry-cover" src="covers/hk1000lc.jpg" alt="해커스 토익 1000제 LC 문제풀이">
+      <div class="lc-entry-body">
+        <b>해커스 토익 1000제 LC (문제풀이)</b>
+        <small>실전 1000제 1 · 문제별 음원 듣고 풀기 · 정답+해석 · Part 1·2</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
     <div class="lc-entry" onclick="openAB('etslc')">
       <img class="lc-entry-cover" src="covers/etslc.jpg" alt="ETS 기출 LC 음원">
       <div class="lc-entry-body">
@@ -1282,6 +1290,14 @@
       <div class="lc-entry-body">
         <b>ETS 기출 RC (문제풀이)</b>
         <small>공식 기출 · Part 5 · 정답+번역+해설 즉시</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
+    <div class="lc-entry" onclick="openHkRc()">
+      <img class="lc-entry-cover" src="covers/hk1000rc.jpg" alt="해커스 토익 1000제 RC" onerror="this.onerror=null;this.src='covers/hk1000lc.jpg'">
+      <div class="lc-entry-body">
+        <b>해커스 토익 1000제 RC (문제풀이)</b>
+        <small>실전 1000제 1 · Part 5·6·7 · 정답+번역+해설 즉시</small>
       </div>
       <span class="lc-entry-go">→</span>
     </div>
@@ -3943,7 +3959,11 @@ function renderBookmarks(){
 // ===== ETS 기출 LC 문제풀이 (Part1·2 문항 + Part3·4 세트: 표+대화+스크립트) =====
 let _etsIdx=0, _etsDone=false, _etsAudio=null, _etsScore={ok:0,tot:0}, _etsSetAns={};
 let _etsTest=1, _etsPart=1, _etsLevel='tests';
-function etsTestData(t){ try{ return window['ETS_LC'+t]||null; }catch(e){ return null; } }
+// 문제풀이 엔진 소스 설정 (ETS / 해커스 공용) — 진입 함수에서 ES 를 바꿔 재사용
+const ES_ETS={lc:'ETS_LC',rc:'ETS_RC',img:'ets_img/',audio:'ETS_LC/',lcTitle:'🎧 ETS 기출 LC',lcShort:'🎧 ETS LC',rcTitle:'📘 ETS 기출 RC',rcShort:'📘 ETS RC',lcDesc:'ETS 공식 기출 LC. 회차를 고르고 → Part를 골라 풀어요.',rcDesc:'ETS 공식 기출 RC. 회차 → Part를 골라 풀어요 (정답+번역+해설).'};
+const ES_HK={lc:'HK_LC',rc:'HK_RC',img:'hk_img/',audio:'HK_LC/',lcTitle:'🎧 해커스 1000제 LC',lcShort:'🎧 해커스 LC',rcTitle:'📘 해커스 1000제 RC',rcShort:'📘 해커스 RC',lcDesc:'해커스 실전 1000제 LC. 회차를 고르고 → Part를 골라 풀어요.',rcDesc:'해커스 실전 1000제 RC. 회차 → Part를 골라 풀어요 (정답+번역+해설).'};
+let ES=ES_ETS;
+function etsTestData(t){ try{ return window[ES.lc+t]||null; }catch(e){ return null; } }
 const ETS_PARTS=[{p:1,name:'Part 1 · 사진 묘사'},{p:2,name:'Part 2 · 질의응답'},{p:3,name:'Part 3 · 짧은 대화'},{p:4,name:'Part 4 · 짧은 담화'}];
 function etsPartItems(t,part){ const d=etsTestData(t); if(!d) return [];
   if(part<=2) return (d.q12||[]).filter(x=>x.part===part).map(x=>({t:'q',d:x}));
@@ -3958,21 +3978,22 @@ function etsProgStat(t,p){ const its=etsPartItems(t,p); if(!its.length) return n
 function etsSaveProg(){ if(!state.etsProg) state.etsProg={}; const all=etsPartItems(_etsTest,_etsPart); const L=Math.max(1,all.length); etsRecomputeScore(); state.etsProg[etsProgKey()]={idx:((_etsIdx%L)+L)%L, ans:_etsAns, ok:_etsScore.ok, tot:_etsScore.tot}; saveState(); }
 function etsStop(){ try{ if(_etsAudio){ _etsAudio.pause(); _etsAudio=null; } }catch(e){} const b=$('ets-playbtn'); if(b) b.classList.remove('playing'); }
 function etsNav(show){ const n=$('ets-nav'); if(n) n.style.display=show?'flex':'none'; }
-function openEtsLc(){ etsStop(); showView('etsq'); renderEtsTests(); }
+function openEtsLc(){ ES=ES_ETS; etsStop(); showView('etsq'); renderEtsTests(); }
+function openHkLc(){ ES=ES_HK; etsStop(); showView('etsq'); renderEtsTests(); }
 function etsBack(){ etsStop(); if(_etsLevel==='quiz') renderEtsParts(_etsTest); else if(_etsLevel==='parts') renderEtsTests(); else showView('home'); }
 function renderEtsTests(){
-  _etsLevel='tests'; etsNav(false); if($('ets-title')) $('ets-title').textContent='🎧 ETS 기출 LC'; if($('ets-score')) $('ets-score').textContent='';
+  _etsLevel='tests'; etsNav(false); if($('ets-title')) $('ets-title').textContent=ES.lcTitle; if($('ets-score')) $('ets-score').textContent='';
   let cards='';
   for(let t=1;t<=10;t++){ const ready=!!etsTestData(t);
     cards+=`<div class="review-card ${ready?'rc-due':''}" style="margin-bottom:10px${ready?'':';opacity:.55'}" onclick="${ready?`etsOpenTest(${t})`:`toast('Test ${t}은 준비 중이에요')`}">
       <div class="rc-left"><span class="rc-ico">🎧</span><div><b>Test ${String(t).padStart(2,'0')}</b><small>${ready?'Part 1~4 · 100문항':'준비 중'}</small></div></div>
       <span class="rc-go">${ready?'열기 →':'⏳'}</span></div>`; }
-  $('ets-body').innerHTML=`<p class="weak-desc" style="margin:4px 2px 14px">ETS 공식 기출 LC. 회차를 고르고 → Part를 골라 풀어요.</p>${cards}`;
+  $('ets-body').innerHTML=`<p class="weak-desc" style="margin:4px 2px 14px">${esc(ES.lcDesc)}</p>${cards}`;
   window.scrollTo(0,0);
 }
 function etsOpenTest(t){ _etsTest=t; renderEtsParts(t); }
 function renderEtsParts(t){
-  _etsLevel='parts'; etsStop(); etsNav(false); if($('ets-title')) $('ets-title').textContent=`🎧 ETS LC · Test ${String(t).padStart(2,'0')}`; if($('ets-score')) $('ets-score').textContent='';
+  _etsLevel='parts'; etsStop(); etsNav(false); if($('ets-title')) $('ets-title').textContent=`${ES.lcShort} · Test ${String(t).padStart(2,'0')}`; if($('ets-score')) $('ets-score').textContent='';
   const cards=ETS_PARTS.map(pt=>{ const n=etsPartItems(t,pt.p).length; if(!n) return `<div class="review-card" style="margin-bottom:10px;opacity:.55" onclick="toast('준비 중')"><div class="rc-left"><span class="rc-ico">${pt.p<=2?'🖼️':'💬'}</span><div><b>${esc(pt.name)}</b><small>준비 중</small></div></div><span class="rc-go">⏳</span></div>`;
     const st=etsProgStat(t,pt.p); const done=st?st.done:0, wrong=st?st.wrong:0, tq=st?st.totalQ:0;
     const pct=tq?Math.round(done/tq*100):0;
@@ -4009,10 +4030,10 @@ function renderEts(){
   if(cur.t==='q') renderEtsQ(cur.d, total); else renderEtsSet(cur.d);
 }
 function etsPlayAudio(af){ etsStop(); const b=$('ets-playbtn'); if(b) b.classList.add('playing');
-  try{ _etsAudio=new Audio('ETS_LC/'+encodeURIComponent(af)); _etsAudio.onended=()=>{ if(b) b.classList.remove('playing'); }; _etsAudio.play().catch(()=>{}); }catch(e){} }
+  try{ _etsAudio=new Audio(ES.audio+encodeURIComponent(af)); _etsAudio.onended=()=>{ if(b) b.classList.remove('playing'); }; _etsAudio.play().catch(()=>{}); }catch(e){} }
 // Part 1·2
 function renderEtsQ(it, total){
-  const img=it.img?`<img class="mock-qimg" src="ets_img/${esc(it.img)}" style="max-width:440px;margin:8px auto 4px;display:block" onclick="openImgFs('ets_img/${esc(it.img)}')">`:'';
+  const img=it.img?`<img class="mock-qimg" src="${ES.img}${esc(it.img)}" style="max-width:440px;margin:8px auto 4px;display:block" onclick="openImgFs('${ES.img}${esc(it.img)}')">`:'';
   const partlbl=it.part===1?'Part 1 (사진 묘사)':'Part 2 (질의응답)';
   $('ets-body').innerHTML=`<div class="lcg-card">
     <div class="lcg-prog">${partlbl} · ${it.n}번 · 듣고 정답을 고르세요</div>
@@ -4044,7 +4065,7 @@ function etsShowQResult(it, picked){
 }
 // Part 3·4 세트
 function renderEtsSet(s){
-  const g=s.gimg?`<img class="mock-qimg" src="ets_img/${esc(s.gimg)}" style="max-width:460px;margin:2px auto 10px;display:block" onclick="openImgFs('ets_img/${esc(s.gimg)}')">`:'';
+  const g=s.gimg?`<img class="mock-qimg" src="${ES.img}${esc(s.gimg)}" style="max-width:460px;margin:2px auto 10px;display:block" onclick="openImgFs('${ES.img}${esc(s.gimg)}')">`:'';
   const qs=s.qs.map((qq,qi)=>`<div class="ets-setq">
       <div class="ets-setq-t"><b>${qq.n}.</b> ${esc(qq.q)}</div>
       <div class="lcg-abc small">${qq.opts.map((o,j)=>`<button id="ets-so-${qi}-${j}" onclick="etsAnsSet(${qi},${j})">${'ABCD'[j]}</button>`).join('')}</div>
@@ -4087,22 +4108,23 @@ function etsSetComplete(s){
 // ETS 기출 RC — Test→Part 선택 후 RC 엔진 재사용(정답+번역/해설)
 let _etsRcTest=1, _etsRcLevel='tests';
 const ETSRC_PARTS=[{p:'p5',name:'Part 5 · 문법·어휘'},{p:'p6',name:'Part 6 · 문맥'},{p:'p7',name:'Part 7 · 독해'}];
-function etsRcTestData(t){ try{ return window['ETS_RC'+t]||null; }catch(e){ return null; } }
-function openEtsRc(){ showView('etsrc'); renderEtsRcTests(); }
+function etsRcTestData(t){ try{ return window[ES.rc+t]||null; }catch(e){ return null; } }
+function openEtsRc(){ ES=ES_ETS; showView('etsrc'); renderEtsRcTests(); }
+function openHkRc(){ ES=ES_HK; showView('etsrc'); renderEtsRcTests(); }
 function etsRcBack(){ if(_etsRcLevel==='parts') renderEtsRcTests(); else showView('home'); }
 function renderEtsRcTests(){
-  _etsRcLevel='tests'; if($('etsrc-title')) $('etsrc-title').textContent='📘 ETS 기출 RC';
+  _etsRcLevel='tests'; if($('etsrc-title')) $('etsrc-title').textContent=ES.rcTitle;
   let cards='';
   for(let t=1;t<=10;t++){ const ready=!!etsRcTestData(t);
     cards+=`<div class="review-card ${ready?'rc-due':''}" style="margin-bottom:10px${ready?'':';opacity:.55'}" onclick="${ready?`etsRcOpenTest(${t})`:`toast('Test ${t}은 준비 중이에요')`}">
       <div class="rc-left"><span class="rc-ico">📘</span><div><b>Test ${String(t).padStart(2,'0')}</b><small>${ready?'Part 5~7':'준비 중'}</small></div></div>
       <span class="rc-go">${ready?'열기 →':'⏳'}</span></div>`; }
-  $('etsrc-body').innerHTML=`<p class="weak-desc" style="margin:4px 2px 14px">ETS 공식 기출 RC. 회차 → Part를 골라 풀어요 (정답+번역+해설).</p>${cards}`;
+  $('etsrc-body').innerHTML=`<p class="weak-desc" style="margin:4px 2px 14px">${esc(ES.rcDesc)}</p>${cards}`;
   window.scrollTo(0,0);
 }
 function etsRcOpenTest(t){ _etsRcTest=t; renderEtsRcParts(t); }
 function renderEtsRcParts(t){
-  _etsRcLevel='parts'; if($('etsrc-title')) $('etsrc-title').textContent=`📘 ETS RC · Test ${String(t).padStart(2,'0')}`;
+  _etsRcLevel='parts'; if($('etsrc-title')) $('etsrc-title').textContent=`${ES.rcShort} · Test ${String(t).padStart(2,'0')}`;
   const d=etsRcTestData(t);
   const cards=ETSRC_PARTS.map(pt=>{ const n=(d&&d[pt.p])?d[pt.p].length:0; const q=pt.p==='p5'?n:(d&&d[pt.p]?d[pt.p].reduce((s,x)=>s+(x.qs?x.qs.length:0),0):0);
     const cnt=pt.p==='p5'?n:q;
@@ -4116,7 +4138,7 @@ function etsRcOpenPart(t,part){
   const d=etsRcTestData(t); if(!d) return;
   const src={p5:[],p6:[],p7:[]}; src[part]=d[part]||[];
   rcgLoad(src, true); _rcgHome='etsrc'; _wqReview=false;
-  if($('rcg-title')) $('rcg-title').textContent=`📘 ETS RC · Test ${String(t).padStart(2,'0')} · ${part.toUpperCase()}`;
+  if($('rcg-title')) $('rcg-title').textContent=`${ES.rcShort} · Test ${String(t).padStart(2,'0')} · ${part.toUpperCase()}`;
   showView('rcgen'); rcgMode(part);
 }
 
