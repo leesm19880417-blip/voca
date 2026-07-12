@@ -302,9 +302,9 @@
   /* ===== Book Grid ===== */
   .book-grid { display: flex; flex-direction: column; gap: 10px; }
   .reorder-hint { font-size:0.82em; font-weight:600; color:var(--text-light); }
-  .book-card.bc-ghost { opacity:0.35; }
-  .book-card.bc-chosen { box-shadow:0 8px 24px rgba(99,102,241,0.35); border-color:var(--primary); }
-  .book-card.bc-drag { opacity:0.96; transform:scale(1.02); }
+  .book-card.bc-ghost, .lc-entry.bc-ghost { opacity:0.35; }
+  .book-card.bc-chosen, .lc-entry.bc-chosen { box-shadow:0 8px 24px rgba(99,102,241,0.35); border-color:var(--primary); }
+  .book-card.bc-drag, .lc-entry.bc-drag { opacity:0.96; transform:scale(1.02); }
   .book-card {
     background: var(--surface);
     padding: 12px 14px;
@@ -1195,7 +1195,8 @@
       <div class="rc-left"><span class="rc-ico">🔀</span><div><b>헷갈리는 단어</b><small id="confuse-count">자주 혼동하는 짝 비교·구별</small></div></div>
       <span class="rc-go">비교 →</span>
     </div>
-    <div class="section-label">🎧 LC 공부하기</div>
+    <div class="section-label">🎧 LC 공부하기 <span class="reorder-hint">· 꾹 눌러 순서 변경</span></div>
+    <div id="lc-list">
     <div class="lc-entry" onclick="openLC()">
       <img class="lc-entry-cover" src="covers/lc.jpg?v=20260622l" alt="서아쌤 비밀과외 LC">
       <div class="lc-entry-body">
@@ -1284,7 +1285,9 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
-    <div class="section-label">📖 RC 공부하기 (독해·문법)</div>
+    </div>
+    <div class="section-label">📖 RC 공부하기 (독해·문법) <span class="reorder-hint">· 꾹 눌러 순서 변경</span></div>
+    <div id="rc-list">
     <div class="lc-entry" onclick="openEtsRc()">
       <img class="lc-entry-cover" src="covers/etsrc.jpg" alt="ETS 기출 RC" onerror="this.onerror=null;this.src='covers/etslc.jpg'">
       <div class="lc-entry-body">
@@ -1316,6 +1319,7 @@
         <small>Part 5 문법·어휘 / Part 6 문맥 / Part 7 독해 · 무제한 · 자동 채점+해설</small>
       </div>
       <span class="lc-entry-go">→</span>
+    </div>
     </div>
     <div class="section-label">🗣️ 말하기 연습</div>
     <div class="lc-entry" onclick="openSpeak()">
@@ -2134,7 +2138,7 @@ function wordAssoc(w, book){
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], dailyGoal:30, missTally:{}, wrongQ:[], etsProg:{}, updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], lcOrder:[], rcOrder:[], dailyGoal:30, missTally:{}, wrongQ:[], etsProg:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
@@ -2727,7 +2731,32 @@ function saveBookOrder(){
   const ids=[...grid.querySelectorAll('.book-card[data-bid]')].map(e=>e.dataset.bid);
   state.bookOrder=ids; state.updatedAt=nowISO(); saveState(); toast('🔀 단어장 순서 저장됨');
 }
+// ===== LC/RC 진입카드 순서 드래그(꾹 눌러 이동) — 단어장과 동일 방식 =====
+function lcrcKey(el){ return (el.getAttribute('onclick')||'').trim(); }
+function applyLcRcOrder(){
+  [['lc-list','lcOrder'],['rc-list','rcOrder']].forEach(([id,key])=>{
+    const list=$(id); const ord=state[key]; if(!list||!Array.isArray(ord)||!ord.length) return;
+    const cards=[...list.querySelectorAll(':scope > .lc-entry')];
+    cards.sort((x,y)=>{ const ix=ord.indexOf(lcrcKey(x)), iy=ord.indexOf(lcrcKey(y)); return (ix<0?9999:ix)-(iy<0?9999:iy); });
+    cards.forEach(c=>list.appendChild(c));
+  });
+}
+function saveLcRcOrder(id,key){
+  const list=$(id); if(!list) return;
+  state[key]=[...list.querySelectorAll(':scope > .lc-entry')].map(lcrcKey);
+  state.updatedAt=nowISO(); saveState(); toast('🔀 순서 저장됨');
+}
+let _lcrcSortInit=false, _lcrcSortTries=0;
+function initLcRcSort(){
+  if(typeof Sortable==='undefined'){ if(_lcrcSortTries++<15) setTimeout(initLcRcSort,350); return; }
+  if(_lcrcSortInit) return;
+  const opt=(key)=>({animation:160,delay:280,delayOnTouchOnly:true,touchStartThreshold:8,ghostClass:'bc-ghost',chosenClass:'bc-chosen',dragClass:'bc-drag',onEnd:()=>saveLcRcOrder(key==='lcOrder'?'lc-list':'rc-list',key)});
+  const lc=$('lc-list'), rc=$('rc-list'); if(!lc||!rc) return;
+  Sortable.create(lc, opt('lcOrder')); Sortable.create(rc, opt('rcOrder'));
+  _lcrcSortInit=true;
+}
 function renderHome(){
+  applyLcRcOrder(); initLcRcSort();
   const grid=$('book-grid');
   const items=BOOKS.map(b=>{
     const s=bookStats(b);
@@ -4989,6 +5018,9 @@ function mergeStates(a, b){
   out.examDate = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.examDate||b.examDate||null) : (b.examDate||a.examDate||null);
   out.targetWords = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.targetWords||b.targetWords||null) : (b.targetWords||a.targetWords||null);
   out.bookOrder = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.bookOrder||b.bookOrder||[]) : (b.bookOrder||a.bookOrder||[]);  // 단어장 순서: 최신 기기 우선
+  const _newer = ((a.updatedAt||'') >= (b.updatedAt||'')) ? a : b, _older = _newer===a ? b : a;
+  out.lcOrder = _newer.lcOrder||_older.lcOrder||[];  // LC 카드 순서: 최신 기기 우선
+  out.rcOrder = _newer.rcOrder||_older.rcOrder||[];  // RC 카드 순서: 최신 기기 우선
   out.dailyGoal = ((a.updatedAt||'') >= (b.updatedAt||'')) ? (a.dailyGoal||b.dailyGoal||30) : (b.dailyGoal||a.dailyGoal||30);  // 하루 목표: 최신 기기 우선
   out.missTally = _mergeMap(a.missTally, b.missTally, (p,q)=>Math.max(p||0,q||0));  // 단어별 누적 오답: 큰 쪽 보존
   { const seen={}, wq=[]; (a.wrongQ||[]).concat(b.wrongQ||[]).forEach(w=>{ if(w&&w.k&&!seen[w.k]){ seen[w.k]=1; wq.push(w); } }); out.wrongQ = wq.slice(-300); }  // 틀린 문제: 합집합(키 기준), 최근 300개
