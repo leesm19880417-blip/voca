@@ -105,3 +105,7 @@ _probe_hk/
 HK_LC/
 _asm_hk*.py
 _hk*_crop.py
+_hklc1/
+_hkrc1/
+_mk_hkans1.py
+_hk_transcode.py
