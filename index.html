@@ -2138,7 +2138,7 @@ function wordAssoc(w, book){
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], lcOrder:[], rcOrder:[], dailyGoal:30, missTally:{}, wrongQ:[], etsProg:{}, updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], lcOrder:[], rcOrder:[], dailyGoal:30, missTally:{}, wrongQ:[], etsProg:{}, etsRcProg:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
@@ -4178,22 +4178,55 @@ function renderEtsRcTests(){
   $('etsrc-body').innerHTML=`<p class="weak-desc" style="margin:4px 2px 14px">${esc(ES.rcDesc)}</p>${cards}`;
   window.scrollTo(0,0);
 }
+function etsRcProgKey(t,part){ return (ES.rc==='HK_RC'?'hk':'')+'rc:'+t+':'+part; }
+function etsRcProgStat(t,part){
+  const d=etsRcTestData(t); if(!d) return null;
+  const ans=((state.etsRcProg||{})[etsRcProgKey(t,part)]||{}).ans||{};
+  let done=0,wrong=0,totalQ=0;
+  (d[part]||[]).forEach(it=>{ const qs=part==='p5'?[it]:(it.qs||[]); qs.forEach(q=>{ totalQ++; const a=ans[q.n]; if(a!=null){ done++; if(a!==q.ans) wrong++; } }); });
+  return {done,wrong,totalQ};
+}
+function rcgResumePos(part){
+  const d=rcgData()[part]||[];
+  for(let i=0;i<d.length;i++){ const qs=part==='p5'?[d[i]]:(d[i].qs||[]); if(qs.some(q=>_rcgSaved[q.n]==null)) return i; }
+  return 0;
+}
+function rcgPersist(){
+  if(!_rcgProgKey) return;
+  if(!state.etsRcProg) state.etsRcProg={};
+  state.etsRcProg[_rcgProgKey]={ans:_rcgSaved}; state.updatedAt=nowISO(); saveState();
+}
+function etsRcResetTest(t){
+  if(!confirm(`Test ${String(t).padStart(2,'0')} RC 진도를 초기화할까요?\n(푼 답과 정답 기록이 지워지고 처음부터 다시 풀 수 있어요.)`)) return;
+  if(state.etsRcProg){ ETSRC_PARTS.forEach(pt=>{ delete state.etsRcProg[etsRcProgKey(t,pt.p)]; }); state.updatedAt=nowISO(); saveState(); }
+  renderEtsRcParts(t); toast('🗑️ 진도 초기화됨');
+}
 function etsRcOpenTest(t){ _etsRcTest=t; renderEtsRcParts(t); }
 function renderEtsRcParts(t){
   _etsRcLevel='parts'; if($('etsrc-title')) $('etsrc-title').textContent=`${ES.rcShort} · Test ${String(t).padStart(2,'0')}`;
   const d=etsRcTestData(t);
   const cards=ETSRC_PARTS.map(pt=>{ const n=(d&&d[pt.p])?d[pt.p].length:0; const q=pt.p==='p5'?n:(d&&d[pt.p]?d[pt.p].reduce((s,x)=>s+(x.qs?x.qs.length:0),0):0);
     const cnt=pt.p==='p5'?n:q;
-    return `<div class="review-card ${cnt?'rc-due':''}" style="margin-bottom:10px${cnt?'':';opacity:.55'}" onclick="${cnt?`etsRcOpenPart(${t},'${pt.p}')`:`toast('준비 중')`}">
-      <div class="rc-left"><span class="rc-ico">📖</span><div><b>${esc(pt.name)}</b><small>${cnt?cnt+'문항':'준비 중'}</small></div></div>
-      <span class="rc-go">${cnt?'풀기 →':'⏳'}</span></div>`; }).join('');
-  $('etsrc-body').innerHTML=`<button class="ets-navbtn" style="margin-bottom:12px" onclick="renderEtsRcTests()">◀ 회차 목록</button>${cards}`;
+    if(!cnt) return `<div class="review-card" style="margin-bottom:10px;opacity:.55" onclick="toast('준비 중')"><div class="rc-left"><span class="rc-ico">📖</span><div><b>${esc(pt.name)}</b><small>준비 중</small></div></div><span class="rc-go">⏳</span></div>`;
+    const st=etsRcProgStat(t,pt.p); const done=st?st.done:0, wrong=st?st.wrong:0, tq=st?st.totalQ:0;
+    const pct=tq?Math.round(done/tq*100):0;
+    const sub=done? (done>=tq?`✅ 완료 · 정답 ${done-wrong}/${tq}`:`이어서 풀기 · ${done}/${tq} (${pct}%)`) : cnt+'문항';
+    return `<div class="review-card rc-due" style="margin-bottom:10px" onclick="etsRcOpenPart(${t},'${pt.p}')">
+      <div class="rc-left"><span class="rc-ico">📖</span><div><b>${esc(pt.name)}</b><small>${sub}</small></div></div>
+      <span class="rc-go">${done?(done>=tq?'다시':'이어서'):'풀기'} →</span></div>`; }).join('');
+  const anyDone=ETSRC_PARTS.some(pt=>{ const s=etsRcProgStat(t,pt.p); return s&&s.done>0; });
+  const resetBtn=anyDone?`<button class="ets-navbtn" style="width:100%;margin-top:6px;color:var(--text-light)" onclick="etsRcResetTest(${t})">🗑️ 이 회차 진도 초기화</button>`:'';
+  $('etsrc-body').innerHTML=`<button class="ets-navbtn" style="margin-bottom:12px" onclick="renderEtsRcTests()">◀ 회차 목록</button>${cards}${resetBtn}`;
   window.scrollTo(0,0);
 }
 function etsRcOpenPart(t,part){
   const d=etsRcTestData(t); if(!d) return;
   const src={p5:[],p6:[],p7:[]}; src[part]=d[part]||[];
   rcgLoad(src, true); _rcgHome='etsrc'; _wqReview=false;
+  _rcgProgKey=etsRcProgKey(t,part);
+  _rcgSaved=Object.assign({}, ((state.etsRcProg||{})[_rcgProgKey]||{}).ans||{});
+  const st=etsRcProgStat(t,part); _rcgScore={ok:st?st.done-st.wrong:0, tot:st?st.done:0};
+  _rcgPos[part]=rcgResumePos(part);
   if($('rcg-title')) $('rcg-title').textContent=`${ES.rcShort} · Test ${String(t).padStart(2,'0')} · ${part.toUpperCase()}`;
   showView('rcgen'); rcgMode(part);
 }
@@ -4253,10 +4286,11 @@ function clearWrongQ(){ if(!(state.wrongQ||[]).length) return; confirmDo('틀린
 
 // ===== AI RC 문제풀이 (Part 5 문법·어휘 / Part 6 문맥 / Part 7 독해) =====
 let _rcgMode='p5', _rcgOrder={p5:[],p6:[],p7:[]}, _rcgPos={p5:0,p6:0,p7:0}, _rcgScore={ok:0,tot:0}, _rcgDone=false, _rcgSel={};
+let _rcgProgKey=null, _rcgSaved={};  // ETS/해커스 RC 진도 저장(그 외 소스는 null=저장 안 함)
 let _rcSrc=null, _rcgHome='home';
 function rcgData(){ return _rcSrc || ((typeof RCGEN!=='undefined')?RCGEN:{p5:[],p6:[],p7:[]}); }
 function rcgLoad(src, seq){
-  _rcSrc=src; _rcgScore={ok:0,tot:0}; _rcgMode='p5';
+  _rcSrc=src; _rcgScore={ok:0,tot:0}; _rcgMode='p5'; _rcgProgKey=null; _rcgSaved={};
   ['p5','p6','p7'].forEach(k=>{ const arr=(src[k]||[]); _rcgOrder[k]= seq? arr.map((_,i)=>i) : shuffle(arr.map((_,i)=>i)); _rcgPos[k]=0; });
 }
 function rcgBack(){ showView(_rcgHome); if(_rcgHome==='mockrc') renderMockRcList(); else if(_rcgHome==='wrongs') renderWrongs(); else if(_rcgHome==='etsrc') renderEtsRcParts(_etsRcTest); }
@@ -4322,11 +4356,32 @@ function renderRcg(){
       <div id="rcg-result" class="lcg-result" style="display:none"></div>
     </div>`;
   }
+  if(_rcgProgKey) rcgReplaySaved(it);
+}
+// 저장된 답을 채점 상태로 복원(점수는 이미 반영됨 — 재계산 안 함)
+function rcgReplaySaved(it){
+  if(_rcgMode==='p5'){
+    const a=_rcgSaved[it.n]; if(a==null) return; _rcgDone=true; const ok=(a===it.ans);
+    it.opts.forEach((_,j)=>{ const b=$('rcg-o-'+j); if(!b)return; b.disabled=true; if(j===it.ans)b.classList.add('ok'); else if(j===a)b.classList.add('no'); });
+    const r=$('rcg-result'); if(!r)return; r.style.display='';
+    r.innerHTML=`<b>${ok?'✅ 정답!':'❌ 정답은 ('+OPTL[it.ans]+')'}</b>
+      <div class="lcg-ko" style="margin-top:6px">${esc(it.ko||'')}</div>
+      ${it.note?`<div class="lcg-note">💡 ${esc(it.note)}</div>`:''}
+      <button class="btn btn-primary btn-block" style="margin-top:12px" onclick="rcgNext()">다음 →</button>`;
+  } else {
+    if(!it.qs.every(q=>_rcgSaved[q.n]!=null)) return; _rcgDone=true; let okCnt=0;
+    it.qs.forEach((q,qi)=>{ const sel=_rcgSaved[q.n]; if(sel===q.ans)okCnt++;
+      q.opts.forEach((_,j)=>{ const b=$('rcg-o-'+qi+'-'+j); if(!b)return; b.disabled=true; if(j===q.ans)b.classList.add('ok'); else if(j===sel)b.classList.add('no'); });
+      const n=$('rcg-note-'+qi); if(n&&(q.note||q.ko)){ n.style.display=''; n.textContent='💡 '+(q.note||q.ko); } });
+    const r=$('rcg-result'); if(!r)return; r.style.display='';
+    r.innerHTML=`<b>${okCnt}/${it.qs.length} 정답!</b><button class="btn btn-primary btn-block" style="margin-top:12px" onclick="rcgNext()">다음 →</button>`;
+  }
 }
 function rcgAnsP5(i){
   if(_rcgDone) return; _rcgDone=true;
   const it=rcgCur(); const ok=(i===it.ans); _rcgScore.tot++; if(ok)_rcgScore.ok++;
   if(!ok) saveWrongQ('rc','p5',it); else if(_wqReview) removeWrongQ('rc','p5',it);
+  if(_rcgProgKey){ _rcgSaved[it.n]=i; rcgPersist(); }
   rcgUpdScore();
   it.opts.forEach((_,j)=>{ const b=$('rcg-o-'+j); if(!b)return; b.disabled=true; if(j===it.ans)b.classList.add('ok'); else if(j===i)b.classList.add('no'); });
   const r=$('rcg-result'); r.style.display='';
@@ -4348,6 +4403,7 @@ function rcgGrade(){
     const n=$('rcg-note-'+qi); if(n&&(q.note||q.ko)){ n.style.display=''; n.textContent='💡 '+(q.note||q.ko); }
   });
   if(okCnt<it.qs.length) saveWrongQ('rc',_rcgMode,it); else if(_wqReview) removeWrongQ('rc',_rcgMode,it);
+  if(_rcgProgKey){ it.qs.forEach((q,qi)=>{ _rcgSaved[q.n]=_rcgSel[qi]; }); rcgPersist(); }
   rcgUpdScore();
   const r=$('rcg-result'); r.style.display='';
   r.innerHTML=`<b>${okCnt}/${it.qs.length} 정답!</b><button class="btn btn-primary btn-block" style="margin-top:12px" onclick="rcgNext()">다음 →</button>`;
@@ -5032,6 +5088,7 @@ function mergeStates(a, b){
   out.missTally = _mergeMap(a.missTally, b.missTally, (p,q)=>Math.max(p||0,q||0));  // 단어별 누적 오답: 큰 쪽 보존
   { const seen={}, wq=[]; (a.wrongQ||[]).concat(b.wrongQ||[]).forEach(w=>{ if(w&&w.k&&!seen[w.k]){ seen[w.k]=1; wq.push(w); } }); out.wrongQ = wq.slice(-300); }  // 틀린 문제: 합집합(키 기준), 최근 300개
   out.etsProg = ((a.updatedAt||'') >= (b.updatedAt||'')) ? Object.assign({}, b.etsProg, a.etsProg) : Object.assign({}, a.etsProg, b.etsProg);  // ETS 진도: 최신 기기 우선
+  out.etsRcProg = ((a.updatedAt||'') >= (b.updatedAt||'')) ? Object.assign({}, b.etsRcProg, a.etsRcProg) : Object.assign({}, a.etsRcProg, b.etsRcProg);  // RC 진도: 최신 기기 우선
   out.updatedAt = (a.updatedAt&&b.updatedAt) ? (a.updatedAt>b.updatedAt?a.updatedAt:b.updatedAt) : (a.updatedAt||b.updatedAt||null);
   return out;
 }
