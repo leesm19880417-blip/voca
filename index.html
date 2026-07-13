@@ -1699,6 +1699,44 @@
         </div>
       </div>
     </div>
+
+    <div class="section-label" style="margin-top:22px">📄 토익 실전 문제지</div>
+    <div class="card">
+      <p style="font-size:0.88em; color:var(--text-light); margin-bottom:14px;">ETS 기출 · 해커스 1000제에서 실제 토익 문제를 뽑아 <b>시험지(PDF)</b>로 만들어요. 맨 뒤에 <b>정답 + 해설</b>이 붙어요.</p>
+      <div class="field">
+        <label>영역</label>
+        <div class="chips" id="tp-area">
+          <button class="chip active" onclick="setTP('area','lc',this)">🎧 LC (Part 1~4)</button>
+          <button class="chip" onclick="setTP('area','rc',this)">📖 RC (Part 5~7)</button>
+        </div>
+      </div>
+      <div class="field">
+        <label>출처</label>
+        <div class="chips" id="tp-src">
+          <button class="chip active" onclick="setTP('src','both',this)">🔀 둘 다</button>
+          <button class="chip" onclick="setTP('src','ets',this)">ETS 기출</button>
+          <button class="chip" onclick="setTP('src','hk',this)">해커스 1000제</button>
+        </div>
+      </div>
+      <div class="field">
+        <label>파트 선택</label>
+        <div class="chips" id="tp-parts"></div>
+      </div>
+      <div class="field">
+        <label>문제 수 (파트당)</label>
+        <div class="chips" id="tp-count">
+          <button class="chip" onclick="setTP('count',10,this)">10</button>
+          <button class="chip" onclick="setTP('count',20,this)">20</button>
+          <button class="chip active" onclick="setTP('count',30,this)">30</button>
+          <button class="chip" onclick="setTP('count',50,this)">50</button>
+          <button class="chip" onclick="setTP('count',999,this)">전체</button>
+        </div>
+      </div>
+      <div class="aq-print" style="margin-top:6px; border-top:0; padding-top:0;">
+        <p class="aq-print-desc" style="margin-top:4px;">Part 3·4·6·7은 <b>지문 단위</b>로 뽑혀서 문제 수는 대략치예요. LC는 사진·듣기 문제라 지문지엔 <b>번호칸</b>만, 스크립트·해석은 뒤 해설에 담겨요.</p>
+        <button class="btn btn-print btn-block" onclick="makeToeicPDF()">📄 문제지 만들기 (PDF·프린트)</button>
+      </div>
+    </div>
   </div>
 
   <!-- 통계 -->
@@ -2351,7 +2389,7 @@ document.querySelectorAll('.nav-item').forEach(btn=>{
     if(tab==='home') renderHome();
     else if(tab==='bookmarks') renderBookmarks();
     else if(tab==='wrongs') renderWrongs();
-    else if(tab==='all-quiz') renderAQBooks();
+    else if(tab==='all-quiz'){ renderAQBooks(); renderTPParts(); }
     else if(tab==='stats') renderStats();
   });
 });
@@ -4939,6 +4977,196 @@ function makeQuizPDF(type){
   toast('🖨️ 시험지를 만들었어요');
 }
 
+// ============ 토익 실전 문제지 PDF (ETS·해커스 기출) ============
+const TP_PARTS={
+  lc:[{p:1,name:'Part 1 · 사진 묘사',dir:'사진을 보고 가장 적절한 설명을 고르세요. (음원 필요)'},
+      {p:2,name:'Part 2 · 질의응답',dir:'질문을 듣고 가장 적절한 응답을 고르세요. (음원 필요)'},
+      {p:3,name:'Part 3 · 짧은 대화',dir:'대화를 듣고 각 문항에 답하세요. (음원 필요)'},
+      {p:4,name:'Part 4 · 짧은 담화',dir:'담화를 듣고 각 문항에 답하세요. (음원 필요)'}],
+  rc:[{p:5,name:'Part 5 · 단문 공란',dir:'빈칸에 가장 적절한 것을 고르세요.'},
+      {p:6,name:'Part 6 · 장문 공란',dir:'지문의 빈칸에 가장 적절한 것을 고르세요.'},
+      {p:7,name:'Part 7 · 독해',dir:'지문을 읽고 각 문항에 답하세요.'}]
+};
+let tpArea='lc', tpSrc='both', tpCount=30, tpParts=new Set([1,2,3,4]);
+function renderTPParts(){
+  const box=$('tp-parts'); if(!box) return;
+  const parts=TP_PARTS[tpArea];
+  tpParts=new Set(parts.map(x=>x.p));
+  box.innerHTML=parts.map(pt=>`<button class="chip active" onclick="toggleTPPart(${pt.p},this)">${esc(pt.name.split(' · ')[0])}</button>`).join('');
+}
+function toggleTPPart(p,btn){
+  if(tpParts.has(p)){ tpParts.delete(p); btn.classList.remove('active'); }
+  else { tpParts.add(p); btn.classList.add('active'); }
+}
+function setTP(key,val,btn){
+  if(key==='area') tpArea=val; else if(key==='src') tpSrc=val; else if(key==='count') tpCount=val;
+  btn.parentNode.querySelectorAll('.chip').forEach(c=>c.classList.remove('active')); btn.classList.add('active');
+  if(key==='area') renderTPParts();
+}
+function tpSrcList(){ return tpSrc==='both'?[ES_ETS,ES_HK]:(tpSrc==='hk'?[ES_HK]:[ES_ETS]); }
+function tpCollect(part){
+  const units=[];
+  tpSrcList().forEach(S=>{
+    for(let t=1;t<=10;t++){
+      const d=window[(tpArea==='lc'?S.lc:S.rc)+t]; if(!d) continue;
+      if(part<=2) (d.q12||[]).filter(x=>x.part===part).forEach(x=>units.push({kind:'q',part,it:x,img:S.img}));
+      else if(part<=4) (d.sets34||[]).filter(x=>x.part===part).forEach(x=>units.push({kind:'s',part,set:x,img:S.img}));
+      else if(part===5) (d.p5||[]).forEach(x=>units.push({kind:'p5',it:x}));
+      else if(part===6) (d.p6||[]).forEach(x=>units.push({kind:'p6',set:x}));
+      else if(part===7) (d.p7||[]).forEach(x=>units.push({kind:'p7',set:x}));
+    }
+  });
+  return units;
+}
+function tpPick(units,part,count){
+  const u=shuffle(units);
+  if(count>=999) return u;
+  const setBased=(part>=3&&part!==5);
+  if(!setBased) return u.slice(0,count);
+  const out=[]; let n=0;
+  for(const x of u){ if(out.length&&n>=count) break; out.push(x); n+=(x.set.qs||[]).length; }
+  return out;
+}
+const _AB=['A','B','C','D'];
+function tpTitle(title,a,b){
+  const rng=a===b?(''+a):(a+'-'+b);
+  if(title&&/^Questions/.test(title)) return title.replace(/^Questions\s+\d+(?:-\d+)?/, 'Questions '+rng);
+  return 'Questions '+rng+' refer to the following passage.';
+}
+function tpOpts(opts){ return '<div class="opts">'+opts.map((o,i)=>`<span class="opt">(${_AB[i]}) ${esc(o)}</span>`).join('')+'</div>'; }
+function tpUnit(u,ctr){
+  let q='',k='';
+  if(u.kind==='q'&&u.part===1){
+    const it=u.it, nn=ctr.no++; ctr.total++;
+    const img=it.img?`<img class="lcimg" src="${u.img}${esc(it.img)}" onerror="this.style.display='none'">`:'';
+    q=`<div class="q lc1"><div class="qn">${nn}. <span class="lchint">음원을 듣고 (A)(B)(C)(D) 중 사진을 가장 잘 묘사한 것을 고르세요</span></div>${img}<div class="bub">Ⓐ&nbsp;&nbsp;Ⓑ&nbsp;&nbsp;Ⓒ&nbsp;&nbsp;Ⓓ</div></div>`;
+    const rows=it.opts.map((o,i)=>`<div class="koline"><b>(${_AB[i]})</b> ${esc(o)} <span class="ko">${esc((it.optko||[])[i]||'')}</span></div>`).join('');
+    k=`<div class="kq"><div class="ka"><span class="kno">${nn}</span> 정답 <b>(${_AB[it.ans]})</b></div><div class="kbody">${rows}</div></div>`;
+  } else if(u.kind==='q'&&u.part===2){
+    const it=u.it, nn=ctr.no++; ctr.total++;
+    q=`<div class="q lc2"><span class="qn">${nn}.</span> Mark your answer on your answer sheet. <span class="bubin">Ⓐ&nbsp;Ⓑ&nbsp;Ⓒ</span></div>`;
+    const resp=it.opts.map((o,i)=>`<div class="koline"><b>(${_AB[i]})</b> ${esc(o)} <span class="ko">${esc((it.optko||[])[i]||'')}</span></div>`).join('');
+    k=`<div class="kq"><div class="ka"><span class="kno">${nn}</span> 정답 <b>(${_AB[it.ans]})</b></div><div class="kbody"><div class="kqstem">Q. ${esc(it.q||'')} <span class="ko">${esc(it.qko||'')}</span></div>${resp}</div></div>`;
+  } else if(u.kind==='s'){
+    const s=u.set, start=ctr.no;
+    const rows=s.qs.map(qq=>{ const nn=ctr.no++; ctr.total++; return `<div class="setq"><span class="qn">${nn}.</span> ${esc(qq.q)}${tpOpts(qq.opts)}</div>`; }).join('');
+    const end=ctr.no-1, tn=s.part===3?'conversation':'talk';
+    const gimg=s.gimg?`<img class="lcimg" src="${u.img}${esc(s.gimg)}" onerror="this.style.display='none'">`:'';
+    q=`<div class="set"><div class="settitle">Questions ${start}-${end} refer to the following ${tn}.</div>${gimg}${rows}</div>`;
+    const scr=s.script?`<div class="kscript"><b>📝 스크립트</b><div class="scr">${esc(s.script)}</div></div>`:'';
+    const kr=s.qs.map((qq,i)=>`<div class="kq"><div class="ka"><span class="kno">${start+i}</span> 정답 <b>(${_AB[qq.ans]})</b></div><div class="kbody"><div class="note">${esc(qq.ko||'')}</div></div></div>`).join('');
+    k=`<div class="kset"><div class="ksettitle">Questions ${start}-${end}</div>${scr}${kr}</div>`;
+  } else if(u.kind==='p5'){
+    const it=u.it, nn=ctr.no++; ctr.total++;
+    q=`<div class="q"><div class="stem"><span class="qn">${nn}.</span> ${esc(it.en)}</div>${tpOpts(it.opts)}</div>`;
+    k=`<div class="kq"><div class="ka"><span class="kno">${nn}</span> 정답 <b>(${_AB[it.ans]})</b></div><div class="kbody"><div class="ko">${esc(it.ko||'')}</div><div class="note">${esc(it.note||'')}</div></div></div>`;
+  } else if(u.kind==='p6'){
+    const s=u.set, start=ctr.no, map={};
+    s.qs.forEach(qq=>{ map[qq.n]=ctr.no++; ctr.total++; });
+    const end=ctr.no-1;
+    const text=esc(s.text).replace(/\((\d+)\)(_+)/g,(m,g1,g2)=>'('+(map[+g1]||g1)+')'+g2);
+    const title=tpTitle(s.title,start,end);
+    const rows=s.qs.map(qq=>`<div class="setq"><span class="qn">${map[qq.n]}.</span>${tpOpts(qq.opts)}</div>`).join('');
+    q=`<div class="set"><div class="settitle">${esc(title)}</div><div class="passage">${text}</div>${rows}</div>`;
+    const kr=s.qs.map(qq=>`<div class="kq"><div class="ka"><span class="kno">${map[qq.n]}</span> 정답 <b>(${_AB[qq.ans]})</b></div><div class="kbody"><div class="note">${esc(qq.note||'')}</div></div></div>`).join('');
+    k=`<div class="kset"><div class="ksettitle">${esc(title)}</div>${kr}</div>`;
+  } else if(u.kind==='p7'){
+    const s=u.set, nums=s.qs.map(()=>ctr.no++); ctr.total+=s.qs.length;
+    const start=nums[0], end=nums[nums.length-1], title=tpTitle(s.title,start,end);
+    const rows=s.qs.map((qq,i)=>`<div class="setq"><span class="qn">${nums[i]}.</span> ${esc(qq.q)}${tpOpts(qq.opts)}</div>`).join('');
+    q=`<div class="set"><div class="settitle">${esc(title)}</div><div class="passage">${esc(s.passage)}</div>${rows}</div>`;
+    const kr=s.qs.map((qq,i)=>`<div class="kq"><div class="ka"><span class="kno">${nums[i]}</span> 정답 <b>(${_AB[qq.ans]})</b></div><div class="kbody"><div class="note">${esc(qq.note||'')}</div></div></div>`).join('');
+    k=`<div class="kset"><div class="ksettitle">${esc(title)}</div>${kr}</div>`;
+  }
+  return {q,k};
+}
+function makeToeicPDF(){
+  const partDefs=TP_PARTS[tpArea], parts=partDefs.filter(x=>tpParts.has(x.p));
+  if(!parts.length){ toast('파트를 하나 이상 선택하세요'); return; }
+  const ctr={no: tpArea==='lc'?1:101, total:0};
+  let qBody='', kBody='';
+  parts.forEach(pd=>{
+    const units=tpPick(tpCollect(pd.p),pd.p,tpCount);
+    if(!units.length) return;
+    const colWrap=(pd.p===5||pd.p<=2);
+    let pq='';
+    kBody+=`<div class="parthead" style="margin:16px 0 10px"><b>${esc(pd.name)}</b></div>`;
+    units.forEach(u=>{ const r=tpUnit(u,ctr); pq+=r.q; kBody+=r.k; });
+    if(!pq) return;
+    qBody+=`<div class="parthead"><b>${esc(pd.name)}</b><span>${esc(pd.dir)}</span></div>`+(colWrap?`<div class="cols">${pq}</div>`:pq);
+  });
+  if(!ctr.total){ toast('출제할 문제가 없어요 (파트·출처를 확인하세요)'); return; }
+  // 파트 헤더를 정답지에도 넣기 위해 kBody를 파트별로 다시 구성했으면 좋지만, 간단히 상단 안내만
+  const srcName=tpSrc==='both'?'ETS 기출 + 해커스 1000제':(tpSrc==='hk'?'해커스 1000제':'ETS 기출');
+  const areaName=tpArea==='lc'?'LC (Listening)':'RC (Reading)';
+  const today=new Date(), dstr=`${today.getFullYear()}. ${today.getMonth()+1}. ${today.getDate()}`;
+  const base=location.href.replace(/[^/]*$/,'');
+  const css=`
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Malgun Gothic','맑은 고딕',-apple-system,'Segoe UI',sans-serif;color:#1f2937;line-height:1.5;background:#fff;}
+    .bar{position:sticky;top:0;background:#1d4ed8;color:#fff;padding:10px 16px;display:flex;gap:12px;align-items:center;justify-content:center;font-size:13px;z-index:10;}
+    .bar button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:8px 18px;cursor:pointer;background:#fff;color:#1d4ed8;}
+    .sheet{max-width:820px;margin:0 auto;padding:26px 32px 46px;}
+    .cover{border-bottom:3px solid #1d4ed8;padding-bottom:16px;margin-bottom:8px;}
+    .cover .kicker{color:#1d4ed8;font-weight:800;font-size:13px;letter-spacing:.04em;}
+    .cover h1{font-size:26px;font-weight:800;margin:5px 0 3px;}
+    .cover .sub{color:#6b7280;font-size:13px;}
+    .meta{display:flex;margin:14px 0 6px;border:1px solid #d1d5db;border-radius:10px;overflow:hidden;}
+    .meta div{flex:1;padding:9px 12px;font-size:12.5px;border-right:1px solid #e5e7eb;color:#374151;}
+    .meta div:last-child{border-right:0;} .meta b{color:#1d4ed8;margin-right:8px;}
+    .parthead{background:#eff6ff;border-left:4px solid #1d4ed8;padding:8px 12px;margin:20px 0 12px;border-radius:0 8px 8px 0;break-after:avoid;}
+    .parthead b{font-size:16px;color:#1e3a8a;} .parthead span{display:block;font-size:12px;color:#64748b;margin-top:2px;}
+    .cols{column-count:2;column-gap:26px;}
+    .q{padding:8px 0;border-bottom:1px dotted #eef2f7;break-inside:avoid;}
+    .q .qn{font-weight:700;color:#1d4ed8;}
+    .stem{font-size:14px;margin-bottom:5px;}
+    .opts{display:flex;flex-direction:column;gap:2px;padding-left:6px;}
+    .opt{font-size:13px;color:#374151;}
+    .lc1{text-align:left;margin-bottom:6px;} .lc1 .lchint{font-size:11px;color:#94a3b8;font-weight:500;}
+    .lcimg{display:block;max-width:100%;width:340px;border-radius:6px;margin:7px 0;border:1px solid #e5e7eb;}
+    .bub,.bubin{font-size:16px;letter-spacing:2px;color:#334155;} .bub{margin-top:3px;}
+    .lc2{font-size:13.5px;padding:6px 0;} .lc2 .bubin{margin-left:6px;}
+    .set{margin-bottom:16px;padding-bottom:6px;border-bottom:1px solid #eef2f7;}
+    .settitle{font-weight:700;font-size:13.5px;color:#1e3a8a;background:#f8fafc;padding:5px 9px;border-radius:6px;margin-bottom:8px;break-after:avoid;}
+    .passage{font-size:13px;white-space:pre-wrap;background:#fcfcfd;border:1px solid #eef2f7;border-radius:8px;padding:11px 13px;margin-bottom:9px;line-height:1.6;}
+    .setq{padding:6px 0 7px;break-inside:avoid;} .setq .qn{font-weight:700;color:#1d4ed8;}
+    .foot{text-align:center;color:#9ca3af;font-size:11px;margin-top:26px;}
+    /* 정답·해설 */
+    .keypage{page-break-before:always;padding-top:8px;}
+    .keyhead{border-bottom:3px solid #eab308;padding-bottom:11px;margin-bottom:16px;}
+    .keyhead .kicker{color:#b45309;font-weight:800;font-size:13px;} .keyhead h2{font-size:21px;font-weight:800;margin-top:3px;}
+    .kset{margin-bottom:14px;} .ksettitle{font-weight:700;font-size:12.5px;color:#92400e;background:#fffbeb;padding:4px 9px;border-radius:6px;margin-bottom:6px;}
+    .kscript{font-size:12px;background:#fafafa;border:1px solid #eee;border-radius:7px;padding:8px 10px;margin-bottom:8px;}
+    .kscript .scr{white-space:pre-wrap;color:#4b5563;margin-top:4px;line-height:1.55;}
+    .kq{padding:7px 0;border-bottom:1px dotted #f1f5f9;break-inside:avoid;}
+    .ka{font-size:13.5px;font-weight:700;color:#111827;}
+    .kno{display:inline-flex;min-width:24px;height:22px;padding:0 6px;border-radius:11px;background:#eab308;color:#fff;font-size:12px;align-items:center;justify-content:center;margin-right:7px;}
+    .kbody{font-size:12.5px;color:#4b5563;padding-left:31px;margin-top:3px;line-height:1.55;}
+    .koline{margin:2px 0;} .koline .ko,.kqstem .ko{color:#2563eb;} .note{margin-top:2px;} .kqstem{font-weight:600;color:#374151;margin-bottom:3px;}
+    @media print{ .bar{display:none;} .sheet{padding:0;max-width:none;} body{-webkit-print-color-adjust:exact;print-color-adjust:exact;} }
+    @page{margin:13mm 11mm;}
+  `;
+  const doc=`<!doctype html><html lang="ko"><head><meta charset="utf-8"><base href="${base}"><title>토익 ${areaName} 문제지</title><style>${css}</style></head><body>
+    <div class="bar"><span>인쇄 화면에서 대상을 <b>‘PDF로 저장’</b>으로 바꾸면 파일로 저장돼요.</span><button onclick="window.print()">🖨️ 인쇄 / PDF 저장</button></div>
+    <div class="sheet">
+      <div class="cover"><div class="kicker">🎧 TOEIC PRACTICE TEST</div><h1>토익 실전 문제지 · ${esc(areaName)}</h1><div class="sub">${esc(srcName)} · 총 ${ctr.total}문항</div></div>
+      <div class="meta"><div><b>이름</b></div><div><b>날짜</b> ${dstr}</div><div><b>점수</b> &nbsp; / ${ctr.total}</div></div>
+      ${qBody}
+      <div class="foot">토익 VOCA · ETS·해커스 기출 실전 문제지</div>
+    </div>
+    <div class="sheet keypage">
+      <div class="keyhead"><div class="kicker">✔ ANSWER KEY &amp; 해설</div><h2>정답 및 해설</h2><div class="sub" style="color:#6b7280;font-size:13px;">${esc(areaName)} · ${esc(srcName)} · ${ctr.total}문항</div></div>
+      ${kBody}
+      <div class="foot">토익 VOCA · 정답 및 해설</div>
+    </div>
+    <script>window.onload=function(){setTimeout(function(){try{window.print();}catch(e){}},400);};<\/script>
+  </body></html>`;
+  const w=window.open('','_blank');
+  if(!w){ toast('팝업이 차단됐어요. 팝업 허용 후 다시 눌러주세요'); return; }
+  w.document.open(); w.document.write(doc); w.document.close();
+  toast(`📄 ${ctr.total}문항 문제지를 만들었어요`);
+}
+
 // ============ 통계 (전 단어장 통합) ============
 // ===== 분석(통계) 헬퍼 =====
 function fmtDur(sec){ sec=Math.round(sec||0); const h=Math.floor(sec/3600), m=Math.floor(sec%3600/60); if(h>0) return h+'시간 '+(m?m+'분':''); if(m>0) return m+'분'; return (sec||0)+'초'; }
@@ -5458,6 +5686,7 @@ initDark();
 registerSW();
 renderHome();
 renderAQBooks();
+renderTPParts();
 fbInit();
 updateUserLabel();
 requireLogin();
