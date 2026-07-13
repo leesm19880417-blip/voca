@@ -845,6 +845,14 @@
   .btn-danger { background: var(--danger); color: #fff; }
   .btn-ghost { background: transparent; color: var(--text-light); }
   .btn-block { width: 100%; }
+  .btn-print { background:#fff; color:#0f766e; border:1.5px solid #99f6e4; }
+  html[data-theme="dark"] .btn-print, body.dark .btn-print { background:rgba(20,184,166,.12); color:#5eead4; border-color:rgba(94,234,212,.35); }
+  .btn-print:active { filter:brightness(.96); }
+  .aq-print { margin-top:18px; padding-top:16px; border-top:1px dashed var(--border); }
+  .aq-print-head { font-weight:800; font-size:1.02em; color:var(--text); display:flex; align-items:center; gap:8px; }
+  .aq-print-head span { font-size:.66em; font-weight:700; color:#0f766e; background:#ccfbf1; padding:2px 8px; border-radius:999px; letter-spacing:.02em; }
+  html[data-theme="dark"] .aq-print-head span, body.dark .aq-print-head span { background:rgba(20,184,166,.2); color:#5eead4; }
+  .aq-print-desc { font-size:.82em; color:var(--text-light); line-height:1.55; margin:8px 2px 14px; }
 
   /* ===== Flashcard flip ===== */
   .progress-track { height: 7px; background: var(--border); border-radius: 4px; overflow: hidden; margin-bottom: 4px; }
@@ -1673,12 +1681,21 @@
           <button class="chip" onclick="setAQCount(100,this)">100</button>
         </div>
       </div>
-      <div class="field" style="margin-bottom:0;">
+      <div class="field">
         <label>유형 선택 후 시작</label>
         <div style="display:flex; flex-direction:column; gap:9px;">
           <button class="btn btn-primary btn-block" onclick="startAllQuiz('en-ko')">🎯 영→한 객관식</button>
           <button class="btn btn-primary btn-block" onclick="startAllQuiz('ko-en')">🔤 한→영 객관식</button>
           <button class="btn btn-soft btn-block" onclick="startAllQuiz('typing')">⌨️ 받아쓰기</button>
+        </div>
+      </div>
+      <div class="aq-print">
+        <div class="aq-print-head">🖨️ 시험지 만들기 <span>PDF·프린트</span></div>
+        <p class="aq-print-desc">위에서 고른 <b>단어장·범위·문제 수</b> 그대로 시험지를 만들어요. 인쇄 화면에서 <b>‘PDF로 저장’</b>을 고르면 파일로도 저장돼요. 맨 뒤에 <b>정답지</b>가 붙어요.</p>
+        <div style="display:flex; flex-direction:column; gap:9px;">
+          <button class="btn btn-print btn-block" onclick="makeQuizPDF('write-ko')">📝 뜻 쓰기 (영단어 → 뜻)</button>
+          <button class="btn btn-print btn-block" onclick="makeQuizPDF('write-en')">✍️ 영단어 쓰기 (뜻 → 영단어)</button>
+          <button class="btn btn-print btn-block" onclick="makeQuizPDF('mc')">🔢 객관식 4지선다</button>
         </div>
       </div>
     </div>
@@ -4800,6 +4817,126 @@ function startAllQuiz(type){
   const sel=shuffle(pool).slice(0,Math.min(aqCount,pool.length));
   studySource='all'; currentDay=null; currentBook=aqBook==='all'?'siwon':aqBook;
   if(type==='typing') setupTyping(sel,null); else setupQuiz(sel,type,null);
+}
+
+// ============ 시험지 PDF·프린트 만들기 ============
+function makeQuizPDF(type){
+  let s=+$('aq-start').value, e=+$('aq-end').value;
+  if(s>e){ const t=s; s=e; e=t; }
+  const srcBooks = aqBook==='all' ? BOOKS : BOOKS.filter(b=>b.id===aqBook);
+  const pool=srcBooks.flatMap(b=>b.data.filter(d=>d.day>=s&&d.day<=e).flatMap(d=>d.words.map(w=>({...w, day:d.day, book:b.id}))));
+  if(!pool.length){ toast('출제할 단어가 없어요'); return; }
+  const sel=shuffle(pool).slice(0,Math.min(aqCount,pool.length));
+  let dpool = pool.length>=8 ? pool : pool.concat(allWords());
+
+  const bk = aqBook==='all'?null:bookById(aqBook);
+  const unit = (bk&&bk.unitLabel)?bk.unitLabel:'Day';
+  const bookLabel = aqBook==='all'?'전체 단어장':(bk?(bk.icon+' '+bk.name):'');
+  const rangeLabel = (s===e)?(unit+' '+s):(unit+' '+s+'~'+e);
+  const titleMap={ 'write-ko':'뜻 쓰기 시험지', 'write-en':'영단어 쓰기 시험지', 'mc':'객관식 4지선다 시험지' };
+  const guideMap={ 'write-ko':'영단어를 보고 알맞은 <b>뜻</b>을 쓰세요.', 'write-en':'뜻을 보고 알맞은 <b>영단어</b>를 쓰세요.', 'mc':'각 문항에서 알맞은 <b>뜻</b>을 골라 번호에 표시하세요.' };
+  const CIR=['①','②','③','④'];
+
+  // 문항·정답 생성
+  let body='', keyItems=[];
+  if(type==='mc'){
+    const rows=sel.map((w,i)=>{
+      const others=shuffle(dpool.filter(x=>x.word!==w.word && x.meaning!==w.meaning)).slice(0,3).map(x=>x.meaning);
+      const opts=shuffle([w.meaning,...others]);
+      const ci=opts.indexOf(w.meaning);
+      keyItems.push(CIR[ci]);
+      const optHTML=opts.map((o,k)=>`<div class="opt">${CIR[k]} ${esc(o)}</div>`).join('');
+      return `<div class="mcitem"><div class="mcq"><span class="qn">${i+1}</span><b>${esc(w.word)}</b> <em>${esc(posTag(w.pos))}</em></div><div class="mcopts">${optHTML}</div></div>`;
+    }).join('');
+    body=`<div class="mcwrap">${rows}</div>`;
+  } else {
+    const rows=sel.map((w,i)=>{
+      const prompt = type==='write-ko' ? esc(w.word) : esc(w.meaning);
+      const posH = type==='write-ko' ? `<em>${esc(posTag(w.pos))}</em>` : '';
+      const ans = type==='write-ko' ? (w.word+' → '+w.meaning) : (w.meaning+' → '+w.word);
+      keyItems.push(ans);
+      return `<div class="qitem"><span class="qn">${i+1}</span><span class="qword">${prompt} ${posH}</span><span class="qblank"></span></div>`;
+    }).join('');
+    body=`<div class="qwrap">${rows}</div>`;
+  }
+
+  // 정답지
+  let keyHTML;
+  if(type==='mc'){
+    keyHTML='<div class="keygrid">'+keyItems.map((a,i)=>`<div class="kcell"><span class="kn">${i+1}</span><span class="kv">${a}</span></div>`).join('')+'</div>';
+  } else {
+    keyHTML='<div class="keylist">'+keyItems.map((a,i)=>`<div class="krow"><span class="kn">${i+1}</span><span class="kv">${esc(a)}</span></div>`).join('')+'</div>';
+  }
+
+  const today=new Date(); const dstr=`${today.getFullYear()}. ${today.getMonth()+1}. ${today.getDate()}`;
+  const css=`
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Malgun Gothic','맑은 고딕',-apple-system,'Segoe UI',sans-serif;color:#1f2937;background:#fff;line-height:1.4;}
+    .bar{position:sticky;top:0;background:#0f766e;color:#fff;padding:10px 16px;display:flex;gap:10px;align-items:center;font-size:13px;justify-content:center;}
+    .bar button{font:inherit;font-weight:700;border:0;border-radius:8px;padding:8px 18px;cursor:pointer;background:#fff;color:#0f766e;}
+    .bar span{opacity:.85;}
+    .sheet{max-width:800px;margin:0 auto;padding:26px 30px 40px;}
+    .head{border-bottom:3px solid #0f766e;padding-bottom:14px;margin-bottom:6px;}
+    .head .kicker{color:#0f766e;font-weight:800;font-size:13px;letter-spacing:.04em;}
+    .head h1{font-size:25px;font-weight:800;margin:4px 0 2px;letter-spacing:-.01em;}
+    .head .sub{color:#6b7280;font-size:13px;}
+    .meta{display:flex;gap:0;margin:14px 0 4px;border:1px solid #d1d5db;border-radius:10px;overflow:hidden;}
+    .meta div{flex:1;padding:9px 12px;font-size:12.5px;border-right:1px solid #e5e7eb;color:#374151;}
+    .meta div:last-child{border-right:0;}
+    .meta b{color:#0f766e;margin-right:8px;font-weight:700;}
+    .guide{background:#f0fdfa;border:1px solid #99f6e4;color:#115e59;font-size:12.5px;padding:9px 13px;border-radius:9px;margin:12px 0 20px;}
+    .qwrap{column-count:2;column-gap:30px;}
+    .qitem{display:flex;align-items:center;gap:9px;break-inside:avoid;padding:9px 0;border-bottom:1px dotted #e5e7eb;}
+    .qn{flex:none;width:22px;height:22px;border-radius:50%;background:#0f766e;color:#fff;font-size:12px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;}
+    .qword{font-size:15px;font-weight:600;min-width:96px;}
+    .qword em{color:#9ca3af;font-style:normal;font-size:12px;font-weight:500;}
+    .qblank{flex:1;border-bottom:1.4px solid #9ca3af;height:20px;min-width:70px;}
+    .mcwrap{column-count:2;column-gap:30px;}
+    .mcitem{break-inside:avoid;padding:10px 0 12px;border-bottom:1px dotted #e5e7eb;}
+    .mcq{font-size:15px;display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+    .mcq b{font-weight:700;}
+    .mcq em{color:#9ca3af;font-style:normal;font-size:12px;}
+    .mcopts{display:flex;flex-direction:column;gap:3px;padding-left:31px;}
+    .opt{font-size:13.5px;color:#374151;}
+    .keypage{page-break-before:always;padding-top:8px;}
+    .keyhead{border-bottom:3px solid #eab308;padding-bottom:10px;margin-bottom:16px;}
+    .keyhead .kicker{color:#b45309;font-weight:800;font-size:13px;}
+    .keyhead h2{font-size:21px;font-weight:800;margin-top:3px;}
+    .keygrid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px 12px;}
+    .kcell{display:flex;align-items:center;gap:7px;font-size:14px;background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:7px 9px;break-inside:avoid;}
+    .keylist{column-count:2;column-gap:28px;}
+    .krow{display:flex;gap:9px;font-size:13.5px;padding:6px 0;border-bottom:1px dotted #eee;break-inside:avoid;}
+    .kn{flex:none;min-width:22px;height:22px;border-radius:50%;background:#eab308;color:#fff;font-size:11.5px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;}
+    .kv{color:#374151;}
+    .foot{text-align:center;color:#9ca3af;font-size:11px;margin-top:26px;}
+    @media print{ .bar{display:none;} .sheet{padding:0;max-width:none;} body{-webkit-print-color-adjust:exact;print-color-adjust:exact;} }
+    @page{margin:14mm 12mm;}
+  `;
+  const doc=`<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>${esc(titleMap[type])}</title><style>${css}</style></head><body>
+    <div class="bar"><span>인쇄 화면에서 대상을 <b>‘PDF로 저장’</b>으로 바꾸면 파일로 저장돼요.</span><button onclick="window.print()">🖨️ 인쇄 / PDF 저장</button></div>
+    <div class="sheet">
+      <div class="head">
+        <div class="kicker">📘 토익 VOCA 시험지</div>
+        <h1>${esc(titleMap[type])}</h1>
+        <div class="sub">${esc(bookLabel)} · ${esc(rangeLabel)} · 총 ${sel.length}문항</div>
+      </div>
+      <div class="meta"><div><b>이름</b></div><div><b>날짜</b> ${dstr}</div><div><b>점수</b> &nbsp; / ${sel.length}</div></div>
+      <div class="guide">${guideMap[type]}</div>
+      ${body}
+      <div class="foot">토익 VOCA · 문제풀이 시험지</div>
+    </div>
+    <div class="sheet keypage">
+      <div class="keyhead"><div class="kicker">✔ ANSWER KEY</div><h2>정답지 — ${esc(titleMap[type])}</h2><div class="sub" style="color:#6b7280;font-size:13px;">${esc(bookLabel)} · ${esc(rangeLabel)} · ${sel.length}문항</div></div>
+      ${keyHTML}
+      <div class="foot">토익 VOCA · 정답지</div>
+    </div>
+    <script>window.onload=function(){setTimeout(function(){try{window.print();}catch(e){}},250);};<\/script>
+  </body></html>`;
+
+  const w=window.open('','_blank');
+  if(!w){ toast('팝업이 차단됐어요. 팝업 허용 후 다시 눌러주세요'); return; }
+  w.document.open(); w.document.write(doc); w.document.close();
+  toast('🖨️ 시험지를 만들었어요');
 }
 
 // ============ 통계 (전 단어장 통합) ============
