@@ -2276,6 +2276,14 @@ function posKor(pos){
 }
 // 품사 표기를 전부 (형) 형태로 통일
 function posTag(pos){ const k=posKor(pos); return k?('('+k+')'):''; }
+// 퀴즈용: 진짜 품사(명·동·형…)일 때만 표시. pos에 뜻이 섞여 있으면 숨겨 답 노출 방지
+function posTagSafe(pos){
+  const k=posKor(pos); if(!k) return '';
+  const KNOWN='명동형부전접대감구관조';
+  const toks=k.split('·').filter(Boolean);
+  if(toks.length && toks.length<=4 && toks.every(t=>t.length===1 && KNOWN.indexOf(t)>=0)) return '('+toks.join('·')+')';
+  return '';
+}
 function escapeReg(s){ return String(s).replace(/[.*+?^${}()|[\]\\]/g,'\\$&'); }
 const IRREGULAR={
   win:['won','winning'], rise:['rose','risen','rising'], fall:['fell','fallen','falling'],
@@ -3657,8 +3665,8 @@ function renderQuiz(){
   $('quiz-score').textContent=`정답 ${quizScore}`;
   const qEl=$('quiz-q'); qEl.classList.toggle('q-sentence', it.type==='part5');
   if(it.type==='part5'){ $('quiz-prompt').textContent='빈칸에 알맞은 것을 고르세요 (Part 5)'; qEl.innerHTML=part5Blank(it.sentence); }
-  else if(it.type==='ko-en'){ $('quiz-prompt').textContent='뜻에 맞는 영단어를 고르세요'; qEl.innerHTML=`${esc(it.meaning)} <small>${posTag(it.pos)}</small>`; }
-  else { $('quiz-prompt').textContent='영단어의 뜻을 고르세요'; qEl.innerHTML=`${esc(it.word)} <small>${posTag(it.pos)}</small> <button class="spk" onclick="speak('${speakAttr(it.word)}')" title="발음 듣기">🔊</button>`; speak(it.word); }
+  else if(it.type==='ko-en'){ $('quiz-prompt').textContent='뜻에 맞는 영단어를 고르세요'; qEl.innerHTML=`${esc(it.meaning)} <small>${posTagSafe(it.pos)}</small>`; }
+  else { $('quiz-prompt').textContent='영단어의 뜻을 고르세요'; qEl.innerHTML=`${esc(it.word)} <small>${posTagSafe(it.pos)}</small> <button class="spk" onclick="speak('${speakAttr(it.word)}')" title="발음 듣기">🔊</button>`; speak(it.word); }
   $('quiz-options').innerHTML=it.options.map((opt,i)=>`<button class="quiz-option" data-opt="${esc(opt)}" onclick="answerQuiz(this, this.dataset.opt)"><span class="onum">${String.fromCharCode(65+i)}</span><span>${esc(opt)}</span></button>`).join('');
   $('quiz-fb').innerHTML=''; $('quiz-next').style.display='none';
 }
@@ -3718,7 +3726,7 @@ function renderTyping(){
   $('type-count').textContent=`${quizIdx+1} / ${total}`;
   $('type-progress').style.width=((quizIdx+1)/total*100)+'%';
   $('type-score').textContent=`정답 ${quizScore}`;
-  $('type-mean').innerHTML=`${esc(it.meaning)} <small>${posTag(it.pos)}</small>`;
+  $('type-mean').innerHTML=`${esc(it.meaning)} <small>${posTagSafe(it.pos)}</small>`;
   const inp=$('type-input'); inp.value=''; inp.className='type-input'; inp.disabled=false; inp.focus();
   $('type-fb').innerHTML=''; $('type-next').style.display='none'; $('type-check').style.display='block'; typingHintUsed=false;
 }
