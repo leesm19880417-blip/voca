@@ -46,14 +46,19 @@
     --r-lg: 22px;
     --nav-h: 74px;
     --safe-b: env(safe-area-inset-bottom, 0px);
+    --glow1: rgba(194,65,12,0.06);
+    --glow2: rgba(15,118,110,0.06);
+    --font: 'Pretendard','Pretendard Variable',-apple-system,BlinkMacSystemFont,'Apple SD Gothic Neo','Segoe UI',sans-serif;
+    --font-scale: 1;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
   html { -webkit-text-size-adjust: 100%; }
   body {
-    font-family: 'Pretendard', 'Pretendard Variable', -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Segoe UI', sans-serif;
+    font-family: var(--font);
+    font-size: calc(16px * var(--font-scale));
     background:
-      radial-gradient(1200px 520px at 100% -10%, rgba(194,65,12,0.06), transparent 60%),
-      radial-gradient(1000px 520px at -10% 0%, rgba(15,118,110,0.06), transparent 55%),
+      radial-gradient(1200px 520px at 100% -10%, var(--glow1), transparent 60%),
+      radial-gradient(1000px 520px at -10% 0%, var(--glow2), transparent 55%),
       var(--bg);
     background-attachment: fixed;
     color: var(--text);
@@ -84,11 +89,9 @@
     --shadow-sm: 0 1px 3px rgba(0,0,0,0.4);
     --shadow: 0 8px 26px rgba(0,0,0,0.5);
     --shadow-lg: 0 18px 48px rgba(0,0,0,0.6);
+    --glow1: rgba(251,146,60,0.10);
+    --glow2: rgba(45,212,191,0.10);
   }
-  body.dark { background:
-      radial-gradient(1200px 520px at 100% -10%, rgba(251,146,60,0.10), transparent 60%),
-      radial-gradient(1000px 520px at -10% 0%, rgba(45,212,191,0.10), transparent 55%),
-      var(--bg); }
   body.dark .flip-front { background: linear-gradient(160deg, #1b2138, #232c49); }
   body.dark .flip-back { background: linear-gradient(160deg, #1d2540, #2a2150); border-color:#3a3170; }
   body.dark .lc-q, body.dark .lc-set { background: var(--surface-2); }
@@ -100,6 +103,35 @@
   body.dark .lc-opt { background: var(--surface-2); color: var(--text-mid); border-color: var(--border); }
   body.dark .type-input, body.dark .quiz-opt { background: var(--surface-2); }
   body.dark .wimg img, body.dark .fc-img img { filter: brightness(.9); }
+
+  /* ===== 컬러 테마 (설정에서 선택) ===== */
+  /* 라이트 계열 */
+  body.theme-sakura{ --bg:#fff1f5; --surface:#fff; --surface-2:#ffe4ec; --primary:#db2777; --primary-dark:#be185d; --primary-light:#fce7f0; --accent:#f472b6; --accent-light:#fde7f3; --border:#fbcfe0; --grad:linear-gradient(135deg,#ec4899,#f472b6); --grad-soft:linear-gradient(160deg,#fff,#fff1f5); --shadow-brand:0 8px 22px rgba(219,39,119,.25); --glow1:rgba(244,114,182,.13); --glow2:rgba(219,39,119,.07); }
+  body.theme-lavender{ --bg:#f5f3ff; --surface:#fff; --surface-2:#ede9fe; --primary:#7c3aed; --primary-dark:#6d28d9; --primary-light:#ede9fe; --accent:#a78bfa; --accent-light:#f0ecfe; --border:#ddd6fe; --grad:linear-gradient(135deg,#8b5cf6,#a78bfa); --grad-soft:linear-gradient(160deg,#fff,#f5f3ff); --shadow-brand:0 8px 22px rgba(124,58,237,.25); --glow1:rgba(167,139,250,.14); --glow2:rgba(124,58,237,.07); }
+  body.theme-ocean{ --bg:#eff6ff; --surface:#fff; --surface-2:#e0efff; --primary:#0284c7; --primary-dark:#0369a1; --primary-light:#e0f2fe; --accent:#38bdf8; --accent-light:#e6f6fe; --border:#cfe6fb; --grad:linear-gradient(135deg,#0ea5e9,#38bdf8); --grad-soft:linear-gradient(160deg,#fff,#eff6ff); --shadow-brand:0 8px 22px rgba(2,132,199,.25); --glow1:rgba(56,189,248,.14); --glow2:rgba(2,132,199,.07); }
+  body.theme-mint{ --bg:#f0fdfa; --surface:#fff; --surface-2:#ccfbf1; --primary:#0d9488; --primary-dark:#0f766e; --primary-light:#ccfbf1; --accent:#2dd4bf; --accent-light:#e6fcf7; --border:#99f6e4; --grad:linear-gradient(135deg,#14b8a6,#2dd4bf); --grad-soft:linear-gradient(160deg,#fff,#f0fdfa); --shadow-brand:0 8px 22px rgba(13,148,136,.22); --glow1:rgba(45,212,191,.13); --glow2:rgba(13,148,136,.06); }
+  body.theme-sunset{ --bg:#fff7ed; --surface:#fff; --surface-2:#ffedd5; --primary:#ea580c; --primary-dark:#c2410c; --primary-light:#ffedd5; --accent:#fb923c; --accent-light:#fff1e6; --border:#fed7aa; --grad:linear-gradient(135deg,#f97316,#fb923c); --grad-soft:linear-gradient(160deg,#fff,#fff7ed); --shadow-brand:0 8px 22px rgba(234,88,12,.25); --glow1:rgba(251,146,60,.16); --glow2:rgba(234,88,12,.07); }
+  body.theme-peach{ --bg:#fff5f2; --surface:#fff; --surface-2:#ffe8e0; --primary:#fb7185; --primary-dark:#f43f5e; --primary-light:#ffe4e6; --accent:#fda4af; --accent-light:#fff0f1; --border:#ffd7cf; --grad:linear-gradient(135deg,#fb7185,#fda4af); --grad-soft:linear-gradient(160deg,#fff,#fff5f2); --shadow-brand:0 8px 22px rgba(251,113,133,.25); --glow1:rgba(253,164,175,.16); --glow2:rgba(251,113,133,.07); }
+  body.theme-lemon{ --bg:#fefce8; --surface:#fff; --surface-2:#fef9c3; --primary:#ca8a04; --primary-dark:#a16207; --primary-light:#fef9c3; --accent:#facc15; --accent-light:#fefce0; --border:#fde68a; --grad:linear-gradient(135deg,#eab308,#facc15); --grad-soft:linear-gradient(160deg,#fff,#fefce8); --shadow-brand:0 8px 22px rgba(202,138,4,.22); --glow1:rgba(250,204,21,.18); --glow2:rgba(202,138,4,.06); }
+  body.theme-forest{ --bg:#f0fdf4; --surface:#fff; --surface-2:#dcfce7; --primary:#16a34a; --primary-dark:#15803d; --primary-light:#dcfce7; --accent:#4ade80; --accent-light:#e9fbee; --border:#bbf7d0; --grad:linear-gradient(135deg,#22c55e,#4ade80); --grad-soft:linear-gradient(160deg,#fff,#f0fdf4); --shadow-brand:0 8px 22px rgba(22,163,74,.22); --glow1:rgba(74,222,128,.13); --glow2:rgba(22,163,74,.06); }
+  /* 다크 계열 (body.dark 와 함께 적용) */
+  body.theme-midnight{ --bg:#0f172a; --surface:#1e293b; --surface-2:#273449; --primary:#818cf8; --primary-dark:#6366f1; --primary-light:#1e2748; --accent:#38bdf8; --accent-light:#12233b; --text:#e2e8f0; --text-mid:#a9b6cb; --text-light:#6b7a94; --border:#2c3a52; --grad:linear-gradient(135deg,#6366f1,#818cf8); --grad-soft:linear-gradient(160deg,#1b2540,#243154); --shadow-brand:0 8px 22px rgba(99,102,241,.4); --glow1:rgba(56,189,248,.13); --glow2:rgba(129,140,248,.13); }
+  body.theme-neon{ --bg:#0a0a12; --surface:#14141f; --surface-2:#1e1e2e; --primary:#22d3ee; --primary-dark:#06b6d4; --primary-light:#0e2b33; --accent:#e879f9; --accent-light:#2a1533; --text:#f0f9ff; --text-mid:#b6c2cf; --text-light:#6b7280; --border:#262636; --grad:linear-gradient(135deg,#22d3ee,#e879f9); --grad-soft:linear-gradient(160deg,#14141f,#1e1e2e); --shadow-brand:0 0 24px rgba(34,211,238,.45); --glow1:rgba(232,121,249,.15); --glow2:rgba(34,211,238,.15); }
+  body.theme-cocoa{ --bg:#241a19; --surface:#31211f; --surface-2:#3e2b28; --primary:#f0abfc; --primary-dark:#e879f9; --primary-light:#3a2233; --accent:#fbbf24; --accent-light:#3a2e18; --text:#f7ede9; --text-mid:#d3c1ba; --text-light:#9a8880; --border:#4a3531; --grad:linear-gradient(135deg,#f0abfc,#fbbf24); --grad-soft:linear-gradient(160deg,#31211f,#3e2b28); --shadow-brand:0 8px 22px rgba(240,171,252,.3); --glow1:rgba(251,191,36,.11); --glow2:rgba(240,171,252,.11); }
+
+  /* 테마·글씨체 선택 UI */
+  .opt-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:9px; }
+  .theme-cell{ display:flex; flex-direction:column; align-items:center; gap:5px; padding:9px 4px 8px; border:1.5px solid var(--border); border-radius:14px; background:var(--surface); cursor:pointer; transition:all .15s; }
+  .theme-cell:active{ transform:scale(.94); }
+  .theme-cell.on{ border-color:var(--primary); box-shadow:0 0 0 3px var(--primary-light); }
+  .theme-swatch{ width:40px; height:40px; border-radius:50%; position:relative; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,.12); }
+  .theme-swatch i{ position:absolute; inset:0; }
+  .theme-swatch i:last-child{ clip-path:polygon(100% 0,100% 100%,0 100%); }
+  .theme-cell span{ font-size:.72em; font-weight:700; color:var(--text-mid); }
+  .theme-cell.on span{ color:var(--primary); }
+  .font-chip{ border:1.5px solid var(--border); background:var(--surface); color:var(--text-mid); border-radius:12px; padding:9px 13px; font-size:.95em; cursor:pointer; transition:all .15s; }
+  .font-chip.on{ border-color:var(--primary); color:var(--primary); background:var(--primary-light); }
+  .font-chip:active{ transform:scale(.95); }
 
   /* ===== App bar actions / theme btn ===== */
   .bar-actions { display:flex; align-items:center; gap:8px; }
@@ -1781,6 +1813,15 @@
       <p class="push-note" id="push-note">※ 휴대폰은 <b>홈 화면에 추가(설치)</b> 후 켜야 알림이 와요. 아이폰은 iOS 16.4 이상 + 설치 필수.</p>
     </div>
 
+    <div class="field" style="margin-top:18px; border-top:1px dashed var(--border); padding-top:16px;">
+      <label>🎨 테마</label>
+      <div class="opt-grid" id="theme-grid"></div>
+    </div>
+    <div class="field">
+      <label>✏️ 글씨체</label>
+      <div class="chips" id="font-chips" style="gap:8px;"></div>
+    </div>
+
     <button class="btn btn-ghost btn-block user-close" onclick="closeUser()" style="margin-top:14px;">닫기</button>
   </div>
 </div>
@@ -3184,9 +3225,74 @@ function setDday(){
 }
 
 // ===== 다크 모드 =====
-function applyDark(on){ document.body.classList.toggle('dark', on); const b=$('theme-btn'); if(b) b.textContent=on?'☀️':'🌙'; const m=document.querySelector('meta[name=theme-color]'); if(m) m.setAttribute('content', on?'#0b0f1d':'#6366f1'); }
-function toggleDark(){ const on=!document.body.classList.contains('dark'); localStorage.setItem('theme', on?'dark':'light'); applyDark(on); }
-function initDark(){ let t=localStorage.getItem('theme'); if(!t) t=(window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light'; applyDark(t==='dark'); }
+// ===== 테마 · 글씨체 =====
+const THEMES=[
+  {id:'default', name:'기본', dark:false, sw:['#0f766e','#faf7f2'], bar:'#faf7f2'},
+  {id:'sakura',  name:'벚꽃', dark:false, sw:['#ec4899','#fff1f5'], bar:'#fff1f5'},
+  {id:'peach',   name:'복숭아', dark:false, sw:['#fb7185','#fff5f2'], bar:'#fff5f2'},
+  {id:'lavender',name:'라벤더', dark:false, sw:['#8b5cf6','#f5f3ff'], bar:'#f5f3ff'},
+  {id:'lemon',   name:'레몬', dark:false, sw:['#facc15','#fefce8'], bar:'#fefce8'},
+  {id:'mint',    name:'민트', dark:false, sw:['#2dd4bf','#f0fdfa'], bar:'#f0fdfa'},
+  {id:'ocean',   name:'바다', dark:false, sw:['#0ea5e9','#eff6ff'], bar:'#eff6ff'},
+  {id:'forest',  name:'숲', dark:false, sw:['#22c55e','#f0fdf4'], bar:'#f0fdf4'},
+  {id:'sunset',  name:'노을', dark:false, sw:['#f97316','#fff7ed'], bar:'#fff7ed'},
+  {id:'dark',    name:'다크', dark:true, sw:['#2dd4bf','#1c1917'], bar:'#0b0f1d'},
+  {id:'midnight',name:'미드나잇', dark:true, sw:['#818cf8','#0f172a'], bar:'#0f172a'},
+  {id:'neon',    name:'네온', dark:true, sw:['#22d3ee','#0a0a12'], bar:'#0a0a12'},
+  {id:'cocoa',   name:'코코아', dark:true, sw:['#f0abfc','#241a19'], bar:'#241a19'},
+];
+const FONTS=[
+  {id:'default', name:'기본', css:"'Pretendard','Pretendard Variable',-apple-system,'Apple SD Gothic Neo','Segoe UI',sans-serif", g:null, scale:1},
+  {id:'jua',     name:'주아(둥근)', css:"'Jua',sans-serif", g:'Jua', scale:1},
+  {id:'dohyeon', name:'도현(시원)', css:"'Do Hyeon',sans-serif", g:'Do+Hyeon', scale:1},
+  {id:'gaegu',   name:'개구(귀여움)', css:"'Gaegu','Pretendard',cursive", g:'Gaegu:wght@400;700', scale:1.08},
+  {id:'dongle',  name:'동글동글', css:"'Dongle','Pretendard',sans-serif", g:'Dongle:wght@400;700', scale:1.4},
+  {id:'nanumpen',name:'나눔손글씨', css:"'Nanum Pen Script','Pretendard',cursive", g:'Nanum+Pen+Script', scale:1.28},
+  {id:'blackhan',name:'임팩트(굵게)', css:"'Black Han Sans','Pretendard',sans-serif", g:'Black+Han+Sans', scale:1},
+  {id:'gowun',   name:'고운돋움', css:"'Gowun Dodum','Pretendard',sans-serif", g:'Gowun+Dodum', scale:1},
+  {id:'myeongjo',name:'명조(세련)', css:"'Nanum Myeongjo','Pretendard',serif", g:'Nanum+Myeongjo:wght@400;700;800', scale:1},
+];
+const _fontLoaded={};
+function loadGoogleFont(g){ if(!g||_fontLoaded[g]) return; _fontLoaded[g]=1; const l=document.createElement('link'); l.rel='stylesheet'; l.href='https://fonts.googleapis.com/css2?family='+g+'&display=swap'; document.head.appendChild(l); }
+function getTheme(){ return localStorage.getItem('appTheme') || (localStorage.getItem('theme')==='dark'?'dark':'default'); }
+function getFont(){ return localStorage.getItem('appFont') || 'default'; }
+function applyTheme(id){
+  const t=THEMES.find(x=>x.id===id)||THEMES[0];
+  document.body.classList.remove('dark',...THEMES.map(x=>'theme-'+x.id));
+  if(t.id!=='default') document.body.classList.add('theme-'+t.id);
+  if(t.dark) document.body.classList.add('dark');
+  localStorage.setItem('appTheme', t.id); localStorage.setItem('theme', t.dark?'dark':'light');
+  const b=$('theme-btn'); if(b) b.textContent=t.dark?'☀️':'🌙';
+  const m=document.querySelector('meta[name=theme-color]'); if(m) m.setAttribute('content', t.bar);
+  renderThemePicker();
+}
+function applyFont(id){
+  const f=FONTS.find(x=>x.id===id)||FONTS[0];
+  loadGoogleFont(f.g);
+  document.body.style.setProperty('--font', f.css);
+  document.body.style.setProperty('--font-scale', f.scale);
+  localStorage.setItem('appFont', f.id);
+  renderFontPicker();
+}
+function setTheme(id){ applyTheme(id); }
+function setFont(id){ applyFont(id); }
+function renderThemePicker(){
+  const box=$('theme-grid'); if(!box) return; const cur=getTheme();
+  box.innerHTML=THEMES.map(t=>`<div class="theme-cell ${t.id===cur?'on':''}" onclick="setTheme('${t.id}')"><div class="theme-swatch"><i style="background:${t.sw[1]}"></i><i style="background:${t.sw[0]}"></i></div><span>${t.name}</span></div>`).join('');
+}
+function renderFontPicker(){
+  const box=$('font-chips'); if(!box) return; const cur=getFont();
+  box.innerHTML=FONTS.map(f=>{ if(f.g) loadGoogleFont(f.g); return `<button class="font-chip ${f.id===cur?'on':''}" style="font-family:${f.css.replace(/"/g,'&quot;')}" onclick="setFont('${f.id}')">${f.name}</button>`; }).join('');
+}
+// 상단 🌙 버튼: 라이트↔다크 빠른 전환 (마지막 라이트 테마 기억)
+let _lastLightTheme=null;
+function toggleDark(){ const cur=getTheme(); const t=THEMES.find(x=>x.id===cur); if(t&&t.dark){ applyTheme(_lastLightTheme||'default'); } else { _lastLightTheme=cur; applyTheme('dark'); } }
+function applyDark(on){ applyTheme(on?'dark':'default'); }   // 하위호환
+function initDark(){
+  let id=localStorage.getItem('appTheme');
+  if(!id){ const old=localStorage.getItem('theme'); id = old==='dark' ? 'dark' : (old==='light' ? 'default' : ((window.matchMedia&&matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'default')); }
+  applyTheme(id); applyFont(getFont());
+}
 
 // ===== 연속 학습(스트릭) =====
 function bumpStreak(){
@@ -5585,7 +5691,7 @@ function maybeOnboardName(){
     setTimeout(function(){ if(SYNC_CODE==='guest'){ openUser(); toast('💾 이름을 정하면 폰·PC 어디서나 진도가 같이 저장돼요'); } }, 1000);
   }catch(e){}
 }
-function openUser(mandatory){ const inp=$('user-input'); if(inp) inp.value=(SYNC_CODE==='guest')?'':SYNC_CODE; renderRecentUsers(); const o=$('user-overlay'); if(o){ o.classList.toggle('mandatory', !!mandatory); o.classList.add('active'); } if(mandatory && inp) setTimeout(function(){ inp.focus(); }, 350); refreshPushUI(); }
+function openUser(mandatory){ const inp=$('user-input'); if(inp) inp.value=(SYNC_CODE==='guest')?'':SYNC_CODE; renderRecentUsers(); renderThemePicker(); renderFontPicker(); const o=$('user-overlay'); if(o){ o.classList.toggle('mandatory', !!mandatory); o.classList.add('active'); } if(mandatory && inp) setTimeout(function(){ inp.focus(); }, 350); refreshPushUI(); }
 function closeUser(){ const o=$('user-overlay'); if(o){ o.classList.remove('active'); o.classList.remove('mandatory'); } }
 function openHelp(){ const o=$('help-overlay'); if(o) o.classList.add('active'); }
 function closeHelp(){ const o=$('help-overlay'); if(o) o.classList.remove('active'); }
