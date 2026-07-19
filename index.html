@@ -1310,6 +1310,14 @@
       </div>
       <span class="lc-entry-go">→</span>
     </div>
+    <div class="lc-entry" onclick="openHk3Lc()">
+      <img class="lc-entry-cover" src="covers/hk1000lc3.jpg" alt="해커스 토익 1000제 3 LC 문제풀이" onerror="this.onerror=null;this.src='covers/hk1000lc.jpg'">
+      <div class="lc-entry-body">
+        <b>해커스 토익 1000제 3 LC (문제풀이)</b>
+        <small>실전 1000제 3 · 문제별 음원 듣고 풀기 · 정답+해석 · Part 1~4</small>
+      </div>
+      <span class="lc-entry-go">→</span>
+    </div>
     <div class="lc-entry" onclick="openAB('etslc')">
       <img class="lc-entry-cover" src="covers/etslc.jpg" alt="ETS 기출 LC 음원">
       <div class="lc-entry-body">
@@ -2183,6 +2191,7 @@
 <script src="hk2_lc8.js?v=20260719a"></script>
 <script src="hk2_lc9.js?v=20260719a"></script>
 <script src="hk2_lc10.js?v=20260719a"></script>
+<script src="hk3_lc1.js?v=20260720a"></script>
 <script src="lcgen.js?v=20260705b"></script>
 <script src="mock_lc.js?v=20260705h"></script>
 <script src="rcgen.js?v=20260705d"></script>
@@ -4341,6 +4350,7 @@ let _etsTest=1, _etsPart=1, _etsLevel='tests';
 const ES_ETS={key:'',lc:'ETS_LC',rc:'ETS_RC',img:'ets_img/',audio:'ETS_LC/',lcTitle:'🎧 ETS 기출 LC',lcShort:'🎧 ETS LC',rcTitle:'📘 ETS 기출 RC',rcShort:'📘 ETS RC',lcDesc:'ETS 공식 기출 LC. 회차를 고르고 → Part를 골라 풀어요.',rcDesc:'ETS 공식 기출 RC. 회차 → Part를 골라 풀어요 (정답+번역+해설).'};
 const ES_HK={key:'hk',lc:'HK_LC',rc:'HK_RC',img:'hk_img/',audio:'HK_LC/',lcTitle:'🎧 해커스 1000제 LC',lcShort:'🎧 해커스 LC',rcTitle:'📘 해커스 1000제 RC',rcShort:'📘 해커스 RC',lcDesc:'해커스 실전 1000제 1. 회차를 고르고 → Part를 골라 풀어요.',rcDesc:'해커스 실전 1000제 1. 회차 → Part를 골라 풀어요 (정답+번역+해설).'};
 const ES_HK2={key:'hk2',lc:'HK2_LC',rc:'HK2_RC',img:'hk2_img/',audio:'HK_LC2/',lcTitle:'🎧 해커스 1000제 2 LC',lcShort:'🎧 해커스2 LC',rcTitle:'📘 해커스 1000제 2 RC',rcShort:'📘 해커스2 RC',lcDesc:'해커스 실전 1000제 2. 회차를 고르고 → Part를 골라 풀어요.',rcDesc:'해커스 실전 1000제 2. 회차 → Part를 골라 풀어요 (정답+번역+해설).'};
+const ES_HK3={key:'hk3',lc:'HK3_LC',rc:'HK3_RC',img:'hk3_img/',audio:'HK_LC3/',lcTitle:'🎧 해커스 1000제 3 LC',lcShort:'🎧 해커스3 LC',rcTitle:'📘 해커스 1000제 3 RC',rcShort:'📘 해커스3 RC',lcDesc:'해커스 실전 1000제 3. 회차를 고르고 → Part를 골라 풀어요.',rcDesc:'해커스 실전 1000제 3. 회차 → Part를 골라 풀어요 (정답+번역+해설).'};
 let ES=ES_ETS;
 function etsTestData(t){ try{ return window[ES.lc+t]||null; }catch(e){ return null; } }
 const ETS_PARTS=[{p:1,name:'Part 1 · 사진 묘사'},{p:2,name:'Part 2 · 질의응답'},{p:3,name:'Part 3 · 짧은 대화'},{p:4,name:'Part 4 · 짧은 담화'}];
@@ -4360,6 +4370,7 @@ function etsNav(show){ const n=$('ets-nav'); if(n) n.style.display=show?'flex':'
 function openEtsLc(){ ES=ES_ETS; etsStop(); showView('etsq'); renderEtsTests(); }
 function openHkLc(){ ES=ES_HK; etsStop(); showView('etsq'); renderEtsTests(); }
 function openHk2Lc(){ ES=ES_HK2; etsStop(); showView('etsq'); renderEtsTests(); }
+function openHk3Lc(){ ES=ES_HK3; etsStop(); showView('etsq'); renderEtsTests(); }
 function etsBack(){ etsStop(); if(_etsLevel==='quiz') renderEtsParts(_etsTest); else if(_etsLevel==='parts') renderEtsTests(); else showView('home'); }
 function renderEtsTests(){
   _etsLevel='tests'; etsNav(false); if($('ets-title')) $('ets-title').textContent=ES.lcTitle; if($('ets-score')) $('ets-score').textContent='';
@@ -4499,6 +4510,7 @@ function etsRcTestData(t){ try{ return window[ES.rc+t]||null; }catch(e){ return 
 function openEtsRc(){ ES=ES_ETS; showView('etsrc'); renderEtsRcTests(); }
 function openHkRc(){ ES=ES_HK; showView('etsrc'); renderEtsRcTests(); }
 function openHk2Rc(){ ES=ES_HK2; showView('etsrc'); renderEtsRcTests(); }
+function openHk3Rc(){ ES=ES_HK3; showView('etsrc'); renderEtsRcTests(); }
 function etsRcBack(){ if(_etsRcLevel==='parts') renderEtsRcTests(); else showView('home'); }
 function renderEtsRcTests(){
   _etsRcLevel='tests'; if($('etsrc-title')) $('etsrc-title').textContent=ES.rcTitle;
