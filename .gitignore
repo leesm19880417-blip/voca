@@ -109,3 +109,8 @@ _hklc1/
 _hkrc1/
 _mk_hkans1.py
 _hk_transcode.py
+HK_LC2/
+HK_LC3/
+_hk2lc*/
+_hk2rc*/
+_probe_hk23/
