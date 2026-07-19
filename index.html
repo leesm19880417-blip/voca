@@ -1542,6 +1542,7 @@
       <button class="icon-btn" id="fc-assocrecall" onclick="toggleAssocRecall()" title="연상 빈칸(능동 회상) 켜기/끄기">💡</button>
       <button class="icon-btn" id="fc-autospeak" onclick="toggleAutoSpeak()" title="자동 발음 켜기/끄기">🔊</button>
       <button class="icon-btn" onclick="shuffleFlashcards()">🔀</button>
+      <button class="icon-btn" onclick="restartFlashcard()" title="이 Day를 처음부터 다시">🔄</button>
     </div>
     <div class="progress-track"><div class="progress-track-fill" id="fc-progress"></div></div>
     <div class="flip-card" id="flip-card" onclick="flipCard()">
@@ -2170,6 +2171,7 @@
 <script src="hk2_rc5.js?v=20260719a"></script>
 <script src="hk2_rc6.js?v=20260719a"></script>
 <script src="hk2_rc7.js?v=20260719a"></script>
+<script src="hk2_rc8.js?v=20260719a"></script>
 <script src="hk2_lc2.js?v=20260719a"></script>
 <script src="hk2_lc3.js?v=20260719a"></script>
 <script src="hk2_lc4.js?v=20260719a"></script>
@@ -2300,7 +2302,7 @@ function wordAssoc(w, book){
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], lcOrder:[], rcOrder:[], dailyGoal:30, missTally:{}, wrongQ:[], etsProg:{}, etsRcProg:{}, updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], lcOrder:[], rcOrder:[], dailyGoal:30, missTally:{}, wrongQ:[], etsProg:{}, etsRcProg:{}, fcProg:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
@@ -3629,11 +3631,49 @@ function dayWords(){
   const d=b.data.find(x=>x.day===currentDay);
   return d?d.words:null;
 }
+// ===== 플래시카드 이어하기 =====
+// 중간에 앱을 꺼도 남은 카드·외운 개수를 그대로 이어서 볼 수 있게 저장한다.
+// (Day 학습에만 적용 — 복습/즐겨찾기 등 임시 묶음은 매번 새로 구성되므로 제외)
+function fcKey(){ return (studySource==='day'&&currentBook&&currentDay)?`${currentBook}:${currentDay}`:null; }
+function fcSaveProg(){
+  const k=fcKey(); if(!k) return;
+  if(!state.fcProg) state.fcProg={};
+  if(!currentWords.length){ delete state.fcProg[k]; saveState(); return; }
+  state.fcProg[k]={rest:currentWords.map(w=>w.word), idx:currentIdx, m:_sessMastered, t:_sessTotal};
+  saveState();
+}
+function fcClearProg(){
+  const k=fcKey(); if(!k||!state.fcProg) return;
+  delete state.fcProg[k]; saveState();
+}
 function startFlashcard(){
   const words=dayWords(); if(!words) return;
-  currentWords=[...words]; currentIdx=0; flashFlipped=false; studySource='day'; _reviewMode=false;
+  studySource='day'; flashFlipped=false; _reviewMode=false;
+  const saved=(state.fcProg||{})[`${currentBook}:${currentDay}`];
+  const rest=saved&&Array.isArray(saved.rest)?saved.rest:null;
+  // 저장된 진도가 있고, 아직 다 못 끝냈고, 단어장 내용이 그대로면 이어서 시작
+  const byWord=new Map(words.map(w=>[w.word,w]));
+  const resume = rest && rest.length && rest.length<words.length && rest.every(x=>byWord.has(x));
+  if(resume){
+    currentWords=rest.map(x=>byWord.get(x));
+    _sessTotal=saved.t||words.length;
+    _sessMastered=saved.m||0;
+    currentIdx=Math.min(Math.max(0,saved.idx|0), currentWords.length-1);
+    showView('flashcard'); renderFlashcard();
+    toast(`▶️ 이어서 계속 (남은 ${currentWords.length}개)`);
+  } else {
+    currentWords=[...words]; currentIdx=0;
+    _sessTotal=currentWords.length; _sessMastered=0;
+    showView('flashcard'); renderFlashcard();
+  }
+}
+function restartFlashcard(){
+  const words=dayWords(); if(!words) return;
+  if(!confirm('이 Day를 처음부터 다시 볼까요? (지금까지 넘긴 진도는 사라져요)')) return;
+  fcClearProg();
+  currentWords=[...words]; currentIdx=0; flashFlipped=false;
   _sessTotal=currentWords.length; _sessMastered=0;
-  showView('flashcard'); renderFlashcard();
+  renderFlashcard(); toast('🔄 처음부터');
 }
 function renderFlashcard(){
   if(!currentWords.length) return;
@@ -3712,6 +3752,7 @@ function advanceCard(){
   card.classList.remove('flipped');  // 즉시 앞면(영어)으로 스냅
   void inner.offsetWidth;            // 강제 리플로우로 위 변경 즉시 반영
   renderFlashcard();                 // 새 단어 내용 채우기
+  fcSaveProg();                      // 카드 넘길 때마다 진도 저장(중간에 꺼도 이어보기)
   requestAnimationFrame(()=>{ inner.style.transition=''; }); // 탭 뒤집기는 다시 정상
 }
 // ===== 망각곡선 복습(SRS) =====
@@ -3839,7 +3880,7 @@ function startReviewMode(mode, nChoices){
     currentBook='review'; currentDay='review'; setupQuiz(list, mode, 'review', nChoices);
   }
 }
-function shuffleFlashcards(){ currentWords=shuffle(currentWords); currentIdx=0; flashFlipped=false; renderFlashcard(); toast('🔀 섞었어요'); }
+function shuffleFlashcards(){ currentWords=shuffle(currentWords); currentIdx=0; flashFlipped=false; renderFlashcard(); fcSaveProg(); toast('🔀 섞었어요'); }
 function fcCurKey(){ const w=currentWords[currentIdx]; if(!w) return null; const bk=w.book||currentBook, dy=w.day||currentDay; return {w, bk, dy, key:wordKey(bk,dy,w.word)}; }
 function syncFcBmBtn(){ const b=$('fc-bm'); if(!b) return; const c=fcCurKey(); const on=c&&!!state.bookmarks[c.key]; b.textContent=on?'★':'☆'; b.style.color=on?'#f59e0b':''; }
 function fcToggleBm(){
@@ -3849,6 +3890,7 @@ function fcToggleBm(){
   saveState(); updateHeaderStats(); syncFcBmBtn();
 }
 function completeFlash(){
+  fcClearProg();   // 다 끝냈으니 이어하기 진도 삭제 → 다음엔 처음부터
   if(studySource==='day' && currentDay){ state.completed[`${currentBook}:${currentDay}`]=true; saveState(); }
   const tot=_sessTotal||_sessMastered;
   showResult(_sessMastered||tot, tot, [], _reviewMode?'복습 완료! 🎉':'플래시카드 완료!');
