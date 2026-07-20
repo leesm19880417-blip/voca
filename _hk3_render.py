@@ -17,7 +17,7 @@ def lc_start(T):
     return 21 + 42 * (T - 1)
 
 # RC는 회차 사이 광고/구분 페이지로 드리프트 → 프로브해서 확정한 값만 기록
-RC_START = {}
+RC_START = {1: 23, 2: 75, 3: 131, 4: 185, 5: 241, 6: 295, 7: 351, 8: 407, 9: 467, 10: 523}
 
 def render(T, which='lc'):
     if which == 'lc':
@@ -25,7 +25,7 @@ def render(T, which='lc'):
     else:
         if T not in RC_START:
             raise SystemExit('RC Test%d 시작페이지 미확정 — 프로브 후 RC_START에 추가하세요' % T)
-        d = fitz.open(RC_A); s = RC_START[T]; n = 56; out = os.path.join(BASE, '_hk3rc%d' % T); pre = 'ra'
+        d = fitz.open(RC_A); s = RC_START[T]; n = 60; out = os.path.join(BASE, '_hk3rc%d' % T); pre = 'ra'
     os.makedirs(os.path.join(out, 'img'), exist_ok=True)
     os.makedirs(os.path.join(out, 'parts'), exist_ok=True)
     for i in range(s, min(s + n, d.page_count)):
