@@ -255,6 +255,8 @@
   .mc-grid { display:grid; grid-template-columns:repeat(7,1fr); gap:6px 4px; }
   .mc-cell { display:flex; align-items:center; justify-content:center; min-height:42px; }
   .mc-cell.empty { visibility:hidden; }
+  .mc-cell[onclick] { cursor:pointer; -webkit-tap-highlight-color:transparent; }
+  .mc-cell[onclick]:active { transform:scale(.9); }
   .mc-stat { text-align:center; color:var(--text-mid); font-weight:700; font-size:0.86em; margin:16px 0 4px; }
   /* 학습량 막대그래프 */
   .bar-chart { display:flex; align-items:flex-end; gap:4px; height:120px; margin-top:10px; }
@@ -2041,6 +2043,7 @@
     <div class="mc-dows"><span class="sun">일</span><span>월</span><span>화</span><span>수</span><span>목</span><span>금</span><span class="sat">토</span></div>
     <div class="mc-grid" id="cal-grid"></div>
     <p class="mc-stat" id="cal-stat"></p>
+    <p class="mc-stat" style="font-size:0.78em; opacity:.75;">지난 날짜를 누르면 학습 인증 ✓ (다시 누르면 취소)</p>
     <button class="btn btn-soft btn-block" onclick="closeMonthCal()" style="margin-top:6px;">닫기</button>
   </div>
 </div>
@@ -2103,7 +2106,7 @@
 
 <!-- 캐시 버스팅: 새 버전이 올라오면 자동 감지 → 최신 코드로 새로고침 -->
 <script>
-  window.APP_VERSION='20260720a';
+  window.APP_VERSION='20260721a';
   (function(){
     try{
       fetch('version.json?_='+Date.now(),{cache:'no-store'})
@@ -2340,7 +2343,7 @@ function wordAssoc(w, book){
 const STORAGE_KEY = 'toeic_voca_state_v2';
 
 function defState() {
-  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], lcOrder:[], rcOrder:[], dailyGoal:30, missTally:{}, wrongQ:[], etsProg:{}, etsRcProg:{}, fcProg:{}, updatedAt:null };
+  return { ver:3, completed:{}, learned:{}, bookmarks:{}, wrongs:{}, quizHistory:[], customWords:[], srs:{}, streak:0, lastStudyDay:0, studyDays:{}, manualDays:{}, studySeconds:{}, spDone:{}, d100done:{}, examDate:null, targetWords:null, bookOrder:[], lcOrder:[], rcOrder:[], dailyGoal:30, missTally:{}, wrongQ:[], etsProg:{}, etsRcProg:{}, fcProg:{}, updatedAt:null };
 }
 // 구버전(단일 단어장) 키 → '단어장:Day:단어' 키로 마이그레이션 (시원스쿨 귀속)
 const BOOK_IDS = ['siwon','eduwill','wang','hackers','top','kss','kst','ns','legend','my'];
@@ -3224,13 +3227,34 @@ function renderMonthCal(){
   for(let i=0;i<startDow;i++) html+='<div class="mc-cell empty"></div>';
   for(let d=1; d<=days; d++){
     const offset=Math.round((new Date(_calY,_calM,d).getTime()-tMid)/86400000);
-    const dnum=todayIdx+offset, cnt=(state.studyDays||{})[dnum]||0;
-    const p=Math.min(100,Math.round(cnt/DAILY_GOAL*100)), done=cnt>=DAILY_GOAL, isToday=offset===0, future=offset>0;
-    if(cnt>0) studied++;
-    html+=`<div class="mc-cell"><div class="cal-ring${cnt>0?' has':''}${done?' done':''}" style="--p:${p}%"><span class="cal-inner${isToday?' today':''}${future?' fut':''}">${d}</span>${done?'<span class="cal-check">✓</span>':''}</div></div>`;
+    const dnum=todayIdx+offset, cnt=(state.studyDays||{})[dnum]||0, man=!!(state.manualDays||{})[dnum];
+    const p=man?100:Math.min(100,Math.round(cnt/DAILY_GOAL*100)), done=man||cnt>=DAILY_GOAL, isToday=offset===0, future=offset>0;
+    if(cnt>0||man) studied++;
+    const tap=future?'':` onclick="calMark(${dnum},'${_calM+1}월 ${d}일')"`;
+    html+=`<div class="mc-cell"${tap}><div class="cal-ring${(cnt>0||man)?' has':''}${done?' done':''}" style="--p:${p}%"><span class="cal-inner${isToday?' today':''}${future?' fut':''}">${d}</span>${done?'<span class="cal-check">✓</span>':''}</div></div>`;
   }
   $('cal-grid').innerHTML=html;
   $('cal-stat').textContent='이번 달 '+studied+'일 학습 · 🔥 연속 '+(state.streak||0)+'일';
+}
+// 지난 날짜 탭 → 수동 학습 인증 (앱 밖에서 공부한 날 체크)
+function calMark(dnum, label){
+  if(!state.manualDays) state.manualDays={};
+  const wasMan=!!state.manualDays[dnum], cnt=(state.studyDays||{})[dnum]||0;
+  if(wasMan){ delete state.manualDays[dnum]; }
+  else if(cnt>0){ toast('이미 학습 기록이 있는 날이에요'); return; }
+  else { state.manualDays[dnum]=1; }
+  recalcStreak(); saveState(); renderMonthCal(); renderWeekCal();
+  if(typeof updateHeaderStats==='function') updateHeaderStats();
+  toast(wasMan ? '인증을 취소했어요' : '✅ '+label+' 학습 인증 완료!');
+}
+// studyDays + manualDays 기준으로 연속일 다시 계산
+function recalcStreak(){
+  const sd=state.studyDays||{}, md=state.manualDays||{}, t=srsToday();
+  const has=d=>((sd[d]||0)>0 || !!md[d]);
+  let start = has(t) ? t : (has(t-1) ? t-1 : null);
+  if(start===null){ state.streak=0; return; }
+  let n=0, d=start; while(has(d)){ n++; d--; }
+  state.streak=n; state.lastStudyDay=Math.max(state.lastStudyDay||0, start);
 }
 const DAILY_GOAL=20; // 하루 목표 단어 수 (링 채움 기준)
 function renderWeekCal(){
@@ -3241,12 +3265,12 @@ function renderWeekCal(){
   for(let i=0;i<7;i++){
     const offset=i-dow, dnum=today+offset;
     const dt=new Date(now); dt.setDate(now.getDate()+offset);
-    const cnt=(state.studyDays||{})[dnum]||0;
-    const p=Math.min(100, Math.round(cnt/DAILY_GOAL*100));
-    const isToday=offset===0, done=cnt>=DAILY_GOAL, future=offset>0;
+    const cnt=(state.studyDays||{})[dnum]||0, man=!!(state.manualDays||{})[dnum];
+    const p=man?100:Math.min(100, Math.round(cnt/DAILY_GOAL*100));
+    const isToday=offset===0, done=man||cnt>=DAILY_GOAL, future=offset>0;
     html+=`<div class="cal-cell">
       <span class="cal-dow ${i===0?'sun':''}">${labels[i]}</span>
-      <div class="cal-ring${cnt>0?' has':''}${done?' done':''}" style="--p:${p}%">
+      <div class="cal-ring${(cnt>0||man)?' has':''}${done?' done':''}" style="--p:${p}%">
         <span class="cal-inner${isToday?' today':''}${future?' fut':''}">${dt.getDate()}</span>
         ${done?'<span class="cal-check">✓</span>':''}
       </div>
@@ -5766,6 +5790,7 @@ function mergeStates(a, b){
   out.learned   = _mergeMap(a.learned,   b.learned);
   out.bookmarks = _mergeMap(a.bookmarks, b.bookmarks);
   out.studyDays = _mergeMap(a.studyDays, b.studyDays);
+  out.manualDays = _mergeMap(a.manualDays, b.manualDays);  // 수동 학습 인증
   out.studySeconds = _mergeMap(a.studySeconds, b.studySeconds, (p,q)=>Math.max(p||0,q||0)); // 학습시간: 큰 쪽 보존
   out.spDone = _mergeMap(a.spDone, b.spDone);   // 1000문장 말하기 진행
   out.d100done = _mergeMap(a.d100done, b.d100done); // 왕초보 100일 완료
